@@ -1,0 +1,42 @@
+<!-- TEI entity set for Coptic -->
+<!-- Character entity set. Typical invocation:
+     <!ENTITY % TEIcop PUBLIC
+       "-//TEI TR1 W4:1992//ENTITIES Coptic Letters//EN">
+     %TEIcop;
+-->
+<!ENTITY aco    SDATA "[aco     ]"--Coptic letter alpha -->
+<!ENTITY bco    SDATA "[bco     ]"--Coptic letter beta -->
+<!ENTITY gco    SDATA "[gco     ]"--Coptic letter gamma -->
+<!ENTITY dco    SDATA "[dco     ]"--Coptic letter delta -->
+<!ENTITY eco    SDATA "[eco     ]"--Coptic letter epsilon -->
+<!ENTITY zco    SDATA "[zco     ]"--Coptic letter zeta -->
+<!ENTITY eeco   SDATA "[eeco    ]"--Coptic letter eta -->
+<!ENTITY thco   SDATA "[thco    ]"--Coptic letter theta -->
+<!ENTITY ico    SDATA "[ico     ]"--Coptic letter iota -->
+<!ENTITY kco    SDATA "[kco     ]"--Coptic letter kappa -->
+<!ENTITY lco    SDATA "[lco     ]"--Coptic letter lambda -->
+<!ENTITY mco    SDATA "[mco     ]"--Coptic letter mu -->
+<!ENTITY nco    SDATA "[nco     ]"--Coptic letter nu -->
+<!ENTITY xco    SDATA "[xco     ]"--Coptic letter xi -->
+<!ENTITY oco    SDATA "[oco     ]"--Coptic letter omicron -->
+<!ENTITY pco    SDATA "[pco     ]"--Coptic letter pi -->
+<!ENTITY rco    SDATA "[rco     ]"--Coptic letter rho -->
+<!ENTITY sco    SDATA "[sco     ]"--Coptic letter sigma -->
+<!ENTITY tco    SDATA "[tco     ]"--Coptic letter tau -->
+<!ENTITY uco    SDATA "[uco     ]"--Coptic letter upsilon -->
+<!ENTITY phco   SDATA "[phco    ]"--Coptic letter phi -->
+<!ENTITY khco   SDATA "[khco    ]"--Coptic letter chi -->
+<!ENTITY psco   SDATA "[psco    ]"--Coptic letter psi -->
+<!ENTITY ohco   SDATA "[ohco    ]"--Coptic letter omega -->
+<!ENTITY shco   SDATA "[shco    ]"--Coptic letter shaj-->
+<!ENTITY fco    SDATA "[fco     ]"--Coptic letter faj -->
+<!ENTITY ch1co  SDATA "[ch1co   ]"--Coptic letter chai1 (Boharic)-->
+<!ENTITY ch2co  SDATA "[ch2co   ]"--Coptic letter chai2 (Boharic)-->
+<!ENTITY ch3co  SDATA "[ch3co   ]"--Coptic letter chai3 (Achmimic)-->
+<!ENTITY hco    SDATA "[hco     ]"--Coptic letter hori-->
+<!ENTITY dzco   SDATA "[dzco    ]"--Coptic letter dshandsha-->
+<!ENTITY kjco   SDATA "[kjco    ]"--Coptic letter kjima-->
+<!ENTITY teco   SDATA "[teco    ]"--Coptic letter te-->
+<!ENTITY sfco   SDATA "[sfco    ]"--Coptic letter final s  -->
+<!ENTITY stco   SDATA "[stco    ]"--Coptic letter stauros with middle bar -->
+<!ENTITY adco   SDATA "[adco    ]"--Coptic letter alfa with diacritic -->

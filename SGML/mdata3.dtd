@@ -66,7 +66,7 @@
 <!ATTLIST (author|addauthor) T (c|p) 'p'>
 <!ATTLIST (pdat|rdat) MURP (pfs|monall|lattaj|obottum|daviskl|gothards|judith|emma|aliefer|jkietzmn|rkor|schererc|emmajudith|jonathan|mismail|thowe|madavisz|sbatkie|dhaig|alwatson|alea|oxfordall|monallthowe|kshawkin|rlosh|mesander|akuster|bgrif|nicole|jmp|nicolejmp|milton|monallakuster|monalllattaj|shawnmar|spnorton|simon|shyoun|avanclea|jbredle|nadine|toronto|hpierson|mnj|ajakobso|jonws|ehealey|jcords|rcosgrov|Christian|Winslow|Lisa|thakala|taftman|dplee|kris|clnfox|otto|pip|dao|rmanspac|berkleya|dkarczyn|pasj|mjmarion|sdalliso|slepisto|amccollo|lproux|zberger|kbjack|krenee|lorand|yurasekl|gschutz|arifried|rwelzenb|jhe|kilduff|sme|gshukill|charles|hbeeman|louisg|jayreddy|colm|amanda|geremyc|cstolan|sgwingo|monicats|vieracke|ktallen|kellerle|annesimp|valdiven|bmatzke|david|maricari|rmayes) #IMPLIED>
 <!ATTLIST ddat TCP (E1|E2|N1|K1) #IMPLIED>
-<!ATTLIST adat V (tech|pdcc|apex|aeld|none|apexpdcc|ntek|pfs) #REQUIRED>
+<!ATTLIST adat V (tech|pdcc|apex|aeld|none|apexpdcc|ntek|pfs|penn) #REQUIRED>
 <!ATTLIST (imgs|kb|v) REV (1|2|3) "1">
 
 <!-- USAGE -->

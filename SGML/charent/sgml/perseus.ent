@@ -1,0 +1,175 @@
+<!-- Perseus SGML SDATA character entities 
+
+     Included by PersTeiCommon for SGML source files.
+     Entities listed here can override ISO equivalents.
+
+     Entities with equivalent Unicode glyphs should
+     be listed in the PersXML file as well.
+-->
+
+<!ENTITY angle	SDATA	"[angle ]"	--=angle symbol-->
+<!ENTITY triangle	SDATA	"[triangle]"	--=angle symbol-->
+<!ENTITY gtlt	SDATA	"[gtlt  ]"	--=greater-than over less-than-->
+<!ENTITY quad	SDATA	"[quad  ]"	--=quadrilateral symbol-->
+<!ENTITY ngt	SDATA	"[ngt   ]"	--=not-greater-than symbol-->
+<!ENTITY nlt	SDATA	"[nlt   ]"	--=not-less-than symbol-->
+
+<!-- Funny diacritical letters -->
+<!ENTITY Arpress SDATA "[Arpress]" >
+<!ENTITY Ebreve SDATA "[Ebreve]" >
+<!ENTITY Eunc	SDATA	"[Eunc  ]" >
+<!ENTITY Ibreve SDATA "[Ibreve]" >
+<!ENTITY AEligmacr  SDATA "[AEligmacr]" >
+<!ENTITY aeligmacr  SDATA "[aeligmacr]" >
+<!ENTITY Koppa	SDATA	"[Koppa ]" >
+<!ENTITY Ndot SDATA "[Ndot]" >
+<!ENTITY Obreve SDATA "[Obreve]" >
+<!ENTITY Rnull	SDATA	"[Rnull ]" >
+<!ENTITY San	SDATA	"[San   ]" >
+<!ENTITY Theta  SDATA "[Theta ]" >
+<!ENTITY acaron	SDATA	"[acaron]" >
+<!ENTITY acute	SDATA	"[acute ]" >
+<!ENTITY acutebreve	SDATA	"[acutebreve]" >
+<!ENTITY acutemacr	SDATA	"[acutemacr]" >
+<!ENTITY adot SDATA "[adot  ]" >
+<!ENTITY amacracute SDATA "[amacracute]" >
+<!ENTITY anceps	SDATA	"[anceps]" >
+<!ENTITY breve	SDATA	"[breve ]" >
+<!ENTITY brevemacr SDATA "[brevemacr]" >
+<!ENTITY bstrok SDATA "[bstrok]" >
+<!ENTITY cbreve SDATA "[cbreve]" >
+<!ENTITY chirho	SDATA	"[chirho]"	>
+<!ENTITY c	SDATA "[C     ]" >
+<!ENTITY cj	SDATA	"[C     ]" >
+<!ENTITY cj     SDATA "[cj    ]" >
+<!ENTITY cnull  SDATA "[cnull ]" >
+<!ENTITY dibreve SDATA "[dibreve]" -- Double inverted breve -->
+<!ENTITY ebreve SDATA "[ebreve]" >
+<!ENTITY ecedil SDATA "[ecedil]" >
+<!ENTITY eglide	SDATA	"[eglide]" >
+<!ENTITY emacracute  SDATA "[emacracute]" >
+<!ENTITY enull SDATA  "[enull ]" >
+<!ENTITY epig-rough SDATA "[epig-rough]" -- Epigraphical rough breathing -->
+<!ENTITY etilde SDATA "[etilde]"	>
+<!ENTITY gkhyph  SDATA "[gkhyph]" >
+<!ENTITY gklig  SDATA "[gklig]" >
+<!ENTITY gtbreve	SDATA	"[gtbreve]" >
+<!ENTITY hudot  SDATA "[hudot ]" >
+<!ENTITY ibreve SDATA "[ibreve]" >
+<!ENTITY icaron SDATA "[icaron]" >
+<!ENTITY iglide	SDATA	"[iglide]" >
+<!ENTITY imacracute  SDATA "[imacracute]" >
+<!ENTITY imacrbreve  SDATA "[imacrbreve]" >
+<!ENTITY jcaron SDATA "[jcaron]" >
+<!ENTITY kacute SDATA "[kacute]" >
+<!ENTITY kdot   SDATA "[kdot  ]" >
+<!ENTITY kcirc  SDATA "[kcirc ]" >
+<!ENTITY koopa  SDATA "[koopa ]" >
+<!ENTITY koppa	SDATA	"[koppa ]" >
+<!ENTITY kudot	SDATA	"[kudot ]" -- small letter k, dot under -->
+<!ENTITY ldsqb	SDATA	"[ldsqb ]"	>
+<!ENTITY lins	SDATA	"[lins  ]" >
+<!ENTITY lnull	SDATA	"[lnull ]" >
+<!ENTITY longs  SDATA   "[longs ]" -- Long medial "s" -->
+<!ENTITY lpress SDATA "[lpress]" >
+<!ENTITY ltilde SDATA "[ltilde]"	>
+<!ENTITY macr	SDATA	"[macr ]" >
+<!ENTITY macracute  SDATA "[macracute]" >
+<!ENTITY macrbreve SDATA "[macrbreve]" >
+<!ENTITY macrcirc	SDATA	"[macrcirc]" >
+<!ENTITY macrdot	SDATA	"[macrdot]" >
+<!ENTITY macutenull SDATA "[macutenull]" >
+<!ENTITY mmacrnull SDATA "[mmacrnull]" >
+<!ENTITY mnull	SDATA "[mnull ]" >
+<!ENTITY ncirc  SDATA "[ncirc ]" >
+<!ENTITY ndot   SDATA "[ndot  ]" >
+<!ENTITY ngnull	SDATA "[ngnull]" >
+<!ENTITY nmacrnull SDATA "[nmacrnull]" >
+<!ENTITY nnull	SDATA "[nnull ]" >
+<!ENTITY nring  SDATA "[nring]" >
+<!ENTITY null	SDATA "[null  ]" >
+<!ENTITY obreve SDATA "[obreve]" >
+<!ENTITY ocaron SDATA "[ocaron]" >
+<!ENTITY oogon  SDATA "[oogon ]" >
+<!ENTITY oolig  SDATA "[oolig ]" >
+<!ENTITY ohbr   SDATA "[ohbr  ]" -- o hook below right -->
+<!ENTITY rcirc  SDATA "[rcirc]" >
+<!ENTITY rdot   SDATA "[rdot  ]" >
+<!ENTITY rdsqb	SDATA "[rdsqb ]" >
+<!ENTITY rmacr  SDATA "[rmacr ]" >
+<!ENTITY rnull	SDATA "[rnull ]" >
+<!ENTITY root   SDATA "[root  ]" >
+<!ENTITY rough	SDATA "[rough ]" >
+<!ENTITY rpress SDATA "[rpress]" >
+<!ENTITY rtilde SDATA "[rtilde]" >
+<!ENTITY sampi	SDATA "[sampi ]" >
+<!ENTITY san	SDATA "[san   ]" >
+<!ENTITY sbreve SDATA "[sbreve]" >
+<!ENTITY schwa  SDATA "[schwa]" >
+<!ENTITY scron  SDATA "[scron]" >
+<!ENTITY sdot   SDATA "[sdot  ]" >
+<!ENTITY smooth	SDATA "[smooth]" >
+<!ENTITY snull	SDATA "[snull ]" >
+<!ENTITY staur	SDATA "[staur ]" >
+<!ENTITY stigma	SDATA "[stigma]" >
+<!ENTITY tnull  SDATA "[tnull ]" >
+<!ENTITY tnum	SDATA "[tnum  ]" >
+<!ENTITY ucaron	SDATA "[ucaron]" >
+<!ENTITY udot   SDATA "[udot  ]" >
+<!ENTITY uglide	SDATA "[uglide]" >
+<!ENTITY umacracute	SDATA "[umacracute]" >
+<!ENTITY wacute	SDATA "[wacute]" >
+<!ENTITY x1000	SDATA "[x1000 ]" >
+<!ENTITY ybreve SDATA "[ybreve]" >
+<!ENTITY ymacr  SDATA "[ymacr ]" >
+<!ENTITY yogh   SDATA "[yogh  ]" >
+<!ENTITY ygrave SDATA "[ygrave]" >
+<!ENTITY ytilde SDATA "[ytilde]" >
+<!ENTITY zcirc  SDATA "[zcirc ]" >
+
+<!-- More MPI entities -->
+<!ENTITY acedil SDATA "[acedil]" >
+<!ENTITY ngrave SDATA "[ngrave]" >
+<!ENTITY qacute SDATA "[qacute]" >
+<!ENTITY mtilde SDATA "[mtilde]" >
+<!ENTITY pacute SDATA "[pacute]" -- used in Buonamici for pr&aelig; -->
+<!ENTITY ptilde SDATA "[ptilde]" >
+<!ENTITY qgrave SDATA "[qgrave]" >
+<!ENTITY qring	SDATA "[qring ]" >
+<!ENTITY qtilde SDATA "[qtilde]" >
+<!ENTITY quml	SDATA "[quml  ]" >
+<!ENTITY ttilde SDATA "[ttilde]" >
+<!ENTITY cgrave SDATA "[cgrave]" >
+<!ENTITY zgrave SDATA "[zgrave]" >
+
+<!ENTITY C	SDATA "[C     ]" >
+<!ENTITY D	SDATA "[D     ]" >
+<!ENTITY dram	SDATA "[dram  ]" >
+<!ENTITY ounce	SDATA "[ounce ]" >
+<!ENTITY que	SDATA "[que   ]" -- special sign for enclitic -que -- >
+<!ENTITY queacute SDATA "[queacute]" >
+<!ENTITY quetilde SDATA "[quetilde]" >
+<!ENTITY scruple SDATA "[scruple]" >
+
+<!-- More Bolles entities -->
+<!ENTITY Mtilde SDATA "[Mtilde]" >
+<!ENTITY Ptilde SDATA "[Ptilde]" >
+
+<!-- Combining accents -->
+<!ENTITY combacute	SDATA "[combacute]" >
+<!ENTITY combgrave	SDATA "[combgrave]" >
+<!ENTITY combcirc	SDATA "[combcirc]" >
+<!ENTITY combmacr	SDATA "[combmacr]" >
+<!ENTITY combbreve	SDATA "[combbreve]" >
+
+<!-- Epigraphical punctuation -->
+<!ENTITY inter2	SDATA	"[inter2]" >
+<!ENTITY inter3	SDATA	"[inter3]" >
+
+<!-- Knight entities -->
+<!ENTITY shortnote SDATA "[shortnote]" >
+<!ENTITY quantity1 SDATA "[quantity1]" >
+<!ENTITY quantity2 SDATA "[quantity2]" >
+<!ENTITY quantity3 SDATA "[quantity3]" >
+<!ENTITY minim SDATA "[minim]" >
+<!ENTITY paid SDATA "[paid]" >

@@ -1,0 +1,246 @@
+<!-- TEI classical Greek supplemental to ISOgrk1 and ISOgrk2 -->
+<!-- Character entity set. Typical invocation:
+     <!ENTITY % TEIgrk PUBLIC
+       "-//TEI TR1 W4:1992//ENTITIES Extra Classial Greek Letters//EN">
+     %TEIgrk;
+-->
+<!ENTITY aiotgr  SDATA "[aiotgr  ]"--Gr sm letter alpha with iota-->
+<!ENTITY Aiotgr  SDATA "[Aiotgr  ]"--Gr cap alpha with iota-->
+<!ENTITY arigr   SDATA "[arigr   ]"--Gr sm alpha with rough and iota-->
+<!ENTITY Arigr   SDATA "[Arigr   ]"--Gr cap alpha with rough and iota-->
+<!ENTITY asigr   SDATA "[asigr   ]"--Gr sm alpha with smooth and iota-->
+<!ENTITY Asigr   SDATA "[Asigr   ]"--Gr cap alpha with smooth and iota-->
+<!ENTITY aaigr   SDATA "[aaigr   ]"--Gr sm alpha with acute and iota-->
+<!ENTITY Aaigr   SDATA "[Aaigr   ]"--Gr cap alpha with acute and iota-->
+<!ENTITY agigr   SDATA "[agigr   ]"--Gr sm alpha with grave and iota-->
+<!ENTITY Agigr   SDATA "[Agigr   ]"--Gr cap alpha with grave and iota-->
+<!ENTITY acigr   SDATA "[acigr   ]"--Gr sm alpha with circum and iota-->
+<!ENTITY Acigr   SDATA "[Acigr   ]"--Gr cap alpha with circum and iota-->
+<!ENTITY araigr  SDATA "[araigr  ]"--Gr sm alpha with rough, acute and iota-->
+<!ENTITY Araigr  SDATA "[Araigr  ]"--Gr cap alpha with rough, acute and iota-->
+<!ENTITY asaigr  SDATA "[asaigr  ]"--Gr sm alpha with smooth, acute and iota-->
+<!ENTITY Asaigr  SDATA "[Asaigr  ]"--Gr cap alpha with smooth, acute and iota-->
+<!ENTITY argigr  SDATA "[argigr  ]"--Gr sm alpha with rough, grave and iota-->
+<!ENTITY Argigr  SDATA "[Argigr  ]"--Gr cap alpha with rough, grave and iota-->
+<!ENTITY asgigr  SDATA "[asgigr  ]"--Gr sm alpha with smooth, grave and iota-->
+<!ENTITY Asgigr  SDATA "[Asgigr  ]"--Gr cap alpha with smooth, grave and iota-->
+<!ENTITY arcigr  SDATA "[arcigr  ]"--Gr sm alpha with rough, circum and iota-->
+<!ENTITY Arcigr  SDATA "[Arcigr  ]"--Gr cap alpha with rough, circum and iota-->
+<!ENTITY ascigr  SDATA "[ascigr  ]"--Gr sm alpha with smooth, circum and iota-->
+<!ENTITY Ascigr  SDATA "[Ascigr  ]"--Gr cap alpha with smooth, circum and
+ iota-->
+<!ENTITY arougr  SDATA "[arougr  ]"--Gr sm alpha with rough-->
+<!ENTITY Arougr  SDATA "[Arougr  ]"--Gr cap alpha with rough-->
+<!ENTITY asmogr  SDATA "[asmogr  ]"--Gr sm alpha with smooth-->
+<!ENTITY Asmogr  SDATA "[Asmogr  ]"--Gr cap alpha with smooth-->
+<!ENTITY agragr  SDATA "[agragr  ]"--Gr sm alpha with grave-->
+<!ENTITY Agragr  SDATA "[Agragr  ]"--Gr sm  alpha with grave-->
+<!ENTITY aacugr  SDATA "[aacugr  ]"--Gr sm  alpha with acute-->
+<!ENTITY Aacugr  SDATA "[Aacugr  ]"--Gr cap alpha with acute-->
+<!ENTITY acirgr  SDATA "[acirgr  ]"--Gr sm alpha with circum-->
+<!ENTITY Acirgr  SDATA "[Acirgr  ]"--Gr cap alpha with circum-->
+<!ENTITY aragr   SDATA "[aragr   ]"--Gr sm alpha with rough and acute-->
+<!ENTITY Aragr   SDATA "[Aragr   ]"--Gr cap alpha with rough and acute-->
+<!ENTITY asagr   SDATA "[asagr   ]"--Gr sm alpha with smooth and acute-->
+<!ENTITY Asagr   SDATA "[Asagr   ]"--Gr cap alpha with smooth and acute-->
+<!ENTITY arggr   SDATA "[arggr   ]"--Gr sm alpha with rough and grave-->
+<!ENTITY Arggr   SDATA "[Arggr   ]"--Gr cap alpha with rough and grave-->
+<!ENTITY asggr   SDATA "[asggr   ]"--Gr sm alpha with smooth and grave-->
+<!ENTITY Asggr   SDATA "[Asggr   ]"--Gr cap alpha with smooth and grave-->
+<!ENTITY arcgr   SDATA "[arcgr   ]"--Gr sm alpha with rough and circum-->
+<!ENTITY Arcgr   SDATA "[Arcgr   ]"--Gr cap alpha with rough and circum-->
+<!ENTITY ascgr   SDATA "[ascgr   ]"--Gr sm alpha with smooth and circum-->
+<!ENTITY Ascgr   SDATA "[Ascgr   ]"--Gr cap alpha with smooth and circum-->
+<!ENTITY erougr  SDATA "[erougr  ]"--Gr sm epsilon with rough-->
+<!ENTITY Erougr  SDATA "[Erougr  ]"--Gr cap epsilon with rough-->
+<!ENTITY esmogr  SDATA "[esmogr  ]"--Gr sm epsilon with smooth-->
+<!ENTITY Esmogr  SDATA "[Esmogr  ]"--Gr cap epsilon with smooth -->
+<!ENTITY egragr  SDATA "[egragr  ]"--Gr sm epsilon with grave-->
+<!ENTITY Egragr  SDATA "[Egragr  ]"--Gr cap epsilon with grave-->
+<!ENTITY eacugr  SDATA "[eacugr  ]"--Gr sm epsilon with acute-->
+<!ENTITY Eacugr  SDATA "[Eacugr  ]"--Gr cap epsilon with acute-->
+<!ENTITY ecirgr  SDATA "[ecirgr  ]"--Gr sm epsilon with circum-->
+<!ENTITY Ecirgr  SDATA "[Ecirgr  ]"--Gr cap epsilon with circum-->
+<!ENTITY eragr   SDATA "[eragr   ]"--Gr sm epsilon with rough and acute-->
+<!ENTITY Eragr   SDATA "[Eragr   ]"--Gr cap epsilon with rough and acute-->
+<!ENTITY esagr   SDATA "[esagr   ]"--Gr sm epsilon with smooth and acute-->
+<!ENTITY Esagr   SDATA "[Esagr   ]"--Gr cap epsilon with smooth and acute-->
+<!ENTITY erggr   SDATA "[erggr   ]"--Gr sm epsilon with rough and grave-->
+<!ENTITY Erggr   SDATA "[Erggr   ]"--Gr cap epsilon with rough and grave-->
+<!ENTITY esggr   SDATA "[esggr   ]"--Gr sm epsilon with smooth and grave-->
+<!ENTITY Esggr   SDATA "[Esggr   ]"--Gr cap epsilon with smooth and grave-->
+<!ENTITY eeiotgr SDATA "[eeiotgr ]"--Gr sm eta with iota-->
+<!ENTITY EEiotgr SDATA "[EEiotgr ]"--Gr cap eta with iota-->
+<!ENTITY eerigr  SDATA "[eerigr  ]"--Gr sm eta with rough and iota-->
+<!ENTITY EErigr  SDATA "[EErigr  ]"--Gr cap eta with rough and iota-->
+<!ENTITY eesigr  SDATA "[eesigr  ]"--Gr sm eta with smooth and iota-->
+<!ENTITY EEsigr  SDATA "[EEsigr  ]"--Gr cap eta with smooth and iota-->
+<!ENTITY eeaigr  SDATA "[eeaigr  ]"--Gr sm eta with acute and iota-->
+<!ENTITY EEaigr  SDATA "[EEaigr  ]"--Gr cap eta with acute and iota-->
+<!ENTITY eegigr  SDATA "[eegigr  ]"--Gr sm eta with grave and iota-->
+<!ENTITY EEgigr  SDATA "[EEgigr  ]"--Gr cap eta with grave and iota-->
+<!ENTITY eecigr  SDATA "[eecigr  ]"--Gr sm eta with circum and iota-->
+<!ENTITY EEcigr  SDATA "[EEcigr  ]"--Gr cap eta with circum and iota-->
+<!ENTITY eeraigr SDATA "[eeraigr ]"--Gr sm eta with rough, acute and iota-->
+<!ENTITY EEraigr SDATA "[EEraigr ]"--Gr cap eta with rough, acute and iota-->
+<!ENTITY eesaigr SDATA "[eesaigr ]"--Gr sm eta with smooth, acute and iota-->
+<!ENTITY EEsaigr SDATA "[EEsaigr ]"--Gr cap eta with smooth, acute and iota-->
+<!ENTITY eergigr SDATA "[eergigr ]"--Gr sm eta with rough, grave and iota-->
+<!ENTITY EErgigr SDATA "[EErgigr ]"--Gr cap eta with rough, grave and iota-->
+<!ENTITY eesgigr SDATA "[eesgigr ]"--Gr sm eta with smooth, grave and iota-->
+<!ENTITY EEsgigr SDATA "[EEsgigr ]"--Gr cap eta with smooth, grave and iota-->
+<!ENTITY eercigr SDATA "[eercigr ]"--Gr sm eta with rough, circum and iota-->
+<!ENTITY EErcigr SDATA "[EErcigr ]"--Gr cap eta with rough, circum and iota-->
+<!ENTITY eescigr SDATA "[eescigr ]"--Gr sm eta with smooth, circum and iota-->
+<!ENTITY EEscigr SDATA "[EEscigr ]"--Gr cap eta with smooth, circum and iota-->
+<!ENTITY eerougr SDATA "[eerougr ]"--Gr sm eta with rough-->
+<!ENTITY EErougr SDATA "[EErougr ]"--Gr cap eta with rough-->
+<!ENTITY eesmogr SDATA "[eesmogr ]"--Gr sm eta with smooth-->
+<!ENTITY EEsmogr SDATA "[EEsmogr ]"--Gr cap eta with smooth-->
+<!ENTITY eegragr SDATA "[eegragr ]"--Gr sm eta with grave-->
+<!ENTITY EEgragr SDATA "[EEgragr ]"--Gr cap eta with grave-->
+<!ENTITY eeacugr SDATA "[eeacugr ]"--Gr sm eta with acute-->
+<!ENTITY EEacugr SDATA "[EEacugr ]"--Gr cap eta with acute-->
+<!ENTITY eecirgr SDATA "[eecirgr ]"--Gr sm eta with circum-->
+<!ENTITY EEcirgr SDATA "[EEcirgr ]"--Gr cap eta with circum-->
+<!ENTITY eeragr  SDATA "[eeragr  ]"--Gr sm eta with rough and acute-->
+<!ENTITY EEragr  SDATA "[EEragr  ]"--Gr cap eta with rough and acute-->
+<!ENTITY eesagr  SDATA "[eesagr  ]"--Gr sm eta with smooth and acute-->
+<!ENTITY EEsagr  SDATA "[EEsagr  ]"--Gr cap eta with smooth and acute-->
+<!ENTITY eerggr  SDATA "[eerggr  ]"--Gr sm eta with rough and grave-->
+<!ENTITY EErggr  SDATA "[EErggr  ]"--Gr cap eta with rough and grave-->
+<!ENTITY eesggr  SDATA "[eesggr  ]"--Gr sm eta with smooth and grave-->
+<!ENTITY EEsggr  SDATA "[EEsggr  ]"--Gr cap eta with smooth and grave-->
+<!ENTITY eercgr  SDATA "[eercgr  ]"--Gr sm eta with rough and circum-->
+<!ENTITY EErcgr  SDATA "[EErcgr  ]"--Gr cap eta with rough and circum-->
+<!ENTITY eescgr  SDATA "[eescgr  ]"--Gr sm eta with smooth and circum-->
+<!ENTITY EEscgr  SDATA "[EEscgr  ]"--Gr cap eta with smooth and circum-->
+<!ENTITY irougr  SDATA "[irougr  ]"--Gr sm iota with rough-->
+<!ENTITY Irougr  SDATA "[Irougr  ]"--Gr cap iota with rough-->
+<!ENTITY ismogr  SDATA "[ismogr  ]"--Gr sm iota with smooth-->
+<!ENTITY Ismogr  SDATA "[Ismogr  ]"--Gr cap iota with smooth-->
+<!ENTITY igragr  SDATA "[igragr  ]"--Gr sm iota with grave-->
+<!ENTITY Igragr  SDATA "[Igragr  ]"--Gr cap iota with grave-->
+<!ENTITY iacugr  SDATA "[iacugr  ]"--Gr sm iota with acute-->
+<!ENTITY Iacugr  SDATA "[Iacugr  ]"--Gr cap iota with acute-->
+<!ENTITY icirgr  SDATA "[icirgr  ]"--Gr sm iota with circum-->
+<!ENTITY Icirgr  SDATA "[Icirgr  ]"--Gr cap iota with circum-->
+<!ENTITY iragr   SDATA "[iragr   ]"--Gr sm iota with rough and acute-->
+<!ENTITY Iragr   SDATA "[Iragr   ]"--Gr cap iota with rough and acute-->
+<!ENTITY isagr   SDATA "[isagr   ]"--Gr sm iota with smooth and acute-->
+<!ENTITY Isagr   SDATA "[Isagr   ]"--Gr cap iota with smooth and acute-->
+<!ENTITY irggr   SDATA "[irggr   ]"--Gr sm iota with rough and grave-->
+<!ENTITY Iragr   SDATA "[Iragr   ]"--Gr cap iota with rough and grave-->
+<!ENTITY isggr   SDATA "[isggr   ]"--Gr sm iota with smooth and grave-->
+<!ENTITY Isggr   SDATA "[Isggr   ]"--Gr cap iota with smooth and grave-->
+<!ENTITY ircgr   SDATA "[ircgr   ]"--Gr sm iota with rough and circum-->
+<!ENTITY Ircgr   SDATA "[Ircgr   ]"--Gr cap iota with rough and circum-->
+<!ENTITY iscgr   SDATA "[iscgr   ]"--Gr sm iota with smooth and circum-->
+<!ENTITY Iscgr   SDATA "[Iscgr   ]"--Gr cap iota with smooth and circum-->
+<!ENTITY igdgr   SDATA "[igdgr   ]"--Gr sm iota with grave and diaresis-->
+<!ENTITY Igdgr   SDATA "[Igdgr   ]"--Gr cap iota with grave and diaresis-->
+<!ENTITY iadgr   SDATA "[iadgr   ]"--Gr sm iota with acute and diaresis-->
+<!ENTITY Iadgr   SDATA "[Iadgr   ]"--Gr cap iota with acute and diaresis-->
+<!ENTITY icdgr   SDATA "[icdgr   ]"--Gr sm iota with circum and diaresis-->
+<!ENTITY Icdgr   SDATA "[Icdgr   ]"--Gr cap iota with circum and diaresis-->
+<!ENTITY orougr  SDATA "[orougr  ]"--Gr sm omicron with rough-->
+<!ENTITY Orougr  SDATA "[Orougr  ]"--Gr cap omicron with rough-->
+<!ENTITY osmogr  SDATA "[osmogr  ]"--Gr sm omicron with smooth-->
+<!ENTITY Osmogr  SDATA "[Osmogr  ]"--Gr cap omicron with smooth-->
+<!ENTITY ogragr  SDATA "[ogragr  ]"--Gr sm omicron with grave-->
+<!ENTITY Ogragr  SDATA "[Ogragr  ]"--Gr cap omicron with grave-->
+<!ENTITY oacugr  SDATA "[oacugr  ]"--Gr sm omicron with acute-->
+<!ENTITY Oacugr  SDATA "[Oacugr  ]"--Gr cap omicron with acute-->
+<!ENTITY ocirgr  SDATA "[ocirgr  ]"--Gr sm omicron with circum-->
+<!ENTITY Ocirgr  SDATA "[Ocirgr  ]"--Gr cap omicron with circum-->
+<!ENTITY oragr   SDATA "[oragr   ]"--Gr sm omicron with rough and acute-->
+<!ENTITY Oragr   SDATA "[Oragr   ]"--Gr cap omicron with rough and acute-->
+<!ENTITY osagr   SDATA "[osagr   ]"--Gr sm omicron with smooth and acute-->
+<!ENTITY Osagr   SDATA "[Osagr   ]"--Gr cap omicron with smooth and acute-->
+<!ENTITY orggr   SDATA "[orggr   ]"--Gr sm omicron with rough and grave-->
+<!ENTITY Orggr   SDATA "[Orggr   ]"--Gr cap omicron with rough and grave-->
+<!ENTITY osggr   SDATA "[osggr   ]"--Gr sm omicron with smooth and grave-->
+<!ENTITY Osggr   SDATA "[Osggr   ]"--Gr cap omicron with smooth and grave-->
+<!ENTITY urougr  SDATA "[urougr  ]"--Gr sm upsilon with rough-->
+<!ENTITY Urougr  SDATA "[Urougr  ]"--Gr cap upsilon with rough-->
+<!ENTITY usmogr  SDATA "[usmogr  ]"--Gr sm upsilon with smooth-->
+<!ENTITY Usmogr  SDATA "[Usmogr  ]"--Gr cap upsilon with smooth-->
+<!ENTITY ugragr  SDATA "[ugragr  ]"--Gr sm upsilon with grave-->
+<!ENTITY Ugragr  SDATA "[Ugragr  ]"--Gr cap upsilon with grave-->
+<!ENTITY uacugr  SDATA "[uacugr  ]"--Gr sm upsilon with acute-->
+<!ENTITY Uacugr  SDATA "[Uacugr  ]"--Gr cap upsilon with acute-->
+<!ENTITY ucirgr  SDATA "[ucirgr  ]"--Gr sm upsilon with circum-->
+<!ENTITY Ucirgr  SDATA "[Ucirgr  ]"--Gr cap upsilon with circum-->
+<!ENTITY uragr   SDATA "[uragr   ]"--Gr sm upsilon with rough and acute-->
+<!ENTITY Uragr   SDATA "[Uragr   ]"--Gr cap upsilon with rough and acute-->
+<!ENTITY usagr   SDATA "[usagr   ]"--Gr sm upsilon with smooth and acute-->
+<!ENTITY Usagr   SDATA "[Usagr   ]"--Gr cap upsilon with smooth and acute-->
+<!ENTITY urggr   SDATA "[urggr   ]"--Gr sm upsilon with rough and grave-->
+<!ENTITY Urggr   SDATA "[Urggr   ]"--Gr cap upsilon with rough and grave-->
+<!ENTITY usggr   SDATA "[usggr   ]"--Gr sm upsilon with smooth and grave-->
+<!ENTITY Usggr   SDATA "[Usggr   ]"--Gr cap upsilon with smooth and grave-->
+<!ENTITY urcgr   SDATA "[urcgr   ]"--Gr sm upsilon with rough and circum-->
+<!ENTITY Urcgr   SDATA "[Urcgr   ]"--Gr cap upsilon with rough and circum-->
+<!ENTITY uscgr   SDATA "[uscgr   ]"--Gr sm upsilon with smooth and circum-->
+<!ENTITY Uscgr   SDATA "[Uscgr   ]"--Gr cap upsilon with smooth and circum-->
+<!ENTITY ugdgr   SDATA "[ugdgr   ]"--Gr sm upsilon with grave and diaresis-->
+<!ENTITY Ugdgr   SDATA "[Ugdgr   ]"--Gr cap  upsilon with grave and diaresis-->
+<!ENTITY ucdgr   SDATA "[ucdgr   ]"--Gr sm upsilon with circum and diaresis-->
+<!ENTITY Ucdgr   SDATA "[Ucdgr   ]"--Gr cap  upsilon with circum and diaresis-->
+<!ENTITY Uadgr   SDATA "[Uadgr   ]"--Gr cap upsilon with acute and diaresis-->
+<!ENTITY uadgr   SDATA "[uadgr   ]"--Gr sm upsilon with acute and diaresis-->
+<!ENTITY ohigr   SDATA "[ohigr   ]"--Gr sm omega with iota-->
+<!ENTITY OHigr   SDATA "[OHigr   ]"--Gr cap omega with iota-->
+<!ENTITY ohrigr  SDATA "[ohrigr  ]"--Gr sm omega with rough and iota-->
+<!ENTITY OHrigr  SDATA "[OHrigr  ]"--Gr cap omega with rough and iota-->
+<!ENTITY ohsigr  SDATA "[ohsigr  ]"--Gr sm omega with smooth and iota-->
+<!ENTITY OHsigr  SDATA "[OHsigr  ]"--Gr cap omega with smooth and iota-->
+<!ENTITY ohaigr  SDATA "[ohaigr  ]"--Gr sm omega with acute and iota-->
+<!ENTITY OHaigr  SDATA "[OHaigr  ]"--Gr cap omega with acute and iota-->
+<!ENTITY ohgigr  SDATA "[ohgigr  ]"--Gr sm omega with grave and iota-->
+<!ENTITY OHgigr  SDATA "[OHgigr  ]"--Gr cap omega with grave and iota-->
+<!ENTITY ohcigr  SDATA "[ohcigr  ]"--Gr sm omega with circum and iota-->
+<!ENTITY OHcigr  SDATA "[OHcigr  ]"--Gr cap omega with circum and iota-->
+<!ENTITY ohraigr SDATA "[ohraigr ]"--Gr sm omega with rough, acute and iota-->
+<!ENTITY OHraigr SDATA "[OHraigr ]"--Gr cap omega with rough, acute and iota-->
+<!ENTITY ohsaigr SDATA "[ohsaigr ]"--Gr sm omega with smooth, acute and iota-->
+<!ENTITY OHsaigr SDATA "[OHsaigr ]"--Gr cap omega with smooth, acute and iota-->
+<!ENTITY ohrgigr SDATA "[ohrgigr ]"--Gr sm omega with rough, grave and iota-->
+<!ENTITY OHrgigr SDATA "[OHrgigr ]"--Gr cap omega with rough, grave and iota-->
+<!ENTITY ohsgigr SDATA "[ohsgigr ]"--Gr sm omega with smooth, grave and iota-->
+<!ENTITY OHsgigr SDATA "[OHsgigr ]"--Gr cap omega with smooth, grave and iota-->
+<!ENTITY ohrcigr SDATA "[ohrcigr ]"--Gr sm omega with rough, circum and iota-->
+<!ENTITY OHrcigr SDATA "[OHrcigr ]"--Gr cap omega with rough, circum and iota-->
+<!ENTITY ohscigr SDATA "[ohscigr ]"--Gr sm omega with smooth, circum and iota-->
+<!ENTITY OHscigr SDATA "[OHscigr ]"--Gr cap omega with smooth, circum and
+ iota-->
+<!ENTITY ohrougr SDATA "[ohrougr ]"--Gr sm omega with rough-->
+<!ENTITY OHrougr SDATA "[OHrougr ]"--Gr cap omega with rough-->
+<!ENTITY ohsmogr SDATA "[ohsmogr ]"--Gr sm omega with smooth-->
+<!ENTITY OHsmogr SDATA "[OHsmogr ]"--Gr cap omega with smooth-->
+<!ENTITY ohgragr SDATA "[ohgragr ]"--Gr sm omega with grave-->
+<!ENTITY OHgragr SDATA "[OHgragr ]"--Gr cap omega with grave-->
+<!ENTITY ohacugr SDATA "[ohacugr ]"--Gr sm  omega with acute-->
+<!ENTITY OHacugr SDATA "[OHacugr ]"--Gr cap omega with acute-->
+<!ENTITY ohcirgr SDATA "[ohcirgr ]"--Gr sm omega with circum-->
+<!ENTITY OHcirgr SDATA "[OHcirgr ]"--Gr cap omega with circum-->
+<!ENTITY ohragr  SDATA "[ohragr  ]"--Gr sm omega with rough and acute-->
+<!ENTITY OHragr  SDATA "[OHragr  ]"--Gr cap omega with rough and acute-->
+<!ENTITY ohsagr  SDATA "[ohsagr  ]"--Gr sm omega with smooth and acute-->
+<!ENTITY OHsagr  SDATA "[OHsagr  ]"--Gr cap omega with smooth and acute-->
+<!ENTITY ohrggr  SDATA "[ohrggr  ]"--Gr sm omega with rough and grave-->
+<!ENTITY OHrggr  SDATA "[OHrggr  ]"--Gr cap omega with rough and grave-->
+<!ENTITY ohsggr  SDATA "[ohsggr  ]"--Gr sm omega with smooth and grave-->
+<!ENTITY OHsggr  SDATA "[OHsggr  ]"--Gr cap omega with smooth and grave-->
+<!ENTITY ohrcgr  SDATA "[ohrcgr  ]"--Gr sm omega with rough and circum-->
+<!ENTITY OHrcgr  SDATA "[OHrcgr  ]"--Gr cap omega with rough and circum-->
+<!ENTITY ohscgr  SDATA "[ohscgr  ]"--Gr sm omega with smooth and circum-->
+<!ENTITY OHscgr  SDATA "[OHscgr  ]"--Gr cap omega with smooth and circum-->
+<!ENTITY rrougr  SDATA "[rrougr  ]"--Gr sm rho with rough-->
+<!ENTITY Rrougr  SDATA "[Rrougr  ]"--Gr cap Rho with rough-->
+<!ENTITY diggr   SDATA "[diggr   ]"--Gr sm digamma-->
+<!ENTITY kogr    SDATA "[kogr    ]"--Gr sm koppa-->
+<!ENTITY stgr    SDATA "[stgr    ]"--Gr small stigma-->
+<!ENTITY samgr   SDATA "[samgr   ]"--Gr sm sampi-->
+<!ENTITY cogr    SDATA "[ckgr    ]"--Gr colon or raised dot-->
+<!ENTITY qmgr    SDATA "[qmgr    ]"--Gr question mark-->
