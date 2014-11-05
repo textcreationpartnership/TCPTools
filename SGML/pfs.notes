@@ -1,0 +1,169 @@
+   o Several similar, but much less common character mergers, or
+   character
+      substitutions. These fall into many categories.. Not all are
+      losses, since
+      they can be reversed. But some are. Would require a lot of
+      analysis to
+      determine which ones were truly lossy. I.e. which ones represent
+      a 
+      many-to-one conversion which cannot be reversed.
+
+      -- SGML distinguishes two characters based on sense, but Unicode
+          chose to regard them as the same, so XML collapses the
+          distinction
+          made in the SGML. 
+             E.g. Venus and female --> Venus/female
+                    Mars and male --> Mars/male
+                    Trine and Triangle --> TRIANGLE
+                    Purify (alchem) and South Node (astrol) -->
+                    DESCENDING NODE
+                    Ezh and (chem) DRAM --> LATIN SMALL LETTER EZH
+                    (U+0292)
+                    Moon (generic) and first quarter moon --> FIRST
+                    QUARTER MOON (too specific)
+
+     -- SGML defines a character not present in Unicode. XML
+     substitutes
+        something similar, either similar in sense or similar in
+        appearance Eg
+             (greek) asterisc  --> Syriac Harklean ASTERISCUS (similar
+             in
+                    appearance and meaning, but the Syriac character is
+                    RTL)
+             (greek) hyperlemnisc --> (mathematical) DOT MINUS.
+             (similar in appearance)
+             (greek) left diple --> XML displays as LEFT POINTING ANGLE
+             QUOTATION MARK (ditto)
+             (greek) lemnisc or double-dotted obelus --> XML displays
+             as (maths) DIVISION SIGN
+             (astrol) sextile (variant glyph) --> XML SIX POINTED BLACK
+             STAR (appearance)
+             (astrol) trine (variant glyph) --> (logic) ASSERTION
+             (appearance only)
+             (astrol) stella (variant glyph for 'star') --> EIGHT
+             POINTED BLACK STAR (loss of precision)
+             (alchem) bezoar minerale --> LEO (U+264C) -- reproducing
+             the same substitution made
+                    by the original printer -- he hijacked an available
+                    'sort'; so did we in the XML.
+             (alchem) minim (unit of measure) --> SCORPIUS  (appearance
+             only)
+             (alchem) minim (altern. glyph) --> VIRGO (appearance only)
+             (alchem) oil (variant glyph) --> CIRCLED WHITE BULLET
+             (U+29BE) (appearance only)
+             (alchem) rock salt (salt gemme) --> TAURUS (U+2620)
+             (appearance only)
+             (alchem) urine  --> SQUARED DOT OPERATOR (maths) (U+22A1)
+             appearance only
+             (dance notation) male dancer --> SUN  (perh appropriate
+             because symbol repurposed in source, but SGML does
+             preserve the distinction lost in the XML)
+             (dance notation) female dancer --> FIRST QUARTER MOON
+             (ditto)
+             (dance notation) START OVER --> DOTTED CROSS (appearance
+             only)
+             abbrapo (abbreviating apostrophe) used in French and Latin
+             abbreviations; not reallyl very different from ordinary
+             apostrophe. --> RIGHT SINGLE QUOT MARK
+             per sign (glyph variant, 18th cent misuse) --> SCRIPT
+             CAPITAL P  (for want of something better. Cannot be
+             reliably expanded to "per")
+             abbreviating zed (e.g. hz = habet) --> SMALL LETTER Z WITH
+             RETROFLEX HOOK (for want of something better, provides
+             slight visual distinction.)
+             ambiguous 'swash' V (falls in sometimes with U sometimes
+             with V) --> LATIN CAPITAL LETTER V WITH HOOK (provides
+             slight visual distinction.)
+              s-like 'shilling' separator e.g. 3/6, but with the "/"
+              like an "s" entity "shilling" --> LATIN SMALL LETTER ESH.
+              appearance and ~~sense.
+             ambiguous punctuation mark (punc) --> BLACK SMALL SQUARE
+             new moon --> BLACK CIRCLE (appearance only)
+             new moon (variant glyph) --> SHADOWED WHITE CIRCLE
+             (appearnce only)
+             quadrine (astrol.) --> WHITE SQUARE (appearance only)
+             semisextile (astrol.) --> XOR sign (maths) (appearance
+             only)
+             L-shaped decimal separator --> LEFT FLOOR
+             'ration' (a special use of the Rx symbol for ratio(n)) -->
+             SCRIPT CAPITAL R  for want of something better
+             'surd' root radical (a special use of the Rx symbol) -->
+             SCRIPT CAPITAL R  ditto
+
+     -- SGML defines a glyph (i.e. without much or any semantic load),
+         but XML substitutes a Unicode character that *does* have
+         (inappropriate) semantic weight, e.g.
+              SGML circdot --> CIRCLED DOT OPERATOR (the former is
+                 used simply for the shape (basically the SUN symbol
+                 without the meaning "Sun"); the XML uses a
+                 mathematical
+                 symbol that looks the same but has an inappropriate
+                 sense.)
+             SGML cross (generic) --> HEAVY GREEK CROSS. (we saw no
+             need to
+                  distinguish various forms of cross, most of the time,
+                  so we use
+                  a generic 'cross' entity, but when mapping to XML,
+                  you need to
+                  target just one of the innumable crosses; we picked
+                  HEAVY GREEK.)
+             SGML dtridot (three dots in a triangle pointing down -- a
+             common 
+                  abbreviation sign) --> (logic) BECAUSE symbol
+                  (appearance only)
+             SGML leaf (generic foliate punctuation mark) --> ROTATED
+             FLORAL HEART BULLET
+                  (does not really match any of the source forms, but
+                  we had to pick
+                  one Unicode point to map our generic entity to....)
+            SGML quaddot (generic punctuation mark like ::) --> XML
+            PROPORTION (maths)
+                  -- appearance only.
+            SGML trefoil (common 17th-cent dingbat of unclear meaning)
+            --> BLACK CLUB SUIT
+                  -- very approximate imitation of the appearance, no
+                  sense connection at all
+            SGML tridot common three-dot punctuation mark --> XML
+            THEREFORE sign (logic).
+                  (appearance only)
+            SGML lpunctel (reversed punctus elevatus punctuation) -->
+            not in Unicode. Substitute ARABIC SEMICOLON
+                   -- which is roughly correct in sense and appearance
+                   but is RTL!                 
+
+     -- SGML and Unicode both have the distinction, but font support
+     requires
+         substitution of the 'wrong' code point
+               SMALL KOPPA --> UPPER CASE KOPPA  (this code point
+               recently
+                    re-catalogued as upper case; fonts mostly follow
+                    the older
+                    classification as lower case)
+               SMALL STIGMA --> UPPER CASE STIGMA (ditto)
+
+      -- SGML distinguishes two glyphes, collapsed into a single
+      character in
+         the XML
+                 E.g.
+                 Reversed SIGMA --> collapsed into ordinary SIGMA
+                 Reversed GAMMA --> collapsed into ordinary GAMMA
+                 Reversed RHO  --> collapsed into ordinary RHO
+                 Inverted pilcrow --> collapsed into reversed pilcrow
+
+        -- SGML defines a glyph, XML substitutes another one, vaguely
+        similar
+                 half-cross --> RIGHT TACK
+                 left half-cross --> LEFT TACK
+
+       [there are a bunch of substitutions with character strings, e.g.
+       Welsh double ll --> {ll}
+           insular G --> {G}  too many to describe.  Most these do not
+           represent losses, however]
+
+
+There are probably more. I found these by searching for the word
+"display" on 
+this page:
+http://www.textcreationpartnership.org/docs/dox/charmap.htm
+
+pfs
