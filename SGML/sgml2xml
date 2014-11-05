@@ -1,51 +1,5 @@
-#!/bin/sh
-cat > HEAD <<EOF 
-<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite 1.0//EN" 
-[
-<!ENTITY mdash "[{[#x2014]}]">
-<!ENTITY amp "&amp;">
-]>
-EOF
-cat > clean.pl<<EOF
-while (<>) {
-s/\[{\[/\&/g;
-s/\]}\]/;/g;
-s/\[ldquo \]/&#x0201D/g;
-s/\[rdquo \]/&#x0201D/g;
-print;
-}
-EOF
-die()
-{
-    echo; echo
-    echo "ERROR: $@."
-    D=`date "+%Y-%m-%d %H:%M:%S.%N"`
-    echo "This was a fatal error. $D"
-    exit 1
-}
-
-HERE=`pwd`
-if test -f $1 
-then 
-     echo Read file $1
-else
-  echo File $1 does not exist
-  die
-fi
-D=`dirname $1`
-F=`basename $1`
-B=`basename $1 .sgml`
-X=`dirname $0`
-APPHOME=`(cd $X; pwd)`
-cd $D
-grep -q DOCTYPE $F|| (mv $F temp; cat HEAD temp > $F)
-osx -c/usr/share/sgml/tei/catalog -xlower -xcomment -xempty -xndata  $F | perl clean.pl > /tmp/$$.xml
-xsltproc $APPHOME/tei2tei.xsl /tmp/$$.xml | sed -e '/^ *$/d' > /tmp/$$.p4xml
-xsltproc $APPHOME/../../../Sourceforge/trunk/P4toP5/p4top5.xsl /tmp/$$.p4xml > $B.xml
-saxon $B.xml uniformHdr.xsl oldID=$2 > x.xml
-mv x.xml $B.xml
-rm /tmp/$$.xml /tmp/$$.p4xml
-cd $HERE
-echo Wrote $HERE/$B.xml
-
-
+F=`basename $1 .sgm`
+osx -ccatalog -xlower -xcomment -xempty -xno-expand-internal  $F.sgm >$F.xmllike
+cp Eebochar-xml-all.ent intEntities.dtf 
+xmllint --dropdtd --noent --encode utf-8 --format $F.xmllike > $F.xml
+rm $F.xmllike

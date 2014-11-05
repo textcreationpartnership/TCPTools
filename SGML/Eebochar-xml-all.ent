@@ -469,7 +469,7 @@
 <!ENTITY rrepeat "&#x1D107;"> <!--MUSICAL SYMBOL RIGHT REPEAT SIGN musical right repeat symbol resembles :||-->
 <!ENTITY sharp2 "&#xE065;"> <!-- musical sharp symbol, x-shaped variant form; possibly ancestor of modern double sharp; use this entity regardless of which meaning it has; use this entity if shape is roughly like x; later versions resemble modern sharp symbol. for modern #-shaped sharp (with horizontal strokes), use ISO entity sharp, &#x1D12A; MUSICAL SYMBOL DOUBLE SHARP (but display U+266F, &#x266F;).-->
 <!ENTITY sharpb "&#xE066;"> <!-- musical sharp symbol resembling mirror image of modern natural symbol (Use for p/d-shaped symbol regardless of whether it equates to a sharp or a natural; for b/q-shaped symbol use ISO natur entity), U+1D1CF MUSICAL SYMBOL CROIX.-->
-<!ENTITY slur "&#x1D177U1D178;"> <!--MUSICAL SYMBOL BEGIN SLUR MUSICAL SYMBOL END SLUR (combining) musical character treated as two characters in Unicode, non-displayable. For display purposes substitute the single LIGATURE TIE (COMBINING DOUBLE BREVE BELOW) combined with non-breaking spaces to make it a spacing character. Capture as slur regardless of whether it appears above (curved down) or below (curved up), since these are positional glyph variants.-->
+<!ENTITY slur "&#x1D177;&#x1D178;"> <!--MUSICAL SYMBOL BEGIN SLUR MUSICAL SYMBOL END SLUR (combining) musical character treated as two characters in Unicode, non-displayable. For display purposes substitute the single LIGATURE TIE (COMBINING DOUBLE BREVE BELOW) combined with non-breaking spaces to make it a spacing character. Capture as slur regardless of whether it appears above (curved down) or below (curved up), since these are positional glyph variants.-->
 <!ENTITY timeimperf-prolatimperf "&#x1D1CB;"> <!--MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA musical mensuration symbol indicating  time imperfect (a c-shaped broken circle) and prolation imperfect (no dot or prick)-->
 <!ENTITY timeimperf-prolatimperf-rev "&#x1D1CC;"> <!--MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-1 musical mensuration symbol indicating  time imperfect (a c-shaped broken circle) and prolation imperfect (no dot or prick) reversed to indicate diminution-->
 <!ENTITY timeimperf-prolatimperf-rev-str "&#x1D1CE;"> <!--MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-3 musical mensuration symbol indicating  time imperfect (a c-shaped broken circle) and prolation imperfect (no dot or prick) reversed and with a stroke to indicate double diminution-->
@@ -488,7 +488,7 @@
 <!ENTITY dnc-repeat "&#xE039;"> <!-- in dance instructions: repeat preceding strain once.-->
 <!ENTITY dnc-repeat2 "&#xE038;"> <!-- in dance instructions: repeat preceding strain twice.-->
 <!ENTITY dnc-repeat3 "&#xE099;"> <!-- in dance instructions: repeat preceding strain thrice.-->
-<!ENTITY dnc-male "&#xE09G;"> <!-- in dance instructions: designates male dancer; repurposing of symbol for Sun (or gold); display as Sun.-->
+<!ENTITY dnc-male "&#xE10A;"> <!-- in dance instructions: designates male dancer; repurposing of symbol for Sun (or gold); display as Sun.-->
 <!ENTITY dnc-female "&#xE09C;"> <!-- in dance instructions: designates female dancer; repurposing of symbol for Moon (or silver; display as FIRST QUARTER MOON.-->
 <!ENTITY dnc-startover "&#xE009;"> <!-- in dance instructions: repeat entire tune. Possibly a variant of the standard musical Repeat sign. Display as DOTTED CROSS.-->
 <!ENTITY aacute "&#x00E1;"> <!--LATIN SMALL LETTER A WITH ACUTE -->
