@@ -1,0 +1,8 @@
+#!/bin/sh
+export B=`basename $1 .xml`
+export D=`echo $B | sed 's:\([A-Z][0-9][0-9]\).*:\1:'` 
+mkdir -p Texts/$D
+perl -p  -e 's+http://www.lib.umich.edu/tcp/docs/code/+../../+' $1 > Texts/$D/$B.tcp
+perl -p -i -e 's+http://www.textcreationpartnership.org/docs/code/eebo2prf.xml.dtd+../../eebo2prf.xml.dtd+' Texts/$D/$B.tcp
+xmllint --noout --valid Texts/$D/$B.tcp
+cp tcp/$B.hdr Texts/$D/

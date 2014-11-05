@@ -1,0 +1,13 @@
+<!-- Character entity set for XML default characters -->
+
+<!-- Typical invocation:
+   <!ENTITY % XMLdefault PUBLIC
+     "EEBO 2011-1//ENTITIES XML 1//EN">
+   %XMLdefault;
+-->
+
+<!ENTITY amp SDATA "&amp;"--=AMPERSAND -->
+<!ENTITY lt SDATA "&lt;"--=LESS THAN -->
+<!ENTITY gt SDATA "&gt;"--=GREATER THAN -->
+<!ENTITY apos SDATA "&apos;"--=APOSTROPHE -->
+<!ENTITY quot SDATA "&quot;"--=QUOTATION MARK -->

@@ -1,0 +1,1208 @@
+HEADER {
+	font-family: "courier new",courier,monospace;
+	font-size: 14pt;
+	}
+
+FILEDESC, ENCODINGDESC, PROFILEDESC, REVISIONDESC {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #FFFFCC;
+}
+
+
+
+TITLE {
+        display: block;
+        font-style: italic;
+        }
+        
+AUTHOR {
+        display:block;
+        }
+        
+IDNO   {
+        display:block;
+        }
+        
+IDNO:before {content: attr(TYPE) ": " ; }
+
+
+IDNO[TYPE~="DLPS"]:before {content: "TCP: " ; }
+
+AVAILABILITY > P {
+        font-family: "courier new","courier",monospace;
+        font-size: 10pt ; 
+        }
+
+ENCODINGDESC P {
+        font-family: "courier new","courier",monospace;
+        font-size: 10pt ; 
+        }
+
+NOTESSTMT { display: block ; }
+
+NOTESSTMT > NOTE {
+        display: list-item;
+        }
+
+LANGUSAGE { display: none ; }
+        
+SERIESSTMT {
+        display: block;
+        font-size: 10pt;
+        }
+        
+HEADER DATE { color: black ; }
+
+SOURCEDESC {
+        display: block;
+        font-size: 10pt ;
+        }
+        
+BIBLFULL:before {content: "Source: " ; }
+
+KEYWORDS {
+         display: block;
+         }
+         
+
+KEYWORDS:before { content: "Subject headings: " ; }
+
+TERM { display: list-item; }
+
+
+CHANGE {
+        display: list-item;
+       }
+       
+       
+CHANGE > ITEM {
+        display: inline;
+        }
+
+RESPSTMT:before { content: " " ; }
+
+
+RESPSTMT:after { content: " " ; }
+
+REVISIONDESC:before {content: "Processing history of this file: " ; }
+	
+TEMPHEAD {
+	display: none;
+	}
+	
+IDG  {
+	display: block;
+	font-size: 8pt;
+	color: gray;
+	margin-bottom: 3em;
+	font-family: "arial unicode ms", sans-serif; 
+	margin-left: 10px;
+	direction: ltr ;
+	
+	}
+
+IDG:before {content: "TCP id " attr(ID)	; }
+
+TEXT { 
+	font-family: "arial unicode ms", sans-serif; 
+	margin-left: 10px;
+	direction: ltr ;
+	}
+	
+BIBNO:before { content: "bib no. (" attr(T) ") " ; }	
+
+BIBNO {
+	display: block;
+	}
+
+STC:before { content: "STC (" attr(T) ") " ; }
+
+
+STC {
+	display: block;
+	}
+
+VID:before { content: "image set " ; }
+
+
+VID {
+	display: block;
+	}
+
+EEBO > TEXT:before {content: "Primary language is " attr(LANG) "."; 
+                    display: block;
+                    font-size: 8pt;
+                    color: gray;
+                   }
+
+GROUP > TEXT:before {content: "Primary language is " attr(LANG) "."; 
+                    display: block;
+                    font-size: 8pt;
+                    color: gray;
+                   }
+
+Q > TEXT:before {content: "(embedded document in " attr(LANG) ")"; 
+                    display: block;
+                    font-size: 8pt;
+                    color: gray;
+                   }
+
+P > TEXT:before {content: "(embedded document in " attr(LANG) ")"; 
+                    display: block;
+                    font-size: 8pt;
+                    color: gray;
+                   }
+
+
+ABBR { 
+       display: inline;
+       text-decoration: underline;
+	
+	}
+	
+ABBR[EXPAN]:after {
+        content: " (" attr(EXPAN) ") ";
+        color: green;
+        font-size: 8pt;
+        }
+        
+ABBR[REND="smallCaps"] { font-variant: small-caps; font-weight: inherit; font-style: inherit; }
+
+
+ADD:before {
+	content: "{";
+	}
+	
+ADD {
+	text-decoration: line-through;
+	}
+	
+ADD:after {
+	content: "}";
+	}
+
+ARGUMENT {
+        display: block;
+        margin-left: 20%;
+        margin-right:20%;
+        background-color: #FFCC66;
+        margin-top: 1em;
+        margin-bottom: 1em;
+         }
+         
+         
+ARGUMENT > HEAD {
+        display: block;
+        font-size: 14pt;
+        color: green;
+        text-align: center;
+        } 
+
+
+DIV2 > HEAD {display: block; color: #FF0000;  font-size: 16pt; }
+DIV3 > HEAD {display: block; color: #6666FF;  font-size: 16pt; }
+DIV4 > HEAD {display: block; color: #FF3300;  font-size: 14pt; }
+DIV5 > HEAD {display: block; color: #FF9966;  font-size: 14pt; }
+DIV6 > HEAD {display: block; color: #FF9966;  font-size: 12pt; }
+DIV7 > HEAD {display: block; color: #FF3399;  font-size: 12pt; }
+
+DIV1[REND~="small"] {
+       font-size: smaller;
+       }
+
+DIV2[REND~="small"] {
+       font-size: smaller;
+       }
+DIV3[REND~="small"] {
+       font-size: smaller;
+       }
+DIV4[REND~="small"] {
+       font-size: smaller;
+       }
+DIV5[REND~="small"] {
+       font-size: smaller;
+       }
+DIV6[REND~="small"] {
+       font-size: smaller;
+       }
+DIV7[REND~="small"] {
+       font-size: smaller;
+       }
+
+
+DIV1[REND~="italic"] {
+     font-style: italic;
+     font-weight: normal;
+     }
+DIV2[REND~="italic"] {
+     font-style: italic;
+     font-weight: normal;
+     }
+DIV3[REND~="italic"] {
+     font-style: italic;
+     font-weight: normal;
+     }
+DIV4[REND~="italic"] {
+     font-style: italic;
+     font-weight: normal;
+     }
+DIV5[REND~="italic"] {
+     font-style: italic;
+     font-weight: normal;
+     }
+DIV6[REND~="italic"] {
+     font-style: italic;
+     font-weight: normal;
+     }
+DIV7[REND~="italic"] {
+     font-style: italic;
+     font-weight: normal;
+     }
+
+DIV1[REND~="centerJustify"] {
+     text-align: center;
+     }
+DIV2[REND~="centerJustify"] {
+     text-align: center;
+     }
+DIV3[REND~="centerJustify"] {
+     text-align: center;
+     }
+DIV4[REND~="centerJustify"] {
+     text-align: center;
+     }
+DIV5[REND~="centerJustify"] {
+     text-align: center;
+     }
+DIV6[REND~="centerJustify"] {
+     text-align: center;
+     }
+DIV7[REND~="centerJustify"] {
+     text-align: center;
+     }
+        
+BACK:before { 
+	content: "[Back matter]";
+	color: red;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}
+	
+BIBL {
+	display: inline;
+	color: #CC0099;
+	}
+
+EPIGRAPH > BIBL:before { content: "--" ; }
+Q > BIBL:before { content: "--" ; }
+
+EPIGRAPH > BIBL {
+        display: block;
+        text-align: right;
+        color: #CC0099;
+        }
+
+Q > BIBL {
+        display: block;
+        text-align: right;
+        color: #CC0099;
+        }
+	
+BYLINE {
+	display: block;
+	background-color: #CCFFCC;
+	}
+
+BODY:before {
+	content: "[Text Body]";
+	color: red;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}
+	
+	
+CLOSER {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+	font-family: "Zapf Chancery", cursive;
+	font-size: 14pt;
+	}
+
+DATE {
+       display: inline;
+       color: magenta;
+     }
+
+
+DATELINE {
+       display: block;
+       text-align: right;
+       font-size: 9pt;
+       }
+       
+       
+DIV1, DIV2, DIV3, DIV4, DIV5, DIV6, DIV7 {
+	display: block;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	}
+	
+DIV1:before {
+	content: "[" attr(TYPE) " " attr(SUBTYPE) " " attr(N) "]"; color: #FF0000;
+		}
+DIV2:before {
+	content: "[" attr(TYPE) " " attr(N) "]"; color: #FF0000;
+		}
+DIV3:before {
+	content: "[" attr(TYPE) " " attr(N) "]"; color: #6666FF;
+		}
+DIV4:before {
+	content: "[" attr(TYPE) " " attr(N) "]"; color: #FF3300;
+		}
+DIV5:before {
+	content: "[" attr(TYPE) " " attr(N) "]"; color: #FF9966;
+		}
+DIV6:before {
+	content: "[" attr(TYPE) " " attr(N) "]"; color: #FF9966;
+		}
+DIV7:before {
+	content: "[" attr(TYPE) " " attr(N) "]"; color: #FF3399;
+		}
+
+DIV1[TYPE="title page"] {
+        font-size: 14pt;
+        background-color: #CCFFCC;
+       }
+
+
+
+EPIGRAPH {
+	display: block;
+	text-align: center;
+	}
+		
+FIGURE:before {
+	content: "FIGURE" ;
+	text-decoration: underline;
+	}
+
+FIGURE {
+         display: block;
+         background: yellow; 
+	 margin-top: 1em;
+	 margin-bottom: 1em;
+	 margin-left: 20%;
+	 margin-right: 20%;
+	 padding: 3px 3px 3px 3px;
+        }
+
+FIGURE > HEAD { display: block;
+              color: blue;
+              font-size: 12pt;
+            }
+            
+FIGDESC { display: block;
+          font-size: small;
+          color: brown;
+         }
+         
+FIGDESC:before { content: "[" ; }
+FIGDESC:after  { content: "]" ; }
+
+
+FIGURE[REND="inline"] {
+	display: inline;
+	background-color: yellow;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+
+FIGURE[REND="inline"] > HEAD { display: inline;
+              color: blue;
+              font-size: 12pt;
+            }
+            
+FIGURE[REND="inline"] > FIGDESC { display: inline;
+          font-size: small;
+          color: brown;
+         }
+
+FRONT {display: block;
+       margin-top: 1em;
+       }
+       
+FRONT:before {
+        display: block;
+	content: "[Front matter]";
+	color: red;
+	margin-top: 1em;
+	}
+	
+GAP    {
+	display: inline;
+	
+}
+
+GAP:before {
+	content: attr(DISP) ;
+	}
+
+HEAD {
+	display: block;
+ 	color: red; 
+ 	font-size: 18pt;
+	}
+
+LG HEAD { font-size: 14pt; }
+LIST HEAD { font-size: 14pt; }
+
+HEADNOTE {
+        display: block;
+        margin-left: 20%;
+        margin-right:20%;
+        background-color: #FFCC66;
+        margin-top: 1em;
+        margin-bottom: 1em;
+         }
+         
+         
+HEADNOTE > HEAD {
+        display: block;
+        font-size: 14pt;
+        color: green;
+        text-align: center;
+        } 
+
+HI {
+	font-style: italic;
+	}
+	
+HI > HI {
+	font-style: normal;
+	font-weight: normal;
+	}	
+
+HI > HI > HI {
+        font-style: normal;
+        font-weight: bold;
+        }
+        
+HI[REND~="small"] {
+        font-size: smaller;
+        }
+        
+HI[REND~="large"] {
+        font-size: larger;
+        }
+
+HI[REND~="rightJustify"] {
+        text-align: right;
+        }
+        
+HI[REND~="blackletterType"] {
+        font-style: normal;
+        font-weight: bolder;
+        } 
+
+HI[REND~="blackletter"] {
+        font-style: normal;
+        font-weight: bolder;
+        } 
+
+HI[REND~="FrakturType"] {
+        font-style: normal;
+        font-weight: bolder;
+        } 
+
+HI[REND~="bold"] {
+        font-style: normal;
+        font-weight: bolder;
+        } 
+
+HI[REND~="margQuotes"] {
+        display: block;
+        font-style: normal;
+        margin: 0px;
+        padding-left: 20px;
+        background-image: url(http://www.lib.umich.edu/tcp/docs/pix/other/commas1.gif);
+        background-position: left;
+        background-repeat: repeat-y;
+        }
+
+HI[REND~="margDblQuotes"] {
+        display: block;
+        font-style: normal;
+        margin: 0px;
+        padding-left: 20px;
+        background-image: url(http://www.lib.umich.edu/tcp/docs/pix/other/commas1.gif);
+        background-position: left;
+        background-repeat: repeat-y;
+        }
+
+HI[REND~="margSglQuotes"] {
+        display: block;
+        font-style: normal;
+        margin: 0px;
+        padding-left: 20px;
+        background-image: url(http://www.lib.umich.edu/tcp/docs/pix/other/commas2.gif);
+        background-position: left;
+        background-repeat: repeat-y;
+        }
+
+SEG[REND="decorInit"] {
+        font-family: "Script MT Bold", cursive;
+        font-weight: bold;
+        font-size: 300%;
+        line-height: 0.95em;
+        margin-right: 0.05em;
+        margin-bottom: 0.05em;
+        padding-right: 0.1em;
+        padding-left: 0.1em;
+        background-color: #CC9999     ;
+        }
+
+	
+LETTER, LICENSE, FLOATEXT {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #CCFFFF;
+	}
+
+LETTER:before {
+	content: "[quoted letter in" attr(LANG) "]"; color: #FF0000;
+		}
+		
+		
+LICENSE:before {
+	content: "[" attr(SUBTYPE) "license in" attr(LANG) "]"; color: #FF0000;
+		}
+
+		
+FLOATEXT:before {
+	content: "[quoted" attr(TYPE) "in" attr(LANG) "]"; color: #FF0000;
+		}
+		
+		
+	
+LIST {
+	display: block; 
+	margin-top: 1em; 
+	margin-bottom: 1em;
+	margin-left: 1em;
+	}
+
+LIST > HEAD {
+        display: block;
+        font-size: 14pt;
+        color: green;
+        margin-left: 2em;
+        }
+        
+LIST > TRAILER {
+        display: block;
+        font-size: 14pt;
+        color: green;
+        margin-left: 2em;
+        }
+      
+        
+ITEM {
+	display: list-item; 
+	margin-bottom: 1em;
+	margin-left: 2em;
+	list-style-type: disc;
+	}
+	
+ITEM ITEM {
+	display: list-item; 
+	margin-bottom: 1em;
+	margin-left: 2em;
+	list-style-type: circle;
+	}	
+
+ITEM ITEM ITEM {
+	display: list-item; 
+	margin-bottom: 1em;
+	margin-left: 2em;
+	list-style-type: square;
+	}
+	
+ITEM ITEM ITEM ITEM {
+	display: list-item; 
+	margin-bottom: 1em;
+	margin-left: 2em;
+	list-style-type: disc;
+	}	
+	
+
+LABEL + ITEM {
+        display: block;
+        text-indent: 0;
+        margin-left: 3em;
+        font-size: smaller;
+         }
+        
+LABEL + ITEM[ROLE="label"] {
+        display: block;
+        text-indent: 0;
+        margin-left: 3em;
+        color: green;
+        
+         }
+         
+LABEL + ITEM[ROLE="total"] {
+        display: block;
+        text-indent: 0;
+        margin-left: 3em;
+        font-weight: bold;
+        background-color: gray;
+        
+         }         
+        
+LIST > LABEL {
+        display: list-item;
+        font-weight: bold;
+        margin-left: 1em;
+        margin-right: 40%;
+        margin-top: 1em;
+        list-style-type: none;
+	}
+
+LIST > LABEL[ROLE="label"] {
+        display: list-item;
+        font-weight: bold;
+        margin-left: 1em;
+        margin-right: 40%;
+        margin-top: 1em;
+        list-style-type: none;
+        color: green;
+	}
+
+
+ITEM > LABEL {
+	display: inline; 
+	font-style: italic ;  
+	font-weight: bold ; 
+	}
+	
+P > LABEL {
+	display: inline; 
+	font-style: italic ;  
+	font-weight: bold ; 
+	}
+
+L > LABEL {
+	display: inline; 
+	font-style: italic ;  
+	font-weight: bold ; 
+        color: green;
+	}
+
+L > LABEL:before {
+	content: "[";
+	}
+	
+L > LABEL:after {
+	content: "]";
+	}
+
+CELL > LABEL {
+        display: inline;
+        font-style: italic;
+        font-weight: bold;
+        color: green;
+        }
+	
+LB {
+        display: block;
+	
+	}
+	
+LG {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 4em;
+	margin-right: 8em;
+	
+	}
+
+LG:before {
+	content: "[stanza " attr(N) "]";
+	font-size: 8pt;
+	color: green;
+	text-align: center;
+	}
+
+
+LG[TYPE]:before {
+	content: "[" attr(TYPE) " " attr(N) "]";
+	font-size: 8pt;
+	color: green;
+	text-align: center;
+	}
+
+LG > LG {
+        margin-left: 8em;
+        margin-right: 8em;
+        }
+
+LG[REND~="italic"] {
+       font-style: italic;
+       font-weight: normal;
+       }
+
+LG[REND~="centerJustify"] {
+     text-align: center;
+     }
+
+
+L:before { content: attr(N) " "; color: green; font-size: smaller; }
+
+L {
+	display: block;
+	}
+
+L[REND~="rightJustify"] {
+        text-align: right;
+        }
+        
+        
+L[REND~="small"] {
+       font-size: smaller;
+       }
+
+L[REND~="italic"] {
+       font-style: italic;
+       font-weight: normal;
+       }
+       
+L[REND~="indent"] {
+       text-indent: 3em;
+       }
+
+
+Q L {
+       background-color: #FFFFCC;
+       }
+       
+Q[REND="italic"] L {
+       background-color: #FFFFCC;
+       font-style: italic;
+       }
+       
+Q[REND="italic"] L > HI {
+       font-style: normal;
+       }
+
+
+MILESTONE[REND="hr"] {
+	display: block; 
+	text-align: center; 
+	margin-bottom: 3px; 
+	margin-top: 3px; 
+	color: red; 
+	font-size: 12pt;
+	}		
+	
+MILESTONE[REND="hr"]:before {
+	content: "-------------------------------";
+	}
+        
+
+MILESTONE:before {
+	content: "["attr(UNIT) " " attr(N)"]" ;
+	}
+
+MILESTONE {
+        font-size: 9pt;
+        color: green;
+        }
+        
+NOTE:before {
+	content: " ["attr(PLACE)" note "attr(N) ":";
+	}
+
+NOTE:after {
+        content: "] " ; }
+        
+NOTE {
+	font-size: smaller;
+	color: #999900;
+	}
+	
+OPENER {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+	font-family: "Zapf Chancery", cursive;
+	font-size: 14pt;
+	}
+	
+P {
+	display: block; 
+	text-indent: 1em;  
+	font-family: "arial unicode ms", sans-serif;  
+	margin-top: 1em; 
+	}
+
+P[REND~="small"] {
+        font-size: smaller;
+        }
+
+
+P[REND~="large"] {
+        font-size: larger;
+        }
+
+P[REND~="centerJustify"] {
+     text-align: center;
+     }
+
+P[REND~="italic"] {
+       font-style: italic;
+       font-weight: normal;
+       }
+
+P[REND~="blackletterType"] {
+        font-style: normal;
+        font-weight: bolder;
+        } 
+
+P[REND~="FrakturType"] {
+        font-style: normal;
+        font-weight: bolder;
+        } 
+
+P[REND~="roman"] {
+        font-style: normal;
+        font-weight: normal;
+        } 
+
+P[REND="margDots"] {
+        padding-left: 20px;
+        background-image: url(http://www.lib.umich.edu/tcp/docs/pix/other/dots1.gif);
+        background-position: left;
+        background-repeat: repeat-y;
+        }
+
+P[REND="rightJustify"] {
+        display: block;
+        text-indent: 1em;
+        font-family: "arial unicode ms", sans-serif;
+        margin-top: 1em;
+        text-align: right;
+        }
+
+P[REND~="italic"] {
+        font-style: italic;
+        }
+
+[REND~="italic"] > HI {
+        font-style: normal;
+        }
+        
+PB  {
+	display: block; 
+	text-align: center; 
+	margin-bottom: 3px; 
+	margin-top: 3px; 
+	color: gray; 
+	font-size: 8pt;
+	}		
+	
+PB[N]:before {
+	content: "----------page "attr(N)" on image "attr(REF)"---------";
+	}
+	
+PB:before {
+	content: "----------unnumbered page on image "attr(REF)"---------";
+	}
+	
+	
+Q {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #FFFFCC;
+	}
+
+Q[REND~="italic"] {
+       font-style: italic;
+       font-weight: normal;
+       }
+
+Q[REND~="roman"] {
+       font-style: normal;
+       font-weight: normal;
+       }
+       
+Q[REND~="blackletterType"] {
+       font-style: normal;
+       font-weight: bolder;
+       }
+       
+Q[REND~="FrakturType"] {
+       font-style: normal;
+       font-weight: bolder;
+       }
+	
+Q[REND~="margQuotes"] {
+ 	text-indent: 0em;
+	padding-left: 20px;
+        background-image: url(http://www.lib.umich.edu/tcp/docs/pix/other/commas1.gif);
+        background-position: left;
+        background-repeat: repeat-y;
+        }
+
+Q[REND~="margDblQuotes"] {
+ 	text-indent: 0em;
+	padding-left: 20px;
+        background-image: url(http://www.lib.umich.edu/tcp/docs/pix/other/commas1.gif);
+        background-position: left;
+        background-repeat: repeat-y;
+        }
+
+Q[REND~="margSglQuotes"] {
+ 	text-indent: 0em;
+	padding-left: 20px;
+        background-image: url(http://www.lib.umich.edu/tcp/docs/pix/other/commas2.gif);
+        background-position: left;
+        background-repeat: repeat-y;
+        }
+
+Q[REND~="margQuotes"] > P {
+	 text-indent: 0em;
+	}
+        
+Q[REND~="inline"] {
+	display: inline;
+	background-color: #FFFFCC;
+	margin-left: 0%;
+	margin-right: 0%;
+	}
+
+Q[REND~="inline"]:before { content: "`"; }
+Q[REND~="inline"]:after { content: "'"; }
+
+
+Q[REND~="inline"] > Q[REND~="inline"]:before { content: "``"; }
+Q[REND~="inline"] > Q[REND~="inline"]:after { content: "''"; }
+
+
+
+
+Q[REND~="italic"] {
+	background-color: #FFFFCC;
+	font-style: italic ;
+	}
+
+Q[REND~="block"] {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #FFFFCC;
+	}
+
+        
+[REND~="italic"] > HI > HI {
+        font-style: italic; 
+        font-weight: bold;
+        }
+        
+SALUTE { 
+	display: block;
+	color: orange;
+	}
+	
+SALUTE > HI {
+        font-weight: bold;
+        font-style: italic;
+        }
+	
+OPENER SALUTE {
+	display: inline;
+	}
+
+CLOSER SALUTE {
+        display: inline;
+        }
+
+SIGNED {
+        display: block;
+        color: blue;
+       }
+
+       
+SIGNED > HI {
+        font-weight: bold;
+        font-style: italic;
+        }
+        
+       
+OPENER SIGNED {
+	display: inline;
+	}
+
+CLOSER SIGNED {
+        display: inline;
+        }
+        
+SP {
+	display: block;
+	margin-top: 1em;
+	
+	}
+	
+SPEAKER {display: inline;
+         font-style: italic;
+	background-color: #CCCCFF;
+	}
+
+STAGE:before {
+	content: "[";
+	}
+	
+STAGE:after {
+	content: "]";
+	}
+
+STAGE {
+	font-size: smaller;
+	font-style: italic;
+	color: brown;
+	}
+	
+TABLE {
+	display: table; 
+	color: #0099FF ; 
+	margin-top: 1em; 
+	margin-bottom: 1em; 
+	background-color: #FAEBD7;
+	empty-cells: show ;
+	}
+	
+TABLE > HEAD {
+	display: table-caption; 
+	caption-side: top; 
+	color: green;
+	font-size: 12pt;
+	text-align: center;
+	}
+
+TAILNOTE {
+        display: block;
+        margin-left: 20%;
+        margin-right:20%;
+        background-color: #FFCC66;
+        margin-top: 1em;
+        margin-bottom: 1em;
+         }
+         
+         
+TAILNOTE > HEAD {
+        display: block;
+        font-size: 14pt;
+        color: green;
+        text-align: center;
+        } 
+	
+ROW {
+	display: table-row;
+	}
+
+CELL {
+	display: table-cell; 
+	color: #000066; 
+	border: 2px groove #0099FF;
+	vertical-align: middle;
+	}
+
+CELL[ROLE=label] {
+        background-color: yellow;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: baseline;
+        }
+        
+ROW[ROLE=label] > CELL {
+        background-color: yellow;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: baseline;
+        }
+        
+        
+CELL[ROLE=total] {
+        background-color: gray;
+        font-weight: bold;
+        border: 1px solid black; }
+        
+ROW[ROLE=total] > CELL {
+        background-color: gray;
+        font-weight: bold;
+        border: 1px solid black; }
+        
+
+CELL[REND="strikethrough"] { 
+        text-decoration: line-through; 
+        font-style: inherit; 
+        font-weight: inherit; 
+        }
+        
+TABLE > TRAILER {
+	display: block; 
+	color: green;
+	font-size: 12pt;
+	text-align: center;
+	}
+        
+TRAILER {
+        display: block;
+        color: brown;
+        text-align: center;
+        font-size: 14pt;
+	
+	}
+
+SUP {
+      display: inline;
+      vertical-align: super;
+      font-size: 60%;
+     }
+     
+SUB {
+      display: inline;
+      vertical-align: sub;
+      font-size: 60%;
+     }
+     
+     
+ABOVE {
+      line-height: 1.6; 
+      margin-left: -5em; 
+      margin-right: -5em; 
+      vertical-align: 100%;
+      }
+
+
+STAGE[REND~="pars"]:before { content: "("; }
+STAGE[REND~="pars"]:after {content: ")"; }
+
+	
+ADD[REND="onBlank"] { text-decoration: underline; }

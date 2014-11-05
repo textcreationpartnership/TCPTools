@@ -1,0 +1,74 @@
+<!ELEMENT charents o o (char)+>
+<!ELEMENT char - - (ent, equiv+, repl+, comment*)>
+<!ELEMENT ent - - EMPTY>
+<!ELEMENT equiv - - EMPTY>
+<!ELEMENT repl - - EMPTY>
+<!ELEMENT comment - - (#PCDATA)>
+
+<!ATTLIST ent
+	tcp CDATA #REQUIRED
+          src (tcp|isolat1|isolat2|isonum|isotech|isopub|isogrk1|teigrk|isodia|isocyr1) #IMPLIED
+          desc CDATA #IMPLIED
+	  author CDATA #IMPLIED
+          date CDATA #IMPLIED
+>
+<!ATTLIST equiv
+          unic ID #REQUIRED
+          compat (exact|partial|pua) #IMPLIED
+          ver (36|40|41|50|51|52|60) #IMPLIED
+          cc (yes|no) "no"
+          ce CDATA #IMPLIED
+          desc CDATA #IMPLIED
+	  author CDATA #IMPLIED
+          date CDATA #IMPLIED
+>
+<!ATTLIST repl  
+          txt CDATA #REQUIRED
+          sup CDATA #REQUIRED
+          desc CDATA #IMPLIED
+	  author CDATA #IMPLIED
+          date CDATA #IMPLIED
+>                
+<!ATTLIST comment
+	  author CDATA #IMPLIED
+	  date CDATA #IMPLIED
+>
+
+<!--// DESCRIPTION OF TAGS AND ATTRIBUTES:
+
+ENT (empty tag containing entity element)
+
+   TCP (required name of tcp entitiy) e.g. TCP="chacek"
+   SRC (optional name of collection whence this entity came) e.g. SRC="isolat1"
+      OPTIONS: tcp|isolat1|isolat2|isonum|isotech|isopub|isogrk1|teigrk|isodia|isocyrl
+   DESC (optional description of entity) e.g. DESC="LATIN SMALL LETTER C WITH CARON"
+   AUTHOR (optional author user name) e.g. AUTHOR="akuster"
+   DATE (optional date of creation) e.g. DATE="2005-05"
+   
+EQUIV (empty tag containing unicode equivalent for entity element)
+   
+   UNIC (required ID of unicode hex value preceeded by U) e.g. UNIC="U010D"
+   COMPAT (optional character equivalency with unicode) e.g. COMPAT="exact"
+      OPTIONS: exact|partial|pua (pua = private use area)
+   VER (optional unicode version level) e.g VER="41"
+      OPTIONS: 36|40|41
+   CC (yes/no whether character has a composed equivalent)
+   CE (string of characters connected by '+' to create the composed entity) e.g.  CE="0063+030C"
+   DESC (optional description of entity) e.g. DESC="LATIN SMALL LETTER C WITH CARON"
+   AUTHOR (optional author user name) e.g. AUTHOR="akuster"
+   DATE (optional date of creation) e.g. DATE="2005-05"
+   
+REPL (empty tag containing replacement for unicode character viewing)
+   
+   TXT (required replacement text in {brackets} or unicode entity) e.g. TXT="&#x263D;"
+   SUP (required level of support, typeface, browser or platform) e.g. SUP="Arial Unicode MS"
+   DESC (optional description of entity) e.g. DESC="FIRST QUARTER MOON"
+   AUTHOR (optional author user name) e.g. AUTHOR="akuster"
+   DATE (optional date of creation) e.g. DATE="2005-05"
+   
+COMMENT (optional tag containing a comment string)
+   
+   AUTHOR (optional author user name) e.g. AUTHOR="akuster"
+   DATE (optional date of creation) e.g. DATE="2005-05"
+   
+//-->

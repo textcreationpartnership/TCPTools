@@ -1,0 +1,157 @@
+<!-- iso-html.ent
+
+     ISO HyperText Markup Language Entity Set,
+     part of the ISO HyperText Markup Language (ISO-HTML) -
+     an SGML system conforming to International Standard ISO 8879.
+
+ (C) International Organization for Standardization 1997
+
+     Permission to copy in any form is granted for use with
+     conforming systems and applications as defined in ISO 15xxx,
+     provided this copyright notice is included in all copies.
+
+-->
+
+               <!-- Interface for HTML extensions -->
+
+<!-- Extensions may be pre-empted by placing earlier definitions of the
+     following parameter entities in the document type declaration subset -->
+
+<!ENTITY % head.extend   "NOP" -- Extend head content model -->
+<!ENTITY % body.extend   "NOP" -- Extend body content model -->
+
+<!ENTITY % a.addon          "" -- Extend a element attribute set -->
+<!ENTITY % address.addon    "" -- Extend address element attribute set -->
+<!ENTITY % area.addon       "" -- Extend area element attribute set -->
+<!ENTITY % base.addon       "" -- Extend base element attribute set -->
+<!ENTITY % bdo.addon        "" -- Extend bdo element attribute set -->
+<!ENTITY % blockquote.addon "" -- Extend blockquote element attribute set -->
+<!ENTITY % body.addon       "" -- Extend body element attribute set -->
+<!ENTITY % br.addon         "" -- Extend br element attribute set -->
+<!ENTITY % caption.addon    "" -- Extend caption element attribute set -->
+<!ENTITY % dd.addon         "" -- Extend dd element attribute set -->
+<!ENTITY % div.addon        "" -- Extend div element attribute set -->
+<!ENTITY % dl.addon         "" -- Extend dl element attribute set -->
+<!ENTITY % dt.addon         "" -- Extend dt element attribute set -->
+<!ENTITY % form.addon       "" -- Extend form element attribute set -->
+<!ENTITY % head.addon       "" -- Extend head element attribute set -->
+<!ENTITY % hr.addon         "" -- Extend hr element attribute set -->
+<!ENTITY % img.addon        "" -- Extend image element attribute set -->
+<!ENTITY % input.addon      "" -- Extend input element attribute set -->
+<!ENTITY % isindex.addon    "" -- Extend isindex element attribute set -->
+<!ENTITY % iso-html.addon   "" -- Extend iso-html element attribute set -->
+<!ENTITY % li.addon         "" -- Extend li element attribute set -->
+<!ENTITY % link.addon       "" -- Extend link element attribute set -->
+<!ENTITY % map.addon        "" -- Extend map element attribute set -->
+<!ENTITY % meta.addon       "" -- Extend meta element attribute set -->
+<!ENTITY % object.addon     "" -- Extend object element attribute set -->
+<!ENTITY % ol.addon         "" -- Extend ol element attribute set -->
+<!ENTITY % option.addon     "" -- Extend option element attribute set -->
+<!ENTITY % p.addon          "" -- Extend p element attribute set -->
+<!ENTITY % param.addon      "" -- Extend param element attribute set -->
+<!ENTITY % pre.addon        "" -- Extend pre element attribute set -->
+<!ENTITY % select.addon     "" -- Extend select element attribute set -->
+<!ENTITY % span.addon       "" -- Extend span element attribute set -->
+<!ENTITY % table.addon      "" -- Extend table element attribute set -->
+<!ENTITY % td.addon         "" -- Extend td element attribute set -->
+<!ENTITY % textarea.addon   "" -- Extend textarea element attribute set -->
+<!ENTITY % th.addon         "" -- Extend th element attribute set -->
+<!ENTITY % title.addon      "" -- Extend title element attribute set -->
+<!ENTITY % tr.addon         "" -- Extend tr element attribute set -->
+<!ENTITY % ul.addon         "" -- Extend ul element attribute set -->
+
+<!ENTITY % heading.addon    "" -- Extend heading elements attribute set -->
+
+<!ENTITY % physical.style.addon "" -- Extend physical character style
+                                      attribute set -->
+<!ENTITY % logical.style.addon  "" -- Extend logical character style
+                                      attribute set -->
+               <!-- Tokens defined by other standards -->
+
+<!ENTITY % Content-Type "CDATA" -- MIME content type, RFC1521 -->
+<!ENTITY % HTTP-Method "(get | post)" -- as per HTTP/1.1 RFC2068  -->
+<!ENTITY % URL "CDATA" -- Uniform Resource Locator, RFC1808 RFC1738 -->
+
+               <!-- Element tokens -->
+
+<!ENTITY % special "A | BDO | BR | IMG | OBJECT | MAP | SPAN | %body.extend;" >
+
+<!-- Logical character styles -->
+<!ENTITY % logical.styles "CITE | CODE | DFN | EM | KBD | Q | SAMP |
+                           STRONG | VAR" >
+
+<!-- Physical character styles -->
+<!ENTITY % physical.styles "B  | BIG | I | SMALL | STRIKE | SUB | SUP |
+                            TT | U" >
+
+               <!-- Model groups -->
+
+<!-- Block-like elements eg. paragraphs and lists -->
+<!ENTITY % block "BLOCKQUOTE | DIV | DL | FORM | HR | ISINDEX | OL |
+                  P | PRE | TABLE | UL" >
+
+<!-- Form fields - input elements that may appear only within forms -->
+<!ENTITY % form.fields "INPUT | SELECT | TEXTAREA" >
+
+<!-- Character level elements and text strings -->
+<!ENTITY % text "#PCDATA | %physical.styles; | %logical.styles; | %special;" >
+<!ENTITY % form.text "%text; | %form.fields;" >
+
+<!-- Elements that may appear in a form, section or table -->
+<!ENTITY % form.content    "(%block; | %form.text;)+" >
+<!ENTITY % section.content "(%block; | %text; | ADDRESS)+" >
+<!ENTITY % table.content   "(%block; | %text;)*" >
+
+               <!-- Presentation dimensions and alignment -->
+
+<!ENTITY % length "CDATA" -- nn for pixels or nn% for percentage length -->
+
+<!-- Horizontal placement used by justifying elements -->
+<!ENTITY % justify "(left|center|centre|right|justify)" >
+
+<!-- Vertical alignment or placement -->
+<!ENTITY % valign "(top|middle|bottom|baseline)" >
+<!ENTITY % pixels "CDATA" -- integer representing length in pixels -->
+
+               <!-- Presentation styles -->
+
+<!ENTITY % shape     "(rect|circle|poly)" >
+<!ENTITY % InputType "(checkbox | file | hidden | image | password |
+                       radio | reset | submit | text)" >
+
+<!-- Language dependent presentation - bidirectionalism -->
+
+<!ENTITY % dirn "(ltr|rtl)" >
+
+               <!-- Entities for special symbols -->
+
+<!ENTITY quot  CDATA "&#34;"   -- double quote       -->
+<!ENTITY amp   CDATA "&#38;"   -- ampersand          -->
+<!ENTITY lt    CDATA "&#60;"   -- less than          -->
+<!ENTITY gt    CDATA "&#62;"   -- greater than       -->
+<!ENTITY nbsp  CDATA "&#160;"  -- non breaking space -->
+<!ENTITY copy  CDATA "&#169;"  -- copyright sign     -->
+<!ENTITY reg   CDATA "&#174;"  -- registered sign    -->
+
+<!-- These entities require the full ISO 10646 based SGML declaration -->
+
+<!--<!ENTITY zwnj  CDATA "&#8204;"-- -- Zero width non-joiner -->
+<!--<!ENTITY zwj   CDATA "&#8205;"-- -- Zero width joiner     -->
+<!--<!ENTITY lrm   CDATA "&#8206;"-- -- Left-to-right mark    -->
+<!--<!ENTITY rlm   CDATA "&#8207;"-- -- Right-to-left mark    -->
+
+<!-- SHORTREF mapping for the tab character -->
+
+<!ENTITY   nontab  " " >
+<!SHORTREF tabmap  "&#TAB;" nontab >
+<!USEMAP   tabmap  ISO-HTML >
+
+<!-- Use of the tab character is deprecated.  However, to facilitate
+     the preparation of conforming documents by authors who use it,
+     the tab character is allowed and is mapped into a single space. -->
+
+<!-- End of file -->
+
+
+
+

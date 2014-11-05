@@ -1,0 +1,123 @@
+PUBLIC "-//HYPERBIB//DTD newmed//EN"
+        "../dtds/hyperbib.dtd"
+
+PUBLIC "-//HYPERBIB//DTD hb 1.0//EN"
+        "../dtds/hyperbib.dtd"
+
+PUBLIC "MEC 1998-1//ENTITIES MED 1//EN"
+        "../charents/med-sel1.ent"
+
+PUBLIC "-//MERGE//DTD medmap 1.0//EN"
+        "../dtds/qc.dtd"
+
+PUBLIC "-//MEC//DTD MED 2.0//EN"
+        "../dtds/med.dtd"
+
+PUBLIC "-//UMDLPS//DTD corpus v1//EN"
+        "../dtds/vendor.dtd"
+
+PUBLIC "-//UMDLPS//DTD Vendor 1.0//EN"
+        "../dtds/vendor.dtd"
+
+PUBLIC "-//TEI//DTD TEI Lite 1.0//EN"
+        "../dtds/eebo-tei.dtd"
+
+PUBLIC "ISO 8879:1986//ENTITIES Greek Letters//EN"
+        "../charents/isogrk1.ent"
+PUBLIC "ISO 8879-1986//ENTITIES Greek Letters//EN"
+        "../charents/isogrk1.ent"
+
+PUBLIC  "-//TEI TR1 W4:1992//ENTITIES Extra Classical Greek Letters//EN"
+	"../charents/TEIgrk.ent"
+
+ PUBLIC "ISO 8879-1986//ENTITIES Added Latin 1//EN"
+	"../charents/isolat1.ent"
+
+PUBLIC "ISO 8879-1986//ENTITIES Added Latin 2//EN"
+	"../charents/isolat2.ent"
+
+PUBLIC "ISO 8879-1986//ENTITIES Numeric and Special Graphic//EN"
+	"../charents/isonum.ent"
+
+PUBLIC "ISO 8879-1986//ENTITIES Publishing//EN"
+	"../charents/isopub.ent"
+
+PUBLIC "ISO 8879-1986//ENTITIES General Technical//EN"
+	"../charents/isotech.ent"
+        
+SGMLDECL "../dtds/test.dec"
+
+PUBLIC "-//TEI//DTD TEI Lite 1.6//EN"
+       "../dtds/teilite.dtd"
+       
+PUBLIC "-//UMDLPS//DTD Proof 1.0//EN"
+       "../dtds/vproof.dtd"
+       
+PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "../dtds/html401.dtd"
+
+PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+       "../dtds/html40.loose.dtd"
+
+PUBLIC "-//UMDLPS//DTD EEBO 1.0//EN"
+       "../dtds/EEBO_sgm.dtd"
+PUBLIC "-//UMDLPS//DTD EEBO 2.0//EN"
+       "../dtds/EEBO2sgm.dtd"
+       
+      
+PUBLIC "EEBO 2000-1//ENTITIES EEB 1//EN"
+       "../charents/EEBOchar.ent"
+
+PUBLIC "EEBO 2008-1//ENTITIES EEB-ALL//EN"
+       "../charents/Eebochar-all.ent"
+
+PUBLIC "EEBO 2011-1//ENTITIES XML 1//EN"
+       "../charents/xmldefault.ent"
+
+PUBLIC "-//UMDLPS//DTD BOOK 1.0//EN"
+       "../dtds/catalog.dtd"
+
+PUBLIC "-//UMDLPS//DTD corpus v1//EN"
+       "../dtds/cme.dtd"
+
+PUBLIC "-//TEI//DTD cme//EN"
+       "../dtds/cme.dtd"
+
+PUBLIC "-//PFS//DTD BIB 1.0//EN"
+       "../dtds/bkcat3.dtd"
+       
+PUBLIC "-//TEI//DTD Wright2 1.0//EN"
+       "../dtds/wright.dtd"
+       
+PUBLIC "-//UMDLPS//DTD MEDSUP 1.0//EN"
+       "../dtds/medsupp.dtd"
+       
+PUBLIC "-//UMDLPS//DTD EEBOPROOF 1.0//EN"
+       "../dtds/eeboproof.dtd"
+PUBLIC "-//UMDLPS//DTD EEBOPROOF 2.0//EN"
+       "../dtds/eebo2prf.dtd"
+
+PUBLIC "-//UMDLPS//DTD CHARMAP 1.0//EN"
+	"..\dtds\charmap.dtd"
+PUBLIC "-//UMDLPS//DTD TCPDAT 1.0//EN"
+	"..\dtds\mdata1.dtd"
+PUBLIC "-//UMDLPS//DTD TCPDAT 2.0//EN"
+	"..\dtds\mdata2.dtd"
+PUBLIC "-//UMDLPS//DTD TCPDAT 3.0//EN"
+       "../dtds/mdata3.dtd"
+
+
+PUBLIC "-//MERGE//DTD mebnotes 1.0//EN"
+      "../dtds/notes.dtd"
+
+PUBLIC "-//UMDLPS//DTD knight 1.0//EN"
+	"../dtds/knight.dtd"
+
+PUBLIC "-//UMDLPS//DTD knight 2.0//EN"
+	"../dtds/knight.postproc.dtd"
+
+PUBLIC "ISO 8879-1986//ENTITIES Diacritical Marks//EN"
+	"../charents/isodia.ent"
+
+PUBLIC "ISO 8879-1986//ENTITIES Russian Cyrillic//EN"
+	"../charents/isocyr1.ent"

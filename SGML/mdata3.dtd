@@ -1,0 +1,142 @@
+<!-- MDATA dtd for "dat" files: sgml files that serve as tracking databases for TCP products -->
+<!-- author: pfs -->
+
+<!-- version 1.0 -->
+<!-- rev. 9 Jan 2002 to allow multiple "again" fields and add a delivery-date (ddat) field -->
+<!-- rev. 29 March 2002 to provide MD5 attribute on DDAT tag (to house the checksum value -->
+<!-- rev. 29 March 2002 to provide MURP attribute on PDAT and RDAT tags (to identify the proofer and reviewer, normally but not always the same person -->
+<!-- rev. 16 Aug 2002 to add JKIETZMN to MURPs -->
+<!-- rev. 27 Sept 2002 to add RKOR and SCHERERC to MURPs -->
+
+<!-- version 2.0 -->
+<!-- rev. 7 March 2003 to add ADAT and NOTIS elements -->
+<!-- rev. May 2003 to adapt to Evans: author element added; stc made "+"; E token added to T attribute of STC; "aas" token added to T attribute of BIBNO -->
+<!-- rev. October 2003 to allow addauthor, to distinguish personal from corporate authors, and to specify date type -->
+
+<!-- version 3.0 -->
+<!-- rev. March 2006 by recasting all sequential elements from IMGS to ODAT as part of a fully minimizable element REVISION.  This treats all such existing information about the item as restricted to REVISION N="1" but allows the insertion of a second (or third) set of information within REVISION N="2" etc., without removing the previous information. The only information that is overwritten is the R value of the IDG, ie. this attribute records only the most recent review location. Existing information (from the previous revision) is implicitly qualified by being within revision 1, but for convenience of string searches, should also be explicitly qualified by use of the new attribute REV on elements IMGS KB and V, so as to produce e.g. {IMGS REV="1"}14{/IMGS> but leave within revision 2 an unqualified {IMGS}47{/IMGS} --> 
+<!-- rev. July 2006 to add Gale Content Set identifier as attribute of VID -->
+<!-- rev. Aug 2006 to add reviewer tokens (routinely added throughout as new reviewers join staff) and invoke this dtd with a public identifier as follows: -->
+<!-- new public identifier: DOCTYPE MDATA PUBLIC "-//UMDLPS//DTD TCPDAT 3.0//EN" -->
+<!-- system identifier now: mdata3.dtd (older versions may be retained as mdata1.dtd, mdata2.dtd if needed) -->
+<!-- added TYPE attribute to E for monograph/serial. pfs 2007-11 -->
+<!-- added UTIT element very tentatively for uniform titles. pfs 2007-11 -->
+<!-- replaced @MD5 attribute on DDAT with @TCP attribute, removing the former, since we no longer use checksums; and adding the latter, in order to distinguish between EEBO1 and EEBO2 items -->
+<!-- tentatively added EMAIL element -->
+<!-- added multiple-institution values for @R attribute for books reviewed at one institution but re-reviewed at another 2010-07 pfs -->
+<!-- made some tentative changes to accommodate additional information in the 2011 PQ records, namely:
+        o added a new field optional field altbibno for de-duped records that preserve more than one bib id
+        o added a permissible token STC T="G" for id numbers taken from the Early English Tract Supplement Interim Guide
+        o added several permissible tokens for the @T attribute of BIBNO, viz.,  rlin, unm, ocolc, eeu, the last being a UMI OCLC id. Some of these may eventually be merged with existing values
+  
+  2013-04 pfs
+  
+  -->
+ <!-- Added TRAVEL attribute to E to allow entries to be flagged that are on Colm's travel-books list. Y = yes N= no P= perhaps  2013-05 pfs -->
+ <!-- Added T attribute to E to mark potentially duplicate entries imported from new PQ records 2013-05 -->
+ <!-- Added ktallen, kellerle, annesimp and valdiven to list of acceptable MURPs 9/25 -pasj -->
+ <!-- Added TT and NS to the vallist for element STC pfs 2013-10-29 -->
+ <!-- Added PFS to list of acceptable @V vendors on ADAT 2014-04-01 -pasj -->
+ <!-- Added "David" (David Tomkins, a new reviewer at Oxford) to list of acceptable MURPS 2014-04-14 -pasj-->
+ <!-- Added "rmayes" and "maricari" (Renee Mayes and Cecilia Caride) to list of acceptable MURPS 2014-07-07 -pasj -->
+ 
+<!ELEMENT mdata o o (bibvid | e)+>
+<!ELEMENT bibvid o o (#PCDATA) >
+<!ELEMENT e - - (idg, notis?, aleph?, author*, addauthor*, stit, utit*, yr, revision+)>
+<!ATTLIST e N CDATA #IMPLIED
+            TYPE (m|s) "m"
+            TRAVEL (y|n|p) #IMPLIED
+            T CDATA #IMPLIED >
+<!ELEMENT revision o o (imgs, adat?, kb?, v?, vdat?, pdat?, d?, again*, rdat?, ddat?, odat?, email*)>
+<!ATTLIST revision N (1|2|3) "1">
+
+<!ELEMENT idg - - (stc+, bibno, altbibno*, vid)>
+<!ATTLIST idg 
+               S  (marc|fulc|auto|skeleton) #REQUIRED
+               R  (UM|OX|SF|XX|UT|AB|UMOX|OXUM|OXUMOX|UMOXOX|OXOXUM|OXUMUM|UMOXUM) #REQUIRED
+              ID  ID  #REQUIRED>
+<!ELEMENT again - - (vdat, pdat, d)>
+<!ELEMENT (stc|bibno|altbibno|vid|stit|utit|imgs|kb|v|vdat|pdat|d|rdat|yr|ddat|notis|adat|odat|author|addauthor|aleph|email) - - (#PCDATA)>
+<!ATTLIST stc T (S|W|T|E|C|X|G|NS|TT|B) #REQUIRED>
+<!ATTLIST (bibno|altbibno) T (umi|oclc|aas|docno|rlin|unm|ocolc|eeu) #IMPLIED
+                           PRE CDATA #IMPLIED >
+<!-- @T made temporarily optional to account for empty bibnos resulting from removal of invalid bibnos from eebodat 2013-04 -->
+<!ATTLIST vid SET CDATA #IMPLIED>
+<!ATTLIST yr T (s|m|q|r|t|d|c|u) 's'>
+<!ATTLIST (author|addauthor) T (c|p) 'p'>
+<!ATTLIST (pdat|rdat) MURP (pfs|monall|lattaj|obottum|daviskl|gothards|judith|emma|aliefer|jkietzmn|rkor|schererc|emmajudith|jonathan|mismail|thowe|madavisz|sbatkie|dhaig|alwatson|alea|oxfordall|monallthowe|kshawkin|rlosh|mesander|akuster|bgrif|nicole|jmp|nicolejmp|milton|monallakuster|monalllattaj|shawnmar|spnorton|simon|shyoun|avanclea|jbredle|nadine|toronto|hpierson|mnj|ajakobso|jonws|ehealey|jcords|rcosgrov|Christian|Winslow|Lisa|thakala|taftman|dplee|kris|clnfox|otto|pip|dao|rmanspac|berkleya|dkarczyn|pasj|mjmarion|sdalliso|slepisto|amccollo|lproux|zberger|kbjack|krenee|lorand|yurasekl|gschutz|arifried|rwelzenb|jhe|kilduff|sme|gshukill|charles|hbeeman|louisg|jayreddy|colm|amanda|geremyc|cstolan|sgwingo|monicats|vieracke|ktallen|kellerle|annesimp|valdiven|bmatzke|david|maricari|rmayes) #IMPLIED>
+<!ATTLIST ddat TCP (E1|E2|N1|K1) #IMPLIED>
+<!ATTLIST adat V (tech|pdcc|apex|aeld|none|apexpdcc|ntek|pfs) #REQUIRED>
+<!ATTLIST (imgs|kb|v) REV (1|2|3) "1">
+
+<!-- USAGE -->
+
+<!-- E      = "entry" :: each entry represents a unique combination of VID BIBNO, and STC numbers -->
+<!--    N attribute allows redundant storage of volume information. "3" indicates that this entry is for a volume or part 3 of a larger work or set -->
+<!-- REVISION = "revision" :: allows all processing info about a file to be duplicated if the file needs to be revised (e.g. because of changes in the underlying image set); otherwise defaults to revision "1" (original version). Tag is fully minimizable and usually not expressed. -->
+<!--    REV attribute on IMGS KB and V (which defaults to "1") allows one to record different values of these variables for different revisions of the text -->
+<!-- IDG    = "ID group" :: envelope for the ID-number elements -->
+<!--               attribute S ("source") indicates source of information, either MARC records supplied by image vendor or some online (e.g. UMI FULCrum) database, or automatically generated by splitting records with multiple identifiers, or created as skeleton for entries lacking complete information -->
+<!--               attribute R ("reviewer") indicates review agency, XX (unassigned), UM (Michigan), OX (Oxford), UT (Toronto), AB (NLW) -->
+<!--               attribute ID is an arbitrary unique ID for the entry, used to name processed files and headers -->
+<!-- STC    = "Short Title Catalog number" -->
+<!--               attribute T ("type") indicates whether number is that of Wing (W) or Pollard and Redgrave (S) or ESTC (C) or EVans (E) short title catalog, or (T) the Catalogue of the Thomason Tracts, 1640-1661. Or (G) ProQuest's English Tract Supplement Interim Guide. Or (B) the online English Broadside Ballads Archive. Items with no known STC entry may use "X" followed by an arbitrary sequential and unique number. Some values may have additional information added, e.g. volume number _pt3 or qualifier ("variant" "cancelled") -->
+<!-- BIBNO  = "Bibliographic record number" derived from the MARC 001 field or (if no MARC record) from the item number in some database. Leading "ocm" is stripped. In Evans comes from AAS number in mirlyn 035 field -->
+<!--               attribute T ("type") indicates database to which BIBNO applies: OCLC or UMI's internal database, etc. Taken from MARC 003 field if available; otherwise asssumed that numbers beginning "998-" are UMI, others are OCLC. OCLC prefix sometimes stored in @PRE Evans records are sourced AAS. DocNo refers to Gale's document number. -->
+<!-- VID    = "VID" (UMI designation), number of image set, derived largely from MARC records 856 field; otherwise from URL of images online. All image sets may be retrieved using the URL http://wwwlib.umi.com/eebo/image/xxx/  where "xxx" is the VID. In Evans refers to Newsbank 16-digit document ID number. In ECCO refers to 10-digit root DocID. -->
+<!--               SET attribute is for ECCO only, refers to Gale content set designator (law, medicine, etc.). -->
+<!-- NOTIS  = "NOTIS id number" of Mirlyn MARC record for image product. Added to eebodat globally based on VID in 856 field of record. About 1500 entries did not find a match. In Evans, taken directly from source records in Mirlyn -->
+<!-- ALEPH  = "Aleph id number" of Mirly MARC record for image product. --> 
+<!-- AUTHOR = MARC 100 field or 110 field. Latter has T attribute 'c' (corporate) as opposed to 'p' (personal) -->
+<!-- ADDAUTHOR = MARC 700 or 710 field. Same T attribute applies as with AUTHOR. -->
+<!-- STIT   = "Short title" derived largely from the MARC records' 245 field (in EEBO in most cases reduced to 35 characters long to reduce size of dat file) -->
+<!-- YR     = "Year of publication" derived (where possible) from the earlier of date1 and date2 slots in the MARC records' fixed field -->
+<!--               attribute T ('type') indicates Date Type code in MARC fixed field -->
+<!-- IMGS   = "Number of images" in the image set. Derived where possible from a dump of the UMI Oracle database -->
+<!-- ADAT   = "Assignment date" : date when book assigned to a vendor, if known. May change to allow multiple assignments. V attribute designates vendor. Some info in this field may be dodgy. V set to NONE if item should never be assigned (e.g. it is a duplicate or defective) -->
+<!-- KB     = "Size of text (sgm) file in kB" supplied from files as they arrive -->
+<!-- V      = "Vendor" (APEX, PDCC, AELD, or TECH, etc.) -->
+<!-- VDAT   = "Validation date" : date of receipt of valid file, to the month, in form YYYY-MM -->
+<!-- PDAT   = "Proofing date" : date of sample proofreading, to the month,  in form YYYY-MM -->
+<!--                 attribute "murp" (markup review person) identifies the proofer -->
+<!-- RDAT   = "Review date" : date of tag review completion, to the month, in form YYYY-MM -->
+<!--                 attribute "murp" (markup review person) identifies the reviewer -->
+<!-- DDAT   = "Delivery date" : date of postprocessing completion and delivery to ETS, in form YYYY-MM -->
+<!--                 attribute "TCP" distinguishes between N1 (Evans), K1 (ECCO), E1 (EEBO1), and E2 (EEBO2) projects -->
+<!-- D      = "Doom" (or "decision" or "disposition") : verdict on file based on sample proofing, combined with an indicator giving the proofing regime. E.g. 3R means "rejected under proofing regime 3"; 3A = "accepted, ditto"; and 3Y = "pardoned, ditto." -->
+<!-- ODAT   = "online date" :: date file became available online, in form YYYY-MM -->
+<!-- AGAIN  =  envelope containing new VDAT PDAT and D fields to record receipt and proofing information for a rejected file that has been resubmitted -->
+<!-- REVISION = envelope containing complete set of processing fields in order to accommodate cases in which book has been rescanned and redone entire -->
+<!-- EMAIL  =  records date of significant eebo-staff email concerning tagging choices -->
+
+<!-- 13.0 character entities -->
+
+<!ENTITY % EEBOchar PUBLIC "EEBO 2000-1//ENTITIES EEB 1//EN">
+%EEBOchar;	
+
+<!ENTITY % ISOlat1 PUBLIC "ISO 8879-1986//ENTITIES Added Latin 1//EN">
+%ISOlat1; 
+
+<!ENTITY % ISOlat2 PUBLIC "ISO 8879-1986//ENTITIES Added Latin 2//EN">
+%ISOlat2; 
+
+<!ENTITY % ISOnum PUBLIC "ISO 8879-1986//ENTITIES Numeric and Special Graphic//EN">
+%ISOnum;
+
+<!ENTITY % ISOpub PUBLIC "ISO 8879-1986//ENTITIES Publishing//EN">
+%ISOpub;
+
+<!ENTITY   % ISOtech PUBLIC "ISO 8879-1986//ENTITIES General Technical//EN">
+%ISOtech;
+
+<!ENTITY % ISOgrk1 PUBLIC "ISO 8879-1986//ENTITIES Greek Letters//EN">
+%ISOgrk1;
+
+<!ENTITY % TEIgrk PUBLIC  "-//TEI TR1 W4:1992//ENTITIES Extra Classical Greek Letters//EN">
+%TEIgrk;
+
+<!-- <!ENTITY % ISOdia PUBLIC "ISO 8879-1986//ENTITIES Diacritical Marks//EN">
+%ISOdia; -->
+
+<!ENTITY % ISOcyrl PUBLIC "ISO 8879-1986//ENTITIES Russian Cyrillic//EN">
+%ISOcyrl;

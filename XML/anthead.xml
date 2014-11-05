@@ -1,0 +1,84 @@
+<project basedir="." default="dist" name="epubs">
+  <property name="teitoepub" value="Stylesheets/profiles/ota/epub3/to.xsl"/>
+  <property name="basedir" value="."/>
+  <property name="tempPrefix" value="build"/>
+  <property name="jing" value="lib/jing.jar"/>
+  <property name="listgraphics" value="Stylesheets/tools/makegraphicsanttask.xsl"/>
+  <tempfile property="temp.file" destDir="${java.io.tmpdir}" prefix="${tempPrefix}"/>
+  <dirname property="outputTempDir" file="${temp.file}/ant"/>
+
+  <import file="Stylesheets/epub3/build-to.xml"/>
+
+  <taskdef name="runjing" classpath="${jing}" classname="com.thaiopensource.relaxng.util.JingTask"/>
+  
+  <macrodef name="epub.check">
+    <attribute name="epub"/>
+    <sequential>
+      <echo level="info">Epubcheck @{epub}</echo>
+      <java jar="lib/epubcheck-3.0/epubcheck-3.0.jar" fork="true">
+	<arg value="@{epub}" />
+      </java>
+    </sequential>
+  </macrodef>
+   
+  <macrodef name="doall">
+    <attribute name="name"/>
+    <attribute name="dir"/>
+    <attribute name="outdir"/>
+    <sequential>
+      <xslt force="yes" style="convert.xsl" in="@{dir}/@{name}.tcp" out="@{dir}/@{name}.xml">
+	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
+      </xslt>
+      <echo>Validate @{dir}/@{name}.xml</echo>
+      <runjing rngfile="tcp.rng" file="@{dir}/@{name}.xml" failonerror="false"/>
+	<xslt force="yes" style="Stylesheets/txt/tei-to-text.xsl" in="@{dir}/@{name}.xml" out="@{dir}/@{name}.wordlist">
+	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <param name="oneword" expression="true"/>
+      </xslt>
+      <buildepubsimple in="@{dir}/@{name}.xml" out="@{dir}/@{name}.epub" inDir="@{dir}"/>
+      <delete includeEmptyDirs="true">
+	<fileset dir="${outputTempDir}" includes="**/*"/>
+      </delete>    
+      <epub.check epub="@{dir}/@{name}.epub"/>
+    </sequential>
+  </macrodef>
+
+  <macrodef name="doconvert">
+    <attribute name="name"/>
+    <attribute name="dir"/>
+    <attribute name="outdir"/>
+    <sequential>
+      <xslt force="yes" style="convert.xsl" in="@{dir}/@{name}.tcp" out="@{outdir}/@{name}.xml">
+	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
+      </xslt>
+      <echo>Validate @{outdir}/@{name}.xml</echo>
+      <runjing rngfile="tcp.rng" file="@{outdir}/@{name}.xml" failonerror="false"/>
+    </sequential>
+  </macrodef>
+
+  <macrodef name="doepub">
+    <attribute name="name"/>
+    <attribute name="dir"/>
+    <attribute name="outdir"/>
+    <sequential>
+      <buildepubsimple in="@{dir}/@{name}.xml" out="@{outdir}/@{name}.epub" inDir="@{dir}"/>
+      <delete includeEmptyDirs="true">
+	<fileset dir="${outputTempDir}" includes="**/*"/>
+      </delete>    
+      <epub.check epub="@{outdir}/@{name}.epub"/>
+    </sequential>
+  </macrodef>
+
+  <macrodef name="dowordlist">
+    <attribute name="name"/>
+    <attribute name="dir"/>
+    <attribute name="outdir"/>
+    <sequential>
+	<xslt force="yes" style="Stylesheets/txt/tei-to-text.xsl" in="@{dir}/@{name}.xml" out="@{outdir}/@{name}.wordlist">
+	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <param name="oneword" expression="true"/>
+      </xslt>
+    </sequential>
+  </macrodef>
+  <target name="dist">
+

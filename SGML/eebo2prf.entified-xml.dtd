@@ -1,0 +1,2536 @@
+<!-- CONTENTS -->
+
+<!-- 1.10 PREFACE TO VERSION 1.0 -->
+<!-- 1.11  MODIFICATIONS TO VERSION 1.0 -->
+<!-- 1.20 PREFACE TO VERSION 2.0 -->
+<!-- 1.21 MODIFICATIONS TO VERSION 2.0 -->
+<!-- 2.0 temphead elements -->
+<!-- 3.0 toplevel element -->
+<!-- 3.1  ID group required at head of document -->
+<!-- 3.2  large structural divisions -->
+<!-- 4.0 "heads" and "feet": things marking the beginning or end of text divisions -->
+<!-- 5.0 special tags for drama or drama-like works -->
+<!-- 6.0 special formats (lists, tables, illustrations) -->
+<!-- 7.0 basic units of prose and verse (paragraphs, stanzas, and verse lines) -->
+<!-- 8.0 chunks set apart : notes, quotes, etc.) -->
+<!-- 9.0 misc. little-used low-level structural elements (citations, dates) -->
+<!-- 10.0 character or word level tags -->
+<!-- 11.0 empty tags (events) -->
+<!-- 12.0 linking tags -->
+<!-- 13.0 character entities -->
+
+<!-- 1.00 PREFACE TO VERSION 1.0 -->
+<!--* This is the vendor DTD for Early English Books Online. It was created
+    * deleting elements from the TEILITE XML DTD not required in the vendor
+    * transcription. The deleted elements are: <gi>, <eg>, <code>, <ident>, <kw>, 
+    * <s>, <div>, <div0>, <interpGrp>, <foreign>, <emph>, <socalled>, <mentioned>, 
+    * <gloss>, <rs>, <num>, <time>, <sic>, <corr>, <reg>, <ptr>, <ref>, <index>, <divGen>, <xref>,
+    * <xptr>, <seg>, <anchor>, <interp>
+    * <term> and <name> are retained just for the header.
+    * A new element, <letter>, has been created to serve as a compression of the <Q><TEXT><BODY><DIV1>
+    * necessary currently for encoding inserted personal letters. This element can be later expanded
+    * to remain a valid TEI document.
+    * It will thus be a valid TEI document, and expandable to include other 
+    * elements within TEILite or the larger TEI tagset.
+    * This version was drafted by Perry Willett on 16 June 2000.
+    *-->
+
+<!-- 1.11  MODIFICATIONS TO VERSION 1.0 -->
+
+<!-- I have removed further elements, including everything from the TEIHEADER, CIT, LISTBIBL, and BIBLFULL, and have restored FOREIGN.  I also pared down the attributes. Finally, I removed PB from the content models of TEXT, FRONT, BODY and BACK in order to encourage their appearance within DIVs.  Chris Powell, July/August 2000-->
+<!-- I have added a top-level eebo element. Knock it out again later if you like. pfs -->
+<!-- Modified 9 Oct 00. UNIT attribute of MILESTONE given default value "unspec". pfs -->
+<!-- Modified 9 Oct 00. LANG attribute universally changed from IDREFS to CDATA. pfs -->
+<!-- Modified 13 Oct 00. HEAD made optional (with ?) in content model of ARGUMENT, following TEILITE instead of TEIXLITE. pfs -->
+<!-- Modified 6 Feb 01. REF attribute added to PB tag and made REQUIRED. pfs -->
+<!-- Modified 5 Oct 01. RESP attrib on GAP changed to CDATA to make global replacements of vendor-supplied "$" and "$$word$$"s easier. pfs -->
+<!-- Modified 9 Oct 01. NOTE added to content model of LABEL. pfs -->
+
+<!-- 1.20 PREFACE TO VERSION 2.0 -->
+
+<!-- VERSION 2.0 of EEBO PROOF dtd :: October-December 2001. drafted by pfs -->
+<!-- ====================================================================== -->
+<!-- Preferred filename: eebo2prf.dtd -->
+<!-- Preferred public identifier PUBLIC "-//UMDLPS//DTD EEBOPROOF 2.0//EN" -->
+<!-- Most changes (viz., culling of unused tags and attribs) originally introduced to vendor version of dtd only -->
+<!-- Exceptions noted here: -->
+<!-- *Modified: HI (added AUTHOR to content model) -->
+<!-- *Modified: UNCLEAR (added AUTHOR to content model) -->
+<!-- *Modified TABLE (added TRAILER and optional following event tags to end of content model) -->
+<!-- *Modified TRAILER, OPENER, CLOSER, BYLINE, DATELINE, SIGNED, SALUTE (added NOTE to content model) -->
+<!-- *Modified EPIGRAPH to make it stricter (can no longer contain only P; should nearly always include Q) -->
+<!-- *EEBO gained attribs stc, vid, bib -->
+<!-- *FIGDESC lost all attribs (id n lang rend) and GAINED SCHEME -->
+<!-- *GAP lost id n rend hand agent AND BECAME more restrictive with respect to DESC -->
+<!-- *New elements in IDG come with attributes -->
+<!-- *New attributes "TYPE" and "REASON" on element "EEBO" for potential future use                -->
+
+
+<!-- 1.21 MODIFICATIONS TO VERSION 2.0 -->
+
+<!-- 1.22  LATER MODIFICATIONS TO VERSION 2.0 -->
+<!-- Modified: "DESC" attribute of GAP made REQUIRED. 2002-02-06 pfs -->
+<!-- Modified: PB removed from content models of GROUP and BACK 2002-02-06 pfs -->
+<!-- Grk1 charents added 2002-02 -->
+<!-- HI added to content model of DATELINE 2002-02-21 pfs -->
+<!-- LIST added to content model of SIGNED 2002-03-08 and SALUTE 2002-03-22 pfs -->
+<!-- L and LG and Q added to content model of FIGURE; constraints on sequence on quantity of contents removed 2002-05-14 pfs -->
+<!-- TEIGrk charents added 2002-06 -->
+<!-- FIGURE added to content model of TRAILER to make it more like HEAD 2002-08-02 pfs -->
+<!-- TYPE attribute added to TRAILER to make it more like HEAD 2002-08-02 pfs -->
+<!-- NEW element POSTSCRIPT defined and added to content model of CLOSER 2002-08-02 pfs -->
+<!-- ABBR added to content model of DATELINE 2002-10-24 pfs -->
+
+<!-- Entire main body of dtd reorganized based on vendor dtd. See comments there. -->
+
+<!-- Link elements have been added (ptr and ref) 2002-03 pfs -->
+<!-- IDG modified for Evans: 'aas' token added to T attrib of BIBNO; 'E' token added to T attrib of STC; STC element made repeatable ('+') 2003-05 pfs -->
+<!-- items made required in lists  2003-07 pfs -->
+<!-- Q and LETTER added to contents of SP. 2003-09 pfs -->
+<!-- TRAILER redefined to match contents of HEAD. 2003-10 pfs -->
+<!-- L added to content model of both HEAD and TRAILER. 2003-10 -->
+<!-- l | lg | p | sp  added to content model of CELL to make it more nearly resemble ITEM 2004-02 -->
+<!-- LIST added to content model of LABEL to allow tagging of more complex 'glossary-type' (LABEL+ITEM) lists 2004-03 -->
+<!-- TRAILER added to content model of LIST to allow for LISTs with trailing heads, and to match TABLE 2004-03 -->
+<!-- ROLE attribute added to ITEM and LABEL (to match that on CELL), ITEM ROLE="label" and LABEL ROLE="label" are intended as equivalents of the TEI HeadItem and HeadLabel elements respectively. 2004-03 -->
+<!-- UT added as token value of R attribute of IDG tag for texts assigned to Toronto. -->
+<!-- SIGNED BYLINE FIGURE added to content of FIGURE. 12/04 pfs -->
+<!-- date removed from date 2004-11 -->
+<!-- SUB and SUP added for conversion products of ^ and ^^ 2005 Spring pfs -->
+<!-- LABEL put back in CELL. 6/05 pfs -->
+<!-- LABEL put back in P. 10/05 pfs -->
+<!-- stage added to LG 2006-04 -->
+<!-- FIGURE added to SIGNED (for monogram signatures) 2006-04 pfs -->
+<!-- SET attrib. added to VID for Gale content set 2006-07 pfs -->
+<!-- ABOVE and BELOW defined (like SUB and SUP in XML version) added for interlinear glosses; allowed wherever HI is allowed (except within themselves, SUP, and SUB) 2006-07 pfs -->
+<!-- BACK and FRONT content models replaced by copies of BODY 2006-09-16 pfs -->
+<!-- Element HEADNOTE added (based on ARGUMENT and allowed wherever that is allowed: see CME dtd for similar expedient) 2006-09-16 pfs  -->
+<!-- Element TAILNOTE added (based on ARGUMENT and allowed in the DivBot area, wherever closer is allowed, except in LG) 2006-10-17 pfs -->
+<!-- Attribute REND added to FIGURE to distinguish between block and inline figures. 2006-10-17 pfs -->
+<!-- Attribute ANCHORED removed from NOTE since it went unused. 2006-10-17 pfs -->
+<!-- ATTLIST (with N and REND) added to STAGE, the former for note-like markers, the latter for brackets and the like 2007-05-22 pfs -->
+<!-- NOTE added to content model of DATE 2007-05-25 pfs -->
+<!-- ROLE attribute (CDATA) added to P 2007-06-04 pfs -->
+<!-- REND attribute (CDATA) added to SP 2007-06-04 pfs -->
+<!-- LABEL added to model of L 2007-11-21 pfs -->
+<!-- "X" added as possible value of T attribute of STC tag 2007-11-30 pfs -->
+<!-- SEG added back to dtd, allowed wherever HI is allowed. Content model a little restricted vis a vi P3. 2008-03-06 pfs -->
+<!-- SP and STAGE added to model of FIGURE for speech bubbles in cartoons. 2008-07-09 pfs -->
+<!-- @REND added to OPENER and CLOSER HEAD and TRAILER. 2009-02-13 pfs -->
+<!-- FIGURE allowed within LABEL to accommodate pictorial glossaries. 2009-02-13 pfs -->
+<!-- @LANG made required on TEXT in SGML dtd, but deferred for XML version 2009-07 pfs -->
+<!-- @PLACE added to STAGE. 2009-10 pfs -->
+<!-- Updated FRONT and BACK to require at least one DIV1 (gave them same content model as BODY). 2010-07-07 pfs -->
+<!-- @LANG made mandatory on LETTER in SGML dtd 2010-12 but deferred for XML version pfs -->
+<!-- replaced @TYPE with @SUBTYPE on LETTER (since @type was already implicitly 'letter') 2010-12 pfs -->
+<!-- added @N and @TYPE to TEXT and GROUP 2010-12 pfs -->
+<!-- added new elements LICENSE and FLOATEXT, both of them shortcuts for existing tag and attribute strings. Added to content models wherever LETTER was allowed 2010-12 pfs -->
+<!-- @REND added to GAP 2011-02 pfs -->
+<!-- removed @N from LIST since we never use it. pfs 2011-04 -->
+<!-- restricted @PLACE on NOTE to (foot|marg etc). pfs 2011-05 -->
+<!-- added FW element, allowed it in a few page-crossing objects (p q letter div etc.), and constrained it to following directly on pb. pfs 2011-05 -->
+<!-- added AB element, allowed it in a few places in which p can occur, and modelled it on p. pfs 2011-05 -->
+<!-- restricted @ROLE on CELL and ROW to (label|total), matching @ROLE on ITEM and LABEL. pfs 2011-05 -->
+<!-- HEADER introduced as alternative to TEMPHEAD and crudely defined on the basis of actual sample TCP headers. pfs 2011-6 -->
+<!-- FIGDESC reduced to PCDATA 2011-11 pfs -->
+<!-- Additional values added to GAP RESP attribute (murp, keyers) on experimental basis. pfs 2011-11-07 -->
+<!-- Added TYPE attribute to LB 2012-04 pfs -->
+<!-- Removed TABLE from content model of ROW, a meaningless P3 relic 2012-05 pfs -->
+<!-- Added SUB and SUP to content model of SEG (arguably SUB and SUP are just sugar for HI, which is already allowed there) 2012-10 pfs -->
+<!-- put @N back on LIST since we apparently *do* use it! 2012-10 pfs -->
+<!-- experimentally added L to content model of LABEL primarily for phrase glossaries in which the (proverbial) phrase being glossed is in verse 2012-10 pfs -->
+<!-- gave POSTSCRIPT an ATTLIST. 2013-03 pfs -->
+<!-- added DEL EXPAN and CHOICE. 2013-03 pfs -->
+<!-- added TYPE to attributes of STAGE. 2013-03 pfs -->
+<!-- made some tentative changes to accommodate additional information in the 2011 PQ records, namely:
+        o added a new field optional field altbibno for de-duped records that preserve more than one bib id
+        o added a permissible token STC T="G" for id numbers taken from the Early English Tract Supplement Interim Guide
+        o added several permissible tokens for the @T attribute of BIBNO, viz.,  rlin, unm, ocolc, eeu, the last being a UMI OCLC id. Some of these may eventually be merged with existing values
+  
+  2013-04 pfs
+-->
+
+<!-- added @TYPE to POSTSCRIPT 2013-10 pfs -->
+<!-- added @TYPE to LABEL 2013-11 pfs -->
+<!-- added LG to content model of SIGNED 2013-12 pfs -->
+<!-- added ARGUMENT in div.bot position in the DIVs FRONT BODY BACK LETTER FLOATEXT 2013-12 pfs -->
+<!-- added @SUBTYPE in lots of elements that had @TYPE already 2013-12 pfs -->
+<!-- removed DEL and ADD from CHOICE and placed them SUBST instead, allowing SUBST wherever CHOICE allowed except in ADD and DEL (per P5) 2013-12 pfs -->
+<!-- added @PRE to BIBNO and ALTBIBNO to allow OCLC prefixes and the like to be separated from their numbers 2014-03 pfs -->
+<!-- added values source (to @resp) and omitted (to @desc) GAP attributes in order to capture editorial markup in the source itself 2014-03 pfs -->
+<!-- changed default "unspec" and "unspecified" values for @UNIT on MILESTONE and @PLACE on STAGE to #IMPLIED 2014-8-15. -->
+<!-- added FW to ITEM (to match SGML dtd) 2014-09-30 pfs -->
+
+<!-- 2.0 TEMPHEAD ELEMENTS -->
+<!-- Following tags added to basic eebo2sgm.dtd in order to make it suitable for tag proofing -->
+
+<!ELEMENT ETS  ((TEMPHEAD | HEADER),(EEBO))>
+
+<!-- ID attribute removed from ets since this function is now handled by the IDG below -->
+
+
+<!-- VERY STRIPPED DOWN TEI-LIKE (TEMPORARY) HEADER -->
+
+
+<!ELEMENT TEMPHEAD ((EDECL)?, (LANGUSE)?, (REVDESCR)) >
+
+<!ELEMENT EDECL    ((P)+)>
+
+<!ELEMENT LANGUSE  (LNG)+ >
+
+<!ELEMENT LNG      (#PCDATA) >
+<!ATTLIST  LNG ID ID #REQUIRED>
+
+<!ELEMENT REVDESCR (CHANGE)+>
+
+<!ELEMENT CHANGE   (DATE, (RESPSTMT)+, ITEM)>
+<!ATTLIST  CHANGE N CDATA #IMPLIED>
+
+<!ELEMENT RESPSTMT ((NAME),(RESP))>
+
+<!ELEMENT NAME (#PCDATA) >
+
+<!ELEMENT RESP (#PCDATA) >
+
+<!-- STRIPPED-DOWN TEI HEADER DEFINITION BUILT FROM ACTUAL TEXTCLASS HEADERS -->
+
+<!-- STRIPPED-DOWN TEI P3/4 HEADER DEFINITION BUILT FROM ACTUAL TEXTCLASS HEADERS -->
+
+<!ELEMENT HEADER  (FILEDESC, ENCODINGDESC, PROFILEDESC?,REVISIONDESC) >
+
+<!ELEMENT FILEDESC (TITLESTMT, EXTENT?, PUBLICATIONSTMT, SERIESSTMT?,NOTESSTMT?,SOURCEDESC?) >
+
+<!ELEMENT TITLESTMT (TITLE+, AUTHOR*) >
+
+<!ELEMENT TITLE (#PCDATA) >
+
+<!ATTLIST TITLE TYPE CDATA #IMPLIED
+                I2 CDATA #IMPLIED > <!-- should really be NMTOKEN but some are blank -->
+
+<!ELEMENT AUTHOR (#PCDATA) >
+
+<!ELEMENT EXTENT (#PCDATA) >
+
+<!ELEMENT PUBLICATIONSTMT (PUBLISHER | PUBPLACE | DATE | IDNO | AVAILABILITY)* >
+
+<!ELEMENT IDNO (#PCDATA) >
+
+<!ATTLIST IDNO TYPE CDATA #IMPLIED >
+
+<!ELEMENT AVAILABILITY (P+) >
+
+<!ELEMENT PUBLISHER (#PCDATA) >
+
+<!ELEMENT PUBPLACE (#PCDATA) >
+
+<!ELEMENT SERIESSTMT (TITLE+) >
+
+<!ELEMENT SOURCEDESC (BIBLFULL+) >
+
+<!ELEMENT BIBLFULL (TITLESTMT, EDITIONSTMT?, EXTENT?, PUBLICATIONSTMT, NOTESSTMT?) >
+
+<!ELEMENT EDITIONSTMT (EDITION+) >
+
+<!ELEMENT EDITION (#PCDATA) >
+
+<!ELEMENT NOTESSTMT (NOTE+) >
+
+<!ELEMENT ENCODINGDESC (PROJECTDESC, EDITORIALDECL?) >
+
+<!ELEMENT PROJECTDESC (P*) >
+
+<!ELEMENT EDITORIALDECL (P+) >
+
+<!ATTLIST EDITORIALDECL N CDATA #IMPLIED >
+
+<!ELEMENT PROFILEDESC (LANGUSAGE*, TEXTCLASS?) >
+
+<!ELEMENT LANGUSAGE (LANGUAGE) >
+
+<!ATTLIST LANGUSAGE ID ID #REQUIRED >
+
+<!ELEMENT LANGUAGE (#PCDATA) >
+
+<!ELEMENT TEXTCLASS (KEYWORDS+) >
+
+<!ELEMENT KEYWORDS (TERM+) >
+
+<!ELEMENT TERM (#PCDATA) >
+
+<!ELEMENT REVISIONDESC  (CHANGE+) >
+
+
+
+<!-- What follows is the EEBO2SGM.dtd (version 2 of EEBO_SGM.dtd) -->
+<!-- Following changes made to the vendors' dtd: -->
+<!-- TYPE attribute on DIVs made REQUIRED for inhouse use only 2001-05-23 -->
+<!-- idg element and its contents added to model of eebo element, as it will be for vendors as of 1 Jan 2002 -->
+<!-- SYMBOL and INTRUDER added to permissible values of DESC attribute of GAP. 2001-01-22 -->
+<!-- Certain attributes reintroduced after restructuring on basis of vendor dtd. 2003-02 -->
+<!-- ADD element retained in this dtd, removed from vendors' dtd. 2003-02 -->
+<!-- TEIGRK entities added -->
+
+<!-- 3.0 toplevel element -->
+
+<!ELEMENT EEBO (IDG, (TEXT | GROUP))>
+<!ATTLIST  EEBO 
+              TYPE (A|B|C) "A"
+              REASON CDATA #IMPLIED >
+
+<!-- 3.1 ID group required at head of document -->
+
+<!-- The ID group contains three ID numbers, one of which (STC) can repeat -->
+<!-- STC is used to hold the STC number that we have been using for file naming -->
+<!--  (its attribute "T" (for "TYPE") holds the STC prefix S (for "STC") or W (for "Wing") or "T" (for Thomason) or "E" (for Evans")) -->
+<!-- BIBNO holds the number assigned by UMI or OCLC or AAS to the associated bibliographic record  -->
+<!-- VID holds the number assigned by UMI to the set of associated page images              -->
+<!-- IDG itself has an ID attribute which is used for a local tracking number               -->
+<!-- IDG also has an "R" attribute (for "review agency") which specifies which agency       -->
+<!--   (Michigan or Oxford) will do the reviewing.                                          -->
+
+<!ELEMENT IDG (STC+, BIBNO, ALTBIBNO*, VID)>
+<!ATTLIST  IDG 
+              S    (marc|fulc|auto) #REQUIRED
+              R    (UM|OX|SF|XX|UT|AB) #REQUIRED
+              ID  ID  #REQUIRED>
+<!ELEMENT STC (#PCDATA)>
+<!ELEMENT BIBNO (#PCDATA)>
+<!ELEMENT ALTBIBNO (#PCDATA)>
+<!ELEMENT VID (#PCDATA)>
+<!ATTLIST  STC T (S|W|T|E|C|X|G|B) #REQUIRED>
+<!ATTLIST  BIBNO T (umi|oclc|aas|docno|rlin|unm|ocolc|eeu) #REQUIRED
+                  PRE CDATA #IMPLIED>
+<!ATTLIST  ALTBIBNO T (umi|oclc|aas|docno|rlin|unm|ocolc|eeu) #REQUIRED
+                  PRE CDATA #IMPLIED>
+<!ATTLIST VID SET CDATA #IMPLIED>
+
+<!-- 3.2 large structural divisions -->
+
+<!-- old: <!ELEMENT BACK 
+	((LB | MILESTONE | GAP )*, (((ARGUMENT | HEADNOTE | BYLINE
+	| EPIGRAPH | HEAD | OPENER | SALUTE | SIGNED), 
+        (ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER | SALUTE 
+        | SIGNED | LB | MILESTONE | GAP )*) 
+        | (DIV1, (DIV1 | LB | MILESTONE | GAP )*))?) >
+
+<!ELEMENT BACK 
+        ((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER 
+        | SALUTE | SIGNED | LB | MILESTONE | GAP )*, 
+        ((DIV1)+ | (BIBL | L | LG | P | SP | Q | LIST 
+        | NOTE | STAGE)+), 
+        (BYLINE | CLOSER | TAILNOTE | EPIGRAPH | SALUTE | SIGNED | TRAILER | LB | MILESTONE)*)>
+ -->
+
+<!ELEMENT BACK
+        ((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER 
+        | SALUTE | SIGNED | LB | MILESTONE | GAP )*, 
+        (DIV1)+ , 
+        (BYLINE | CLOSER | TAILNOTE | EPIGRAPH | SALUTE | SIGNED | TRAILER | ARGUMENT | LB | MILESTONE)*)>
+ 
+ 
+<!ATTLIST  BACK 
+	ID ID #IMPLIED
+	LANG CDATA #IMPLIED >
+
+<!-- <!ELEMENT BODY 
+        ((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER 
+        | SALUTE | SIGNED | LB | MILESTONE | GAP )*, 
+        ((DIV1)+ | (BIBL | L | LG | P | SP | Q | LIST 
+        | NOTE | STAGE)+), 
+        (BYLINE | CLOSER | TAILNOTE | EPIGRAPH | SALUTE | SIGNED | TRAILER | LB | MILESTONE)*)>
+-->
+
+<!ELEMENT BODY
+        ((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER 
+        | SALUTE | SIGNED | LB | MILESTONE | GAP )*, 
+        (DIV1)+ , 
+        (BYLINE | CLOSER | TAILNOTE | EPIGRAPH | SALUTE | SIGNED | TRAILER | ARGUMENT | LB | MILESTONE)*)>
+
+<!ATTLIST  BODY 
+	ID ID #IMPLIED
+	LANG CDATA #IMPLIED >
+
+
+<!ELEMENT DIV1 
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER | SALUTE 
+        | SIGNED | LB | MILESTONE | PB | FW | GAP )*, 
+        (((DIV2), (LB | MILESTONE | PB | FW | GAP )*)+ | ((( BIBL | L | LG | P | AB 
+        | SP | Q | LETTER | LICENSE | FLOATEXT | LIST | NOTE | STAGE), 
+        (LB | MILESTONE | PB | FW | GAP )*)+, ((DIV2), (LB | MILESTONE | PB | FW | GAP )*)*)),
+        ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH | SALUTE | SIGNED | TRAILER | ARGUMENT), 
+        (LB | MILESTONE | PB | FW | GAP )*)*) >
+
+<!ATTLIST  DIV1 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #REQUIRED
+	SUBTYPE CDATA #IMPLIED >
+
+<!ELEMENT DIV2 
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD 
+	| OPENER | SALUTE | SIGNED 
+	| LB | MILESTONE | PB | FW | GAP )*, (((DIV3), 
+	(LB | MILESTONE | PB | FW | GAP)*)+ | ((( BIBL | L | LG | P | AB | SP 
+	|  Q | LETTER | LICENSE | FLOATEXT | LIST | NOTE | STAGE), 
+        (LB | MILESTONE | PB | FW | GAP )*)+, 
+	((DIV3), (LB | MILESTONE 
+	| PB | FW | GAP )*)*)), ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH 
+	| SALUTE | SIGNED | TRAILER | ARGUMENT), (LB | MILESTONE | PB | FW | GAP )*)*) >
+
+<!ATTLIST  DIV2 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #REQUIRED
+	SUBTYPE CDATA #IMPLIED>
+
+<!ELEMENT DIV3 
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD 
+	| OPENER | SALUTE | SIGNED 
+	| LB | MILESTONE | PB | FW | GAP )*, (((DIV4), 
+	(LB | MILESTONE | PB | FW | GAP)*)+ | ((( BIBL | L | LG | P | AB | SP 
+	|  Q | LETTER | LICENSE | FLOATEXT | LIST | NOTE | STAGE), 
+        (LB | MILESTONE | PB | FW | GAP )*)+, 
+ 	((DIV4), (LB | MILESTONE 
+	| PB | FW | GAP )*)*)), ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH 
+	| SALUTE | SIGNED | TRAILER | ARGUMENT), (LB | MILESTONE | PB | FW | GAP )*)*) >
+
+<!ATTLIST  DIV3 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #REQUIRED
+	SUBTYPE CDATA #IMPLIED>
+
+<!ELEMENT DIV4 
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD 
+	| OPENER | SALUTE | SIGNED 
+	| LB | MILESTONE | PB | FW | GAP )*, (((DIV5), 
+	(LB | MILESTONE | PB | FW | GAP )*)+ | ((( BIBL | L | LG | P | AB | SP 
+	|  Q | LETTER | LICENSE | FLOATEXT | LIST | NOTE | STAGE),
+        (LB | MILESTONE | PB | FW | GAP )*)+, 
+	((DIV5), (LB | MILESTONE 
+	| PB | FW | GAP )*)*)), ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH 
+	| SALUTE | SIGNED | TRAILER | ARGUMENT), 
+        (LB | MILESTONE | PB | FW | GAP )*)*) >
+
+<!ATTLIST  DIV4 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #REQUIRED
+	SUBTYPE CDATA #IMPLIED>
+
+<!ELEMENT DIV5 
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD 
+	| OPENER | SALUTE | SIGNED 
+	| LB | MILESTONE | PB | FW | GAP )*, (((DIV6), 
+	(LB | MILESTONE | PB | FW | GAP )*)+ | ((( BIBL | L | LG | P | AB | SP 
+	|  Q | LETTER | LICENSE | FLOATEXT | LIST | NOTE | STAGE), 
+        (LB | MILESTONE | PB | FW | GAP )*)+, 
+	((DIV6), (LB | MILESTONE 
+	| PB | FW | GAP )*)*)), ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH 
+	| SALUTE | SIGNED | TRAILER | ARGUMENT), (LB | MILESTONE | PB | FW | GAP )*)*) >
+
+<!ATTLIST  DIV5 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #REQUIRED
+	SUBTYPE CDATA #IMPLIED>
+
+<!ELEMENT DIV6 
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD 
+	| OPENER | SALUTE | SIGNED 
+	| LB | MILESTONE | PB | FW | GAP )*, (((DIV7), 
+	(LB | MILESTONE | PB | FW | GAP )*)+ | ((( BIBL | L | LG | P | AB | SP 
+	|  Q | LETTER | LICENSE | FLOATEXT | LIST | NOTE | STAGE),
+        (LB | MILESTONE | PB | FW | GAP )*)+, 
+	((DIV7), (LB | MILESTONE 
+	| PB | FW | GAP )*)*)), ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH 
+	| SALUTE | SIGNED | TRAILER | ARGUMENT), (LB | MILESTONE | PB | FW | GAP )*)*) >
+
+<!ATTLIST  DIV6 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #REQUIRED
+	SUBTYPE CDATA #IMPLIED>
+
+<!ELEMENT DIV7 
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD 
+	| OPENER | SALUTE | SIGNED | LB | MILESTONE | PB | FW | GAP )*, 
+        (( BIBL | L | LG | P | AB | SP | Q | LETTER | LICENSE | FLOATEXT | LIST 
+        | NOTE | STAGE), (LB | MILESTONE | PB | FW | GAP )*)+, ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH 
+        | SALUTE | SIGNED | TRAILER | ARGUMENT), (LB | MILESTONE | PB | FW | GAP )*)*) >
+
+<!ATTLIST  DIV7 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #REQUIRED
+	SUBTYPE CDATA #IMPLIED>
+
+<!ELEMENT GROUP 
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD 
+	| OPENER | SALUTE | SIGNED | LB | MILESTONE | GAP )*, (TEXT | GROUP), 
+	(TEXT | GROUP | LB | MILESTONE | GAP )*, ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH 
+        | SALUTE | SIGNED | TRAILER | ARGUMENT), (LB | MILESTONE | GAP )*)*) >
+
+<!ATTLIST  GROUP 
+	ID ID #IMPLIED
+	LANG CDATA #IMPLIED
+	N CDATA #IMPLIED
+	TYPE CDATA #IMPLIED
+	SUBTYPE CDATA #IMPLIED>
+
+<!-- old: <!ELEMENT FRONT 
+	((LB | MILESTONE | GAP )*, (((ARGUMENT | HEADNOTE | BYLINE 
+	| EPIGRAPH | HEAD ), (ARGUMENT | HEADNOTE | BYLINE 
+	| EPIGRAPH | HEAD | LB | MILESTONE | GAP )*) 
+        | (DIV1, (DIV1 | LB | MILESTONE | GAP )*))?) >
+
+<!ELEMENT FRONT 
+        ((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER 
+        | SALUTE | SIGNED | LB | MILESTONE | GAP )*, 
+        ((DIV1)+ | (BIBL | L | LG | P | SP | Q | LIST 
+        | NOTE | STAGE)+), 
+        (BYLINE | CLOSER | TAILNOTE | EPIGRAPH | SALUTE | SIGNED | TRAILER | LB | MILESTONE)*)>
+ -->
+ 
+<!ELEMENT FRONT
+        ((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER 
+        | SALUTE | SIGNED | LB | MILESTONE | GAP )*, 
+        (DIV1)+ , 
+        (BYLINE | CLOSER | TAILNOTE | EPIGRAPH | SALUTE | SIGNED | TRAILER | ARGUMENT | LB | MILESTONE)*)>
+
+<!ATTLIST  FRONT 
+	ID ID #IMPLIED
+	LANG CDATA #IMPLIED >
+
+<!ELEMENT TEXT 
+	((LB | MILESTONE | GAP )*, (FRONT, (LB | MILESTONE | GAP )*)?, 
+        (BODY | GROUP), (LB | MILESTONE | GAP )*, 
+        (BACK, (LB | MILESTONE | GAP )*)?) >
+
+<!ATTLIST TEXT 
+	ID ID #IMPLIED
+	LANG CDATA #IMPLIED 
+	N CDATA #IMPLIED
+	TYPE CDATA #IMPLIED
+	SUBTYPE CDATA #IMPLIED>
+
+<!-- 4.0 "heads" and "feet": things marking the beginning or end of text divisions -->
+
+<!ELEMENT ARGUMENT 
+	((LB | MILESTONE | PB | GAP )*, ((HEAD)?, (( BIBL | L | LG | P
+	| SP | Q | LIST | NOTE | STAGE), 
+	(LB | MILESTONE | PB | GAP )*)*)?) >
+
+<!ELEMENT BYLINE 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | NOTE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW 
+        | LB | MILESTONE | PB | GAP )* >
+
+<!ELEMENT CLOSER 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| SIGNED | DATELINE | NOTE | SALUTE | POSTSCRIPT | LB | MILESTONE | PB | FW | GAP )* >
+
+<!ATTLIST CLOSER
+         REND CDATA #IMPLIED >
+         
+<!ELEMENT DATELINE 
+	(#PCDATA | DATE | NOTE | LB | MILESTONE | PB | GAP | SUB | SUP | HI | SEG | ABOVE | BELOW | ABBR | EXPAN | CHOICE | SUBST | REF | PTR)* >
+
+<!ELEMENT EPIGRAPH 
+	(( BIBL | SP | Q | NOTE), (LB | MILESTONE | PB | GAP )*)* >
+
+<!ELEMENT HEAD 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| BIBL | Q | LIST | L
+        | NOTE | FIGURE | STAGE | TABLE | TEXT | LB | MILESTONE | PB | GAP )* >
+
+<!ATTLIST  HEAD 
+	TYPE CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	SUBTYPE CDATA #IMPLIED>
+
+<!ELEMENT HEADNOTE 
+	((LB | MILESTONE | PB | GAP )*, ((HEAD)?, (( BIBL | L | LG | P
+	| SP | Q | LIST | NOTE | STAGE), 
+	(LB | MILESTONE | PB | GAP )*)*)?) >
+
+<!ELEMENT TAILNOTE 
+	((LB | MILESTONE | PB | GAP )*, ((HEAD)?, (( BIBL | L | LG | P
+	| SP | Q | LIST | NOTE | STAGE), 
+	(LB | MILESTONE | PB | GAP )*)*)?) >
+
+<!ELEMENT OPENER 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW    
+	| ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | SIGNED | DATELINE | NOTE | SALUTE | LB 
+        | MILESTONE | PB | GAP )* >
+
+<!ATTLIST OPENER
+        REND CDATA #IMPLIED >
+        
+<!ELEMENT POSTSCRIPT ((HEAD | OPENER | LB | MILESTONE | PB | GAP)*,
+      ((P | AB | L | LG | Q | LIST | LETTER | LICENSE | FLOATEXT | NOTE | STAGE | SP | BIBL), 
+      (LB | MILESTONE | PB | GAP)*)+,
+      ((CLOSER | TAILNOTE | TRAILER), (LB | MILESTONE | PB | GAP)*)*)  >
+
+<!ATTLIST POSTSCRIPT
+        REND CDATA #IMPLIED
+        LANG CDATA #IMPLIED
+        TYPE CDATA #IMPLIED >
+
+
+<!ELEMENT SALUTE 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | NOTE | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW 
+        | LB | MILESTONE | PB | GAP | LIST)* >
+
+<!ELEMENT SIGNED 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | NOTE | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| LB | MILESTONE | PB | GAP | LIST | FIGURE | LG)* >
+
+<!-- Old definition of TRAILER
+
+<!ELEMENT TRAILER 
+	(#PCDATA | ABBR | REF | PTR | DATE | ADD | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| LB | MILESTONE | NOTE | FIGURE | PB | GAP )* >  -->
+
+<!ELEMENT TRAILER 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| BIBL | Q | LIST | L
+        | NOTE | FIGURE | STAGE | TABLE | TEXT | LB | MILESTONE | PB | GAP )* >
+
+<!ATTLIST  TRAILER 
+	TYPE CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	SUBTYPE CDATA #IMPLIED>
+
+<!-- 5.0 special tags for drama or drama-like works -->
+
+<!ELEMENT SP 
+	((LB | MILESTONE | PB | FW | GAP )*, (SPEAKER, (LB | MILESTONE | PB | FW | GAP )*)?,
+        ((P | AB | L | LG | STAGE | LETTER | LICENSE | FLOATEXT | Q), (LB | MILESTONE | PB | FW | GAP )*)+) >
+
+<!ATTLIST  SP 
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED >
+
+<!ELEMENT SPEAKER 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| LB | MILESTONE | PB | GAP )* >
+
+<!ELEMENT STAGE 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| BIBL | Q | LIST 
+	| NOTE | FIGURE | STAGE | TABLE | TEXT | L 
+        | LG | P | SP | LB | MILESTONE | PB | GAP )* >
+
+<!ATTLIST STAGE
+           N CDATA #IMPLIED
+           REND CDATA #IMPLIED
+	   PLACE CDATA #IMPLIED
+	   TYPE CDATA #IMPLIED >
+
+
+<!-- 6.0 special formats (lists, tables, illustrations) -->
+
+<!ELEMENT CELL 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| BIBL | Q | LIST | LABEL 
+        | NOTE | FIGURE | STAGE | TABLE | TEXT | L | LG | P | AB | SP | LB 
+        | MILESTONE | PB | GAP )* >
+
+<!ATTLIST CELL 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	ROLE (label|total) #IMPLIED
+	ROWS NMTOKEN "1"
+	COLS NMTOKEN "1" >
+	
+<!ELEMENT FIGURE 
+	((HEAD | P | AB | L | LG | Q | SP | STAGE | FIGDESC | TEXT | LB | MILESTONE | PB | GAP | SIGNED | BYLINE | FIGURE )*) >
+
+<!ATTLIST FIGURE 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	REND (inline|block) "block">
+
+<!ELEMENT ITEM 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| BIBL | Q | LABEL | LIST 
+	| NOTE | FIGURE | STAGE | TABLE | TEXT | L | LG | P | AB | SP | LB 
+        | MILESTONE | PB | FW | GAP )* >
+
+<!ATTLIST  ITEM 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	ROLE (label|total) #IMPLIED >
+
+<!ELEMENT LABEL 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| LB | MILESTONE | PB | GAP | NOTE | LIST | FIGURE | L )* >
+
+<!ATTLIST  LABEL 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	TYPE CDATA #IMPLIED
+	ROLE (label|total) #IMPLIED  >
+
+<!ELEMENT LIST 
+	((LB | MILESTONE | PB | FW | GAP )*, (HEAD, (LB | MILESTONE 
+	| PB | FW | GAP )*)?, ((ITEM, ( LB | MILESTONE | PB | FW | GAP )*)+ 
+        | (LABEL, (LB | MILESTONE | PB | FW | GAP )*, 
+	ITEM, (LB | MILESTONE | PB | FW | GAP )*)+),
+	(TRAILER, (LB | MILESTONE | PB | FW | GAP )*)?) >
+       
+
+<!ATTLIST  LIST 
+	ID ID #IMPLIED
+	TYPE CDATA #IMPLIED
+	N CDATA #IMPLIED
+	SUBTYPE CDATA #IMPLIED>
+	
+<!ELEMENT ROW 
+	((CELL), (LB | MILESTONE | PB | GAP )*)+ >
+
+<!ATTLIST  ROW 
+	ROLE (label|total) #IMPLIED >
+
+<!ELEMENT TABLE 
+	((HEAD | LB | MILESTONE | PB | GAP )*, 
+	(ROW, (LB | MILESTONE | PB | GAP )*)+, 
+	(TRAILER, (LB | MILESTONE | PB | GAP )*)?) >
+
+<!ATTLIST  TABLE 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	ROWS NMTOKEN #IMPLIED
+	COLS NMTOKEN #IMPLIED >
+
+
+<!-- 7.0 basic units of prose and verse (paragraphs, stanzas, and verse lines) -->
+
+<!ELEMENT L 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW  
+        | BIBL | Q | LIST | TABLE | STAGE | LABEL 
+        | NOTE | FIGURE | TEXT | LB | MILESTONE | PB | GAP )* >
+
+<!ATTLIST  L 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED >
+
+<!ELEMENT LG 
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD 
+	| OPENER | SALUTE | SIGNED | LB | MILESTONE | PB | FW | GAP | STAGE)*, (L | LG), 
+        (L | LG | LB | MILESTONE | PB | FW | GAP | STAGE)*, 
+        ((BYLINE | CLOSER | EPIGRAPH | SALUTE | SIGNED | TRAILER), 
+        (LB | MILESTONE | PB | FW | GAP | STAGE)*)*) >
+
+<!ATTLIST  LG 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #IMPLIED
+	SUBTYPE CDATA #IMPLIED>
+
+<!ELEMENT P 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL  
+	| UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW | BIBL | Q | LETTER | LICENSE | FLOATEXT | LIST 
+	| NOTE | FIGURE | STAGE | TABLE | TEXT | LB | MILESTONE | PB | FW | GAP | LABEL)* >
+
+<!ATTLIST  P 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED 
+	ROLE CDATA #IMPLIED >
+
+<!ELEMENT AB
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL  
+	| UNCLEAR | HI | SEG | ABOVE | BELOW | BIBL | Q | LETTER | LICENSE | FLOATEXT | LIST 
+	| NOTE | FIGURE | STAGE | TABLE | TEXT | LB | MILESTONE | PB | FW | GAP | LABEL )* >
+
+<!ATTLIST AB 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #IMPLIED
+	SUBTYPE CDATA #IMPLIED>
+	
+
+<!-- 8.0 chunks set apart : notes, quotes, etc.) -->
+
+<!-- LETTER is simply a shortcut for Q TEXT BODY DIV1 TYPE="letter" -->
+
+<!ELEMENT LETTER
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER | SALUTE 
+        | SIGNED | LB | MILESTONE | PB | FW | GAP )*, 
+        (((DIV2), (LB | MILESTONE | PB | FW | GAP )*)+ | ((( BIBL | L | LG | P | AB 
+        | SP | Q | LETTER | LICENSE | FLOATEXT | LIST | NOTE | STAGE), 
+        (LB | MILESTONE | PB | FW | GAP )*)+, ((DIV2), (LB | MILESTONE | PB | FW | GAP )*)*)),
+        ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH | SALUTE | SIGNED | TRAILER | ARGUMENT), 
+        (LB | MILESTONE | PB | FW | GAP )*)*) >
+
+<!ATTLIST LETTER
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	SUBTYPE CDATA #IMPLIED >
+
+<!ELEMENT LICENSE ((HEAD | OPENER | BYLINE | LB | MILESTONE | PB | GAP)*,
+      ((P | L | LG | Q | LIST | NOTE | BIBL), 
+      (LB | MILESTONE | PB | GAP)*)+,
+      ((CLOSER | TAILNOTE | TRAILER | ARGUMENT), (LB | MILESTONE | PB | GAP)*)*)  >
+
+<!ATTLIST LICENSE
+      ID ID #IMPLIED
+      LANG CDATA #IMPLIED
+      REND CDATA #IMPLIED
+      SUBTYPE CDATA #IMPLIED >
+
+<!-- FLOATEXT IS BEST REGARDED AS A SHORTCUT FOR Q TEXT TYPE="FLOATING" BODY DIV1 -->
+
+<!ELEMENT FLOATEXT
+	((ARGUMENT | HEADNOTE | BYLINE | EPIGRAPH | HEAD | OPENER | SALUTE 
+        | SIGNED | LB | MILESTONE | PB | FW | GAP )*, 
+        (((DIV2), (LB | MILESTONE | PB | FW | GAP )*)+ | ((( BIBL | L | LG | P | AB 
+        | SP | Q | LETTER | LICENSE | FLOATEXT | LIST | NOTE | STAGE), 
+        (LB | MILESTONE | PB | FW | GAP )*)+, ((DIV2), (LB | MILESTONE | PB | FW | GAP )*)*)),
+        ((BYLINE | CLOSER | TAILNOTE | EPIGRAPH | SALUTE | SIGNED | TRAILER | ARGUMENT), 
+        (LB | MILESTONE | PB | FW | GAP )*)*) >
+
+<!ATTLIST FLOATEXT
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	TYPE CDATA #REQUIRED
+	SUBTYPE CDATA #IMPLIED >
+
+<!ELEMENT NOTE 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| BIBL | Q | LETTER | LICENSE | FLOATEXT | LIST  
+        | NOTE | FIGURE | STAGE | TABLE | TEXT | L | LG | P | AB | SP | LB | MILESTONE 
+	| PB | GAP )* >
+
+<!ATTLIST NOTE 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	PLACE (foot|marg|foot1|foot2|marg1|marg2|marg3|inline|divend|parend|inter|end) #IMPLIED
+	RESP CDATA #IMPLIED
+	TYPE CDATA #IMPLIED >
+
+<!-- deprecated values inter and end will be removed from the values of PLACE after it has been removed from
+     the files that use it. -->
+
+
+<!ELEMENT Q 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW 
+        | BIBL | Q | LIST 
+	| NOTE | FIGURE | STAGE | TABLE | TEXT | L | LG | P | AB | SP | LB
+        | MILESTONE | PB | FW | GAP )* >
+
+<!ATTLIST  Q 
+	ID ID #IMPLIED
+	LANG CDATA #IMPLIED 
+	REND CDATA #IMPLIED
+	TYPE CDATA #IMPLIED >
+
+<!ELEMENT ADD
+	(#PCDATA | ABBR | EXPAN | CHOICE | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW  
+        | BIBL | Q | LETTER | LICENSE | FLOATEXT | LIST  
+        | NOTE | FIGURE | STAGE | TABLE | TEXT | L | LG | P | SP | LB | MILESTONE 
+	| PB | GAP )* >
+
+<!ATTLIST  ADD 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	PLACE CDATA #IMPLIED
+	RESP IDREF #IMPLIED
+	CERT CDATA #IMPLIED >
+
+<!ELEMENT DEL
+	(#PCDATA | ABBR | EXPAN | CHOICE | REF | PTR | DATE | ADD | DEL | UNCLEAR | HI | SEG | ABOVE | BELOW  
+        | BIBL | Q | LETTER | LICENSE | FLOATEXT | LIST  
+        | NOTE | FIGURE | STAGE | TABLE | TEXT | L | LG | P | SP | LB | MILESTONE 
+	| PB | GAP )* >
+
+<!ATTLIST DEL 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	PLACE CDATA #IMPLIED
+	RESP IDREF #IMPLIED >
+
+<!ELEMENT CHOICE
+        (ABBR | EXPAN)+ >
+        
+<!ELEMENT SUBST
+        (ADD | DEL )+ >
+
+<!-- 9.0 misc. little-used low-level structural elements (citations, dates) -->
+
+
+<!ELEMENT BIBL 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW 
+	 | NOTE | LB | MILESTONE | PB | GAP )* >
+
+<!ELEMENT DATE 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | ADD | DEL  
+	| UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW | LB | MILESTONE | PB | GAP | NOTE )* >
+
+<!-- removed old FIGDESC
+
+<!ELEMENT FIGDESC 
+	(#PCDATA | ABBR | REF | PTR | DATE | ADD | UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW   
+	| BIBL | Q | LIST  
+        | NOTE | FIGURE | STAGE | TABLE | TEXT | LB | MILESTONE | PB | GAP )* >
+and replaced with: -->
+
+<!ELEMENT FIGDESC (#PCDATA) >
+
+<!ATTLIST  FIGDESC 
+        SCHEME CDATA #IMPLIED >
+
+
+<!-- 10.0 character or word level tags -->
+
+<!ELEMENT ABBR 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL  
+	| UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW | LB | MILESTONE | PB | GAP )* >
+
+<!ATTLIST  ABBR 
+	EXPAN CDATA #IMPLIED
+	REND  CDATA #IMPLIED >
+
+<!ELEMENT EXPAN
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL  
+	| UNCLEAR | HI | SEG | ABOVE | BELOW | LB | MILESTONE | PB | GAP )* >
+
+<!ATTLIST EXPAN 
+	ABBR CDATA #IMPLIED
+	REND CDATA #IMPLIED >
+
+<!ELEMENT HI 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL  
+	| UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW  | BIBL | Q | LABEL | LIST 
+	| NOTE | FIGURE | STAGE | TABLE | TEXT | LB | MILESTONE | PB | FW | GAP )* >
+
+<!ATTLIST  HI 
+	REND CDATA #IMPLIED >
+	
+<!ELEMENT SUB 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | ADD | DEL  
+	| UNCLEAR | HI | SEG  | NOTE | FIGURE | LB | MILESTONE | PB | GAP )* >
+	
+<!ELEMENT SUP 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | ADD | DEL  
+	| UNCLEAR | HI | SEG  | NOTE | FIGURE | LB | MILESTONE | PB | GAP )* >
+
+<!ELEMENT ABOVE 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | ADD | DEL | SUP | SUB  
+	| UNCLEAR | HI | SEG  | NOTE | FIGURE | LB | MILESTONE | PB | GAP )* >
+	
+<!ELEMENT BELOW 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | ADD | DEL | SUP | SUB  
+	| UNCLEAR | HI | SEG  | NOTE | FIGURE | LB | MILESTONE | PB | GAP )* >
+	
+<!ELEMENT UNCLEAR 
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL 
+	| UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW  | BIBL | Q | LABEL | LIST 
+	| NOTE | FIGURE | STAGE | TABLE | TEXT
+        | LB | MILESTONE | PB | GAP )* >
+
+<!ATTLIST  UNCLEAR 
+	LANG CDATA #IMPLIED
+	REND CDATA #IMPLIED
+	REASON CDATA #IMPLIED
+	RESP CDATA #IMPLIED >
+
+<!ELEMENT SEG
+        (#PCDATA | ABBR | EXPAN | CHOICE | SUBST | ADD | DEL | BIBL | DATE | FIGURE | GAP | HI | NOTE
+        | PTR | REF | SEG | STAGE | ABOVE | BELOW | UNCLEAR |SUB | SUP | LB | PB 
+        | MILESTONE)* >
+
+<!ATTLIST SEG 
+	ID ID #IMPLIED
+	LANG CDATA #IMPLIED 
+	REND CDATA #IMPLIED
+	TYPE CDATA #IMPLIED
+	SUBTYPE CDATA #IMPLIED>
+
+<!ELEMENT FW
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | REF | PTR | DATE | ADD | DEL  
+	| UNCLEAR | HI | SEG | ABOVE | BELOW | LIST 
+	| NOTE | FIGURE | TABLE | LB | MILESTONE | GAP | LABEL )* >
+
+<!ATTLIST FW
+        PLACE (pageTop) #IMPLIED >
+
+
+<!-- 11.0 empty tags (events) -->
+
+<!ELEMENT GAP 
+	EMPTY >
+
+<!ATTLIST  GAP 
+	LANG CDATA #IMPLIED
+	DESC (foreign|illegible|music|math|missing|duplicate|replacement|symbol|intruder|blank|omitted) #REQUIRED
+	REASON CDATA #IMPLIED
+	RESP (uom|oxf|apex|pdcc|tech|aeld|uot|nlw|keyers|murp|source) #IMPLIED
+	EXTENT CDATA #IMPLIED 
+	DISP CDATA #IMPLIED
+	REND CDATA #IMPLIED>
+
+<!ELEMENT LB 
+	EMPTY >
+
+<!ATTLIST  LB 
+	N CDATA #IMPLIED 
+	TYPE CDATA #IMPLIED >
+
+<!ELEMENT MILESTONE 
+	EMPTY >
+
+<!ATTLIST  MILESTONE 
+	ID ID #IMPLIED
+	REND CDATA #IMPLIED
+	N CDATA #IMPLIED
+	UNIT CDATA #IMPLIED >
+
+<!ELEMENT PB 
+	EMPTY >
+
+<!ATTLIST  PB 
+	ID ID #IMPLIED
+	N CDATA #IMPLIED
+	REF CDATA #REQUIRED
+	MS (y|n) "n">
+
+<!-- 12.0 Linking tags -->
+
+<!ELEMENT PTR
+	EMPTY >
+
+<!ATTLIST  PTR 
+	ID ID #IMPLIED
+	TARGET IDREF #REQUIRED >
+
+<!ELEMENT REF
+	(#PCDATA | ABBR | EXPAN | CHOICE | SUBST | DATE | ADD
+	| UNCLEAR | SUB | SUP | HI | SEG | ABOVE | BELOW | BIBL | Q | LABEL | LIST | NOTE 
+	| FIGURE | STAGE | TABLE | TEXT | LB | MILESTONE | PB | GAP)* >
+
+<!ATTLIST  REF 
+	ID ID #IMPLIED
+	TARGET IDREF #REQUIRED >
+
+
+<!-- 13.0 character entities  SDATA charents removed from XML version -->
+
+<!-- Replaced for working purposes with XML general entities defining characters as string within curly braces -->
+
+
+<!-- This list needs to be periodically updated from the most recent version of charmap.sgm -->
+
+<!ENTITY ahacek "{ahacek}">
+<!ENTITY bstrok "{bstrok}">
+<!ENTITY cmacr "{cmacr}">
+<!ENTITY Ddotb "{Ddotb}">
+<!ENTITY ddotb "{ddotb}">
+<!ENTITY ebreve "{ebreve}">
+<!ENTITY Ghacek "{Ghacek}">
+<!ENTITY ghacek "{ghacek}">
+<!ENTITY Ibreve "{Ibreve}">
+<!ENTITY ibreve "{ibreve}">
+<!ENTITY Ldotb "{Ldotb}">
+<!ENTITY ldotb "{ldotb}">
+<!ENTITY obreve "{obreve}">
+<!ENTITY ohacek "{ohacek}">
+<!ENTITY pgrave "{pgrave}">
+<!ENTITY qacute "{qacute}">
+<!ENTITY Udotb "{Udotb}">
+<!ENTITY udotb "{udotb}">
+<!ENTITY uhacek "{uhacek}">
+<!ENTITY vbreve "{vbreve}">
+<!ENTITY ydot "{ydot}">
+<!ENTITY yhook "{yhook}">
+<!ENTITY Yhook "{Yhook}">
+<!ENTITY ymacr "{ymacr}">
+<!ENTITY ohkact "{ohkact}">
+<!ENTITY usd5 "{usd5}">
+<!ENTITY YOGH "{YOGH}">
+<!ENTITY yogh "{yogh}">
+<!ENTITY wyn "{wyn}">
+<!ENTITY WYN "{WYN}">
+<!ENTITY w "{w}">
+<!ENTITY W "{W}">
+<!ENTITY y "{y}">
+<!ENTITY Y "{Y}">
+<!ENTITY V "{V}">
+<!ENTITY s "{s}">
+<!ENTITY alef "{alef}">
+<!ENTITY ayin "{ayin}">
+<!ENTITY bet "{bet}">
+<!ENTITY dalet "{dalet}">
+<!ENTITY finalkaf "{finalkaf}">
+<!ENTITY finalmem "{finalmem}">
+<!ENTITY finalnun "{finalnun}">
+<!ENTITY finalpe "{finalpe}">
+<!ENTITY finaltsadi "{finaltsadi}">
+<!ENTITY gimel "{gimel}">
+<!ENTITY he "{he}">
+<!ENTITY het "{het}">
+<!ENTITY kaf "{kaf}">
+<!ENTITY lamed "{lamed}">
+<!ENTITY mem "{mem}">
+<!ENTITY nun "{nun}">
+<!ENTITY pe "{pe}">
+<!ENTITY qof "{qof}">
+<!ENTITY resh "{resh}">
+<!ENTITY samekh "{samekh}">
+<!ENTITY shin "{shin}">
+<!ENTITY tav "{tav}">
+<!ENTITY tsadi "{tsadi}">
+<!ENTITY tet "{tet}">
+<!ENTITY vav "{vav}">
+<!ENTITY yod "{yod}">
+<!ENTITY zayin "{zayin}">
+<!ENTITY ougr "{ougr}">
+<!ENTITY Slungr "{Slungr}">
+<!ENTITY finallamed "{finallamed}">
+<!ENTITY DIGgr "{DIGgr}">
+<!ENTITY KOgr "{KOgr}">
+<!ENTITY STgr "{STgr}">
+<!ENTITY SAMgr "{SAMgr}">
+<!ENTITY keraia "{keraia}">
+<!ENTITY lkeraia "{lkeraia}">
+<!ENTITY thscrgr "{thscrgr}">
+<!ENTITY Sgr-rev "{Sgr-rev}">
+<!ENTITY Ggr-rev "{Ggr-rev}">
+<!ENTITY Rgr-rev "{Rgr-rev}">
+<!ENTITY abbus "{abbus}">
+<!ENTITY abbrapo "{abbrapo}">
+<!ENTITY abcon "{abcon}">
+<!ENTITY aber "{aber}">
+<!ENTITY abis "{abis}">
+<!ENTITY abper "{abper}">
+<!ENTITY abpr "{abpr}">
+<!ENTITY abpre "{abpre}">
+<!ENTITY abpri "{abpri}">
+<!ENTITY abPRI "{abPRI}">
+<!ENTITY abpro "{abpro}">
+<!ENTITY abqu "{abqu}">
+<!ENTITY abquam "{abquam}">
+<!ENTITY abque "{abque}">
+<!ENTITY abQUE "{abQUE}">
+<!ENTITY abqui "{abqui}">
+<!ENTITY abQUOD "{abQUOD}">
+<!ENTITY abquod "{abquod}">
+<!ENTITY abris "{abris}">
+<!ENTITY abrum "{abrum}">
+<!ENTITY absed "{absed}">
+<!ENTITY abser "{abser}">
+<!ENTITY abur "{abur}">
+<!ENTITY abus "{abus}">
+<!ENTITY abUS "{abUS}">
+<!ENTITY dhook "{dhook}">
+<!ENTITY es "{es}">
+<!ENTITY etc "{etc}">
+<!ENTITY qbar "{qbar}">
+<!ENTITY sloop "{sloop}">
+<!ENTITY that "{that}">
+<!ENTITY z "{z}">
+<!ENTITY chirho "{chirho}">
+<!ENTITY schwa "{schwa}">
+<!ENTITY yhwh "{yhwh}">
+<!ENTITY shilling "{shilling}">
+<!ENTITY Xbar "{Xbar}">
+<!ENTITY resp "{resp}">
+<!ENTITY vers "{vers}">
+<!ENTITY cmbacute "{cmbacute}">
+<!ENTITY cmbbreve "{cmbbreve}">
+<!ENTITY cmbcaron "{cmbcaron}">
+<!ENTITY cmbcedil "{cmbcedil}">
+<!ENTITY cmbcirc "{cmbcirc}">
+<!ENTITY cmbdblac "{cmbdblac}">
+<!ENTITY cmbdot "{cmbdot}">
+<!ENTITY cmbdotb "{cmbdotb}">
+<!ENTITY cmbgrave "{cmbgrave}">
+<!ENTITY cmbmacr "{cmbmacr}">
+<!ENTITY cmbogon "{cmbogon}">
+<!ENTITY cmbring "{cmbring}">
+<!ENTITY cmbtilde "{cmbtilde}">
+<!ENTITY cmbuml "{cmbuml}">
+<!ENTITY cmbtildeover "{cmbtildeover}">
+<!ENTITY cmbstrokeover "{cmbstrokeover}">
+<!ENTITY cmbSTROKEover "{cmbSTROKEover}">
+<!ENTITY cmbvirguleover "{cmbvirguleover}">
+<!ENTITY cmbVIRGULEover "{cmbVIRGULEover}">
+<!ENTITY cmbperispo "{cmbperispo}">
+<!ENTITY cmbcommaa "{cmbcommaa}">
+<!ENTITY cmbrcomma "{cmbrcomma}">
+<!ENTITY cmbx "{cmbx}">
+<!ENTITY spcacute "{spcacute}">
+<!ENTITY spcbreve "{spcbreve}">
+<!ENTITY spccaron "{spccaron}">
+<!ENTITY spccedil "{spccedil}">
+<!ENTITY spccirc "{spccirc}">
+<!ENTITY spcdblac "{spcdblac}">
+<!ENTITY spcdot "{spcdot}">
+<!ENTITY spcdotb "{spcdotb}">
+<!ENTITY spcgrave "{spcgrave}">
+<!ENTITY spcmacr "{spcmacr}">
+<!ENTITY spcogon "{spcogon}">
+<!ENTITY spcring "{spcring}">
+<!ENTITY spctilde "{spctilde}">
+<!ENTITY spcuml "{spcuml}">
+<!ENTITY spcperispo "{spcperispo}">
+<!ENTITY spccommaa "{spccommaa}">
+<!ENTITY spcrcomma "{spcrcomma}">
+<!ENTITY spcx "{spcx}">
+<!ENTITY anchor "{anchor}">
+<!ENTITY circdot "{circdot}">
+<!ENTITY circle "{circle}">
+<!ENTITY biglsquo "{biglsquo}">
+<!ENTITY circledplus "{circledplus}">
+<!ENTITY circledtimes "{circledtimes}">
+<!ENTITY circled-0 "{circled-0}">
+<!ENTITY circled-1 "{circled-1}">
+<!ENTITY circled-2 "{circled-2}">
+<!ENTITY circled-3 "{circled-3}">
+<!ENTITY circled-4 "{circled-4}">
+<!ENTITY circled-5 "{circled-5}">
+<!ENTITY circled-6 "{circled-6}">
+<!ENTITY circled-7 "{circled-7}">
+<!ENTITY circled-8 "{circled-8}">
+<!ENTITY circled-9 "{circled-9}">
+<!ENTITY circled-10 "{circled-10}">
+<!ENTITY circled-11 "{circled-11}">
+<!ENTITY circled-12 "{circled-12}">
+<!ENTITY cross "{cross}">
+<!ENTITY diamond "{diamond}">
+<!ENTITY die1 "{die1}">
+<!ENTITY die2 "{die2}">
+<!ENTITY die3 "{die3}">
+<!ENTITY die4 "{die4}">
+<!ENTITY die5 "{die5}">
+<!ENTITY die6 "{die6}">
+<!ENTITY dindx "{dindx}">
+<!ENTITY dtridot "{dtridot}">
+<!ENTITY dtristar "{dtristar}">
+<!ENTITY fivedash "{fivedash}">
+<!ENTITY fivedot "{fivedot}">
+<!ENTITY fleurdelys "{fleurdelys}">
+<!ENTITY flower "{flower}">
+<!ENTITY flowerf "{flowerf}">
+<!ENTITY hDagger "{hDagger}">
+<!ENTITY heart "{heart}">
+<!ENTITY idagger "{idagger}">
+<!ENTITY latcross "{latcross}">
+<!ENTITY ldagger "{ldagger}">
+<!ENTITY leaf "{leaf}">
+<!ENTITY lindx "{lindx}">
+<!ENTITY quaddot "{quaddot}">
+<!ENTITY quaddotl "{quaddotl}">
+<!ENTITY quaddotr "{quaddotr}">
+<!ENTITY rdagger "{rdagger}">
+<!ENTITY rindx "{rindx}">
+<!ENTITY rsect "{rsect}">
+<!ENTITY saltire "{saltire}">
+<!ENTITY tdagger "{tdagger}">
+<!ENTITY trefoil "{trefoil}">
+<!ENTITY triapost "{triapost}">
+<!ENTITY tridot "{tridot}">
+<!ENTITY tristar "{tristar}">
+<!ENTITY triwdot "{triwdot}">
+<!ENTITY uindx "{uindx}">
+<!ENTITY whbull "{whbull}">
+<!ENTITY endq "{endq}">
+<!ENTITY lpara "{lpara}">
+<!ENTITY lquest "{lquest}">
+<!ENTITY lpunctel "{lpunctel}">
+<!ENTITY lsemicol "{lsemicol}">
+<!ENTITY punc "{punc}">
+<!ENTITY punctel "{punctel}">
+<!ENTITY startq "{startq}">
+<!ENTITY leftblank "{leftblank}">
+<!ENTITY closeup "{closeup}">
+<!ENTITY Earth "{Earth}">
+<!ENTITY Jupit "{Jupit}">
+<!ENTITY Mars "{Mars}">
+<!ENTITY Merc "{Merc}">
+<!ENTITY Moon "{Moon}">
+<!ENTITY Saturn "{Saturn}">
+<!ENTITY Sun "{Sun}">
+<!ENTITY rayedSun "{rayedSun}">
+<!ENTITY Venus "{Venus}">
+<!ENTITY Aquar "{Aquar}">
+<!ENTITY Aries "{Aries}">
+<!ENTITY Cancer "{Cancer}">
+<!ENTITY Capri "{Capri}">
+<!ENTITY Gemini "{Gemini}">
+<!ENTITY Leo "{Leo}">
+<!ENTITY Libra "{Libra}">
+<!ENTITY Pisces "{Pisces}">
+<!ENTITY Sagitt "{Sagitt}">
+<!ENTITY Scorp "{Scorp}">
+<!ENTITY Taurus "{Taurus}">
+<!ENTITY Virgo "{Virgo}">
+<!ENTITY conjunction "{conjunction}">
+<!ENTITY Moonfirst "{Moonfirst}">
+<!ENTITY Moonlast "{Moonlast}">
+<!ENTITY Moonnew "{Moonnew}">
+<!ENTITY Moonround "{Moonround}">
+<!ENTITY northnode "{northnode}">
+<!ENTITY opposition "{opposition}">
+<!ENTITY quadrine "{quadrine}">
+<!ENTITY semisextile "{semisextile}">
+<!ENTITY sextile "{sextile}">
+<!ENTITY southnode "{southnode}">
+<!ENTITY trine "{trine}">
+<!ENTITY trine2 "{trine2}">
+<!ENTITY stella "{stella}">
+<!ENTITY halfcross "{halfcross}">
+<!ENTITY rhalfcross "{rhalfcross}">
+<!ENTITY dram "{dram}">
+<!ENTITY ounce "{ounce}">
+<!ENTITY scruple "{scruple}">
+<!ENTITY abprecipi "{abprecipi}">
+<!ENTITY absubli "{absubli}">
+<!ENTITY afortis "{afortis}">
+<!ENTITY air "{air}">
+<!ENTITY alembic "{alembic}">
+<!ENTITY alum "{alum}">
+<!ENTITY alum2 "{alum2}">
+<!ENTITY antimony "{antimony}">
+<!ENTITY aregis "{aregis}">
+<!ENTITY arsenic "{arsenic}">
+<!ENTITY arsenic2 "{arsenic2}">
+<!ENTITY ashes "{ashes}">
+<!ENTITY blood "{blood}">
+<!ENTITY cinnabar1 "{cinnabar1}">
+<!ENTITY cinnabar2 "{cinnabar2}">
+<!ENTITY cinnabar3 "{cinnabar3}">
+<!ENTITY day "{day}">
+<!ENTITY earth "{earth}">
+<!ENTITY fire "{fire}">
+<!ENTITY glass "{glass}">
+<!ENTITY night "{night}">
+<!ENTITY nitre "{nitre}">
+<!ENTITY oil "{oil}">
+<!ENTITY potash "{potash}">
+<!ENTITY purify "{purify}">
+<!ENTITY quicklime "{quicklime}">
+<!ENTITY salarmon "{salarmon}">
+<!ENTITY salarmon2 "{salarmon2}">
+<!ENTITY salt "{salt}">
+<!ENTITY saltgemme "{saltgemme}">
+<!ENTITY sulphur "{sulphur}">
+<!ENTITY talc "{talc}">
+<!ENTITY tartar "{tartar}">
+<!ENTITY urine "{urine}">
+<!ENTITY vinedist "{vinedist}">
+<!ENTITY vinegar "{vinegar}">
+<!ENTITY vitriol "{vitriol}">
+<!ENTITY vitriol2 "{vitriol2}">
+<!ENTITY vitriol3 "{vitriol3}">
+<!ENTITY water "{water}">
+<!ENTITY wax "{wax}">
+<!ENTITY ang "{ang}">
+<!ENTITY angulum "{angulum}">
+<!ENTITY arc "{arc}">
+<!ENTITY decimalc "{decimalc}">
+<!ENTITY decimalL "{decimalL}">
+<!ENTITY divisor "{divisor}">
+<!ENTITY geoprop "{geoprop}">
+<!ENTITY higherterm "{higherterm}">
+<!ENTITY higherthan "{higherthan}">
+<!ENTITY langle "{langle}">
+<!ENTITY lazyS "{lazyS}">
+<!ENTITY lessthan "{lessthan}">
+<!ENTITY logarithm "{logarithm}">
+<!ENTITY lowerterm "{lowerterm}">
+<!ENTITY lowerthan "{lowerthan}">
+<!ENTITY morethan "{morethan}">
+<!ENTITY multiplier "{multiplier}">
+<!ENTITY potestas "{potestas}">
+<!ENTITY powerof1 "{powerof1}">
+<!ENTITY powerof2 "{powerof2}">
+<!ENTITY powerof3 "{powerof3}">
+<!ENTITY powerof4 "{powerof4}">
+<!ENTITY powerof5 "{powerof5}">
+<!ENTITY powerof6 "{powerof6}">
+<!ENTITY pprime "{pprime}">
+<!ENTITY product "{product}">
+<!ENTITY proportion "{proportion}">
+<!ENTITY proportion2 "{proportion2}">
+<!ENTITY qprime "{qprime}">
+<!ENTITY quotient "{quotient}">
+<!ENTITY ratio "{ratio}">
+<!ENTITY ration "{ration}">
+<!ENTITY revC "{revC}">
+<!ENTITY rn10000 "{rn10000}">
+<!ENTITY rn100000 "{rn100000}">
+<!ENTITY rn1000000 "{rn1000000}">
+<!ENTITY rn5000 "{rn5000}">
+<!ENTITY rn50000 "{rn50000}">
+<!ENTITY rn500000 "{rn500000}">
+<!ENTITY root "{root}">
+<!ENTITY barline "{barline}">
+<!ENTITY Barline "{Barline}">
+<!ENTITY barlinef "{barlinef}">
+<!ENTITY cclef "{cclef}">
+<!ENTITY commonTime-adagio "{commonTime-adagio}">
+<!ENTITY commonTime-allegro "{commonTime-allegro}">
+<!ENTITY commonTime-largo "{commonTime-largo}">
+<!ENTITY direct "{direct}">
+<!ENTITY fclef "{fclef}">
+<!ENTITY fermata "{fermata}">
+<!ENTITY fermatab "{fermatab}">
+<!ENTITY gclef "{gclef}">
+<!ENTITY lrepeat "{lrepeat}">
+<!ENTITY musicBrace "{musicBrace}">
+<!ENTITY musicBracket "{musicBracket}">
+<!ENTITY musicNote "{musicNote}">
+<!ENTITY notebreve "{notebreve}">
+<!ENTITY notecrotchet "{notecrotchet}">
+<!ENTITY notedemisemiquaver "{notedemisemiquaver}">
+<!ENTITY noteEighth "{noteEighth}">
+<!ENTITY noteHalf "{noteHalf}">
+<!ENTITY notelarge "{notelarge}">
+<!ENTITY notelong "{notelong}">
+<!ENTITY noteminim "{noteminim}">
+<!ENTITY noteQuarter "{noteQuarter}">
+<!ENTITY notequaver "{notequaver}">
+<!ENTITY notesemibreve "{notesemibreve}">
+<!ENTITY notesemiquaver "{notesemiquaver}">
+<!ENTITY noteWhole "{noteWhole}">
+<!ENTITY repeat "{repeat}">
+<!ENTITY restbreve "{restbreve}">
+<!ENTITY restcrotchet "{restcrotchet}">
+<!ENTITY restdemisemiquaver "{restdemisemiquaver}">
+<!ENTITY restlarge "{restlarge}">
+<!ENTITY restlong "{restlong}">
+<!ENTITY restminim "{restminim}">
+<!ENTITY restquaver "{restquaver}">
+<!ENTITY restsemibreve "{restsemibreve}">
+<!ENTITY restsemiquaver "{restsemiquaver}">
+<!ENTITY rrepeat "{rrepeat}">
+<!ENTITY sharp2 "{sharp2}">
+<!ENTITY sharpb "{sharpb}">
+<!ENTITY slur "{slur}">
+<!ENTITY timeimperf-prolatimperf "{timeimperf-prolatimperf}">
+<!ENTITY timeimperf-prolatimperf-rev "{timeimperf-prolatimperf-rev}">
+<!ENTITY timeimperf-prolatimperf-rev-str "{timeimperf-prolatimperf-rev-str}">
+<!ENTITY timeimperf-prolatimperf-str "{timeimperf-prolatimperf-str}">
+<!ENTITY timeimperf-prolatimperf-x "{timeimperf-prolatimperf-x}">
+<!ENTITY timeimperf-prolatperf "{timeimperf-prolatperf}">
+<!ENTITY timeimperf-prolatperf-rev "{timeimperf-prolatperf-rev}">
+<!ENTITY timeimperf-prolatperf-rev-str "{timeimperf-prolatperf-rev-str}">
+<!ENTITY timeimperf-prolatperf-str "{timeimperf-prolatperf-str}">
+<!ENTITY timeperf-prolatimperf "{timeperf-prolatimperf}">
+<!ENTITY timeperf-prolatimperf-str "{timeperf-prolatimperf-str}">
+<!ENTITY timeperf-prolatimperf-x "{timeperf-prolatimperf-x}">
+<!ENTITY timeperf-prolatperf "{timeperf-prolatperf}">
+<!ENTITY timeperf-prolatperf-str "{timeperf-prolatperf-str}">
+<!ENTITY vocaljoin "{vocaljoin}">
+<!ENTITY aacute "{aacute}">
+<!ENTITY Aacute "{Aacute}">
+<!ENTITY acirc "{acirc}">
+<!ENTITY Acirc "{Acirc}">
+<!ENTITY agrave "{agrave}">
+<!ENTITY Agrave "{Agrave}">
+<!ENTITY aring "{aring}">
+<!ENTITY Aring "{Aring}">
+<!ENTITY atilde "{atilde}">
+<!ENTITY Atilde "{Atilde}">
+<!ENTITY auml "{auml}">
+<!ENTITY Auml "{Auml}">
+<!ENTITY aelig "{aelig}">
+<!ENTITY AElig "{AElig}">
+<!ENTITY ccedil "{ccedil}">
+<!ENTITY Ccedil "{Ccedil}">
+<!ENTITY eth "{eth}">
+<!ENTITY ETH "{ETH}">
+<!ENTITY eacute "{eacute}">
+<!ENTITY Eacute "{Eacute}">
+<!ENTITY ecirc "{ecirc}">
+<!ENTITY Ecirc "{Ecirc}">
+<!ENTITY egrave "{egrave}">
+<!ENTITY Egrave "{Egrave}">
+<!ENTITY euml "{euml}">
+<!ENTITY Euml "{Euml}">
+<!ENTITY iacute "{iacute}">
+<!ENTITY Iacute "{Iacute}">
+<!ENTITY icirc "{icirc}">
+<!ENTITY Icirc "{Icirc}">
+<!ENTITY igrave "{igrave}">
+<!ENTITY Igrave "{Igrave}">
+<!ENTITY iuml "{iuml}">
+<!ENTITY Iuml "{Iuml}">
+<!ENTITY ntilde "{ntilde}">
+<!ENTITY Ntilde "{Ntilde}">
+<!ENTITY oacute "{oacute}">
+<!ENTITY Oacute "{Oacute}">
+<!ENTITY ocirc "{ocirc}">
+<!ENTITY Ocirc "{Ocirc}">
+<!ENTITY ograve "{ograve}">
+<!ENTITY Ograve "{Ograve}">
+<!ENTITY oslash "{oslash}">
+<!ENTITY Oslash "{Oslash}">
+<!ENTITY otilde "{otilde}">
+<!ENTITY Otilde "{Otilde}">
+<!ENTITY ouml "{ouml}">
+<!ENTITY Ouml "{Ouml}">
+<!ENTITY szlig "{szlig}">
+<!ENTITY thorn "{thorn}">
+<!ENTITY THORN "{THORN}">
+<!ENTITY uacute "{uacute}">
+<!ENTITY Uacute "{Uacute}">
+<!ENTITY ucirc "{ucirc}">
+<!ENTITY Ucirc "{Ucirc}">
+<!ENTITY ugrave "{ugrave}">
+<!ENTITY Ugrave "{Ugrave}">
+<!ENTITY uuml "{uuml}">
+<!ENTITY Uuml "{Uuml}">
+<!ENTITY yacute "{yacute}">
+<!ENTITY Yacute "{Yacute}">
+<!ENTITY yuml "{yuml}">
+<!ENTITY abreve "{abreve}">
+<!ENTITY Abreve "{Abreve}">
+<!ENTITY amacr "{amacr}">
+<!ENTITY Amacr "{Amacr}">
+<!ENTITY aogon "{aogon}">
+<!ENTITY Aogon "{Aogon}">
+<!ENTITY cacute "{cacute}">
+<!ENTITY Cacute "{Cacute}">
+<!ENTITY ccaron "{ccaron}">
+<!ENTITY Ccaron "{Ccaron}">
+<!ENTITY ccirc "{ccirc}">
+<!ENTITY Ccirc "{Ccirc}">
+<!ENTITY cdot "{cdot}">
+<!ENTITY Cdot "{Cdot}">
+<!ENTITY dcaron "{dcaron}">
+<!ENTITY Dcaron "{Dcaron}">
+<!ENTITY dstrok "{dstrok}">
+<!ENTITY Dstrok "{Dstrok}">
+<!ENTITY ecaron "{ecaron}">
+<!ENTITY Ecaron "{Ecaron}">
+<!ENTITY edot "{edot}">
+<!ENTITY Edot "{Edot}">
+<!ENTITY emacr "{emacr}">
+<!ENTITY Emacr "{Emacr}">
+<!ENTITY eogon "{eogon}">
+<!ENTITY Eogon "{Eogon}">
+<!ENTITY gacute "{gacute}">
+<!ENTITY gbreve "{gbreve}">
+<!ENTITY Gbreve "{Gbreve}">
+<!ENTITY Gcedil "{Gcedil}">
+<!ENTITY gcirc "{gcirc}">
+<!ENTITY Gcirc "{Gcirc}">
+<!ENTITY gdot "{gdot}">
+<!ENTITY Gdot "{Gdot}">
+<!ENTITY hcirc "{hcirc}">
+<!ENTITY Hcirc "{Hcirc}">
+<!ENTITY hstrok "{hstrok}">
+<!ENTITY Hstrok "{Hstrok}">
+<!ENTITY Idot "{Idot}">
+<!ENTITY Imacr "{Imacr}">
+<!ENTITY imacr "{imacr}">
+<!ENTITY ijlig "{ijlig}">
+<!ENTITY IJlig "{IJlig}">
+<!ENTITY inodot "{inodot}">
+<!ENTITY iogon "{iogon}">
+<!ENTITY Iogon "{Iogon}">
+<!ENTITY itilde "{itilde}">
+<!ENTITY Itilde "{Itilde}">
+<!ENTITY jcirc "{jcirc}">
+<!ENTITY Jcirc "{Jcirc}">
+<!ENTITY kcedil "{kcedil}">
+<!ENTITY Kcedil "{Kcedil}">
+<!ENTITY kgreen "{kgreen}">
+<!ENTITY lacute "{lacute}">
+<!ENTITY Lacute "{Lacute}">
+<!ENTITY lcaron "{lcaron}">
+<!ENTITY Lcaron "{Lcaron}">
+<!ENTITY lcedil "{lcedil}">
+<!ENTITY Lcedil "{Lcedil}">
+<!ENTITY lmidot "{lmidot}">
+<!ENTITY Lmidot "{Lmidot}">
+<!ENTITY lstrok "{lstrok}">
+<!ENTITY Lstrok "{Lstrok}">
+<!ENTITY nacute "{nacute}">
+<!ENTITY Nacute "{Nacute}">
+<!ENTITY eng "{eng}">
+<!ENTITY ENG "{ENG}">
+<!ENTITY napos "{napos}">
+<!ENTITY ncaron "{ncaron}">
+<!ENTITY Ncaron "{Ncaron}">
+<!ENTITY ncedil "{ncedil}">
+<!ENTITY Ncedil "{Ncedil}">
+<!ENTITY odblac "{odblac}">
+<!ENTITY Odblac "{Odblac}">
+<!ENTITY Omacr "{Omacr}">
+<!ENTITY omacr "{omacr}">
+<!ENTITY oelig "{oelig}">
+<!ENTITY OElig "{OElig}">
+<!ENTITY racute "{racute}">
+<!ENTITY Racute "{Racute}">
+<!ENTITY rcaron "{rcaron}">
+<!ENTITY Rcaron "{Rcaron}">
+<!ENTITY rcedil "{rcedil}">
+<!ENTITY Rcedil "{Rcedil}">
+<!ENTITY sacute "{sacute}">
+<!ENTITY Sacute "{Sacute}">
+<!ENTITY scaron "{scaron}">
+<!ENTITY Scaron "{Scaron}">
+<!ENTITY scedil "{scedil}">
+<!ENTITY Scedil "{Scedil}">
+<!ENTITY scirc "{scirc}">
+<!ENTITY Scirc "{Scirc}">
+<!ENTITY tcaron "{tcaron}">
+<!ENTITY Tcaron "{Tcaron}">
+<!ENTITY tcedil "{tcedil}">
+<!ENTITY Tcedil "{Tcedil}">
+<!ENTITY tstrok "{tstrok}">
+<!ENTITY Tstrok "{Tstrok}">
+<!ENTITY ubreve "{ubreve}">
+<!ENTITY Ubreve "{Ubreve}">
+<!ENTITY udblac "{udblac}">
+<!ENTITY Udblac "{Udblac}">
+<!ENTITY umacr "{umacr}">
+<!ENTITY Umacr "{Umacr}">
+<!ENTITY uogon "{uogon}">
+<!ENTITY Uogon "{Uogon}">
+<!ENTITY uring "{uring}">
+<!ENTITY Uring "{Uring}">
+<!ENTITY utilde "{utilde}">
+<!ENTITY Utilde "{Utilde}">
+<!ENTITY wcirc "{wcirc}">
+<!ENTITY Wcirc "{Wcirc}">
+<!ENTITY ycirc "{ycirc}">
+<!ENTITY Ycirc "{Ycirc}">
+<!ENTITY Yuml "{Yuml}">
+<!ENTITY zacute "{zacute}">
+<!ENTITY Zacute "{Zacute}">
+<!ENTITY zcaron "{zcaron}">
+<!ENTITY Zcaron "{Zcaron}">
+<!ENTITY zdot "{zdot}">
+<!ENTITY Zdot "{Zdot}">
+<!ENTITY frac12 "{frac12}">
+<!ENTITY frac14 "{frac14}">
+<!ENTITY frac34 "{frac34}">
+<!ENTITY frac18 "{frac18}">
+<!ENTITY frac38 "{frac38}">
+<!ENTITY frac58 "{frac58}">
+<!ENTITY frac78 "{frac78}">
+<!ENTITY sup1 "{sup1}">
+<!ENTITY sup2 "{sup2}">
+<!ENTITY sup3 "{sup3}">
+<!ENTITY plus "{plus}">
+<!ENTITY plusmn "{plusmn}">
+<!ENTITY equals "{equals}">
+<!ENTITY divide "{divide}">
+<!ENTITY times "{times}">
+<!ENTITY curren "{curren}">
+<!ENTITY pound "{pound}">
+<!ENTITY dollar "{dollar}">
+<!ENTITY cent "{cent}">
+<!ENTITY yen "{yen}">
+<!ENTITY num "{num}">
+<!ENTITY percnt "{percnt}">
+<!ENTITY ast "{ast}">
+<!ENTITY commat "{commat}">
+<!ENTITY lsqb "{lsqb}">
+<!ENTITY bsol "{bsol}">
+<!ENTITY rsqb "{rsqb}">
+<!ENTITY lcub "{lcub}">
+<!ENTITY horbar "{horbar}">
+<!ENTITY verbar "{verbar}">
+<!ENTITY rcub "{rcub}">
+<!ENTITY micro "{micro}">
+<!ENTITY ohm "{ohm}">
+<!ENTITY deg "{deg}">
+<!ENTITY ordm "{ordm}">
+<!ENTITY ordf "{ordf}">
+<!ENTITY sect "{sect}">
+<!ENTITY para "{para}">
+<!ENTITY middot "{middot}">
+<!ENTITY larr "{larr}">
+<!ENTITY rarr "{rarr}">
+<!ENTITY uarr "{uarr}">
+<!ENTITY darr "{darr}">
+<!ENTITY copy "{copy}">
+<!ENTITY reg "{reg}">
+<!ENTITY trade "{trade}">
+<!ENTITY not "{not}">
+<!ENTITY sung "{sung}">
+<!ENTITY excl "{excl}">
+<!ENTITY iexcl "{iexcl}">
+<!ENTITY lpar "{lpar}">
+<!ENTITY rpar "{rpar}">
+<!ENTITY comma "{comma}">
+<!ENTITY lowbar "{lowbar}">
+<!ENTITY hyphen "{hyphen}">
+<!ENTITY period "{period}">
+<!ENTITY sol "{sol}">
+<!ENTITY colon "{colon}">
+<!ENTITY semi "{semi}">
+<!ENTITY quest "{quest}">
+<!ENTITY iquest "{iquest}">
+<!ENTITY laquo "{laquo}">
+<!ENTITY raquo "{raquo}">
+<!ENTITY lsquo "{lsquo}">
+<!ENTITY rsquo "{rsquo}">
+<!ENTITY ldquo "{ldquo}">
+<!ENTITY rdquo "{rdquo}">
+<!ENTITY nbsp "{nbsp}">
+<!ENTITY shy "{shy}">
+<!ENTITY emsp "{emsp}">
+<!ENTITY ensp "{ensp}">
+<!ENTITY emsp13 "{emsp13}">
+<!ENTITY emsp14 "{emsp14}">
+<!ENTITY numsp "{numsp}">
+<!ENTITY puncsp "{puncsp}">
+<!ENTITY thinsp "{thinsp}">
+<!ENTITY hairsp "{hairsp}">
+<!ENTITY mdash "{mdash}">
+<!ENTITY ndash "{ndash}">
+<!ENTITY dash "{dash}">
+<!ENTITY blank "{blank}">
+<!ENTITY hellip "{hellip}">
+<!ENTITY nldr "{nldr}">
+<!ENTITY frac13 "{frac13}">
+<!ENTITY frac23 "{frac23}">
+<!ENTITY frac15 "{frac15}">
+<!ENTITY frac25 "{frac25}">
+<!ENTITY frac35 "{frac35}">
+<!ENTITY frac45 "{frac45}">
+<!ENTITY frac16 "{frac16}">
+<!ENTITY frac56 "{frac56}">
+<!ENTITY incare "{incare}">
+<!ENTITY block "{block}">
+<!ENTITY uhblk "{uhblk}">
+<!ENTITY lhblk "{lhblk}">
+<!ENTITY blk14 "{blk14}">
+<!ENTITY blk12 "{blk12}">
+<!ENTITY blk34 "{blk34}">
+<!ENTITY marker "{marker}">
+<!ENTITY cir "{cir}">
+<!ENTITY rect "{rect}">
+<!ENTITY utri "{utri}">
+<!ENTITY dtri "{dtri}">
+<!ENTITY star "{star}">
+<!ENTITY bull "{bull}">
+<!ENTITY squf "{squf}">
+<!ENTITY utrif "{utrif}">
+<!ENTITY dtrif "{dtrif}">
+<!ENTITY ltrif "{ltrif}">
+<!ENTITY rtrif "{rtrif}">
+<!ENTITY clubs "{clubs}">
+<!ENTITY diams "{diams}">
+<!ENTITY hearts "{hearts}">
+<!ENTITY spades "{spades}">
+<!ENTITY malt "{malt}">
+<!ENTITY dagger "{dagger}">
+<!ENTITY Dagger "{Dagger}">
+<!ENTITY check "{check}">
+<!ENTITY sharp "{sharp}">
+<!ENTITY flat "{flat}">
+<!ENTITY telrec "{telrec}">
+<!ENTITY copysr "{copysr}">
+<!ENTITY caret "{caret}">
+<!ENTITY lsquor "{lsquor}">
+<!ENTITY ldquor "{ldquor}">
+<!ENTITY fflig "{fflig}">
+<!ENTITY filig "{filig}">
+<!ENTITY ffilig "{ffilig}">
+<!ENTITY fjlig "{fjlig}">
+<!ENTITY ffllig "{ffllig}">
+<!ENTITY fllig "{fllig}">
+<!ENTITY vellip "{vellip}">
+<!ENTITY hybull "{hybull}">
+<!ENTITY loz "{loz}">
+<!ENTITY lozf "{lozf}">
+<!ENTITY ltri "{ltri}">
+<!ENTITY rtri "{rtri}">
+<!ENTITY starf "{starf}">
+<!ENTITY natur "{natur}">
+<!ENTITY rx "{rx}">
+<!ENTITY sext "{sext}">
+<!ENTITY target "{target}">
+<!ENTITY dlcrop "{dlcrop}">
+<!ENTITY drcrop "{drcrop}">
+<!ENTITY ulcrop "{ulcrop}">
+<!ENTITY urcrop "{urcrop}">
+<!ENTITY aleph "{aleph}">
+<!ENTITY and "{and}">
+<!ENTITY ang90 "{ang90}">
+<!ENTITY angsph "{angsph}">
+<!ENTITY ap "{ap}">
+<!ENTITY becaus "{becaus}">
+<!ENTITY cap "{cap}">
+<!ENTITY cong "{cong}">
+<!ENTITY conint "{conint}">
+<!ENTITY cup "{cup}">
+<!ENTITY equiv "{equiv}">
+<!ENTITY exist "{exist}">
+<!ENTITY forall "{forall}">
+<!ENTITY fnof "{fnof}">
+<!ENTITY ge "{ge}">
+<!ENTITY iff "{iff}">
+<!ENTITY infin "{infin}">
+<!ENTITY int "{int}">
+<!ENTITY isin "{isin}">
+<!ENTITY lang "{lang}">
+<!ENTITY lArr "{lArr}">
+<!ENTITY le "{le}">
+<!ENTITY minus "{minus}">
+<!ENTITY mnplus "{mnplus}">
+<!ENTITY nabla "{nabla}">
+<!ENTITY ne "{ne}">
+<!ENTITY ni "{ni}">
+<!ENTITY or "{or}">
+<!ENTITY par "{par}">
+<!ENTITY part "{part}">
+<!ENTITY permil "{permil}">
+<!ENTITY perp "{perp}">
+<!ENTITY prime "{prime}">
+<!ENTITY Prime "{Prime}">
+<!ENTITY prop "{prop}">
+<!ENTITY radic "{radic}">
+<!ENTITY rang "{rang}">
+<!ENTITY rArr "{rArr}">
+<!ENTITY sim "{sim}">
+<!ENTITY sime "{sime}">
+<!ENTITY square "{square}">
+<!ENTITY sub "{sub}">
+<!ENTITY sube "{sube}">
+<!ENTITY sup "{sup}">
+<!ENTITY supe "{supe}">
+<!ENTITY there4 "{there4}">
+<!ENTITY Verbar "{Verbar}">
+<!ENTITY angst "{angst}">
+<!ENTITY bernou "{bernou}">
+<!ENTITY compfn "{compfn}">
+<!ENTITY DotDot "{DotDot}">
+<!ENTITY hamilt "{hamilt}">
+<!ENTITY lagran "{lagran}">
+<!ENTITY lowast "{lowast}">
+<!ENTITY notin "{notin}">
+<!ENTITY order "{order}">
+<!ENTITY phmmat "{phmmat}">
+<!ENTITY tdot "{tdot}">
+<!ENTITY tprime "{tprime}">
+<!ENTITY wedgeq "{wedgeq}">
+<!ENTITY agr "{agr}">
+<!ENTITY Agr "{Agr}">
+<!ENTITY bgr "{bgr}">
+<!ENTITY Bgr "{Bgr}">
+<!ENTITY ggr "{ggr}">
+<!ENTITY Ggr "{Ggr}">
+<!ENTITY dgr "{dgr}">
+<!ENTITY Dgr "{Dgr}">
+<!ENTITY egr "{egr}">
+<!ENTITY Egr "{Egr}">
+<!ENTITY zgr "{zgr}">
+<!ENTITY Zgr "{Zgr}">
+<!ENTITY eegr "{eegr}">
+<!ENTITY EEgr "{EEgr}">
+<!ENTITY thgr "{thgr}">
+<!ENTITY THgr "{THgr}">
+<!ENTITY igr "{igr}">
+<!ENTITY Igr "{Igr}">
+<!ENTITY kgr "{kgr}">
+<!ENTITY Kgr "{Kgr}">
+<!ENTITY lgr "{lgr}">
+<!ENTITY Lgr "{Lgr}">
+<!ENTITY mgr "{mgr}">
+<!ENTITY Mgr "{Mgr}">
+<!ENTITY ngr "{ngr}">
+<!ENTITY Ngr "{Ngr}">
+<!ENTITY xgr "{xgr}">
+<!ENTITY Xgr "{Xgr}">
+<!ENTITY ogr "{ogr}">
+<!ENTITY Ogr "{Ogr}">
+<!ENTITY pgr "{pgr}">
+<!ENTITY Pgr "{Pgr}">
+<!ENTITY rgr "{rgr}">
+<!ENTITY Rgr "{Rgr}">
+<!ENTITY sfgr "{sfgr}">
+<!ENTITY sgr "{sgr}">
+<!ENTITY Sgr "{Sgr}">
+<!ENTITY tgr "{tgr}">
+<!ENTITY Tgr "{Tgr}">
+<!ENTITY ugr "{ugr}">
+<!ENTITY Ugr "{Ugr}">
+<!ENTITY phgr "{phgr}">
+<!ENTITY PHgr "{PHgr}">
+<!ENTITY khgr "{khgr}">
+<!ENTITY KHgr "{KHgr}">
+<!ENTITY psgr "{psgr}">
+<!ENTITY PSgr "{PSgr}">
+<!ENTITY ohgr "{ohgr}">
+<!ENTITY OHgr "{OHgr}">
+<!ENTITY acy "{acy}">
+<!ENTITY Acy "{Acy}">
+<!ENTITY bcy "{bcy}">
+<!ENTITY Bcy "{Bcy}">
+<!ENTITY vcy "{vcy}">
+<!ENTITY Vcy "{Vcy}">
+<!ENTITY gcy "{gcy}">
+<!ENTITY Gcy "{Gcy}">
+<!ENTITY dcy "{dcy}">
+<!ENTITY Dcy "{Dcy}">
+<!ENTITY iecy "{iecy}">
+<!ENTITY IEcy "{IEcy}">
+<!ENTITY iocy "{iocy}">
+<!ENTITY IOcy "{IOcy}">
+<!ENTITY zhcy "{zhcy}">
+<!ENTITY ZHcy "{ZHcy}">
+<!ENTITY zcy "{zcy}">
+<!ENTITY Zcy "{Zcy}">
+<!ENTITY icy "{icy}">
+<!ENTITY Icy "{Icy}">
+<!ENTITY jcy "{jcy}">
+<!ENTITY Jcy "{Jcy}">
+<!ENTITY kcy "{kcy}">
+<!ENTITY Kcy "{Kcy}">
+<!ENTITY lcy "{lcy}">
+<!ENTITY Lcy "{Lcy}">
+<!ENTITY mcy "{mcy}">
+<!ENTITY Mcy "{Mcy}">
+<!ENTITY ncy "{ncy}">
+<!ENTITY Ncy "{Ncy}">
+<!ENTITY ocy "{ocy}">
+<!ENTITY Ocy "{Ocy}">
+<!ENTITY pcy "{pcy}">
+<!ENTITY Pcy "{Pcy}">
+<!ENTITY rcy "{rcy}">
+<!ENTITY Rcy "{Rcy}">
+<!ENTITY scy "{scy}">
+<!ENTITY Scy "{Scy}">
+<!ENTITY tcy "{tcy}">
+<!ENTITY Tcy "{Tcy}">
+<!ENTITY ucy "{ucy}">
+<!ENTITY Ucy "{Ucy}">
+<!ENTITY fcy "{fcy}">
+<!ENTITY Fcy "{Fcy}">
+<!ENTITY khcy "{khcy}">
+<!ENTITY KHcy "{KHcy}">
+<!ENTITY tscy "{tscy}">
+<!ENTITY TScy "{TScy}">
+<!ENTITY chcy "{chcy}">
+<!ENTITY CHcy "{CHcy}">
+<!ENTITY shcy "{shcy}">
+<!ENTITY SHcy "{SHcy}">
+<!ENTITY shchcy "{shchcy}">
+<!ENTITY SHCHcy "{SHCHcy}">
+<!ENTITY hardcy "{hardcy}">
+<!ENTITY HARDcy "{HARDcy}">
+<!ENTITY ycy "{ycy}">
+<!ENTITY Ycy "{Ycy}">
+<!ENTITY softcy "{softcy}">
+<!ENTITY SOFTcy "{SOFTcy}">
+<!ENTITY ecy "{ecy}">
+<!ENTITY Ecy "{Ecy}">
+<!ENTITY yucy "{yucy}">
+<!ENTITY YUcy "{YUcy}">
+<!ENTITY yacy "{yacy}">
+<!ENTITY YAcy "{YAcy}">
+<!ENTITY numero "{numero}">
+<!ENTITY ETHIOPIC-HA "{ETHIOPIC-HA}">
+<!ENTITY ETHIOPIC-HU "{ETHIOPIC-HU}">
+<!ENTITY ETHIOPIC-HI "{ETHIOPIC-HI}">
+<!ENTITY ETHIOPIC-HAA "{ETHIOPIC-HAA}">
+<!ENTITY ETHIOPIC-HEE "{ETHIOPIC-HEE}">
+<!ENTITY ETHIOPIC-HE "{ETHIOPIC-HE}">
+<!ENTITY ETHIOPIC-HO "{ETHIOPIC-HO}">
+<!ENTITY ETHIOPIC-HOA "{ETHIOPIC-HOA}">
+<!ENTITY ETHIOPIC-LA "{ETHIOPIC-LA}">
+<!ENTITY ETHIOPIC-LU "{ETHIOPIC-LU}">
+<!ENTITY ETHIOPIC-LI "{ETHIOPIC-LI}">
+<!ENTITY ETHIOPIC-LAA "{ETHIOPIC-LAA}">
+<!ENTITY ETHIOPIC-LEE "{ETHIOPIC-LEE}">
+<!ENTITY ETHIOPIC-LE "{ETHIOPIC-LE}">
+<!ENTITY ETHIOPIC-LO "{ETHIOPIC-LO}">
+<!ENTITY ETHIOPIC-LWA "{ETHIOPIC-LWA}">
+<!ENTITY ETHIOPIC-HHA "{ETHIOPIC-HHA}">
+<!ENTITY ETHIOPIC-HHU "{ETHIOPIC-HHU}">
+<!ENTITY ETHIOPIC-HHI "{ETHIOPIC-HHI}">
+<!ENTITY ETHIOPIC-HHAA "{ETHIOPIC-HHAA}">
+<!ENTITY ETHIOPIC-HHEE "{ETHIOPIC-HHEE}">
+<!ENTITY ETHIOPIC-HHE "{ETHIOPIC-HHE}">
+<!ENTITY ETHIOPIC-HHO "{ETHIOPIC-HHO}">
+<!ENTITY ETHIOPIC-HHWA "{ETHIOPIC-HHWA}">
+<!ENTITY ETHIOPIC-MA "{ETHIOPIC-MA}">
+<!ENTITY ETHIOPIC-MU "{ETHIOPIC-MU}">
+<!ENTITY ETHIOPIC-MI "{ETHIOPIC-MI}">
+<!ENTITY ETHIOPIC-MAA "{ETHIOPIC-MAA}">
+<!ENTITY ETHIOPIC-MEE "{ETHIOPIC-MEE}">
+<!ENTITY ETHIOPIC-ME "{ETHIOPIC-ME}">
+<!ENTITY ETHIOPIC-MO "{ETHIOPIC-MO}">
+<!ENTITY ETHIOPIC-MWA "{ETHIOPIC-MWA}">
+<!ENTITY ETHIOPIC-SZA "{ETHIOPIC-SZA}">
+<!ENTITY ETHIOPIC-SZU "{ETHIOPIC-SZU}">
+<!ENTITY ETHIOPIC-SZI "{ETHIOPIC-SZI}">
+<!ENTITY ETHIOPIC-SZAA "{ETHIOPIC-SZAA}">
+<!ENTITY ETHIOPIC-SZEE "{ETHIOPIC-SZEE}">
+<!ENTITY ETHIOPIC-SZE "{ETHIOPIC-SZE}">
+<!ENTITY ETHIOPIC-SZO "{ETHIOPIC-SZO}">
+<!ENTITY ETHIOPIC-SZWA "{ETHIOPIC-SZWA}">
+<!ENTITY ETHIOPIC-RA "{ETHIOPIC-RA}">
+<!ENTITY ETHIOPIC-RU "{ETHIOPIC-RU}">
+<!ENTITY ETHIOPIC-RI "{ETHIOPIC-RI}">
+<!ENTITY ETHIOPIC-RAA "{ETHIOPIC-RAA}">
+<!ENTITY ETHIOPIC-REE "{ETHIOPIC-REE}">
+<!ENTITY ETHIOPIC-RE "{ETHIOPIC-RE}">
+<!ENTITY ETHIOPIC-RO "{ETHIOPIC-RO}">
+<!ENTITY ETHIOPIC-RWA "{ETHIOPIC-RWA}">
+<!ENTITY ETHIOPIC-SA "{ETHIOPIC-SA}">
+<!ENTITY ETHIOPIC-SU "{ETHIOPIC-SU}">
+<!ENTITY ETHIOPIC-SI "{ETHIOPIC-SI}">
+<!ENTITY ETHIOPIC-SAA "{ETHIOPIC-SAA}">
+<!ENTITY ETHIOPIC-SEE "{ETHIOPIC-SEE}">
+<!ENTITY ETHIOPIC-SE "{ETHIOPIC-SE}">
+<!ENTITY ETHIOPIC-SO "{ETHIOPIC-SO}">
+<!ENTITY ETHIOPIC-SWA "{ETHIOPIC-SWA}">
+<!ENTITY ETHIOPIC-SHA "{ETHIOPIC-SHA}">
+<!ENTITY ETHIOPIC-SHU "{ETHIOPIC-SHU}">
+<!ENTITY ETHIOPIC-SHI "{ETHIOPIC-SHI}">
+<!ENTITY ETHIOPIC-SHAA "{ETHIOPIC-SHAA}">
+<!ENTITY ETHIOPIC-SHEE "{ETHIOPIC-SHEE}">
+<!ENTITY ETHIOPIC-SHE "{ETHIOPIC-SHE}">
+<!ENTITY ETHIOPIC-SHO "{ETHIOPIC-SHO}">
+<!ENTITY ETHIOPIC-SHWA "{ETHIOPIC-SHWA}">
+<!ENTITY ETHIOPIC-QA "{ETHIOPIC-QA}">
+<!ENTITY ETHIOPIC-QU "{ETHIOPIC-QU}">
+<!ENTITY ETHIOPIC-QI "{ETHIOPIC-QI}">
+<!ENTITY ETHIOPIC-QAA "{ETHIOPIC-QAA}">
+<!ENTITY ETHIOPIC-QEE "{ETHIOPIC-QEE}">
+<!ENTITY ETHIOPIC-QE "{ETHIOPIC-QE}">
+<!ENTITY ETHIOPIC-QO "{ETHIOPIC-QO}">
+<!ENTITY ETHIOPIC-QOA "{ETHIOPIC-QOA}">
+<!ENTITY ETHIOPIC-QWA "{ETHIOPIC-QWA}">
+<!ENTITY ETHIOPIC-QWI "{ETHIOPIC-QWI}">
+<!ENTITY ETHIOPIC-QWAA "{ETHIOPIC-QWAA}">
+<!ENTITY ETHIOPIC-QWEE "{ETHIOPIC-QWEE}">
+<!ENTITY ETHIOPIC-QWE "{ETHIOPIC-QWE}">
+<!ENTITY ETHIOPIC-QHA "{ETHIOPIC-QHA}">
+<!ENTITY ETHIOPIC-QHU "{ETHIOPIC-QHU}">
+<!ENTITY ETHIOPIC-QHI "{ETHIOPIC-QHI}">
+<!ENTITY ETHIOPIC-QHAA "{ETHIOPIC-QHAA}">
+<!ENTITY ETHIOPIC-QHEE "{ETHIOPIC-QHEE}">
+<!ENTITY ETHIOPIC-QHE "{ETHIOPIC-QHE}">
+<!ENTITY ETHIOPIC-QHO "{ETHIOPIC-QHO}">
+<!ENTITY ETHIOPIC-QHWA "{ETHIOPIC-QHWA}">
+<!ENTITY ETHIOPIC-QHWI "{ETHIOPIC-QHWI}">
+<!ENTITY ETHIOPIC-QHWAA "{ETHIOPIC-QHWAA}">
+<!ENTITY ETHIOPIC-QHWEE "{ETHIOPIC-QHWEE}">
+<!ENTITY ETHIOPIC-QHWE "{ETHIOPIC-QHWE}">
+<!ENTITY ETHIOPIC-BA "{ETHIOPIC-BA}">
+<!ENTITY ETHIOPIC-BU "{ETHIOPIC-BU}">
+<!ENTITY ETHIOPIC-BI "{ETHIOPIC-BI}">
+<!ENTITY ETHIOPIC-BAA "{ETHIOPIC-BAA}">
+<!ENTITY ETHIOPIC-BEE "{ETHIOPIC-BEE}">
+<!ENTITY ETHIOPIC-BE "{ETHIOPIC-BE}">
+<!ENTITY ETHIOPIC-BO "{ETHIOPIC-BO}">
+<!ENTITY ETHIOPIC-BWA "{ETHIOPIC-BWA}">
+<!ENTITY ETHIOPIC-VA "{ETHIOPIC-VA}">
+<!ENTITY ETHIOPIC-VU "{ETHIOPIC-VU}">
+<!ENTITY ETHIOPIC-VI "{ETHIOPIC-VI}">
+<!ENTITY ETHIOPIC-VAA "{ETHIOPIC-VAA}">
+<!ENTITY ETHIOPIC-VEE "{ETHIOPIC-VEE}">
+<!ENTITY ETHIOPIC-VE "{ETHIOPIC-VE}">
+<!ENTITY ETHIOPIC-VO "{ETHIOPIC-VO}">
+<!ENTITY ETHIOPIC-VWA "{ETHIOPIC-VWA}">
+<!ENTITY ETHIOPIC-TA "{ETHIOPIC-TA}">
+<!ENTITY ETHIOPIC-TU "{ETHIOPIC-TU}">
+<!ENTITY ETHIOPIC-TI "{ETHIOPIC-TI}">
+<!ENTITY ETHIOPIC-TAA "{ETHIOPIC-TAA}">
+<!ENTITY ETHIOPIC-TEE "{ETHIOPIC-TEE}">
+<!ENTITY ETHIOPIC-TE "{ETHIOPIC-TE}">
+<!ENTITY ETHIOPIC-TO "{ETHIOPIC-TO}">
+<!ENTITY ETHIOPIC-TWA "{ETHIOPIC-TWA}">
+<!ENTITY ETHIOPIC-CA "{ETHIOPIC-CA}">
+<!ENTITY ETHIOPIC-CU "{ETHIOPIC-CU}">
+<!ENTITY ETHIOPIC-CI "{ETHIOPIC-CI}">
+<!ENTITY ETHIOPIC-CAA "{ETHIOPIC-CAA}">
+<!ENTITY ETHIOPIC-CEE "{ETHIOPIC-CEE}">
+<!ENTITY ETHIOPIC-CE "{ETHIOPIC-CE}">
+<!ENTITY ETHIOPIC-CO "{ETHIOPIC-CO}">
+<!ENTITY ETHIOPIC-CWA "{ETHIOPIC-CWA}">
+<!ENTITY ETHIOPIC-XA "{ETHIOPIC-XA}">
+<!ENTITY ETHIOPIC-XU "{ETHIOPIC-XU}">
+<!ENTITY ETHIOPIC-XI "{ETHIOPIC-XI}">
+<!ENTITY ETHIOPIC-XAA "{ETHIOPIC-XAA}">
+<!ENTITY ETHIOPIC-XEE "{ETHIOPIC-XEE}">
+<!ENTITY ETHIOPIC-XE "{ETHIOPIC-XE}">
+<!ENTITY ETHIOPIC-XO "{ETHIOPIC-XO}">
+<!ENTITY ETHIOPIC-XOA "{ETHIOPIC-XOA}">
+<!ENTITY ETHIOPIC-XWA "{ETHIOPIC-XWA}">
+<!ENTITY ETHIOPIC-XWI "{ETHIOPIC-XWI}">
+<!ENTITY ETHIOPIC-XWAA "{ETHIOPIC-XWAA}">
+<!ENTITY ETHIOPIC-XWEE "{ETHIOPIC-XWEE}">
+<!ENTITY ETHIOPIC-XWE "{ETHIOPIC-XWE}">
+<!ENTITY ETHIOPIC-NA "{ETHIOPIC-NA}">
+<!ENTITY ETHIOPIC-NU "{ETHIOPIC-NU}">
+<!ENTITY ETHIOPIC-NI "{ETHIOPIC-NI}">
+<!ENTITY ETHIOPIC-NAA "{ETHIOPIC-NAA}">
+<!ENTITY ETHIOPIC-NEE "{ETHIOPIC-NEE}">
+<!ENTITY ETHIOPIC-NE "{ETHIOPIC-NE}">
+<!ENTITY ETHIOPIC-NO "{ETHIOPIC-NO}">
+<!ENTITY ETHIOPIC-NWA "{ETHIOPIC-NWA}">
+<!ENTITY ETHIOPIC-NYA "{ETHIOPIC-NYA}">
+<!ENTITY ETHIOPIC-NYU "{ETHIOPIC-NYU}">
+<!ENTITY ETHIOPIC-NYI "{ETHIOPIC-NYI}">
+<!ENTITY ETHIOPIC-NYAA "{ETHIOPIC-NYAA}">
+<!ENTITY ETHIOPIC-NYEE "{ETHIOPIC-NYEE}">
+<!ENTITY ETHIOPIC-NYE "{ETHIOPIC-NYE}">
+<!ENTITY ETHIOPIC-NYO "{ETHIOPIC-NYO}">
+<!ENTITY ETHIOPIC-NYWA "{ETHIOPIC-NYWA}">
+<!ENTITY ETHIOPIC-GLOTL-A "{ETHIOPIC-GLOTL-A}">
+<!ENTITY ETHIOPIC-GLOTL-U "{ETHIOPIC-GLOTL-U}">
+<!ENTITY ETHIOPIC-GLOTL-I "{ETHIOPIC-GLOTL-I}">
+<!ENTITY ETHIOPIC-GLOTL-AA "{ETHIOPIC-GLOTL-AA}">
+<!ENTITY ETHIOPIC-GLOTL-EE "{ETHIOPIC-GLOTL-EE}">
+<!ENTITY ETHIOPIC-GLOTL-E "{ETHIOPIC-GLOTL-E}">
+<!ENTITY ETHIOPIC-GLOTL-O "{ETHIOPIC-GLOTL-O}">
+<!ENTITY ETHIOPIC-GLOTL-WA "{ETHIOPIC-GLOTL-WA}">
+<!ENTITY ETHIOPIC-KA "{ETHIOPIC-KA}">
+<!ENTITY ETHIOPIC-KU "{ETHIOPIC-KU}">
+<!ENTITY ETHIOPIC-KI "{ETHIOPIC-KI}">
+<!ENTITY ETHIOPIC-KAA "{ETHIOPIC-KAA}">
+<!ENTITY ETHIOPIC-KEE "{ETHIOPIC-KEE}">
+<!ENTITY ETHIOPIC-KE "{ETHIOPIC-KE}">
+<!ENTITY ETHIOPIC-KO "{ETHIOPIC-KO}">
+<!ENTITY ETHIOPIC-KOA "{ETHIOPIC-KOA}">
+<!ENTITY ETHIOPIC-KWA "{ETHIOPIC-KWA}">
+<!ENTITY ETHIOPIC-KWI "{ETHIOPIC-KWI}">
+<!ENTITY ETHIOPIC-KWAA "{ETHIOPIC-KWAA}">
+<!ENTITY ETHIOPIC-KWEE "{ETHIOPIC-KWEE}">
+<!ENTITY ETHIOPIC-KWE "{ETHIOPIC-KWE}">
+<!ENTITY ETHIOPIC-KXA "{ETHIOPIC-KXA}">
+<!ENTITY ETHIOPIC-KXU "{ETHIOPIC-KXU}">
+<!ENTITY ETHIOPIC-KXI "{ETHIOPIC-KXI}">
+<!ENTITY ETHIOPIC-KXAA "{ETHIOPIC-KXAA}">
+<!ENTITY ETHIOPIC-KXEE "{ETHIOPIC-KXEE}">
+<!ENTITY ETHIOPIC-KXE "{ETHIOPIC-KXE}">
+<!ENTITY ETHIOPIC-KXO "{ETHIOPIC-KXO}">
+<!ENTITY ETHIOPIC-KXWA "{ETHIOPIC-KXWA}">
+<!ENTITY ETHIOPIC-KXWI "{ETHIOPIC-KXWI}">
+<!ENTITY ETHIOPIC-KXWAA "{ETHIOPIC-KXWAA}">
+<!ENTITY ETHIOPIC-KXWEE "{ETHIOPIC-KXWEE}">
+<!ENTITY ETHIOPIC-KXWE "{ETHIOPIC-KXWE}">
+<!ENTITY ETHIOPIC-WA "{ETHIOPIC-WA}">
+<!ENTITY ETHIOPIC-WU "{ETHIOPIC-WU}">
+<!ENTITY ETHIOPIC-WI "{ETHIOPIC-WI}">
+<!ENTITY ETHIOPIC-WAA "{ETHIOPIC-WAA}">
+<!ENTITY ETHIOPIC-WEE "{ETHIOPIC-WEE}">
+<!ENTITY ETHIOPIC-WE "{ETHIOPIC-WE}">
+<!ENTITY ETHIOPIC-WO "{ETHIOPIC-WO}">
+<!ENTITY ETHIOPIC-WOA "{ETHIOPIC-WOA}">
+<!ENTITY ETHIOPIC-PHARGL-A "{ETHIOPIC-PHARGL-A}">
+<!ENTITY ETHIOPIC-PHARGL-U "{ETHIOPIC-PHARGL-U}">
+<!ENTITY ETHIOPIC-PHARGL-I "{ETHIOPIC-PHARGL-I}">
+<!ENTITY ETHIOPIC-PHARGL-AA "{ETHIOPIC-PHARGL-AA}">
+<!ENTITY ETHIOPIC-PHARGL-EE "{ETHIOPIC-PHARGL-EE}">
+<!ENTITY ETHIOPIC-PHARGL-E "{ETHIOPIC-PHARGL-E}">
+<!ENTITY ETHIOPIC-PHARGL-O "{ETHIOPIC-PHARGL-O}">
+<!ENTITY ETHIOPIC-ZA "{ETHIOPIC-ZA}">
+<!ENTITY ETHIOPIC-ZU "{ETHIOPIC-ZU}">
+<!ENTITY ETHIOPIC-ZI "{ETHIOPIC-ZI}">
+<!ENTITY ETHIOPIC-ZAA "{ETHIOPIC-ZAA}">
+<!ENTITY ETHIOPIC-ZEE "{ETHIOPIC-ZEE}">
+<!ENTITY ETHIOPIC-ZE "{ETHIOPIC-ZE}">
+<!ENTITY ETHIOPIC-ZO "{ETHIOPIC-ZO}">
+<!ENTITY ETHIOPIC-ZWA "{ETHIOPIC-ZWA}">
+<!ENTITY ETHIOPIC-ZHA "{ETHIOPIC-ZHA}">
+<!ENTITY ETHIOPIC-ZHU "{ETHIOPIC-ZHU}">
+<!ENTITY ETHIOPIC-ZHI "{ETHIOPIC-ZHI}">
+<!ENTITY ETHIOPIC-ZHAA "{ETHIOPIC-ZHAA}">
+<!ENTITY ETHIOPIC-ZHEE "{ETHIOPIC-ZHEE}">
+<!ENTITY ETHIOPIC-ZHE "{ETHIOPIC-ZHE}">
+<!ENTITY ETHIOPIC-ZHO "{ETHIOPIC-ZHO}">
+<!ENTITY ETHIOPIC-ZHWA "{ETHIOPIC-ZHWA}">
+<!ENTITY ETHIOPIC-YA "{ETHIOPIC-YA}">
+<!ENTITY ETHIOPIC-YU "{ETHIOPIC-YU}">
+<!ENTITY ETHIOPIC-YI "{ETHIOPIC-YI}">
+<!ENTITY ETHIOPIC-YAA "{ETHIOPIC-YAA}">
+<!ENTITY ETHIOPIC-YEE "{ETHIOPIC-YEE}">
+<!ENTITY ETHIOPIC-YE "{ETHIOPIC-YE}">
+<!ENTITY ETHIOPIC-YO "{ETHIOPIC-YO}">
+<!ENTITY ETHIOPIC-YOA "{ETHIOPIC-YOA}">
+<!ENTITY ETHIOPIC-DA "{ETHIOPIC-DA}">
+<!ENTITY ETHIOPIC-DU "{ETHIOPIC-DU}">
+<!ENTITY ETHIOPIC-DI "{ETHIOPIC-DI}">
+<!ENTITY ETHIOPIC-DAA "{ETHIOPIC-DAA}">
+<!ENTITY ETHIOPIC-DEE "{ETHIOPIC-DEE}">
+<!ENTITY ETHIOPIC-DE "{ETHIOPIC-DE}">
+<!ENTITY ETHIOPIC-DO "{ETHIOPIC-DO}">
+<!ENTITY ETHIOPIC-DWA "{ETHIOPIC-DWA}">
+<!ENTITY ETHIOPIC-DDA "{ETHIOPIC-DDA}">
+<!ENTITY ETHIOPIC-DDU "{ETHIOPIC-DDU}">
+<!ENTITY ETHIOPIC-DDI "{ETHIOPIC-DDI}">
+<!ENTITY ETHIOPIC-DDAA "{ETHIOPIC-DDAA}">
+<!ENTITY ETHIOPIC-DDEE "{ETHIOPIC-DDEE}">
+<!ENTITY ETHIOPIC-DDE "{ETHIOPIC-DDE}">
+<!ENTITY ETHIOPIC-DDO "{ETHIOPIC-DDO}">
+<!ENTITY ETHIOPIC-DDWA "{ETHIOPIC-DDWA}">
+<!ENTITY ETHIOPIC-JA "{ETHIOPIC-JA}">
+<!ENTITY ETHIOPIC-JU "{ETHIOPIC-JU}">
+<!ENTITY ETHIOPIC-JI "{ETHIOPIC-JI}">
+<!ENTITY ETHIOPIC-JAA "{ETHIOPIC-JAA}">
+<!ENTITY ETHIOPIC-JEE "{ETHIOPIC-JEE}">
+<!ENTITY ETHIOPIC-JE "{ETHIOPIC-JE}">
+<!ENTITY ETHIOPIC-JO "{ETHIOPIC-JO}">
+<!ENTITY ETHIOPIC-JWA "{ETHIOPIC-JWA}">
+<!ENTITY ETHIOPIC-GA "{ETHIOPIC-GA}">
+<!ENTITY ETHIOPIC-GU "{ETHIOPIC-GU}">
+<!ENTITY ETHIOPIC-GI "{ETHIOPIC-GI}">
+<!ENTITY ETHIOPIC-GAA "{ETHIOPIC-GAA}">
+<!ENTITY ETHIOPIC-GEE "{ETHIOPIC-GEE}">
+<!ENTITY ETHIOPIC-GE "{ETHIOPIC-GE}">
+<!ENTITY ETHIOPIC-GO "{ETHIOPIC-GO}">
+<!ENTITY ETHIOPIC-GOA "{ETHIOPIC-GOA}">
+<!ENTITY ETHIOPIC-GWA "{ETHIOPIC-GWA}">
+<!ENTITY ETHIOPIC-GWI "{ETHIOPIC-GWI}">
+<!ENTITY ETHIOPIC-GWAA "{ETHIOPIC-GWAA}">
+<!ENTITY ETHIOPIC-GWEE "{ETHIOPIC-GWEE}">
+<!ENTITY ETHIOPIC-GWE "{ETHIOPIC-GWE}">
+<!ENTITY ETHIOPIC-GGA "{ETHIOPIC-GGA}">
+<!ENTITY ETHIOPIC-GGU "{ETHIOPIC-GGU}">
+<!ENTITY ETHIOPIC-GGI "{ETHIOPIC-GGI}">
+<!ENTITY ETHIOPIC-GGAA "{ETHIOPIC-GGAA}">
+<!ENTITY ETHIOPIC-GGEE "{ETHIOPIC-GGEE}">
+<!ENTITY ETHIOPIC-GGE "{ETHIOPIC-GGE}">
+<!ENTITY ETHIOPIC-GGO "{ETHIOPIC-GGO}">
+<!ENTITY ETHIOPIC-GGWAA "{ETHIOPIC-GGWAA}">
+<!ENTITY ETHIOPIC-THA "{ETHIOPIC-THA}">
+<!ENTITY ETHIOPIC-THU "{ETHIOPIC-THU}">
+<!ENTITY ETHIOPIC-THI "{ETHIOPIC-THI}">
+<!ENTITY ETHIOPIC-THAA "{ETHIOPIC-THAA}">
+<!ENTITY ETHIOPIC-THEE "{ETHIOPIC-THEE}">
+<!ENTITY ETHIOPIC-THE "{ETHIOPIC-THE}">
+<!ENTITY ETHIOPIC-THO "{ETHIOPIC-THO}">
+<!ENTITY ETHIOPIC-THWA "{ETHIOPIC-THWA}">
+<!ENTITY ETHIOPIC-CHA "{ETHIOPIC-CHA}">
+<!ENTITY ETHIOPIC-CHU "{ETHIOPIC-CHU}">
+<!ENTITY ETHIOPIC-CHI "{ETHIOPIC-CHI}">
+<!ENTITY ETHIOPIC-CHAA "{ETHIOPIC-CHAA}">
+<!ENTITY ETHIOPIC-CHEE "{ETHIOPIC-CHEE}">
+<!ENTITY ETHIOPIC-CHE "{ETHIOPIC-CHE}">
+<!ENTITY ETHIOPIC-CHO "{ETHIOPIC-CHO}">
+<!ENTITY ETHIOPIC-CHWA "{ETHIOPIC-CHWA}">
+<!ENTITY ETHIOPIC-PHA "{ETHIOPIC-PHA}">
+<!ENTITY ETHIOPIC-PHU "{ETHIOPIC-PHU}">
+<!ENTITY ETHIOPIC-PHI "{ETHIOPIC-PHI}">
+<!ENTITY ETHIOPIC-PHAA "{ETHIOPIC-PHAA}">
+<!ENTITY ETHIOPIC-PHEE "{ETHIOPIC-PHEE}">
+<!ENTITY ETHIOPIC-PHE "{ETHIOPIC-PHE}">
+<!ENTITY ETHIOPIC-PHO "{ETHIOPIC-PHO}">
+<!ENTITY ETHIOPIC-PHWA "{ETHIOPIC-PHWA}">
+<!ENTITY ETHIOPIC-TSA "{ETHIOPIC-TSA}">
+<!ENTITY ETHIOPIC-TSU "{ETHIOPIC-TSU}">
+<!ENTITY ETHIOPIC-TSI "{ETHIOPIC-TSI}">
+<!ENTITY ETHIOPIC-TSAA "{ETHIOPIC-TSAA}">
+<!ENTITY ETHIOPIC-TSEE "{ETHIOPIC-TSEE}">
+<!ENTITY ETHIOPIC-TSE "{ETHIOPIC-TSE}">
+<!ENTITY ETHIOPIC-TSO "{ETHIOPIC-TSO}">
+<!ENTITY ETHIOPIC-TSWA "{ETHIOPIC-TSWA}">
+<!ENTITY ETHIOPIC-TZA "{ETHIOPIC-TZA}">
+<!ENTITY ETHIOPIC-TZU "{ETHIOPIC-TZU}">
+<!ENTITY ETHIOPIC-TZI "{ETHIOPIC-TZI}">
+<!ENTITY ETHIOPIC-TZAA "{ETHIOPIC-TZAA}">
+<!ENTITY ETHIOPIC-TZEE "{ETHIOPIC-TZEE}">
+<!ENTITY ETHIOPIC-TZE "{ETHIOPIC-TZE}">
+<!ENTITY ETHIOPIC-TZO "{ETHIOPIC-TZO}">
+<!ENTITY ETHIOPIC-TZOA "{ETHIOPIC-TZOA}">
+<!ENTITY ETHIOPIC-FA "{ETHIOPIC-FA}">
+<!ENTITY ETHIOPIC-FU "{ETHIOPIC-FU}">
+<!ENTITY ETHIOPIC-FI "{ETHIOPIC-FI}">
+<!ENTITY ETHIOPIC-FAA "{ETHIOPIC-FAA}">
+<!ENTITY ETHIOPIC-FEE "{ETHIOPIC-FEE}">
+<!ENTITY ETHIOPIC-FE "{ETHIOPIC-FE}">
+<!ENTITY ETHIOPIC-FO "{ETHIOPIC-FO}">
+<!ENTITY ETHIOPIC-FWA "{ETHIOPIC-FWA}">
+<!ENTITY ETHIOPIC-PA "{ETHIOPIC-PA}">
+<!ENTITY ETHIOPIC-PU "{ETHIOPIC-PU}">
+<!ENTITY ETHIOPIC-PI "{ETHIOPIC-PI}">
+<!ENTITY ETHIOPIC-PAA "{ETHIOPIC-PAA}">
+<!ENTITY ETHIOPIC-PEE "{ETHIOPIC-PEE}">
+<!ENTITY ETHIOPIC-PE "{ETHIOPIC-PE}">
+<!ENTITY ETHIOPIC-PO "{ETHIOPIC-PO}">
+<!ENTITY ETHIOPIC-PWA "{ETHIOPIC-PWA}">
+<!ENTITY ETHIOPIC-RYA "{ETHIOPIC-RYA}">
+<!ENTITY ETHIOPIC-MYA "{ETHIOPIC-MYA}">
+<!ENTITY ETHIOPIC-FYA "{ETHIOPIC-FYA}">
+<!ENTITY ETHIOPIC-GEM-MRK "{ETHIOPIC-GEM-MRK}">
+<!ENTITY ETHIOPIC-SECTION-MRK "{ETHIOPIC-SECTION-MRK}">
+<!ENTITY ETHIOPIC-WORDSPACE "{ETHIOPIC-WORDSPACE}">
+<!ENTITY ETHIOPIC-STOP "{ETHIOPIC-STOP}">
+<!ENTITY ETHIOPIC-COMMA "{ETHIOPIC-COMMA}">
+<!ENTITY ETHIOPIC-SEMICOLON "{ETHIOPIC-SEMICOLON}">
+<!ENTITY ETHIOPIC-COLON "{ETHIOPIC-COLON}">
+<!ENTITY ETHIOPIC-PREF-COLON "{ETHIOPIC-PREF-COLON}">
+<!ENTITY ETHIOPIC-QUESTION-MRK "{ETHIOPIC-QUESTION-MRK}">
+<!ENTITY ETHIOPIC-PARAGRAPH "{ETHIOPIC-PARAGRAPH}">
+<!ENTITY ETHIOPIC-DIGIT-ONE "{ETHIOPIC-DIGIT-ONE}">
+<!ENTITY ETHIOPIC-DIGIT-TWO "{ETHIOPIC-DIGIT-TWO}">
+<!ENTITY ETHIOPIC-DIGIT-THREE "{ETHIOPIC-DIGIT-THREE}">
+<!ENTITY ETHIOPIC-DIGIT-FOUR "{ETHIOPIC-DIGIT-FOUR}">
+<!ENTITY ETHIOPIC-DIGIT-FIVE "{ETHIOPIC-DIGIT-FIVE}">
+<!ENTITY ETHIOPIC-DIGIT-SIX "{ETHIOPIC-DIGIT-SIX}">
+<!ENTITY ETHIOPIC-DIGIT-SEVEN "{ETHIOPIC-DIGIT-SEVEN}">
+<!ENTITY ETHIOPIC-DIGIT-EIGHT "{ETHIOPIC-DIGIT-EIGHT}">
+<!ENTITY ETHIOPIC-DIGIT-NINE "{ETHIOPIC-DIGIT-NINE}">
+<!ENTITY ETHIOPIC-NUM-TEN "{ETHIOPIC-NUM-TEN}">
+<!ENTITY ETHIOPIC-NUM-TWENTY "{ETHIOPIC-NUM-TWENTY}">
+<!ENTITY ETHIOPIC-NUM-THIRTY "{ETHIOPIC-NUM-THIRTY}">
+<!ENTITY ETHIOPIC-NUM-FORTY "{ETHIOPIC-NUM-FORTY}">
+<!ENTITY ETHIOPIC-NUM-FIFTY "{ETHIOPIC-NUM-FIFTY}">
+<!ENTITY ETHIOPIC-NUM-SIXTY "{ETHIOPIC-NUM-SIXTY}">
+<!ENTITY ETHIOPIC-NUM-SEVENTY "{ETHIOPIC-NUM-SEVENTY}">
+<!ENTITY ETHIOPIC-NUM-EIGHTY "{ETHIOPIC-NUM-EIGHTY}">
+<!ENTITY ETHIOPIC-NUM-NINETY "{ETHIOPIC-NUM-NINETY}">
+<!ENTITY ETHIOPIC-NUM-HUNDRED "{ETHIOPIC-NUM-HUNDRED}">
+<!ENTITY ETHIOPIC-NUM-TEN-THOUSAND "{ETHIOPIC-NUM-TEN-THOUSAND}">
+<!ENTITY aiotgr "{aiotgr}">
+<!ENTITY Aiotgr "{Aiotgr}">
+<!ENTITY arigr "{arigr}">
+<!ENTITY Arigr "{Arigr}">
+<!ENTITY asigr "{asigr}">
+<!ENTITY Asigr "{Asigr}">
+<!ENTITY aaigr "{aaigr}">
+<!ENTITY Aaigr "{Aaigr}">
+<!ENTITY agigr "{agigr}">
+<!ENTITY acigr "{acigr}">
+<!ENTITY araigr "{araigr}">
+<!ENTITY Araigr "{Araigr}">
+<!ENTITY asaigr "{asaigr}">
+<!ENTITY Asaigr "{Asaigr}">
+<!ENTITY argigr "{argigr}">
+<!ENTITY Argigr "{Argigr}">
+<!ENTITY asgigr "{asgigr}">
+<!ENTITY Asgigr "{Asgigr}">
+<!ENTITY arcigr "{arcigr}">
+<!ENTITY Arcigr "{Arcigr}">
+<!ENTITY ascigr "{ascigr}">
+<!ENTITY Ascigr "{Ascigr}">
+<!ENTITY arougr "{arougr}">
+<!ENTITY Arougr "{Arougr}">
+<!ENTITY asmogr "{asmogr}">
+<!ENTITY Asmogr "{Asmogr}">
+<!ENTITY agragr "{agragr}">
+<!ENTITY Agragr "{Agragr}">
+<!ENTITY aacugr "{aacugr}">
+<!ENTITY Aacugr "{Aacugr}">
+<!ENTITY acirgr "{acirgr}">
+<!ENTITY Acirgr "{Acirgr}">
+<!ENTITY aragr "{aragr}">
+<!ENTITY Aragr "{Aragr}">
+<!ENTITY asagr "{asagr}">
+<!ENTITY Asagr "{Asagr}">
+<!ENTITY arggr "{arggr}">
+<!ENTITY Arggr "{Arggr}">
+<!ENTITY asggr "{asggr}">
+<!ENTITY Asggr "{Asggr}">
+<!ENTITY arcgr "{arcgr}">
+<!ENTITY Arcgr "{Arcgr}">
+<!ENTITY ascgr "{ascgr}">
+<!ENTITY Ascgr "{Ascgr}">
+<!ENTITY erougr "{erougr}">
+<!ENTITY Erougr "{Erougr}">
+<!ENTITY esmogr "{esmogr}">
+<!ENTITY Esmogr "{Esmogr}">
+<!ENTITY egragr "{egragr}">
+<!ENTITY Egragr "{Egragr}">
+<!ENTITY eacugr "{eacugr}">
+<!ENTITY Eacugr "{Eacugr}">
+<!ENTITY eragr "{eragr}">
+<!ENTITY Eragr "{Eragr}">
+<!ENTITY esagr "{esagr}">
+<!ENTITY Esagr "{Esagr}">
+<!ENTITY erggr "{erggr}">
+<!ENTITY Erggr "{Erggr}">
+<!ENTITY esggr "{esggr}">
+<!ENTITY Esggr "{Esggr}">
+<!ENTITY eeiotgr "{eeiotgr}">
+<!ENTITY EEiotgr "{EEiotgr}">
+<!ENTITY eerigr "{eerigr}">
+<!ENTITY EErigr "{EErigr}">
+<!ENTITY eesigr "{eesigr}">
+<!ENTITY EEsigr "{EEsigr}">
+<!ENTITY eeaigr "{eeaigr}">
+<!ENTITY eegigr "{eegigr}">
+<!ENTITY eecigr "{eecigr}">
+<!ENTITY eeraigr "{eeraigr}">
+<!ENTITY EEraigr "{EEraigr}">
+<!ENTITY eesaigr "{eesaigr}">
+<!ENTITY EEsaigr "{EEsaigr}">
+<!ENTITY eergigr "{eergigr}">
+<!ENTITY EErgigr "{EErgigr}">
+<!ENTITY eesgigr "{eesgigr}">
+<!ENTITY EEsgigr "{EEsgigr}">
+<!ENTITY eercigr "{eercigr}">
+<!ENTITY EErcigr "{EErcigr}">
+<!ENTITY eescigr "{eescigr}">
+<!ENTITY EEscigr "{EEscigr}">
+<!ENTITY eerougr "{eerougr}">
+<!ENTITY EErougr "{EErougr}">
+<!ENTITY eesmogr "{eesmogr}">
+<!ENTITY EEsmogr "{EEsmogr}">
+<!ENTITY eegragr "{eegragr}">
+<!ENTITY EEgragr "{EEgragr}">
+<!ENTITY eeacugr "{eeacugr}">
+<!ENTITY EEacugr "{EEacugr}">
+<!ENTITY eecirgr "{eecirgr}">
+<!ENTITY EEcirgr "{EEcirgr}">
+<!ENTITY eeragr "{eeragr}">
+<!ENTITY EEragr "{EEragr}">
+<!ENTITY eesagr "{eesagr}">
+<!ENTITY EEsagr "{EEsagr}">
+<!ENTITY eerggr "{eerggr}">
+<!ENTITY EErggr "{EErggr}">
+<!ENTITY eesggr "{eesggr}">
+<!ENTITY EEsggr "{EEsggr}">
+<!ENTITY eercgr "{eercgr}">
+<!ENTITY EErcgr "{EErcgr}">
+<!ENTITY eescgr "{eescgr}">
+<!ENTITY EEscgr "{EEscgr}">
+<!ENTITY irougr "{irougr}">
+<!ENTITY Irougr "{Irougr}">
+<!ENTITY ismogr "{ismogr}">
+<!ENTITY Ismogr "{Ismogr}">
+<!ENTITY igragr "{igragr}">
+<!ENTITY Igragr "{Igragr}">
+<!ENTITY iacugr "{iacugr}">
+<!ENTITY Iacugr "{Iacugr}">
+<!ENTITY icirgr "{icirgr}">
+<!ENTITY iragr "{iragr}">
+<!ENTITY Iragr "{Iragr}">
+<!ENTITY isagr "{isagr}">
+<!ENTITY Isagr "{Isagr}">
+<!ENTITY irggr "{irggr}">
+<!ENTITY Irggr "{Irggr}">
+<!ENTITY isggr "{isggr}">
+<!ENTITY Isggr "{Isggr}">
+<!ENTITY ircgr "{ircgr}">
+<!ENTITY Ircgr "{Ircgr}">
+<!ENTITY iscgr "{iscgr}">
+<!ENTITY Iscgr "{Iscgr}">
+<!ENTITY igdgr "{igdgr}">
+<!ENTITY iadgr "{iadgr}">
+<!ENTITY icdgr "{icdgr}">
+<!ENTITY orougr "{orougr}">
+<!ENTITY Orougr "{Orougr}">
+<!ENTITY osmogr "{osmogr}">
+<!ENTITY Osmogr "{Osmogr}">
+<!ENTITY ogragr "{ogragr}">
+<!ENTITY Ogragr "{Ogragr}">
+<!ENTITY oacugr "{oacugr}">
+<!ENTITY Oacugr "{Oacugr}">
+<!ENTITY oragr "{oragr}">
+<!ENTITY Oragr "{Oragr}">
+<!ENTITY osagr "{osagr}">
+<!ENTITY Osagr "{Osagr}">
+<!ENTITY orggr "{orggr}">
+<!ENTITY Orggr "{Orggr}">
+<!ENTITY osggr "{osggr}">
+<!ENTITY Osggr "{Osggr}">
+<!ENTITY urougr "{urougr}">
+<!ENTITY Urougr "{Urougr}">
+<!ENTITY usmogr "{usmogr}">
+<!ENTITY ugragr "{ugragr}">
+<!ENTITY Ugragr "{Ugragr}">
+<!ENTITY uacugr "{uacugr}">
+<!ENTITY Uacugr "{Uacugr}">
+<!ENTITY ucirgr "{ucirgr}">
+<!ENTITY uragr "{uragr}">
+<!ENTITY Uragr "{Uragr}">
+<!ENTITY usagr "{usagr}">
+<!ENTITY urggr "{urggr}">
+<!ENTITY Urggr "{Urggr}">
+<!ENTITY usggr "{usggr}">
+<!ENTITY urcgr "{urcgr}">
+<!ENTITY Urcgr "{Urcgr}">
+<!ENTITY uscgr "{uscgr}">
+<!ENTITY ugdgr "{ugdgr}">
+<!ENTITY ucdgr "{ucdgr}">
+<!ENTITY uadgr "{uadgr}">
+<!ENTITY ohigr "{ohigr}">
+<!ENTITY OHigr "{OHigr}">
+<!ENTITY ohrigr "{ohrigr}">
+<!ENTITY OHrigr "{OHrigr}">
+<!ENTITY ohsigr "{ohsigr}">
+<!ENTITY OHsigr "{OHsigr}">
+<!ENTITY ohaigr "{ohaigr}">
+<!ENTITY ohgigr "{ohgigr}">
+<!ENTITY ohcigr "{ohcigr}">
+<!ENTITY ohraigr "{ohraigr}">
+<!ENTITY OHraigr "{OHraigr}">
+<!ENTITY ohsaigr "{ohsaigr}">
+<!ENTITY OHsaigr "{OHsaigr}">
+<!ENTITY ohrgigr "{ohrgigr}">
+<!ENTITY OHrgigr "{OHrgigr}">
+<!ENTITY ohsgigr "{ohsgigr}">
+<!ENTITY OHsgigr "{OHsgigr}">
+<!ENTITY ohrcigr "{ohrcigr}">
+<!ENTITY OHrcigr "{OHrcigr}">
+<!ENTITY ohscigr "{ohscigr}">
+<!ENTITY OHscigr "{OHscigr}">
+<!ENTITY ohrougr "{ohrougr}">
+<!ENTITY OHrougr "{OHrougr}">
+<!ENTITY ohsmogr "{ohsmogr}">
+<!ENTITY OHsmogr "{OHsmogr}">
+<!ENTITY ohgragr "{ohgragr}">
+<!ENTITY OHgragr "{OHgragr}">
+<!ENTITY ohacugr "{ohacugr}">
+<!ENTITY OHacugr "{OHacugr}">
+<!ENTITY ohcirgr "{ohcirgr}">
+<!ENTITY OHcirgr "{OHcirgr}">
+<!ENTITY ohragr "{ohragr}">
+<!ENTITY OHragr "{OHragr}">
+<!ENTITY ohsagr "{ohsagr}">
+<!ENTITY OHsagr "{OHsagr}">
+<!ENTITY ohrggr "{ohrggr}">
+<!ENTITY OHrggr "{OHrggr}">
+<!ENTITY ohsggr "{ohsggr}">
+<!ENTITY OHsggr "{OHsggr}">
+<!ENTITY ohrcgr "{ohrcgr}">
+<!ENTITY OHrcgr "{OHrcgr}">
+<!ENTITY ohscgr "{ohscgr}">
+<!ENTITY OHscgr "{OHscgr}">
+<!ENTITY rrougr "{rrougr}">
+<!ENTITY Rrougr "{Rrougr}">
+<!ENTITY diggr "{diggr}">
+<!ENTITY kogr "{kogr}">
+<!ENTITY stgr "{stgr}">
+<!ENTITY samgr "{samgr}">
+<!ENTITY qmgr "{qmgr}">
+<!ENTITY EOLhyphen "{EOLhyphen}">
+<!ENTITY EOLunhyphen "{EOLunhyphen}">
+<!ENTITY spcDash "{spcDash}">
+

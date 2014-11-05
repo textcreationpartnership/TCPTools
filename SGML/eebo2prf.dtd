@@ -1,0 +1,990 @@
+<!-- CONTENTS -->
+
+<!-- 1.10 PREFACE TO VERSION 1.0 -->
+<!-- 1.11  MODIFICATIONS TO VERSION 1.0 -->
+<!-- 1.20 PREFACE TO VERSION 2.0 -->
+<!-- 1.21 MODIFICATIONS TO VERSION 2.0 -->
+<!-- 2.0 temphead elements -->
+<!-- 3.0 toplevel element -->
+<!-- 3.1  ID group required at head of document -->
+<!-- 3.2  large structural divisions -->
+<!-- 4.0 "heads" and "feet": things marking the beginning or end of text divisions -->
+<!-- 5.0 special tags for drama or drama-like works -->
+<!-- 6.0 special formats (lists, tables, illustrations) -->
+<!-- 7.0 basic units of prose and verse (paragraphs, stanzas, and verse lines) -->
+<!-- 8.0 chunks set apart : notes, quotes, etc.) -->
+<!-- 9.0 misc. little-used low-level structural elements (citations, dates) -->
+<!-- 10.0 character or word level tags -->
+<!-- 11.0 empty tags (events) -->
+<!-- 12.0 linking tags -->
+<!-- 13.0 character entities -->
+
+<!-- 1.00 PREFACE TO VERSION 1.0 -->
+<!--* This is the vendor DTD for Early English Books Online. It was created
+    * deleting elements from the TEILITE XML DTD not required in the vendor
+    * transcription. The deleted elements are: <gi>, <eg>, <code>, <ident>, <kw>, 
+    * <s>, <div>, <div0>, <interpGrp>, <foreign>, <emph>, <socalled>, <mentioned>, 
+    * <gloss>, <rs>, <num>, <time>, <sic>, <corr>, <reg>, <ptr>, <ref>, <index>, <divGen>, <xref>,
+    * <xptr>, <seg>, <anchor>, <interp>
+    * <term> and <name> are retained just for the header.
+    * A new element, <letter>, has been created to serve as a compression of the <Q><TEXT><BODY><DIV1>
+    * necessary currently for encoding inserted personal letters. This element can be later expanded
+    * to remain a valid TEI document.
+    * It will thus be a valid TEI document, and expandable to include other 
+    * elements within TEILite or the larger TEI tagset.
+    * This version was drafted by Perry Willett on 16 June 2000.
+    *-->
+
+<!-- 1.11  MODIFICATIONS TO VERSION 1.0 -->
+
+<!-- I have removed further elements, including everything from the TEIHEADER, CIT, LISTBIBL, and BIBLFULL, and have restored FOREIGN.  I also pared down the attributes. Finally, I removed PB from the content models of TEXT, FRONT, BODY and BACK in order to encourage their appearance within DIVs.  Chris Powell, July/August 2000-->
+<!-- I have added a top-level eebo element. Knock it out again later if you like. pfs -->
+<!-- Modified 9 Oct 00. UNIT attribute of MILESTONE given default value "unspec". pfs -->
+<!-- Modified 9 Oct 00. LANG attribute universally changed from IDREFS to CDATA. pfs -->
+<!-- Modified 13 Oct 00. HEAD made optional (with ?) in content model of ARGUMENT, following TEILITE instead of TEIXLITE. pfs -->
+<!-- Modified 6 Feb 01. REF attribute added to PB tag and made REQUIRED. pfs -->
+<!-- Modified 5 Oct 01. RESP attrib on GAP changed to CDATA to make global replacements of vendor-supplied "$" and "$$word$$"s easier. pfs -->
+<!-- Modified 9 Oct 01. NOTE added to content model of LABEL. pfs -->
+
+<!-- 1.20 PREFACE TO VERSION 2.0 -->
+
+<!-- VERSION 2.0 of EEBO PROOF dtd :: October-December 2001. drafted by pfs -->
+<!-- ====================================================================== -->
+<!-- Preferred filename: eebo2prf.dtd -->
+<!-- Preferred public identifier PUBLIC "-//UMDLPS//DTD EEBOPROOF 2.0//EN" -->
+<!-- Most changes (viz., culling of unused tags and attribs) originally introduced to vendor version of dtd only -->
+<!-- Exceptions noted here: -->
+<!-- *Modified: HI (added AUTHOR to content model) -->
+<!-- *Modified: UNCLEAR (added AUTHOR to content model) -->
+<!-- *Modified TABLE (added TRAILER and optional following event tags to end of content model) -->
+<!-- *Modified TRAILER, OPENER, CLOSER, BYLINE, DATELINE, SIGNED, SALUTE (added NOTE to content model) -->
+<!-- *Modified EPIGRAPH to make it stricter (can no longer contain only P; should nearly always include Q) -->
+<!-- *EEBO gained attribs stc, vid, bib -->
+<!-- *FIGDESC lost all attribs (id n lang rend) and GAINED SCHEME -->
+<!-- *GAP lost id n rend hand agent AND BECAME more restrictive with respect to DESC -->
+<!-- *New elements in IDG come with attributes -->
+<!-- *New attributes "TYPE" and "REASON" on element "EEBO" for potential future use                -->
+
+
+<!-- 1.21 MODIFICATIONS TO VERSION 2.0 -->
+
+<!-- 1.22  LATER MODIFICATIONS TO VERSION 2.0 -->
+<!-- Modified: "DESC" attribute of GAP made REQUIRED. 2002-02-06 pfs -->
+<!-- Modified: PB removed from content models of GROUP and BACK 2002-02-06 pfs -->
+<!-- Grk1 charents added 2002-02 -->
+<!-- HI added to content model of DATELINE 2002-02-21 pfs -->
+<!-- LIST added to content model of SIGNED 2002-03-08 and SALUTE 2002-03-22 pfs -->
+<!-- L and LG and Q added to content model of FIGURE; constraints on sequence on quantity of contents removed 2002-05-14 pfs -->
+<!-- TEIGrk charents added 2002-06 -->
+<!-- FIGURE added to content model of TRAILER to make it more like HEAD 2002-08-02 pfs -->
+<!-- TYPE attribute added to TRAILER to make it more like HEAD 2002-08-02 pfs -->
+<!-- NEW element POSTSCRIPT defined and added to content model of CLOSER 2002-08-02 pfs -->
+<!-- ABBR added to content model of DATELINE 2002-10-24 pfs -->
+
+<!-- Entire main body of dtd reorganized based on vendor dtd. See comments there. -->
+
+<!-- Link elements have been added (ptr and ref) 2002-03 pfs -->
+<!-- IDG modified for Evans: 'aas' token added to T attrib of BIBNO; 'E' token added to T attrib of STC; STC element made repeatable ('+') 2003-05 pfs -->
+<!-- items made required in lists  2003-07 pfs -->
+<!-- Q and LETTER added to contents of SP. 2003-09 pfs -->
+<!-- TRAILER redefined to match contents of HEAD. 2003-10 pfs -->
+<!-- L added to content model of both HEAD and TRAILER. 2003-10 -->
+<!-- l | lg | p | sp  added to content model of CELL to make it more nearly resemble ITEM 2004-02 -->
+<!-- LIST added to content model of LABEL to allow tagging of more complex 'glossary-type' (LABEL+ITEM) lists 2004-03 -->
+<!-- TRAILER added to content model of LIST to allow for LISTs with trailing heads, and to match TABLE 2004-03 -->
+<!-- ROLE attribute added to ITEM and LABEL (to match that on CELL), ITEM ROLE="label" and LABEL ROLE="label" are intended as equivalents of the TEI HeadItem and HeadLabel elements respectively. 2004-03 -->
+<!-- UT added as token value of R attribute of IDG tag for texts assigned to Toronto. -->
+<!-- SIGNED BYLINE FIGURE added to content of FIGURE. 12/04 pfs -->
+<!-- date removed from date 2004-11 -->
+<!-- LABEL put back in CELL. 6/05 pfs -->
+<!-- LABEL put back in P. 10/05 pfs -->
+<!-- stage added to LG 2006-04 -->
+<!-- FIGURE added to SIGNED (for monogram signatures) 2006-04 pfs -->
+<!-- SET attrib. added to VID for Gale content set 2006-07 pfs -->
+<!-- ABOVE and BELOW defined (like SUB and SUP in XML version) added for interlinear glosses; allowed wherever HI is allowed (except within themselves) 2006-07 pfs -->
+<!-- BACK and FRONT content models replaced by copies of BODY 2006-09-16 pfs -->
+<!-- Element HEADNOTE added (based on ARGUMENT and allowed wherever that is allowed) 2006-09-16 pfs  -->
+<!-- Element TAILNOTE added (based on ARGUMENT and allowed in the DivBot area, wherever closer is allowed, except in LG) 2006-10-17 pfs -->
+<!-- Attribute REND added to FIGURE to distinguish between block and inline figures. 2006-10-17 pfs -->
+<!-- Attribute ANCHORED removed from NOTE since it went unused. 2006-10-17 pfs -->
+<!-- ATTLIST (with N and REND) added to STAGE, the former for note-like markers, the latter for brackets and the like 2007-05-22 pfs -->
+<!-- NOTE added to content model of DATE 2007-05-25 pfs -->
+<!-- ROLE attribute (CDATA) added to P 2007-06-04 pfs -->
+<!-- REND attribute (CDATA) added to SP 2007-06-04 pfs -->
+<!-- LABEL added to model of L 2007-11-21 pfs -->
+<!-- "X" added as possible value of T attribute of STC tag 2007-11-30 pfs -->
+<!-- SEG added back to dtd, allowed wherever HI is allowed. Content model a little restricted vis a vi P3. 2008-03-06 pfs -->
+<!-- SP and STAGE added to model of FIGURE for speech bubbles in cartoons. 2008-07-09 pfs -->
+<!-- @REND added to OPENER and CLOSER HEAD and TRAILER. 2009-02-13 pfs -->
+<!-- FIGURE allowed within LABEL to accommodate pictorial glossaries. 2009-02-13 pfs -->
+<!-- @LANG made required for TEXT. 2009-07 pfs -->
+<!-- @PLACE added to STAGE. 2009-10 pfs -->
+<!-- Updated FRONT and BACK to require at least one DIV1 (gave them same content model as BODY). 2010-07-07 pfs -->
+<!-- made @LANG mandatory on LETTER (since already required on TEXT and LETTER is a kind of TEXT) 2010-12 pfs -->
+<!-- replaced @TYPE with @SUBTYPE on LETTER (since @type was already implicitly 'letter') 2010-12 pfs -->
+<!-- added @N and @TYPE to TEXT and GROUP 2010-12 pfs -->
+<!-- added new elements LICENSE and FLOATEXT, both of them shortcuts for existing tag and attribute strings. Added to content models wherever LETTER was allowed 2010-12 pfs -->
+<!-- added @REND to GAP pfs 2011-02 -->
+<!-- removed @N from LIST since we never use it. pfs 2011-04 -->
+<!-- restricted @PLACE on NOTE to (foot|marg etc). pfs 2011-05 -->
+<!-- added fw element, allowed it in a few page-crossing objects (p q letter div [sp added 2012-03; item added 2013-03] etc.), and constrained it to following directly on pb. pfs 2011-05 -->
+<!-- added ab element, allowed it in a few places in which p can occur, and modelled it on p. pfs 2011-05 -->
+<!-- restricted @ROLE on CELL and ROW to (label|total), matching @ROLE on ITEM and LABEL. pfs 2011-05 -->
+<!-- FIGDESC reduced to PCDATA 2011-11 pfs -->
+<!-- Additional values added to GAP RESP attribute (murp, keyers) on experimental basis. pfs 2011-11-07 -->
+<!-- Added TYPE attribute to LB 2012-04 pfs -->
+<!-- Removed TABLE from content model of ROW, a meaningless P3 relic 2012-05 pfs -->
+<!-- put @N back on LIST since we apparently *do* use it! meaninglessly, more or less. 2012-10 pfs -->
+<!-- experimentally added L to content model of LABEL primarily for phrase glossaries in which the (proverbial) phrase being glossed is in verse 2012-10 pfs -->
+<!-- gave POSTSCRIPT an ATTLIST. 2013-03 pfs -->
+<!-- added DEL EXPAN and CHOICE. 2013-03 pfs -->
+<!-- added TYPE to attributes of STAGE. 2013-03 pfs -->
+<!-- made some tentative changes to accommodate additional information in the 2011 PQ records, namely:
+        o added a new field optional field altbibno for de-duped records that preserve more than one bib id
+        o added a permissible token STC T="G" for id numbers taken from the Early English Tract Supplement Interim Guide
+        o added several permissible tokens for the @T attribute of BIBNO, viz.,  rlin, unm, ocolc, eeu, the last being a UMI OCLC id. Some of these may eventually be merged with existing values
+  
+  2013-04 pfs
+-->
+<!-- added @TYPE to POSTSCRIPT 2013-10 pfs -->
+<!-- added @TYPE to LABEL 2013-11 pfs -->
+<!-- added LG to content model of SIGNED 2013-12 pfs -->
+<!-- added ARGUMENT in div.bot position in the DIVs FRONT BODY BACK LETTER FLOATEXT 2013-12 pfs -->
+<!-- added @SUBTYPE in lots of elements that had @TYPE already 2013-12 pfs -->
+<!-- removed DEL and ADD from CHOICE and placed them SUBST instead, allowing SUBST wherever CHOICE allowed except in ADD and DEL (per P5) 2013-12 pfs -->
+<!-- added @PRE to BIBNO and ALTBIBNO to allow OCLC prefixes and the like to be separated from their numbers 2014-03 pfs -->
+<!-- added values source (to @resp) and omitted (to @desc) GAP attributes in order to capture editorial markup in the source itself 2014-03 pfs -->
+<!-- changed default "unspec" and "unspecified" values for @UNIT on MILESTONE and @PLACE on STAGE to #IMPLIED 2014-8-15. -->
+
+<!-- 2.0 TEMPHEAD ELEMENTS -->
+<!-- Following tags added to basic eebo2sgm.dtd in order to make it suitable for tag proofing -->
+
+<!ELEMENT ets  - o ((temphead),(eebo))>
+
+<!-- ID attribute removed from ets since this function is now handled by the IDG below -->
+
+<!ELEMENT temphead - - ((edecl)?, (languse)?, (revdescr)) >
+
+<!ELEMENT edecl    - - ((p)+)>
+
+<!ELEMENT languse  - - (lng)+ >
+
+<!ELEMENT lng      - - (#PCDATA) >
+<!ATTLIST lng id ID #REQUIRED>
+
+<!ELEMENT revdescr - - (change)+>
+
+<!ELEMENT change   - - (date, (respstmt)+, item)>
+<!ATTLIST change n CDATA #IMPLIED>
+
+<!ELEMENT respstmt - - ((name),(resp))>
+
+<!ELEMENT (name | resp) - - (#PCDATA) >
+
+<!-- What follows is the EEBO2SGM.dtd (version 2 of EEBO_SGM.dtd) -->
+<!-- Following changes made to the vendors' dtd: -->
+<!-- TYPE attribute on DIVs made REQUIRED for inhouse use only 2001-05-23 -->
+<!-- idg element and its contents added to model of eebo element, as it will be for vendors as of 1 Jan 2002 -->
+<!-- SYMBOL and INTRUDER added to permissible values of DESC attribute of GAP. 2001-01-22 -->
+<!-- Certain attributes reintroduced after restructuring on basis of vendor dtd. 2003-02 -->
+<!-- ADD element retained in this dtd, removed from vendors' dtd. 2003-02 -->
+<!-- TEIGRK entities added -->
+<!-- date removed from date 2004-11 -->
+<!-- LABEL put back in P. 10/05 pfs -->
+<!-- stage added to LG 2006-04 -->
+
+<!-- 3.0 toplevel element -->
+
+<!ELEMENT eebo - - (idg, (text | group))>
+<!ATTLIST eebo 
+              TYPE (A|B|C) "A"
+              REASON CDATA #IMPLIED >
+
+<!-- 3.1 ID group required at head of document -->
+
+<!-- The ID group contains three ID numbers, one of which (STC) can repeat -->
+<!-- STC is used to hold the STC number that we have been using for file naming -->
+<!--  (its attribute "T" (for "TYPE") holds the STC prefix S (for "STC") or W (for "Wing") or "T" (for Thomason) or "E" (for Evans")) -->
+<!-- BIBNO holds the number assigned by UMI or OCLC or AAS to the associated bibliographic record  -->
+<!-- VID holds the number assigned by UMI to the set of associated page images              -->
+<!-- IDG itself has an ID attribute which is used for a local tracking number               -->
+<!-- IDG also has an "R" attribute (for "review agency") which specifies which agency       -->
+<!--   (Michigan or Oxford) will do the reviewing.                                          -->
+
+<!ELEMENT idg - - (stc+, bibno, altbibno*, vid)>
+<!ATTLIST idg 
+              S    (marc|fulc|auto) #REQUIRED
+              R    (UM|OX|SF|XX|UT|AB) #REQUIRED
+              ID  ID  #REQUIRED>
+<!ELEMENT (stc|bibno|altbibno|vid) - - (#PCDATA)>
+<!ATTLIST stc T (S|W|T|E|C|X|G|B) #REQUIRED>
+<!ATTLIST (bibno|altbibno) T (umi|oclc|aas|docno|rlin|unm|ocolc|eeu) #REQUIRED
+                  pre CDATA #IMPLIED>
+<!ATTLIST vid SET CDATA #IMPLIED>
+
+<!-- 3.2 large structural divisions -->
+
+<!--  original (temporarily replaced by copy of body): <!ELEMENT back - - 
+	((lb | milestone | gap )*, (((argument | headnote | byline
+	| epigraph | head | opener | salute | signed), 
+        (argument | headnote | byline | epigraph | head | opener | salute 
+        | signed | lb | milestone | gap )*) 
+        | (div1, (div1 | lb | milestone | gap )*))?) >
+
+<!ELEMENT back - - 
+        ((argument | headnote | byline | epigraph | head | opener 
+        | salute | signed | lb | milestone | gap )*, 
+        ((div1)+ | (bibl | l | lg | p | sp | q | list 
+        | note | stage)+), 
+        (byline | closer | tailnote | epigraph | salute | signed | trailer | lb | milestone)*)>
+ -->
+ 
+<!ELEMENT back - - 
+        ((argument | headnote | byline | epigraph | head | opener 
+        | salute | signed | lb | milestone | gap )*, 
+        (div1)+ , 
+        (byline | closer | tailnote | epigraph | salute | signed | trailer | argument | lb | milestone)*)>
+
+<!ATTLIST back 
+	id ID #IMPLIED
+	lang CDATA #IMPLIED >
+
+<!ELEMENT body - - 
+        ((argument | headnote | byline | epigraph | head | opener 
+        | salute | signed | lb | milestone | gap )*, 
+        (div1)+ , 
+        (byline | closer | tailnote | epigraph | salute | signed | trailer | argument | lb | milestone)*)>
+
+<!ATTLIST body 
+	id ID #IMPLIED
+	lang CDATA #IMPLIED >
+
+
+<!ELEMENT div1 - - 
+	((argument | headnote | byline | epigraph | head | opener | salute 
+        | signed | lb | milestone | (pb,fw*) | gap )*, 
+        (((div2), (lb | milestone | (pb,fw*) | gap )*)+ | ((( bibl | l | lg | p | ab  
+        | sp | q | letter | license | floatext | list | note | stage), 
+        (lb | milestone | (pb,fw*) | gap )*)+, ((div2), (lb | milestone | (pb,fw*) | gap )*)*)),
+        ((byline | closer | tailnote | epigraph | salute | signed | trailer | argument), 
+        (lb | milestone | (pb,fw*) | gap )*)*) >
+
+<!ATTLIST div1 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	type CDATA #REQUIRED
+	subtype CDATA #IMPLIED >
+
+<!ELEMENT div2 - - 
+	((argument | headnote | byline | epigraph | head 
+	| opener | salute | signed 
+	| lb | milestone | (pb,fw*) | gap )*, (((div3), 
+	(lb | milestone | (pb,fw*) | gap)*)+ | ((( bibl | l | lg | p | ab | sp 
+	|  q | letter | license | floatext | list | note | stage), 
+        (lb | milestone | (pb,fw*) | gap )*)+, 
+	((div3), (lb | milestone 
+	| (pb,fw*) | gap )*)*)), ((byline | closer | tailnote | epigraph 
+	| salute | signed | trailer | argument ), (lb | milestone | (pb,fw*) | gap )*)*) >
+
+<!ATTLIST div2 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	type CDATA #REQUIRED
+	subtype CDATA #IMPLIED>
+
+<!ELEMENT div3 - - 
+	((argument | headnote | byline | epigraph | head 
+	| opener | salute | signed 
+	| lb | milestone | (pb,fw*) | gap )*, (((div4), 
+	(lb | milestone | (pb,fw*) | gap)*)+ | ((( bibl | l | lg | p | ab | sp 
+	|  q | letter | license | floatext | list | note | stage), 
+        (lb | milestone | (pb,fw*) | gap )*)+, 
+ 	((div4), (lb | milestone 
+	| (pb,fw*) | gap )*)*)), ((byline | closer | tailnote | epigraph 
+	| salute | signed | trailer | argument), (lb | milestone | (pb,fw*) | gap )*)*) >
+
+<!ATTLIST div3 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	type CDATA #REQUIRED
+	subtype CDATA #IMPLIED>
+
+<!ELEMENT div4 - - 
+	((argument | headnote | byline | epigraph | head 
+	| opener | salute | signed 
+	| lb | milestone | (pb,fw*) | gap )*, (((div5), 
+	(lb | milestone | (pb,fw*) | gap )*)+ | ((( bibl | l | lg | p | ab | sp 
+	|  q | letter | license | floatext | list | note | stage),
+        (lb | milestone | (pb,fw*) | gap )*)+, 
+	((div5), (lb | milestone 
+	| (pb,fw*) | gap )*)*)), ((byline | closer | tailnote | epigraph 
+	| salute | signed | trailer | argument), 
+        (lb | milestone | (pb,fw*) | gap )*)*) >
+
+<!ATTLIST div4 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	type CDATA #REQUIRED
+	subtype CDATA #IMPLIED>
+
+<!ELEMENT div5 - - 
+	((argument | headnote | byline | epigraph | head 
+	| opener | salute | signed 
+	| lb | milestone | (pb,fw*) | gap )*, (((div6), 
+	(lb | milestone | (pb,fw*) | gap )*)+ | ((( bibl | l | lg | p | ab | sp 
+	|  q | letter | license | floatext | list | note | stage), 
+        (lb | milestone | (pb,fw*) | gap )*)+, 
+	((div6), (lb | milestone 
+	| (pb,fw*) | gap )*)*)), ((byline | closer | tailnote | epigraph 
+	| salute | signed | trailer | argument), (lb | milestone | (pb,fw*) | gap )*)*) >
+
+<!ATTLIST div5 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	type CDATA #REQUIRED
+	subtype CDATA #IMPLIED>
+
+<!ELEMENT div6 - - 
+	((argument | headnote | byline | epigraph | head 
+	| opener | salute | signed 
+	| lb | milestone | (pb,fw*) | gap )*, (((div7), 
+	(lb | milestone | (pb,fw*) | gap )*)+ | ((( bibl | l | lg | p | ab | sp 
+	|  q | letter | license | floatext | list | note | stage),
+        (lb | milestone | (pb,fw*) | gap )*)+, 
+	((div7), (lb | milestone 
+	| (pb,fw*) | gap )*)*)), ((byline | closer | tailnote | epigraph 
+	| salute | signed | trailer | argument), (lb | milestone | (pb,fw*) | gap )*)*) >
+
+<!ATTLIST div6 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	type CDATA #REQUIRED
+	subtype CDATA #IMPLIED>
+
+<!ELEMENT div7 - - 
+	((argument | headnote | byline | epigraph | head 
+	| opener | salute | signed | lb | milestone | (pb,fw*) | gap )*, 
+        (( bibl | l | lg | p | ab | sp | q | letter | license | floatext | list 
+        | note | stage), (lb | milestone | (pb,fw*) | gap )*)+, ((byline | closer | tailnote | epigraph 
+        | salute | signed | trailer | argument), (lb | milestone | (pb,fw*) | gap )*)*) >
+
+<!ATTLIST div7 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	type CDATA #REQUIRED
+	subtype CDATA #IMPLIED>
+
+<!ELEMENT group - - 
+	((argument | headnote | byline | epigraph | head 
+	| opener | salute | signed | lb | milestone | gap )*, (text | group), 
+	(text | group | lb | milestone | gap )*, ((byline | closer | tailnote | epigraph 
+        | salute | signed | trailer | argument), (lb | milestone | gap )*)*) >
+
+<!ATTLIST group 
+	id ID #IMPLIED
+	lang CDATA #IMPLIED 
+	n CDATA #IMPLIED
+	type CDATA #IMPLIED
+	subtype CDATA #IMPLIED>
+
+<!-- original (temporarily replaced by copy of body): <!ELEMENT front - - 
+	((lb | milestone | gap )*, (((argument | headnote | byline 
+	| epigraph | head ), (argument | headnote | byline 
+	| epigraph | head | lb | milestone | gap )*) 
+        | (div1, (div1 | lb | milestone | gap )*))?) >
+        
+<!ELEMENT front - - 
+        ((argument | headnote | byline | epigraph | head | opener 
+        | salute | signed | lb | milestone | gap )*, 
+        ((div1)+ | (bibl | l | lg | p | sp | q | list 
+        | note | stage)+), 
+        (byline | closer | tailnote | epigraph | salute | signed | trailer | lb | milestone)*)>   
+ -->
+ 
+<!ELEMENT front - - 
+        ((argument | headnote | byline | epigraph | head | opener 
+        | salute | signed | lb | milestone | gap )*, 
+        (div1)+ , 
+        (byline | closer | tailnote | epigraph | salute | signed | trailer | argument | lb | milestone)*)>
+
+<!ATTLIST front 
+	id ID #IMPLIED
+	lang CDATA #IMPLIED >
+
+<!ELEMENT text - - 
+	((lb | milestone | gap )*, (front, (lb | milestone | gap )*)?, 
+        (body | group), (lb | milestone | gap )*, 
+        (back, (lb | milestone | gap )*)?) >
+
+<!ATTLIST text 
+	id ID #IMPLIED
+	lang CDATA #REQUIRED 	
+	n CDATA #IMPLIED
+	type CDATA #IMPLIED
+	subtype CDATA #IMPLIED>
+
+<!-- 4.0 "heads" and "feet": things marking the beginning or end of text divisions -->
+
+<!ELEMENT argument - - 
+	((lb | milestone | pb | gap )*, ((head)?, (( bibl | l | lg | p
+	| sp | q | list | note | stage), 
+	(lb | milestone | pb | gap )*)*)?) >
+
+<!ELEMENT byline - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | note | add | del | unclear | hi | seg | above | below 
+        | lb | milestone | pb | gap )* >
+
+<!ELEMENT closer - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below   
+	| signed | dateline | note | salute | postscript | lb | milestone | (pb,fw*) | gap )* >
+
+<!ATTLIST closer
+        rend CDATA #IMPLIED >
+        
+<!ELEMENT dateline - - 
+	(#PCDATA | date | note | lb | milestone | pb | gap | hi | seg | above | below | abbr | expan | choice | subst | ref | ptr)* >
+
+<!ELEMENT epigraph - - 
+	(( bibl | sp | q | note), (lb | milestone | pb | gap )*)* >
+
+<!ELEMENT head - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below   
+	| bibl | q | list | l
+        | note | figure | stage | table | text | lb | milestone | pb | gap )* >
+
+<!ATTLIST head 
+	type CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	subtype CDATA #IMPLIED>
+	
+<!ELEMENT headnote - - 
+	((lb | milestone | pb | gap )*, ((head)?, (( bibl | l | lg | p
+	| sp | q | list | note | stage), 
+	(lb | milestone | pb | gap )*)*)?) >
+
+<!ELEMENT tailnote - - 
+	((lb | milestone | pb | gap )*, ((head)?, (( bibl | l | lg | p
+	| sp | q | list | note | stage), 
+	(lb | milestone | pb | gap )*)*)?) >
+	
+<!ELEMENT opener - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below    
+	| argument | headnote | byline | epigraph | signed | dateline | note | salute | lb 
+        | milestone | pb | gap )* >
+
+<!ATTLIST opener
+        rend CDATA #IMPLIED >
+        
+<!ELEMENT postscript - - ((head | opener | lb | milestone | pb | gap)*,
+      ((p | ab | l | lg | q | list | letter | license | floatext | note | stage | sp | bibl), 
+      (lb | milestone | pb | gap)*)+,
+      ((closer | tailnote | trailer), (lb | milestone | pb | gap)*)*)  >
+
+<!ATTLIST postscript
+        rend CDATA #IMPLIED
+        lang CDATA #IMPLIED
+        type CDATA #IMPLIED>
+
+<!ELEMENT salute - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | note | unclear | hi | seg | above | below 
+        | lb | milestone | pb | gap | list)* >
+
+<!ELEMENT signed - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | note | unclear | hi | seg | above | below   
+	| lb | milestone | pb | gap | list | figure | lg)* >
+
+<!-- Old definition of TRAILER
+
+<!ELEMENT trailer - - 
+	(#PCDATA | abbr | ref | ptr | date | add | unclear | hi | seg | above | below   
+	| lb | milestone | note | figure | pb | gap )* >  -->
+
+<!ELEMENT trailer - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below   
+	| bibl | q | list | l
+        | note | figure | stage | table | text | lb | milestone | pb | gap )* >
+
+<!ATTLIST trailer 
+	type CDATA #IMPLIED
+	subtype CDATA #IMPLIED
+	rend CDATA #IMPLIED >
+
+<!-- 5.0 special tags for drama or drama-like works -->
+
+<!ELEMENT sp - - 
+	((lb | milestone | (pb,fw*) | gap )*, (speaker, (lb | milestone | (pb,fw*) | gap )*)?,
+        ((p | ab | l | lg | stage | letter | license | floatext | q), (lb | milestone | (pb,fw*) | gap )*)+) >
+
+<!ATTLIST sp 
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED >
+
+<!ELEMENT speaker - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below   
+	| lb | milestone | pb | gap )* >
+
+<!ELEMENT stage - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below   
+	| bibl | q | list 
+	| note | figure | stage | table | text | l 
+        | lg | p | sp | lb | milestone | pb | gap )* >
+
+<!ATTLIST STAGE
+           n CDATA #IMPLIED
+           rend CDATA #IMPLIED
+	   place CDATA #IMPLIED 
+	   type CDATA #IMPLIED >
+           
+<!-- 6.0 special formats (lists, tables, illustrations) -->
+
+<!ELEMENT cell - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below   
+	| bibl | q | label | list  
+        | note | figure | stage | table | text | l | lg | p | ab | sp | lb 
+        | milestone | pb | gap )* >
+
+<!ATTLIST cell 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	role (label|total) #IMPLIED
+	rows NMTOKEN "1"
+	cols NMTOKEN "1" >
+	
+<!ELEMENT figure - - 
+	((head | p | ab | l | lg | q | sp | stage | figdesc | text | lb | milestone | pb | gap | byline | signed | figure)*) >
+        
+<!ATTLIST figure 
+	id ID #IMPLIED
+	n CDATA #IMPLIED 
+	rend (block|inline) "block">
+
+<!ELEMENT item - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below   
+	| bibl | q | label | list 
+	| note | figure | stage | table | text | l | lg | p | ab | sp | lb 
+        | milestone | (pb,fw*) | gap )* >
+
+<!ATTLIST item 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	role (label|total) #IMPLIED >
+
+<!ELEMENT label - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below   
+	| lb | milestone | pb | gap | note | list | figure | l )* >
+
+<!ATTLIST label 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	type CDATA #IMPLIED
+	role (label|total) #IMPLIED  >
+
+<!ELEMENT list - - 
+	((lb | milestone | (pb,fw*) | gap )*, (head, (lb | milestone 
+	| (pb,fw*) | gap )*)?, ((item, ( lb | milestone | (pb,fw*) | gap )*)+ 
+        | (label, (lb | milestone | (pb,fw*) | gap )*, 
+	item, (lb | milestone | (pb,fw*) | gap )*)+),
+	(trailer, (lb | milestone | (pb,fw*) | gap )*)?) >
+       
+
+<!ATTLIST list 
+	id ID #IMPLIED
+	type CDATA #IMPLIED
+	subtype CDATA #IMPLIED
+	n CDATA #IMPLIED>
+	
+<!ELEMENT row - - 
+	((cell), (lb | milestone | pb | gap )*)+ >
+
+<!ATTLIST row 
+	role (label|total) #IMPLIED >
+
+<!ELEMENT table - - 
+	((head | lb | milestone | pb | gap )*, 
+	(row, (lb | milestone | pb | gap )*)+, 
+	(trailer, (lb | milestone | pb | gap )*)?) >
+
+<!ATTLIST table 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	rows NMTOKEN #IMPLIED
+	cols NMTOKEN #IMPLIED >
+
+
+<!-- 7.0 basic units of prose and verse (paragraphs, stanzas, and verse lines) -->
+
+<!ELEMENT l - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below  
+        | bibl | q | list | table | stage | label 
+        | note | figure | text | lb | milestone | pb | gap )* >
+
+<!ATTLIST l 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED >
+
+<!ELEMENT lg - - 
+	((argument | headnote | byline | epigraph | head 
+	| opener | salute | signed | lb | milestone | (pb,fw*) | gap | stage)*, (l | lg), 
+        (l | lg | lb | milestone | (pb,fw*) | gap | stage)*, 
+        ((byline | closer | epigraph | salute | signed | trailer), 
+        (lb | milestone | (pb,fw*) | gap | stage)*)*) >
+
+<!ATTLIST lg 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	type CDATA #IMPLIED
+	subtype CDATA #IMPLIED>
+
+<!ELEMENT p - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del  
+	| unclear | hi | seg | above | below | bibl | q | letter | license | floatext | list 
+	| note | figure | stage | table | text | lb | milestone | (pb,fw*) | gap | label )* >
+
+<!ATTLIST p 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	role CDATA #IMPLIED >
+
+<!ELEMENT ab - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del  
+	| unclear | hi | seg | above | below | bibl | q | letter | license | floatext | list 
+	| note | figure | stage | table | text | lb | milestone | (pb,fw*) | gap | label )* >
+
+<!ATTLIST ab 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	type CDATA #IMPLIED
+	subtype CDATA #IMPLIED>
+	
+<!-- 8.0 chunks set apart : notes, quotes, etc.) -->
+
+<!-- LETTER is simply a shortcut for Q TEXT TYPE="floating" BODY DIV1 TYPE="letter" and therefore a special (typed) kind of floatext = FLOATEXT TYPE="letter" -->
+
+<!ELEMENT letter - -
+	((argument | headnote | byline | epigraph | head | opener | salute 
+        | signed | lb | milestone | (pb,fw*) | gap )*, 
+        (((div2), (lb | milestone | (pb,fw*) | gap )*)+ | ((( bibl | l | lg | p | ab  
+        | sp | q | letter | license | floatext | list | note | stage), 
+        (lb | milestone | (pb,fw*) | gap )*)+, ((div2), (lb | milestone | (pb,fw*) | gap )*)*)),
+        ((byline | closer | tailnote | epigraph | salute | signed | trailer | argument), 
+        (lb | milestone | (pb,fw*) | gap )*)*) >
+
+<!ATTLIST letter
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #REQUIRED
+	rend CDATA #IMPLIED
+	subtype CDATA #IMPLIED >
+
+<!-- license is simply a crippled version of Q TEXT TYPE="floating" BODY DIV1 TYPE="license" -->
+
+<!ELEMENT license - - ((head | opener | byline | lb | milestone | pb | gap)*,
+      ((p | l | lg | q | list | note | bibl), 
+      (lb | milestone | pb | gap)*)+,
+      ((closer | tailnote | trailer), (lb | milestone | pb | gap)*)*)  >
+
+<!ATTLIST license
+      id ID #IMPLIED
+      lang CDATA #REQUIRED
+      rend CDATA #IMPLIED
+      subtype CDATA #IMPLIED >
+
+<!-- floatext is best regarded as a shortcut for Q TEXT TYPE="floating" BODY DIV1 -->
+
+<!ELEMENT floatext - -
+	((argument | headnote | byline | epigraph | head | opener | salute 
+        | signed | lb | milestone | (pb,fw*) | gap )*, 
+        (((div2), (lb | milestone | (pb,fw*) | gap )*)+ | ((( bibl | l | lg | p | ab  
+        | sp | q | letter | license | floatext | list | note | stage), 
+        (lb | milestone | pb | gap )*)+, ((div2), (lb | milestone | (pb,fw*) | gap )*)*)),
+        ((byline | closer | tailnote | epigraph | salute | signed | trailer | argument), 
+        (lb | milestone | (pb,fw*) | gap )*)*) >
+
+<!ATTLIST floatext
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #REQUIRED
+	rend CDATA #IMPLIED
+	type CDATA #REQUIRED
+	subtype CDATA #IMPLIED >
+
+      
+<!ELEMENT note - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below   
+	| bibl | q | letter | license | floatext | list  
+        | note | figure | stage | table | text | l | lg | p | ab | sp | lb | milestone 
+	| pb | gap )* >
+
+<!ATTLIST note 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	place (foot|marg|foot1|foot2|marg1|marg2|marg3|inline|divend|parend) #IMPLIED
+	resp CDATA #IMPLIED
+	type CDATA #IMPLIED >
+
+<!ELEMENT q - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below 
+        | bibl | q | list 
+	| note | figure | stage | table | text | l | lg | p | ab | sp | lb
+        | milestone | (pb,fw*) | gap )* >
+
+<!ATTLIST q 
+	id ID #IMPLIED
+	lang CDATA #IMPLIED 
+	rend CDATA #IMPLIED
+	type CDATA #IMPLIED >
+
+<!ELEMENT add - - 
+	(#PCDATA | abbr | expan | choice | ref | ptr | date | add | del | unclear | hi | seg | above | below  
+        | bibl | q | letter | license | floatext | list  
+        | note | figure | stage | table | text | l | lg | p | sp | lb | milestone 
+	| pb | gap )* >
+
+<!ATTLIST add 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	place CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	cert CDATA #IMPLIED >
+
+<!ELEMENT del - - 
+	(#PCDATA | abbr | expan | choice | ref | ptr | date | add | del | unclear | hi | seg | above | below  
+        | bibl | q | letter | license | floatext | list  
+        | note | figure | stage | table | text | l | lg | p | sp | lb | milestone 
+	| pb | gap )* >
+
+<!ATTLIST del 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	place CDATA #IMPLIED
+	resp IDREF #IMPLIED >
+
+<!ELEMENT choice - -
+        (abbr | expan )+>
+        
+<!ELEMENT subst - -
+        (add | del )+>
+        
+        
+<!-- 9.0 misc. little-used low-level structural elements (citations, dates) -->
+
+
+<!ELEMENT bibl - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del | unclear | hi | seg | above | below 
+	 | note | lb | milestone | pb | gap )* >
+
+<!ELEMENT date - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | add | del  
+	| unclear | hi | seg | above | below | lb | milestone | pb | gap | note)* >
+
+<!-- removed old figdesc: 
+
+<!ELEMENT figDesc - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | unclear | hi | seg | above | below   
+	| bibl | q | list  
+        | note | figure | stage | table | text | lb | milestone | pb | gap )* >
+and replaced with: -->
+
+<!ELEMENT figDesc - - (#PCDATA) >
+
+<!ATTLIST figDesc 
+        scheme CDATA #IMPLIED >
+
+
+<!-- 10.0 character or word level tags -->
+
+<!ELEMENT abbr - - 
+	(#PCDATA | abbr | ref | ptr | date | add | del  
+	| unclear | hi | seg | above | below | lb | milestone | pb | gap )* >
+
+<!ATTLIST abbr 
+	expan CDATA #IMPLIED
+	rend CDATA #IMPLIED >
+
+<!ELEMENT expan - - 
+	(#PCDATA | abbr | ref | ptr | date | add | del  
+	| unclear | hi | seg | above | below | lb | milestone | pb | gap )* >
+
+<!ATTLIST expan 
+	abbr CDATA #IMPLIED
+	rend CDATA #IMPLIED >
+
+<!ELEMENT hi - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del  
+	| unclear | hi | seg | above | below  | bibl | q | label | list 
+	| note | figure | stage | table | text | lb | milestone | (pb,fw*) | gap )* >
+
+<!ATTLIST hi 
+	rend CDATA #IMPLIED >
+
+<!ELEMENT above - -
+	(#pcdata | abbr | expan | choice | subst | ref | ptr | add | del | sup | sub  
+	| unclear | hi | seg | note | figure | lb | milestone | pb | gap )* >
+	
+<!ELEMENT below - -
+	(#pcdata | abbr | expan | choice | subst | ref | ptr | add | del | sup | sub  
+	| unclear | hi | seg | note | figure | lb | milestone | pb | gap )* >
+
+<!ELEMENT unclear - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del 
+	| unclear | hi | seg | above | below  | bibl | q | label | list 
+	| note | figure | stage | table | text
+            | lb | milestone | pb | gap )* >
+
+<!ATTLIST unclear 
+	lang CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	reason CDATA #IMPLIED
+	resp CDATA #IMPLIED >
+
+<!ELEMENT seg - -
+        (#PCDATA | abbr | expan | choice | subst | add | del | bibl | date | figure | gap | hi | note
+        | ptr | ref | seg | stage | above | below | unclear | lb | pb 
+        | milestone)* >
+
+<!ATTLIST seg 
+	id ID #IMPLIED
+	lang CDATA #IMPLIED 
+	rend CDATA #IMPLIED
+	type CDATA #IMPLIED
+	subtype CDATA #IMPLIED>
+
+<!ELEMENT fw - - 
+	(#PCDATA | abbr | expan | choice | subst | ref | ptr | date | add | del  
+	| unclear | hi | seg | above | below | list 
+	| note | figure | table | lb | milestone | gap | label )* >
+
+<!ATTLIST fw
+        place (pageTop) #IMPLIED >
+
+
+
+	<!-- 11.0 empty tags (events) -->
+
+<!ELEMENT gap - o 
+	EMPTY >
+
+<!ATTLIST gap 
+	lang CDATA #IMPLIED
+	desc (foreign|illegible|music|math|missing|duplicate|replacement|symbol|intruder|blank|omitted) #REQUIRED
+	reason CDATA #IMPLIED
+	resp (uom|oxf|apex|pdcc|tech|aeld|uot|nlw|keyers|murp|source) #IMPLIED
+	extent CDATA #IMPLIED
+	rend CDATA #IMPLIED >
+
+<!ELEMENT lb - o 
+	EMPTY >
+
+<!ATTLIST lb 
+	n CDATA #IMPLIED 
+	type CDATA #IMPLIED>
+
+<!ELEMENT milestone - o 
+	EMPTY >
+
+<!ATTLIST milestone 
+	id ID #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	unit CDATA #IMPLIED >
+
+<!ELEMENT pb - o 
+	EMPTY >
+
+<!ATTLIST pb 
+	id ID #IMPLIED
+	n CDATA #IMPLIED
+	ref CDATA #REQUIRED
+	ms (y|n) "n">
+
+<!-- 12.0 Linking tags -->
+
+<!ELEMENT ptr - o
+	EMPTY >
+
+<!ATTLIST ptr 
+	id ID #IMPLIED
+	target IDREF #REQUIRED >
+
+<!ELEMENT ref - -
+	(#PCDATA | abbr | expan | choice | subst | date | add
+	| unclear | hi | seg | above | below | bibl | q | label | list | note 
+	| figure | stage | table | text | lb | milestone | pb | gap)* >
+
+<!ATTLIST ref 
+	id ID #IMPLIED
+	target IDREF #REQUIRED >
+
+
+<!-- 13.0 character entities -->
+
+<!-- using single entity file for all entities, including ISO entities	
+-->
+<!ENTITY % EEBOcharall PUBLIC "EEBO 2008-1//ENTITIES EEB-ALL//EN">
+%EEBOcharall;
+
+<!ENTITY % XMLdefault PUBLIC "EEBO 2011-1//ENTITIES XML 1//EN">
+%XMLdefault;
+
+<!-- alternatively may use separate files for eebo-only and public entity lists:
+
+<!ENTITY % EEBOchar PUBLIC "EEBO 2000-1//ENTITIES EEB 1//EN">
+%EEBOchar;	
+
+<!ENTITY % ISOlat1 PUBLIC "ISO 8879-1986//ENTITIES Added Latin 1//EN">
+%ISOlat1; 
+
+<!ENTITY % ISOlat2 PUBLIC "ISO 8879-1986//ENTITIES Added Latin 2//EN">
+%ISOlat2; 
+
+<!ENTITY % ISOnum PUBLIC "ISO 8879-1986//ENTITIES Numeric and Special Graphic//EN">
+%ISOnum;
+
+<!ENTITY % ISOpub PUBLIC "ISO 8879-1986//ENTITIES Publishing//EN">
+%ISOpub;
+
+<!ENTITY   % ISOtech PUBLIC "ISO 8879-1986//ENTITIES General Technical//EN">
+%ISOtech;
+
+<!ENTITY % ISOgrk1 PUBLIC "ISO 8879-1986//ENTITIES Greek Letters//EN">
+%ISOgrk1;
+
+<!ENTITY % TEIgrk PUBLIC  "-//TEI TR1 W4:1992//ENTITIES Extra Classical Greek Letters//EN">
+%TEIgrk;
+
+<!ENTITY % ISOdia PUBLIC "ISO 8879-1986//ENTITIES Diacritical Marks//EN">
+%ISOdia;
+
+<!ENTITY % ISOcyrl PUBLIC "ISO 8879-1986//ENTITIES Russian Cyrillic//EN">
+%ISOcyrl;
+
+-->
