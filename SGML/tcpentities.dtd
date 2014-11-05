@@ -1,0 +1,1562 @@
+<!ENTITY AElig "&#x00c6;"> 
+<!ENTITY Aacugr "&#x1fbb;"> 
+<!ENTITY Aacute "&#x00c1;"> 
+<!ENTITY Abreve "&#x0102;"> 
+<!ENTITY Acirc "&#x00c2;"> 
+<!ENTITY Acy "&#x0410;"> 
+<!ENTITY Agr "&#x0391;"> 
+<!ENTITY Agragr "&#x1fba;"> 
+<!ENTITY Agrave "&#x00c0;"> 
+<!ENTITY Aiotgr "&#x1fbc;"> 
+<!ENTITY Amacr "&#x0100;"> 
+<!ENTITY Aogon "&#x0104;"> 
+<!ENTITY Aquar "&#x2652;"> 
+<!ENTITY Aragr "&#x1f0d;"> 
+<!ENTITY Araigr "&#x1f8d;"> 
+<!ENTITY Arcgr "&#x1f0f;"> 
+<!ENTITY Arcigr "&#x1f8f;"> 
+<!ENTITY Arggr "&#x1f0b;"> 
+<!ENTITY Argigr "&#x1f8b;"> 
+<!ENTITY Aries "&#x2648;"> 
+<!ENTITY Arigr "&#x1f89;"> 
+<!ENTITY Aring "&#x00c5;"> 
+<!ENTITY Arougr "&#x1f09;"> 
+<!ENTITY Asagr "&#x1f0c;"> 
+<!ENTITY Asaigr "&#x1f8c;"> 
+<!ENTITY Ascgr "&#x1f0e;"> 
+<!ENTITY Ascigr "&#x1f8e;"> 
+<!ENTITY Asggr "&#x1f0a;"> 
+<!ENTITY Asgigr "&#x1f8a;"> 
+<!ENTITY Asigr "&#x1f88;"> 
+<!ENTITY Asmogr "&#x1f08;"> 
+<!ENTITY Atilde "&#x00c3;"> 
+<!ENTITY Auml "&#x00c4;"> 
+<!ENTITY Barline "&#x1d101;"> 
+<!ENTITY Bcy "&#x0411;"> 
+<!ENTITY Bgr "&#x0392;"> 
+<!ENTITY CHcy "&#x0427;"> 
+<!ENTITY Cacute "&#x0106;"> 
+<!ENTITY Cancer "&#x264b;"> 
+<!ENTITY Capri "&#x2651;"> 
+<!ENTITY Ccaron "&#x010c;"> 
+<!ENTITY Ccedil "&#x00c7;"> 
+<!ENTITY Ccirc "&#x0108;"> 
+<!ENTITY Cdot "&#x010a;"> 
+<!ENTITY DIGgr "&#x03dc;"> 
+<!ENTITY Dagger "&#x2021;"> 
+<!ENTITY Dcaron "&#x010e;"> 
+<!ENTITY Dcy "&#x0414;"> 
+<!ENTITY Ddotb "&#x1e0c;"> 
+<!ENTITY Dgr "&#x0394;"> 
+<!ENTITY DotDot "&#x20dc;"> 
+<!ENTITY Dstrok "&#x0110;"> 
+<!ENTITY EEacugr "&#x1fcb;"> 
+<!ENTITY EEgr "&#x0397;"> 
+<!ENTITY EEgragr "&#x1fca;"> 
+<!ENTITY EEiotgr "&#x1fcc;"> 
+<!ENTITY EEragr "&#x1f2d;"> 
+<!ENTITY EEraigr "&#x1f9d;"> 
+<!ENTITY EErcgr "&#x1f2f;"> 
+<!ENTITY EErcigr "&#x1f9f;"> 
+<!ENTITY EErggr "&#x1f2b;"> 
+<!ENTITY EErgigr "&#x1f9b;"> 
+<!ENTITY EErigr "&#x1f99;"> 
+<!ENTITY EErougr "&#x1f29;"> 
+<!ENTITY EEsagr "&#x1f2c;"> 
+<!ENTITY EEsaigr "&#x1f9c;"> 
+<!ENTITY EEscgr "&#x1f2e;"> 
+<!ENTITY EEscigr "&#x1f9e;"> 
+<!ENTITY EEsggr "&#x1f2a;"> 
+<!ENTITY EEsgigr "&#x1f9a;"> 
+<!ENTITY EEsigr "&#x1f98;"> 
+<!ENTITY EEsmogr "&#x1f28;"> 
+<!ENTITY ENG "&#x014a;"> 
+<!ENTITY EOLhyphen "&#x2223;"> 
+<!ENTITY EOLunhyphen "&#x00a6;"> 
+<!ENTITY ETH "&#x00d0;"> 
+<!ENTITY ETHIOPIC-BA "&#x1260;"> 
+<!ENTITY ETHIOPIC-BAA "&#x1263;"> 
+<!ENTITY ETHIOPIC-BE "&#x1265;"> 
+<!ENTITY ETHIOPIC-BEE "&#x1264;"> 
+<!ENTITY ETHIOPIC-BI "&#x1262;"> 
+<!ENTITY ETHIOPIC-BO "&#x1266;"> 
+<!ENTITY ETHIOPIC-BU "&#x1261;"> 
+<!ENTITY ETHIOPIC-BWA "&#x1267;"> 
+<!ENTITY ETHIOPIC-CA "&#x1278;"> 
+<!ENTITY ETHIOPIC-CAA "&#x127b;"> 
+<!ENTITY ETHIOPIC-CE "&#x127d;"> 
+<!ENTITY ETHIOPIC-CEE "&#x127c;"> 
+<!ENTITY ETHIOPIC-CHA "&#x1328;"> 
+<!ENTITY ETHIOPIC-CHAA "&#x132b;"> 
+<!ENTITY ETHIOPIC-CHE "&#x132d;"> 
+<!ENTITY ETHIOPIC-CHEE "&#x132c;"> 
+<!ENTITY ETHIOPIC-CHI "&#x132a;"> 
+<!ENTITY ETHIOPIC-CHO "&#x132e;"> 
+<!ENTITY ETHIOPIC-CHU "&#x1329;"> 
+<!ENTITY ETHIOPIC-CHWA "&#x132f;"> 
+<!ENTITY ETHIOPIC-CI "&#x127a;"> 
+<!ENTITY ETHIOPIC-CO "&#x127e;"> 
+<!ENTITY ETHIOPIC-COLON "&#x1365;"> 
+<!ENTITY ETHIOPIC-COMMA "&#x1363;"> 
+<!ENTITY ETHIOPIC-CU "&#x1279;"> 
+<!ENTITY ETHIOPIC-CWA "&#x127f;"> 
+<!ENTITY ETHIOPIC-DA "&#x12f0;"> 
+<!ENTITY ETHIOPIC-DAA "&#x12f3;"> 
+<!ENTITY ETHIOPIC-DDA "&#x12f8;"> 
+<!ENTITY ETHIOPIC-DDAA "&#x12fb;"> 
+<!ENTITY ETHIOPIC-DDE "&#x12fd;"> 
+<!ENTITY ETHIOPIC-DDEE "&#x12fc;"> 
+<!ENTITY ETHIOPIC-DDI "&#x12fa;"> 
+<!ENTITY ETHIOPIC-DDO "&#x12fe;"> 
+<!ENTITY ETHIOPIC-DDU "&#x12f9;"> 
+<!ENTITY ETHIOPIC-DDWA "&#x12ff;"> 
+<!ENTITY ETHIOPIC-DE "&#x12f5;"> 
+<!ENTITY ETHIOPIC-DEE "&#x12f4;"> 
+<!ENTITY ETHIOPIC-DI "&#x12f2;"> 
+<!ENTITY ETHIOPIC-DIGIT-EIGHT "&#x1370;"> 
+<!ENTITY ETHIOPIC-DIGIT-FIVE "&#x136d;"> 
+<!ENTITY ETHIOPIC-DIGIT-FOUR "&#x136c;"> 
+<!ENTITY ETHIOPIC-DIGIT-NINE "&#x1371;"> 
+<!ENTITY ETHIOPIC-DIGIT-ONE "&#x1369;"> 
+<!ENTITY ETHIOPIC-DIGIT-SEVEN "&#x136f;"> 
+<!ENTITY ETHIOPIC-DIGIT-SIX "&#x136e;"> 
+<!ENTITY ETHIOPIC-DIGIT-THREE "&#x136b;"> 
+<!ENTITY ETHIOPIC-DIGIT-TWO "&#x136a;"> 
+<!ENTITY ETHIOPIC-DO "&#x12f6;"> 
+<!ENTITY ETHIOPIC-DU "&#x12f1;"> 
+<!ENTITY ETHIOPIC-DWA "&#x12f7;"> 
+<!ENTITY ETHIOPIC-FA "&#x1348;"> 
+<!ENTITY ETHIOPIC-FAA "&#x134b;"> 
+<!ENTITY ETHIOPIC-FE "&#x134d;"> 
+<!ENTITY ETHIOPIC-FEE "&#x134c;"> 
+<!ENTITY ETHIOPIC-FI "&#x134a;"> 
+<!ENTITY ETHIOPIC-FO "&#x134e;"> 
+<!ENTITY ETHIOPIC-FU "&#x1349;"> 
+<!ENTITY ETHIOPIC-FWA "&#x134f;"> 
+<!ENTITY ETHIOPIC-FYA "&#x135a;"> 
+<!ENTITY ETHIOPIC-GA "&#x1308;"> 
+<!ENTITY ETHIOPIC-GAA "&#x130b;"> 
+<!ENTITY ETHIOPIC-GE "&#x130d;"> 
+<!ENTITY ETHIOPIC-GEE "&#x130c;"> 
+<!ENTITY ETHIOPIC-GEM-MRK "&#x135f;"> 
+<!ENTITY ETHIOPIC-GGA "&#x1318;"> 
+<!ENTITY ETHIOPIC-GGAA "&#x131b;"> 
+<!ENTITY ETHIOPIC-GGE "&#x131d;"> 
+<!ENTITY ETHIOPIC-GGEE "&#x131c;"> 
+<!ENTITY ETHIOPIC-GGI "&#x131a;"> 
+<!ENTITY ETHIOPIC-GGO "&#x131e;"> 
+<!ENTITY ETHIOPIC-GGU "&#x1319;"> 
+<!ENTITY ETHIOPIC-GGWAA "&#x131f;"> 
+<!ENTITY ETHIOPIC-GI "&#x130a;"> 
+<!ENTITY ETHIOPIC-GLOTL-A "&#x12a0;"> 
+<!ENTITY ETHIOPIC-GLOTL-AA "&#x12a3;"> 
+<!ENTITY ETHIOPIC-GLOTL-E "&#x12a5;"> 
+<!ENTITY ETHIOPIC-GLOTL-EE "&#x12a4;"> 
+<!ENTITY ETHIOPIC-GLOTL-I "&#x12a2;"> 
+<!ENTITY ETHIOPIC-GLOTL-O "&#x12a6;"> 
+<!ENTITY ETHIOPIC-GLOTL-U "&#x12a1;"> 
+<!ENTITY ETHIOPIC-GLOTL-WA "&#x12a7;"> 
+<!ENTITY ETHIOPIC-GO "&#x130e;"> 
+<!ENTITY ETHIOPIC-GOA "&#x130f;"> 
+<!ENTITY ETHIOPIC-GU "&#x1309;"> 
+<!ENTITY ETHIOPIC-GWA "&#x1310;"> 
+<!ENTITY ETHIOPIC-GWAA "&#x1313;"> 
+<!ENTITY ETHIOPIC-GWE "&#x1315;"> 
+<!ENTITY ETHIOPIC-GWEE "&#x1314;"> 
+<!ENTITY ETHIOPIC-GWI "&#x1312;"> 
+<!ENTITY ETHIOPIC-HA "&#x1200;"> 
+<!ENTITY ETHIOPIC-HAA "&#x1203;"> 
+<!ENTITY ETHIOPIC-HE "&#x1205;"> 
+<!ENTITY ETHIOPIC-HEE "&#x1204;"> 
+<!ENTITY ETHIOPIC-HHA "&#x1210;"> 
+<!ENTITY ETHIOPIC-HHAA "&#x1213;"> 
+<!ENTITY ETHIOPIC-HHE "&#x1215;"> 
+<!ENTITY ETHIOPIC-HHEE "&#x1214;"> 
+<!ENTITY ETHIOPIC-HHI "&#x1212;"> 
+<!ENTITY ETHIOPIC-HHO "&#x1216;"> 
+<!ENTITY ETHIOPIC-HHU "&#x1211;"> 
+<!ENTITY ETHIOPIC-HHWA "&#x1217;"> 
+<!ENTITY ETHIOPIC-HI "&#x1202;"> 
+<!ENTITY ETHIOPIC-HO "&#x1206;"> 
+<!ENTITY ETHIOPIC-HOA "&#x1207;"> 
+<!ENTITY ETHIOPIC-HU "&#x1201;"> 
+<!ENTITY ETHIOPIC-JA "&#x1300;"> 
+<!ENTITY ETHIOPIC-JAA "&#x1303;"> 
+<!ENTITY ETHIOPIC-JE "&#x1305;"> 
+<!ENTITY ETHIOPIC-JEE "&#x1304;"> 
+<!ENTITY ETHIOPIC-JI "&#x1302;"> 
+<!ENTITY ETHIOPIC-JO "&#x1306;"> 
+<!ENTITY ETHIOPIC-JU "&#x1301;"> 
+<!ENTITY ETHIOPIC-JWA "&#x1307;"> 
+<!ENTITY ETHIOPIC-KA "&#x12a8;"> 
+<!ENTITY ETHIOPIC-KAA "&#x12ab;"> 
+<!ENTITY ETHIOPIC-KE "&#x12ad;"> 
+<!ENTITY ETHIOPIC-KEE "&#x12ac;"> 
+<!ENTITY ETHIOPIC-KI "&#x12aa;"> 
+<!ENTITY ETHIOPIC-KO "&#x12ae;"> 
+<!ENTITY ETHIOPIC-KOA "&#x12af;"> 
+<!ENTITY ETHIOPIC-KU "&#x12a9;"> 
+<!ENTITY ETHIOPIC-KWA "&#x12b0;"> 
+<!ENTITY ETHIOPIC-KWAA "&#x12b3;"> 
+<!ENTITY ETHIOPIC-KWE "&#x12b5;"> 
+<!ENTITY ETHIOPIC-KWEE "&#x12b4;"> 
+<!ENTITY ETHIOPIC-KWI "&#x12b2;"> 
+<!ENTITY ETHIOPIC-KXA "&#x12b8;"> 
+<!ENTITY ETHIOPIC-KXAA "&#x12bb;"> 
+<!ENTITY ETHIOPIC-KXE "&#x12bd;"> 
+<!ENTITY ETHIOPIC-KXEE "&#x12bc;"> 
+<!ENTITY ETHIOPIC-KXI "&#x12ba;"> 
+<!ENTITY ETHIOPIC-KXO "&#x12be;"> 
+<!ENTITY ETHIOPIC-KXU "&#x12b9;"> 
+<!ENTITY ETHIOPIC-KXWA "&#x12c0;"> 
+<!ENTITY ETHIOPIC-KXWAA "&#x12c3;"> 
+<!ENTITY ETHIOPIC-KXWE "&#x12c5;"> 
+<!ENTITY ETHIOPIC-KXWEE "&#x12c4;"> 
+<!ENTITY ETHIOPIC-KXWI "&#x12c2;"> 
+<!ENTITY ETHIOPIC-LA "&#x1208;"> 
+<!ENTITY ETHIOPIC-LAA "&#x120b;"> 
+<!ENTITY ETHIOPIC-LE "&#x120d;"> 
+<!ENTITY ETHIOPIC-LEE "&#x120c;"> 
+<!ENTITY ETHIOPIC-LI "&#x120a;"> 
+<!ENTITY ETHIOPIC-LO "&#x120e;"> 
+<!ENTITY ETHIOPIC-LU "&#x1209;"> 
+<!ENTITY ETHIOPIC-LWA "&#x120f;"> 
+<!ENTITY ETHIOPIC-MA "&#x1218;"> 
+<!ENTITY ETHIOPIC-MAA "&#x121b;"> 
+<!ENTITY ETHIOPIC-ME "&#x121d;"> 
+<!ENTITY ETHIOPIC-MEE "&#x121c;"> 
+<!ENTITY ETHIOPIC-MI "&#x121a;"> 
+<!ENTITY ETHIOPIC-MO "&#x121e;"> 
+<!ENTITY ETHIOPIC-MU "&#x1219;"> 
+<!ENTITY ETHIOPIC-MWA "&#x121f;"> 
+<!ENTITY ETHIOPIC-MYA "&#x1359;"> 
+<!ENTITY ETHIOPIC-NA "&#x1290;"> 
+<!ENTITY ETHIOPIC-NAA "&#x1293;"> 
+<!ENTITY ETHIOPIC-NE "&#x1295;"> 
+<!ENTITY ETHIOPIC-NEE "&#x1294;"> 
+<!ENTITY ETHIOPIC-NI "&#x1292;"> 
+<!ENTITY ETHIOPIC-NO "&#x1296;"> 
+<!ENTITY ETHIOPIC-NU "&#x1291;"> 
+<!ENTITY ETHIOPIC-NUM-EIGHTY "&#x1379;"> 
+<!ENTITY ETHIOPIC-NUM-FIFTY "&#x1376;"> 
+<!ENTITY ETHIOPIC-NUM-FORTY "&#x1375;"> 
+<!ENTITY ETHIOPIC-NUM-HUNDRED "&#x137b;"> 
+<!ENTITY ETHIOPIC-NUM-NINETY "&#x137a;"> 
+<!ENTITY ETHIOPIC-NUM-SEVENTY "&#x1378;"> 
+<!ENTITY ETHIOPIC-NUM-SIXTY "&#x1377;"> 
+<!ENTITY ETHIOPIC-NUM-TEN "&#x1372;"> 
+<!ENTITY ETHIOPIC-NUM-TEN-THOUSAND "&#x137c;"> 
+<!ENTITY ETHIOPIC-NUM-THIRTY "&#x1374;"> 
+<!ENTITY ETHIOPIC-NUM-TWENTY "&#x1373;"> 
+<!ENTITY ETHIOPIC-NWA "&#x1297;"> 
+<!ENTITY ETHIOPIC-NYA "&#x1298;"> 
+<!ENTITY ETHIOPIC-NYAA "&#x129b;"> 
+<!ENTITY ETHIOPIC-NYE "&#x129d;"> 
+<!ENTITY ETHIOPIC-NYEE "&#x129c;"> 
+<!ENTITY ETHIOPIC-NYI "&#x129a;"> 
+<!ENTITY ETHIOPIC-NYO "&#x129e;"> 
+<!ENTITY ETHIOPIC-NYU "&#x1299;"> 
+<!ENTITY ETHIOPIC-NYWA "&#x129f;"> 
+<!ENTITY ETHIOPIC-PA "&#x1350;"> 
+<!ENTITY ETHIOPIC-PAA "&#x1353;"> 
+<!ENTITY ETHIOPIC-PARAGRAPH "&#x1368;"> 
+<!ENTITY ETHIOPIC-PE "&#x1355;"> 
+<!ENTITY ETHIOPIC-PEE "&#x1354;"> 
+<!ENTITY ETHIOPIC-PHA "&#x1330;"> 
+<!ENTITY ETHIOPIC-PHAA "&#x1333;"> 
+<!ENTITY ETHIOPIC-PHARGL-A "&#x12d0;"> 
+<!ENTITY ETHIOPIC-PHARGL-AA "&#x12d3;"> 
+<!ENTITY ETHIOPIC-PHARGL-E "&#x12d5;"> 
+<!ENTITY ETHIOPIC-PHARGL-EE "&#x12d4;"> 
+<!ENTITY ETHIOPIC-PHARGL-I "&#x12d2;"> 
+<!ENTITY ETHIOPIC-PHARGL-O "&#x12d6;"> 
+<!ENTITY ETHIOPIC-PHARGL-U "&#x12d1;"> 
+<!ENTITY ETHIOPIC-PHE "&#x1335;"> 
+<!ENTITY ETHIOPIC-PHEE "&#x1334;"> 
+<!ENTITY ETHIOPIC-PHI "&#x1332;"> 
+<!ENTITY ETHIOPIC-PHO "&#x1336;"> 
+<!ENTITY ETHIOPIC-PHU "&#x1331;"> 
+<!ENTITY ETHIOPIC-PHWA "&#x1337;"> 
+<!ENTITY ETHIOPIC-PI "&#x1352;"> 
+<!ENTITY ETHIOPIC-PO "&#x1356;"> 
+<!ENTITY ETHIOPIC-PREF-COLON "&#x1366;"> 
+<!ENTITY ETHIOPIC-PU "&#x1351;"> 
+<!ENTITY ETHIOPIC-PWA "&#x1357;"> 
+<!ENTITY ETHIOPIC-QA "&#x1240;"> 
+<!ENTITY ETHIOPIC-QAA "&#x1243;"> 
+<!ENTITY ETHIOPIC-QE "&#x1245;"> 
+<!ENTITY ETHIOPIC-QEE "&#x1244;"> 
+<!ENTITY ETHIOPIC-QHA "&#x1250;"> 
+<!ENTITY ETHIOPIC-QHAA "&#x1253;"> 
+<!ENTITY ETHIOPIC-QHE "&#x1255;"> 
+<!ENTITY ETHIOPIC-QHEE "&#x1254;"> 
+<!ENTITY ETHIOPIC-QHI "&#x1252;"> 
+<!ENTITY ETHIOPIC-QHO "&#x1256;"> 
+<!ENTITY ETHIOPIC-QHU "&#x1251;"> 
+<!ENTITY ETHIOPIC-QHWA "&#x1258;"> 
+<!ENTITY ETHIOPIC-QHWAA "&#x125b;"> 
+<!ENTITY ETHIOPIC-QHWE "&#x125d;"> 
+<!ENTITY ETHIOPIC-QHWEE "&#x125c;"> 
+<!ENTITY ETHIOPIC-QHWI "&#x125a;"> 
+<!ENTITY ETHIOPIC-QI "&#x1242;"> 
+<!ENTITY ETHIOPIC-QO "&#x1246;"> 
+<!ENTITY ETHIOPIC-QOA "&#x1247;"> 
+<!ENTITY ETHIOPIC-QU "&#x1241;"> 
+<!ENTITY ETHIOPIC-QUESTION-MRK "&#x1367;"> 
+<!ENTITY ETHIOPIC-QWA "&#x1248;"> 
+<!ENTITY ETHIOPIC-QWAA "&#x124b;"> 
+<!ENTITY ETHIOPIC-QWE "&#x124d;"> 
+<!ENTITY ETHIOPIC-QWEE "&#x124c;"> 
+<!ENTITY ETHIOPIC-QWI "&#x124a;"> 
+<!ENTITY ETHIOPIC-RA "&#x1228;"> 
+<!ENTITY ETHIOPIC-RAA "&#x122b;"> 
+<!ENTITY ETHIOPIC-RE "&#x122d;"> 
+<!ENTITY ETHIOPIC-REE "&#x122c;"> 
+<!ENTITY ETHIOPIC-RI "&#x122a;"> 
+<!ENTITY ETHIOPIC-RO "&#x122e;"> 
+<!ENTITY ETHIOPIC-RU "&#x1229;"> 
+<!ENTITY ETHIOPIC-RWA "&#x122f;"> 
+<!ENTITY ETHIOPIC-RYA "&#x1358;"> 
+<!ENTITY ETHIOPIC-SA "&#x1230;"> 
+<!ENTITY ETHIOPIC-SAA "&#x1233;"> 
+<!ENTITY ETHIOPIC-SE "&#x1235;"> 
+<!ENTITY ETHIOPIC-SECTION-MRK "&#x1360;"> 
+<!ENTITY ETHIOPIC-SEE "&#x1234;"> 
+<!ENTITY ETHIOPIC-SEMICOLON "&#x1364;"> 
+<!ENTITY ETHIOPIC-SHA "&#x1238;"> 
+<!ENTITY ETHIOPIC-SHAA "&#x123b;"> 
+<!ENTITY ETHIOPIC-SHE "&#x123d;"> 
+<!ENTITY ETHIOPIC-SHEE "&#x123c;"> 
+<!ENTITY ETHIOPIC-SHI "&#x123a;"> 
+<!ENTITY ETHIOPIC-SHO "&#x123e;"> 
+<!ENTITY ETHIOPIC-SHU "&#x1239;"> 
+<!ENTITY ETHIOPIC-SHWA "&#x123f;"> 
+<!ENTITY ETHIOPIC-SI "&#x1232;"> 
+<!ENTITY ETHIOPIC-SO "&#x1236;"> 
+<!ENTITY ETHIOPIC-STOP "&#x1362;"> 
+<!ENTITY ETHIOPIC-SU "&#x1231;"> 
+<!ENTITY ETHIOPIC-SWA "&#x1237;"> 
+<!ENTITY ETHIOPIC-SZA "&#x1220;"> 
+<!ENTITY ETHIOPIC-SZAA "&#x1223;"> 
+<!ENTITY ETHIOPIC-SZE "&#x1225;"> 
+<!ENTITY ETHIOPIC-SZEE "&#x1224;"> 
+<!ENTITY ETHIOPIC-SZI "&#x1222;"> 
+<!ENTITY ETHIOPIC-SZO "&#x1226;"> 
+<!ENTITY ETHIOPIC-SZU "&#x1221;"> 
+<!ENTITY ETHIOPIC-SZWA "&#x1227;"> 
+<!ENTITY ETHIOPIC-TA "&#x1270;"> 
+<!ENTITY ETHIOPIC-TAA "&#x1273;"> 
+<!ENTITY ETHIOPIC-TE "&#x1275;"> 
+<!ENTITY ETHIOPIC-TEE "&#x1274;"> 
+<!ENTITY ETHIOPIC-THA "&#x1320;"> 
+<!ENTITY ETHIOPIC-THAA "&#x1323;"> 
+<!ENTITY ETHIOPIC-THE "&#x1325;"> 
+<!ENTITY ETHIOPIC-THEE "&#x1324;"> 
+<!ENTITY ETHIOPIC-THI "&#x1322;"> 
+<!ENTITY ETHIOPIC-THO "&#x1326;"> 
+<!ENTITY ETHIOPIC-THU "&#x1321;"> 
+<!ENTITY ETHIOPIC-THWA "&#x1327;"> 
+<!ENTITY ETHIOPIC-TI "&#x1272;"> 
+<!ENTITY ETHIOPIC-TO "&#x1276;"> 
+<!ENTITY ETHIOPIC-TSA "&#x1338;"> 
+<!ENTITY ETHIOPIC-TSAA "&#x133b;"> 
+<!ENTITY ETHIOPIC-TSE "&#x133d;"> 
+<!ENTITY ETHIOPIC-TSEE "&#x133c;"> 
+<!ENTITY ETHIOPIC-TSI "&#x133a;"> 
+<!ENTITY ETHIOPIC-TSO "&#x133e;"> 
+<!ENTITY ETHIOPIC-TSU "&#x1339;"> 
+<!ENTITY ETHIOPIC-TSWA "&#x133f;"> 
+<!ENTITY ETHIOPIC-TU "&#x1271;"> 
+<!ENTITY ETHIOPIC-TWA "&#x1277;"> 
+<!ENTITY ETHIOPIC-TZA "&#x1340;"> 
+<!ENTITY ETHIOPIC-TZAA "&#x1343;"> 
+<!ENTITY ETHIOPIC-TZE "&#x1345;"> 
+<!ENTITY ETHIOPIC-TZEE "&#x1344;"> 
+<!ENTITY ETHIOPIC-TZI "&#x1342;"> 
+<!ENTITY ETHIOPIC-TZO "&#x1346;"> 
+<!ENTITY ETHIOPIC-TZOA "&#x1347;"> 
+<!ENTITY ETHIOPIC-TZU "&#x1341;"> 
+<!ENTITY ETHIOPIC-VA "&#x1268;"> 
+<!ENTITY ETHIOPIC-VAA "&#x126b;"> 
+<!ENTITY ETHIOPIC-VE "&#x126d;"> 
+<!ENTITY ETHIOPIC-VEE "&#x126c;"> 
+<!ENTITY ETHIOPIC-VI "&#x126a;"> 
+<!ENTITY ETHIOPIC-VO "&#x126e;"> 
+<!ENTITY ETHIOPIC-VU "&#x1269;"> 
+<!ENTITY ETHIOPIC-VWA "&#x126f;"> 
+<!ENTITY ETHIOPIC-WA "&#x12c8;"> 
+<!ENTITY ETHIOPIC-WAA "&#x12cb;"> 
+<!ENTITY ETHIOPIC-WE "&#x12cd;"> 
+<!ENTITY ETHIOPIC-WEE "&#x12cc;"> 
+<!ENTITY ETHIOPIC-WI "&#x12ca;"> 
+<!ENTITY ETHIOPIC-WO "&#x12ce;"> 
+<!ENTITY ETHIOPIC-WOA "&#x12cf;"> 
+<!ENTITY ETHIOPIC-WORDSPACE "&#x1361;"> 
+<!ENTITY ETHIOPIC-WU "&#x12c9;"> 
+<!ENTITY ETHIOPIC-XA "&#x1280;"> 
+<!ENTITY ETHIOPIC-XAA "&#x1283;"> 
+<!ENTITY ETHIOPIC-XE "&#x1285;"> 
+<!ENTITY ETHIOPIC-XEE "&#x1284;"> 
+<!ENTITY ETHIOPIC-XI "&#x1282;"> 
+<!ENTITY ETHIOPIC-XO "&#x1286;"> 
+<!ENTITY ETHIOPIC-XOA "&#x1287;"> 
+<!ENTITY ETHIOPIC-XU "&#x1281;"> 
+<!ENTITY ETHIOPIC-XWA "&#x1288;"> 
+<!ENTITY ETHIOPIC-XWAA "&#x128b;"> 
+<!ENTITY ETHIOPIC-XWE "&#x128d;"> 
+<!ENTITY ETHIOPIC-XWEE "&#x128c;"> 
+<!ENTITY ETHIOPIC-XWI "&#x128a;"> 
+<!ENTITY ETHIOPIC-YA "&#x12e8;"> 
+<!ENTITY ETHIOPIC-YAA "&#x12eb;"> 
+<!ENTITY ETHIOPIC-YE "&#x12ed;"> 
+<!ENTITY ETHIOPIC-YEE "&#x12ec;"> 
+<!ENTITY ETHIOPIC-YI "&#x12ea;"> 
+<!ENTITY ETHIOPIC-YO "&#x12ee;"> 
+<!ENTITY ETHIOPIC-YOA "&#x12ef;"> 
+<!ENTITY ETHIOPIC-YU "&#x12e9;"> 
+<!ENTITY ETHIOPIC-ZA "&#x12d8;"> 
+<!ENTITY ETHIOPIC-ZAA "&#x12db;"> 
+<!ENTITY ETHIOPIC-ZE "&#x12dd;"> 
+<!ENTITY ETHIOPIC-ZEE "&#x12dc;"> 
+<!ENTITY ETHIOPIC-ZHA "&#x12e0;"> 
+<!ENTITY ETHIOPIC-ZHAA "&#x12e3;"> 
+<!ENTITY ETHIOPIC-ZHE "&#x12e5;"> 
+<!ENTITY ETHIOPIC-ZHEE "&#x12e4;"> 
+<!ENTITY ETHIOPIC-ZHI "&#x12e2;"> 
+<!ENTITY ETHIOPIC-ZHO "&#x12e6;"> 
+<!ENTITY ETHIOPIC-ZHU "&#x12e1;"> 
+<!ENTITY ETHIOPIC-ZHWA "&#x12e7;"> 
+<!ENTITY ETHIOPIC-ZI "&#x12da;"> 
+<!ENTITY ETHIOPIC-ZO "&#x12de;"> 
+<!ENTITY ETHIOPIC-ZU "&#x12d9;"> 
+<!ENTITY ETHIOPIC-ZWA "&#x12df;"> 
+<!ENTITY Eacugr "&#x1fc9;"> 
+<!ENTITY Eacute "&#x00c9;"> 
+<!ENTITY Earth "&#x2641;"> 
+<!ENTITY Ecaron "&#x011a;"> 
+<!ENTITY Ecirc "&#x00ca;"> 
+<!ENTITY Ecy "&#x042d;"> 
+<!ENTITY Edot "&#x0116;"> 
+<!ENTITY Egr "&#x0395;"> 
+<!ENTITY Egragr "&#x1fc8;"> 
+<!ENTITY Egrave "&#x00c8;"> 
+<!ENTITY Emacr "&#x0112;"> 
+<!ENTITY Eogon "&#x0118;"> 
+<!ENTITY Eragr "&#x1f1d;"> 
+<!ENTITY Erggr "&#x1f1b;"> 
+<!ENTITY Erougr "&#x1f19;"> 
+<!ENTITY Esagr "&#x1f1c;"> 
+<!ENTITY Esggr "&#x1f1a;"> 
+<!ENTITY Esmogr "&#x1f18;"> 
+<!ENTITY Euml "&#x00cb;"> 
+<!ENTITY Fcy "&#x0424;"> 
+<!ENTITY Gbreve "&#x011e;"> 
+<!ENTITY Gcedil "&#x0122;"> 
+<!ENTITY Gcirc "&#x011c;"> 
+<!ENTITY Gcy "&#x0413;"> 
+<!ENTITY Gdot "&#x0120;"> 
+<!ENTITY Gemini "&#x264a;"> 
+<!ENTITY Ggr "&#x0393;"> 
+<!ENTITY Ghacek "&#x01e6;"> 
+<!ENTITY HARDcy "&#x042a;"> 
+<!ENTITY Hcirc "&#x0124;"> 
+<!ENTITY Hstrok "&#x0126;"> 
+<!ENTITY IEcy "&#x0415;"> 
+<!ENTITY IJlig "&#x0132;"> 
+<!ENTITY IOcy "&#x0401;"> 
+<!ENTITY Iacugr "&#x1fdb;"> 
+<!ENTITY Iacute "&#x00cd;"> 
+<!ENTITY Ibreve "&#x012c;"> 
+<!ENTITY Icirc "&#x00ce;"> 
+<!ENTITY Icy "&#x0418;"> 
+<!ENTITY Idot "&#x0130;"> 
+<!ENTITY Igr "&#x0399;"> 
+<!ENTITY Igragr "&#x1fda;"> 
+<!ENTITY Igrave "&#x00cc;"> 
+<!ENTITY Imacr "&#x012a;"> 
+<!ENTITY Iogon "&#x012e;"> 
+<!ENTITY Iragr "&#x1f3d;"> 
+<!ENTITY Ircgr "&#x1f3f;"> 
+<!ENTITY Irggr "&#x1f3b;"> 
+<!ENTITY Irougr "&#x1f39;"> 
+<!ENTITY Isagr "&#x1f3c;"> 
+<!ENTITY Iscgr "&#x1f3e;"> 
+<!ENTITY Isggr "&#x1f3a;"> 
+<!ENTITY Ismogr "&#x1f38;"> 
+<!ENTITY Itilde "&#x0128;"> 
+<!ENTITY Iuml "&#x00cf;"> 
+<!ENTITY Jcirc "&#x0134;"> 
+<!ENTITY Jcy "&#x0419;"> 
+<!ENTITY Jupit "&#x2643;"> 
+<!ENTITY KHcy "&#x0425;"> 
+<!ENTITY KHgr "&#x03a7;"> 
+<!ENTITY KOgr "&#x03de;"> 
+<!ENTITY Kcedil "&#x0136;"> 
+<!ENTITY Kcy "&#x041a;"> 
+<!ENTITY Kgr "&#x039a;"> 
+<!ENTITY LL "&#x1efa;"> 
+<!ENTITY Lacute "&#x0139;"> 
+<!ENTITY Lbar "&#x2c62;"> 
+<!ENTITY Lcaron "&#x013d;"> 
+<!ENTITY Lcedil "&#x013b;"> 
+<!ENTITY Lcy "&#x041b;"> 
+<!ENTITY Ldotb "&#x1e36;"> 
+<!ENTITY Leo "&#x264c;"> 
+<!ENTITY Lgr "&#x039b;"> 
+<!ENTITY Libra "&#x264e;"> 
+<!ENTITY Lmidot "&#x013f;"> 
+<!ENTITY Lstrok "&#x0141;"> 
+<!ENTITY Mars "&#x2642;"> 
+<!ENTITY Mcy "&#x041c;"> 
+<!ENTITY Merc "&#x263f;"> 
+<!ENTITY Mgr "&#x039c;"> 
+<!ENTITY Moonfirst "&#x263d;"> 
+<!ENTITY Moonlast "&#x263e;"> 
+<!ENTITY Nacute "&#x0143;"> 
+<!ENTITY Ncaron "&#x0147;"> 
+<!ENTITY Ncedil "&#x0145;"> 
+<!ENTITY Ncy "&#x041d;"> 
+<!ENTITY Ngr "&#x039d;"> 
+<!ENTITY Ntilde "&#x00d1;"> 
+<!ENTITY OElig "&#x0152;"> 
+<!ENTITY OHacugr "&#x1ffb;"> 
+<!ENTITY OHgr "&#x03a9;"> 
+<!ENTITY OHgragr "&#x1ffa;"> 
+<!ENTITY OHigr "&#x1ffc;"> 
+<!ENTITY OHragr "&#x1f6d;"> 
+<!ENTITY OHraigr "&#x1fad;"> 
+<!ENTITY OHrcgr "&#x1f6f;"> 
+<!ENTITY OHrcigr "&#x1faf;"> 
+<!ENTITY OHrggr "&#x1f6b;"> 
+<!ENTITY OHrgigr "&#x1fab;"> 
+<!ENTITY OHrigr "&#x1fa9;"> 
+<!ENTITY OHrougr "&#x1f69;"> 
+<!ENTITY OHsagr "&#x1f6c;"> 
+<!ENTITY OHsaigr "&#x1fac;"> 
+<!ENTITY OHscgr "&#x1f6e;"> 
+<!ENTITY OHscigr "&#x1fae;"> 
+<!ENTITY OHsggr "&#x1f6a;"> 
+<!ENTITY OHsgigr "&#x1faa;"> 
+<!ENTITY OHsigr "&#x1fa8;"> 
+<!ENTITY OHsmogr "&#x1f68;"> 
+<!ENTITY Oacugr "&#x1ff9;"> 
+<!ENTITY Oacute "&#x00d3;"> 
+<!ENTITY Ocirc "&#x00d4;"> 
+<!ENTITY Ocy "&#x041e;"> 
+<!ENTITY Odblac "&#x0150;"> 
+<!ENTITY Ogr "&#x039f;"> 
+<!ENTITY Ogragr "&#x1ff8;"> 
+<!ENTITY Ograve "&#x00d2;"> 
+<!ENTITY Omacr "&#x014c;"> 
+<!ENTITY Oragr "&#x1f4d;"> 
+<!ENTITY Orggr "&#x1f4b;"> 
+<!ENTITY Orougr "&#x1f49;"> 
+<!ENTITY Osagr "&#x1f4c;"> 
+<!ENTITY Osggr "&#x1f4a;"> 
+<!ENTITY Oslash "&#x00d8;"> 
+<!ENTITY Osmogr "&#x1f48;"> 
+<!ENTITY Otilde "&#x00d5;"> 
+<!ENTITY Ouml "&#x00d6;"> 
+<!ENTITY PHgr "&#x03a6;"> 
+<!ENTITY PSgr "&#x03a8;"> 
+<!ENTITY Pcy "&#x041f;"> 
+<!ENTITY Pgr "&#x03a0;"> 
+<!ENTITY Pisces "&#x2653;"> 
+<!ENTITY Prime "&#x2033;"> 
+<!ENTITY Qbar "&#xa756;"> 
+<!ENTITY R "&#xa75a;"> 
+<!ENTITY Racute "&#x0154;"> 
+<!ENTITY Rcaron "&#x0158;"> 
+<!ENTITY Rcedil "&#x0156;"> 
+<!ENTITY Rcy "&#x0420;"> 
+<!ENTITY Rgr "&#x03a1;"> 
+<!ENTITY Rrougr "&#x1fec;"> 
+<!ENTITY SAMgr "&#x03e0;"> 
+<!ENTITY SHCHcy "&#x0429;"> 
+<!ENTITY SHcy "&#x0428;"> 
+<!ENTITY SOFTcy "&#x042c;"> 
+<!ENTITY STgr "&#x03da;"> 
+<!ENTITY Sacute "&#x015a;"> 
+<!ENTITY Sagitt "&#x2650;"> 
+<!ENTITY Saturn "&#x2644;"> 
+<!ENTITY Scaron "&#x0160;"> 
+<!ENTITY Scedil "&#x015e;"> 
+<!ENTITY Scirc "&#x015c;"> 
+<!ENTITY Scorp "&#x264f;"> 
+<!ENTITY Scy "&#x0421;"> 
+<!ENTITY Sgr "&#x03a3;"> 
+<!ENTITY Slungr "&#x03f9;"> 
+<!ENTITY Sun "&#x2609;"> 
+<!ENTITY THAT "&#xa766;"> 
+<!ENTITY THORN "&#x00de;"> 
+<!ENTITY THgr "&#x0398;"> 
+<!ENTITY TScy "&#x0426;"> 
+<!ENTITY Taurus "&#x2649;"> 
+<!ENTITY Tcaron "&#x0164;"> 
+<!ENTITY Tcedil "&#x0162;"> 
+<!ENTITY Tcy "&#x0422;"> 
+<!ENTITY Tgr "&#x03a4;"> 
+<!ENTITY Tstrok "&#x0166;"> 
+<!ENTITY Uacugr "&#x1feb;"> 
+<!ENTITY Uacute "&#x00da;"> 
+<!ENTITY Ubreve "&#x016c;"> 
+<!ENTITY Ucirc "&#x00db;"> 
+<!ENTITY Ucy "&#x0423;"> 
+<!ENTITY Udblac "&#x0170;"> 
+<!ENTITY Udotb "&#x1ee4;"> 
+<!ENTITY Ugr "&#x03a5;"> 
+<!ENTITY Ugragr "&#x1fea;"> 
+<!ENTITY Ugrave "&#x00d9;"> 
+<!ENTITY Umacr "&#x016a;"> 
+<!ENTITY Uogon "&#x0172;"> 
+<!ENTITY Uragr "&#x1f5d;"> 
+<!ENTITY Urcgr "&#x1f5f;"> 
+<!ENTITY Urggr "&#x1f5b;"> 
+<!ENTITY Uring "&#x016e;"> 
+<!ENTITY Urougr "&#x1f59;"> 
+<!ENTITY Utilde "&#x0168;"> 
+<!ENTITY Uuml "&#x00dc;"> 
+<!ENTITY Vcy "&#x0412;"> 
+<!ENTITY Venus "&#x2640;"> 
+<!ENTITY Verbar "&#x2016;"> 
+<!ENTITY Virgo "&#x264d;"> 
+<!ENTITY Vstroke "&#xa75e;"> 
+<!ENTITY W "&#x1efc;"> 
+<!ENTITY WYN "&#x01f7;"> 
+<!ENTITY Wcirc "&#x0174;"> 
+<!ENTITY Xbar "&#x10196;"> 
+<!ENTITY Xgr "&#x039e;"> 
+<!ENTITY Y "&#x1efe;"> 
+<!ENTITY YAcy "&#x042f;"> 
+<!ENTITY YOGH "&#x021c;"> 
+<!ENTITY YUcy "&#x042e;"> 
+<!ENTITY Yacute "&#x00dd;"> 
+<!ENTITY Ycirc "&#x0176;"> 
+<!ENTITY Ycy "&#x042b;"> 
+<!ENTITY Yhook "&#x01b3;"> 
+<!ENTITY Yuml "&#x0178;"> 
+<!ENTITY ZHcy "&#x0416;"> 
+<!ENTITY Zacute "&#x0179;"> 
+<!ENTITY Zcaron "&#x017d;"> 
+<!ENTITY Zcy "&#x0417;"> 
+<!ENTITY Zdot "&#x017b;"> 
+<!ENTITY Zgr "&#x0396;"> 
+<!ENTITY aacugr "&#x1f71;"> 
+<!ENTITY aacute "&#x00e1;"> 
+<!ENTITY aaigr "&#x1fb4;"> 
+<!ENTITY abCON "&#xa76e;"> 
+<!ENTITY abPER "&#xa750;"> 
+<!ENTITY abPRO "&#xa752;"> 
+<!ENTITY abQUOD "&#xa758;"> 
+<!ENTITY abRUM "&#xa776;"> 
+<!ENTITY abcon "&#xa76f;"> 
+<!ENTITY abis "&#xa76d;"> 
+<!ENTITY abper "&#xa751;"> 
+<!ENTITY abpr "&#x214c;"> 
+<!ENTITY abprecipi "&#x1f75f;"> 
+<!ENTITY abpro "&#xa753;"> 
+<!ENTITY abquod "&#xa759;"> 
+<!ENTITY abreve "&#x0103;"> 
+<!ENTITY absubli "&#x1f75e;"> 
+<!ENTITY abus "&#xa770;"> 
+<!ENTITY acigr "&#x1fb7;"> 
+<!ENTITY acirc "&#x00e2;"> 
+<!ENTITY acirgr "&#x1fb6;"> 
+<!ENTITY acy "&#x0430;"> 
+<!ENTITY aelig "&#x00e6;"> 
+<!ENTITY afortis "&#x1f705;"> 
+<!ENTITY agigr "&#x1fb2;"> 
+<!ENTITY agr "&#x03b1;"> 
+<!ENTITY agragr "&#x1f70;"> 
+<!ENTITY agrave "&#x00e0;"> 
+<!ENTITY ahacek "&#x01ce;"> 
+<!ENTITY aiotgr "&#x1fb3;"> 
+<!ENTITY air "&#x1f701;"> 
+<!ENTITY alef "&#x05d0;"> 
+<!ENTITY alembic "&#x1f76a;"> 
+<!ENTITY aleph "&#x2135;"> 
+<!ENTITY amacr "&#x0101;"> 
+<!ENTITY anchor "&#x2693;"> 
+<!ENTITY and "&#x2227;"> 
+<!ENTITY ang "&#x2220;"> 
+<!ENTITY ang90 "&#x221f;"> 
+<!ENTITY angsph "&#x2222;"> 
+<!ENTITY angst "&#x212b;"> 
+<!ENTITY aogon "&#x0105;"> 
+<!ENTITY ap "&#x2248;"> 
+<!ENTITY arab-qaf "&#x066f;"> 
+<!ENTITY aragr "&#x1f05;"> 
+<!ENTITY araigr "&#x1f85;"> 
+<!ENTITY arcgr "&#x1f07;"> 
+<!ENTITY arcigr "&#x1f87;"> 
+<!ENTITY aregis "&#x1f706;"> 
+<!ENTITY arggr "&#x1f03;"> 
+<!ENTITY argigr "&#x1f83;"> 
+<!ENTITY arigr "&#x1f81;"> 
+<!ENTITY aring "&#x00e5;"> 
+<!ENTITY arougr "&#x1f01;"> 
+<!ENTITY arsenic "&#x1f73a;"> 
+<!ENTITY asagr "&#x1f04;"> 
+<!ENTITY asaigr "&#x1f84;"> 
+<!ENTITY ascgr "&#x1f06;"> 
+<!ENTITY ascigr "&#x1f86;"> 
+<!ENTITY asggr "&#x1f02;"> 
+<!ENTITY asgigr "&#x1f82;"> 
+<!ENTITY ashes "&#x1f757;"> 
+<!ENTITY asigr "&#x1f80;"> 
+<!ENTITY asmogr "&#x1f00;"> 
+<!ENTITY ast "&#x002a;"> 
+<!ENTITY atilde "&#x00e3;"> 
+<!ENTITY auml "&#x00e4;"> 
+<!ENTITY ayin "&#x05e2;"> 
+<!ENTITY barline "&#x1d100;"> 
+<!ENTITY bcy "&#x0431;"> 
+<!ENTITY becaus "&#x2235;"> 
+<!ENTITY bernou "&#x212c;"> 
+<!ENTITY bet "&#x05d1;"> 
+<!ENTITY bgr "&#x03b2;"> 
+<!ENTITY biglsquo "&#x275b;"> 
+<!ENTITY blank "&#x2423;"> 
+<!ENTITY blk12 "&#x2592;"> 
+<!ENTITY blk14 "&#x2591;"> 
+<!ENTITY blk34 "&#x2593;"> 
+<!ENTITY block "&#x2588;"> 
+<!ENTITY bsol "&#x005c;"> 
+<!ENTITY bstrok "&#x0180;"> 
+<!ENTITY bull "&#x2022;"> 
+<!ENTITY cacute "&#x0107;"> 
+<!ENTITY cap "&#x2229;"> 
+<!ENTITY caret "&#x2041;"> 
+<!ENTITY ccaron "&#x010d;"> 
+<!ENTITY ccedil "&#x00e7;"> 
+<!ENTITY ccirc "&#x0109;"> 
+<!ENTITY cclef "&#x1d121;"> 
+<!ENTITY cdot "&#x010b;"> 
+<!ENTITY cent "&#x00a2;"> 
+<!ENTITY chcy "&#x0447;"> 
+<!ENTITY check "&#x2713;"> 
+<!ENTITY chirho "&#x2627;"> 
+<!ENTITY cinnabar1 "&#x1f713;"> 
+<!ENTITY cinnabar3 "&#x1f72d;"> 
+<!ENTITY cir "&#x25cb;"> 
+<!ENTITY circle "&#x25ef;"> 
+<!ENTITY circled-0 "&#x24ea;"> 
+<!ENTITY circled-1 "&#x2460;"> 
+<!ENTITY circled-10 "&#x2469;"> 
+<!ENTITY circled-11 "&#x246a;"> 
+<!ENTITY circled-12 "&#x246b;"> 
+<!ENTITY circled-2 "&#x2461;"> 
+<!ENTITY circled-3 "&#x2462;"> 
+<!ENTITY circled-4 "&#x2463;"> 
+<!ENTITY circled-5 "&#x2464;"> 
+<!ENTITY circled-6 "&#x2465;"> 
+<!ENTITY circled-7 "&#x2466;"> 
+<!ENTITY circled-8 "&#x2467;"> 
+<!ENTITY circled-9 "&#x2468;"> 
+<!ENTITY circledplus "&#x2295;"> 
+<!ENTITY circledtimes "&#x2297;"> 
+<!ENTITY closeup "&#x2050;"> 
+<!ENTITY clubs "&#x2663;"> 
+<!ENTITY cmbSTROKEover "&#x0336;"> 
+<!ENTITY cmbVIRGULEover "&#x0338;"> 
+<!ENTITY cmbVLINEover "&#x20d2;"> 
+<!ENTITY cmba2a "&#x1dde;"> 
+<!ENTITY cmbaa "&#x0363;"> 
+<!ENTITY cmbacute "&#x0301;"> 
+<!ENTITY cmbbreve "&#x0306;"> 
+<!ENTITY cmbbslashover "&#x20e5;"> 
+<!ENTITY cmbcaron "&#x030c;"> 
+<!ENTITY cmbcedil "&#x0327;"> 
+<!ENTITY cmbcirc "&#x0302;"> 
+<!ENTITY cmbcommaa "&#x0313;"> 
+<!ENTITY cmbdblac "&#x030b;"> 
+<!ENTITY cmbdblvlineover "&#x20e6;"> 
+<!ENTITY cmbdot "&#x0307;"> 
+<!ENTITY cmbdotb "&#x0323;"> 
+<!ENTITY cmbenclcirover "&#x20dd;"> 
+<!ENTITY cmbenclsquover "&#x20de;"> 
+<!ENTITY cmbencltriover "&#x20e4;"> 
+<!ENTITY cmbgrave "&#x0300;"> 
+<!ENTITY cmbia "&#x0365;"> 
+<!ENTITY cmbibreve "&#x0311;"> 
+<!ENTITY cmblowvertline "&#x0329;"> 
+<!ENTITY cmbmacr "&#x0304;"> 
+<!ENTITY cmbogon "&#x0328;"> 
+<!ENTITY cmbogona "&#x1dce;"> 
+<!ENTITY cmbperispo "&#x0342;"> 
+<!ENTITY cmbrcomma "&#x0314;"> 
+<!ENTITY cmbring "&#x030a;"> 
+<!ENTITY cmbstrokeover "&#x0335;"> 
+<!ENTITY cmbtilde "&#x0303;"> 
+<!ENTITY cmbtildeover "&#x0334;"> 
+<!ENTITY cmbuml "&#x0308;"> 
+<!ENTITY cmbvirguleover "&#x0337;"> 
+<!ENTITY cmbvlineover "&#x20d3;"> 
+<!ENTITY cmbx "&#x033d;"> 
+<!ENTITY colon "&#x003a;"> 
+<!ENTITY comma "&#x002c;"> 
+<!ENTITY commat "&#x0040;"> 
+<!ENTITY commonTime-adagio "&#x1d134;"> 
+<!ENTITY compfn "&#x2218;"> 
+<!ENTITY cong "&#x2245;"> 
+<!ENTITY conint "&#x222e;"> 
+<!ENTITY conjunction "&#x260c;"> 
+<!ENTITY copy "&#x00a9;"> 
+<!ENTITY copysr "&#x2117;"> 
+<!ENTITY cup "&#x222a;"> 
+<!ENTITY curren "&#x00a4;"> 
+<!ENTITY dagger "&#x2020;"> 
+<!ENTITY dalet "&#x05d3;"> 
+<!ENTITY darga "&#x05a7;"> 
+<!ENTITY darr "&#x2193;"> 
+<!ENTITY dash "&#x2010;"> 
+<!ENTITY dcaron "&#x010f;"> 
+<!ENTITY dcy "&#x0434;"> 
+<!ENTITY ddiple "&#x2e16;"> 
+<!ENTITY ddotb "&#x1e0d;"> 
+<!ENTITY deg "&#x00b0;"> 
+<!ENTITY delta "&#x1e9f;"> 
+<!ENTITY dgr "&#x03b4;"> 
+<!ENTITY diamond "&#x25c6;"> 
+<!ENTITY diams "&#x2666;"> 
+<!ENTITY die1 "&#x2680;"> 
+<!ENTITY die2 "&#x2681;"> 
+<!ENTITY die3 "&#x2682;"> 
+<!ENTITY die4 "&#x2683;"> 
+<!ENTITY die5 "&#x2684;"> 
+<!ENTITY die6 "&#x2685;"> 
+<!ENTITY diggr "&#x03dd;"> 
+<!ENTITY dindx "&#x261f;"> 
+<!ENTITY divide "&#x00f7;"> 
+<!ENTITY dlcrop "&#x230d;"> 
+<!ENTITY dollar "&#x0024;"> 
+<!ENTITY drcrop "&#x230c;"> 
+<!ENTITY dstrok "&#x0111;"> 
+<!ENTITY dtri "&#x25bf;"> 
+<!ENTITY dtridot "&#x2e2a;"> 
+<!ENTITY dtrif "&#x25be;"> 
+<!ENTITY eacugr "&#x1f73;"> 
+<!ENTITY eacute "&#x00e9;"> 
+<!ENTITY earth "&#x1f703;"> 
+<!ENTITY ebreve "&#x0115;"> 
+<!ENTITY ecaron "&#x011b;"> 
+<!ENTITY ecirc "&#x00ea;"> 
+<!ENTITY ecy "&#x044d;"> 
+<!ENTITY edot "&#x0117;"> 
+<!ENTITY eeacugr "&#x1f75;"> 
+<!ENTITY eeaigr "&#x1fc4;"> 
+<!ENTITY eecigr "&#x1fc7;"> 
+<!ENTITY eecirgr "&#x1fc6;"> 
+<!ENTITY eegigr "&#x1fc2;"> 
+<!ENTITY eegr "&#x03b7;"> 
+<!ENTITY eegragr "&#x1f74;"> 
+<!ENTITY eeiotgr "&#x1fc3;"> 
+<!ENTITY eeragr "&#x1f25;"> 
+<!ENTITY eeraigr "&#x1f95;"> 
+<!ENTITY eercgr "&#x1f27;"> 
+<!ENTITY eercigr "&#x1f97;"> 
+<!ENTITY eerggr "&#x1f23;"> 
+<!ENTITY eergigr "&#x1f93;"> 
+<!ENTITY eerigr "&#x1f91;"> 
+<!ENTITY eerougr "&#x1f21;"> 
+<!ENTITY eesagr "&#x1f24;"> 
+<!ENTITY eesaigr "&#x1f94;"> 
+<!ENTITY eescgr "&#x1f26;"> 
+<!ENTITY eescigr "&#x1f96;"> 
+<!ENTITY eesggr "&#x1f22;"> 
+<!ENTITY eesgigr "&#x1f92;"> 
+<!ENTITY eesigr "&#x1f90;"> 
+<!ENTITY eesmogr "&#x1f20;"> 
+<!ENTITY egr "&#x03b5;"> 
+<!ENTITY egragr "&#x1f72;"> 
+<!ENTITY egrave "&#x00e8;"> 
+<!ENTITY emacr "&#x0113;"> 
+<!ENTITY emsp "&#x2003;"> 
+<!ENTITY emsp13 "&#x2004;"> 
+<!ENTITY emsp14 "&#x2005;"> 
+<!ENTITY eng "&#x014b;"> 
+<!ENTITY ensp "&#x2002;"> 
+<!ENTITY eogon "&#x0119;"> 
+<!ENTITY equals "&#x003d;"> 
+<!ENTITY equiv "&#x2261;"> 
+<!ENTITY eragr "&#x1f15;"> 
+<!ENTITY erggr "&#x1f13;"> 
+<!ENTITY erougr "&#x1f11;"> 
+<!ENTITY esagr "&#x1f14;"> 
+<!ENTITY esggr "&#x1f12;"> 
+<!ENTITY esmogr "&#x1f10;"> 
+<!ENTITY eth "&#x00f0;"> 
+<!ENTITY etnahta "&#x0591;"> 
+<!ENTITY euml "&#x00eb;"> 
+<!ENTITY excl "&#x0021;"> 
+<!ENTITY exist "&#x2203;"> 
+<!ENTITY fclef "&#x1d122;"> 
+<!ENTITY fcy "&#x0444;"> 
+<!ENTITY fermata "&#x1d110;"> 
+<!ENTITY fermatab "&#x1d111;"> 
+<!ENTITY ffilig "&#xfb03;"> 
+<!ENTITY fflig "&#xfb00;"> 
+<!ENTITY ffllig "&#xfb04;"> 
+<!ENTITY filig "&#xfb01;"> 
+<!ENTITY finalkaf "&#x05da;"> 
+<!ENTITY finalmem "&#x05dd;"> 
+<!ENTITY finalnun "&#x05df;"> 
+<!ENTITY finalpe "&#x05e3;"> 
+<!ENTITY finaltsadi "&#x05e5;"> 
+<!ENTITY fire "&#x1f702;"> 
+<!ENTITY fivedot "&#x2059;"> 
+<!ENTITY flat "&#x266d;"> 
+<!ENTITY fleurdelys "&#x269c;"> 
+<!ENTITY fllig "&#xfb02;"> 
+<!ENTITY flower "&#x2740;"> 
+<!ENTITY flowerf "&#x273f;"> 
+<!ENTITY fnof "&#x0192;"> 
+<!ENTITY forall "&#x2200;"> 
+<!ENTITY frac12 "&#x00bd;"> 
+<!ENTITY frac13 "&#x2153;"> 
+<!ENTITY frac14 "&#x00bc;"> 
+<!ENTITY frac15 "&#x2155;"> 
+<!ENTITY frac16 "&#x2159;"> 
+<!ENTITY frac18 "&#x215b;"> 
+<!ENTITY frac23 "&#x2154;"> 
+<!ENTITY frac25 "&#x2156;"> 
+<!ENTITY frac34 "&#x00be;"> 
+<!ENTITY frac35 "&#x2157;"> 
+<!ENTITY frac38 "&#x215c;"> 
+<!ENTITY frac45 "&#x2158;"> 
+<!ENTITY frac56 "&#x215a;"> 
+<!ENTITY frac58 "&#x215d;"> 
+<!ENTITY frac78 "&#x215e;"> 
+<!ENTITY gacute "&#x01f5;"> 
+<!ENTITY gbreve "&#x011f;"> 
+<!ENTITY gcirc "&#x011d;"> 
+<!ENTITY gclef "&#x1d11e;"> 
+<!ENTITY gcy "&#x0433;"> 
+<!ENTITY gdot "&#x0121;"> 
+<!ENTITY ge "&#x2265;"> 
+<!ENTITY geoprop "&#x223a;"> 
+<!ENTITY geresh "&#x059c;"> 
+<!ENTITY ggr "&#x03b3;"> 
+<!ENTITY ghacek "&#x01e7;"> 
+<!ENTITY gimel "&#x05d2;"> 
+<!ENTITY hairsp "&#x200a;"> 
+<!ENTITY hamilt "&#x210b;"> 
+<!ENTITY hardcy "&#x044a;"> 
+<!ENTITY hcirc "&#x0125;"> 
+<!ENTITY hcolon "&#x05c3;"> 
+<!ENTITY he "&#x05d4;"> 
+<!ENTITY hearts "&#x2665;"> 
+<!ENTITY hellip "&#x2026;"> 
+<!ENTITY het "&#x05d7;"> 
+<!ENTITY horbar "&#x2015;"> 
+<!ENTITY hstrok "&#x0127;"> 
+<!ENTITY hybull "&#x2043;"> 
+<!ENTITY hyphen "&#x002d;"> 
+<!ENTITY iacugr "&#x1f77;"> 
+<!ENTITY iacute "&#x00ed;"> 
+<!ENTITY iadgr "&#x1fd3;"> 
+<!ENTITY ibreve "&#x012d;"> 
+<!ENTITY icdgr "&#x1fd7;"> 
+<!ENTITY icirc "&#x00ee;"> 
+<!ENTITY icirgr "&#x1fd6;"> 
+<!ENTITY icy "&#x0438;"> 
+<!ENTITY iecy "&#x0435;"> 
+<!ENTITY iexcl "&#x00a1;"> 
+<!ENTITY iff "&#x21d4;"> 
+<!ENTITY igdgr "&#x1fd2;"> 
+<!ENTITY igr "&#x03b9;"> 
+<!ENTITY igragr "&#x1f76;"> 
+<!ENTITY igrave "&#x00ec;"> 
+<!ENTITY ijlig "&#x0133;"> 
+<!ENTITY imacr "&#x012b;"> 
+<!ENTITY incare "&#x2105;"> 
+<!ENTITY infin "&#x221e;"> 
+<!ENTITY inodot "&#x0131;"> 
+<!ENTITY insul-D "&#xa779;"> 
+<!ENTITY insul-F "&#xa77b;"> 
+<!ENTITY insul-G "&#xa77d;"> 
+<!ENTITY insul-R "&#xa782;"> 
+<!ENTITY insul-S "&#xa784;"> 
+<!ENTITY insul-T "&#xa786;"> 
+<!ENTITY insul-d "&#xa77a;"> 
+<!ENTITY insul-f "&#xa77c;"> 
+<!ENTITY insul-g "&#x1d79;"> 
+<!ENTITY insul-r "&#xa783;"> 
+<!ENTITY insul-s "&#xa785;"> 
+<!ENTITY insul-t "&#xa787;"> 
+<!ENTITY int "&#x222b;"> 
+<!ENTITY iocy "&#x0451;"> 
+<!ENTITY iogon "&#x012f;"> 
+<!ENTITY iquest "&#x00bf;"> 
+<!ENTITY iragr "&#x1f35;"> 
+<!ENTITY ircgr "&#x1f37;"> 
+<!ENTITY irggr "&#x1f33;"> 
+<!ENTITY irougr "&#x1f31;"> 
+<!ENTITY isagr "&#x1f34;"> 
+<!ENTITY iscgr "&#x1f36;"> 
+<!ENTITY isggr "&#x1f32;"> 
+<!ENTITY isin "&#x220a;"> 
+<!ENTITY ismogr "&#x1f30;"> 
+<!ENTITY itilde "&#x0129;"> 
+<!ENTITY iuml "&#x00ef;"> 
+<!ENTITY jcirc "&#x0135;"> 
+<!ENTITY jcy "&#x0439;"> 
+<!ENTITY kaf "&#x05db;"> 
+<!ENTITY kcedil "&#x0137;"> 
+<!ENTITY kcy "&#x043a;"> 
+<!ENTITY keraia "&#x0374;"> 
+<!ENTITY kgr "&#x03ba;"> 
+<!ENTITY kgreen "&#x0138;"> 
+<!ENTITY khcy "&#x0445;"> 
+<!ENTITY khgr "&#x03c7;"> 
+<!ENTITY kogr "&#x03df;"> 
+<!ENTITY lArr "&#x21d0;"> 
+<!ENTITY lacute "&#x013a;"> 
+<!ENTITY lagran "&#x2112;"> 
+<!ENTITY lamed "&#x05dc;"> 
+<!ENTITY lang "&#x3008;"> 
+<!ENTITY langle "&#x29a3;"> 
+<!ENTITY laquo "&#x00ab;"> 
+<!ENTITY larr "&#x2190;"> 
+<!ENTITY latcross "&#x271d;"> 
+<!ENTITY lazyS "&#x223d;"> 
+<!ENTITY lbar "&#x026b;"> 
+<!ENTITY lbrace "&#x007b;"> 
+<!ENTITY lcaron "&#x013e;"> 
+<!ENTITY lcedil "&#x013c;"> 
+<!ENTITY lcy "&#x043b;"> 
+<!ENTITY ldotb "&#x1e37;"> 
+<!ENTITY ldquo "&#x201c;"> 
+<!ENTITY ldquor "&#x201e;"> 
+<!ENTITY le "&#x2264;"> 
+<!ENTITY lgr "&#x03bb;"> 
+<!ENTITY lhblk "&#x2584;"> 
+<!ENTITY lindx "&#x261c;"> 
+<!ENTITY lkeraia "&#x0375;"> 
+<!ENTITY ll "&#x1efb;"> 
+<!ENTITY lmidot "&#x0140;"> 
+<!ENTITY lowast "&#x2217;"> 
+<!ENTITY lowbar "&#x005f;"> 
+<!ENTITY loz "&#x25ca;"> 
+<!ENTITY lozf "&#x2726;"> 
+<!ENTITY lpar "&#x0028;"> 
+<!ENTITY lpara "&#x204b;"> 
+<!ENTITY lrepeat "&#x1d106;"> 
+<!ENTITY lsemicol "&#x204f;"> 
+<!ENTITY lsqb "&#x005b;"> 
+<!ENTITY lsquo "&#x2018;"> 
+<!ENTITY lsquor "&#x201a;"> 
+<!ENTITY lstrok "&#x0142;"> 
+<!ENTITY ltri "&#x25c3;"> 
+<!ENTITY ltrif "&#x25c2;"> 
+<!ENTITY mahapakh "&#x05a4;"> 
+<!ENTITY malt "&#x2720;"> 
+<!ENTITY marker "&#x25ae;"> 
+<!ENTITY mcy "&#x043c;"> 
+<!ENTITY mdash "&#x2014;"> 
+<!ENTITY mem "&#x05de;"> 
+<!ENTITY merkha "&#x05a5;"> 
+<!ENTITY mgr "&#x03bc;"> 
+<!ENTITY micro "&#x00b5;"> 
+<!ENTITY middot "&#x00b7;"> 
+<!ENTITY minus "&#x2212;"> 
+<!ENTITY mnplus "&#x2213;"> 
+<!ENTITY munah "&#x05a3;"> 
+<!ENTITY musicBrace "&#x1d114;"> 
+<!ENTITY musicBracket "&#x1d115;"> 
+<!ENTITY nabla "&#x2207;"> 
+<!ENTITY nacute "&#x0144;"> 
+<!ENTITY napos "&#x0149;"> 
+<!ENTITY natur "&#x266e;"> 
+<!ENTITY nbsp "&#x00a0;"> 
+<!ENTITY ncaron "&#x0148;"> 
+<!ENTITY ncedil "&#x0146;"> 
+<!ENTITY ncy "&#x043d;"> 
+<!ENTITY ndash "&#x2013;"> 
+<!ENTITY ne "&#x2260;"> 
+<!ENTITY ngr "&#x03bd;"> 
+<!ENTITY ni "&#x220d;"> 
+<!ENTITY night "&#x1f76f;"> 
+<!ENTITY nitre "&#x1f715;"> 
+<!ENTITY nldr "&#x2025;"> 
+<!ENTITY northnode "&#x260a;"> 
+<!ENTITY not "&#x00ac;"> 
+<!ENTITY noteEighth "&#x1d160;"> 
+<!ENTITY noteHalf "&#x1d15e;"> 
+<!ENTITY noteQuarter "&#x1d15f;"> 
+<!ENTITY noteWhole "&#x1d15d;"> 
+<!ENTITY notebreve "&#x1d1b8;"> 
+<!ENTITY notecrotchet "&#x1d1bc;"> 
+<!ENTITY notelarge "&#x1d1b6;"> 
+<!ENTITY notelong "&#x1d1b7;"> 
+<!ENTITY noteminim "&#x1d1bb;"> 
+<!ENTITY notequaver "&#x1d1be;"> 
+<!ENTITY notesemibreve "&#x1d1b9;"> 
+<!ENTITY notesemiquaver "&#x1d1c0;"> 
+<!ENTITY notin "&#x2209;"> 
+<!ENTITY ntilde "&#x00f1;"> 
+<!ENTITY num "&#x0023;"> 
+<!ENTITY numero "&#x2116;"> 
+<!ENTITY numsp "&#x2007;"> 
+<!ENTITY nun "&#x05e0;"> 
+<!ENTITY oacugr "&#x1f79;"> 
+<!ENTITY oacute "&#x00f3;"> 
+<!ENTITY obelus "&#x2e13;"> 
+<!ENTITY obreve "&#x014f;"> 
+<!ENTITY ocirc "&#x00f4;"> 
+<!ENTITY ocy "&#x043e;"> 
+<!ENTITY odblac "&#x0151;"> 
+<!ENTITY oelig "&#x0153;"> 
+<!ENTITY ogr "&#x03bf;"> 
+<!ENTITY ogragr "&#x1f78;"> 
+<!ENTITY ograve "&#x00f2;"> 
+<!ENTITY ohacek "&#x01d2;"> 
+<!ENTITY ohacugr "&#x1f7d;"> 
+<!ENTITY ohaigr "&#x1ff4;"> 
+<!ENTITY ohcigr "&#x1ff7;"> 
+<!ENTITY ohcirgr "&#x1ff6;"> 
+<!ENTITY ohgigr "&#x1ff2;"> 
+<!ENTITY ohgr "&#x03c9;"> 
+<!ENTITY ohgragr "&#x1f7c;"> 
+<!ENTITY ohigr "&#x1ff3;"> 
+<!ENTITY ohm "&#x2126;"> 
+<!ENTITY ohragr "&#x1f65;"> 
+<!ENTITY ohraigr "&#x1fa5;"> 
+<!ENTITY ohrcgr "&#x1f67;"> 
+<!ENTITY ohrcigr "&#x1fa7;"> 
+<!ENTITY ohrggr "&#x1f63;"> 
+<!ENTITY ohrgigr "&#x1fa3;"> 
+<!ENTITY ohrigr "&#x1fa1;"> 
+<!ENTITY ohrougr "&#x1f61;"> 
+<!ENTITY ohsagr "&#x1f64;"> 
+<!ENTITY ohsaigr "&#x1fa4;"> 
+<!ENTITY ohscgr "&#x1f66;"> 
+<!ENTITY ohscigr "&#x1fa6;"> 
+<!ENTITY ohsggr "&#x1f62;"> 
+<!ENTITY ohsgigr "&#x1fa2;"> 
+<!ENTITY ohsigr "&#x1fa0;"> 
+<!ENTITY ohsmogr "&#x1f60;"> 
+<!ENTITY oil "&#x1f746;"> 
+<!ENTITY omacr "&#x014d;"> 
+<!ENTITY opposition "&#x260d;"> 
+<!ENTITY or "&#x2228;"> 
+<!ENTITY oragr "&#x1f45;"> 
+<!ENTITY order "&#x2134;"> 
+<!ENTITY ordf "&#x00aa;"> 
+<!ENTITY ordm "&#x00ba;"> 
+<!ENTITY orggr "&#x1f43;"> 
+<!ENTITY orougr "&#x1f41;"> 
+<!ENTITY orpiment "&#x1f73d;"> 
+<!ENTITY osagr "&#x1f44;"> 
+<!ENTITY osggr "&#x1f42;"> 
+<!ENTITY oslash "&#x00f8;"> 
+<!ENTITY osmogr "&#x1f40;"> 
+<!ENTITY otilde "&#x00f5;"> 
+<!ENTITY ouml "&#x00f6;"> 
+<!ENTITY ounce "&#x2125;"> 
+<!ENTITY par "&#x2225;"> 
+<!ENTITY para "&#x00b6;"> 
+<!ENTITY part "&#x2202;"> 
+<!ENTITY pashta "&#x0599;"> 
+<!ENTITY pcy "&#x043f;"> 
+<!ENTITY pe "&#x05e4;"> 
+<!ENTITY percnt "&#x0025;"> 
+<!ENTITY period "&#x002e;"> 
+<!ENTITY permil "&#x2030;"> 
+<!ENTITY perp "&#x22a5;"> 
+<!ENTITY pgr "&#x03c0;"> 
+<!ENTITY phgr "&#x03c6;"> 
+<!ENTITY phmmat "&#x2133;"> 
+<!ENTITY plus "&#x002b;"> 
+<!ENTITY plusmn "&#x00b1;"> 
+<!ENTITY potash "&#x1f758;"> 
+<!ENTITY pound "&#x00a3;"> 
+<!ENTITY prime "&#x2032;"> 
+<!ENTITY prop "&#x221d;"> 
+<!ENTITY proportion "&#x2237;"> 
+<!ENTITY psgr "&#x03c8;"> 
+<!ENTITY puncsp "&#x2008;"> 
+<!ENTITY purify "&#x1f763;"> 
+<!ENTITY qbar "&#xa757;"> 
+<!ENTITY qmgr "&#x037e;"> 
+<!ENTITY qof "&#x05e7;"> 
+<!ENTITY quaddot "&#x2e2c;"> 
+<!ENTITY quest "&#x003f;"> 
+<!ENTITY quicklime "&#x1f741;"> 
+<!ENTITY r "&#xa75b;"> 
+<!ENTITY rArr "&#x21d2;"> 
+<!ENTITY racute "&#x0155;"> 
+<!ENTITY radic "&#x221a;"> 
+<!ENTITY rang "&#x3009;"> 
+<!ENTITY raquo "&#x00bb;"> 
+<!ENTITY rarr "&#x2192;"> 
+<!ENTITY ratio "&#x2236;"> 
+<!ENTITY rayedSun "&#x263c;"> 
+<!ENTITY rbrace "&#x007d;"> 
+<!ENTITY rcaron "&#x0159;"> 
+<!ENTITY rcedil "&#x0157;"> 
+<!ENTITY rcy "&#x0440;"> 
+<!ENTITY rdquo "&#x201d;"> 
+<!ENTITY rect "&#x25ad;"> 
+<!ENTITY reg "&#x00ae;"> 
+<!ENTITY resh "&#x05e8;"> 
+<!ENTITY resp "&#x211f;"> 
+<!ENTITY restbreve "&#x1d1c3;"> 
+<!ENTITY restcrotchet "&#x1d1c6;"> 
+<!ENTITY restlarge "&#x1d1c1;"> 
+<!ENTITY restlong "&#x1d1c2;"> 
+<!ENTITY restminim "&#x1d1c5;"> 
+<!ENTITY restsemibreve "&#x1d1c4;"> 
+<!ENTITY retort "&#x1f76d;"> 
+<!ENTITY revC "&#x2183;"> 
+<!ENTITY revc "&#x2184;"> 
+<!ENTITY revia "&#x0597;"> 
+<!ENTITY rgr "&#x03c1;"> 
+<!ENTITY rindx "&#x261e;"> 
+<!ENTITY rn10000 "&#x2182;"> 
+<!ENTITY rn100000 "&#x2188;"> 
+<!ENTITY rn5000 "&#x2181;"> 
+<!ENTITY rn50000 "&#x2187;"> 
+<!ENTITY rpar "&#x0029;"> 
+<!ENTITY rrepeat "&#x1d107;"> 
+<!ENTITY rrougr "&#x1fe5;"> 
+<!ENTITY rsqb "&#x005d;"> 
+<!ENTITY rsquo "&#x2019;"> 
+<!ENTITY rtri "&#x25b9;"> 
+<!ENTITY rtrif "&#x25b8;"> 
+<!ENTITY rx "&#x211e;"> 
+<!ENTITY s "&#x017f;"> 
+<!ENTITY sacute "&#x015b;"> 
+<!ENTITY salarmon "&#x1f739;"> 
+<!ENTITY salt "&#x1f714;"> 
+<!ENTITY saltgemme "&#x1f718;"> 
+<!ENTITY saltire "&#x2613;"> 
+<!ENTITY samekh "&#x05e1;"> 
+<!ENTITY samgr "&#x03e1;"> 
+<!ENTITY scaron "&#x0161;"> 
+<!ENTITY scedil "&#x015f;"> 
+<!ENTITY schwa "&#x0259;"> 
+<!ENTITY scirc "&#x015d;"> 
+<!ENTITY scruple "&#x2108;"> 
+<!ENTITY scy "&#x0441;"> 
+<!ENTITY sect "&#x00a7;"> 
+<!ENTITY semi "&#x003b;"> 
+<!ENTITY semisextile "&#x26ba;"> 
+<!ENTITY sext "&#x2736;"> 
+<!ENTITY sextile "&#x26b9;"> 
+<!ENTITY sfgr "&#x03c2;"> 
+<!ENTITY sgr "&#x03c3;"> 
+<!ENTITY sharp "&#x266f;"> 
+<!ENTITY shchcy "&#x0449;"> 
+<!ENTITY shcy "&#x0448;"> 
+<!ENTITY shin "&#x05e9;"> 
+<!ENTITY shy "&#x00ad;"> 
+<!ENTITY sim "&#x223c;"> 
+<!ENTITY sime "&#x2243;"> 
+<!ENTITY skull "&#x1f480;"> 
+<!ENTITY slungr "&#x03f2;"> 
+<!ENTITY slur "&#x1d177;&#x1d178;"> 
+<!ENTITY softcy "&#x044c;"> 
+<!ENTITY sol "&#x002f;"> 
+<!ENTITY southnode "&#x260b;"> 
+<!ENTITY spades "&#x2660;"> 
+<!ENTITY spcDash "&#x254c;"> 
+<!ENTITY spcacute "&#x00b4;"> 
+<!ENTITY spcbreve "&#x02d8;"> 
+<!ENTITY spccaron "&#x02c7;"> 
+<!ENTITY spccedil "&#x00b8;"> 
+<!ENTITY spccirc "&#x005e;"> 
+<!ENTITY spccommaa "&#x1fbf;"> 
+<!ENTITY spcdblac "&#x02dd;"> 
+<!ENTITY spcdot "&#x02d9;"> 
+<!ENTITY spcgrave "&#x0060;"> 
+<!ENTITY spclowvertline "&#x02cc;"> 
+<!ENTITY spcmacr "&#x00af;"> 
+<!ENTITY spcogon "&#x02db;"> 
+<!ENTITY spcperispo "&#x1fc0;"> 
+<!ENTITY spcrcomma "&#x1ffe;"> 
+<!ENTITY spcring "&#x02da;"> 
+<!ENTITY spctilde "&#x02dc;"> 
+<!ENTITY spcuml "&#x00a8;"> 
+<!ENTITY square "&#x25a1;"> 
+<!ENTITY squf "&#x25a0;"> 
+<!ENTITY star "&#x22c6;"> 
+<!ENTITY starf "&#x2605;"> 
+<!ENTITY starw "&#x2606;"> 
+<!ENTITY stgr "&#x03db;"> 
+<!ENTITY sub "&#x2282;"> 
+<!ENTITY sube "&#x2286;"> 
+<!ENTITY subplus "&#x208a;"> 
+<!ENTITY sulphur "&#x1f70d;"> 
+<!ENTITY sung "&#x2669;"> 
+<!ENTITY sup "&#x2283;"> 
+<!ENTITY sup1 "&#x00b9;"> 
+<!ENTITY sup2 "&#x00b2;"> 
+<!ENTITY sup3 "&#x00b3;"> 
+<!ENTITY supe "&#x2287;"> 
+<!ENTITY syri-qaph "&#x0729;"> 
+<!ENTITY szlig "&#x00df;"> 
+<!ENTITY target "&#x2316;"> 
+<!ENTITY tartar "&#x1f73f;"> 
+<!ENTITY tav "&#x05ea;"> 
+<!ENTITY tcaron "&#x0165;"> 
+<!ENTITY tcedil "&#x0163;"> 
+<!ENTITY tcy "&#x0442;"> 
+<!ENTITY tdot "&#x20db;"> 
+<!ENTITY telrec "&#x2315;"> 
+<!ENTITY tet "&#x05d8;"> 
+<!ENTITY tgr "&#x03c4;"> 
+<!ENTITY that "&#xa767;"> 
+<!ENTITY there4 "&#x2234;"> 
+<!ENTITY thgr "&#x03b8;"> 
+<!ENTITY thinsp "&#x2009;"> 
+<!ENTITY thorn "&#x00fe;"> 
+<!ENTITY thscrgr "&#x03d1;"> 
+<!ENTITY timeimperf-prolatimperf "&#x1d1cb;"> 
+<!ENTITY timeimperf-prolatimperf-rev "&#x1d1cc;"> 
+<!ENTITY timeimperf-prolatimperf-rev-str "&#x1d1ce;"> 
+<!ENTITY timeimperf-prolatimperf-str "&#x1d1cd;"> 
+<!ENTITY timeimperf-prolatperf "&#x1d1ca;"> 
+<!ENTITY timeperf-prolatimperf "&#x1d1c8;"> 
+<!ENTITY timeperf-prolatperf "&#x1d1c7;"> 
+<!ENTITY times "&#x00d7;"> 
+<!ENTITY tipeha "&#x0596;"> 
+<!ENTITY tprime "&#x2034;"> 
+<!ENTITY trade "&#x2122;"> 
+<!ENTITY tridot "&#x2e2b;"> 
+<!ENTITY tristar "&#x2042;"> 
+<!ENTITY triwdot "&#x25ec;"> 
+<!ENTITY tsadi "&#x05e6;"> 
+<!ENTITY tscy "&#x0446;"> 
+<!ENTITY tstrok "&#x0167;"> 
+<!ENTITY uacugr "&#x1f7b;"> 
+<!ENTITY uacute "&#x00fa;"> 
+<!ENTITY uadgr "&#x1fe3;"> 
+<!ENTITY uarr "&#x2191;"> 
+<!ENTITY ubreve "&#x016d;"> 
+<!ENTITY ucdgr "&#x1fe7;"> 
+<!ENTITY ucirc "&#x00fb;"> 
+<!ENTITY ucirgr "&#x1fe6;"> 
+<!ENTITY ucy "&#x0443;"> 
+<!ENTITY udblac "&#x0171;"> 
+<!ENTITY udotb "&#x1ee5;"> 
+<!ENTITY ugdgr "&#x1fe2;"> 
+<!ENTITY ugr "&#x03c5;"> 
+<!ENTITY ugragr "&#x1f7a;"> 
+<!ENTITY ugrave "&#x00f9;"> 
+<!ENTITY uhacek "&#x01d4;"> 
+<!ENTITY uhblk "&#x2580;"> 
+<!ENTITY uindx "&#x261d;"> 
+<!ENTITY ulcrop "&#x230f;"> 
+<!ENTITY umacr "&#x016b;"> 
+<!ENTITY uogon "&#x0173;"> 
+<!ENTITY uragr "&#x1f55;"> 
+<!ENTITY urcgr "&#x1f57;"> 
+<!ENTITY urcrop "&#x230e;"> 
+<!ENTITY urggr "&#x1f53;"> 
+<!ENTITY urine "&#x1f755;"> 
+<!ENTITY uring "&#x016f;"> 
+<!ENTITY urougr "&#x1f51;"> 
+<!ENTITY usagr "&#x1f54;"> 
+<!ENTITY uscgr "&#x1f56;"> 
+<!ENTITY usggr "&#x1f52;"> 
+<!ENTITY usmogr "&#x1f50;"> 
+<!ENTITY utilde "&#x0169;"> 
+<!ENTITY utri "&#x25b5;"> 
+<!ENTITY utrif "&#x25b4;"> 
+<!ENTITY uuml "&#x00fc;"> 
+<!ENTITY vav "&#x05d5;"> 
+<!ENTITY vcy "&#x0432;"> 
+<!ENTITY vellip "&#x22ee;"> 
+<!ENTITY verbar "&#x007c;"> 
+<!ENTITY vers "&#x2123;"> 
+<!ENTITY vinedist "&#x1f70b;"> 
+<!ENTITY vinegar "&#x1f70a;"> 
+<!ENTITY vitriol "&#x1f716;"> 
+<!ENTITY w "&#x1efd;"> 
+<!ENTITY water "&#x1f704;"> 
+<!ENTITY wax "&#x1f74a;"> 
+<!ENTITY wcirc "&#x0175;"> 
+<!ENTITY wedgeq "&#x2259;"> 
+<!ENTITY whbull "&#x25e6;"> 
+<!ENTITY wyn "&#x01bf;"> 
+<!ENTITY xgr "&#x03be;"> 
+<!ENTITY y "&#x1eff;"> 
+<!ENTITY yacute "&#x00fd;"> 
+<!ENTITY yacy "&#x044f;"> 
+<!ENTITY ycirc "&#x0177;"> 
+<!ENTITY ycy "&#x044b;"> 
+<!ENTITY ydot "&#x1e8f;"> 
+<!ENTITY yen "&#x00a5;"> 
+<!ENTITY yhook "&#x01b4;"> 
+<!ENTITY ymacr "&#x0233;"> 
+<!ENTITY yod "&#x05d9;"> 
+<!ENTITY yogh "&#x021d;"> 
+<!ENTITY yucy "&#x044e;"> 
+<!ENTITY yuml "&#x00ff;"> 
+<!ENTITY z "&#xa76a;"> 
+<!ENTITY zacute "&#x017a;"> 
+<!ENTITY zaqef-qatan "&#x0594;"> 
+<!ENTITY zayin "&#x05d6;"> 
+<!ENTITY zcaron "&#x017e;"> 
+<!ENTITY zcy "&#x0437;"> 
+<!ENTITY zdot "&#x017c;"> 
+<!ENTITY zgr "&#x03b6;"> 
+<!ENTITY zhcy "&#x0436;"> 
+<!ENTITY Aaigr "<g ref='char:Aaigr'>Άͅ</g>">
+<!ENTITY Acirgr "<g ref='char:Acirgr'>Α͂</g>">
+<!ENTITY EEcirgr "<g ref='char:EEcirgr'>Η͂</g>">
+<!ENTITY Ggr-rev "<g ref='char:Ggr-rev'>Γ</g>">
+<!ENTITY Moon "<g ref='char:Moon'>☽</g>">
+<!ENTITY Moonnew "<g ref='char:Moonnew'>●</g>">
+<!ENTITY Moonround "<g ref='char:Moonround'>❍</g>">
+<!ENTITY OHcirgr "<g ref='char:OHcirgr'>Ω͂</g>">
+<!ENTITY Rgr-rev "<g ref='char:Rgr-rev'>Ρ</g>">
+<!ENTITY Sgr-rev "<g ref='char:Sgr-rev'>Σ</g>">
+<!ENTITY Ucirgr "<g ref='char:Ucirgr'>Υ͂</g>">
+<!ENTITY V "<g ref='char:V'>Ʋ</g>">
+<!ENTITY abPRI "<g ref='char:abPRI'><ex>PRI</ex></g>">
+<!ENTITY abQUE "<g ref='char:abQUE'><ex>QUE</ex></g>">
+<!ENTITY abUS "<g ref='char:abUS'><ex>US</ex></g>">
+<!ENTITY abbrapo "<g ref='char:abbrapo'>’</g>">
+<!ENTITY abbus "<g ref='char:abbus'><ex>bus</ex></g>">
+<!ENTITY aber "<g ref='char:aber'><ex>er</ex></g>">
+<!ENTITY abpre "<g ref='char:abpre'>p̄</g>">
+<!ENTITY abpri "<g ref='char:abpri'><ex>pri</ex></g>">
+<!ENTITY abqu "<g ref='char:abqu'><ex>qu</ex></g>">
+<!ENTITY abquam "<g ref='char:abquam'><ex>quam</ex></g>">
+<!ENTITY abque "<g ref='char:abque'><ex>que</ex></g>">
+<!ENTITY abqui "<g ref='char:abqui'><ex>qui</ex></g>">
+<!ENTITY abris "<g ref='char:abris'><ex>ris</ex></g>">
+<!ENTITY absed "<g ref='char:absed'><ex>sed</ex></g>">
+<!ENTITY abser "<g ref='char:abser'><ex>ser</ex></g>">
+<!ENTITY alum "<g ref='char:alum'><ex>alum</ex></g>">
+<!ENTITY alum2 "<g ref='char:alum2'><ex>alum</ex></g>">
+<!ENTITY angulum "<g ref='char:angulum'><ex>angulum</ex></g>">
+<!ENTITY antimony "<g ref='char:antimony'><ex>antimony</ex></g>">
+<!ENTITY arc "<g ref='char:arc'>⌒</g>">
+<!ENTITY arsenic2 "<g ref='char:arsenic2'><ex>arsenic</ex></g>">
+<!ENTITY barlinef "<g ref='char:barlinef'>𝄀</g>">
+<!ENTITY bezoarMin "<g ref='char:bezoarMin'>♌</g>">
+<!ENTITY blood "<g ref='char:blood'><ex>blood</ex></g>">
+<!ENTITY cinnabar2 "<g ref='char:cinnabar2'><ex>cinnabar</ex></g>">
+<!ENTITY circdot "<g ref='char:circdot'>⊙</g>">
+<!ENTITY cmacr "<g ref='char:cmacr'>c̄</g>">
+<!ENTITY commonTime-allegro "<g ref='char:commonTime-allegro'><ex>common time (allegro)</ex></g>">
+<!ENTITY commonTime-largo "<g ref='char:commonTime-largo'><ex>common time (largro)</ex></g>">
+<!ENTITY cross "<g ref='char:cross'>✚</g>">
+<!ENTITY day "<g ref='char:day'><ex>day</ex></g>">
+<!ENTITY decimalL "<g ref='char:decimalL'>⌊</g>">
+<!ENTITY decimalc "<g ref='char:decimalc'>.</g>">
+<!ENTITY dhook "<g ref='char:dhook'>d̔</g>">
+<!ENTITY direct "<g ref='char:direct'><ex>direct</ex></g>">
+<!ENTITY divisor "<g ref='char:divisor'><ex>divisor</ex></g>">
+<!ENTITY dnc-female "<g ref='char:dnc-female'>☽</g>">
+<!ENTITY dnc-male "<g ref='char:dnc-male'>☉</g>">
+<!ENTITY dnc-repeat "<g ref='char:dnc-repeat'> .̲̲ </g>">
+<!ENTITY dnc-repeat2 "<g ref='char:dnc-repeat2'> :̲̲ </g>">
+<!ENTITY dnc-repeat3 "<g ref='char:dnc-repeat3'> .̲:̲̲ </g>">
+<!ENTITY dnc-startover "<g ref='char:dnc-startover'>⁜</g>">
+<!ENTITY dram "<g ref='char:dram'>ʒ</g>">
+<!ENTITY dtristar "<g ref='char:dtristar'>*⁎*</g>">
+<!ENTITY endq "<g ref='char:endq'>”</g>">
+<!ENTITY es "<g ref='char:es'><ex>es</ex></g>">
+<!ENTITY etc "<g ref='char:etc'><ex>etc</ex></g>">
+<!ENTITY female "<g ref='char:female'>♀</g>">
+<!ENTITY finallamed "<g ref='char:finallamed'>ﬥ</g>">
+<!ENTITY fivedash "<g ref='char:fivedash'><ex>fivedash</ex></g>">
+<!ENTITY fjlig "<g ref='char:fjlig'><ex>fj</ex></g>">
+<!ENTITY glass "<g ref='char:glass'><ex>glass</ex></g>">
+<!ENTITY hDagger "<g ref='char:hDagger'><ex>horizontal ‡</ex></g>">
+<!ENTITY halfcross "<g ref='char:halfcross'>⊢</g>">
+<!ENTITY heart "<g ref='char:heart'>♡</g>">
+<!ENTITY higherterm "<g ref='char:higherterm'><ex>higher term</ex></g>">
+<!ENTITY higherthan "<g ref='char:higherthan'>∧</g>">
+<!ENTITY hyperlemnisc "<g ref='char:hyperlemnisc'>∸</g>">
+<!ENTITY hypolemnisc "<g ref='char:hypolemnisc'>܋</g>">
+<!ENTITY idagger "<g ref='char:idagger'><ex>inverted †</ex></g>">
+<!ENTITY ipara "<g ref='char:ipara'>⁋</g>">
+<!ENTITY ldagger "<g ref='char:ldagger'><ex>left †</ex></g>">
+<!ENTITY ldiple "<g ref='char:ldiple'>‹</g>">
+<!ENTITY leaf "<g ref='char:leaf'>❧</g>">
+<!ENTITY leftblank "<g ref='char:leftblank'><ex>left blank</ex></g>">
+<!ENTITY lemnisc "<g ref='char:lemnisc'>÷</g>">
+<!ENTITY lessthan "<g ref='char:lessthan'>‹</g>">
+<!ENTITY lloop "<g ref='char:lloop'>lʾ</g>">
+<!ENTITY logarithm "<g ref='char:logarithm'><ex>logarithm</ex></g>">
+<!ENTITY lowerterm "<g ref='char:lowerterm'>⊽</g>">
+<!ENTITY lowerthan "<g ref='char:lowerthan'>∨</g>">
+<!ENTITY lpunctel "<g ref='char:lpunctel'>؛</g>">
+<!ENTITY lquest "<g ref='char:lquest'><ex>reversed ?</ex></g>">
+<!ENTITY magnesia "<g ref='char:magnesia'>○→</g>">
+<!ENTITY male "<g ref='char:male'>♂</g>">
+<!ENTITY minim "<g ref='char:minim'>♏</g>">
+<!ENTITY minim2 "<g ref='char:minim2'>♍</g>">
+<!ENTITY morethan "<g ref='char:morethan'>›</g>">
+<!ENTITY multiplier "<g ref='char:multiplier'><ex>multiplier</ex></g>">
+<!ENTITY musicNote "<g ref='char:musicNote'>♩</g>">
+<!ENTITY notedemisemiquaver "<g ref='char:notedemisemiquaver'><ex>demisemiquaver note</ex></g>">
+<!ENTITY ohkact "<g ref='char:ohkact'>ǫ́</g>">
+<!ENTITY oil2 "<g ref='char:oil2'>⦾</g>">
+<!ENTITY pashtayin "<g ref='char:pashtayin'>֙ ֨</g>">
+<!ENTITY pgrave "<g ref='char:pgrave'>p̀</g>">
+<!ENTITY potestas "<g ref='char:potestas'><ex>potestas</ex></g>">
+<!ENTITY powerof1 "<g ref='char:powerof1'><ex>powerof1</ex></g>">
+<!ENTITY powerof2 "<g ref='char:powerof2'><ex>powerof2</ex></g>">
+<!ENTITY powerof3 "<g ref='char:powerof3'><ex>powerof3</ex></g>">
+<!ENTITY powerof4 "<g ref='char:powerof4'><ex>powerof4</ex></g>">
+<!ENTITY powerof5 "<g ref='char:powerof5'><ex>powerof5</ex></g>">
+<!ENTITY powerof6 "<g ref='char:powerof6'><ex>powerof6</ex></g>">
+<!ENTITY pprime "<g ref='char:pprime'>'''''</g>">
+<!ENTITY product "<g ref='char:product'><ex>product</ex></g>">
+<!ENTITY proportion2 "<g ref='char:proportion2'>∝</g>">
+<!ENTITY punc "<g ref='char:punc'>▪</g>">
+<!ENTITY punctel "<g ref='char:punctel'><ex>punctel</ex></g>">
+<!ENTITY qacute "<g ref='char:qacute'>q́</g>">
+<!ENTITY qprime "<g ref='char:qprime'>''''</g>">
+<!ENTITY quaddotl "<g ref='char:quaddotl'>˙.˙.</g>">
+<!ENTITY quaddotr "<g ref='char:quaddotr'>.˙.˙</g>">
+<!ENTITY quadrine "<g ref='char:quadrine'>□</g>">
+<!ENTITY quotient "<g ref='char:quotient'><ex>quotient</ex></g>">
+<!ENTITY ration "<g ref='char:ration'>ℛ</g>">
+<!ENTITY rdagger "<g ref='char:rdagger'><ex>right †</ex></g>">
+<!ENTITY rdiple "<g ref='char:rdiple'>›</g>">
+<!ENTITY repeat "<g ref='char:repeat'><ex>repeat</ex></g>">
+<!ENTITY restdemisemiquaver "<g ref='char:restdemisemiquaver'><ex>demisemiquaver rest</ex></g>">
+<!ENTITY restquaver "<g ref='char:restquaver'><ex>quaver rest</ex></g>">
+<!ENTITY restsemiquaver "<g ref='char:restsemiquaver'><ex>semiquaver rest</ex></g>">
+<!ENTITY rhalfcross "<g ref='char:rhalfcross'>⊣</g>">
+<!ENTITY rn1000000 "<g ref='char:rn1000000'><ex>roman 1000000</ex></g>">
+<!ENTITY rn500000 "<g ref='char:rn500000'><ex>roman 500000</ex></g>">
+<!ENTITY root "<g ref='char:root'>ℛ</g>">
+<!ENTITY rsect "<g ref='char:rsect'><ex>reversed §</ex></g>">
+<!ENTITY salarmon2 "<g ref='char:salarmon2'>⊕</g>">
+<!ENTITY sharp2 "<g ref='char:sharp2'>♯</g>">
+<!ENTITY sharpb "<g ref='char:sharpb'><ex>sharpb</ex></g>">
+<!ENTITY shilling "<g ref='char:shilling'>ʃ</g>">
+<!ENTITY sloop "<g ref='char:sloop'>s̄</g>">
+<!ENTITY spcdotb "<g ref='char:spcdotb'>․</g>">
+<!ENTITY spcibreve "<g ref='char:spcibreve'>^</g>">
+<!ENTITY spcx "<g ref='char:spcx'> ͯ</g>">
+<!ENTITY startq "<g ref='char:startq'>“</g>">
+<!ENTITY stella "<g ref='char:stella'>✴</g>">
+<!ENTITY talc "<g ref='char:talc'><ex>talc</ex></g>">
+<!ENTITY tdagger "<g ref='char:tdagger'>‡̶</g>">
+<!ENTITY timeimperf-prolatimperf-x "<g ref='char:timeimperf-prolatimperf-x'><ex>timeimperf-prolatimperf-x</ex></g>">
+<!ENTITY timeimperf-prolatperf-rev "<g ref='char:timeimperf-prolatperf-rev'><ex>timeimperf-prolatperf-rev</ex></g>">
+<!ENTITY timeimperf-prolatperf-rev-str "<g ref='char:timeimperf-prolatperf-rev-str'><ex>timeimperf-prolatperf-rev-str</ex></g>">
+<!ENTITY timeimperf-prolatperf-str "<g ref='char:timeimperf-prolatperf-str'><ex>timeimperf-prolatperf-str</ex></g>">
+<!ENTITY timeperf-prolatimperf-str "<g ref='char:timeperf-prolatimperf-str'><ex>timeperf-prolatimperf-str</ex></g>">
+<!ENTITY timeperf-prolatimperf-x "<g ref='char:timeperf-prolatimperf-x'><ex>timeperf-prolatimperf-x</ex></g>">
+<!ENTITY timeperf-prolatperf-str "<g ref='char:timeperf-prolatperf-str'><ex>timeperf-prolatperf-str</ex></g>">
+<!ENTITY trefoil "<g ref='char:trefoil'>♣</g>">
+<!ENTITY triapost "<g ref='char:triapost'>','</g>">
+<!ENTITY trine "<g ref='char:trine'>△</g>">
+<!ENTITY trine2 "<g ref='char:trine2'>⊦</g>">
+<!ENTITY usd5 "<g ref='char:usd5'><ex>inverted 5</ex></g>">
+<!ENTITY vbreve "<g ref='char:vbreve'>v̆</g>">
+<!ENTITY verdigris "<g ref='char:verdigris'><ex>verdigris</ex></g>">
+<!ENTITY vitriol2 "<g ref='char:vitriol2'><ex>vitriol</ex></g>">
+<!ENTITY vitriol3 "<g ref='char:vitriol3'><ex>vitriol</ex></g>">
+<!ENTITY vocaljoin "<g ref='char:vocaljoin'><ex>vocal join</ex></g>">
+<!ENTITY yhwh "<g ref='char:yhwh'>יהוה</g>">

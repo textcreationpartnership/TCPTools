@@ -2,7 +2,10 @@ test:
 	osx -ccatalog -xlower -xcomment -xempty -xndata test.sgm  | xmllint --format - > test.xml
 
 charmap:
-	osx -ccatalog -xlower -xcomment -xempty -xndata charmap.sgm  | xmllint --format - > charmap.xml
+	perl -p -e 's/\&#/%%/g' charmap.sgm | \
+	osx -ccatalog -xlower -xcomment -xempty -xndata - | \
+	perl -p -e 's/%%/\&#/g' | \
+	perl -p -e 's/#xU/#x/' | xmllint --format - > charmap.xml
 
 eebodat:
 	osx -ccatalog -xlower -xcomment -xempty -xndata eebodat0.sgm  | xmllint --format - > eebodat0.xml
