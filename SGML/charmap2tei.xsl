@@ -120,9 +120,7 @@ identity transform
         <xsl:variable name="name" select="repl[@sup='default']/@txt"/>
 	<xsl:choose>
 	  <xsl:when test="starts-with($name,'{')">
-            <xsl:text>&lt;ex&gt;</xsl:text>
-            <xsl:value-of select="translate($name,'{}','')"/>
-            <xsl:text>&lt;/ex&gt;</xsl:text>
+            <xsl:sequence select="tei:makeExpan(ent/@tcp,translate($name,'{}',''))"/>
 	  </xsl:when>
 	  <xsl:otherwise>
             <xsl:value-of select="$name"/>
@@ -148,6 +146,7 @@ identity transform
     </xsl:choose>
   </xsl:function>
 
+
   <xsl:function name="tei:makeG">
     <xsl:param name="char"/>
     <xsl:param name="replacement"/>
@@ -157,5 +156,16 @@ identity transform
         <xsl:value-of select="$replacement"/>
         <xsl:text>&lt;/g&gt;</xsl:text>
   </xsl:function>
+
+  <xsl:function name="tei:makeExpan">
+    <xsl:param name="char"/>
+    <xsl:param name="replacement"/>
+    <xsl:text>&lt;expan&gt;&lt;am&gt;&lt;g ref="char:</xsl:text>
+    <xsl:value-of select="$char"/>
+    <xsl:text>"/&gt;&lt;/am&gt;&lt;ex&gt;</xsl:text>
+    <xsl:value-of select="$replacement"/>
+    <xsl:text>&lt;/ex&gt;&lt;/expan&gt;</xsl:text>
+  </xsl:function>
+
 
 </xsl:stylesheet>
