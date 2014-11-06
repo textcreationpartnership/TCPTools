@@ -69,9 +69,11 @@ identity transform
                       <xsl:value-of select="."/>
                     </charName>
                   </xsl:for-each>
-                  <mapping>
-                    <xsl:value-of select="repl[@sup='default']/@txt"/>
-                  </mapping>
+		  <xsl:for-each select="repl">
+                    <mapping type="{@sup}">
+                      <xsl:value-of select="@txt"/>
+                    </mapping>
+		  </xsl:for-each>
                   <xsl:if test="equiv/@compat='pua'">
                     <mapping type="PUA">
                       <xsl:value-of disable-output-escaping="yes" select="tei:toEnt(equiv/@unic)"/>
