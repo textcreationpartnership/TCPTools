@@ -98,11 +98,9 @@ identity transform
         <xsl:sort select="ent/@tcp"/>
         <xsl:text>&lt;!ENTITY </xsl:text>
         <xsl:value-of select="ent/@tcp"/>
-        <xsl:text> "&lt;g ref='char:</xsl:text>
-        <xsl:value-of select="ent/@tcp"/>
-        <xsl:text>'&gt;</xsl:text>
-        <xsl:call-template name="replacement"/>
-        <xsl:text>&lt;/g&gt;"&gt;
+        <xsl:text> "</xsl:text>
+	<xsl:call-template name="replacement"/>
+	<xsl:text>"&gt;
 </xsl:text>
       </xsl:for-each>
     </xsl:result-document>
@@ -111,13 +109,23 @@ identity transform
   <xsl:template name="replacement">
     <xsl:choose>
       <xsl:when test="repl/@sup='Unicode'">
-        <xsl:value-of select="repl[@sup='Unicode']/@txt"/>
+        <xsl:sequence select="tei:makeG(ent/@tcp,repl[@sup='Unicode']/@txt)"/>
       </xsl:when>
       <xsl:when test="repl/@sup='Arial Unicode MS'">
-        <xsl:sequence select="tei:makeEx(repl[@sup='Arial Unicode MS'][1]/@txt)"/>
+        <xsl:sequence select="tei:makeG(ent/@tcp,repl[@sup='Arial Unicode MS'][1]/@txt)"/>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:sequence select="tei:makeEx(repl[@sup='default']/@txt)"/>
+        <xsl:variable name="name" select="repl[@sup='default']/@txt"/>
+	<xsl:choose>
+	  <xsl:when test="starts-with($name,'{')">
+            <xsl:text>&lt;ex&gt;</xsl:text>
+            <xsl:value-of select="translate($name,'{}','')"/>
+            <xsl:text>&lt;/ex&gt;</xsl:text>
+	  </xsl:when>
+	  <xsl:otherwise>
+            <xsl:value-of select="$name"/>
+	  </xsl:otherwise>
+	</xsl:choose>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -138,17 +146,14 @@ identity transform
     </xsl:choose>
   </xsl:function>
 
-  <xsl:function name="tei:makeEx">
-    <xsl:param name="name"/>
-    <xsl:choose>
-      <xsl:when test="starts-with($name,'{')">
-        <xsl:text>&lt;ex&gt;</xsl:text>
-        <xsl:value-of select="translate($name,'{}','')"/>
-        <xsl:text>&lt;/ex&gt;</xsl:text>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="$name"/>
-      </xsl:otherwise>
-    </xsl:choose>
+  <xsl:function name="tei:makeG">
+    <xsl:param name="char"/>
+    <xsl:param name="replacement"/>
+    <xsl:text>&lt;g ref='char:</xsl:text>
+    <xsl:value-of select="$char"/>
+        <xsl:text>'&gt;</xsl:text>
+        <xsl:value-of select="$replacement"/>
+        <xsl:text>&lt;/g&gt;</xsl:text>
   </xsl:function>
+
 </xsl:stylesheet>

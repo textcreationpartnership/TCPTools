@@ -1403,9 +1403,9 @@
 <!ENTITY zdot "&#x017c;"> 
 <!ENTITY zgr "&#x03b6;"> 
 <!ENTITY zhcy "&#x0436;"> 
-<!ENTITY Aaigr "<g ref='char:Aaigr'>Άͅ</g>">
-<!ENTITY Acirgr "<g ref='char:Acirgr'>Α͂</g>">
-<!ENTITY EEcirgr "<g ref='char:EEcirgr'>Η͂</g>">
+<!ENTITY Aaigr "Άͅ">
+<!ENTITY Acirgr "Α͂">
+<!ENTITY EEcirgr "Η͂">
 <!ENTITY Ggr-rev "<g ref='char:Ggr-rev'>Γ</g>">
 <!ENTITY Moon "<g ref='char:Moon'>☽</g>">
 <!ENTITY Moonnew "<g ref='char:Moonnew'>●</g>">
@@ -1413,44 +1413,44 @@
 <!ENTITY OHcirgr "<g ref='char:OHcirgr'>Ω͂</g>">
 <!ENTITY Rgr-rev "<g ref='char:Rgr-rev'>Ρ</g>">
 <!ENTITY Sgr-rev "<g ref='char:Sgr-rev'>Σ</g>">
-<!ENTITY Ucirgr "<g ref='char:Ucirgr'>Υ͂</g>">
+<!ENTITY Ucirgr "Υ͂">
 <!ENTITY V "<g ref='char:V'>Ʋ</g>">
-<!ENTITY abPRI "<g ref='char:abPRI'><ex>PRI</ex></g>">
-<!ENTITY abQUE "<g ref='char:abQUE'><ex>QUE</ex></g>">
-<!ENTITY abUS "<g ref='char:abUS'><ex>US</ex></g>">
+<!ENTITY abPRI "<ex>PRI</ex>">
+<!ENTITY abQUE "<ex>QUE</ex>">
+<!ENTITY abUS "<ex>US</ex>">
 <!ENTITY abbrapo "<g ref='char:abbrapo'>’</g>">
-<!ENTITY abbus "<g ref='char:abbus'><ex>bus</ex></g>">
-<!ENTITY aber "<g ref='char:aber'><ex>er</ex></g>">
+<!ENTITY abbus "<ex>bus</ex>">
+<!ENTITY aber "<ex>er</ex>">
 <!ENTITY abpre "<g ref='char:abpre'>p̄</g>">
-<!ENTITY abpri "<g ref='char:abpri'><ex>pri</ex></g>">
-<!ENTITY abqu "<g ref='char:abqu'><ex>qu</ex></g>">
-<!ENTITY abquam "<g ref='char:abquam'><ex>quam</ex></g>">
-<!ENTITY abque "<g ref='char:abque'><ex>que</ex></g>">
-<!ENTITY abqui "<g ref='char:abqui'><ex>qui</ex></g>">
-<!ENTITY abris "<g ref='char:abris'><ex>ris</ex></g>">
-<!ENTITY absed "<g ref='char:absed'><ex>sed</ex></g>">
-<!ENTITY abser "<g ref='char:abser'><ex>ser</ex></g>">
-<!ENTITY alum "<g ref='char:alum'><ex>alum</ex></g>">
-<!ENTITY alum2 "<g ref='char:alum2'><ex>alum</ex></g>">
-<!ENTITY angulum "<g ref='char:angulum'><ex>angulum</ex></g>">
-<!ENTITY antimony "<g ref='char:antimony'><ex>antimony</ex></g>">
+<!ENTITY abpri "<ex>pri</ex>">
+<!ENTITY abqu "<ex>qu</ex>">
+<!ENTITY abquam "<ex>quam</ex>">
+<!ENTITY abque "<ex>que</ex>">
+<!ENTITY abqui "<ex>qui</ex>">
+<!ENTITY abris "<ex>ris</ex>">
+<!ENTITY absed "<ex>sed</ex>">
+<!ENTITY abser "<ex>ser</ex>">
+<!ENTITY alum "<ex>alum</ex>">
+<!ENTITY alum2 "<ex>alum</ex>">
+<!ENTITY angulum "<ex>angulum</ex>">
+<!ENTITY antimony "<ex>antimony</ex>">
 <!ENTITY arc "<g ref='char:arc'>⌒</g>">
-<!ENTITY arsenic2 "<g ref='char:arsenic2'><ex>arsenic</ex></g>">
+<!ENTITY arsenic2 "<ex>arsenic</ex>">
 <!ENTITY barlinef "<g ref='char:barlinef'>𝄀</g>">
 <!ENTITY bezoarMin "<g ref='char:bezoarMin'>♌</g>">
-<!ENTITY blood "<g ref='char:blood'><ex>blood</ex></g>">
-<!ENTITY cinnabar2 "<g ref='char:cinnabar2'><ex>cinnabar</ex></g>">
+<!ENTITY blood "<ex>blood</ex>">
+<!ENTITY cinnabar2 "<ex>cinnabar</ex>">
 <!ENTITY circdot "<g ref='char:circdot'>⊙</g>">
 <!ENTITY cmacr "<g ref='char:cmacr'>c̄</g>">
-<!ENTITY commonTime-allegro "<g ref='char:commonTime-allegro'><ex>common time (allegro)</ex></g>">
-<!ENTITY commonTime-largo "<g ref='char:commonTime-largo'><ex>common time (largro)</ex></g>">
+<!ENTITY commonTime-allegro "<ex>common time (allegro)</ex>">
+<!ENTITY commonTime-largo "<ex>common time (largro)</ex>">
 <!ENTITY cross "<g ref='char:cross'>✚</g>">
-<!ENTITY day "<g ref='char:day'><ex>day</ex></g>">
+<!ENTITY day "<ex>day</ex>">
 <!ENTITY decimalL "<g ref='char:decimalL'>⌊</g>">
 <!ENTITY decimalc "<g ref='char:decimalc'>.</g>">
 <!ENTITY dhook "<g ref='char:dhook'>d̔</g>">
-<!ENTITY direct "<g ref='char:direct'><ex>direct</ex></g>">
-<!ENTITY divisor "<g ref='char:divisor'><ex>divisor</ex></g>">
+<!ENTITY direct "<ex>direct</ex>">
+<!ENTITY divisor "<ex>divisor</ex>">
 <!ENTITY dnc-female "<g ref='char:dnc-female'>☽</g>">
 <!ENTITY dnc-male "<g ref='char:dnc-male'>☉</g>">
 <!ENTITY dnc-repeat "<g ref='char:dnc-repeat'> .̲̲ </g>">
@@ -1460,79 +1460,79 @@
 <!ENTITY dram "<g ref='char:dram'>ʒ</g>">
 <!ENTITY dtristar "<g ref='char:dtristar'>*⁎*</g>">
 <!ENTITY endq "<g ref='char:endq'>”</g>">
-<!ENTITY es "<g ref='char:es'><ex>es</ex></g>">
-<!ENTITY etc "<g ref='char:etc'><ex>etc</ex></g>">
+<!ENTITY es "<ex>es</ex>">
+<!ENTITY etc "<ex>etc</ex>">
 <!ENTITY female "<g ref='char:female'>♀</g>">
 <!ENTITY finallamed "<g ref='char:finallamed'>ﬥ</g>">
-<!ENTITY fivedash "<g ref='char:fivedash'><ex>fivedash</ex></g>">
-<!ENTITY fjlig "<g ref='char:fjlig'><ex>fj</ex></g>">
-<!ENTITY glass "<g ref='char:glass'><ex>glass</ex></g>">
-<!ENTITY hDagger "<g ref='char:hDagger'><ex>horizontal ‡</ex></g>">
+<!ENTITY fivedash "<ex>fivedash</ex>">
+<!ENTITY fjlig "<ex>fj</ex>">
+<!ENTITY glass "<ex>glass</ex>">
+<!ENTITY hDagger "<g ref='char:hDagger'>{horizontal ‡}</g>">
 <!ENTITY halfcross "<g ref='char:halfcross'>⊢</g>">
 <!ENTITY heart "<g ref='char:heart'>♡</g>">
-<!ENTITY higherterm "<g ref='char:higherterm'><ex>higher term</ex></g>">
+<!ENTITY higherterm "<ex>higher term</ex>">
 <!ENTITY higherthan "<g ref='char:higherthan'>∧</g>">
 <!ENTITY hyperlemnisc "<g ref='char:hyperlemnisc'>∸</g>">
 <!ENTITY hypolemnisc "<g ref='char:hypolemnisc'>܋</g>">
-<!ENTITY idagger "<g ref='char:idagger'><ex>inverted †</ex></g>">
+<!ENTITY idagger "<g ref='char:idagger'>{inverted †}</g>">
 <!ENTITY ipara "<g ref='char:ipara'>⁋</g>">
-<!ENTITY ldagger "<g ref='char:ldagger'><ex>left †</ex></g>">
+<!ENTITY ldagger "<g ref='char:ldagger'>{left †}</g>">
 <!ENTITY ldiple "<g ref='char:ldiple'>‹</g>">
 <!ENTITY leaf "<g ref='char:leaf'>❧</g>">
-<!ENTITY leftblank "<g ref='char:leftblank'><ex>left blank</ex></g>">
+<!ENTITY leftblank "<ex>left blank</ex>">
 <!ENTITY lemnisc "<g ref='char:lemnisc'>÷</g>">
 <!ENTITY lessthan "<g ref='char:lessthan'>‹</g>">
 <!ENTITY lloop "<g ref='char:lloop'>lʾ</g>">
-<!ENTITY logarithm "<g ref='char:logarithm'><ex>logarithm</ex></g>">
+<!ENTITY logarithm "<ex>logarithm</ex>">
 <!ENTITY lowerterm "<g ref='char:lowerterm'>⊽</g>">
 <!ENTITY lowerthan "<g ref='char:lowerthan'>∨</g>">
 <!ENTITY lpunctel "<g ref='char:lpunctel'>؛</g>">
-<!ENTITY lquest "<g ref='char:lquest'><ex>reversed ?</ex></g>">
+<!ENTITY lquest "<g ref='char:lquest'>{reversed ?}</g>">
 <!ENTITY magnesia "<g ref='char:magnesia'>○→</g>">
 <!ENTITY male "<g ref='char:male'>♂</g>">
 <!ENTITY minim "<g ref='char:minim'>♏</g>">
 <!ENTITY minim2 "<g ref='char:minim2'>♍</g>">
 <!ENTITY morethan "<g ref='char:morethan'>›</g>">
-<!ENTITY multiplier "<g ref='char:multiplier'><ex>multiplier</ex></g>">
-<!ENTITY musicNote "<g ref='char:musicNote'>♩</g>">
-<!ENTITY notedemisemiquaver "<g ref='char:notedemisemiquaver'><ex>demisemiquaver note</ex></g>">
+<!ENTITY multiplier "<ex>multiplier</ex>">
+<!ENTITY musicNote "♩">
+<!ENTITY notedemisemiquaver "<ex>demisemiquaver note</ex>">
 <!ENTITY ohkact "<g ref='char:ohkact'>ǫ́</g>">
 <!ENTITY oil2 "<g ref='char:oil2'>⦾</g>">
 <!ENTITY pashtayin "<g ref='char:pashtayin'>֙ ֨</g>">
 <!ENTITY pgrave "<g ref='char:pgrave'>p̀</g>">
-<!ENTITY potestas "<g ref='char:potestas'><ex>potestas</ex></g>">
-<!ENTITY powerof1 "<g ref='char:powerof1'><ex>powerof1</ex></g>">
-<!ENTITY powerof2 "<g ref='char:powerof2'><ex>powerof2</ex></g>">
-<!ENTITY powerof3 "<g ref='char:powerof3'><ex>powerof3</ex></g>">
-<!ENTITY powerof4 "<g ref='char:powerof4'><ex>powerof4</ex></g>">
-<!ENTITY powerof5 "<g ref='char:powerof5'><ex>powerof5</ex></g>">
-<!ENTITY powerof6 "<g ref='char:powerof6'><ex>powerof6</ex></g>">
+<!ENTITY potestas "<ex>potestas</ex>">
+<!ENTITY powerof1 "<ex>powerof1</ex>">
+<!ENTITY powerof2 "<ex>powerof2</ex>">
+<!ENTITY powerof3 "<ex>powerof3</ex>">
+<!ENTITY powerof4 "<ex>powerof4</ex>">
+<!ENTITY powerof5 "<ex>powerof5</ex>">
+<!ENTITY powerof6 "<ex>powerof6</ex>">
 <!ENTITY pprime "<g ref='char:pprime'>'''''</g>">
-<!ENTITY product "<g ref='char:product'><ex>product</ex></g>">
+<!ENTITY product "<ex>product</ex>">
 <!ENTITY proportion2 "<g ref='char:proportion2'>∝</g>">
 <!ENTITY punc "<g ref='char:punc'>▪</g>">
-<!ENTITY punctel "<g ref='char:punctel'><ex>punctel</ex></g>">
+<!ENTITY punctel "<ex>punctel</ex>">
 <!ENTITY qacute "<g ref='char:qacute'>q́</g>">
 <!ENTITY qprime "<g ref='char:qprime'>''''</g>">
-<!ENTITY quaddotl "<g ref='char:quaddotl'>˙.˙.</g>">
-<!ENTITY quaddotr "<g ref='char:quaddotr'>.˙.˙</g>">
+<!ENTITY quaddotl "˙.˙.">
+<!ENTITY quaddotr ".˙.˙">
 <!ENTITY quadrine "<g ref='char:quadrine'>□</g>">
-<!ENTITY quotient "<g ref='char:quotient'><ex>quotient</ex></g>">
+<!ENTITY quotient "<ex>quotient</ex>">
 <!ENTITY ration "<g ref='char:ration'>ℛ</g>">
-<!ENTITY rdagger "<g ref='char:rdagger'><ex>right †</ex></g>">
+<!ENTITY rdagger "<g ref='char:rdagger'>{right †}</g>">
 <!ENTITY rdiple "<g ref='char:rdiple'>›</g>">
-<!ENTITY repeat "<g ref='char:repeat'><ex>repeat</ex></g>">
-<!ENTITY restdemisemiquaver "<g ref='char:restdemisemiquaver'><ex>demisemiquaver rest</ex></g>">
-<!ENTITY restquaver "<g ref='char:restquaver'><ex>quaver rest</ex></g>">
-<!ENTITY restsemiquaver "<g ref='char:restsemiquaver'><ex>semiquaver rest</ex></g>">
+<!ENTITY repeat "<ex>repeat</ex>">
+<!ENTITY restdemisemiquaver "<ex>demisemiquaver rest</ex>">
+<!ENTITY restquaver "<ex>quaver rest</ex>">
+<!ENTITY restsemiquaver "<ex>semiquaver rest</ex>">
 <!ENTITY rhalfcross "<g ref='char:rhalfcross'>⊣</g>">
-<!ENTITY rn1000000 "<g ref='char:rn1000000'><ex>roman 1000000</ex></g>">
-<!ENTITY rn500000 "<g ref='char:rn500000'><ex>roman 500000</ex></g>">
+<!ENTITY rn1000000 "<ex>roman 1000000</ex>">
+<!ENTITY rn500000 "<ex>roman 500000</ex>">
 <!ENTITY root "<g ref='char:root'>ℛ</g>">
-<!ENTITY rsect "<g ref='char:rsect'><ex>reversed §</ex></g>">
+<!ENTITY rsect "<g ref='char:rsect'>{reversed §}</g>">
 <!ENTITY salarmon2 "<g ref='char:salarmon2'>⊕</g>">
-<!ENTITY sharp2 "<g ref='char:sharp2'>♯</g>">
-<!ENTITY sharpb "<g ref='char:sharpb'><ex>sharpb</ex></g>">
+<!ENTITY sharp2 "♯">
+<!ENTITY sharpb "<ex>sharpb</ex>">
 <!ENTITY shilling "<g ref='char:shilling'>ʃ</g>">
 <!ENTITY sloop "<g ref='char:sloop'>s̄</g>">
 <!ENTITY spcdotb "<g ref='char:spcdotb'>․</g>">
@@ -1540,23 +1540,23 @@
 <!ENTITY spcx "<g ref='char:spcx'> ͯ</g>">
 <!ENTITY startq "<g ref='char:startq'>“</g>">
 <!ENTITY stella "<g ref='char:stella'>✴</g>">
-<!ENTITY talc "<g ref='char:talc'><ex>talc</ex></g>">
+<!ENTITY talc "<ex>talc</ex>">
 <!ENTITY tdagger "<g ref='char:tdagger'>‡̶</g>">
-<!ENTITY timeimperf-prolatimperf-x "<g ref='char:timeimperf-prolatimperf-x'><ex>timeimperf-prolatimperf-x</ex></g>">
-<!ENTITY timeimperf-prolatperf-rev "<g ref='char:timeimperf-prolatperf-rev'><ex>timeimperf-prolatperf-rev</ex></g>">
-<!ENTITY timeimperf-prolatperf-rev-str "<g ref='char:timeimperf-prolatperf-rev-str'><ex>timeimperf-prolatperf-rev-str</ex></g>">
-<!ENTITY timeimperf-prolatperf-str "<g ref='char:timeimperf-prolatperf-str'><ex>timeimperf-prolatperf-str</ex></g>">
-<!ENTITY timeperf-prolatimperf-str "<g ref='char:timeperf-prolatimperf-str'><ex>timeperf-prolatimperf-str</ex></g>">
-<!ENTITY timeperf-prolatimperf-x "<g ref='char:timeperf-prolatimperf-x'><ex>timeperf-prolatimperf-x</ex></g>">
-<!ENTITY timeperf-prolatperf-str "<g ref='char:timeperf-prolatperf-str'><ex>timeperf-prolatperf-str</ex></g>">
+<!ENTITY timeimperf-prolatimperf-x "<ex>timeimperf-prolatimperf-x</ex>">
+<!ENTITY timeimperf-prolatperf-rev "<ex>timeimperf-prolatperf-rev</ex>">
+<!ENTITY timeimperf-prolatperf-rev-str "<ex>timeimperf-prolatperf-rev-str</ex>">
+<!ENTITY timeimperf-prolatperf-str "<ex>timeimperf-prolatperf-str</ex>">
+<!ENTITY timeperf-prolatimperf-str "<ex>timeperf-prolatimperf-str</ex>">
+<!ENTITY timeperf-prolatimperf-x "<ex>timeperf-prolatimperf-x</ex>">
+<!ENTITY timeperf-prolatperf-str "<ex>timeperf-prolatperf-str</ex>">
 <!ENTITY trefoil "<g ref='char:trefoil'>♣</g>">
 <!ENTITY triapost "<g ref='char:triapost'>','</g>">
 <!ENTITY trine "<g ref='char:trine'>△</g>">
 <!ENTITY trine2 "<g ref='char:trine2'>⊦</g>">
-<!ENTITY usd5 "<g ref='char:usd5'><ex>inverted 5</ex></g>">
+<!ENTITY usd5 "<ex>inverted 5</ex>">
 <!ENTITY vbreve "<g ref='char:vbreve'>v̆</g>">
-<!ENTITY verdigris "<g ref='char:verdigris'><ex>verdigris</ex></g>">
-<!ENTITY vitriol2 "<g ref='char:vitriol2'><ex>vitriol</ex></g>">
-<!ENTITY vitriol3 "<g ref='char:vitriol3'><ex>vitriol</ex></g>">
-<!ENTITY vocaljoin "<g ref='char:vocaljoin'><ex>vocal join</ex></g>">
+<!ENTITY verdigris "<ex>verdigris</ex>">
+<!ENTITY vitriol2 "<ex>vitriol</ex>">
+<!ENTITY vitriol3 "<ex>vitriol</ex>">
+<!ENTITY vocaljoin "<ex>vocal join</ex>">
 <!ENTITY yhwh "<g ref='char:yhwh'>יהוה</g>">
