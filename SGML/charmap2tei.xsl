@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet 
-    xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns="http://www.tei-c.org/ns/1.0"
-		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		version="2.0">
-<!--
+<xsl:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+  <!--
 This software is dual-licensed:
 
 1. Distributed under a Creative Commons Attribution-ShareAlike 3.0
@@ -42,112 +38,117 @@ of this software, even if advised of the possibility of such damage.
 identity transform
 -->
   <xsl:output indent="yes"/>
-
-<xsl:template match="/">
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main">TCP characters</title>
-        <editor>Paul Schaffner</editor>
-      </titleStmt>
-      <publicationStmt>
-        <p>https://github.com/textcreationpartnership/TCPTools</p>
-      </publicationStmt>
-      <sourceDesc>
-        <p>from charmap.sgm, maintained by TCP</p>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-
-      <xsl:for-each select="//char[equiv/@compat='pua' or @compat='partial']">
-	<xsl:sort select="ent/@tcp"/>
-	<charDecl>
-	    <xsl:for-each select="comment">
-	      <desc><xsl:value-of select="."/></desc>
-	    </xsl:for-each>
-	  <char xml:id="{ent/@tcp}">
-	    <xsl:for-each select="equiv/@desc">
-	      <charName><xsl:value-of select="."/></charName>
-	    </xsl:for-each>
-	    <mapping>
-		  <xsl:value-of select="repl[@sup='default']/@txt"/>
-	    </mapping>
-	  </char>
-	</charDecl>   
+  <xsl:template match="/">
+    <xsl:result-document href="tcpchars.xml">
+      <TEI xmlns="http://www.tei-c.org/ns/1.0">
+        <teiHeader>
+          <fileDesc>
+            <titleStmt>
+              <title type="main">TCP characters</title>
+              <editor>Paul Schaffner</editor>
+            </titleStmt>
+            <publicationStmt>
+              <p>https://github.com/textcreationpartnership/TCPTools</p>
+            </publicationStmt>
+            <sourceDesc>
+              <p>from charmap.sgm, maintained by TCP</p>
+            </sourceDesc>
+          </fileDesc>
+          <encodingDesc>
+            <xsl:for-each select="//char[equiv/@compat='pua' or @compat='partial']">
+              <xsl:sort select="ent/@tcp"/>
+              <charDecl>
+                <xsl:for-each select="comment">
+                  <desc>
+                    <xsl:value-of select="."/>
+                  </desc>
+                </xsl:for-each>
+                <char xml:id="{ent/@tcp}">
+                  <xsl:for-each select="equiv/@desc">
+                    <charName>
+                      <xsl:value-of select="."/>
+                    </charName>
+                  </xsl:for-each>
+                  <mapping>
+                    <xsl:value-of select="repl[@sup='default']/@txt"/>
+                  </mapping>
+                  <xsl:if test="equiv/@compat='pua'">
+                    <mapping type="PUA">
+                      <xsl:value-of disable-output-escaping="yes" select="tei:toEnt(equiv/@unic)"/>
+                    </mapping>
+                  </xsl:if>
+                </char>
+              </charDecl>
+            </xsl:for-each>
+          </encodingDesc>
+        </teiHeader>
+      </TEI>
+    </xsl:result-document>
+    <xsl:result-document href="tcpentities.dtd" method="text">
+      <xsl:for-each select="//char[equiv/@compat='exact']">
+        <xsl:sort select="ent/@tcp"/>
+        <xsl:text>&lt;!ENTITY </xsl:text>
+        <xsl:value-of select="ent/@tcp"/>
+        <xsl:text> "</xsl:text>
+        <xsl:value-of select="tei:toEnt(replace(equiv/@unic,'^u',''))"/>
+        <xsl:text>"&gt; 
+</xsl:text>
       </xsl:for-each>
-
-      <xsl:result-document href="tcpentities.dtd" method="text">
-	<xsl:for-each select="//char[equiv/@compat='exact']">
-	  <xsl:sort select="ent/@tcp"/>
-	  <xsl:text>&lt;!ENTITY </xsl:text>
-	  <xsl:value-of select="ent/@tcp"/>
-	  <xsl:text> "</xsl:text>
-	  <xsl:value-of select="tei:toEnt(replace(equiv/@unic,'^u',''))"/>
-	  <xsl:text>"&gt; &#10;</xsl:text>
-	</xsl:for-each>
-	<xsl:for-each select="//char[equiv/@compat='pua' or
-			    @compat='partial']">
-	  <xsl:sort select="ent/@tcp"/>
-	  <xsl:text>&lt;!ENTITY </xsl:text>
-	  <xsl:value-of select="ent/@tcp"/>
-	  <xsl:text> "&lt;g ref='char:</xsl:text>
-	  <xsl:value-of select="ent/@tcp"/>
-	  <xsl:text>'&gt;</xsl:text>
-	  <xsl:call-template name="replacement"/>
-	  <xsl:text>&lt;/g&gt;"&gt;&#10;</xsl:text>
+      <xsl:for-each select="//char[equiv/@compat='pua' or        @compat='partial']">
+        <xsl:sort select="ent/@tcp"/>
+        <xsl:text>&lt;!ENTITY </xsl:text>
+        <xsl:value-of select="ent/@tcp"/>
+        <xsl:text> "&lt;g ref='char:</xsl:text>
+        <xsl:value-of select="ent/@tcp"/>
+        <xsl:text>'&gt;</xsl:text>
+        <xsl:call-template name="replacement"/>
+        <xsl:text>&lt;/g&gt;"&gt;
+</xsl:text>
       </xsl:for-each>
+    </xsl:result-document>
+  </xsl:template>
 
-      </xsl:result-document>
+  <xsl:template name="replacement">
+    <xsl:choose>
+      <xsl:when test="repl/@sup='Unicode'">
+        <xsl:value-of select="repl[@sup='Unicode']/@txt"/>
+      </xsl:when>
+      <xsl:when test="repl/@sup='Arial Unicode MS'">
+        <xsl:sequence select="tei:makeEx(repl[@sup='Arial Unicode MS'][1]/@txt)"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="tei:makeEx(repl[@sup='default']/@txt)"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
-    </encodingDesc>
-  </teiHeader>
-</TEI>
-</xsl:template>
+  <xsl:function name="tei:toEnt">
+    <xsl:param name="codes"/>
+    <xsl:choose>
+      <xsl:when test="$codes='1d177u1d178'">
+        <xsl:text>&amp;#x1d177;&amp;#x1d178;</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:for-each select="tokenize(replace($codes,';$',''),';')">
+          <xsl:text>&amp;#x</xsl:text>
+          <xsl:value-of select="replace(.,'^u','')"/>
+          <xsl:text>;</xsl:text>
+        </xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
 
-<xsl:template name="replacement">
-  <xsl:choose>
-    <xsl:when test="repl/@sup='Unicode'">
-      <xsl:value-of select="repl[@sup='Unicode']/@txt"/>
-    </xsl:when>
-    <xsl:when test="repl/@sup='Arial Unicode MS'">
-      <xsl:sequence select="tei:makeEx(repl[@sup='Arial Unicode MS'][1]/@txt)"/>
-    </xsl:when>
-    <xsl:otherwise>
-	<xsl:sequence select="tei:makeEx(repl[@sup='default']/@txt)"/>
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:template>
-
-<xsl:function name="tei:toEnt">
-  <xsl:param name="codes"/>
-  <xsl:choose>
-    <xsl:when test="$codes='1d177u1d178'">
-	<xsl:text>&amp;#x1d177;&amp;#x1d178;</xsl:text>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:for-each select="tokenize(replace($codes,';$',''),';')">
-	<xsl:text>&amp;#x</xsl:text>
-	<xsl:value-of select="."/>
-	<xsl:text>;</xsl:text>
-      </xsl:for-each>
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:function>
-
-<xsl:function name="tei:makeEx">
-  <xsl:param name="name"/>
-  <xsl:choose>
-    <xsl:when test="starts-with($name,'{')">
-      <xsl:text>&lt;ex&gt;</xsl:text>
-      <xsl:value-of select="translate($name,'{}','')"/>
-      <xsl:text>&lt;/ex&gt;</xsl:text>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:value-of select="$name"/>
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:function>
-
-
+  <xsl:function name="tei:makeEx">
+    <xsl:param name="name"/>
+    <xsl:choose>
+      <xsl:when test="starts-with($name,'{')">
+        <xsl:text>&lt;ex&gt;</xsl:text>
+        <xsl:value-of select="translate($name,'{}','')"/>
+        <xsl:text>&lt;/ex&gt;</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$name"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
 </xsl:stylesheet>
