@@ -43,6 +43,24 @@
     </sequential>
   </macrodef>
 
+  <macrodef name="runosx">
+    <attribute name="in"/>
+    <attribute name="out"/>
+    <sequential>
+      <echo>Running OSX on @{in} in @{indir}</echo>
+      <exec executable="osx" dir="@{indir}" failonerror="true">
+	<arg value="-ccatalog"/>
+	<arg value="-xcomment"/>
+	<arg value="-xempty"/>
+	<arg value="-xno-expand-internal"/>
+        <arg value="@{in}"/>
+        <arg value="@{out}"/>
+      </exec>
+      <copy file="tcpentities.dtd" tofile="intEntities.dtf"/>
+      <delete file="intEntities.dtf"/>
+    </sequential>
+  </macrodef>
+
   <macrodef name="doconvert">
     <attribute name="name"/>
     <attribute name="dir"/>
