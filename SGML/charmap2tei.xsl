@@ -8,8 +8,6 @@ Unported License http://creativecommons.org/licenses/by-sa/3.0/
 
 2. http://www.opensource.org/licenses/BSD-2-Clause
 		
-
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
@@ -33,9 +31,6 @@ theory of liability, whether in contract, strict liability, or tort
 (including negligence or otherwise) arising in any way out of the use
 of this software, even if advised of the possibility of such damage.
 
-     $Id: processpb.xsl 10804 2012-09-10 22:16:04Z rahtz $
-
-identity transform
 -->
   <xsl:output indent="yes"/>
   <xsl:template match="/">
@@ -55,7 +50,7 @@ identity transform
             </sourceDesc>
           </fileDesc>
           <encodingDesc>
-            <xsl:for-each select="//char[equiv/@compat='pua' or @compat='partial']">
+            <xsl:for-each select="//char[ent/@tcp ='s' or equiv/@compat='pua' or @compat='partial']">
               <xsl:sort select="ent/@tcp"/>
               <charDecl>
                 <xsl:for-each select="comment">
@@ -87,7 +82,7 @@ identity transform
       </TEI>
     </xsl:result-document>
     <xsl:result-document href="tcpentities.dtd" method="text">
-      <xsl:for-each select="//char[equiv/@compat='exact']">
+      <xsl:for-each select="//char[ent/@tcp !='s' and equiv/@compat='exact']">
         <xsl:sort select="ent/@tcp"/>
         <xsl:text>&lt;!ENTITY </xsl:text>
         <xsl:value-of select="ent/@tcp"/>
@@ -96,7 +91,7 @@ identity transform
         <xsl:text>"&gt; 
 </xsl:text>
       </xsl:for-each>
-      <xsl:for-each select="//char[equiv/@compat='pua' or        @compat='partial']">
+      <xsl:for-each select="//char[ent/@tcp ='s' or equiv/@compat='pua' or        @compat='partial']">
         <xsl:sort select="ent/@tcp"/>
         <xsl:text>&lt;!ENTITY </xsl:text>
         <xsl:value-of select="ent/@tcp"/>
@@ -160,9 +155,9 @@ identity transform
   <xsl:function name="tei:makeExpan">
     <xsl:param name="char"/>
     <xsl:param name="replacement"/>
-    <xsl:text>&lt;expan&gt;&lt;am&gt;&lt;g ref="char:</xsl:text>
+    <xsl:text>&lt;expan&gt;&lt;am&gt;&lt;g ref='char:</xsl:text>
     <xsl:value-of select="$char"/>
-    <xsl:text>"/&gt;&lt;/am&gt;&lt;ex&gt;</xsl:text>
+    <xsl:text>'/&gt;&lt;/am&gt;&lt;ex&gt;</xsl:text>
     <xsl:value-of select="$replacement"/>
     <xsl:text>&lt;/ex&gt;&lt;/expan&gt;</xsl:text>
   </xsl:function>

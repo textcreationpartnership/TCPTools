@@ -398,7 +398,7 @@
             <char xml:id="dnc-male">
                <mapping type="default">{male dancer}</mapping>
                <mapping type="Arial Unicode MS">☉</mapping>
-               <mapping type="PUA">&#xe09g;</mapping>
+               <mapping type="PUA">&#xe010;</mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1015,6 +1015,15 @@
                <mapping type="default">{reversed section}</mapping>
                <mapping type="Arial Unicode MS">{reversed §}</mapping>
                <mapping type="PUA">&#xe074;</mapping>
+            </char>
+         </charDecl>
+         <charDecl>
+            <desc>long or tall form of s. Synonym of slong entity. 2005-11 akuster changed REPL Unicode mapping from 017F to 0073 "s" in order to read more easily and display consistently with earlier books in production.</desc>
+            <char xml:id="s">
+               <charName>LATIN SMALL LETTER LONG S</charName>
+               <mapping type="default">{s}</mapping>
+               <mapping type="Times New Roman">ſ</mapping>
+               <mapping type="Arial Unicode MS">s</mapping>
             </char>
          </charDecl>
          <charDecl>

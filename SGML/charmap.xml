@@ -230,7 +230,7 @@ END MAKING .ent FILES -->
                       *A76D LATIN SMALL LETTER IS                                      exact  abis    formerly E008
                       *A76F LATIN SMALL LETTER CON                                     exact  abcon   formerly E006
                       *A770 MODIFIER LETTER US                                         exact  abus    formerly E014
-                      *A75D LATIN SMALL LETTER RUM ROTUNDA                             exact  abrum   formerly E010
+                      *A75D LATIN SMALL LETTER RUM ROTUNDA                             exact  abrum   formerly E010 [PUA codepoint now reused]
                       *1EFC LATIN CAPITAL LETTER MIDDLE-WELSH V                        exact  W       formerly E077
                       *1EFD LATIN SMALL LETTER MIDDLE-WELSH V                          exact  x       formerly E076
                       *1EFE LATIN CAPITAL LETTER Y WITH LOOP                           partial Y      formerly E079
@@ -388,6 +388,7 @@ END MAKING .ent FILES -->
  2014-03-27 pfs added TCP entity starw with exact Unicode equivalent WHITE STAR U+2606     
  2014-04-14 pfs added TCP entity spclowvertline with exact Unicode equivalent  MODIFIER LETTER LOW VERTICAL LINE U+02CC (occasioned by use of low vertical line in arithmetic to indicate the number of 'places' that may be ignored)
  2014-04-14 pfs added TCP entity cmblowvertline with exact Unicode equivalent COMBINING VERTICAL LINE BELOW U+0329 
+ 2014-11-05 pfs replaced nonexistent PUA value U+E09G with recycled PUA codepoint U+E010 as lossless target for entity dnc-male
  
 Reminder: the following codepoints are intended to be indexed as null:
 
@@ -3742,7 +3743,7 @@ END CONTENTS OF THIS CHARACTER MAP -->
   </char>
   <char>
     <ent tcp="dnc-male" src="tcp"/>
-    <equiv unic="ue09g" compat="pua" ver="60" cc="no"/>
+    <equiv unic="ue010" compat="pua" ver="60" cc="no"/>
     <repl txt="{male dancer}" sup="default" date="2013-03"/>
     <repl txt="&#x2609;" sup="Arial Unicode MS" date="2012-03"/>
     <comment author="pfs">in dance instructions: designates male dancer; repurposing of symbol for Sun (or gold); display as Sun.</comment>
