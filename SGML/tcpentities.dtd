@@ -1225,6 +1225,7 @@
 <!ENTITY rtri "&#x25b9;"> 
 <!ENTITY rtrif "&#x25b8;"> 
 <!ENTITY rx "&#x211e;"> 
+<!ENTITY s "&#x017f;"> 
 <!ENTITY sacute "&#x015b;"> 
 <!ENTITY salarmon "&#x1f739;"> 
 <!ENTITY salt "&#x1f714;"> 
@@ -1529,7 +1530,6 @@
 <!ENTITY rn500000 "<expan><am><g ref='char:rn500000'/></am><ex>roman 500000</ex></expan>">
 <!ENTITY root "<g ref='char:root'>ℛ</g>">
 <!ENTITY rsect "<g ref='char:rsect'>{reversed §}</g>">
-<!ENTITY s "<g ref='char:s'>s</g>">
 <!ENTITY salarmon2 "<g ref='char:salarmon2'>⊕</g>">
 <!ENTITY sharp2 "♯">
 <!ENTITY sharpb "<expan><am><g ref='char:sharpb'/></am><ex>sharpb</ex></expan>">

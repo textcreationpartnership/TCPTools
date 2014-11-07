@@ -1,8 +1,8 @@
 F=`basename $1 .sgm`
 echo read $F.sgm
 perl -p cleanSGML.pl < $F.sgm | \
-osx -ccatalog -xno-nl-in-tag -xcomment -xempty -xno-expand-internal - > $F.xmllike
+osx -ccatalog -xno-nl-in-tag -xcomment -xempty -xpreserve-case -xno-expand-internal - > $F.xmllike
 cp tcpentities.dtd intEntities.dtf 
 xmllint --dropdtd --noent --encode utf-8 --format $F.xmllike > $F.xml
-echo rm $F.xmllike
+rm $F.xmllike
 echo wrote $F.xml

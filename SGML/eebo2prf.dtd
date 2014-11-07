@@ -898,6 +898,7 @@ and replaced with: -->
 	desc (foreign|illegible|music|math|missing|duplicate|replacement|symbol|intruder|blank|omitted) #REQUIRED
 	reason CDATA #IMPLIED
 	resp (uom|oxf|apex|pdcc|tech|aeld|uot|nlw|keyers|murp|source) #IMPLIED
+	disp CDATA #IMPLIED
 	extent CDATA #IMPLIED
 	rend CDATA #IMPLIED >
 

@@ -206,36 +206,36 @@ s#\{templowbar\}#_#g;
 
          # Deal with super- and sub-scripted characters by assuming that they are always one character as they are supposed to be and treating illegible, foreign, and symbol gaps as one character and charents as one character
 
-         s,\^\^<GAP[^>]+DESC="illegible"[^>]*>,<SUB>&bull;</SUB>,g;
-         s,\^<GAP[^>]+DESC="illegible"[^>]*>,<SUP>&bull;</SUP>,g;
-         s,\^\^<GAP[^>]+DESC="(symbol|foreign)"[^>]*>,<SUB>&#x2610;</SUB>,g;
-         s,\^<GAP[^>]+DESC="(symbol|foreign)"[^>]*>,<SUP>&#x2610;</SUP>,g;
+         s,\^\^<GAP[^>]+DESC="illegible"[^>]*>,<HI REND="sub">&bull;</HI>,g;
+         s,\^<GAP[^>]+DESC="illegible"[^>]*>,<hi rend="sup">&bull;</HI>,g;
+         s,\^\^<GAP[^>]+DESC="(symbol|foreign)"[^>]*>,<HI REND="sub">&#x2610;</HI>,g;
+         s,\^<GAP[^>]+DESC="(symbol|foreign)"[^>]*>,<hi rend="sup">&#x2610;</HI>,g;
          
-         s,\^\^(&[^ ;]+;),<SUB>$1</SUB>,g;
-         s,\^(&[^ ;]+;),<SUP>$1</SUP>,g;
+         s,\^\^(&[^ ;]+;),<HI REND="sub">$1</HI>,g;
+         s,\^(&[^ ;]+;),<hi rend="sup">$1</HI>,g;
          
-         s,\^\^([a-zA-Z0-9\(\)\*\.:;\,]),<SUB>$1</SUB>,g;
-         s,\^([a-zA-Z0-9\(\)\*\.:;\,]),<SUP>$1</SUP>,g;
+         s,\^\^([a-zA-Z0-9\(\)\*\.:;\,]),<HI REND="sub">$1</HI>,g;
+         s,\^([a-zA-Z0-9\(\)\*\.:;\,]),<hi rend="sup">$1</HI>,g;
 
 
   # pfs:2010-05 Deal with sub- or superscripted letter or entities also in HI or ABBR
   
-         s,\^\^(<HI[^>]*>&[^ ;]+;</HI>),<SUB>$1</SUB>,g;
-         s,\^(<HI[^>]*>&[^ ;]+;</HI>),<SUP>$1</SUP>,g;
-         s,\^\^(<HI[^>]*>[a-zA-Z0-9\(\)\*\.:;\,]</HI>),<SUB>$1</SUB>,g;
-         s,\^(<HI[^>]*>[a-zA-Z0-9\(\)\*\.:;\,]</HI>),<SUP>$1</SUP>,g;
+         s,\^\^(<HI[^>]*>&[^ ;]+;</HI>),<HI REND="sub">$1</HI>,g;
+         s,\^(<HI[^>]*>&[^ ;]+;</HI>),<hi rend="sup">$1</HI>,g;
+         s,\^\^(<HI[^>]*>[a-zA-Z0-9\(\)\*\.:;\,]</HI>),<HI REND="sub">$1</HI>,g;
+         s,\^(<HI[^>]*>[a-zA-Z0-9\(\)\*\.:;\,]</HI>),<hi rend="sup">$1</HI>,g;
 
-         s,\^\^(<ABBR[^>]*>&[^ ;]+;</ABBR>),<SUB>$1</SUB>,g;
-         s,\^(<ABBR[^>]*>&[^ ;]+;</ABBR>),<SUP>$1</SUP>,g;
-         s,\^\^(<ABBR[^>]*>[a-zA-Z0-9\(\)\*\.:;\,]</ABBR>),<SUB>$1</SUB>,g;
-         s,\^(<ABBR[^>]*>[a-zA-Z0-9\(\)\*\.:;\,]</ABBR>),<SUP>$1</SUP>,g;
+         s,\^\^(<ABBR[^>]*>&[^ ;]+;</ABBR>),<HI REND="sub">$1</HI>,g;
+         s,\^(<ABBR[^>]*>&[^ ;]+;</ABBR>),<hi rend="sup">$1</HI>,g;
+         s,\^\^(<ABBR[^>]*>[a-zA-Z0-9\(\)\*\.:;\,]</ABBR>),<HI REND="sub">$1</HI>,g;
+         s,\^(<ABBR[^>]*>[a-zA-Z0-9\(\)\*\.:;\,]</ABBR>),<hi rend="sup">$1</HI>,g;
 
   # pfs:2010-05 End of added code.
          
          #remove sequential superscript or subscript tags
          #so that tags contain character groups
-         s,</SUP><SUP>,,g;
-         s,</SUB><SUB>,,g;
+         s,</HI><hi rend="sup">,,g;
+         s,</HI><HI REND="sub">,,g;
          
          #PART 1.6. ADD DISP ATTRIBUTE TO GAPS
          

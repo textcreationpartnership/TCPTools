@@ -50,7 +50,7 @@ of this software, even if advised of the possibility of such damage.
             </sourceDesc>
           </fileDesc>
           <encodingDesc>
-            <xsl:for-each select="//char[ent/@tcp ='s' or equiv/@compat='pua' or @compat='partial']">
+            <xsl:for-each select="//char[equiv/@compat='pua' or @compat='partial']">
               <xsl:sort select="ent/@tcp"/>
               <charDecl>
                 <xsl:for-each select="comment">
@@ -82,7 +82,7 @@ of this software, even if advised of the possibility of such damage.
       </TEI>
     </xsl:result-document>
     <xsl:result-document href="tcpentities.dtd" method="text">
-      <xsl:for-each select="//char[ent/@tcp !='s' and equiv/@compat='exact']">
+      <xsl:for-each select="//char[equiv/@compat='exact']">
         <xsl:sort select="ent/@tcp"/>
         <xsl:text>&lt;!ENTITY </xsl:text>
         <xsl:value-of select="ent/@tcp"/>
@@ -91,7 +91,7 @@ of this software, even if advised of the possibility of such damage.
         <xsl:text>"&gt; 
 </xsl:text>
       </xsl:for-each>
-      <xsl:for-each select="//char[ent/@tcp ='s' or equiv/@compat='pua' or        @compat='partial']">
+      <xsl:for-each select="//char[equiv/@compat='pua' or        @compat='partial']">
         <xsl:sort select="ent/@tcp"/>
         <xsl:text>&lt;!ENTITY </xsl:text>
         <xsl:value-of select="ent/@tcp"/>
