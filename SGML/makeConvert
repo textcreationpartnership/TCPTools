@@ -3,9 +3,13 @@ threads=15
 test=
 prefix=
 textlist=
+xsl=/usr/share/xml/tei/stylesheet
+source=.
 name="convertjob_"
 while test $# -gt 0; do
   case $1 in
+    --xsl=*) xsl=`echo $1 | sed 's/.*xsl=//'`;;
+    --source=*) source=`echo $1 | sed 's/.*source=//'`;;
     --prefix=*)  prefix=`echo $1 | sed 's/.*prefix=//'`;;
     --threads=*)  threads=`echo $1 | sed 's/.*threads=//'`;;
     --test=*)  test=`echo $1 | sed 's/.*test=//'`;;
@@ -23,25 +27,27 @@ if test "x$test" = "x"
 then
     if  test "x$textlist" = "x"
     then
-	find Texts/ -name "$prefix*.tcp" > list
+	find $source/Texts-SGML -name "$prefix*.sgm" > list
 	rm -f $name*
 	split -l $(( `cat list | wc -l` / $threads)) list $name
 	for i in $name*; do 
 	    cat anthead.xml> $i.xml 
-	    perl -p -e 's:Texts/(.*)/(.*).tcp:<doconvert dir="Texts/$1" outdir="Texts-XML/$1" name="$2"/>:' $i >>$i.xml
+	    perl -p -e "s:$source/Texts-SGML/(.*).sgm:<doconvert dir='$source' name='\$1'/>:" $i >>$i.xml
 	    cat anttail.xml >> $i.xml
 	    ANT_OPTS="-Xss2m -Xmx752m" time nohup ant -lib lib/saxon9he.jar:lib/jing.jar -Dbasedir=`pwd` -f $i.xml >& $i.LOG & 
 	done
     else
 	cat anthead.xml> test$name.xml 
-	cat $textlist | perl -p -e 's:Texts/(.*)/(.*).tcp:<doconvert dir="Texts/$1" outdir="Texts-XML/$1" name="$2"/>:'   >> test$name.xml
+	cat $textlist | perl -p -e 's:(.*):<doconvert dir="$source name="$1"/>:'   >> test$name.xml
 	cat anttail.xml >> test$name.xml
 	ANT_OPTS="-Xss2m -Xmx752m" ant -lib lib/saxon9he.jar:lib/jing.jar -Dbasedir=`pwd` -f test$name.xml 
     fi
 else
     echo test $test
+    F=`basename $test .sgm`
+    D=`echo $test | sed 's/\(...\).*/\1/'`
     cat anthead.xml> test$name.xml 
-    echo $test | perl -p -e 's:Texts/(.*)/(.*).tcp:<doconvert dir="Texts/$1" outdir="Texts-XML/$1" name="$2"/>:'   >> test$name.xml
+    echo "<doconvert dir='$source' name='$D/$F'/>"   >> test$name.xml
     cat anttail.xml >> test$name.xml
     ANT_OPTS="-Xss2m -Xmx752m" ant -lib lib/saxon9he.jar:lib/jing.jar -Dbasedir=`pwd` -f test$name.xml 
 fi

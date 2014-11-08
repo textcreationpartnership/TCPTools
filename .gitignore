@@ -15,3 +15,23 @@ SGML/test3.tcp
 SGML/test.tei
 
 *.xmllike
+
+SGML/lib
+
+SGML/sgml2xml
+
+SGML/convertjob_aa
+
+SGML/convertjob_aa.LOG
+
+SGML/convertjob_aa.xml
+
+SGML/test4.xml
+
+SGML/test5.xml
+
+SGML/test6.xml
+
+SGML/list
+
+SGML/test7.xml

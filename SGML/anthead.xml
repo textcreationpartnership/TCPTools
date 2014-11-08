@@ -1,0 +1,85 @@
+<project basedir="." default="dist" name="epubs">
+  <property name="basedir" value="."/>
+  <property name="xsl" value="/usr/share/xml/tei/stylesheet"/>
+  <property name="tempPrefix" value="build"/>
+  <property name="jing" value="lib/jing.jar"/>
+  <property name="listgraphics" value="@{xsl}/tools/makegraphicsanttask.xsl"/>
+  <tempfile property="temp.file" destDir="${java.io.tmpdir}" prefix="${tempPrefix}"/>
+  <dirname property="outputTempDir" file="${temp.file}/ant"/>
+
+  <import file="${xsl}/epub3/build-to.xml"/>
+
+  <taskdef name="runjing" classpath="${jing}" classname="com.thaiopensource.relaxng.util.JingTask"/>
+  
+  <macrodef name="epub.check">
+    <attribute name="epub"/>
+    <sequential>
+      <echo level="info">Epubcheck @{epub}</echo>
+      <java jar="lib/epubcheck-3.0/epubcheck-3.0.jar" fork="true">
+	<arg value="@{epub}" />
+      </java>
+    </sequential>
+  </macrodef>
+   
+  <macrodef name="doconvert">
+    <attribute name="name"/>
+    <attribute name="dir"/>
+    <sequential>
+      <echo>Running Perl ${basedir}/cleanSGML.pl on @{name}.sgm in @{dir}</echo>
+      <exec executable="perl" dir="${basedir}" input="@{dir}/Texts-SGML/@{name}.sgm"
+	    output="@{dir}/Texts-SGML/@{name}.tmp" failonerror="true">
+	<arg value="-p"/>
+	<arg value="${basedir}/cleanSGML.pl"/>
+      </exec>
+      <echo>Running OSX and xmllint on @{dir}/Texts-SGML/@{name}.tmp</echo>
+      <exec 
+	  executable="osx" 
+	  failonerror="true"
+  	  output="@{dir}/Texts-XML/@{name}.xml">
+	<arg value="-c${basedir}/catalog"/>
+	<arg value="-d@{dir}/Texts-XML"/>
+	<arg value="-xno-nl-in-tag"/>
+	<arg value="-xcomment"/>
+	<arg value="-xempty"/>
+	<arg value="-xno-expand-internal"/>
+        <arg value="@{dir}/Texts-SGML/@{name}.tmp"/>
+      </exec>
+      <copy overwrite="true" file="${basedir}/tcpentities.dtd" tofile="@{dir}/Texts-XML/intEntities.dtf"/>
+      <delete file="@{dir}/Texts-SGML/@{name}.tmp"/>
+      <xslt force="yes" style="${xsl}/tcp/tcp2tei.xsl"
+	    in="@{dir}/Texts-XML/@{name}.xml"
+	    out="@{dir}/Texts-TEI/@{name}.xml">
+	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
+      </xslt>
+      <delete file="@{dir}/Texts-XML/intEntities.dtf"/>
+      <echo>Validate @{dir}/Texts-TEI/@{name}.xml</echo>
+      <runjing rngfile="${basedir}/tcp.rng" file="@{dir}/Texts-TEI/@{name}.xml" failonerror="false"/>
+    </sequential>
+  </macrodef>
+
+  <macrodef name="doepub">
+    <attribute name="name"/>
+    <attribute name="dir"/>
+    <attribute name="outdir"/>
+    <sequential>
+      <buildepubsimple in="@{dir}/@{name}.xml" out="@{outdir}/@{name}.epub" inDir="@{dir}"/>
+      <delete includeEmptyDirs="true">
+	<fileset dir="${outputTempDir}" includes="**/*"/>
+      </delete>    
+      <epub.check epub="@{outdir}/@{name}.epub"/>
+    </sequential>
+  </macrodef>
+
+  <macrodef name="dowordlist">
+    <attribute name="name"/>
+    <attribute name="dir"/>
+    <attribute name="outdir"/>
+    <sequential>
+	<xslt force="yes" style="${xsl}/txt/tei-to-text.xsl" in="@{dir}/@{name}.xml" out="@{outdir}/@{name}.wordlist">
+	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <param name="oneword" expression="true"/>
+      </xslt>
+    </sequential>
+  </macrodef>
+  <target name="dist">
+

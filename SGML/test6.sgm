@@ -1,0 +1,131 @@
+<!DOCTYPE ETS PUBLIC "-//UMDLPS//DTD EEBOPROOF 2.0//EN">
+<ETS>
+<TEMPHEAD>
+<REVDESCR>
+<CHANGE>
+<DATE>2006-05-30</DATE>
+<RESPSTMT>
+<NAME>Emma Leeson Huber</NAME>
+<RESP>MURP</RESP>
+</RESPSTMT>
+<ITEM>Added TYPEs to DIVs in order to validate. Proofed title page(s). Checked for TYPE="book". Checked ^s. Reviewed structure. Checked division-marking material at heads and feet of divisions (HEADS, etc.). Checked for signatures. Checked placement and completeness of PBs. Checked for GAPs, #s, @s. Checked spacing of foreign GAPs. Corrected 4 $s of 4. Converted 0 $s to GAP DESC="illegible" RESP="pdcc". Checked for EPIGRAPHs and ARGUMENTs. Checked for startqs, endqs, oes, q;s, and Qs. Checked proofsheets and made corrections found there. Checked for CLOSERs, TRAILERs, and BYLINEs. DONE.</ITEM>
+</CHANGE>
+</REVDESCR>
+</TEMPHEAD>
+<EEBO>
+<IDG S="marc" R="OX" ID="A00033">
+<STC T="S">10029.5</STC>
+<BIBNO T="oclc">22839131</BIBNO>
+<VID>25796</VID>
+</IDG>
+<TEXT>
+<FRONT>
+<DIV1 TYPE="title page">
+<PB REF="1" MS="y">
+<P>Aduerti&s;ments partly for due order in the publique admini&s;tration of common prayers and v&s;inge the holy Sacramentes, and partly for the apparrell of all per&s;ons ec|cle&s;ia&s;ticall, by vertue of the Queenes maie&s;ties letters commaunding the &s;ame, the xxv. day of Ianuary, in the &s;euenth yeare of the raigne of oure Soueraigne Lady <HI>ELYZABETH,</HI> by the grace of God, of Englande, Fraunce and Irelande Queene, defender of the fayth. &amp;c.</P>
+<P>LONDINI. Cum priuilegio ad imprimen|dum &s;olum.</P>
+</DIV1>
+<DIV1 TYPE="preface">
+<PB REF="2">
+<PB REF="2" MS="y">
+<HEAD>The Preface.</HEAD>
+<P>_THe Queenes maie&s;tye of her godly zeale calling to remembraunce howe nece&s;&s;ary it is to the auauncement of gods glory, and to the e&s;tabli&s;hmente of Chri&s;tes pure Religion, for all her louing &s;ubieectes, e&s;pecially the &s;tate Eccle&s;ia&s;ticall, to bee knitte together in one perfecte vnitye of do|ctrine, and to bee conioyned in one vniformity of Rites and Maners in the mini&s;tration of Gods holy worde, in open prayer and mini&s;tratio~ of Sa|craments, as al&s;o to be of one decent behauioure in their outwarde apparrell, to be knowne partely by their di&s;tinct habits to bee of that vocation (who &s;houlde be reuerenced the rather in their offices as Mini&s;ters of the holye thinges whereto they bee called) hathe by her letters directed vnto the Arche|by&s;hop of Canterbury and Metropolitane, requi|red, enioyned and &s;traightly charged, that with a&s;|&s;i&s;tance and conference had with other by&s;&s;hops, namely &s;uche as be in commi&s;&s;ion for cau&s;es eccle&s;i|a&s;ticall, &s;ome orders might bee taken, whereby all diuer&s;ities and varieties amonge them of the clear|gy and the people (as breedinge nothinge but con|tention, offence and breache of commo~ charity, and be agayn&s;te the lawes, good v&s;uage and ordinaun|ces of the Realme) might be reformed and repre&s;&s;ed, and brought to one maner of vniformity through|out the whole Realme, that the people may thereby quietly honour and &s;erue almighty God in truthe,
+<PB REF="3" MS="y">
+concord, vnity, peace and quietnes, as by her maie|&s;ties &s;ayde letters more at large dothe appeare. Wheruppon by diligent conference and communi|cation in the &s;ame, and at la&s;te by a&s;&s;ent and con|&s;ent of the per&s;ons before &s;ayd, the&s;e orders &amp; rules en&s;uing, haue been thoughte meete and conuenient to bee v&s;ed and folowed: not yet pre&s;cribinge the&s;e rules as lawes equiualent with the eternall worde of God, and as of nece&s;&s;ity to bynde the con&s;ciences of her &s;ubiectes in the nature of them con&s;idered in them &s;elues: Or as they &s;houlde adde any efficacye, or more holynes to the vertue of publique prayer and to the Sacraments, but as temporall orders meere Eccle&s;ia&s;ticall, without any vayne &s;uper&s;ti|tion, and as rules in &s;ome parte of di&s;cipline concer|nig decency, di&s;tinction, and order for the time.</P>
+</DIV1>
+</FRONT>
+<BODY>
+<DIV1 TYPE="part">
+<PB REF="3" MS="y">
+<HEAD>Articles for doctrine &amp; preachinge.</HEAD>
+<P>_FIr&s;te, that all they whiche &s;halbe ad|mitted to preache, &s;halbee diligentlye examined for theire conformity in v|nity of doctrine, e&s;tabli&s;hed by pub|lique authoritye: and admoni&s;hed to v&s;e &s;obriety and di&s;cretion in teachinge the people, namely in matters of controuer&s;y: and to con&s;ider the grauity of their office, and to fore&s;ee with dili|gence the matters which they will &s;peake, to vtter them to the edification of the Audience.</P>
+<P>Item, that they &s;ette owte in theire preachinge the reuerent e&s;timation of the holye Sacramentes of Bapti&s;me and the Lordes &s;upper, excitinge the people to thoften and deuoute receauing of the ho|ly Communion of the body and bludde of Chri&s;te, in &s;uche forme as is already pre&s;cribed in the booke of Common prayer: and as it is further declared in an Homily concerninge the vertue and efficacye of the &s;ayde Sacramentes.</P>
+<P>Item, that they moue the people to all obedience, a&s;well in ob&s;eruation of the orders appoynted in the booke of Common &s;eruice, as in the Queenes Maie&s;ties Iniunctions, as al&s;o of all other ciuill duetyes due for &s;ubiectes to doe.</P>
+<P>Item, that al licences for preaching, graunted out by y^e Archeby&s;&s;hop &amp; By&s;&s;hopes w^tin the prouince of Canterbury, bearing date before the fir&s;t day of
+<PB REF="4" MS="y">
+marche 1564 be voyde and of none effect, and neuer|thele&s;&s;e all &s;uche as &s;halbe thought meete for the of|fice, to be admitted agayne without difficultye or charge, payinge no more but iiij. pens for the wri|ting, parchement and waxe.</P>
+<P>Item, yf any Preacher or par&s;on, vicar or curate &s;o licen&s;ed, &s;hall fortune to preache anye matter tendinge to di&s;&s;ention, or to the derogation of the religion and doctrine receyued, that the hearers de|nounce the &s;ame to the Ordinaryes, or the next Bi&s;|&s;hoppe of the &s;ame place: but no man openly to con|trary or to impugne the &s;ame &s;peache &s;o di&s;orderly vttered: wherby may growe offence and di&s;quiet of the people, but &s;halbe conuinced and reproued by the Ordinary after &s;uche agreable order, as &s;hall be &s;eene to him according to the grauity of the offence. And that it bee pre&s;ented within one moneth after the wordes &s;poken.</P>
+<P>Item, that they v&s;e not to exact or receaue vnrea|&s;onable rewardes or &s;tipendes of the poore Pa|&s;tors, comminge to theyre Cures to preache, wher|bye they myght bee noted as folowers of filthye lucre, rather then v&s;e thoffice of preaching of Cha|ritye and good zeale, to the &s;aluation of mens &s;oules.</P>
+<P>Item, if the Par&s;on be able, he &s;hall preache in his own per&s;on euery thre moneths, or els &s;hall preache by an other, &s;o that his ab&s;ence be approued by the Ordinary of y^e dioces in re&s;pecte of &s;ickenes, &s;eruice
+<PB REF="4" MS="y">
+or &s;tudye at the Vniuer&s;ities. Neuerthele&s;&s;e yet for wante of able Preachers and Par&s;ons, to tolerate them without penaltye, &s;o that they preache in theyre owne per&s;ons, or by a learned &s;ub&s;titute, once in euery three monethes of the yeare.</P>
+</DIV1>
+<DIV1 TYPE="part">
+<HEAD>&para;Articles for admini&s;tration of prayer and Sacramentes.</HEAD>
+<P>FIr&s;t, that the Co~mon prayer be &s;aide or &s;onge decently and di&s;tinctly, in &s;uche place as the Or|dinary &s;hall thinke meete for the largene&s;&s;e and &s;treightne&s;&s;e of the Churche and quire, &s;o that the people may be mo&s;te edified.</P>
+<P>Item, that no Par&s;on or curate, not admitted by the by&s;&s;hoppe of the dioces to preache, do expounde in his owne Cure or other where, any &s;cripture or matter of doctrine or by the waye of exhortation, but onely &s;tudy to reade grauelye and aptlye, with|out any glo&s;inge of the &s;ame, or any additions, the homilyes already &s;ette owte, or other &s;uche nece&s;&s;a|ry doctrine as is, or &s;halbe pre&s;cribed for the quyet in&s;truction and edification of the people.</P>
+<P>Item, that in Cathedrall churches &amp; colledges the holy Communion be mini&s;tred vpon the fir&s;t or &s;e|conde &s;onday of euerye moneth at the lea&s;te. So that both Deane, prebendaries, prei&s;tes &amp; clerkes, do receyue: and all other of di&s;cretion of the funda|tion, do receaue foure tymes in the yeare at the lea&s;t.</P>
+<P><PB REF="5" MS="y">Item, in the mini&s;tration of the holy Communi|on in Cathedrall and Collegiat Churches, y^e prin|cipall mini&s;ter &s;hal v&s;e a Cope, with Go&s;peller and Epi&s;toler agreeably: and at all other prayers to be &s;ayde at that Communion table, to v&s;e no Copes but Surple&s;&s;es.</P>
+<P>Item, that the Deane and Prebendaries weare a Surple&s;&s;e with a &s;ilke Hoode in the Quyer: and when they preache in the Cathedrall or Collegiate churche, to weare theyre Hoode.</P>
+<P>Item, that euery Mini&s;ter &s;ayinge any publique prayers, or mini&s;tringe the Sacramentes, or other rites of the churche, &s;hall weare a comely Surples with &s;leeues, to bee prouided at the charges of the Pari&s;he: and that the Pari&s;he prouide a decente table &s;tandinge on a frame, for the Communion table.</P>
+<P>Item, they &s;hal decentlie couer with Carpet, &s;ilke or other decente coueringe, and with a fayre lynnen clothe (at the tyme of the mini&s;tration) the Com|munyon table: and to &s;ett the tenne Commaunde|mentes vppon the Ea&s;t walle ouer the &s;aid table.</P>
+<P>Item, that al communica~tes do receaue kneeling&punc; and as is appointed by the lawes of the Realme, and the Queenes maie&s;tyes Iniunctions.</P>
+<P>Item, that the fonte be not remoued, nor that the Curate do bapti&s;e in pari&s;he Churches in any Ba|&s;ons, nor in anye other forme then is alredie pre|&s;cribed,
+<PB REF="5" MS="y">
+without charginge the parent to be pre&s;ent or ab&s;ent at the Chri&s;tening of his childe, although the parent may bee pre&s;ent or ab&s;ent, but not to an|&s;were as Godfather for his childe.</P>
+<P>Item, that no childe bee admitted to an&s;were as Godfather or godmother, except the childe hath re|ceaued the Communion.</P>
+<P>Item, that there be none other holidayes ob&s;erued be&s;ides the Sundayes, but onely &s;uche as be &s;et out for holidayes, as in the Statute <HI>Anno quinto &amp; &s;exto Edwardi &s;exti,</HI> &amp; in the new kalender autho|ry&s;ed by the Queenes maie&s;ty.</P>
+<P>Item, that when any Chri&s;tian bodye is in pa&s;|&s;ing, that the bell be tolled, and that the Curate be &s;pecially called for to comforte the &s;icke per&s;on: and after the tyme of his pa&s;&s;inge, to ringe no more but one &s;horte peale: and one before the buriall, and an other &s;horte peale after the buriall.</P>
+<P>Item, that on Sundaies there be no &s;hoppes ope~, nor artificers commonlye goinge aboute theire af|faires worldly. And that in all Faires and common markets, &s;allinge vppon the &s;unday, there be no &s;he|wing of any wares before the Seruice be done.</P>
+<P>Item, that in the Rogation dayes of proce&s;&s;ion, they &s;inge or &s;aye in Engli&s;he the twoo P&s;almes beginninge, <HI>Benedic anima mea. &amp;c.</HI> with the Letanye and Suffrages there vnto, with one Ho|melye of thankes geuinge to God, already deui&s;ed and diuided into foure partes, without addition of any &s;uper&s;titiou&s;e ceremonyes heretofore v&s;ed.</P>
+</DIV1>
+<DIV1 TYPE="part">
+<PB REF="6" MS="y">
+<HEAD>Articles for certayne orders in ec|cle&s;ia&s;ticall policy.</HEAD>
+<P>FIr&s;t, again&s;te the day of giuing of orders ap|poynted, the By&s;&s;hoppe &s;hall geue open moni|tions to all men, to except agayn&s;te &s;uche as they knowe not to be worthy, either for life or con|uer&s;ation. And there to giue notice that none &s;hall &s;ewe for orders, but within theire owne Dioces where they weare borne, or had theire longe tyme of dwellinge, except &s;uche, as &s;hall bee of degree in the Vniuer&s;ities.</P>
+<P>Item, that younge Prei&s;tes or Mini&s;ters, made or to be made, be &s;o in&s;tructed, that they bee able to make apte aun&s;weres is concerninge the forme of the Catechi&s;me pre&s;cribed.</P>
+<P>Item, that no Curate or Mini&s;ter bee permitted to &s;erue without examination and admi&s;&s;ion of y^e Ordinary or his deputy, in writing, hauing re&s;pect, to the greatnes of the Cure, and the meetenes of the party: and that the &s;ayde Mini&s;ters if they re|mooue from one Dioces to an nother, bee by no meanes admitted to &s;erue, without te&s;timonye of the Dioce&s;an from whence they come, in writing, of their hone&s;ty, and ability.</P>
+<P>Item, that the By&s;&s;hop doe call home once in the yeare any Prebendary in his Churche, or beneficed in the Dioces whiche &s;tudieth at the Vniuer&s;ities, to knowe how hee profiteth in learninge: and that he be not &s;uffered to bee a &s;eruinge or a waytinge man di&s;&s;olutely.</P>
+<P><PB REF="6" MS="y">Item, that at the Archedeacons, vi&s;itation, the Archedeacon &s;hall appoynte the Curates to cer|tayne taxes of the newe Te&s;tamente, to bee conde without booke. And at theire nexte Synode to ex|acte a rehear&s;all of theym.</P>
+<P>Item, that the Churchewardens once in y^e quar|ter declare by theyre Curates in billes &s;ub&s;cribed with their handes to the Ordinarye or to the nexte officer vnder him, who they bee whiche will not readyly paye theire penalties for not comminge to Goddes diuine &s;eruice accordingly.</P>
+<P>Item, that the Ordinaries doe v&s;e good diligente examination, to fore&s;ee all Simoniacall pactes or couenaunts with the Patrons or pre&s;enters, for the &s;poyle of their glebe, tithes, or man&s;ion hou&s;es.</P>
+<P>Item, that no per&s;ons be &s;uffered to marye with|in the Leuiticall degrees mentioned in a Table &s;et forthe by the Archeby&s;&s;hoppe of Caunterburye in that behalfe, <HI>Anno Domini</HI> 1563. and if any &s;uche bee, to be &s;eparated by order of lawe.</P>
+</DIV1>
+<DIV1 TYPE="part">
+<PB REF="7" MS="y">
+<HEAD>Articles for outwarde apparrell of per&s;ons Eccle&s;ia&s;ticall.</HEAD>
+<P>FIr&s;t, that al Archeby&s;&s;hoppes and By&s;&s;hoppes do v&s;e &amp; continewe their accu&s;tomed apparrell.</P>
+<P>Item, that all Deanes of cathedrall churches, Ma&s;ters of Colledges, all Archedeacons, and other dignities in Cathedral churches: doctors, bachelers of Diuinitye and Lawe, hauing any Eccle&s;ia&s;ticall liuinge, &s;hall weare in their common apparrell a|brode, a &s;yde gowne with &s;leeues &s;treyght at the hande, without any cuttes in the &s;ame. And that al|&s;o without any fallinge cape: and to weare typpets of &s;arcenet, as is lawfull for them by thact of parli|ament, Anno 24. <HI>Henrici octaui.</HI></P>
+<P>Item, that all doctors of Phy&s;ick, or of any other facultye, hauinge any liuinge eccle&s;ia&s;ticall, or any other that may di&s;pende by the churche one hu~dred markes, &s;o to bee e&s;temed by the fruites or tenthes of their promotions: and all Prebendaries, who&s;e promotions be valued at twe~ty pound or vpward, weare the like apparrell.</P>
+<P>Item, that they and all eccle&s;ia&s;ticall per&s;ons, or other hauinge any eccle&s;ia&s;ticall liuinge, doe weare the cappe appointed by the Iniunctions. And they to weare no hattes but in their iourneinge.</P>
+<P>Item, that they in theyre iourneinge do weare theire clokes with &s;leeues put on, and lyke in fa&s;&s;hi|on to their gownes, without gards, welts, or cuts.</P>
+<P><PB REF="7" MS="y">Item, that in their priuate how&s;es and Studies, they v&s;e their owne liberty of comely apparrell.</P>
+<P>Item, that all inferiour Eccle&s;ia&s;ticall per&s;ons &s;hall weare longe gownes of the fa&s;&s;hion afore|&s;ayde, and cappes as afore is pre&s;cribed.</P>
+<P>Item, that all poore Par&s;ons, vicars and curates do endeuor them&s;elues to conforme their apparrell in like &s;orte, &s;o &s;oone and as conuenientlye as theire abilitye will &s;erue to the &s;ame. Prouided that their abilitye bee iudged by the By&s;&s;hop of the Dioces. And yf theire abilitye will not &s;uffer to buye them longe gownes of the forme afore pre&s;cribed, that then they &s;hall weare their &s;horte gownes, agrea|ble to the forme before expre&s;&s;ed.</P>
+<P>Item, that al &s;uche per&s;ons as haue ben or be Ec|cle&s;ia&s;ticall, and &s;erue not the miny&s;terie, or haue not accepted or &s;hall refu&s;e to accepte the othe of o|bedience to the Queenes Maie&s;ty, doe from hence|fourth abrode weare none of the &s;ayde apparrell of the forme &amp; fa&s;&s;hion afore&s;ayde, but to go as mere laye men, till they bee reconciled to obedience: and who &s;hall ob&s;tinately refu&s;e to do the &s;ame, y^t they bee pre&s;ented by the Ordinarye to the Commi&s;&s;io|ners in cau&s;es Eccle&s;ia&s;ticall, and by them to be re|formed accordingly.</P>
+</DIV1>
+<DIV1 TYPE="part">
+<PB REF="8" MS="y">
+<HEAD>Prote&s;tations to be made, promi&s;ed and &s;ub&s;cribed by them that &s;hall hereafter bee ad|mitted to any office, roome or cure in any Churche, or other place Eccle&s;ia&s;ticall.</HEAD>
+<P><HI>IN primis,</HI> I &s;hall not preache or publiquely in|terprete, but onelye reade that whiche is appoin|ted by publique authoritye, without &s;peciall licen&s;e of the By&s;&s;hoppe vnder his &s;eale.</P>
+<P>I &s;hall reade the &s;eruice appoynted, plainly, di&s;tin|ctly and audibly, that all the people may heare and vnder&s;tande.</P>
+<P>I &s;hall keepe the Regi&s;ter booke accordinge to the Queenes Maie&s;ties Iniunctions.</P>
+<P>I &s;hall v&s;e &s;obrietye in apparrell, and &s;pecially in the Churche at Common prayers, accordinge to order appoynted.</P>
+<P>I &s;hall moue the pari&s;hioners to quiet and con|corde, and not geue them cau&s;e of offence, and &s;hall helpe to reconcile them whiche be at variaunce, to my vttermo&s;te power.</P>
+<P>I &s;hall reade dayly at the lea&s;te one chapter of the Olde Te&s;tament, and an other of the Newe with good adui&s;ement, to thincrea&s;e of my knowledge.</P>
+<P>I do al&s;o faithfully promi&s;e in my per&s;on, to v&s;e &amp; exerci&s;e my office and place to the honor of God, to the quiet of y^e Qeenes &s;ubiects within my charge, in truth, concorde and vnitye. And al&s;o to ob&s;erue,
+<PB REF="8" MS="y">
+keepe and mentayne &s;uche order and vniformity in all externall policye, Rites and Ceremonies of the Church, as by the lawes, good v&s;uages and orders are allready well prouided and e&s;tabli&s;hed.</P>
+<P>I &s;hall not openlye intermedle with any artificers occupacions, as couetou&s;lye to &s;eeke a gayne there|by, hauinge in Eccle&s;ia&s;ticall lyuinge to the &s;omme of twenty Nobles or aboue by yeare.</P>
+<CLOSER><SIGNED>Agreed vpon and &s;ub&s;cribed by
+<LIST>
+<ITEM>Commi&s;&s;ioners in cau&s;es Eccle|&s;ia&s;ticall.<LIST>
+<ITEM>Matthaeus Cantuarien&s;is.</ITEM>
+<ITEM>Edmundus Londonien&s;is.</ITEM>
+<ITEM>Richardus Elien&s;is.</ITEM>
+<ITEM>Edmundus Roffen&s;is.</ITEM>
+</LIST></ITEM>
+<ITEM>Robertus VVintonien&s;is.</ITEM>
+<ITEM>Nicolaus Lincolnien&s;is.</ITEM>
+</LIST>With others.</SIGNED></CLOSER>
+</DIV1>
+</BODY>
+<BACK>
+<DIV1 TYPE="colophon">
+<P>Imprinted at London by Reginalde Wolfe.</P>
+<PB REF="9" MS="y">
+</DIV1>
+</BACK>
+</TEXT>
+</EEBO>
+</ETS>

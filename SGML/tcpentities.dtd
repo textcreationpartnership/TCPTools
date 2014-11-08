@@ -1,3 +1,5 @@
+<!ENTITY ballot "&#x2610;">
+<!ENTITY music "&#x266B;">
 <!ENTITY AElig "&#x00c6;"> 
 <!ENTITY Aacugr "&#x1fbb;"> 
 <!ENTITY Aacute "&#x00c1;"> 
@@ -1428,14 +1430,17 @@
 <!ENTITY abque "<expan><am><g ref='char:abque'/></am><ex>que</ex></expan>">
 <!ENTITY abqui "<expan><am><g ref='char:abqui'/></am><ex>qui</ex></expan>">
 <!ENTITY abris "<expan><am><g ref='char:abris'/></am><ex>ris</ex></expan>">
+<!ENTITY abrum "<expan><am><g ref='char:abrum'/></am><ex>rum</ex></expan>">
 <!ENTITY absed "<expan><am><g ref='char:absed'/></am><ex>sed</ex></expan>">
 <!ENTITY abser "<expan><am><g ref='char:abser'/></am><ex>ser</ex></expan>">
+<!ENTITY abur "<expan><am><g ref='char:abur'/></am><ex>ur</ex></expan>">
 <!ENTITY alum "<expan><am><g ref='char:alum'/></am><ex>alum</ex></expan>">
 <!ENTITY alum2 "<expan><am><g ref='char:alum2'/></am><ex>alum</ex></expan>">
 <!ENTITY angulum "<expan><am><g ref='char:angulum'/></am><ex>angulum</ex></expan>">
 <!ENTITY antimony "<expan><am><g ref='char:antimony'/></am><ex>antimony</ex></expan>">
 <!ENTITY arc "<g ref='char:arc'>⌒</g>">
 <!ENTITY arsenic2 "<expan><am><g ref='char:arsenic2'/></am><ex>arsenic</ex></expan>">
+<!ENTITY asterisc "<g ref='char:asterisc'>܍</g>">
 <!ENTITY barlinef "<g ref='char:barlinef'>𝄀</g>">
 <!ENTITY bezoarMin "<g ref='char:bezoarMin'>♌</g>">
 <!ENTITY blood "<expan><am><g ref='char:blood'/></am><ex>blood</ex></expan>">
@@ -1498,6 +1503,7 @@
 <!ENTITY notedemisemiquaver "<expan><am><g ref='char:notedemisemiquaver'/></am><ex>demisemiquaver note</ex></expan>">
 <!ENTITY ohkact "<g ref='char:ohkact'>ǫ́</g>">
 <!ENTITY oil2 "<g ref='char:oil2'>⦾</g>">
+<!ENTITY ougr "<g ref='char:ougr'>ȣ</g>">
 <!ENTITY pashtayin "<g ref='char:pashtayin'>֙ ֨</g>">
 <!ENTITY pgrave "<g ref='char:pgrave'>p̀</g>">
 <!ENTITY potestas "<expan><am><g ref='char:potestas'/></am><ex>potestas</ex></expan>">

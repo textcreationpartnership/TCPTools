@@ -1,5 +1,5 @@
          s/="ILLEGIBLE"/="illegible"/g;
-
+	 s/<TEXT>/<TEXT lang="eng">/;
 	 #PART 1.4. FIX GAP EXTENTs
          
          #ensure DESC attributes are before EXTENT attributes
@@ -208,8 +208,8 @@ s#\{templowbar\}#_#g;
 
          s,\^\^<GAP[^>]+DESC="illegible"[^>]*>,<HI REND="sub">&bull;</HI>,g;
          s,\^<GAP[^>]+DESC="illegible"[^>]*>,<hi rend="sup">&bull;</HI>,g;
-         s,\^\^<GAP[^>]+DESC="(symbol|foreign)"[^>]*>,<HI REND="sub">&#x2610;</HI>,g;
-         s,\^<GAP[^>]+DESC="(symbol|foreign)"[^>]*>,<hi rend="sup">&#x2610;</HI>,g;
+         s,\^\^<GAP[^>]+DESC="(symbol|foreign)"[^>]*>,<HI REND="sub">&ballot;</HI>,g;
+         s,\^<GAP[^>]+DESC="(symbol|foreign)"[^>]*>,<hi rend="sup">&ballot;</HI>,g;
          
          s,\^\^(&[^ ;]+;),<HI REND="sub">$1</HI>,g;
          s,\^(&[^ ;]+;),<hi rend="sup">$1</HI>,g;
@@ -240,7 +240,7 @@ s#\{templowbar\}#_#g;
          #PART 1.6. ADD DISP ATTRIBUTE TO GAPS
          
          #blank
-         #s/(<GAP[^>]+DESC="blank"[^>]+EXTENT=")([^"]+)("[^>]*?)>/$1$2$3 DISP="$lbrace$2 left blank$rbrace">/g;
+         #s/(<GAP[^>]+DESC="blank"[^>]+EXTENT=")([^"]+)("[^>]*?)>/$1$2$3 DISP="&lang;$2 left blank&rang;">/g;
          
          #blank letter
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="1)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="_$2">/g;
@@ -249,7 +249,7 @@ s#\{templowbar\}#_#g;
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="4)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="____$2">/g;
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="5)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="_____$2">/g;
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="6)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="______$2">/g;
-         s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? letters?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace$2$3 left blank$rbrace">/g;
+         s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? letters?)("[^>]*?)>/$1$2$3$4 DISP="&lang;$2$3 left blank&rang;">/g;
 
          #blank word
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="1)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP=" _____ ">/g;
@@ -258,17 +258,17 @@ s#\{templowbar\}#_#g;
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="4)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP=" _____ _____ _____ _____ ">/g;
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="5)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP=" _____ _____ _____ _____ _____ ">/g;
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="6)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP=" _____ _____ _____ _____ _____ _____ ">/g;
-         s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? words?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace$2$3 left blank$rbrace">/g;
+         s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? words?)("[^>]*?)>/$1$2$3$4 DISP="&lang;$2$3 left blank&rang;">/g;
 
          #blank span, line, page, paragraph
-         s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT=")([0-9]*?\+? )(spans?|lines?|pages?|paragraphs?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace$2$3 left blank$rbrace">/g;
+         s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT=")([0-9]*?\+? )(spans?|lines?|pages?|paragraphs?)("[^>]*?)>/$1$2$3$4 DISP="&lang;$2$3 left blank&rang;">/g;
          
          #duplicate
-         s/(<GAP[^>]+DESC="duplicate"[^>]+EXTENT=")([^"]+)("[^>]*?)>/$1$2$3 DISP="$lbrace$2 duplicate$rbrace">/g;
+         s/(<GAP[^>]+DESC="duplicate"[^>]+EXTENT=")([^"]+)("[^>]*?)>/$1$2$3 DISP="&lang;$2 duplicate&rang;">/g;
          
          #foreign
-         #in the line below, Perl requires a space after the $lbrace variable
-         s/(<GAP[^>]+DESC="foreign"[^>]*?)>/$1 DISP="$lbrace in non-Latin alphabet $rbrace">/g;
+         #in the line below, Perl requires a space after the &lang; variable
+         s/(<GAP[^>]+DESC="foreign"[^>]*?)>/$1 DISP="&lang; in non-Latin alphabet &rang;">/g;
          
          #illegible letter
          s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="1)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="&bull;$2">/g;
@@ -277,64 +277,64 @@ s#\{templowbar\}#_#g;
          s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="4)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="&bull;&bull;&bull;&bull;$2">/g;
          s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="5)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="&bull;&bull;&bull;&bull;&bull;$2">/g;
          s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="6)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="&bull;&bull;&bull;&bull;&bull;&bull;$2">/g;
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? letters?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace$2$3$rbrace">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? letters?)("[^>]*?)>/$1$2$3$4 DISP="&lang;$2$3&rang;">/g;
 
          #illegible word
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="1)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&loz;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="2)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&loz;&loz;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="3)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&loz;&loz;&loz;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="4)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&loz;&loz;&loz;&loz;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="5)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&loz;&loz;&loz;&loz;&loz;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="6)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&loz;&loz;&loz;&loz;&loz;&loz;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? words?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace$2$3$rbrace">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="1)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&loz;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="2)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&loz;&loz;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="3)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&loz;&loz;&loz;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="4)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&loz;&loz;&loz;&loz;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="5)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&loz;&loz;&loz;&loz;&loz;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="6)(\+?)( words?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&loz;&loz;&loz;&loz;&loz;&loz;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? words?)("[^>]*?)>/$1$2$3$4 DISP="&lang;$2$3&rang;">/g;
 
          #illegible span
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="[0-9]*?\+? ?spans?"[^>]*?)>/$1 DISP="$lbrace&hellip;$rbrace">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="[0-9]*?\+? ?spans?"[^>]*?)>/$1 DISP="&lang;&hellip;&rang;">/g;
 
          #illegible word-chunk
          s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="1 chunk"[^>]*?)>/$1 DISP="&hellip;">/g;
 
 
          #illegible line, page, paragraph
-         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT=")([0-9]*?\+? )(lines?|pages?|paragraphs?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace$2$3$rbrace">/g;
+         s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT=")([0-9]*?\+? )(lines?|pages?|paragraphs?)("[^>]*?)>/$1$2$3$4 DISP="&lang;$2$3&rang;">/g;
 
          #TODO
          #all other illegibles without DISP value.
          #cathces anything that has not been changed.
          #notably any GAP illegible without an EXTENT including 
          #letter|line|page|paragraph|span|word
-         #s/(<GAP[^>]*?DESC="illegible"[^>]*?EXTENT=")([^"]*?)("[^>]*?)(?!DISP)([^>]*?)>/$1$2$3$5 DISP="$lbrace$2$rbrace">/g;
+         #s/(<GAP[^>]*?DESC="illegible"[^>]*?EXTENT=")([^"]*?)("[^>]*?)(?!DISP)([^>]*?)>/$1$2$3$5 DISP="&lang;$2&rang;">/g;
          
          #intruder
-         s/(<GAP[^>]+DESC="intruder"[^>]+EXTENT=")([^"]*)("[^>]*?)>/$1$2$3 DISP="$lbrace$2 inserted from a different book$rbrace">/g;
+         s/(<GAP[^>]+DESC="intruder"[^>]+EXTENT=")([^"]*)("[^>]*?)>/$1$2$3 DISP="&lang;$2 inserted from a different book&rang;">/g;
          
          #math
-         #in the line below, Perl requires a space after the $lbrace variable
-         s/(<GAP[^>]+DESC="math"[^>]*)>/$1 DISP="$lbrace math $rbrace">/g;
+         #in the line below, Perl requires a space after the &lang; variable
+         s/(<GAP[^>]+DESC="math"[^>]*)>/$1 DISP="&lang; math &rang;">/g;
          
          #missing
-         s/(<GAP[^>]+DESC="missing"[^>]+EXTENT=")([^"]*)("[^>]*?)>/$1$2$3 DISP="$lbrace$2 missing$rbrace">/g;
+         s/(<GAP[^>]+DESC="missing"[^>]+EXTENT=")([^"]*)("[^>]*?)>/$1$2$3 DISP="&lang;$2 missing&rang;">/g;
          
          #music
-         s/(<GAP[^>]+DESC="music"[^>]*?)>/$1 DISP="$lbrace&#x266B;$rbrace">/g;
+         s/(<GAP[^>]+DESC="music"[^>]*?)>/$1 DISP="&lang;&music;&rang;">/g;
          
          #omitted
-         s/<GAP([^>]+DESC="omitted"[^>]+REND=")([^"]+)">/<gap$1$2" DISP="$lbrace $2 $rbrace">/g;
-         s/<GAP([^>]+DESC="omitted"[^>]*)>/<gap$1 DISP="$lbrace ---------- $rbrace">/g;
+         s/<GAP([^>]+DESC="omitted"[^>]+REND=")([^"]+)">/<gap$1$2" DISP="&lang; $2 &rang;">/g;
+         s/<GAP([^>]+DESC="omitted"[^>]*)>/<gap$1 DISP="&lang; ---------- &rang;">/g;
          s/<gap/<GAP/g;
          
          
          #replacement
-         s/(<GAP[^>]+DESC="replacement"[^>]+EXTENT=")([^"]*)("[^>]*?)>/$1$2$3 DISP="$lbrace$2 supplied later$rbrace">/g;
+         s/(<GAP[^>]+DESC="replacement"[^>]+EXTENT=")([^"]*)("[^>]*?)>/$1$2$3 DISP="&lang;$2 supplied later&rang;">/g;
          
          #symbol
-         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="1)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&#x2610;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="2)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&#x2610;&#x2610;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="3)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&#x2610;&#x2610;&#x2610;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="4)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&#x2610;&#x2610;&#x2610;&#x2610;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="5)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&#x2610;&#x2610;&#x2610;&#x2610;&#x2610;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="6)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace&#x2610;&#x2610;&#x2610;&#x2610;&#x2610;&#x2610;$2$rbrace">/g;
-         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="$lbrace$2$3$rbrace">/g;
+         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="1)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&ballot;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="2)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&ballot;&ballot;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="3)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&ballot;&ballot;&ballot;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="4)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&ballot;&ballot;&ballot;&ballot;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="5)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&ballot;&ballot;&ballot;&ballot;&ballot;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT="6)(\+?)( [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="&lang;&ballot;&ballot;&ballot;&ballot;&ballot;&ballot;$2&rang;">/g;
+         s/(<GAP[^>]+DESC="symbol"[^>]*?EXTENT=")([7-9]|[0-9]{2,})(\+? [^"]*?)("[^>]*?)>/$1$2$3$4 DISP="&lang;$2$3&rang;">/g;
          
          #change plus signs of continuance in DISPs to elipsis &hellip;
        #defective:  s/(DISP="[^\+]*?)\+([^ ][^"]*?")/$1&hellip;$2/g;

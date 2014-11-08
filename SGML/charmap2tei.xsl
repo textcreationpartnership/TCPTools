@@ -82,6 +82,10 @@ of this software, even if advised of the possibility of such damage.
       </TEI>
     </xsl:result-document>
     <xsl:result-document href="tcpentities.dtd" method="text">
+        <xsl:text>&lt;!ENTITY ballot "&amp;#x2610;"&gt;
+</xsl:text>
+        <xsl:text>&lt;!ENTITY music "&amp;#x266B;"&gt;
+</xsl:text>
       <xsl:for-each select="//char[equiv/@compat='exact']">
         <xsl:sort select="ent/@tcp"/>
         <xsl:text>&lt;!ENTITY </xsl:text>
@@ -91,7 +95,7 @@ of this software, even if advised of the possibility of such damage.
         <xsl:text>"&gt; 
 </xsl:text>
       </xsl:for-each>
-      <xsl:for-each select="//char[equiv/@compat='pua' or        @compat='partial']">
+      <xsl:for-each select="//char[equiv/@compat='pua' or        equiv/@compat='partial']">
         <xsl:sort select="ent/@tcp"/>
         <xsl:text>&lt;!ENTITY </xsl:text>
         <xsl:value-of select="ent/@tcp"/>
