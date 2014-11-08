@@ -1,5 +1,6 @@
          s/="ILLEGIBLE"/="illegible"/g;
 	 s/<TEXT>/<TEXT lang="eng">/;
+	 s/<LETTER>/<LETTER lang="eng">/;
 	 #PART 1.4. FIX GAP EXTENTs
          
          #ensure DESC attributes are before EXTENT attributes
@@ -340,11 +341,8 @@ s#\{templowbar\}#_#g;
        #defective:  s/(DISP="[^\+]*?)\+([^ ][^"]*?")/$1&hellip;$2/g;
        #defective:  s/(DISP="[^\+]*?)\+"/$1&hellip;$2"/g;
        #pfs replacement:
-         s/(<GAP[^>]+DESC="illegible"[^>]+)DISP="/$1disp="/g;
-	 s/(<GAP[^>]+DESC="symbol"[^>]+)DISP="/$1disp="/g;
-	 s/(<GAP[^>]+disp="[^\+">]+?)\+([^">]*?")/$1&hellip;$2/g;
-         s/(<GAP[^>]+)disp="/$1DISP="/g;
- 
+	 s/(<GAP[^>]+DISP="[^\+">]+?)\+([^">]*?")/$1&hellip;$2/g;
+	 s/DISP=[^=]*DISP/DISP/g;
         
          #Convert tilde to combining character
          s/\~/&cmbmacr;/g; #&cmbmacr;=macron, &#x0303;=tilde
