@@ -36,8 +36,8 @@
       <echo>Running osx SGML conversion on @{dir}/Texts-SGML/@{prefix}/@{name}.tmp</echo>
       <exec 
 	  executable="osx" 
-	  failonerror="true"
-  	  output="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
+	  output="@{dir}/Texts-XML/@{prefix}/@{name}.tmpxml"
+	  failonerror="true" >
 	<arg value="-c${basedir}/catalog"/>
 	<arg value="-d@{dir}/Texts-XML"/>
 	<arg value="-xno-nl-in-tag"/>
@@ -46,16 +46,13 @@
 	<arg value="-xno-expand-internal"/>
         <arg value="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
       </exec>
-      <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
+      <copy file="@{dir}/Texts-XML/@{prefix}/@{name}.tmpxml" tofile="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
+	  <filterchain>
+             <replaceregex pattern='="&amp;V;&amp;s;([^"])+"' replace='="V&amp;s;\1"' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;([A-z0-9]+);"' replace='="&amp;inattribute-\1;"' flags='g'></replaceregex>  
+	  </filterchain>
+      </copy>
       <copy overwrite="true" file="${basedir}/tcpentities.dtd" tofile="@{dir}/Texts-XML/intEntities.dtf"/>
-      <replaceregexp file="@{dir}/Texts-XML/@{prefix}/@{name}.xml"
-		     flags="g"
-		     match="N=(.)&amp;cross;"
-		     replace="N=\1&amp;gcross;"/>
-      <replaceregexp file="@{dir}/Texts-XML/@{prefix}/@{name}.xml"
-		     flags="g"
-		     match="UNIT=(.)&amp;V;&amp;s;e"
-		     replace="UNIT=\1Vse"/>
       <xslt force="yes" style="${xsl}/tcp/tcp2tei.xsl"
 	    in="@{dir}/Texts-XML/@{prefix}/@{name}.xml"
 	    out="@{dir}/Texts-TEI/@{prefix}/@{name}.xml">

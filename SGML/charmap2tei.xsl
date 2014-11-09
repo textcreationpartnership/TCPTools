@@ -82,20 +82,15 @@ of this software, even if advised of the possibility of such damage.
       </TEI>
     </xsl:result-document>
     <xsl:result-document href="tcpentities.dtd" method="text">
-        <xsl:text>&lt;!ENTITY gcross "&amp;#x271A;"&gt;
-</xsl:text>
-        <xsl:text>&lt;!ENTITY ballot "&amp;#x2610;"&gt;
-</xsl:text>
-        <xsl:text>&lt;!ENTITY music "&amp;#x266B;"&gt;
-</xsl:text>
+        <xsl:text>&lt;!ENTITY ballot "&amp;#x2610;"&gt;&#10;</xsl:text>
+        <xsl:text>&lt;!ENTITY music "&amp;#x266B;"&gt;&#10;</xsl:text>
       <xsl:for-each select="//char[equiv/@compat='exact']">
         <xsl:sort select="ent/@tcp"/>
         <xsl:text>&lt;!ENTITY </xsl:text>
         <xsl:value-of select="ent/@tcp"/>
         <xsl:text> "</xsl:text>
         <xsl:value-of select="tei:toEnt(replace(equiv/@unic,'^u',''))"/>
-        <xsl:text>"&gt; 
-</xsl:text>
+        <xsl:text>"&gt; &#10;</xsl:text>
       </xsl:for-each>
       <xsl:for-each select="//char[equiv/@compat='pua' or        equiv/@compat='partial']">
         <xsl:sort select="ent/@tcp"/>
@@ -103,30 +98,41 @@ of this software, even if advised of the possibility of such damage.
         <xsl:value-of select="ent/@tcp"/>
         <xsl:text> "</xsl:text>
 	<xsl:call-template name="replacement"/>
-	<xsl:text>"&gt;
-</xsl:text>
+	<xsl:text>"&gt;&#10;</xsl:text>
+        <xsl:text>&lt;!ENTITY inattribute-</xsl:text>
+        <xsl:value-of select="ent/@tcp"/>
+        <xsl:text> "</xsl:text>
+	<xsl:call-template name="firstreplacement"/>
+	<xsl:text>"&gt;&#10;</xsl:text>
+
       </xsl:for-each>
     </xsl:result-document>
   </xsl:template>
 
   <xsl:template name="replacement">
+    <xsl:variable name="result">
+      <xsl:call-template name="firstreplacement"/>
+    </xsl:variable>
     <xsl:choose>
-      <xsl:when test="repl/@sup='Unicode'">
-        <xsl:sequence select="tei:makeG(ent/@tcp,repl[@sup='Unicode']/@txt)"/>
-      </xsl:when>
-      <xsl:when test="repl/@sup='Arial Unicode MS'">
-        <xsl:sequence select="tei:makeG(ent/@tcp,repl[@sup='Arial Unicode MS'][1]/@txt)"/>
+      <xsl:when test="starts-with($result,'{')">
+        <xsl:sequence select="tei:makeExpan(ent/@tcp,translate($result,'{}',''))"/>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:variable name="name" select="repl[@sup='default']/@txt"/>
-	<xsl:choose>
-	  <xsl:when test="starts-with($name,'{')">
-            <xsl:sequence select="tei:makeExpan(ent/@tcp,translate($name,'{}',''))"/>
-	  </xsl:when>
-	  <xsl:otherwise>
-            <xsl:value-of select="$name"/>
-	  </xsl:otherwise>
-	</xsl:choose>
+	<xsl:sequence select="tei:makeG(ent/@tcp,$result)"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="firstreplacement">
+    <xsl:choose>
+      <xsl:when test="repl/@sup='Unicode'">
+        <xsl:value-of select="repl[@sup='Unicode']/@txt"/>
+      </xsl:when>
+      <xsl:when test="repl/@sup='Arial Unicode MS'">
+        <xsl:value-of select="repl[@sup='Arial Unicode MS'][1]/@txt"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="repl[@sup='default']/@txt"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
