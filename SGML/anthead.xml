@@ -49,7 +49,9 @@
       <copy file="@{dir}/Texts-XML/@{prefix}/@{name}.tmp" tofile="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
 	  <filterchain>
              <replaceregex pattern='="&amp;V;&amp;s;([^"])+"' replace='="V&amp;s;\1"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;([A-z0-9]+);"' replace='="&amp;inattribute-\1;"' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;cross;"' replace='="&amp;inattribute-cross;"' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;dtristar;"' replace='="&amp;inattribute-dtristar;"' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;Moon;"' replace='="&amp;inattribute-Moon;"' flags='g'></replaceregex>  
 	  </filterchain>
       </copy>   
       <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
