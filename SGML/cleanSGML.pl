@@ -1,3 +1,4 @@
+while (<>){
          s/="ILLEGIBLE"/="illegible"/g;
 	 s/<TEXT>/<TEXT lang="eng">/;
 	 s/<LETTER>/<LETTER lang="eng">/;
@@ -243,6 +244,7 @@ s#\{templowbar\}#_#g;
          #blank
          #s/(<GAP[^>]+DESC="blank"[^>]+EXTENT=")([^"]+)("[^>]*?)>/$1$2$3 DISP="&lang;$2 left blank&rang;">/g;
          
+
          #blank letter
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="1)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="_$2">/g;
          s/(<GAP[^>]+DESC="blank"[^>]*?EXTENT="2)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="__$2">/g;
@@ -271,6 +273,8 @@ s#\{templowbar\}#_#g;
          #in the line below, Perl requires a space after the &lang; variable
          s/(<GAP[^>]+DESC="foreign"[^>]*?)>/$1 DISP="&lang; in non-Latin alphabet &rang;">/g;
          
+	 # if we're adding DISP to illegible gaps, first remove any we already find.
+	 s/(<GAP[^>]+DESC="illegible"[^>]*)DISP="[^>]+">/$1>/g;
          #illegible letter
          s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="1)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="&bull;$2">/g;
          s/(<GAP[^>]+DESC="illegible"[^>]*?EXTENT="2)(\+?)( letters?)("[^>]*?)>/$1$2$3$4 DISP="&bull;&bull;$2">/g;
@@ -341,8 +345,8 @@ s#\{templowbar\}#_#g;
        #defective:  s/(DISP="[^\+]*?)\+([^ ][^"]*?")/$1&hellip;$2/g;
        #defective:  s/(DISP="[^\+]*?)\+"/$1&hellip;$2"/g;
        #pfs replacement:
+
 	 s/(<GAP[^>]+DISP="[^\+">]+?)\+([^">]*?")/$1&hellip;$2/g;
-	 s/DISP=[^=]*DISP/DISP/g;
         
          #Convert tilde to combining character
          s/\~/&cmbmacr;/g; #&cmbmacr;=macron, &#x0303;=tilde
@@ -363,3 +367,6 @@ s#\{templowbar\}#_#g;
          s/&ring;/&spcring;/g;
          s/&tilde;/&spctilde;/g;
          s/&uml;/&spcuml;/g;
+
+	 print;
+       }

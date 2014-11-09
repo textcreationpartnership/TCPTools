@@ -743,7 +743,7 @@
 <!ATTLIST note 
 	id ID #IMPLIED
 	n CDATA #IMPLIED
-	place (foot|marg|foot1|foot2|marg1|marg2|marg3|inline|divend|parend) #IMPLIED
+	place (foot|marg|foot1|foot2|marg1|marg2|marg3|inline|divend|parend|inter|end) #IMPLIED
 	resp CDATA #IMPLIED
 	type CDATA #IMPLIED >
 

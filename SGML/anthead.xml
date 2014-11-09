@@ -28,7 +28,6 @@
       <echo>Running Perl ${basedir}/cleanSGML.pl on @{name}.sgm in @{dir}</echo>
       <exec executable="perl" dir="${basedir}" input="@{dir}/Texts-SGML/@{name}.sgm"
 	    output="@{dir}/Texts-SGML/@{name}.tmp" failonerror="true">
-	<arg value="-p"/>
 	<arg value="${basedir}/cleanSGML.pl"/>
       </exec>
       <echo>Running OSX and xmllint on @{dir}/Texts-SGML/@{name}.tmp</echo>
@@ -44,8 +43,12 @@
 	<arg value="-xno-expand-internal"/>
         <arg value="@{dir}/Texts-SGML/@{name}.tmp"/>
       </exec>
-      <copy overwrite="true" file="${basedir}/tcpentities.dtd" tofile="@{dir}/Texts-XML/intEntities.dtf"/>
       <delete file="@{dir}/Texts-SGML/@{name}.tmp"/>
+      <copy overwrite="true" file="${basedir}/tcpentities.dtd" tofile="@{dir}/Texts-XML/intEntities.dtf"/>
+      <replaceregexp file="@{dir}/Texts-XML/@{name}.xml"
+		     flags="g"
+		     match="N=(.)&amp;cross;"
+		     replace="N=\1&amp;gcross;"/>
       <xslt force="yes" style="${xsl}/tcp/tcp2tei.xsl"
 	    in="@{dir}/Texts-XML/@{name}.xml"
 	    out="@{dir}/Texts-TEI/@{name}.xml">

@@ -82,6 +82,8 @@ of this software, even if advised of the possibility of such damage.
       </TEI>
     </xsl:result-document>
     <xsl:result-document href="tcpentities.dtd" method="text">
+        <xsl:text>&lt;!ENTITY gcross "&amp;#x271A;"&gt;
+</xsl:text>
         <xsl:text>&lt;!ENTITY ballot "&amp;#x2610;"&gt;
 </xsl:text>
         <xsl:text>&lt;!ENTITY music "&amp;#x266B;"&gt;
