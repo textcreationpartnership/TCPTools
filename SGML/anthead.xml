@@ -23,62 +23,69 @@
    
   <macrodef name="doconvert">
     <attribute name="name"/>
+    <attribute name="prefix"/>
     <attribute name="dir"/>
     <sequential>
-      <echo>Running Perl ${basedir}/cleanSGML.pl on @{dir}/Texts-SGML/@{name}.sgm</echo>
-      <exec executable="perl" dir="${basedir}" input="@{dir}/Texts-SGML/@{name}.sgm"
-	    output="@{dir}/Texts-SGML/@{name}.tmp" failonerror="true">
+      <mkdir dir="@{dir}/Texts-XML/@{prefix}"/>
+      <mkdir dir="@{dir}/Texts-TEI/@{prefix}"/>
+      <echo>Running Perl ${basedir}/cleanSGML.pl on @{dir}/Texts-SGML/@{prefix}/@{name}.sgm</echo>
+      <exec executable="perl" dir="${basedir}" input="@{dir}/Texts-SGML/@{prefix}/@{name}.sgm"
+	    output="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp" failonerror="true">
 	<arg value="${basedir}/cleanSGML.pl"/>
       </exec>
-      <echo>Running osx SGML conversion on @{dir}/Texts-SGML/@{name}.tmp</echo>
+      <echo>Running osx SGML conversion on @{dir}/Texts-SGML/@{prefix}/@{name}.tmp</echo>
       <exec 
 	  executable="osx" 
 	  failonerror="true"
-  	  output="@{dir}/Texts-XML/@{name}.xml">
+  	  output="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
 	<arg value="-c${basedir}/catalog"/>
 	<arg value="-d@{dir}/Texts-XML"/>
 	<arg value="-xno-nl-in-tag"/>
 	<arg value="-xcomment"/>
 	<arg value="-xempty"/>
 	<arg value="-xno-expand-internal"/>
-        <arg value="@{dir}/Texts-SGML/@{name}.tmp"/>
+        <arg value="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
       </exec>
-      <delete file="@{dir}/Texts-SGML/@{name}.tmp"/>
+      <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
       <copy overwrite="true" file="${basedir}/tcpentities.dtd" tofile="@{dir}/Texts-XML/intEntities.dtf"/>
-      <replaceregexp file="@{dir}/Texts-XML/@{name}.xml"
+      <replaceregexp file="@{dir}/Texts-XML/@{prefix}/@{name}.xml"
 		     flags="g"
 		     match="N=(.)&amp;cross;"
 		     replace="N=\1&amp;gcross;"/>
+      <replaceregexp file="@{dir}/Texts-XML/@{prefix}/@{name}.xml"
+		     flags="g"
+		     match="UNIT=(.)&amp;V;&amp;s;e"
+		     replace="UNIT=\1Vse"/>
       <xslt force="yes" style="${xsl}/tcp/tcp2tei.xsl"
-	    in="@{dir}/Texts-XML/@{name}.xml"
-	    out="@{dir}/Texts-TEI/@{name}.xml">
+	    in="@{dir}/Texts-XML/@{prefix}/@{name}.xml"
+	    out="@{dir}/Texts-TEI/@{prefix}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
       </xslt>
       <delete file="@{dir}/Texts-XML/intEntities.dtf"/>
-      <echo>Validate @{dir}/Texts-TEI/@{name}.xml</echo>
-      <runjing rngfile="${basedir}/tcp.rng" file="@{dir}/Texts-TEI/@{name}.xml" failonerror="false"/>
+      <echo>Validate @{dir}/Texts-TEI/@{prefix}/@{name}.xml</echo>
+      <runjing rngfile="${basedir}/tcp.rng" file="@{dir}/Texts-TEI/@{prefix}/@{name}.xml" failonerror="false"/>
     </sequential>
   </macrodef>
 
   <macrodef name="doepub">
     <attribute name="name"/>
     <attribute name="dir"/>
-    <attribute name="outdir"/>
+    <attribute name="prefix"/>
     <sequential>
-      <buildepubsimple in="@{dir}/@{name}.xml" out="@{outdir}/@{name}.epub" inDir="@{dir}"/>
+      <buildepubsimple in="@{dir}/@{prefix}/@{name}.xml" out="@{outdir}/@{prefix}/@{name}.epub" inDir="@{dir}"/>
       <delete includeEmptyDirs="true">
 	<fileset dir="${outputTempDir}" includes="**/*"/>
       </delete>    
-      <epub.check epub="@{outdir}/@{name}.epub"/>
+      <epub.check epub="@{outdir}/@{prefix}/@{name}.epub"/>
     </sequential>
   </macrodef>
 
   <macrodef name="dowordlist">
     <attribute name="name"/>
     <attribute name="dir"/>
-    <attribute name="outdir"/>
+    <attribute name="prefix"/>
     <sequential>
-	<xslt force="yes" style="${xsl}/txt/tei-to-text.xsl" in="@{dir}/@{name}.xml" out="@{outdir}/@{name}.wordlist">
+	<xslt force="yes" style="${xsl}/txt/tei-to-text.xsl" in="@{dir}/@{prefix}/@{name}.xml" out="@{outdir}/@{prefix}/@{name}.wordlist">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <param name="oneword" expression="true"/>
       </xslt>
