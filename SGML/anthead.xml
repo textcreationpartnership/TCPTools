@@ -25,12 +25,12 @@
     <attribute name="name"/>
     <attribute name="dir"/>
     <sequential>
-      <echo>Running Perl ${basedir}/cleanSGML.pl on @{name}.sgm in @{dir}</echo>
+      <echo>Running Perl ${basedir}/cleanSGML.pl on @{dir}/Texts-SGML/@{name}.sgm</echo>
       <exec executable="perl" dir="${basedir}" input="@{dir}/Texts-SGML/@{name}.sgm"
 	    output="@{dir}/Texts-SGML/@{name}.tmp" failonerror="true">
 	<arg value="${basedir}/cleanSGML.pl"/>
       </exec>
-      <echo>Running OSX and xmllint on @{dir}/Texts-SGML/@{name}.tmp</echo>
+      <echo>Running osx SGML conversion on @{dir}/Texts-SGML/@{name}.tmp</echo>
       <exec 
 	  executable="osx" 
 	  failonerror="true"
