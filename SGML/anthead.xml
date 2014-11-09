@@ -53,7 +53,12 @@
              <replaceregex pattern='="&amp;dtristar;"' replace='="&amp;inattribute-dtristar;"' flags='g'></replaceregex>  
              <replaceregex pattern='="&amp;Moon;"' replace='="&amp;inattribute-Moon;"' flags='g'></replaceregex>  
              <replaceregex pattern='="&amp;idagger;"' replace='="&amp;inattribute-idagger;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;hdagger;"' replace='="&amp;inattribute-hdagger;"' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;hDagger;"' replace='="&amp;inattribute-hDagger;"' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;ldagger;"'  replace='="&amp;inattribute-ldagger;"'   flags='g'></replaceregex> 
+             <replaceregex pattern='="&amp;rdagger;"'  replace='="&amp;inattribute-rdagger;"'   flags='g'></replaceregex> 
+             <replaceregex pattern='="&amp;tdagger;"'  replace='="&amp;inattribute-tdagger;"'   flags='g'></replaceregex> 
+             <replaceregex pattern='="&amp;leaf;"' replace='="&amp;inattribute-leaf;"' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;trine;"' replace='="&amp;inattribute-trine;"' flags='g'></replaceregex>  
 	  </filterchain>
       </copy>   
       <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
