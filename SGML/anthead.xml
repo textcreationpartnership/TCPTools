@@ -39,7 +39,6 @@
 	  output="@{dir}/Texts-XML/@{prefix}/@{name}.tmp"
 	  failonerror="true" >
 	<arg value="-c${basedir}/catalog"/>
-	<arg value="-d@{dir}/Texts-XML"/>
 	<arg value="-xno-nl-in-tag"/>
 	<arg value="-xcomment"/>
 	<arg value="-xempty"/>
@@ -48,6 +47,7 @@
       </exec>
       <copy file="@{dir}/Texts-XML/@{prefix}/@{name}.tmp" tofile="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
 	  <filterchain>
+	    <replaceregex pattern="./intEntities.dtf" replace="${basedir}/tcpentities.dtd"/>
              <replaceregex pattern='="&amp;V;&amp;s;([^"])+"' replace='="V&amp;s;\1"' flags='g'></replaceregex>  
              <replaceregex pattern='="&amp;cross;"' replace='="&amp;inattribute-cross;"' flags='g'></replaceregex>  
              <replaceregex pattern='="&amp;dtristar;"' replace='="&amp;inattribute-dtristar;"' flags='g'></replaceregex>  
@@ -62,7 +62,6 @@
 	    out="@{dir}/Texts-TEI/@{prefix}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
       </xslt>
-      <delete file="@{dir}/Texts-XML/intEntities.dtf"/>
       <echo>Validate @{dir}/Texts-TEI/@{prefix}/@{name}.xml</echo>
       <runjing rngfile="${basedir}/tcp.rng" file="@{dir}/Texts-TEI/@{prefix}/@{name}.xml" failonerror="false"/>
     </sequential>
