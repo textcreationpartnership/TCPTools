@@ -50,21 +50,8 @@
       <copy file="@{dir}/Texts-XML/@{prefix}/@{name}.tmp" tofile="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
 	  <filterchain>
 	    <replaceregex pattern="./intEntities.dtf" replace="${basedir}/tcpentities.dtd"/>
-             <replaceregex pattern='="&amp;V;&amp;s;([^"])+"' replace='="V&amp;s;\1"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;V;er&amp;s;([^"])+"' replace='="Ver&amp;s;\1"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;Moon;"' replace='="&amp;inattribute-Moon;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;cross;"' replace='="&amp;inattribute-cross;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;dtristar;"' replace='="&amp;inattribute-dtristar;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;hDagger;"' replace='="&amp;inattribute-hDagger;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;ldagger;"'  replace='="&amp;inattribute-ldagger;"'   flags='g'></replaceregex> 
-             <replaceregex pattern='="&amp;leaf;"' replace='="&amp;inattribute-leaf;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;punc;"'  replace='="&amp;inattribute-punc;"'   flags='g'></replaceregex> 
-             <replaceregex pattern='="&amp;rdagger;"'  replace='="&amp;inattribute-rdagger;"'   flags='g'></replaceregex> 
-             <replaceregex pattern='="&amp;stella;"' replace='="&amp;inattribute-stella;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;tdagger;"' replace='="&amp;inattribute-tdagger;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;trefoil;"' replace='="&amp;inattribute-trefoil;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;triapost;"' replace='="&amp;inattribute-triapost;"' flags='g'></replaceregex>  
-             <replaceregex pattern='="&amp;trine;.?"' replace='="&amp;inattribute-trine;"' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;V;' replace='="V' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;(Moon|cross|dtristar|hDagger|ldagger|leaf|punc|rdagger|stella|tdagger|trefoil|triapost|trine);,?"' replace='="&amp;inattribute-Moon;"' flags='g'></replaceregex>  
 	  </filterchain>
       </copy>   
       <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
