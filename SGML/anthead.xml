@@ -30,7 +30,8 @@
       <mkdir dir="@{dir}/Texts-TEI/@{prefix}"/>
       <echo>Running Perl ${basedir}/cleanSGML.pl on @{dir}/Texts-SGML/@{prefix}/@{name}.sgm</echo>
       <exec executable="perl" dir="${basedir}" input="@{dir}/Texts-SGML/@{prefix}/@{name}.sgm"
-	    output="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp" failonerror="true">
+	    output="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"
+	    failonerror="true" 	  logError="true">
 	<arg value="${basedir}/cleanSGML.pl"/>
       </exec>
       <echo>Running osx SGML conversion on @{dir}/Texts-SGML/@{prefix}/@{name}.tmp</echo>
@@ -50,6 +51,7 @@
 	  <filterchain>
 	    <replaceregex pattern="./intEntities.dtf" replace="${basedir}/tcpentities.dtd"/>
              <replaceregex pattern='="&amp;V;&amp;s;([^"])+"' replace='="V&amp;s;\1"' flags='g'></replaceregex>  
+             <replaceregex pattern='="&amp;V;er&amp;s;([^"])+"' replace='="Ver&amp;s;\1"' flags='g'></replaceregex>  
              <replaceregex pattern='="&amp;Moon;"' replace='="&amp;inattribute-Moon;"' flags='g'></replaceregex>  
              <replaceregex pattern='="&amp;cross;"' replace='="&amp;inattribute-cross;"' flags='g'></replaceregex>  
              <replaceregex pattern='="&amp;dtristar;"' replace='="&amp;inattribute-dtristar;"' flags='g'></replaceregex>  
