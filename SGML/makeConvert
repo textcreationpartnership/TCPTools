@@ -9,8 +9,8 @@ name="convertjob_"
 while test $# -gt 0; do
   case $1 in
     --xsl=*) xsl=`echo $1 | sed 's/.*xsl=//'`;;
+    --prefix=*) prefix=`echo $1 | sed 's/.*prefix=//'`;;
     --source=*) source=`echo $1 | sed 's/.*source=//'`;;
-    --prefix=*)  prefix=`echo $1 | sed 's/.*prefix=//'`;;
     --threads=*)  threads=`echo $1 | sed 's/.*threads=//'`;;
     --test=*)  test=`echo $1 | sed 's/.*test=//'`;;
     --textlist=*)  textlist=`echo $1 | sed 's/.*textlist=//'`;;
