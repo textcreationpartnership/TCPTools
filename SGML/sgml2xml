@@ -6,5 +6,5 @@ osx -ccatalog -xno-nl-in-tag -xcomment -xempty -xno-expand-internal - > $F.xmlli
 cp tcpentities.dtd intEntities.dtf 
 perl -p -i -e 's/UNIT="&V;&s;e/UNIT="Vse/g' $F.xmllike
 xmllint --dropdtd --noent --encode utf-8 --format $F.xmllike > $F.xml
-rm $F.xmllike
+echo rm $F.xmllike
 echo wrote $F.xml

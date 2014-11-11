@@ -51,7 +51,7 @@
 	  <filterchain>
 	    <replaceregex pattern="./intEntities.dtf" replace="${basedir}/tcpentities.dtd"/>
              <replaceregex pattern='="&amp;V;' replace='="V' flags='g'></replaceregex>  
-             <replaceregex pattern='="([A-z0-9]*)&amp;(Moon|cross|dtristar|hDagger|ldagger|leaf|punc|rdagger|stella|tdagger|trefoil|triapost|trine);,?"' replace='="\1&amp;inattribute-Moon;"' flags='g'></replaceregex>  
+             <replaceregex pattern='="([\(A-z0-9]*)&amp;(Moon|cross|dtristar|hDagger|ldagger|leaf|punc|rdagger|stella|tdagger|trefoil|triapost|trine);(,?)"' replace='="\1&amp;inattribute-\2;\3"' flags='g'></replaceregex>  
 	  </filterchain>
       </copy>   
       <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>

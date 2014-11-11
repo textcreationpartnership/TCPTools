@@ -38,7 +38,7 @@ then
 	done
     else
 	cat anthead.xml> test$name.xml 
-	cat $textlist | perl -p -e 's:(.*)/(.*):<doconvert dir="$source prefix="$1" name="$2"/>:'   >> test$name.xml
+	cat $textlist | perl -p -e "s:(...)(.*):<doconvert dir='$source' prefix='\$1' name='\$1\$2'/>:"   >> test$name.xml
 	cat anttail.xml >> test$name.xml
 	ANT_OPTS="-Xss2m -Xmx752m" ant -Dxsl=$xsl -lib lib/saxon9he.jar:lib/jing.jar -Dbasedir=`pwd` -f test$name.xml 
     fi
