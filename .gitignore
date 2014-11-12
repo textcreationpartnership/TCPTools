@@ -16,8 +16,6 @@ SGML/test.tei
 
 *.xmllike
 
-SGML/lib
-
 SGML/convertjob_aa
 
 SGML/convertjob_aa.LOG
