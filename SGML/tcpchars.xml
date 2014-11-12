@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:XSL="http://www.w3.org/1999/XSL/Transform">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -19,7 +22,7 @@
             <char xml:id="Aaigr">
                <charName>GREEK CAPITAL LETTER ALPHA WITH OXIA AND PROSGEGRAMMENI</charName>
                <mapping type="default">Άͅ</mapping>
-               <mapping type="PUA">&#xe07f;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -28,7 +31,7 @@
             <char xml:id="Acirgr">
                <charName>GREEK CAPITAL LETTER ALPHA WITH PERISPOMENI</charName>
                <mapping type="default">Α͂</mapping>
-               <mapping type="PUA">&#xe084;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -36,7 +39,7 @@
             <char xml:id="EEcirgr">
                <charName>GREEK CAPITAL LETTER ETA WITH PERISPOMENI</charName>
                <mapping type="default">Η͂</mapping>
-               <mapping type="PUA">&#xe0ab;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -44,7 +47,7 @@
             <char xml:id="Ggr-rev">
                <mapping type="default">{Ggr-rev}</mapping>
                <mapping type="Arial Unicode MS">Γ</mapping>
-               <mapping type="PUA">&#xe09e;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -53,7 +56,7 @@
                <charName>MOON</charName>
                <mapping type="default">{Moon}</mapping>
                <mapping type="Arial Unicode MS">☽</mapping>
-               <mapping type="PUA">&#xe08b;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -61,7 +64,7 @@
             <char xml:id="Moonnew">
                <mapping type="default">{new moon}</mapping>
                <mapping type="Arial Unicode MS">●</mapping>
-               <mapping type="PUA">&#xe08a;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -69,7 +72,7 @@
             <char xml:id="Moonround">
                <mapping type="default">{full moon}</mapping>
                <mapping type="Arial Unicode MS">❍</mapping>
-               <mapping type="PUA">&#xe031;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -78,7 +81,7 @@
                <charName>GREEK CAPITAL LETTER OMEGA WITH PERISPOMENI</charName>
                <mapping type="default">{OHcirgr}</mapping>
                <mapping type="Arial Unicode MS">Ω͂</mapping>
-               <mapping type="PUA">&#xe0b5;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -86,7 +89,7 @@
             <char xml:id="Rgr-rev">
                <mapping type="default">{Rgr-rev}</mapping>
                <mapping type="Arial Unicode MS">Ρ</mapping>
-               <mapping type="PUA">&#xe09f;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -94,7 +97,7 @@
             <char xml:id="Sgr-rev">
                <mapping type="default">{Sgr-rev}</mapping>
                <mapping type="Arial Unicode MS">Σ</mapping>
-               <mapping type="PUA">&#xe09d;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -102,7 +105,7 @@
             <char xml:id="Ucirgr">
                <charName>GREEK CAPITAL LETTER UPSILON WITH PERISPOMENI</charName>
                <mapping type="default">Υ͂</mapping>
-               <mapping type="PUA">&#xe03f;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -110,28 +113,28 @@
             <char xml:id="V">
                <mapping type="default">{V}</mapping>
                <mapping type="Arial Unicode MS">Ʋ</mapping>
-               <mapping type="PUA">&#xe07a;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation symbol for PRI (P topped by an apostrophe or decadent superscript i)</desc>
             <char xml:id="abPRI">
                <mapping type="default">{PRI}</mapping>
-               <mapping type="PUA">&#xe0af;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>upper case version of the abbreviation symbol for '-QUE'; Cp. abque.</desc>
             <char xml:id="abQUE">
                <mapping type="default">{QUE}</mapping>
-               <mapping type="PUA">&#xe087;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>upper case version of the abbreviation symbol for '-US'; Cp. abus.</desc>
             <char xml:id="abUS">
                <mapping type="default">{US}</mapping>
-               <mapping type="PUA">&#xe089;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -139,21 +142,21 @@
             <char xml:id="abbrapo">
                <mapping type="default">{'}</mapping>
                <mapping type="Arial Unicode MS">’</mapping>
-               <mapping type="PUA">&#xe088;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation string for '-bus' resembling -bz</desc>
             <char xml:id="abbus">
                <mapping type="default">{bus}</mapping>
-               <mapping type="PUA">&#xe005;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation sybol for 'er' or 're'; may take several forms including COMBINING OGONEK ABOVE (U+1DCE) or APOSTROPHE</desc>
             <char xml:id="aber">
                <mapping type="default">{er}</mapping>
-               <mapping type="PUA">&#xe007;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -161,91 +164,91 @@
             <char xml:id="abpre">
                <mapping type="default">{pre}</mapping>
                <mapping type="Unicode">p̄</mapping>
-               <mapping type="PUA">&#xe0ae;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation symbol for pri (p topped by an apostrophe or decadent superscript i)</desc>
             <char xml:id="abpri">
                <mapping type="default">{pri}</mapping>
-               <mapping type="PUA">&#xe082;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation symbol for French que or qu', resembles a letter q or g with the loop of the descender continued in a half circle clockwise up past the top of the letter. Rather like an @ sign flipped vertically.</desc>
             <char xml:id="abqu">
                <mapping type="default">{qu}</mapping>
-               <mapping type="PUA">&#xe083;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation for Latin quam</desc>
             <char xml:id="abquam">
                <mapping type="default">{quam}</mapping>
-               <mapping type="PUA">&#xe00b;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation symbol for '-que'</desc>
             <char xml:id="abque">
                <mapping type="default">{que}</mapping>
-               <mapping type="PUA">&#xe00c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation symbol for qui (atypical barred-q form only?)</desc>
             <char xml:id="abqui">
                <mapping type="default">{qui}</mapping>
-               <mapping type="PUA">&#xe00d;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>2-shaped r with stroke (like abrum entity), abbreviation symbol for '-rim'</desc>
             <char xml:id="abris">
                <mapping type="default">{ris}</mapping>
-               <mapping type="PUA">&#xe081;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation symbol for 'sed'. For uncertain cases use sloop</desc>
             <char xml:id="absed">
                <mapping type="default">{sed}</mapping>
-               <mapping type="PUA">&#xe011;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>abbreviation symbol for 'ser'. For uncertain cases use sloop</desc>
             <char xml:id="abser">
                <mapping type="default">{ser}</mapping>
-               <mapping type="PUA">&#xe012;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical or medical sign for alum: a simple circle. Unicode references a different glyph for this meaning.</desc>
             <char xml:id="alum">
                <mapping type="default">{alum}</mapping>
-               <mapping type="PUA">&#xe092;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical sign for alum, alternative form; horizontally divided circle with + attached to left side.  Unicode references a different glyph for this meaning.</desc>
             <char xml:id="alum2">
                <mapping type="default">{alum}</mapping>
-               <mapping type="PUA">&#xe1a0;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>math. Mark that identifies following listed points as defining an angle, physically rendered as horizontal brace or similar mark, Cp. ang</desc>
             <char xml:id="angulum">
                <mapping type="default">{angulum}</mapping>
-               <mapping type="PUA">&#xe046;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical symbol for antimony. Unicode attaches both 'earth' and 'antimony' to the same (earth) codepoint. TCP separates into two entities.</desc>
             <char xml:id="antimony">
                <mapping type="default">{antimony}</mapping>
-               <mapping type="PUA">&#xe03b;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -254,14 +257,14 @@
                <mapping type="default">{arc}</mapping>
                <mapping type="Times New Roman">⌒</mapping>
                <mapping type="Arial Unicode MS">⌒</mapping>
-               <mapping type="PUA">&#xe047;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical or medical sign for arsenic: two small circles joined at their midpoints by vertical line, or attached, forming an 8-shaped symbol, usu tilted to the right.</desc>
             <char xml:id="arsenic2">
                <mapping type="default">{arsenic}</mapping>
-               <mapping type="PUA">&#xe042;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -270,7 +273,7 @@
                <charName>MUSICAL SYMBOL SINGLE FINAL BARLINE</charName>
                <mapping type="default">{final barline}</mapping>
                <mapping type="Unicode">𝄀</mapping>
-               <mapping type="PUA">&#xe041;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -278,21 +281,21 @@
             <char xml:id="bezoarMin">
                <mapping type="default">{Bezoar minerale}</mapping>
                <mapping type="Arial Unicode MS">♌</mapping>
-               <mapping type="PUA">&#xe0b6;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical or medical sign for blood; resembles a down-pointing triangle bisected horizontally by a line and with a dot in the upper half</desc>
             <char xml:id="blood">
                <mapping type="default">{blood}</mapping>
-               <mapping type="PUA">&#xe09a;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical sign for cinnabar, alternative form; downward-pointing open triangle surmounted by +</desc>
             <char xml:id="cinnabar2">
                <mapping type="default">{cinnabar}</mapping>
-               <mapping type="PUA">&#xe1a3;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -301,7 +304,7 @@
                <mapping type="default">{circdot}</mapping>
                <mapping type="Times New Roman">⊙</mapping>
                <mapping type="Arial Unicode MS">⊙</mapping>
-               <mapping type="PUA">&#xe01d;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -310,7 +313,7 @@
                <charName>LATIN SMALL LETTER C WITH MACRON</charName>
                <mapping type="default">{cmacr}</mapping>
                <mapping type="Arial Unicode MS">c̄</mapping>
-               <mapping type="PUA">&#xe000;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -318,7 +321,7 @@
             <char xml:id="commonTime-allegro">
                <charName>MUSICAL SYMBOL COMMON TIME ALLEGRO</charName>
                <mapping type="default">{common time (allegro)}</mapping>
-               <mapping type="PUA">&#xe0b0;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -326,7 +329,7 @@
             <char xml:id="commonTime-largo">
                <charName>MUSICAL SYMBOL CUT TIME</charName>
                <mapping type="default">{common time (largro)}</mapping>
-               <mapping type="PUA">&#x1d135;</mapping>
+               <mapping type="PUA">𝄵</mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -334,14 +337,14 @@
             <char xml:id="cross">
                <mapping type="default">{cross}</mapping>
                <mapping type="Arial Unicode MS">✚</mapping>
-               <mapping type="PUA">&#xe01e;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical or medical sign for day: resembles a small circle with a vertical line sticking up from it (vertically or slanted to the right), conjunction (U+260C). Unicode attaches both 'conjunction' and 'day' to this 'conjunction' codepoint. TCP separates these senses into two entities.</desc>
             <char xml:id="day">
                <mapping type="default">{day}</mapping>
-               <mapping type="PUA">&#xe09b;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -350,7 +353,7 @@
                <charName>L-shaped decimal separator</charName>
                <mapping type="default">{.}</mapping>
                <mapping type="Arial Unicode MS">⌊</mapping>
-               <mapping type="PUA">&#xe090;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -359,7 +362,7 @@
                <mapping type="default">{.}</mapping>
                <mapping type="Arial Unicode MS">.</mapping>
                <mapping type="Arial Unicode MS">.</mapping>
-               <mapping type="PUA">&#xe048;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -368,21 +371,21 @@
                <charName>LATIN SMALL LETTER D WITH COMBINING REVERSED COMMA ABOVE</charName>
                <mapping type="default">{dhook}</mapping>
                <mapping type="Arial Unicode MS">d̔</mapping>
-               <mapping type="PUA">&#xe0ac;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical direct symbol (resembles check mark)</desc>
             <char xml:id="direct">
                <mapping type="default">{direct}</mapping>
-               <mapping type="PUA">&#xe064;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for divisor or divided by (formally identical to eccentric greater than symbol (entity morethan), ⫍ SQUARE LEFT OPEN BOX OPERATOR displays as box</desc>
             <char xml:id="divisor">
                <mapping type="default">{divisor}</mapping>
-               <mapping type="PUA">&#xe049;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -390,7 +393,7 @@
             <char xml:id="dnc-female">
                <mapping type="default">{female dancer}</mapping>
                <mapping type="Arial Unicode MS">☽</mapping>
-               <mapping type="PUA">&#xe09c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -398,7 +401,7 @@
             <char xml:id="dnc-male">
                <mapping type="default">{male dancer}</mapping>
                <mapping type="Arial Unicode MS">☉</mapping>
-               <mapping type="PUA">&#xe010;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -406,7 +409,7 @@
             <char xml:id="dnc-repeat">
                <mapping type="default">{repeat strain once}</mapping>
                <mapping type="Arial Unicode MS"> .̲̲ </mapping>
-               <mapping type="PUA">&#xe039;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -414,7 +417,7 @@
             <char xml:id="dnc-repeat2">
                <mapping type="default">{repeat strain twice}</mapping>
                <mapping type="Arial Unicode MS"> :̲̲ </mapping>
-               <mapping type="PUA">&#xe038;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -422,7 +425,7 @@
             <char xml:id="dnc-repeat3">
                <mapping type="default">{repeat strain once}</mapping>
                <mapping type="Arial Unicode MS"> .̲:̲̲ </mapping>
-               <mapping type="PUA">&#xe099;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -430,7 +433,7 @@
             <char xml:id="dnc-startover">
                <mapping type="default">{repeat entire tune}</mapping>
                <mapping type="Arial Unicode MS">⁜</mapping>
-               <mapping type="PUA">&#xe009;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -439,7 +442,7 @@
                <charName>DRAM</charName>
                <mapping type="default">{dram}</mapping>
                <mapping type="Arial Unicode MS">ʒ</mapping>
-               <mapping type="PUA">&#xe037;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -448,7 +451,7 @@
                <mapping type="default">{inverted asterism}</mapping>
                <mapping type="Arial Unicode MS">{inverted ⁂}</mapping>
                <mapping type="Unicode">*⁎*</mapping>
-               <mapping type="PUA">&#xe020;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -457,21 +460,21 @@
                <mapping type="default">{endq}</mapping>
                <mapping type="Times New Roman">”</mapping>
                <mapping type="Arial Unicode MS">”</mapping>
-               <mapping type="PUA">&#xe02b;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>9-shaped abbrev. for 'es'</desc>
             <char xml:id="es">
                <mapping type="default">{es}</mapping>
-               <mapping type="PUA">&#xe015;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>single character or ligature meaning ampersand+c or etc, especially in early Caxtons</desc>
             <char xml:id="etc">
                <mapping type="default">{etc}</mapping>
-               <mapping type="PUA">&#xe016;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -481,7 +484,7 @@
                <mapping type="default">{female}</mapping>
                <mapping type="Times New Roman">♀</mapping>
                <mapping type="Arial Unicode MS">♀</mapping>
-               <mapping type="PUA">&#xe045;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -489,14 +492,14 @@
                <charName>HEBREW LETTER FINAL LAMED</charName>
                <mapping type="default">{final lamed}</mapping>
                <mapping type="Arial Unicode MS">ﬥ</mapping>
-               <mapping type="PUA">&#xe063;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>five dashes arranged as quincunx (like fivespot on dice)</desc>
             <char xml:id="fivedash">
                <mapping type="default">{fivedash}</mapping>
-               <mapping type="PUA">&#xe021;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -504,14 +507,14 @@
             <char xml:id="fjlig">
                <charName>LATIN SMALL LIGATURE FJ</charName>
                <mapping type="default">{fj}</mapping>
-               <mapping type="PUA">&#xe07d;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical sign for glass; circle with horizontal line attached externally at center right</desc>
             <char xml:id="glass">
                <mapping type="default">{glass}</mapping>
-               <mapping type="PUA">&#xe0a6;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -519,7 +522,7 @@
             <char xml:id="hDagger">
                <mapping type="default">{horizontal double dagger}</mapping>
                <mapping type="Arial Unicode MS">{horizontal ‡}</mapping>
-               <mapping type="PUA">&#xe08e;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -527,7 +530,7 @@
             <char xml:id="halfcross">
                <mapping type="default">{half cross}</mapping>
                <mapping type="Arial Unicode MS">⊢</mapping>
-               <mapping type="PUA">&#xe07c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -536,14 +539,14 @@
                <mapping type="default">{heart}</mapping>
                <mapping type="Times New Roman">♡</mapping>
                <mapping type="Arial Unicode MS">♡</mapping>
-               <mapping type="PUA">&#xe022;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for higher or more acute term (open triangle pointing up with horizontal stroke below), ⩟ LOGICAL AND WITH UNDERBAR displays as box</desc>
             <char xml:id="higherterm">
                <mapping type="default">{higher term}</mapping>
-               <mapping type="PUA">&#xe04a;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -552,7 +555,7 @@
                <mapping type="default">{higher than}</mapping>
                <mapping type="Times New Roman">∧</mapping>
                <mapping type="Arial Unicode MS">∧</mapping>
-               <mapping type="PUA">&#xe04b;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -562,7 +565,7 @@
                <mapping type="default">{hyperlemniscus}</mapping>
                <mapping type="Times New Roman">.—̇</mapping>
                <mapping type="Arial Unicode MS">∸</mapping>
-               <mapping type="PUA">&#xe03e;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -572,7 +575,7 @@
                <mapping type="default">{hypolemniscus}</mapping>
                <mapping type="Times New Roman">.6</mapping>
                <mapping type="Arial Unicode MS">܋</mapping>
-               <mapping type="PUA">&#xe0a7;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -580,7 +583,7 @@
             <char xml:id="idagger">
                <mapping type="default">{inverted dagger}</mapping>
                <mapping type="Arial Unicode MS">{inverted †}</mapping>
-               <mapping type="PUA">&#xe023;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -589,7 +592,7 @@
                <charName>INVERTED PILCROW SIGN</charName>
                <mapping type="default">{inverted pilcrow}</mapping>
                <mapping type="Arial Unicode MS">⁋</mapping>
-               <mapping type="PUA">&#xe00a;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -597,7 +600,7 @@
             <char xml:id="ldagger">
                <mapping type="default">{left dagger}</mapping>
                <mapping type="Arial Unicode MS">{left †}</mapping>
-               <mapping type="PUA">&#xe085;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -605,7 +608,7 @@
             <char xml:id="ldiple">
                <mapping type="default">{diple}</mapping>
                <mapping type="Arial Unicode MS">‹</mapping>
-               <mapping type="PUA">&#xe0a5;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -613,14 +616,14 @@
             <char xml:id="leaf">
                <mapping type="default">{leaf}</mapping>
                <mapping type="Arial Unicode MS">❧</mapping>
-               <mapping type="PUA">&#xe024;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>span deliberately left blank, to be filled in by hand, as in a legal form</desc>
             <char xml:id="leftblank">
                <mapping type="default">{left blank}</mapping>
-               <mapping type="PUA">&#xe030;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -630,7 +633,7 @@
                <mapping type="default">{lemniscus}</mapping>
                <mapping type="Times New Roman">∻</mapping>
                <mapping type="Arial Unicode MS">÷</mapping>
-               <mapping type="PUA">&#xe091;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -639,7 +642,7 @@
                <mapping type="default">{less than}</mapping>
                <mapping type="Times New Roman">&lt;</mapping>
                <mapping type="Arial Unicode MS">‹</mapping>
-               <mapping type="PUA">&#xe04c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -648,14 +651,14 @@
                <charName>LATIN SMALL LETTER L WITH MODIFIER LETTER RIGHT HALF RING</charName>
                <mapping type="default">{lloop}</mapping>
                <mapping type="Arial Unicode MS">lʾ</mapping>
-               <mapping type="PUA">&#xe095;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for logarithm</desc>
             <char xml:id="logarithm">
                <mapping type="default">{logarithm}</mapping>
-               <mapping type="PUA">&#xe04d;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -663,7 +666,7 @@
             <char xml:id="lowerterm">
                <mapping type="default">{lower term}</mapping>
                <mapping type="Arial Unicode MS">⊽</mapping>
-               <mapping type="PUA">&#xe04e;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -672,7 +675,7 @@
                <mapping type="default">{lower than}</mapping>
                <mapping type="Times New Roman">∨</mapping>
                <mapping type="Arial Unicode MS">∨</mapping>
-               <mapping type="PUA">&#xe04f;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -681,7 +684,7 @@
                <mapping type="default">{reversed punctus elevatus}</mapping>
                <mapping type="Times New Roman">؛</mapping>
                <mapping type="Arial Unicode MS">؛</mapping>
-               <mapping type="PUA">&#xe02c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -689,7 +692,7 @@
             <char xml:id="lquest">
                <mapping type="default">{reversed question mark}</mapping>
                <mapping type="Arial Unicode MS">{reversed ?}</mapping>
-               <mapping type="PUA">&#xe075;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -697,7 +700,7 @@
             <char xml:id="magnesia">
                <mapping type="default">{magnesia}</mapping>
                <mapping type="Arial Unicode MS">○→</mapping>
-               <mapping type="PUA">&#xe098;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -707,7 +710,7 @@
                <mapping type="default">{male}</mapping>
                <mapping type="Times New Roman">♂</mapping>
                <mapping type="Arial Unicode MS">♂</mapping>
-               <mapping type="PUA">&#xe03c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -715,7 +718,7 @@
             <char xml:id="minim">
                <mapping type="default">{drop}</mapping>
                <mapping type="Arial Unicode MS">♏</mapping>
-               <mapping type="PUA">&#xe03a;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -723,7 +726,7 @@
             <char xml:id="minim2">
                <mapping type="default">{drop}</mapping>
                <mapping type="Arial Unicode MS">♍</mapping>
-               <mapping type="PUA">&#xe03d;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -732,28 +735,28 @@
                <mapping type="default">{more than}</mapping>
                <mapping type="Times New Roman">&gt;</mapping>
                <mapping type="Arial Unicode MS">›</mapping>
-               <mapping type="PUA">&#xe050;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for multiplier or multiplied by (resembles m followed by tilde)</desc>
             <char xml:id="multiplier">
                <mapping type="default">{multiplier}</mapping>
-               <mapping type="PUA">&#xe051;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>generic musical note symbol. Display as dingbat-type quarter note (U+2669)</desc>
             <char xml:id="musicNote">
                <mapping type="default">♩</mapping>
-               <mapping type="PUA">&#xe0b1;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical symbol demisemiquaver note, 𝅘𝅥𝅰 MUSICAL SYMBOL THIRTY-SECOND NOTE displays as box.</desc>
             <char xml:id="notedemisemiquaver">
                <mapping type="default">{demisemiquaver note}</mapping>
-               <mapping type="PUA">&#xe069;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -761,7 +764,7 @@
             <char xml:id="ohkact">
                <mapping type="default">{ohkact}</mapping>
                <mapping type="Arial Unicode MS">ǫ́</mapping>
-               <mapping type="PUA">&#xe003;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -769,7 +772,7 @@
             <char xml:id="oil2">
                <mapping type="default">{oil}</mapping>
                <mapping type="Arial Unicode MS">⦾</mapping>
-               <mapping type="PUA">&#xe0aa;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -779,7 +782,7 @@
                <mapping type="default">{pashtayin}</mapping>
                <mapping type="Times New Roman">֙ ֨</mapping>
                <mapping type="Arial Unicode MS">֙ ֨</mapping>
-               <mapping type="PUA">&#xe017;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -788,56 +791,56 @@
                <charName>LATIN SMALL LETTER P WITH GRAVE</charName>
                <mapping type="default">{pgrave}</mapping>
                <mapping type="Arial Unicode MS">p̀</mapping>
-               <mapping type="PUA">&#xe001;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol of potestas or power (perhaps a form of powerof1 entity)</desc>
             <char xml:id="potestas">
                <mapping type="default">{potestas}</mapping>
-               <mapping type="PUA">&#xe052;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for root or quantity to the first power</desc>
             <char xml:id="powerof1">
                <mapping type="default">{powerof1}</mapping>
-               <mapping type="PUA">&#xe053;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for square or quadrat or quantity to the power of two</desc>
             <char xml:id="powerof2">
                <mapping type="default">{powerof2}</mapping>
-               <mapping type="PUA">&#xe054;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for cube or quantity to the power of three</desc>
             <char xml:id="powerof3">
                <mapping type="default">{powerof3}</mapping>
-               <mapping type="PUA">&#xe055;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for square of square (foursquared quadrat or quadrat of quadrat) or quantity to the power of four</desc>
             <char xml:id="powerof4">
                <mapping type="default">{powerof4}</mapping>
-               <mapping type="PUA">&#xe056;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for sursolid or quantity to the power of five</desc>
             <char xml:id="powerof5">
                <mapping type="default">{powerof5}</mapping>
-               <mapping type="PUA">&#xe057;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for squared cube (quadrat of cube) or quantity to the power of six</desc>
             <char xml:id="powerof6">
                <mapping type="default">{powerof6}</mapping>
-               <mapping type="PUA">&#xe058;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -845,14 +848,14 @@
             <char xml:id="pprime">
                <mapping type="default">{penta-prime}</mapping>
                <mapping type="Arial Unicode MS">'''''</mapping>
-               <mapping type="PUA">&#xe059;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for multiplication product (resembles m with superscripted i or acute)</desc>
             <char xml:id="product">
                <mapping type="default">{product}</mapping>
-               <mapping type="PUA">&#xe05a;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -861,7 +864,7 @@
                <mapping type="default">{continued proportion}</mapping>
                <mapping type="Times New Roman">∝</mapping>
                <mapping type="Arial Unicode MS">∝</mapping>
-               <mapping type="PUA">&#xe05b;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -869,7 +872,7 @@
             <char xml:id="punc">
                <mapping type="default">{.}</mapping>
                <mapping type="Arial Unicode MS">▪</mapping>
-               <mapping type="PUA">&#xe02d;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -877,7 +880,7 @@
             <char xml:id="punctel">
                <charName>PUNCTUS ELEVATUS</charName>
                <mapping type="default">{punctel}</mapping>
-               <mapping type="PUA">&#xe02e;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -886,7 +889,7 @@
                <charName>LATIN SMALL LETTER Q WITH ACUTE</charName>
                <mapping type="default">{qacute}</mapping>
                <mapping type="Arial Unicode MS">q́</mapping>
-               <mapping type="PUA">&#xe002;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -894,21 +897,21 @@
             <char xml:id="qprime">
                <mapping type="default">{quadruple prime}</mapping>
                <mapping type="Arial Unicode MS">''''</mapping>
-               <mapping type="PUA">&#xe05c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>quad dot leaning left (without specific meaning). Displays as alternating high dots and periods (full stops).</desc>
             <char xml:id="quaddotl">
                <mapping type="default">˙.˙.</mapping>
-               <mapping type="PUA">&#xe026;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>quad dot leaning right (without specific meaning) Displays as alternating high dots and periods (full stops).</desc>
             <char xml:id="quaddotr">
                <mapping type="default">.˙.˙</mapping>
-               <mapping type="PUA">&#xe027;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -917,14 +920,14 @@
                <mapping type="default">{quadrine}</mapping>
                <mapping type="Times New Roman">□</mapping>
                <mapping type="Arial Unicode MS">□</mapping>
-               <mapping type="PUA">&#xe032;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>mathematical symbol for quotient (resembles divisor with slight hook)</desc>
             <char xml:id="quotient">
                <mapping type="default">{quotient}</mapping>
-               <mapping type="PUA">&#xe05d;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -932,7 +935,7 @@
             <char xml:id="ration">
                <mapping type="default">{ration}</mapping>
                <mapping type="Arial Unicode MS">ℛ</mapping>
-               <mapping type="PUA">&#xe05e;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -940,7 +943,7 @@
             <char xml:id="rdagger">
                <mapping type="default">{right dagger}</mapping>
                <mapping type="Arial Unicode MS">{right †}</mapping>
-               <mapping type="PUA">&#xe086;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -948,35 +951,35 @@
             <char xml:id="rdiple">
                <mapping type="default">{diple}</mapping>
                <mapping type="Arial Unicode MS">›</mapping>
-               <mapping type="PUA">&#xe097;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical repeat symbol resembles :||: (not in Unicode except as combination of 𝄈, 𝄁, and 𝄈), 𝄈 MUSICAL SYMBOL REPEAT DOTS displays as box.</desc>
             <char xml:id="repeat">
                <mapping type="default">{repeat}</mapping>
-               <mapping type="PUA">&#xe067;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical symbol demisemiquaver rest, 𝅀 MUSICAL SYMBOL THIRTY-SECOND REST displays as box.</desc>
             <char xml:id="restdemisemiquaver">
                <mapping type="default">{demisemiquaver rest}</mapping>
-               <mapping type="PUA">&#xe06c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical symbol quaver rest or rest commensurate with nota semiminima black, 𝄾 MUSICAL SYMBOL EIGHTH REST displays as box.</desc>
             <char xml:id="restquaver">
                <mapping type="default">{quaver rest}</mapping>
-               <mapping type="PUA">&#xe06a;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical symbol semiquaver rest or rest commensurate with nota fusa black, 𝄿 MUSICAL SYMBOL SIXTEENTH REST displays as box.</desc>
             <char xml:id="restsemiquaver">
                <mapping type="default">{semiquaver rest}</mapping>
-               <mapping type="PUA">&#xe06b;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -984,21 +987,21 @@
             <char xml:id="rhalfcross">
                <mapping type="default">{right half cross}</mapping>
                <mapping type="Arial Unicode MS">⊣</mapping>
-               <mapping type="PUA">&#xe08c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>roman numeral 1000000 (quadrupled M)</desc>
             <char xml:id="rn1000000">
                <mapping type="default">{roman 1000000}</mapping>
-               <mapping type="PUA">&#xe060;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>roman numeral 500000 (quadrupled D)</desc>
             <char xml:id="rn500000">
                <mapping type="default">{roman 500000}</mapping>
-               <mapping type="PUA">&#xe062;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1006,7 +1009,7 @@
             <char xml:id="root">
                <mapping type="default">{root}</mapping>
                <mapping type="Arial Unicode MS">ℛ</mapping>
-               <mapping type="PUA">&#xe0b3;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1014,7 +1017,7 @@
             <char xml:id="rsect">
                <mapping type="default">{reversed section}</mapping>
                <mapping type="Arial Unicode MS">{reversed §}</mapping>
-               <mapping type="PUA">&#xe074;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1022,21 +1025,21 @@
             <char xml:id="salarmon2">
                <mapping type="default">{sal armoniac}</mapping>
                <mapping type="Arial Unicode MS">⊕</mapping>
-               <mapping type="PUA">&#xe0b4;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical sharp symbol, x-shaped variant form; possibly ancestor of modern double sharp; use this entity regardless of which meaning it has; use this entity if shape is roughly like x; later versions resemble modern sharp symbol. for modern #-shaped sharp (with horizontal strokes), use ISO entity sharp, 𝄪 MUSICAL SYMBOL DOUBLE SHARP (but display U+266F, ♯).</desc>
             <char xml:id="sharp2">
                <mapping type="default">♯</mapping>
-               <mapping type="PUA">&#xe065;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical sharp symbol resembling mirror image of modern natural symbol (Use for p/d-shaped symbol regardless of whether it equates to a sharp or a natural; for b/q-shaped symbol use ISO natur entity), U+1D1CF MUSICAL SYMBOL CROIX.</desc>
             <char xml:id="sharpb">
                <mapping type="default">{sharpb}</mapping>
-               <mapping type="PUA">&#xe066;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1044,7 +1047,7 @@
             <char xml:id="shilling">
                <mapping type="default">{/}</mapping>
                <mapping type="Arial Unicode MS">ʃ</mapping>
-               <mapping type="PUA">&#xe01a;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1053,7 +1056,7 @@
                <charName>LATIN SMALL LETTER ESH WITH OVERSTRUCK STROKE</charName>
                <mapping type="default">{s with loop}</mapping>
                <mapping type="Arial Unicode MS">s̄</mapping>
-               <mapping type="PUA">&#xe0ad;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1062,7 +1065,7 @@
                <charName>DOT BELOW</charName>
                <mapping type="default">{.}</mapping>
                <mapping type="Arial Unicode MS">․</mapping>
-               <mapping type="PUA">&#xe01c;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1071,7 +1074,7 @@
                <charName>SPACING INVERTED BREVE</charName>
                <mapping type="default"></mapping>
                <mapping type="Arial Unicode MS">^</mapping>
-               <mapping type="PUA">&#xe096;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1080,7 +1083,7 @@
                <charName>SPACING X ABOVE</charName>
                <mapping type="default">{X ABOVE}</mapping>
                <mapping type="Arial Unicode MS"> ͯ</mapping>
-               <mapping type="PUA">&#xe0b2;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1089,7 +1092,7 @@
                <mapping type="default">{startq}</mapping>
                <mapping type="Times New Roman">“</mapping>
                <mapping type="Arial Unicode MS">“</mapping>
-               <mapping type="PUA">&#xe02f;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1097,14 +1100,14 @@
             <char xml:id="stella">
                <mapping type="default">{stella}</mapping>
                <mapping type="Arial Unicode MS">✴</mapping>
-               <mapping type="PUA">&#xe036;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical sign for talc(k); resembles capital X.</desc>
             <char xml:id="talc">
                <mapping type="default">{talc}</mapping>
-               <mapping type="PUA">&#xe0a8;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1112,56 +1115,56 @@
             <char xml:id="tdagger">
                <mapping type="default">{triple dagger}</mapping>
                <mapping type="Arial Unicode MS">‡̶</mapping>
-               <mapping type="PUA">&#xe028;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical mensuration symbol indicating  time imperfect (a c-shaped broken circle) and prolation imperfect (no dot or prick) with cross indicating double diminution</desc>
             <char xml:id="timeimperf-prolatimperf-x">
                <mapping type="default">{timeimperf-prolatimperf-x}</mapping>
-               <mapping type="PUA">&#xe071;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical mensuration symbol indicating  time imperfect (a c-shaped broken circle) and prolation imperfect (dot or prick) reversed to indicate diminution</desc>
             <char xml:id="timeimperf-prolatperf-rev">
                <mapping type="default">{timeimperf-prolatperf-rev}</mapping>
-               <mapping type="PUA">&#xe072;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical mensuration symbol indicating  time imperfect (a c-shaped broken circle) and prolation imperfect (dot or prick) reversed and with a stroke to indicate double diminution</desc>
             <char xml:id="timeimperf-prolatperf-rev-str">
                <mapping type="default">{timeimperf-prolatperf-rev-str}</mapping>
-               <mapping type="PUA">&#xe073;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical mensuration symbol indicating  time imperfect (a c-shaped broken circle) and prolation imperfect (dot or prick) with stroke indicating diminution</desc>
             <char xml:id="timeimperf-prolatperf-str">
                <mapping type="default">{timeimperf-prolatperf-str}</mapping>
-               <mapping type="PUA">&#xe06f;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical mensuration symbol indicating time perfect (a circle) and prolation imperfect (no dot or prick) with stroke indicating diminution</desc>
             <char xml:id="timeperf-prolatimperf-str">
                <mapping type="default">{timeperf-prolatimperf-str}</mapping>
-               <mapping type="PUA">&#xe06d;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical mensuration symbol indicating time perfect (a circle) and prolation imperfect (no dot or prick) with cross indicating double diminution</desc>
             <char xml:id="timeperf-prolatimperf-x">
                <mapping type="default">{timeperf-prolatimperf-x}</mapping>
-               <mapping type="PUA">&#xe070;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical mensuration symbol indicating  time perfect (a circle) and prolation perfect (dot or prick) with stroke indicating diminution</desc>
             <char xml:id="timeperf-prolatperf-str">
                <mapping type="default">{timeperf-prolatperf-str}</mapping>
-               <mapping type="PUA">&#xe06e;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1169,7 +1172,7 @@
             <char xml:id="trefoil">
                <mapping type="default">{trefoil}</mapping>
                <mapping type="Arial Unicode MS">♣</mapping>
-               <mapping type="PUA">&#xe08f;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1177,7 +1180,7 @@
             <char xml:id="triapost">
                <mapping type="default">{triapost}</mapping>
                <mapping type="Arial Unicode MS">','</mapping>
-               <mapping type="PUA">&#xe029;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1187,7 +1190,7 @@
                <mapping type="default">{trine}</mapping>
                <mapping type="Times New Roman">△</mapping>
                <mapping type="Arial Unicode MS">△</mapping>
-               <mapping type="PUA">&#xe034;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1195,14 +1198,14 @@
             <char xml:id="trine2">
                <mapping type="default">{trine}</mapping>
                <mapping type="Arial Unicode MS">⊦</mapping>
-               <mapping type="PUA">&#xe035;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>upside-down-5 used in MED T volume several times</desc>
             <char xml:id="usd5">
                <mapping type="default">{inverted 5}</mapping>
-               <mapping type="PUA">&#xe004;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1210,35 +1213,35 @@
                <charName>LATIN SMALL LETTER V WITH BREVE</charName>
                <mapping type="default">{Vbreve}</mapping>
                <mapping type="Arial Unicode MS">v̆</mapping>
-               <mapping type="PUA">&#xe080;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical or medical sign for verdigris (a mixture of copper salts); resembles the alchemical sign for sal ammoniac (in our only example, printer presumably hijacked the available glyph).</desc>
             <char xml:id="verdigris">
                <mapping type="default">{verdigris}</mapping>
-               <mapping type="PUA">&#xe0b7;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical sign for vitriol; alternative form, horizontally divided circle with + attached to right side</desc>
             <char xml:id="vitriol2">
                <mapping type="default">{vitriol}</mapping>
-               <mapping type="PUA">&#xe1a1;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>alchemical sign for vitriol (or chalcantum vitriolum, blue vitriol or copper sulphate); alternative form, vertically divided circle, right half also horizontally divided, with + attached to right side</desc>
             <char xml:id="vitriol3">
                <mapping type="default">{vitriol}</mapping>
-               <mapping type="PUA">&#xe1a2;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
             <desc>musical symbol for congruence of voices or beginning of vocal part</desc>
             <char xml:id="vocaljoin">
                <mapping type="default">{vocal join}</mapping>
-               <mapping type="PUA">&#xe068;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
          <charDecl>
@@ -1246,7 +1249,7 @@
             <char xml:id="yhwh">
                <mapping type="default">{YHWH}</mapping>
                <mapping type="Arial Unicode MS">יהוה</mapping>
-               <mapping type="PUA">&#xe019;</mapping>
+               <mapping type="PUA"></mapping>
             </char>
          </charDecl>
       </encodingDesc>
