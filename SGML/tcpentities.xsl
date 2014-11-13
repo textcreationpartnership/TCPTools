@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XSL:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:XSL="http://www.w3.org/1999/XSL/Transform"
+                exclude-result-prefixes="tei xs"
                 version="2.0">
    <XSL:template match="*">
       <XSL:copy>
@@ -14,11 +14,11 @@
    </XSL:template>
    <XSL:template match="@*">
       <XSL:attribute name="{name()}">
-         <XSL:value-of select="tei:entities(.,false())"/>
+         <XSL:sequence select="tei:entities(.,false())"/>
       </XSL:attribute>
    </XSL:template>
    <XSL:template match="text()">
-      <XSL:value-of select="tei:entities(.,true())"/>
+      <XSL:sequence select="tei:entities(.,true())"/>
    </XSL:template>
    <XSL:function name="tei:entities">
       <XSL:param name="words"/>

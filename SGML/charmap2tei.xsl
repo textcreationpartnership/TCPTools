@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<XSL:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0"
+<XSL:stylesheet 
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 		xmlns="http://www.tei-c.org/ns/1.0"
 		xmlns:XSL="http://www.w3.org/1999/XSL/Transform" 
@@ -88,7 +89,9 @@ of this software, even if advised of the possibility of such damage.
       </TEI>
     </XSL:result-document>
     <XSL:result-document href="tcpentities.xsl" method="xml">
-      <xsl:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0">
+      <xsl:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0"
+		exclude-result-prefixes="tei xs"
+		      version="2.0" xmlns="">
 	<xsl:template match="*">
 	  <xsl:copy>
 	    <xsl:apply-templates select="@*|*|processing-instruction()|comment()|text()" />
@@ -102,12 +105,12 @@ of this software, even if advised of the possibility of such damage.
 	<xsl:template match="@*">
 	  <xsl:attribute>
 	    <XSL:attribute name="name">{name()}</XSL:attribute>
-	    <xsl:value-of select="tei:entities(.,false())"/>
+	    <xsl:sequence select="tei:entities(.,false())"/>
 	  </xsl:attribute>
 	</xsl:template>
   
 	<xsl:template match="text()">
-	    <xsl:value-of select="tei:entities(.,true())"/>
+	    <xsl:sequence select="tei:entities(.,true())"/>
 	</xsl:template>
 
 	<xsl:function name="tei:entities">
