@@ -48,13 +48,11 @@
 	<arg value="-xno-expand-internal"/>
         <arg value="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
       </exec>
-      <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
       <xslt force="yes" style="${basedir}/tcpentities.xsl"
 	    in="@{dir}/Texts-XML/@{prefix}/@{name}.tmp"
 	    out="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
       </xslt>
-      <delete file="@{dir}/Texts-XML/@{prefix}/@{name}.tmp"/>
       <xslt force="yes" style="${xsl}/tcp/tcp2tei.xsl"
 	    in="@{dir}/Texts-XML/@{prefix}/@{name}.xml"
 	    out="@{dir}/Texts-TEI/@{prefix}/@{name}.xml">
@@ -64,6 +62,8 @@
       <runjing rngfile="${basedir}/tcp.rng"
 	       file="@{dir}/Texts-TEI/@{prefix}/@{name}.xml"
 	       failonerror="false"/>
+      <delete file="@{dir}/Texts-XML/@{prefix}/@{name}.tmp"/>
+      <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
 
     </sequential>
   </macrodef>

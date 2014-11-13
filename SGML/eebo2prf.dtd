@@ -697,7 +697,7 @@
 <!ATTLIST letter
 	id ID #IMPLIED
 	n CDATA #IMPLIED
-	lang CDATA #REQUIRED
+	lang CDATA #IMPLIED
 	rend CDATA #IMPLIED
 	subtype CDATA #IMPLIED >
 
