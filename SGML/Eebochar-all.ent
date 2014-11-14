@@ -868,6 +868,7 @@
 <!ENTITY sim SDATA "&sim;"--=TILDE OPERATOR -->
 <!ENTITY sime SDATA "&sime;"--=GEOMETRICALLY EQUIVALENT TO -->
 <!ENTITY square SDATA "&square;"--=WHITE SQUARE -->
+<!ENTITY squ SDATA "&square;"--=WHITE SQUARE -->
 <!ENTITY sub SDATA "&sub;"--=SUBSET OF -->
 <!ENTITY sube SDATA "&sube;"--=SUBSET OF OR EQUAL TO -->
 <!ENTITY sup SDATA "&sup;"--=SUPERSET OF -->

@@ -1309,6 +1309,7 @@
                <XSL:when test="regex-group(1)='spctilde'">˜</XSL:when>
                <XSL:when test="regex-group(1)='spcuml'">¨</XSL:when>
                <XSL:when test="regex-group(1)='square'">□</XSL:when>
+               <XSL:when test="regex-group(1)='squ'">□</XSL:when>
                <XSL:when test="regex-group(1)='squf'">■</XSL:when>
                <XSL:when test="regex-group(1)='star'">⋆</XSL:when>
                <XSL:when test="regex-group(1)='starf'">★</XSL:when>
