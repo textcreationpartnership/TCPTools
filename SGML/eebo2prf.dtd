@@ -432,7 +432,7 @@
 
 <!ATTLIST text 
 	id ID #IMPLIED
-	lang CDATA #REQUIRED 	
+	lang CDATA #IMPLIED 	
 	n CDATA #IMPLIED
 	type CDATA #IMPLIED
 	subtype CDATA #IMPLIED>

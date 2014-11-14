@@ -97,7 +97,35 @@ of this software, even if advised of the possibility of such damage.
 	    <xsl:apply-templates select="@*|*|processing-instruction()|comment()|text()" />
 	  </xsl:copy>
 	</xsl:template>
-	
+
+	<xsl:template match="LICENSE">
+	  <Q>
+	    <TEXT>
+	      <xsl:apply-templates select="@*"/>
+	      <BODY>
+		<DIV1 TYPE="license">
+		  <xsl:apply-templates select="*|processing-instruction()|comment()|text()" />
+		</DIV1>
+	      </BODY>
+	    </TEXT>
+	  </Q>
+	</xsl:template>
+
+	<xsl:template match="FLOATEXT">
+	  <Q>
+	    <TEXT>
+	      <xsl:apply-templates select="@*"/>
+	      <BODY>
+		<DIV1>
+		  <xsl:apply-templates select="@TYPE"/>
+		  <xsl:apply-templates select="@N"/>
+		  <xsl:apply-templates select="*|processing-instruction()|comment()|text()" />
+		</DIV1>
+	      </BODY>
+	    </TEXT>
+	  </Q>
+	</xsl:template>
+
 	<xsl:template match="comment()|processing-instruction()">
 	  <xsl:copy-of select="."/>
 	</xsl:template>
@@ -120,7 +148,24 @@ of this software, even if advised of the possibility of such damage.
               <xsl:matching-substring>
 		<xsl:choose>
 		  <xsl:when test="regex-group(1)='ballot'">&#x2610;</xsl:when>
-		  <xsl:when test="regex-group(1)='music'">&#x26BB;</xsl:when>
+		  <xsl:when
+		      test="regex-group(1)='music'">&#x26BB;</xsl:when>
+
+		  <xsl:when test="regex-group(1)='spcacute'">´</xsl:when>
+               <xsl:when test="regex-group(1)='spcbreve'">˘</xsl:when>
+               <xsl:when test="regex-group(1)='spccaron'">ˇ</xsl:when>
+               <xsl:when test="regex-group(1)='spccedil'">¸</xsl:when>
+               <xsl:when test="regex-group(1)='spccirc'">^</xsl:when>
+               <xsl:when test="regex-group(1)='spcdblac'">˝</xsl:when>
+               <xsl:when test="regex-group(1)='spcdot'">˙</xsl:when>
+               <xsl:when test="regex-group(1)='spcgrave'">`</xsl:when>
+               <xsl:when test="regex-group(1)='spcmacr'">¯</xsl:when>
+               <xsl:when test="regex-group(1)='spcogon'">˛</xsl:when>
+               <xsl:when test="regex-group(1)='spcrcomma'">῾</xsl:when>
+               <xsl:when test="regex-group(1)='spcring'">˚</xsl:when>
+               <xsl:when test="regex-group(1)='spctilde'">˜</xsl:when>
+               <xsl:when test="regex-group(1)='spcuml'">¨</xsl:when>
+
 		  <XSL:for-each select="//char[equiv/@compat='exact']">
 		    <XSL:sort select="ent/@tcp"/>
 		    <XSL:variable name="ent" select="ent/@tcp"/>

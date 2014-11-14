@@ -75,51 +75,6 @@ while (<>){
          #wrong singular to plural
          s/EXTENT="([2-9]|[0-9]{2})(\+?) ([a-z]*?[^s])"/EXTENT="$1$2 $3s"/g;
 
-# pfs:2011-03  1.4A Routine to convert syntactic sugar tags FLOATEXT and LICENSE
-
-s,</FLOATEXT>,</DIV1></BODY></TEXT></Q>,g;  #pfs:2011-03
-s,</LICENSE>,</DIV1></BODY></TEXT></Q>,g;  #pfs:2011-03
-
-# pfs:2011-12 modification to accommodate REND values in floating texts
-
-s,<LICENSE([^>]*)( REND="[^"]+")([^>]*)>,<LICENSE$1$3><REND>$2</REND>,g;
-s,<FLOATEXT([^>]*)( REND="[^"]+")([^>]*)>,<FLOATEXT$1$3><REND>$2</REND>,g;
-
-# pfs:2011-03  1.4A Routine to convert syntactic sugar tags FLOATEXT and LICENSE
-
-s,<LICENSE( LANG="[^"]+")>,<Q><TEXT$1><BODY><DIV1 TYPE="license">,g;  #pfs:2011-03
-s,<LICENSE( LANG="[^"]+") SUBTYPE="([^"]+)">,<Q><TEXT$1><BODY><DIV1 TYPE="license" SUBTYPE="$2">,g;  #pfs:2011-03
-s,<LICENSE SUBTYPE="([^"]+)"( LANG="[^"]+")>,<Q><TEXT$2><BODY><DIV1 TYPE="license" SUBTYPE="$1">,g;  #pfs:2011-03
-
-# with required @LANG before required @TYPE
-
-s,<FLOATEXT LANG="([^"]+)" TYPE="([^"]+)">,<Q><TEXT LANG="$1"><BODY><DIV1 TYPE="$2">,g;  #pfs:2011-03
-
-# and with optional @N first, second, or third
-
-s,<FLOATEXT N="([^"]+)" LANG="([^"]+)" TYPE="([^"]+)">,<Q><TEXT LANG="$2"><BODY><DIV1 TYPE="$3" N="$1">,g;  #pfs:2012-10
-s,<FLOATEXT LANG="([^"]+)" N="([^"]+)" TYPE="([^"]+)">,<Q><TEXT LANG="$1"><BODY><DIV1 TYPE="$3" N="$2">,g;  #pfs:2012-10
-s,<FLOATEXT LANG="([^"]+)" TYPE="([^"]+)" N="([^"]+)">,<Q><TEXT LANG="$1"><BODY><DIV1 TYPE="$2" N="$3">,g;  #pfs:2012-10
-
-# with required @TYPE before required @LANG
-
-s,<FLOATEXT TYPE="([^"]+)" LANG="([^"]+)">,<Q><TEXT LANG="$2"><BODY><DIV1 TYPE="$1">,g;  #pfs:2011-03
-
-# and with optional @N first, second, or third
-
-s,<FLOATEXT N="([^"]+)" TYPE="([^"]+)" LANG="([^"]+)">,<Q><TEXT LANG="$3"><BODY><DIV1 TYPE="$2" N="$1">,g;  #pfs:2012-10
-s,<FLOATEXT TYPE="([^"]+)" N="([^"]+)" LANG="([^"]+)">,<Q><TEXT LANG="$3"><BODY><DIV1 TYPE="$1" N="$2">,g;  #pfs:2012-10
-s,<FLOATEXT TYPE="([^"]+)" LANG="([^"]+)" N="([^"]+)">,<Q><TEXT LANG="$2"><BODY><DIV1 TYPE="$1" N="$3">,g;  #pfs:2012-10
-
-
-# pfs:2011-12 modification to accommodate REND values in floating texts
-
-s,><REND>([^<]+)</REND>,$1>,g;
-
-# Experimental bit to merge subtypes into types
-#
-# s,( SUBTYPE="[^"]+")([^>]*)( TYPE="[^"]+"),$3$1$2,g;
-# s, TYPE="([^"]+)"([^>]*) SUBTYPE="([^"]+)", TYPE="$1 ($3)"$2,g;
 
 
 # pfs:2010-03  1.4B Routine to convert most underscores to SEGs:
@@ -351,22 +306,5 @@ s#\{templowbar\}#_#g;
          #Convert tilde to combining character
          s/\~/&cmbmacr;/g; #&cmbmacr;=macron, &#x0303;=tilde
       
-         #substitute tcp spacing diacritical marks
-         #for indistinct isodia entities
-         s/&acute;/&spcacute;/g;
-         s/&breve;/&spcbreve;/g;
-         s/&caron;/&spccaron;/g;
-         s/&cedil;/&spccedil;/g;
-         s/&circ;/&spccirc;/g;
-         s/&dblac;/&spcdblac;/g;
-         s/&dot;/&spcdot;/g;
-         s/&dotb;/&spcdotb;/g;
-         s/&grave;/&spcgrave;/g;
-         s/&macr;/&spcmacr;/g;
-         s/&ogon;/&spcogon;/g;
-         s/&ring;/&spcring;/g;
-         s/&tilde;/&spctilde;/g;
-         s/&uml;/&spcuml;/g;
-
 	 print;
        }
