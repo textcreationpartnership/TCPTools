@@ -34,13 +34,13 @@ then
 	    cat anthead.xml> $i.xml 
 	    perl -p -e "s:$source/Texts-SGML/(.*)/(.*).sgm:<doconvert dir='$source' prefix='\$1' name='\$2'/>:" $i >>$i.xml
 	    cat anttail.xml >> $i.xml
-	    ANT_OPTS="-Xss2m -Xmx752m" time nohup ant -lib lib/saxon9he.jar:lib/jing.jar -Dxsl=$xsl -Dbasedir=`pwd` -f $i.xml >& $i.LOG & 
+	    ANT_OPTS="-Xss2m -Xmx752m -Djdk.xml.entityExpansionLimit=0" time nohup ant -lib lib/saxon9he.jar:lib/jing.jar -Dxsl=$xsl -Dbasedir=`pwd` -f $i.xml >& $i.LOG & 
 	done
     else
 	cat anthead.xml> test$name.xml 
 	cat $textlist | perl -p -e "s:(...)(.*):<doconvert dir='$source' prefix='\$1' name='\$1\$2'/>:"   >> test$name.xml
 	cat anttail.xml >> test$name.xml
-	ANT_OPTS="-Xss2m -Xmx752m" ant -Dxsl=$xsl -lib lib/saxon9he.jar:lib/jing.jar -Dbasedir=`pwd` -f test$name.xml 
+	ANT_OPTS="-Xss2m -Xmx752m -Djdk.xml.entityExpansionLimit=0" ant -Dxsl=$xsl -lib lib/saxon9he.jar:lib/jing.jar -Dbasedir=`pwd` -f test$name.xml 
     fi
 else
     echo test $test
@@ -49,5 +49,5 @@ else
     cat anthead.xml> test$name.xml 
     echo "<doconvert dir='$source' prefix='$D' name='$F'/>"   >> test$name.xml
     cat anttail.xml >> test$name.xml
-    ANT_OPTS="-Xss2m -Xmx752m" ant -Dxsl=$xsl -lib lib/saxon9he.jar:lib/jing.jar -Dbasedir=`pwd` -f test$name.xml 
+    ANT_OPTS="-Xss2m -Xmx752m -Djdk.xml.entityExpansionLimit=0" ant -Dxsl=$xsl -lib lib/saxon9he.jar:lib/jing.jar -Dbasedir=`pwd` -f test$name.xml 
 fi
