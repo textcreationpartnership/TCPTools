@@ -89,6 +89,7 @@ of this software, even if advised of the possibility of such damage.
             <xsl:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
           </xsl:copy>
         </xsl:template>
+
 	<xsl:template match="ETS">
 	  <xsl:copy>
 	    <xsl:variable name="hfile" select="concat('./',//IDG/@ID,'.hdr')"/>
@@ -99,6 +100,24 @@ of this software, even if advised of the possibility of such damage.
             <xsl:apply-templates
 		select="*|processing-instruction()|comment()|text()"/>
 	  </xsl:copy>
+	</xsl:template>
+
+	<xsl:template match="GAP/@EXTENT">
+	    <xsl:attribute name="EXTENT" select="normalize-space(.)"/>
+	</xsl:template>
+
+	<xsl:template match="TEXT[not(@LANG)]">
+          <xsl:copy>
+	    <xsl:attribute name="LANG">unk</xsl:attribute>
+            <xsl:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
+          </xsl:copy>
+	</xsl:template>
+
+	<xsl:template match="LETTER[not(@LANG)]">
+          <xsl:copy>
+	    <xsl:attribute name="LANG">unk</xsl:attribute>
+            <xsl:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
+          </xsl:copy>
 	</xsl:template>
 
         <xsl:template match="LICENSE">
@@ -113,6 +132,7 @@ of this software, even if advised of the possibility of such damage.
             </TEXT>
           </Q>
         </xsl:template>
+
         <xsl:template match="FLOATEXT">
           <Q>
             <TEXT>

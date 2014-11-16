@@ -28,19 +28,19 @@
     <sequential>
       <mkdir dir="@{dir}/Texts-XML/@{prefix}"/>
       <mkdir dir="@{dir}/Texts-TEI/@{prefix}"/>
-      <!--
+
       <echo>Running Perl ${basedir}/cleanSGML.pl on @{dir}/Texts-SGML/@{prefix}/@{name}.sgm</echo>
       <exec executable="perl" dir="${basedir}" input="@{dir}/Texts-SGML/@{prefix}/@{name}.sgm"
 	    output="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"
 	    failonerror="true" 	  logError="true">
 	<arg value="${basedir}/cleanSGML.pl"/>
       </exec>
-      -->
-      <echo>Running osx SGML conversion on @{dir}/Texts-SGML/@{prefix}/@{name}.sgm</echo>
+
+      <echo>Running osx SGML conversion on @{dir}/Texts-SGML/@{prefix}/@{name}.tmp</echo>
       <exec 
 	  logError="true"
 	  executable="osx" 
-	  output="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"
+	  output="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp2"
 	  failonerror="true" >
 	<arg value="-c${basedir}/catalog"/>
 	<arg value="-d@{dir}/Texts-SGML/@{prefix}"/>
@@ -48,10 +48,10 @@
 	<arg value="-xcomment"/>
 	<arg value="-xempty"/>
 	<arg value="-xno-expand-internal"/>
-        <arg value="@{dir}/Texts-SGML/@{prefix}/@{name}.sgm"/>
+        <arg value="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
       </exec>
       <xslt force="yes" style="${basedir}/cleantcp.xsl"
-	    in="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"
+	    in="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp2"
 	    out="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
       </xslt>
@@ -64,7 +64,8 @@
       <runjing rngfile="${basedir}/tcp.rng"
 	       file="@{dir}/Texts-TEI/@{prefix}/@{name}.xml"
 	       failonerror="false"/>
-<!--      <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>-->
+     <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
+     <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp2"/>
 
     </sequential>
   </macrodef>

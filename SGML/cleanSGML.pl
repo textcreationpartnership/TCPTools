@@ -1,15 +1,6 @@
 while (<>){
          s/="ILLEGIBLE"/="illegible"/g;
-	 s/<TEXT>/<TEXT lang="eng">/;
-	 s/<LETTER>/<LETTER lang="eng">/;
 	 #PART 1.4. FIX GAP EXTENTs
-         
-         #ensure DESC attributes are before EXTENT attributes
-         s/(<GAP[^>]*?)( EXTENT="[^"]*?")([^>]*?)( DESC="[^"]*?")([^>]*?>)/$1$4$2$3$5/g;
-         
-         #remove superfluous spaces from start and end of EXTENT
-         s/EXTENT="[ ']+([^"]*?)"/EXTENT="$1"/g;
-         s/EXTENT="([^"]*?)[ ']+"/EXTENT="$1"/g;
          
          #fix misordered EXTENTs where word comes before number
          s/EXTENT="([A-Za-z\+ ]*?)[ ']*?([0-9\+]*?)"/EXTENT="$2 $1"/g;
@@ -77,6 +68,10 @@ while (<>){
 
 
 
+s#_(<GAP[^>]*DESC="illegible"[^>]*EXTENT="1 letter"[^>]*>)#<DECOR>$1</DECOR>#g;
+s#_(<GAP[^>]*DESC="illegible"[^>]*EXTENT="1"[^>]*>)#<DECOR>$1</DECOR>#g;
+
+
 # pfs:2010-03  1.4B Routine to convert most underscores to SEGs:
 
 # pfs:2010-03  First rename underscores before letters in contexts where you do not want to convert them
@@ -88,9 +83,6 @@ s#(<STC[^>]+>[^<]+)_#$1\{templowbar\}#g;
 
 s#_([A-Za-z'])#<DECOR>$1</DECOR>#g;
 s#_(&[a-zA-Z0-9]+;)#<DECOR>$1</DECOR>#g;
-s#_(<GAP[^>]*DESC="illegible"[^>]*EXTENT="1 letter"[^>]*>)#<DECOR>$1</DECOR>#g;
-s#_(<GAP[^>]*DESC="illegible"[^>]*EXTENT="1"[^>]*>)#<DECOR>$1</DECOR>#g;
-
 
 # pfs:2010-03  combine multiple DECORs
 
