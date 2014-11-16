@@ -50,7 +50,7 @@
 	<arg value="-xno-expand-internal"/>
         <arg value="@{dir}/Texts-SGML/@{prefix}/@{name}.sgm"/>
       </exec>
-      <xslt force="yes" style="${basedir}/tcpentities.xsl"
+      <xslt force="yes" style="${basedir}/cleantcp.xsl"
 	    in="@{dir}/Texts-XML/@{prefix}/@{name}.tmp"
 	    out="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
