@@ -12,10 +12,10 @@
    <XSL:template match="ETS">
       <XSL:copy>
          <XSL:variable name="hfile" select="concat('./',//IDG/@ID,'.hdr')"/>
-         <XSL:if test="doc-available($hfile)">
-            <XSL:message> attempt to load header <XSL:value-of select="$hfile"/>
-            </XSL:message>
-            <XSL:copy-of select="doc($hfile)/*"/>
+         <XSL:message> attempt to load header <XSL:value-of select="resolve-uri($hfile,base-uri(/*))"/>
+         </XSL:message>
+         <XSL:if test="doc-available(resolve-uri($hfile,base-uri(/*)))">
+            <XSL:copy-of select="doc(resolve-uri($hfile,base-uri(/*)))/*"/>
          </XSL:if>
          <XSL:apply-templates select="*|processing-instruction()|comment()|text()"/>
       </XSL:copy>

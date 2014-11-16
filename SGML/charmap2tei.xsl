@@ -92,9 +92,9 @@ of this software, even if advised of the possibility of such damage.
 	<xsl:template match="ETS">
 	  <xsl:copy>
 	    <xsl:variable name="hfile" select="concat('./',//IDG/@ID,'.hdr')"/>
-            <xsl:if test="doc-available($hfile)">
-		<xsl:message> attempt to load header <xsl:value-of select="$hfile"/></xsl:message>
-		<xsl:copy-of select="doc($hfile)/*"/>
+            <xsl:if test="doc-available(resolve-uri($hfile,base-uri(/*)))">
+	        <xsl:message> load header <xsl:value-of select="resolve-uri($hfile,base-uri(/*))"/></xsl:message>
+		<xsl:copy-of select="doc(resolve-uri($hfile,base-uri(/*)))/*"/>
 	    </xsl:if>
             <xsl:apply-templates
 		select="*|processing-instruction()|comment()|text()"/>
