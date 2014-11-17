@@ -12,12 +12,27 @@
    <XSL:template match="ETS">
       <XSL:copy>
          <XSL:variable name="hfile" select="concat('./',//IDG/@ID,'.hdr')"/>
-         <XSL:message> attempt to load header <XSL:value-of select="resolve-uri($hfile,base-uri(/*))"/>
-         </XSL:message>
          <XSL:if test="doc-available(resolve-uri($hfile,base-uri(/*)))">
+            <XSL:message> load header <XSL:value-of select="resolve-uri($hfile,base-uri(/*))"/>
+            </XSL:message>
             <XSL:copy-of select="doc(resolve-uri($hfile,base-uri(/*)))/*"/>
          </XSL:if>
          <XSL:apply-templates select="*|processing-instruction()|comment()|text()"/>
+      </XSL:copy>
+   </XSL:template>
+   <XSL:template match="GAP/@EXTENT">
+      <XSL:attribute name="EXTENT" select="normalize-space(.)"/>
+   </XSL:template>
+   <XSL:template match="TEXT[not(@LANG)]">
+      <XSL:copy>
+         <XSL:attribute name="LANG">unk</XSL:attribute>
+         <XSL:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
+      </XSL:copy>
+   </XSL:template>
+   <XSL:template match="LETTER[not(@LANG)]">
+      <XSL:copy>
+         <XSL:attribute name="LANG">unk</XSL:attribute>
+         <XSL:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
       </XSL:copy>
    </XSL:template>
    <XSL:template match="LICENSE">
@@ -82,8 +97,10 @@
                <XSL:when test="regex-group(1)='AElig'">Æ</XSL:when>
                <XSL:when test="regex-group(1)='Aacugr'">Ά</XSL:when>
                <XSL:when test="regex-group(1)='Aacute'">Á</XSL:when>
+               <XSL:when test="regex-group(1)='Aaigr'"></XSL:when>
                <XSL:when test="regex-group(1)='Abreve'">Ă</XSL:when>
                <XSL:when test="regex-group(1)='Acirc'">Â</XSL:when>
+               <XSL:when test="regex-group(1)='Acirgr'"></XSL:when>
                <XSL:when test="regex-group(1)='Acy'">А</XSL:when>
                <XSL:when test="regex-group(1)='Agr'">Α</XSL:when>
                <XSL:when test="regex-group(1)='Agragr'">Ὰ</XSL:when>
@@ -132,6 +149,7 @@
                <XSL:when test="regex-group(1)='DotDot'">⃜</XSL:when>
                <XSL:when test="regex-group(1)='Dstrok'">Đ</XSL:when>
                <XSL:when test="regex-group(1)='EEacugr'">Ή</XSL:when>
+               <XSL:when test="regex-group(1)='EEcirgr'"></XSL:when>
                <XSL:when test="regex-group(1)='EEgr'">Η</XSL:when>
                <XSL:when test="regex-group(1)='EEgragr'">Ὴ</XSL:when>
                <XSL:when test="regex-group(1)='EEiotgr'">ῌ</XSL:when>
@@ -601,6 +619,7 @@
                <XSL:when test="regex-group(1)='Ntilde'">Ñ</XSL:when>
                <XSL:when test="regex-group(1)='OElig'">Œ</XSL:when>
                <XSL:when test="regex-group(1)='OHacugr'">Ώ</XSL:when>
+               <XSL:when test="regex-group(1)='OHcirgr'"></XSL:when>
                <XSL:when test="regex-group(1)='OHgr'">Ω</XSL:when>
                <XSL:when test="regex-group(1)='OHgragr'">Ὼ</XSL:when>
                <XSL:when test="regex-group(1)='OHigr'">ῼ</XSL:when>
@@ -682,6 +701,7 @@
                <XSL:when test="regex-group(1)='Uacute'">Ú</XSL:when>
                <XSL:when test="regex-group(1)='Ubreve'">Ŭ</XSL:when>
                <XSL:when test="regex-group(1)='Ucirc'">Û</XSL:when>
+               <XSL:when test="regex-group(1)='Ucirgr'"></XSL:when>
                <XSL:when test="regex-group(1)='Ucy'">У</XSL:when>
                <XSL:when test="regex-group(1)='Udblac'">Ű</XSL:when>
                <XSL:when test="regex-group(1)='Udotb'">Ụ</XSL:when>
@@ -768,6 +788,7 @@
                <XSL:when test="regex-group(1)='arab-qaf'">ٯ</XSL:when>
                <XSL:when test="regex-group(1)='aragr'">ἅ</XSL:when>
                <XSL:when test="regex-group(1)='araigr'">ᾅ</XSL:when>
+               <XSL:when test="regex-group(1)='arc'"></XSL:when>
                <XSL:when test="regex-group(1)='arcgr'">ἇ</XSL:when>
                <XSL:when test="regex-group(1)='arcigr'">ᾇ</XSL:when>
                <XSL:when test="regex-group(1)='aregis'">🜆</XSL:when>
@@ -838,6 +859,7 @@
                <XSL:when test="regex-group(1)='circledtimes'">⊗</XSL:when>
                <XSL:when test="regex-group(1)='closeup'">⁐</XSL:when>
                <XSL:when test="regex-group(1)='clubs'">♣</XSL:when>
+               <XSL:when test="regex-group(1)='cmacr'"></XSL:when>
                <XSL:when test="regex-group(1)='cmbSTROKEover'">̶</XSL:when>
                <XSL:when test="regex-group(1)='cmbVIRGULEover'"≯</XSL:when>
                <XSL:when test="regex-group(1)='cmbVLINEover'">⃒</XSL:when>
@@ -1200,6 +1222,7 @@
                <XSL:when test="regex-group(1)='ohgr'">ω</XSL:when>
                <XSL:when test="regex-group(1)='ohgragr'">ὼ</XSL:when>
                <XSL:when test="regex-group(1)='ohigr'">ῳ</XSL:when>
+               <XSL:when test="regex-group(1)='ohkact'"></XSL:when>
                <XSL:when test="regex-group(1)='ohm'">Ω</XSL:when>
                <XSL:when test="regex-group(1)='ohragr'">ὥ</XSL:when>
                <XSL:when test="regex-group(1)='ohraigr'">ᾥ</XSL:when>
@@ -1246,6 +1269,7 @@
                <XSL:when test="regex-group(1)='permil'">‰</XSL:when>
                <XSL:when test="regex-group(1)='perp'">⊥</XSL:when>
                <XSL:when test="regex-group(1)='pgr'">π</XSL:when>
+               <XSL:when test="regex-group(1)='pgrave'"></XSL:when>
                <XSL:when test="regex-group(1)='phgr'">φ</XSL:when>
                <XSL:when test="regex-group(1)='phmmat'">ℳ</XSL:when>
                <XSL:when test="regex-group(1)='plus'">+</XSL:when>
@@ -1258,6 +1282,7 @@
                <XSL:when test="regex-group(1)='psgr'">ψ</XSL:when>
                <XSL:when test="regex-group(1)='puncsp'"> </XSL:when>
                <XSL:when test="regex-group(1)='purify'">🝣</XSL:when>
+               <XSL:when test="regex-group(1)='qacute'"></XSL:when>
                <XSL:when test="regex-group(1)='qbar'">ꝗ</XSL:when>
                <XSL:when test="regex-group(1)='qmgr'">;</XSL:when>
                <XSL:when test="regex-group(1)='qof'">ק</XSL:when>
@@ -1336,7 +1361,7 @@
                <XSL:when test="regex-group(1)='sime'">≃</XSL:when>
                <XSL:when test="regex-group(1)='skull'">💀</XSL:when>
                <XSL:when test="regex-group(1)='slungr'">ϲ</XSL:when>
-               <XSL:when test="regex-group(1)='slur'">𝅷𝅸</XSL:when>
+               <XSL:when test="regex-group(1)='slur'">𝅷𝅷ᴗ</XSL:when>
                <XSL:when test="regex-group(1)='softcy'">ь</XSL:when>
                <XSL:when test="regex-group(1)='sol'">/</XSL:when>
                <XSL:when test="regex-group(1)='southnode'">☋</XSL:when>
@@ -1351,6 +1376,7 @@
                <XSL:when test="regex-group(1)='spcdblac'">˝</XSL:when>
                <XSL:when test="regex-group(1)='spcdot'">˙</XSL:when>
                <XSL:when test="regex-group(1)='spcgrave'">`</XSL:when>
+               <XSL:when test="regex-group(1)='spcibreve'"></XSL:when>
                <XSL:when test="regex-group(1)='spclowvertline'">ˌ</XSL:when>
                <XSL:when test="regex-group(1)='spcmacr'">¯</XSL:when>
                <XSL:when test="regex-group(1)='spcogon'">˛</XSL:when>
@@ -1359,6 +1385,7 @@
                <XSL:when test="regex-group(1)='spcring'">˚</XSL:when>
                <XSL:when test="regex-group(1)='spctilde'">˜</XSL:when>
                <XSL:when test="regex-group(1)='spcuml'">¨</XSL:when>
+               <XSL:when test="regex-group(1)='spcx'"></XSL:when>
                <XSL:when test="regex-group(1)='square'">□</XSL:when>
                <XSL:when test="regex-group(1)='squf'">■</XSL:when>
                <XSL:when test="regex-group(1)='star'">⋆</XSL:when>
@@ -1447,6 +1474,7 @@
                <XSL:when test="regex-group(1)='utrif'">▴</XSL:when>
                <XSL:when test="regex-group(1)='uuml'">ü</XSL:when>
                <XSL:when test="regex-group(1)='vav'">ו</XSL:when>
+               <XSL:when test="regex-group(1)='vbreve'"></XSL:when>
                <XSL:when test="regex-group(1)='vcy'">в</XSL:when>
                <XSL:when test="regex-group(1)='vellip'">⋮</XSL:when>
                <XSL:when test="regex-group(1)='verbar'">|</XSL:when>
@@ -1484,48 +1512,6 @@
                <XSL:when test="regex-group(1)='zdot'">ż</XSL:when>
                <XSL:when test="regex-group(1)='zgr'">ζ</XSL:when>
                <XSL:when test="regex-group(1)='zhcy'">ж</XSL:when>
-               <XSL:when test="regex-group(1)='Aaigr'">
-                  <XSL:variable name="replace">Άͅ</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('Aaigr',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('Aaigr',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
-               <XSL:when test="regex-group(1)='Acirgr'">
-                  <XSL:variable name="replace">Α͂</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('Acirgr',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('Acirgr',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
-               <XSL:when test="regex-group(1)='EEcirgr'">
-                  <XSL:variable name="replace">Η͂</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('EEcirgr',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('EEcirgr',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
                <XSL:when test="regex-group(1)='Ggr-rev'">
                   <XSL:variable name="replace">Γ</XSL:variable>
                   <XSL:choose>
@@ -1582,20 +1568,6 @@
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>
-               <XSL:when test="regex-group(1)='OHcirgr'">
-                  <XSL:variable name="replace">Ω͂</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('OHcirgr',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('OHcirgr',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
                <XSL:when test="regex-group(1)='Rgr-rev'">
                   <XSL:variable name="replace">Ρ</XSL:variable>
                   <XSL:choose>
@@ -1621,20 +1593,6 @@
                      </XSL:when>
                      <XSL:otherwise>
                         <XSL:sequence select="tei:makeG('Sgr-rev',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
-               <XSL:when test="regex-group(1)='Ucirgr'">
-                  <XSL:variable name="replace">Υ͂</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('Ucirgr',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('Ucirgr',$replace)"/>
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>
@@ -1946,20 +1904,6 @@
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>
-               <XSL:when test="regex-group(1)='arc'">
-                  <XSL:variable name="replace">⌒</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('arc',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('arc',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
                <XSL:when test="regex-group(1)='arsenic2'">
                   <XSL:variable name="replace">{arsenic}</XSL:variable>
                   <XSL:choose>
@@ -2055,20 +1999,6 @@
                      </XSL:when>
                      <XSL:otherwise>
                         <XSL:sequence select="tei:makeG('circdot',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
-               <XSL:when test="regex-group(1)='cmacr'">
-                  <XSL:variable name="replace">c̄</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('cmacr',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('cmacr',$replace)"/>
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>
@@ -2828,20 +2758,6 @@
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>
-               <XSL:when test="regex-group(1)='ohkact'">
-                  <XSL:variable name="replace">ǫ́</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('ohkact',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('ohkact',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
                <XSL:when test="regex-group(1)='oil2'">
                   <XSL:variable name="replace">⦾</XSL:variable>
                   <XSL:choose>
@@ -2881,20 +2797,6 @@
                      </XSL:when>
                      <XSL:otherwise>
                         <XSL:sequence select="tei:makeG('pashtayin',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
-               <XSL:when test="regex-group(1)='pgrave'">
-                  <XSL:variable name="replace">p̀</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('pgrave',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('pgrave',$replace)"/>
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>
@@ -3063,20 +2965,6 @@
                      </XSL:when>
                      <XSL:otherwise>
                         <XSL:sequence select="tei:makeG('punctel',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
-               <XSL:when test="regex-group(1)='qacute'">
-                  <XSL:variable name="replace">q́</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('qacute',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('qacute',$replace)"/>
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>
@@ -3402,34 +3290,6 @@
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>
-               <XSL:when test="regex-group(1)='spcibreve'">
-                  <XSL:variable name="replace">^</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('spcibreve',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('spcibreve',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
-               <XSL:when test="regex-group(1)='spcx'">
-                  <XSL:variable name="replace"> ͯ</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('spcx',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('spcx',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
                <XSL:when test="regex-group(1)='startq'">
                   <XSL:variable name="replace">“</XSL:variable>
                   <XSL:choose>
@@ -3651,20 +3511,6 @@
                      </XSL:when>
                      <XSL:otherwise>
                         <XSL:sequence select="tei:makeG('usd5',$replace)"/>
-                     </XSL:otherwise>
-                  </XSL:choose>
-               </XSL:when>
-               <XSL:when test="regex-group(1)='vbreve'">
-                  <XSL:variable name="replace">v̆</XSL:variable>
-                  <XSL:choose>
-                     <XSL:when test="not($usemarkup)">
-                        <XSL:value-of select="$replace"/>
-                     </XSL:when>
-                     <XSL:when test="starts-with($replace,'{')">
-                        <XSL:sequence select="tei:makeExpan('vbreve',translate($replace,'{}',''))"/>
-                     </XSL:when>
-                     <XSL:otherwise>
-                        <XSL:sequence select="tei:makeG('vbreve',$replace)"/>
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>

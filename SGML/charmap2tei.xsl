@@ -35,6 +35,10 @@ of this software, even if advised of the possibility of such damage.
   <XSL:namespace-alias stylesheet-prefix="xsl" result-prefix="XSL"/>
   <XSL:output indent="yes"/>
   <XSL:template match="/">
+    <XSL:variable name="preflight">
+      <XSL:apply-templates mode="preflight"/>
+    </XSL:variable>
+    <XSL:for-each select="$preflight">
     <XSL:result-document href="tcpchars.xml">
       <TEI xmlns="http://www.tei-c.org/ns/1.0">
         <teiHeader>
@@ -53,35 +57,38 @@ of this software, even if advised of the possibility of such damage.
           <encodingDesc>
             <XSL:for-each select="//char[equiv/@compat='pua' or @compat='partial']">
               <XSL:sort select="ent/@tcp"/>
-              <charDecl>
-                <XSL:for-each select="comment">
-                  <desc>
-                    <XSL:value-of select="."/>
-                  </desc>
-                </XSL:for-each>
-                <char xml:id="{ent/@tcp}">
-                  <XSL:for-each select="equiv/@desc">
-                    <charName>
-                      <XSL:value-of select="."/>
-                    </charName>
-                  </XSL:for-each>
-                  <XSL:for-each select="repl">
-                    <mapping type="{@sup}">
-                      <XSL:value-of select="@txt"/>
-                    </mapping>
-                  </XSL:for-each>
-                  <XSL:if test="equiv/@compat='pua'">
-                    <mapping type="PUA">
-                      <XSL:value-of disable-output-escaping="yes" select="tei:toEnt(equiv/@unic)"/>
-                    </mapping>
-                  </XSL:if>
-                </char>
-              </charDecl>
+	      <XSL:call-template name="charDecl"/>
             </XSL:for-each>
-          </encodingDesc>
+	    
+	    <XSL:variable name="orig" select="/"/>
+	    <XSL:for-each select="('Barline','LL','Qbar','R','THAT','Vstroke','W','Xbar','Y','abCON','abPER','abPRO','abQUOD','abRUM',
+				  'abcon','abis','abper','abpr','abprecipi','abpro','abquod','absubli','abus','afortis','air',
+				  'alembic','ang','aregis','arsenic','ashes','barline','cclef','cinnabar1','cinnabar3',
+				  'cmba2a','cmbogona','commonTime-adagio','ddiple','delta','diggr','dtridot','earth',
+				  'fclef','fermata','fermatab','fire','gclef','insul-D','insul-F','insul-G','insul-R',
+				  'insul-S','insul-T','insul-d','insul-f','insul-g','insul-r','insul-s','insul-t','kogr',
+				  'lbrace','ll','lrepeat','musicBrace','musicBracket','night','nitre','noteEighth',
+				  'noteHalf','noteQuarter','noteWhole','notebreve','notecrotchet','notelarge',
+				  'notelong','noteminim','notequaver','notesemibreve','notesemiquaver','obelus','oil',
+				  'orpiment','potash','purify','qbar','quaddot','quicklime','r','rbrace','restbreve',
+				  'restcrotchet','restlarge','restlong','restminim','restsemibreve','retort',
+				  'rn100000','rn50000','rrepeat','salarmon','salt','saltgemme','samgr','skull','slur',
+				  'spcDash','stgr','sulphur','tartar','that','timeimperf-prolatimperf',
+				  'timeimperf-prolatimperf-rev','timeimperf-prolatimperf-rev-str',
+				  'timeimperf-prolatimperf-str','timeimperf-prolatperf',
+				  'timeperf-prolatimperf','timeperf-prolatperf','tridot','urine','vinedist',
+				  'vinegar','vitriol','w','water','wax','y','z')">
+	      <XSL:variable name="funny" select="."/>
+	      <XSL:for-each select="$orig//char[ent/@tcp=$funny]">
+		<XSL:call-template name="charDecl"/>
+	      </XSL:for-each>
+	    </XSL:for-each>
+  
+         </encodingDesc>
         </teiHeader>
       </TEI>
     </XSL:result-document>
+
     <XSL:result-document href="cleantcp.xsl" method="xml">
       <xsl:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="" exclude-result-prefixes="tei xs" version="2.0">
         <xsl:template match="*">
@@ -256,7 +263,9 @@ of this software, even if advised of the possibility of such damage.
         </xsl:function>
       </xsl:stylesheet>
     </XSL:result-document>
+    </XSL:for-each>
   </XSL:template>
+
   <XSL:template name="firstreplacement">
     <XSL:choose>
       <XSL:when test="repl/@sup='Unicode'">
@@ -270,11 +279,12 @@ of this software, even if advised of the possibility of such damage.
       </XSL:otherwise>
     </XSL:choose>
   </XSL:template>
+
   <XSL:function name="tei:toEnt">
     <XSL:param name="codes"/>
     <XSL:choose>
-      <XSL:when test="$codes='1d177u1d178'">
-        <XSL:text>𝅷𝅸</XSL:text>
+      <XSL:when test="$codes='1d177u1d178' or $codes='u1d177u1d178'">
+        <XSL:text>𝅷&#x1d177;&#x1d17;</XSL:text>
       </XSL:when>
       <XSL:otherwise>
         <XSL:for-each select="tokenize(replace($codes,';$',''),';')">
@@ -300,4 +310,88 @@ of this software, even if advised of the possibility of such damage.
     <XSL:param name="x" as="xs:integer*"/>
     <XSL:value-of select="if (empty($x)) then 0 else ($x[last()] + 16* tei:hex($x[position()!=last()]))"/>
   </XSL:function>
+
+  <XSL:template match="@*|text()|comment()" mode="preflight">
+    <XSL:copy-of select="."/>
+  </XSL:template>
+
+  <XSL:template match="*" mode="preflight">
+    <XSL:copy>
+      <XSL:apply-templates select="*|@*|text()|comment()" mode="preflight"/>
+    </XSL:copy>
+
+  </XSL:template>
+
+<XSL:template match="char[ent/@tcp='Aaigr']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='Acirgr']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='EEcirgr']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='OHcirgr']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='Ucirgr']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='arc']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='cmacr']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='ohkact']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='pgrave']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='qacute']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='spcibreve']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='spcx']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+<XSL:template match="char[ent/@tcp='vbreve']/equiv/@compat" mode="preflight">
+  <XSL:attribute name="compat">exact</XSL:attribute>
+</XSL:template>
+
+<XSL:template name="charDecl">
+  <charDecl>
+    <XSL:for-each select="comment">
+      <desc>
+        <XSL:value-of select="."/>
+      </desc>
+    </XSL:for-each>
+    <char xml:id="{ent/@tcp}">
+      <XSL:for-each select="equiv/@desc">
+        <charName>
+          <XSL:value-of select="."/>
+        </charName>
+      </XSL:for-each>
+      <XSL:for-each select="repl">
+        <mapping type="{@sup}">
+                      <XSL:value-of select="@txt"/>
+        </mapping>
+      </XSL:for-each>
+      <XSL:if test="equiv/@compat='exact'">
+        <mapping type="standard">
+          <XSL:value-of disable-output-escaping="yes" select="tei:toEnt(equiv/@unic)"/>
+        </mapping>
+      </XSL:if>
+      <XSL:if test="equiv/@compat='pua'">
+        <mapping type="PUA">
+          <XSL:value-of disable-output-escaping="yes" select="tei:toEnt(equiv/@unic)"/>
+        </mapping>
+      </XSL:if>
+    </char>
+  </charDecl>
+</XSL:template>
 </XSL:stylesheet>
+
