@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+
+  <xsl:output indent="yes"/>
+  <xsl:template match="/">
+    <xsl:variable name="ranges">
+      <ranges>
+      <xsl:if test="matches(.,'\p{IsBasicLatin}')"><range>BasicLatin</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLatin-1Supplement}')"><range>Latin-1Supplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLatinExtended-A}')"><range>LatinExtended-A</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLatinExtended-B}')"><range>LatinExtended-B</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsIPAExtensions}')"><range>IPAExtensions</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSpacingModifierLetters}')"><range>SpacingModifierLetters</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCombiningDiacriticalMarks}')"><range>CombiningDiacriticalMarks</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGreek}')"><range>Greek</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGreekandCoptic}')"><range>GreekandCoptic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCyrillic}')"><range>Cyrillic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCyrillicSupplementary}')"><range>CyrillicSupplementary</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCyrillicSupplement}')"><range>CyrillicSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsArmenian}')"><range>Armenian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHebrew}')"><range>Hebrew</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsArabic}')"><range>Arabic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSyriac}')"><range>Syriac</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsArabicSupplement}')"><range>ArabicSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsThaana}')"><range>Thaana</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsNKo}')"><range>NKo</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSamaritan}')"><range>Samaritan</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMandaic}')"><range>Mandaic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsDevanagari}')"><range>Devanagari</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBengali}')"><range>Bengali</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGurmukhi}')"><range>Gurmukhi</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGujarati}')"><range>Gujarati</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsOriya}')"><range>Oriya</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTamil}')"><range>Tamil</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTelugu}')"><range>Telugu</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKannada}')"><range>Kannada</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMalayalam}')"><range>Malayalam</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSinhala}')"><range>Sinhala</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsThai}')"><range>Thai</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLao}')"><range>Lao</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTibetan}')"><range>Tibetan</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTibetan}')"><range>Tibetan</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMyanmar}')"><range>Myanmar</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGeorgian}')"><range>Georgian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHangulJamo}')"><range>HangulJamo</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEthiopic}')"><range>Ethiopic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEthiopicSupplement}')"><range>EthiopicSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCherokee}')"><range>Cherokee</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsUnifiedCanadianAboriginalSyllabics}')"><range>UnifiedCanadianAboriginalSyllabics</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsOgham}')"><range>Ogham</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsRunic}')"><range>Runic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTagalog}')"><range>Tagalog</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHanunoo}')"><range>Hanunoo</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBuhid}')"><range>Buhid</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTagbanwa}')"><range>Tagbanwa</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKhmer}')"><range>Khmer</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMongolian}')"><range>Mongolian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsUnifiedCanadianAboriginalSyllabicsExtended}')"><range>UnifiedCanadianAboriginalSyllabicsExtended</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLimbu}')"><range>Limbu</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTaiLe}')"><range>TaiLe</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsNewTaiLue}')"><range>NewTaiLue</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKhmerSymbols}')"><range>KhmerSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBuginese}')"><range>Buginese</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTaiTham}')"><range>TaiTham</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBalinese}')"><range>Balinese</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSundanese}')"><range>Sundanese</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBatak}')"><range>Batak</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLepcha}')"><range>Lepcha</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsOlChiki}')"><range>OlChiki</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsVedicExtensions}')"><range>VedicExtensions</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPhoneticExtensions}')"><range>PhoneticExtensions</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPhoneticExtensionsSupplement}')"><range>PhoneticExtensionsSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCombiningDiacriticalMarksSupplement}')"><range>CombiningDiacriticalMarksSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLatinExtendedAdditional}')"><range>LatinExtendedAdditional</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGreekExtended}')"><range>GreekExtended</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGeneralPunctuation}')"><range>GeneralPunctuation</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSuperscriptsandSubscripts}')"><range>SuperscriptsandSubscripts</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCurrencySymbols}')"><range>CurrencySymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCombiningMarksforSymbols}')"><range>CombiningMarksforSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCombiningDiacriticalMarksforSymbols}')"><range>CombiningDiacriticalMarksforSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLetterlikeSymbols}')"><range>LetterlikeSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsNumberForms}')"><range>NumberForms</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsArrows}')"><range>Arrows</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMathematicalOperators}')"><range>MathematicalOperators</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMiscellaneousTechnical}')"><range>MiscellaneousTechnical</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsControlPictures}')"><range>ControlPictures</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsOpticalCharacterRecognition}')"><range>OpticalCharacterRecognition</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEnclosedAlphanumerics}')"><range>EnclosedAlphanumerics</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBoxDrawing}')"><range>BoxDrawing</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBlockElements}')"><range>BlockElements</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGeometricShapes}')"><range>GeometricShapes</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMiscellaneousSymbols}')"><range>MiscellaneousSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsDingbats}')"><range>Dingbats</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMiscellaneousMathematicalSymbols-A}')"><range>MiscellaneousMathematicalSymbols-A</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSupplementalArrows-A}')"><range>SupplementalArrows-A</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBraillePatterns}')"><range>BraillePatterns</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSupplementalArrows-B}')"><range>SupplementalArrows-B</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMiscellaneousMathematicalSymbols-B}')"><range>MiscellaneousMathematicalSymbols-B</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSupplementalMathematicalOperators}')"><range>SupplementalMathematicalOperators</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMiscellaneousSymbolsandArrows}')"><range>MiscellaneousSymbolsandArrows</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGlagolitic}')"><range>Glagolitic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLatinExtended-C}')"><range>LatinExtended-C</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCoptic}')"><range>Coptic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGeorgianSupplement}')"><range>GeorgianSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTifinagh}')"><range>Tifinagh</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEthiopicExtended}')"><range>EthiopicExtended</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCyrillicExtended-A}')"><range>CyrillicExtended-A</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSupplementalPunctuation}')"><range>SupplementalPunctuation</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKRadicalsSupplement}')"><range>CJKRadicalsSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKangxiRadicals}')"><range>KangxiRadicals</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsIdeographicDescriptionCharacters}')"><range>IdeographicDescriptionCharacters</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKSymbolsandPunctuation}')"><range>CJKSymbolsandPunctuation</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHiragana}')"><range>Hiragana</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKatakana}')"><range>Katakana</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBopomofo}')"><range>Bopomofo</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHangulCompatibilityJamo}')"><range>HangulCompatibilityJamo</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKanbun}')"><range>Kanbun</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBopomofoExtended}')"><range>BopomofoExtended</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKStrokes}')"><range>CJKStrokes</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKatakanaPhoneticExtensions}')"><range>KatakanaPhoneticExtensions</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEnclosedCJKLettersandMonths}')"><range>EnclosedCJKLettersandMonths</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKCompatibility}')"><range>CJKCompatibility</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKUnifiedIdeographsExtensionA}')"><range>CJKUnifiedIdeographsExtensionA</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKUnifiedIdeographsExtensionA}')"><range>CJKUnifiedIdeographsExtensionA</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsYijingHexagramSymbols}')"><range>YijingHexagramSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKUnifiedIdeographs}')"><range>CJKUnifiedIdeographs</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsYiSyllables}')"><range>YiSyllables</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsYiRadicals}')"><range>YiRadicals</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLisu}')"><range>Lisu</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsVai}')"><range>Vai</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCyrillicExtended-B}')"><range>CyrillicExtended-B</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBamum}')"><range>Bamum</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsModifierToneLetters}')"><range>ModifierToneLetters</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLatinExtended-D}')"><range>LatinExtended-D</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSylotiNagri}')"><range>SylotiNagri</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCommonIndicNumberForms}')"><range>CommonIndicNumberForms</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPhags-pa}')"><range>Phags-pa</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSaurashtra}')"><range>Saurashtra</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsDevanagariExtended}')"><range>DevanagariExtended</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKayahLi}')"><range>KayahLi</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsRejang}')"><range>Rejang</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHangulJamoExtended-A}')"><range>HangulJamoExtended-A</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsJavanese}')"><range>Javanese</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCham}')"><range>Cham</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMyanmarExtended-A}')"><range>MyanmarExtended-A</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTaiViet}')"><range>TaiViet</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEthiopicExtended-A}')"><range>EthiopicExtended-A</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMeeteiMayek}')"><range>MeeteiMayek</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHangulSyllables}')"><range>HangulSyllables</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHangulSyllables}')"><range>HangulSyllables</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHangulJamoExtended-B}')"><range>HangulJamoExtended-B</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHighSurrogates}')"><range>HighSurrogates</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHighPrivateUseSurrogates}')"><range>HighPrivateUseSurrogates</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLowSurrogates}')"><range>LowSurrogates</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPrivateUse}')"><range>PrivateUse</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPrivateUseArea}')"><range>PrivateUseArea</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKCompatibilityIdeographs}')"><range>CJKCompatibilityIdeographs</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsAlphabeticPresentationForms}')"><range>AlphabeticPresentationForms</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsArabicPresentationForms-A}')"><range>ArabicPresentationForms-A</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsVariationSelectors}')"><range>VariationSelectors</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsVerticalForms}')"><range>VerticalForms</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCombiningHalfMarks}')"><range>CombiningHalfMarks</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKCompatibilityForms}')"><range>CJKCompatibilityForms</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSmallFormVariants}')"><range>SmallFormVariants</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsArabicPresentationForms-B}')"><range>ArabicPresentationForms-B</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsArabicPresentationForms-B}')"><range>ArabicPresentationForms-B</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSpecials}')"><range>Specials</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsHalfwidthandFullwidthForms}')"><range>HalfwidthandFullwidthForms</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSpecials}')"><range>Specials</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSpecials}')"><range>Specials</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLinearBSyllabary}')"><range>LinearBSyllabary</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLinearBIdeograms}')"><range>LinearBIdeograms</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsAegeanNumbers}')"><range>AegeanNumbers</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsAncientGreekNumbers}')"><range>AncientGreekNumbers</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsAncientSymbols}')"><range>AncientSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPhaistosDisc}')"><range>PhaistosDisc</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLycian}')"><range>Lycian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCarian}')"><range>Carian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsOldItalic}')"><range>OldItalic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsGothic}')"><range>Gothic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsUgaritic}')"><range>Ugaritic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsOldPersian}')"><range>OldPersian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsDeseret}')"><range>Deseret</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsShavian}')"><range>Shavian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsOsmanya}')"><range>Osmanya</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCypriotSyllabary}')"><range>CypriotSyllabary</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsImperialAramaic}')"><range>ImperialAramaic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPhoenician}')"><range>Phoenician</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsLydian}')"><range>Lydian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKharoshthi}')"><range>Kharoshthi</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsOldSouthArabian}')"><range>OldSouthArabian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsAvestan}')"><range>Avestan</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsInscriptionalParthian}')"><range>InscriptionalParthian</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsInscriptionalPahlavi}')"><range>InscriptionalPahlavi</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsOldTurkic}')"><range>OldTurkic</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsRumiNumeralSymbols}')"><range>RumiNumeralSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBrahmi}')"><range>Brahmi</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKaithi}')"><range>Kaithi</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCuneiform}')"><range>Cuneiform</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCuneiformNumbersandPunctuation}')"><range>CuneiformNumbersandPunctuation</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEgyptianHieroglyphs}')"><range>EgyptianHieroglyphs</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsBamumSupplement}')"><range>BamumSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsKanaSupplement}')"><range>KanaSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsByzantineMusicalSymbols}')"><range>ByzantineMusicalSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMusicalSymbols}')"><range>MusicalSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsAncientGreekMusicalNotation}')"><range>AncientGreekMusicalNotation</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTaiXuanJingSymbols}')"><range>TaiXuanJingSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCountingRodNumerals}')"><range>CountingRodNumerals</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMathematicalAlphanumericSymbols}')"><range>MathematicalAlphanumericSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMahjongTiles}')"><range>MahjongTiles</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsDominoTiles}')"><range>DominoTiles</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPlayingCards}')"><range>PlayingCards</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEnclosedAlphanumericSupplement}')"><range>EnclosedAlphanumericSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEnclosedIdeographicSupplement}')"><range>EnclosedIdeographicSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsMiscellaneousSymbolsAndPictographs}')"><range>MiscellaneousSymbolsAndPictographs</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsEmoticons}')"><range>Emoticons</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTransportAndMapSymbols}')"><range>TransportAndMapSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsAlchemicalSymbols}')"><range>AlchemicalSymbols</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKUnifiedIdeographsExtensionB}')"><range>CJKUnifiedIdeographsExtensionB</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKUnifiedIdeographsExtensionB}')"><range>CJKUnifiedIdeographsExtensionB</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKUnifiedIdeographsExtensionC}')"><range>CJKUnifiedIdeographsExtensionC</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKUnifiedIdeographsExtensionD}')"><range>CJKUnifiedIdeographsExtensionD</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsCJKCompatibilityIdeographsSupplement}')"><range>CJKCompatibilityIdeographsSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsTags}')"><range>Tags</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsVariationSelectorsSupplement}')"><range>VariationSelectorsSupplement</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPrivateUse}')"><range>PrivateUse</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsSupplementaryPrivateUseArea-A}')"><range>SupplementaryPrivateUseArea-A</range></xsl:if>
+      <xsl:if test="matches(.,'\p{IsPrivateUse}')"><range>PrivateUse</range></xsl:if>
+      <xsl:if
+	  test="matches(.,'\p{IsSupplementaryPrivateUseArea-B}')"><range>SupplementaryPrivateUseArea-B</range>
+      </xsl:if>
+    </ranges>
+    </xsl:variable>
+
+<xsl:message>
+Unicode ranges used in <xsl:value-of select="base-uri(/)"/> are <xsl:value-of
+select="($ranges/ranges/*)"/></xsl:message>
+</xsl:template>
+
+</xsl:stylesheet>
+<!--
+#x0000–#x007F IsBasicLatin
+#x0080–#x00FF IsLatin-1Supplement
+#x0100–#x017F IsLatinExtended-A
+#x0180–#x024F IsLatinExtended-B
+#x0250–#x02AF IsIPAExtensions
+#x02B0–#x02FF IsSpacingModifierLetters
+#x0300–#x036F IsCombiningDiacriticalMarks
+#x0370–#x03FF IsGreek
+#x0370–#x03FF IsGreekandCoptic
+#x0400–#x04FF IsCyrillic
+#x0500–#x052F IsCyrillicSupplementary
+#x0500–#x052F IsCyrillicSupplement
+#x0530–#x058F IsArmenian
+#x0590–#x05FF IsHebrew
+#x0600–#x06FF IsArabic
+#x0700–#x074F IsSyriac
+#x0750–#x077F IsArabicSupplement
+#x0780–#x07BF IsThaana
+#x07C0–#x07FF IsNKo
+#x0800–#x083F IsSamaritan
+#x0840–#x085F IsMandaic
+#x0900–#x097F IsDevanagari
+#x0980–#x09FF IsBengali
+#x0A00–#x0A7F IsGurmukhi
+#x0A80–#x0AFF IsGujarati
+#x0B00–#x0B7F IsOriya
+#x0B80–#x0BFF IsTamil
+#x0C00–#x0C7F IsTelugu
+#x0C80–#x0CFF IsKannada
+#x0D00–#x0D7F IsMalayalam
+#x0D80–#x0DFF IsSinhala
+#x0E00–#x0E7F IsThai
+#x0E80–#x0EFF IsLao
+#x0F00–#x0FBF IsTibetan
+#x0F00–#x0FFF IsTibetan
+#x1000–#x109F IsMyanmar
+#x10A0–#x10FF IsGeorgian
+#x1100–#x11FF IsHangulJamo
+#x1200–#x137F IsEthiopic
+#x1380–#x139F IsEthiopicSupplement
+#x13A0–#x13FF IsCherokee
+#x1400–#x167F IsUnifiedCanadianAboriginalSyllabics
+#x1680–#x169F IsOgham
+#x16A0–#x16FF IsRunic
+#x1700–#x171F IsTagalog
+#x1720–#x173F IsHanunoo
+#x1740–#x175F IsBuhid
+#x1760–#x177F IsTagbanwa
+#x1780–#x17FF IsKhmer
+#x1800–#x18AF IsMongolian
+#x18B0–#x18FF IsUnifiedCanadianAboriginalSyllabicsExtended
+#x1900–#x194F IsLimbu
+#x1950–#x197F IsTaiLe
+#x1980–#x19DF IsNewTaiLue
+#x19E0–#x19FF IsKhmerSymbols
+#x1A00–#x1A1F IsBuginese
+#x1A20–#x1AAF IsTaiTham
+#x1B00–#x1B7F IsBalinese
+#x1B80–#x1BBF IsSundanese
+#x1BC0–#x1BFF IsBatak
+#x1C00–#x1C4F IsLepcha
+#x1C50–#x1C7F IsOlChiki
+#x1CD0–#x1CFF IsVedicExtensions
+#x1D00–#x1D7F IsPhoneticExtensions
+#x1D80–#x1DBF IsPhoneticExtensionsSupplement
+#x1DC0–#x1DFF IsCombiningDiacriticalMarksSupplement
+#x1E00–#x1EFF IsLatinExtendedAdditional
+#x1F00–#x1FFF IsGreekExtended
+#x2000–#x206F IsGeneralPunctuation
+#x2070–#x209F IsSuperscriptsandSubscripts
+#x20A0–#x20CF IsCurrencySymbols
+#x20D0–#x20FF IsCombiningMarksforSymbols
+#x20D0–#x20FF IsCombiningDiacriticalMarksforSymbols
+#x2100–#x214F IsLetterlikeSymbols
+#x2150–#x218F IsNumberForms
+#x2190–#x21FF IsArrows
+#x2200–#x22FF IsMathematicalOperators
+#x2300–#x23FF IsMiscellaneousTechnical
+#x2400–#x243F IsControlPictures
+#x2440–#x245F IsOpticalCharacterRecognition
+#x2460–#x24FF IsEnclosedAlphanumerics
+#x2500–#x257F IsBoxDrawing
+#x2580–#x259F IsBlockElements
+#x25A0–#x25FF IsGeometricShapes
+#x2600–#x26FF IsMiscellaneousSymbols
+#x2700–#x27BF IsDingbats
+#x27C0–#x27EF IsMiscellaneousMathematicalSymbols-A
+#x27F0–#x27FF IsSupplementalArrows-A
+#x2800–#x28FF IsBraillePatterns
+#x2900–#x297F IsSupplementalArrows-B
+#x2980–#x29FF IsMiscellaneousMathematicalSymbols-B
+#x2A00–#x2AFF IsSupplementalMathematicalOperators
+#x2B00–#x2BFF IsMiscellaneousSymbolsandArrows
+#x2C00–#x2C5F IsGlagolitic
+#x2C60–#x2C7F IsLatinExtended-C
+#x2C80–#x2CFF IsCoptic
+#x2D00–#x2D2F IsGeorgianSupplement
+#x2D30–#x2D7F IsTifinagh
+#x2D80–#x2DDF IsEthiopicExtended
+#x2DE0–#x2DFF IsCyrillicExtended-A
+#x2E00–#x2E7F IsSupplementalPunctuation
+#x2E80–#x2EFF IsCJKRadicalsSupplement
+#x2F00–#x2FDF IsKangxiRadicals
+#x2FF0–#x2FFF IsIdeographicDescriptionCharacters
+#x3000–#x303F IsCJKSymbolsandPunctuation
+#x3040–#x309F IsHiragana
+#x30A0–#x30FF IsKatakana
+#x3100–#x312F IsBopomofo
+#x3130–#x318F IsHangulCompatibilityJamo
+#x3190–#x319F IsKanbun
+#x31A0–#x31BF IsBopomofoExtended
+#x31C0–#x31EF IsCJKStrokes
+#x31F0–#x31FF IsKatakanaPhoneticExtensions
+#x3200–#x32FF IsEnclosedCJKLettersandMonths
+#x3300–#x33FF IsCJKCompatibility
+#x3400–#x4DB5 IsCJKUnifiedIdeographsExtensionA
+#x3400–#x4DBF IsCJKUnifiedIdeographsExtensionA
+#x4DC0–#x4DFF IsYijingHexagramSymbols
+#x4E00–#x9FFF IsCJKUnifiedIdeographs
+#xA000–#xA48F IsYiSyllables
+#xA490–#xA4CF IsYiRadicals
+#xA4D0–#xA4FF IsLisu
+#xA500–#xA63F IsVai
+#xA640–#xA69F IsCyrillicExtended-B
+#xA6A0–#xA6FF IsBamum
+#xA700–#xA71F IsModifierToneLetters
+#xA720–#xA7FF IsLatinExtended-D
+#xA800–#xA82F IsSylotiNagri
+#xA830–#xA83F IsCommonIndicNumberForms
+#xA840–#xA87F IsPhags-pa
+#xA880–#xA8DF IsSaurashtra
+#xA8E0–#xA8FF IsDevanagariExtended
+#xA900–#xA92F IsKayahLi
+#xA930–#xA95F IsRejang
+#xA960–#xA97F IsHangulJamoExtended-A
+#xA980–#xA9DF IsJavanese
+#xAA00–#xAA5F IsCham
+#xAA60–#xAA7F IsMyanmarExtended-A
+#xAA80–#xAADF IsTaiViet
+#xAB00–#xAB2F IsEthiopicExtended-A
+#xABC0–#xABFF IsMeeteiMayek
+#xAC00–#xD7A3 IsHangulSyllables
+#xAC00–#xD7AF IsHangulSyllables
+#xD7B0–#xD7FF IsHangulJamoExtended-B
+#xD800–#xDB7F IsHighSurrogates
+#xDB80–#xDBFF IsHighPrivateUseSurrogates
+#xDC00–#xDFFF IsLowSurrogates
+#xE000–#xF8FF IsPrivateUse
+#xE000–#xF8FF IsPrivateUseArea
+#xF900–#xFAFF IsCJKCompatibilityIdeographs
+#xFB00–#xFB4F IsAlphabeticPresentationForms
+#xFB50–#xFDFF IsArabicPresentationForms-A
+#xFE00–#xFE0F IsVariationSelectors
+#xFE10–#xFE1F IsVerticalForms
+#xFE20–#xFE2F IsCombiningHalfMarks
+#xFE30–#xFE4F IsCJKCompatibilityForms
+#xFE50–#xFE6F IsSmallFormVariants
+#xFE70–#xFEFE IsArabicPresentationForms-B
+#xFE70–#xFEFF IsArabicPresentationForms-B
+#xFEFF–#xFEFF IsSpecials
+#xFF00–#xFFEF IsHalfwidthandFullwidthForms
+#xFFF0–#xFFFD IsSpecials
+#xFFF0–#xFFFF IsSpecials
+#x10000–#x1007F IsLinearBSyllabary
+#x10080–#x100FF IsLinearBIdeograms
+#x10100–#x1013F IsAegeanNumbers
+#x10140–#x1018F IsAncientGreekNumbers
+#x10190–#x101CF IsAncientSymbols
+#x101D0–#x101FF IsPhaistosDisc
+#x10280–#x1029F IsLycian
+#x102A0–#x102DF IsCarian
+#x10300–#x1032F IsOldItalic
+#x10330–#x1034F IsGothic
+#x10380–#x1039F IsUgaritic
+#x103A0–#x103DF IsOldPersian
+#x10400–#x1044F IsDeseret
+#x10450–#x1047F IsShavian
+#x10480–#x104AF IsOsmanya
+#x10800–#x1083F IsCypriotSyllabary
+#x10840–#x1085F IsImperialAramaic
+#x10900–#x1091F IsPhoenician
+#x10920–#x1093F IsLydian
+#x10A00–#x10A5F IsKharoshthi
+#x10A60–#x10A7F IsOldSouthArabian
+#x10B00–#x10B3F IsAvestan
+#x10B40–#x10B5F IsInscriptionalParthian
+#x10B60–#x10B7F IsInscriptionalPahlavi
+#x10C00–#x10C4F IsOldTurkic
+#x10E60–#x10E7F IsRumiNumeralSymbols
+#x11000–#x1107F IsBrahmi
+#x11080–#x110CF IsKaithi
+#x12000–#x123FF IsCuneiform
+#x12400–#x1247F IsCuneiformNumbersandPunctuation
+#x13000–#x1342F IsEgyptianHieroglyphs
+#x16800–#x16A3F IsBamumSupplement
+#x1B000–#x1B0FF IsKanaSupplement
+#x1D000–#x1D0FF IsByzantineMusicalSymbols
+#x1D100–#x1D1FF IsMusicalSymbols
+#x1D200–#x1D24F IsAncientGreekMusicalNotation
+#x1D300–#x1D35F IsTaiXuanJingSymbols
+#x1D360–#x1D37F IsCountingRodNumerals
+#x1D400–#x1D7FF IsMathematicalAlphanumericSymbols
+#x1F000–#x1F02F IsMahjongTiles
+#x1F030–#x1F09F IsDominoTiles
+#x1F0A0–#x1F0FF IsPlayingCards
+#x1F100–#x1F1FF IsEnclosedAlphanumericSupplement
+#x1F200–#x1F2FF IsEnclosedIdeographicSupplement
+#x1F300–#x1F5FF IsMiscellaneousSymbolsAndPictographs
+#x1F600–#x1F64F IsEmoticons
+#x1F680–#x1F6FF IsTransportAndMapSymbols
+#x1F700–#x1F77F IsAlchemicalSymbols
+#x20000–#x2A6D6 IsCJKUnifiedIdeographsExtensionB
+#x20000–#x2A6DF IsCJKUnifiedIdeographsExtensionB
+#x2A700–#x2B73F IsCJKUnifiedIdeographsExtensionC
+#x2B740–#x2B81F IsCJKUnifiedIdeographsExtensionD
+#x2F800–#x2FA1F IsCJKCompatibilityIdeographsSupplement
+#xE0000–#xE007F IsTags
+#xE0100–#xE01EF IsVariationSelectorsSupplement
+#xF0000–#xFFFFD IsPrivateUse
+#xF0000–#xFFFFF IsSupplementaryPrivateUseArea-A
+#x100000–#x10FFFD IsPrivateUse
+#x100000–#x10FFFF IsSupplementaryPrivateUseArea-B
+-->
