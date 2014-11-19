@@ -48,8 +48,8 @@
 <xsl:sequence select="tei:range(.,'IsGreek','Greek')"/>
 <xsl:sequence select="tei:range(.,'IsGreekandCoptic','GreekandCoptic')"/>
 <xsl:sequence select="tei:range(.,'IsCyrillic','Cyrillic')"/>
-<xsl:sequence select="tei:range(.,'IsCyrillicSupplementary','CyrillicSupplementary')"/>
-<xsl:sequence select="tei:range(.,'IsCyrillicSupplement','CyrillicSupplement')"/>
+<xsl:sequence select="tei:range(.,'IsCyrillicSupplementary','Cyrillic Supplementary')"/>
+<xsl:sequence select="tei:range(.,'IsCyrillicSupplement','Cyrillic Supplement')"/>
 <xsl:sequence select="tei:range(.,'IsArmenian','Armenian')"/>
 <xsl:sequence select="tei:range(.,'IsHebrew','Hebrew')"/>
 <xsl:sequence select="tei:range(.,'IsArabic','Arabic')"/>
@@ -71,7 +71,6 @@
 <xsl:sequence select="tei:range(.,'IsSinhala','Sinhala')"/>
 <xsl:sequence select="tei:range(.,'IsThai','Thai')"/>
 <xsl:sequence select="tei:range(.,'IsLao','Lao')"/>
-<xsl:sequence select="tei:range(.,'IsTibetan','Tibetan')"/>
 <xsl:sequence select="tei:range(.,'IsTibetan','Tibetan')"/>
 <xsl:sequence select="tei:range(.,'IsMyanmar','Myanmar')"/>
 <xsl:sequence select="tei:range(.,'IsGeorgian','Georgian')"/>
@@ -102,42 +101,60 @@
 <xsl:sequence select="tei:range(.,'IsOlChiki','OlChiki')"/>
 <xsl:sequence select="tei:range(.,'IsVedicExtensions','VedicExtensions')"/>
 <xsl:sequence select="tei:range(.,'IsPhoneticExtensions','PhoneticExtensions')"/>
-<xsl:sequence select="tei:range(.,'IsPhoneticExtensionsSupplement','PhoneticExtensionsSupplement')"/>
-<xsl:sequence select="tei:range(.,'IsCombiningDiacriticalMarksSupplement','CombiningDiacriticalMarksSupplement')"/>
-<xsl:sequence select="tei:range(.,'IsLatinExtendedAdditional','LatinExtendedAdditional')"/>
+<xsl:sequence
+    select="tei:range(.,'IsPhoneticExtensionsSupplement','Phonetic
+	    Extensions Supplement')"/>
+<xsl:sequence
+    select="tei:range(.,'IsCombiningDiacriticalMarksSupplement','Combining
+	    DiacriticalMarks Supplement')"/>
+<xsl:sequence select="tei:range(.,'IsLatinExtendedAdditional','Latin ExtendedAdditional')"/>
 <xsl:sequence select="tei:range(.,'IsGreekExtended','GreekExtended')"/>
-<xsl:sequence select="tei:range(.,'IsGeneralPunctuation','GeneralPunctuation')"/>
-<xsl:sequence select="tei:range(.,'IsSuperscriptsandSubscripts','SuperscriptsandSubscripts')"/>
+<xsl:sequence select="tei:range(.,'IsGeneralPunctuation','General Punctuation')"/>
+<xsl:sequence
+    select="tei:range(.,'IsSuperscriptsandSubscripts','Superscripts
+	    and Subscripts')"/>
 <xsl:sequence select="tei:range(.,'IsCurrencySymbols','CurrencySymbols')"/>
-<xsl:sequence select="tei:range(.,'IsCombiningMarksforSymbols','CombiningMarksforSymbols')"/>
-<xsl:sequence select="tei:range(.,'IsCombiningDiacriticalMarksforSymbols','CombiningDiacriticalMarksforSymbols')"/>
-<xsl:sequence select="tei:range(.,'IsLetterlikeSymbols','LetterlikeSymbols')"/>
-<xsl:sequence select="tei:range(.,'IsNumberForms','NumberForms')"/>
+<xsl:sequence
+    select="tei:range(.,'IsCombiningMarksforSymbols','Combining MarksforSymbols')"/>
+<xsl:sequence
+    select="tei:range(.,'IsCombiningDiacriticalMarksforSymbols','Combining
+	    Diacritical Marks for Symbols')"/>
+<xsl:sequence select="tei:range(.,'IsLetterlikeSymbols','Letterlike Symbols')"/>
+<xsl:sequence select="tei:range(.,'IsNumberForms','Number Forms')"/>
 <xsl:sequence select="tei:range(.,'IsArrows','Arrows')"/>
-<xsl:sequence select="tei:range(.,'IsMathematicalOperators','MathematicalOperators')"/>
-<xsl:sequence select="tei:range(.,'IsMiscellaneousTechnical','MiscellaneousTechnical')"/>
+<xsl:sequence
+    select="tei:range(.,'IsMathematicalOperators','Mathematical Operators')"/>
+<xsl:sequence
+    select="tei:range(.,'IsMiscellaneousTechnical','Miscellaneous Technical')"/>
 <xsl:sequence select="tei:range(.,'IsControlPictures','ControlPictures')"/>
-<xsl:sequence select="tei:range(.,'IsOpticalCharacterRecognition','OpticalCharacterRecognition')"/>
-<xsl:sequence select="tei:range(.,'IsEnclosedAlphanumerics','EnclosedAlphanumerics')"/>
-<xsl:sequence select="tei:range(.,'IsBoxDrawing','BoxDrawing')"/>
-<xsl:sequence select="tei:range(.,'IsBlockElements','BlockElements')"/>
-<xsl:sequence select="tei:range(.,'IsGeometricShapes','GeometricShapes')"/>
-<xsl:sequence select="tei:range(.,'IsMiscellaneousSymbols','MiscellaneousSymbols')"/>
+<xsl:sequence
+    select="tei:range(.,'IsOpticalCharacterRecognition','Optical
+	    Character Recognition')"/>
+<xsl:sequence select="tei:range(.,'IsEnclosedAlphanumerics','Enclosed Alphanumerics')"/>
+<xsl:sequence select="tei:range(.,'IsBoxDrawing','Box Drawing')"/>
+<xsl:sequence select="tei:range(.,'IsBlockElements','Block Elements')"/>
+<xsl:sequence select="tei:range(.,'IsGeometricShapes','Geometric Shapes')"/>
+<xsl:sequence
+    select="tei:range(.,'IsMiscellaneousSymbols','Miscellaneous Symbols')"/>
 <xsl:sequence select="tei:range(.,'IsDingbats','Dingbats')"/>
 <xsl:sequence select="tei:range(.,'IsMiscellaneousMathematicalSymbols-A','MiscellaneousMathematicalSymbols-A')"/>
 <xsl:sequence select="tei:range(.,'IsSupplementalArrows-A','SupplementalArrows-A')"/>
 <xsl:sequence select="tei:range(.,'IsBraillePatterns','BraillePatterns')"/>
 <xsl:sequence select="tei:range(.,'IsSupplementalArrows-B','SupplementalArrows-B')"/>
 <xsl:sequence select="tei:range(.,'IsMiscellaneousMathematicalSymbols-B','MiscellaneousMathematicalSymbols-B')"/>
-<xsl:sequence select="tei:range(.,'IsSupplementalMathematicalOperators','SupplementalMathematicalOperators')"/>
-<xsl:sequence select="tei:range(.,'IsMiscellaneousSymbolsandArrows','MiscellaneousSymbolsandArrows')"/>
+<xsl:sequence
+    select="tei:range(.,'IsSupplementalMathematicalOperators','Supplemental
+	    MathematicalOperators')"/>
+<xsl:sequence
+    select="tei:range(.,'IsMiscellaneousSymbolsandArrows','Miscellaneous
+	    Symbols and Arrows')"/>
 <xsl:sequence select="tei:range(.,'IsGlagolitic','Glagolitic')"/>
-<xsl:sequence select="tei:range(.,'IsLatinExtended-C','LatinExtended-C')"/>
+<xsl:sequence select="tei:range(.,'IsLatinExtended-C','Latin Extended-C')"/>
 <xsl:sequence select="tei:range(.,'IsCoptic','Coptic')"/>
 <xsl:sequence select="tei:range(.,'IsGeorgianSupplement','GeorgianSupplement')"/>
 <xsl:sequence select="tei:range(.,'IsTifinagh','Tifinagh')"/>
-<xsl:sequence select="tei:range(.,'IsEthiopicExtended','EthiopicExtended')"/>
-<xsl:sequence select="tei:range(.,'IsCyrillicExtended-A','CyrillicExtended-A')"/>
+<xsl:sequence select="tei:range(.,'IsEthiopicExtended','Ethiopic Extended')"/>
+<xsl:sequence select="tei:range(.,'IsCyrillicExtended-A','Cyrillic Extended-A')"/>
 <xsl:sequence select="tei:range(.,'IsSupplementalPunctuation','SupplementalPunctuation')"/>
 <xsl:sequence select="tei:range(.,'IsCJKRadicalsSupplement','CJKRadicalsSupplement')"/>
 <xsl:sequence select="tei:range(.,'IsKangxiRadicals','KangxiRadicals')"/>
