@@ -1,4 +1,4 @@
-<xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <XSL:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tei-c.org/ns/1.0" xmlns:XSL="http://www.w3.org/1999/XSL/Transform" xmlns:xsl="http://www.w3.org/1999/XSL/TransformAlias" version="2.0">
   <!--
 This software is dual-licensed:
@@ -172,6 +172,7 @@ of this software, even if advised of the possibility of such damage.
           <xsl:analyze-string select="$words" regex="&amp;([A-z0-9\-]+);">
             <xsl:matching-substring>
               <xsl:choose>
+                <xsl:when test="regex-group(1)='brvbar'">&#x00A6;</xsl:when>
                 <xsl:when test="regex-group(1)='ballot'">☐</xsl:when>
                 <xsl:when test="regex-group(1)='music'">⚻</xsl:when>
                 <xsl:when test="regex-group(1)='spcacute'">´</xsl:when>

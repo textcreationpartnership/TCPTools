@@ -78,6 +78,7 @@
       <XSL:analyze-string select="$words" regex="&amp;([A-z0-9\-]+);">
          <XSL:matching-substring>
             <XSL:choose>
+               <XSL:when test="regex-group(1)='brvbar'">¦</XSL:when>
                <XSL:when test="regex-group(1)='ballot'">☐</XSL:when>
                <XSL:when test="regex-group(1)='music'">⚻</XSL:when>
                <XSL:when test="regex-group(1)='spcacute'">´</XSL:when>

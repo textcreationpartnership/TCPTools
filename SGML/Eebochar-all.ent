@@ -1578,5 +1578,6 @@
 <!ENTITY EOLunhyphen SDATA "&EOLunhyphen;"--=BROKEN BAR We have hijacked this Unicode code point for use in the XML derivative versions ONLY, as a display equivalent for an editor-supplied EOL hyphen.-->
 <!ENTITY spcDash SDATA "&spcDash;"--=BOX DRAWING LIGHT DOUBLE DASH HORIZONTAL We have hijacked this Unicode code point for a symbol to represent the spacing dash used to space words out under musical notes or similar environments.-->
 
-<!ENTITY ballot SDATA "&ballot;">
+<!ENTITY brvbar SDATA "&brvbar;">
 <!ENTITY music SDATA "&music;">
+<!ENTITY ballot SDATA "&ballot;">
