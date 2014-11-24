@@ -3,6 +3,6 @@ D=`dirname $1`
 echo read $F.sgm
 perl cleanSGML.pl < $D/$F.sgm | \
 osx -ccatalog -xno-nl-in-tag -xcomment -xempty -xno-expand-internal - > $F.xmllike
-saxon $F.xmllike tcpentities.xsl  > $F.xml
+saxon $F.xmllike cleantcp.xsl  > $F.xml
 rm $F.xmllike
 echo wrote $F.xml

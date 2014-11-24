@@ -94,6 +94,9 @@
                <XSL:when test="regex-group(1)='spcring'">˚</XSL:when>
                <XSL:when test="regex-group(1)='spctilde'">˜</XSL:when>
                <XSL:when test="regex-group(1)='spcuml'">¨</XSL:when>
+               <XSL:when test="regex-group(1)='abbrstroke'">
+                  <XSL:sequence select="tei:makeG('abbrstroke','̄')"/>
+               </XSL:when>
                <XSL:when test="regex-group(1)='AElig'">Æ</XSL:when>
                <XSL:when test="regex-group(1)='Aacugr'">Ά</XSL:when>
                <XSL:when test="regex-group(1)='Aacute'">Á</XSL:when>

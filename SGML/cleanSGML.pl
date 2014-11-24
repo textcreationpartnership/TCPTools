@@ -296,7 +296,7 @@ s#\{templowbar\}#_#g;
 	 s/(<GAP[^>]+DISP="[^\+">]+?)\+([^">]*?")/$1&hellip;$2/g;
         
          #Convert tilde to combining character
-         s/\~/&cmbmacr;/g; #&cmbmacr;=macron, &#x0303;=tilde
+         s/\~/&abbrstroke;/g; #&cmbmacr;=macron, &#x0303;=tilde
       
 	 print;
        }

@@ -2214,6 +2214,15 @@
                <mapping type="standard">Ꝫ</mapping>
             </char>
          </charDecl>
+         <charDecl>
+            <desc>Most of these are nasal suspensions
+	    (-n- or -m-); some are general abbreviation strokes
+	    (ep~s = "episcopus" etc.); some form part of more-or-less
+	    stable brevigraphs (q~ = quae); and some mean God knows what.</desc>
+            <char xml:id="abbrstroke">
+               <mapping type="default">{~}</mapping>
+            </char>
+         </charDecl>
       </encodingDesc>
    </teiHeader>
 </TEI>
