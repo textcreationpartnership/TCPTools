@@ -182,6 +182,7 @@ of this software, even if advised of the possibility of such damage.
           <xsl:analyze-string select="$words" regex="&amp;([A-z0-9\-]+);">
             <xsl:matching-substring>
               <xsl:choose>
+                <xsl:when test="regex-group(1)='brvbar'">&#x00A6;</xsl:when>
                 <xsl:when test="regex-group(1)='ballot'">☐</xsl:when>
                 <xsl:when test="regex-group(1)='music'">⚻</xsl:when>
                 <xsl:when test="regex-group(1)='spcacute'">´</xsl:when>
