@@ -95,8 +95,8 @@
                <XSL:when test="regex-group(1)='spcring'">˚</XSL:when>
                <XSL:when test="regex-group(1)='spctilde'">˜</XSL:when>
                <XSL:when test="regex-group(1)='spcuml'">¨</XSL:when>
-               <XSL:when test="regex-group(1)='abbrstroke'">
-                  <XSL:sequence select="tei:makeG('abbrstroke','̄')"/>
+               <XSL:when test="regex-group(1)='cmbAbbrStroke'">
+                  <XSL:sequence select="tei:makeG('cmbAbbrStroke','̄')"/>
                </XSL:when>
                <XSL:when test="regex-group(1)='AElig'">Æ</XSL:when>
                <XSL:when test="regex-group(1)='Aacugr'">Ά</XSL:when>
@@ -2003,6 +2003,20 @@
                      </XSL:when>
                      <XSL:otherwise>
                         <XSL:sequence select="tei:makeG('circdot',$replace)"/>
+                     </XSL:otherwise>
+                  </XSL:choose>
+               </XSL:when>
+               <XSL:when test="regex-group(1)='cmbAbbrStroke'">
+                  <XSL:variable name="replace">̄</XSL:variable>
+                  <XSL:choose>
+                     <XSL:when test="not($usemarkup)">
+                        <XSL:value-of select="$replace"/>
+                     </XSL:when>
+                     <XSL:when test="starts-with($replace,'{')">
+                        <XSL:sequence select="tei:makeExpan('cmbAbbrStroke',translate($replace,'{}',''))"/>
+                     </XSL:when>
+                     <XSL:otherwise>
+                        <XSL:sequence select="tei:makeG('cmbAbbrStroke',$replace)"/>
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>

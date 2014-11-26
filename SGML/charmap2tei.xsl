@@ -83,16 +83,6 @@ of this software, even if advised of the possibility of such damage.
 		<XSL:call-template name="charDecl"/>
 	      </XSL:for-each>
 	    </XSL:for-each>
-         <charDecl>
-            <desc>Most of these are nasal suspensions
-	    (-n- or -m-); some are general abbreviation strokes
-	    (ep~s = "episcopus" etc.); some form part of more-or-less
-	    stable brevigraphs (q~ = quae); and some mean God knows what.</desc>
-            <char xml:id="abbrstroke">
-               <mapping type="default">{~}</mapping>
-            </char>
-         </charDecl>
-
   
          </encodingDesc>
         </teiHeader>
@@ -199,8 +189,8 @@ of this software, even if advised of the possibility of such damage.
                 <xsl:when test="regex-group(1)='spcring'">˚</xsl:when>
                 <xsl:when test="regex-group(1)='spctilde'">˜</xsl:when>
                 <xsl:when test="regex-group(1)='spcuml'">¨</xsl:when>
-                <xsl:when test="regex-group(1)='abbrstroke'">
-		  <xsl:sequence select="tei:makeG('abbrstroke','&#x0304;')"/>
+                <xsl:when test="regex-group(1)='cmbAbbrStroke'">
+		  <xsl:sequence select="tei:makeG('cmbAbbrStroke','&#x0304;')"/>
 		</xsl:when>
                 <XSL:for-each select="//char[equiv/@compat='exact']">
                   <XSL:sort select="ent/@tcp"/>

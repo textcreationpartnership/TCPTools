@@ -1,12 +1,21 @@
+<!-- pfs 2014-11-25 -->
+<!-- added p5 element designed to hold elements of a P5 charDecl. Largely replicates info in other tags, but conveniently located in one place -->
+<!-- also introduces some repairs that need to be be put back in the earlier parts of each entry -->
+
+
 <!ELEMENT charents o o (char)+>
-<!ELEMENT char - - (ent, equiv+, repl+, comment*)>
+<!ELEMENT char - - (ent, equiv+, repl+, comment*, p5)>
 <!ELEMENT ent - - EMPTY>
 <!ELEMENT equiv - - EMPTY>
 <!ELEMENT repl - - EMPTY>
 <!ELEMENT comment - - (#PCDATA)>
+<!ELEMENT p5 - - (charName?, desc?, mapping+)>
+<!ELEMENT charName - - (#PCDATA)>
+<!ELEMENT desc - - (#PCDATA)>
+<!ELEMENT mapping - - (#PCDATA)>
 
 <!ATTLIST ent
-	tcp CDATA #REQUIRED
+	  tcp CDATA #REQUIRED
           src (tcp|isolat1|isolat2|isonum|isotech|isopub|isogrk1|teigrk|isodia|isocyr1) #IMPLIED
           desc CDATA #IMPLIED
 	  author CDATA #IMPLIED
@@ -34,7 +43,17 @@
 	  date CDATA #IMPLIED
 >
 
-<!--// DESCRIPTION OF TAGS AND ATTRIBUTES:
+<!ATTLIST p5
+          XID CDATA #REQUIRED
+>
+
+<!ATTLIST mapping
+         TYPE CDATA #REQUIRED
+         SUBTYPE CDATA #REQUIRED
+>
+
+
+<!-- DESCRIPTION OF TAGS AND ATTRIBUTES:
 
 ENT (empty tag containing entity element)
 
@@ -71,4 +90,4 @@ COMMENT (optional tag containing a comment string)
    AUTHOR (optional author user name) e.g. AUTHOR="akuster"
    DATE (optional date of creation) e.g. DATE="2005-05"
    
-//-->
+ -->
