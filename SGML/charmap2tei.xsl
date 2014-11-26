@@ -61,7 +61,7 @@ of this software, even if advised of the possibility of such damage.
             </XSL:for-each>
 	    
 	    <XSL:variable name="orig" select="/"/>
-	    <XSL:for-each select="('Barline','LL','Qbar','R','THAT','Vstroke','W','Xbar','Y','abCON','abPER','abPRO','abQUOD','abRUM',
+	    <XSL:for-each select="('EOLhyphen', 'EOLunhyphen', 'Barline','LL','Qbar','R','THAT','Vstroke','W','Xbar','Y','abCON','abPER','abPRO','abQUOD','abRUM',
 				  'abcon','abis','abper','abpr','abprecipi','abpro','abquod','absubli','abus','afortis','air',
 				  'alembic','ang','aregis','arsenic','ashes','barline','cclef','cinnabar1','cinnabar3',
 				  'cmba2a','cmbogona','commonTime-adagio','ddiple','delta','diggr','dtridot','earth',

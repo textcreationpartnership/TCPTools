@@ -1149,6 +1149,24 @@
             </char>
          </charDecl>
          <charDecl>
+            <desc>We have hijacked this Unicode code point for use in the XML derivative versions ONLY, as a display equivalent for an EOL hyphen.</desc>
+            <char xml:id="EOLhyphen">
+               <charName>DIVIDES</charName>
+               <mapping type="default">{-}</mapping>
+               <mapping type="Arial Unicode MS">∣</mapping>
+               <mapping type="standard">∣</mapping>
+            </char>
+         </charDecl>
+         <charDecl>
+            <desc>We have hijacked this Unicode code point for use in the XML derivative versions ONLY, as a display equivalent for an editor-supplied EOL hyphen.</desc>
+            <char xml:id="EOLunhyphen">
+               <charName>BROKEN BAR</charName>
+               <mapping type="default">{+}</mapping>
+               <mapping type="Arial Unicode MS">¦</mapping>
+               <mapping type="standard">¦</mapping>
+            </char>
+         </charDecl>
+         <charDecl>
             <desc>musical double barline, formally similar to double vertical bar (Verbar)</desc>
             <char xml:id="Barline">
                <charName>MUSICAL SYMBOL DOUBLE BARLINE</charName>
