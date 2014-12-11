@@ -100,15 +100,19 @@ of this software, even if advised of the possibility of such damage.
       </xsl:copy>
    </xsl:template>
 
-   <xsl:template match="SOURCEDESC/BIBLFULL/PUBLICATIONSTMT/DATE" mode="HEADER">
+   <xsl:template match="FILEDESC/TITLESTMT" mode="HEADER">
       <xsl:copy>
-      <xsl:if test="not($year= '')">
-	<xsl:attribute name="WHEN">
-                  <xsl:value-of select="$year"/>
-	</xsl:attribute>
-      </xsl:if>
          <xsl:apply-templates select="@*|*|processing-instruction()|comment()|text()" mode="HEADER"/>
       </xsl:copy>
+      <xsl:if test="not($year= '')">
+	<EDITIONSTMT>
+	  <EDITION>
+	    <DATE>
+                  <xsl:value-of select="$year"/>
+		</DATE>
+	  </EDITION>
+	</EDITIONSTMT>
+      </xsl:if>
    </xsl:template>
 
     <xsl:template match="comment()|processing-instruction()|@*|text" mode="HEADER">

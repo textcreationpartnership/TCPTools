@@ -10,15 +10,19 @@
          <XSL:apply-templates select="@*|*|processing-instruction()|comment()|text()" mode="HEADER"/>
       </XSL:copy>
    </XSL:template>
-   <XSL:template match="SOURCEDESC/BIBLFULL/PUBLICATIONSTMT/DATE" mode="HEADER">
+   <XSL:template match="FILEDESC/TITLESTMT" mode="HEADER">
       <XSL:copy>
-      <XSL:if test="not($year= '')">
-	<XSL:attribute name="WHEN">
-                  <XSL:value-of select="$year"/>
-	</XSL:attribute>
-      </XSL:if>
          <XSL:apply-templates select="@*|*|processing-instruction()|comment()|text()" mode="HEADER"/>
       </XSL:copy>
+      <XSL:if test="not($year= '')">
+         <EDITIONSTMT>
+            <EDITION>
+               <DATE>
+                  <XSL:value-of select="$year"/>
+               </DATE>
+            </EDITION>
+         </EDITIONSTMT>
+      </XSL:if>
    </XSL:template>
    <XSL:template match="comment()|processing-instruction()|@*|text" mode="HEADER">
       <XSL:copy-of select="."/>
