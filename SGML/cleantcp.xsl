@@ -4,6 +4,29 @@
                 xmlns:XSL="http://www.w3.org/1999/XSL/Transform"
                 exclude-result-prefixes="tei xs"
                 version="2.0">
+   <XSL:param name="year"/>
+   <XSL:template match="*" mode="HEADER">
+      <XSL:copy>
+         <XSL:apply-templates select="@*|*|processing-instruction()|comment()|text()" mode="HEADER"/>
+      </XSL:copy>
+   </XSL:template>
+   <XSL:template match="FILEDESC/TITLESTMT" mode="HEADER">
+      <XSL:copy>
+         <XSL:apply-templates select="@*|*|processing-instruction()|comment()|text()" mode="HEADER"/>
+      </XSL:copy>
+      <XSL:if test="not($year= '')">
+         <EDITIONSTMT>
+            <P>
+               <DATE>
+                  <XSL:value-of select="$year"/>
+               </DATE>
+            </P>
+         </EDITIONSTMT>
+      </XSL:if>
+   </XSL:template>
+   <XSL:template match="comment()|processing-instruction()|@*|text" mode="HEADER">
+      <XSL:copy-of select="."/>
+   </XSL:template>
    <XSL:template match="*">
       <XSL:copy>
          <XSL:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
@@ -15,7 +38,7 @@
          <XSL:if test="doc-available(resolve-uri($hfile,base-uri(/*)))">
             <XSL:message> load header <XSL:value-of select="resolve-uri($hfile,base-uri(/*))"/>
             </XSL:message>
-            <XSL:copy-of select="doc(resolve-uri($hfile,base-uri(/*)))/*"/>
+            <XSL:apply-templates select="doc(resolve-uri($hfile,base-uri(/*)))/*" mode="HEADER"/>
          </XSL:if>
          <XSL:apply-templates select="*|processing-instruction()|comment()|text()"/>
       </XSL:copy>

@@ -10,3 +10,6 @@ charmap:
 
 eebodat:
 	osx -ccatalog -xlower -xcomment -xempty -xndata eebodat0.sgm  | xmllint --format - > eebodat0.xml
+	perl -p -i -e 's/<yr t="q">(..)(..)-19/<yr t="q">\1\2-\1/' eebodat0.xml
+	saxon eebodat0.xml listyears.xsl > makejob.pl 
+

@@ -25,6 +25,7 @@
     <attribute name="name"/>
     <attribute name="prefix"/>
     <attribute name="dir"/>
+    <attribute name="year"/>
     <sequential>
       <mkdir dir="@{dir}/Texts-XML/@{prefix}"/>
       <mkdir dir="@{dir}/Texts-TEI/@{prefix}"/>
@@ -54,6 +55,7 @@
 	    in="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp2"
 	    out="@{dir}/Texts-XML/@{prefix}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <param name="year" expression="@{year}"/>
       </xslt>
       <xslt force="yes" style="${xsl}/tcp/tcp2tei.xsl"
 	    in="@{dir}/Texts-XML/@{prefix}/@{name}.xml"

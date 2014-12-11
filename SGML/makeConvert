@@ -34,7 +34,7 @@ then
 	if  [ $threads -eq 1 ]
 	then
 		cat anthead.xml> convertall.xml 
-		perl -p -e "s:$source/Texts-SGML/(.*)/(.*).sgm:<doconvert dir='$source' prefix='\$1' name='\$2'/>:" list >> convertall.xml
+		perl makejob.pl $source < list >> convertall.xml
 		cat anttail.xml >> convertall.xml
 		$ANT -f convertall.xml
 	else
@@ -42,14 +42,14 @@ then
             split -l $(( `cat list | wc -l` / $threads)) list $name
 	    for i in $name*; do 
 		cat anthead.xml> $i.xml 
-		perl -p -e "s:$source/Texts-SGML/(.*)/(.*).sgm:<doconvert dir='$source' prefix='\$1' name='\$2'/>:" $i >>$i.xml
+		perl makejob.pl $source < $i >>$i.xml
 		cat anttail.xml >> $i.xml
                 nohup $ANT -f $i.xml >& $i.LOG & 
 	    done
         fi
     else
 	cat anthead.xml> test$name.xml 
-	cat $textlist | perl -p -e "s:(...)(.*):<doconvert dir='$source' prefix='\$1' name='\$1\$2'/>:"   >> test$name.xml
+	cat $textlist | perl makejob.pl $source   >> test$name.xml
 	cat anttail.xml >> test$name.xml
 	$ANT -f test$name.xml 
     fi
@@ -58,7 +58,7 @@ else
     F=`basename $test .sgm`
     D=`echo $test | sed 's/\(...\).*/\1/'`
     cat anthead.xml> test$name.xml 
-    echo "<doconvert dir='$source' prefix='$D' name='$F'/>"   >> test$name.xml
+    echo "$D/$F.sgm" | perl makejob.pl $source  >> test$name.xml
     cat anttail.xml >> test$name.xml
-    $ANT -f test$name.xml 
+     $ANT -f test$name.xml 
 fi

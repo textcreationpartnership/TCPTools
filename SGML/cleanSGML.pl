@@ -1,4 +1,5 @@
 while (<>){
+	s/\&squ;/\&square;/g;
          s/="ILLEGIBLE"/="illegible"/g;
 	 #PART 1.4. FIX GAP EXTENTs
          

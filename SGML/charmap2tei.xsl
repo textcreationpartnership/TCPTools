@@ -91,6 +91,29 @@ of this software, even if advised of the possibility of such damage.
 
     <XSL:result-document href="cleantcp.xsl" method="xml">
       <xsl:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="" exclude-result-prefixes="tei xs" version="2.0">
+
+  <xsl:param name="year"/>
+   <xsl:template match="*" mode="HEADER">
+      <xsl:copy>
+         <xsl:apply-templates
+	     select="@*|*|processing-instruction()|comment()|text()"  mode="HEADER"/>
+      </xsl:copy>
+   </xsl:template>
+   <xsl:template match="FILEDESC/TITLESTMT" mode="HEADER">
+      <xsl:copy>
+         <xsl:apply-templates
+	     select="@*|*|processing-instruction()|comment()|text()"  mode="HEADER"/>
+      </xsl:copy>
+      <xsl:if test="not($year= '')">
+	<EDITIONSTMT><P><DATE><xsl:value-of
+	select="$year"/></DATE></P></EDITIONSTMT>
+      </xsl:if>
+   </xsl:template>
+
+    <xsl:template match="comment()|processing-instruction()|@*|text" mode="HEADER">
+      <xsl:copy-of select="."/>
+   </xsl:template>
+
         <xsl:template match="*">
           <xsl:copy>
             <xsl:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
@@ -102,7 +125,8 @@ of this software, even if advised of the possibility of such damage.
 	    <xsl:variable name="hfile" select="concat('./',//IDG/@ID,'.hdr')"/>
             <xsl:if test="doc-available(resolve-uri($hfile,base-uri(/*)))">
 	        <xsl:message> load header <xsl:value-of select="resolve-uri($hfile,base-uri(/*))"/></xsl:message>
-		<xsl:copy-of select="doc(resolve-uri($hfile,base-uri(/*)))/*"/>
+		<xsl:apply-templates
+		    select="doc(resolve-uri($hfile,base-uri(/*)))/*" mode="HEADER"/>
 	    </xsl:if>
             <xsl:apply-templates
 		select="*|processing-instruction()|comment()|text()"/>
