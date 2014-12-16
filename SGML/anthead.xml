@@ -26,49 +26,49 @@
     <attribute name="prefix"/>
     <attribute name="dir"/>
     <attribute name="year"/>
-    <attribute name="phase"/>
+    <attribute name="status"/>
     <sequential>
-      <mkdir dir="@{dir}/Texts-XML/@{prefix}"/>
-      <mkdir dir="@{dir}/Texts-TEI/@{prefix}"/>
+      <mkdir dir="@{dir}/Texts-XML/@{status}/@{prefix}"/>
+      <mkdir dir="@{dir}/Texts-TEI/@{status}/@{prefix}"/>
 
-      <echo>Running Perl ${basedir}/cleanSGML.pl on @{dir}/Texts-SGML/@{prefix}/@status/@{name}.sgm</echo>
-      <exec executable="perl" dir="${basedir}" input="@{dir}/Texts-SGML/@{prefix}/@status/@{name}.sgm"
-	    output="@{dir}/Texts-SGML/@{prefix}/@status/@{name}.tmp"
+      <echo>Running Perl ${basedir}/cleanSGML.pl on @{dir}/Texts-SGML/@{prefix}/@{name}.sgm</echo>
+      <exec executable="perl" dir="${basedir}" input="@{dir}/Texts-SGML/@{prefix}/@{name}.sgm"
+	    output="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"
 	    failonerror="true" 	  logError="true">
 	<arg value="${basedir}/cleanSGML.pl"/>
       </exec>
 
-      <echo>Running osx SGML conversion on @{dir}/Texts-SGML/{@prefix}/@{name}.tmp</echo>
+      <echo>Running osx SGML conversion on @{dir}/Texts-SGML/@{prefix}/@{name}.tmp</echo>
       <exec 
 	  logError="true"
 	  executable="osx" 
-	  output="@{dir}/Texts-SGML/{@prefix}/@{name}.tmp2"
+	  output="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp2"
 	  failonerror="true" >
 	<arg value="-c${basedir}/catalog"/>
-	<arg value="-d@{dir}/Texts-SGML/{@prefix}/@{status}"/>
+	<arg value="-d@{dir}/Texts-SGML/@{prefix}"/>
 	<arg value="-xno-nl-in-tag"/>
 	<arg value="-xcomment"/>
 	<arg value="-xempty"/>
 	<arg value="-xno-expand-internal"/>
-        <arg value="@{dir}/Texts-SGML/{@prefix}/@{name}.tmp"/>
+        <arg value="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
       </exec>
       <xslt force="yes" style="${basedir}/cleantcp.xsl"
-	    in="@{dir}/Texts-SGML/{@prefix}/@{name}.tmp2"
-	    out="@{dir}/Texts-XML/{@prefix}/@{status}/@{name}.xml">
+	    in="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp2"
+	    out="@{dir}/Texts-XML/@{prefix}/@{status}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <param name="year" expression="@{year}"/>
       </xslt>
       <xslt force="yes" style="${xsl}/tcp/tcp2tei.xsl"
-	    in="@{dir}/Texts-XML/{@prefix}/@{status}/@{name}.xml"
-	    out="@{dir}/Texts-TEI/{@prefix}/@{status}/@{name}.xml">
+	    in="@{dir}/Texts-XML/@{prefix}/@{status}/@{name}.xml"
+	    out="@{dir}/Texts-TEI/@{prefix}/@{status}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
       </xslt>
-      <echo>Validate @{dir}/Texts-TEI/{@prefix}/@{status}/@{name}.xml</echo>
+      <echo>Validate @{dir}/Texts-TEI/@{prefix}/@{status}/@{name}.xml</echo>
       <runjing rngfile="${basedir}/tcp.rng"
-	       file="@{dir}/Texts-TEI/{@prefix}/@{status}/@{name}.xml"
+	       file="@{dir}/Texts-TEI/@{prefix}/@{status}/@{name}.xml"
 	       failonerror="false"/>
-     <delete file="@{dir}/Texts-SGML/{@prefix}/@{status}/@{name}.tmp"/>
-     <delete file="@{dir}/Texts-SGML/{@prefix}/@{status}/@{name}.tmp2"/>
+     <delete file="@{dir}/Texts-SGML/@{prefix}/@{status}/@{name}.tmp"/>
+     <delete file="@{dir}/Texts-SGML/@{prefix}/@{status}/@{name}.tmp2"/>
 
     </sequential>
   </macrodef>
