@@ -54,21 +54,21 @@
       </exec>
       <xslt force="yes" style="${basedir}/cleantcp.xsl"
 	    in="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp2"
-	    out="@{dir}/Texts-XML/@{prefix}/@{status}/@{name}.xml">
+	    out="@{dir}/Texts-XML/@{status}/@{prefix}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <param name="year" expression="@{year}"/>
       </xslt>
       <xslt force="yes" style="${xsl}/tcp/tcp2tei.xsl"
-	    in="@{dir}/Texts-XML/@{prefix}/@{status}/@{name}.xml"
-	    out="@{dir}/Texts-TEI/@{prefix}/@{status}/@{name}.xml">
+	    in="@{dir}/Texts-XML/@{status}/@{prefix}/@{name}.xml"
+	    out="@{dir}/Texts-TEI/@{status}/@{prefix}/@{name}.xml">
 	<factory name="net.sf.saxon.TransformerFactoryImpl"/>
       </xslt>
-      <echo>Validate @{dir}/Texts-TEI/@{prefix}/@{status}/@{name}.xml</echo>
+      <echo>Validate @{dir}/Texts-TEI/@{status}/@{prefix}/@{name}.xml</echo>
       <runjing rngfile="${basedir}/tcp.rng"
-	       file="@{dir}/Texts-TEI/@{prefix}/@{status}/@{name}.xml"
+	       file="@{dir}/Texts-TEI/@{status}/@{prefix}/@{name}.xml"
 	       failonerror="false"/>
-     <delete file="@{dir}/Texts-SGML/@{prefix}/@{status}/@{name}.tmp"/>
-     <delete file="@{dir}/Texts-SGML/@{prefix}/@{status}/@{name}.tmp2"/>
+     <delete file="@{dir}/Texts-SGML/@{status}/@{prefix}/@{name}.tmp"/>
+     <delete file="@{dir}/Texts-SGML/@{status}/@{prefix}/@{name}.tmp2"/>
 
     </sequential>
   </macrodef>
