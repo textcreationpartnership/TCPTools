@@ -31,6 +31,7 @@ $source=$ARGV[0];
   ($prefix, $name)= /(.*)\/(.*).sgm/;
   $y = $years{$name};
   $phase = $phases{$name};
+  if ($phase == '') { $phase = 'free'; }
 ]]></xsl:text>
 
 <xsl:text><![CDATA[
