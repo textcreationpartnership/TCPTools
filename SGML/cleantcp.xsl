@@ -52,38 +52,6 @@
          <XSL:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
       </XSL:copy>
    </XSL:template>
-   <XSL:template match="LETTER[not(@LANG)]">
-      <XSL:copy>
-         <XSL:attribute name="LANG">unk</XSL:attribute>
-         <XSL:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
-      </XSL:copy>
-   </XSL:template>
-   <XSL:template match="LICENSE">
-      <Q>
-         <TEXT>
-            <XSL:apply-templates select="@*"/>
-            <BODY>
-               <DIV1 TYPE="license">
-                  <XSL:apply-templates select="*|processing-instruction()|comment()|text()"/>
-               </DIV1>
-            </BODY>
-         </TEXT>
-      </Q>
-   </XSL:template>
-   <XSL:template match="FLOATEXT">
-      <Q>
-         <TEXT>
-            <XSL:apply-templates select="@*"/>
-            <BODY>
-               <DIV1>
-                  <XSL:apply-templates select="@TYPE"/>
-                  <XSL:apply-templates select="@N"/>
-                  <XSL:apply-templates select="*|processing-instruction()|comment()|text()"/>
-               </DIV1>
-            </BODY>
-         </TEXT>
-      </Q>
-   </XSL:template>
    <XSL:template match="comment()|processing-instruction()">
       <XSL:copy-of select="."/>
    </XSL:template>
@@ -103,7 +71,7 @@
             <XSL:choose>
                <XSL:when test="regex-group(1)='brvbar'">¦</XSL:when>
                <XSL:when test="regex-group(1)='ballot'">☐</XSL:when>
-               <XSL:when test="regex-group(1)='music'">⚻</XSL:when>
+               <XSL:when test="regex-group(1)='music'">♫</XSL:when>
                <XSL:when test="regex-group(1)='spcacute'">´</XSL:when>
                <XSL:when test="regex-group(1)='spcbreve'">˘</XSL:when>
                <XSL:when test="regex-group(1)='spccaron'">ˇ</XSL:when>
