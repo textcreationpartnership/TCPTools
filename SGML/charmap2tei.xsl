@@ -119,38 +119,6 @@ of this software, even if advised of the possibility of such damage.
               <xsl:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
             </xsl:copy>
           </xsl:template>
-          <xsl:template match="LETTER[not(@LANG)]">
-            <xsl:copy>
-              <xsl:attribute name="LANG">unk</xsl:attribute>
-              <xsl:apply-templates select="@*|*|processing-instruction()|comment()|text()"/>
-            </xsl:copy>
-          </xsl:template>
-          <xsl:template match="LICENSE">
-            <Q>
-              <TEXT>
-                <xsl:apply-templates select="@*"/>
-                <BODY>
-                  <DIV1 TYPE="license">
-                    <xsl:apply-templates select="*|processing-instruction()|comment()|text()"/>
-                  </DIV1>
-                </BODY>
-              </TEXT>
-            </Q>
-          </xsl:template>
-          <xsl:template match="FLOATEXT">
-            <Q>
-              <TEXT>
-                <xsl:apply-templates select="@*"/>
-                <BODY>
-                  <DIV1>
-                    <xsl:apply-templates select="@TYPE"/>
-                    <xsl:apply-templates select="@N"/>
-                    <xsl:apply-templates select="*|processing-instruction()|comment()|text()"/>
-                  </DIV1>
-                </BODY>
-              </TEXT>
-            </Q>
-          </xsl:template>
           <xsl:template match="comment()|processing-instruction()">
             <xsl:copy-of select="."/>
           </xsl:template>
