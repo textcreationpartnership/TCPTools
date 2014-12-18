@@ -6,7 +6,7 @@ test -z $name && echo "Repo name required." 1>&2 && exit 1
 mkdir $name
 cd $name
 D=`echo $name | sed 's/\(...\).*/\1/'`
-cp /Users/rahtz/TEI/tei.oucs.ox.ac.uk/Projects/EEBO/Texts-TEI/$D/$name.xml .
+cp /Users/rahtz/TEI/tei.oucs.ox.ac.uk/Projects/EEBO/Texts-TEI/free/$D/$name.xml .
 saxon $name.xml /Users/rahtz/TEI/MT-EEBO/genReadme.xsl >README.md
 curl -u $user:$password https://api.github.com/orgs/textcreationpartnership/repos -d "{\"name\":\"$name\"}"
 git init

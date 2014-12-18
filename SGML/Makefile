@@ -12,3 +12,6 @@ eebodat:
 	osx -ccatalog -xlower -xcomment -xempty -xndata eebodat0.sgm  | xmllint --format - > eebodat0.xml
 	saxon eebodat0.xml listyears.xsl > makejob.pl 
 
+convert:
+	./makeConvert
+

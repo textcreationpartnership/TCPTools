@@ -1,0 +1,4542 @@
+<!DOCTYPE ETS PUBLIC "-//UMDLPS//DTD EEBOPROOF 2.0//EN">
+<ETS>
+<TEMPHEAD>
+<REVDESCR>
+<CHANGE>
+<DATE>2003-01-24</DATE>
+<RESPSTMT>
+<NAME>Olivia Bottum</NAME>
+<RESP>MURP</RESP>
+</RESPSTMT>
+<ITEM>Added TEMPHEAD, added TYPEs to DIVs in order to validate. Proofed title page. Checked ^s. Reviewed structure. Checked placement and completeness of PBs. Checked for damage GAPs, #s, @s, --s, oe's, and UNCLEARs. Corrected 509 $-groups by inserting vendor-responsible GAPs. Checked for EPIGRAPHs and ARGUMENTs. Checked CLOSERs, BYLINEs and TRAILERs. Checked for startqs, endqs, q;s, and Qs. Checked proofsheets and made corrections.  DONE 2003-01-24.</ITEM>
+</CHANGE>
+</REVDESCR>
+</TEMPHEAD>
+<EEBO>
+<IDG S="marc" R="UM" ID="A12024">
+<STC T="S">22334</STC>
+<BIBNO T="umi">99846589</BIBNO>
+<VID>11569</VID>
+</IDG>
+<TEXT LANG="eng">
+<FRONT>
+<DIV1 TYPE="title page">
+<PB REF="1">
+<PB REF="1">
+<P>THE LATE,
+And much admired Play,
+Called
+Pericles, Prince
+of Tyre.</P>
+<P>With the true Relation of the whole Historie,
+aduentures, and fortunes of the said Prince:</P>
+<P>As also,
+The no lesse strange, and worthy accidents,
+in the Birth and Life, of his Daughter
+<HI>MARIANA.</HI></P>
+<P>As it hath been diuers and sundry times acted by
+his Maiesties Seruants, at the Globe on
+the Banck-side.</P>
+<P>By William Shakespeare.</P>
+<P>Imprinted at London for <HI>Henry Gosson,</HI> and are
+to be sold at the signe of the Sunne in
+Pater-noster row, &amp;c.
+1609.</P>
+</DIV1>
+</FRONT>
+<BODY>
+<DIV1 TYPE="play">
+<PB REF="2">
+<PB REF="2">
+<HEAD>The Play of Pericles
+Prince o<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> Tyre. &amp;c.</HEAD>
+<STAGE>Enter Gower.</STAGE>
+<L>_TO sing a Song that old was sung,</L>
+<L>From ashes, auntient <HI>Gower</HI> is come,</L>
+<L>Assuming mans infirmities,</L>
+<L>To glad your eare, and please your eyes:</L>
+<L>It hath been sung at Feastiuals,</L>
+<L>On Ember eues, and Holydayes:</L>
+<L>And Lords and Ladyes in their liues,</L>
+<L>Haue red it for restoratiues:</L>
+<L>The purchase is to make men glorious,</L>
+<L>Et bonum quo Antiquius <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">o melius:</L>
+<L>If you, borne in those latter times,</L>
+<L>When Witts more ripe, accept my rimes;</L>
+<L>And that to heare an old man sing,</L>
+<L>May to your Wishes pleasure bring:</L>
+<L>I life would wish, and that I might</L>
+<L>Waste it for you, like Taper light.</L>
+<L>This <HI>Antioch,</HI> then <HI>Antiochus</HI> the great,</L>
+<L>Buylt vp this Citie, for his chiefest Seat;</L>
+<L>The fayrest in all <HI>Syria.</HI></L>
+<L>I tell you what mine Authors saye:</L>
+<L>This King vnto him tooke a Peere,</L>
+<L>Who dyed, and left a female heyre,</L>
+<L>So bucksome, blith&punc; and full of face,</L>
+<L>As heauen had lent her all his grace:</L>
+<L>With whom the Father liking tooke,</L>
+<L>And her to Incest did prouoke:</L>
+<L>Bad child, worse father, to intice his owne</L>
+<L><PB REF="3">To euill, should be done by none:</L>
+<L>But custome what they did begi<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">,</L>
+<L>Was with long vse, account'd no sinne&punc;</L>
+<L>The beautie of this sinfull Dame,</L>
+<L>Made many Princes thither frame,</L>
+<L>To seeke her as a bedfellow,</L>
+<L>In maryage pleasures, playfellow:</L>
+<L>Which to preuent, he made a Law,</L>
+<L>To keepe her still, and men in awe:</L>
+<L>That who so askt her for his wife,</L>
+<L>His Riddle tould, not lost his life:</L>
+<L>So for her many of wight did die,</L>
+<L>As yon grimme lookes do testifie.</L>
+<L>What now ensues, to the iudgement of your eye,</L>
+<L>I giue my cause, who best can iu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">tifie.</L>
+<STAGE>Exi<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</STAGE>
+<STAGE>Enter Antiochus, Princ<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> Pericl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s, and f<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">llowers.</STAGE>
+<SP>
+<SPEAKER>Ant<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<L>Young Prince of <HI>Tyre,</HI> you haue at large receiued</L>
+<L>The danger of the taske you vndertake.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>I haue (<HI>Antiochus</HI>) and with a soule emboldned</L>
+<L>With the glory of her prayse, thinke death no hazard,</L>
+<L>In this enterprise.</L>
+</SP>
+<SP>
+<SPEAKER>Ant.</SPEAKER>
+<L>Musicke bring in our daughter, clothed like a bride,</L>
+<L>For embracements euen of <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">oue</HI> himselfe;</L>
+<L>At whose conception, till <HI>Lucina</HI> rained,</L>
+<L>Nature this dowry gaue; to glad her presence,</L>
+<L>The Seanate house of Planets all did sit,</L>
+<L>To knit in her, their best perfections.</L>
+</SP>
+<STAGE>Enter Antiochus daughter.</STAGE>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>See where she comes, appareled like the <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">pring,</L>
+<L>Graces her subiects&punc; and her thoughts the King,</L>
+<L>Of euery Vertue giues renowne to men:</L>
+<L>Her face the booke of pra<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ses, where is read,</L>
+<L>Nothing but curious pleasures&punc; as from thence,</L>
+<L>Sorrow were euer racte, and teastie wrath</L>
+<L>Could neuer be her milde companion.</L>
+<L><PB REF="3">You Gods that made me man, and sway in loue;</L>
+<L>That haue enflamde desire in my breast,</L>
+<L>To taste the fruite of yon celestiall tree,</L>
+<L>(Or die in th'aduenture) be my helpes,</L>
+<L>As I am sonne and seruant to your will,</L>
+<L>To compasse such a bondlesse happinesse.</L>
+</SP>
+<SP>
+<SPEAKER>Anti.</SPEAKER>
+<L>Prince <HI>Pericles.</HI></L>
+</SP>
+<SP>
+<SPEAKER>Per<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<L>That would be sonne to great <HI>Antiochus.</HI></L>
+</SP>
+<SP>
+<SPEAKER>Ant.</SPEAKER>
+<L>Before thee standes this faire <HI>Hesperides,</HI></L>
+<L>With golden fruite, but dangerous to be toucht:</L>
+<L>For Death like Dragons heere affright thee hard:</L>
+<L>Her face like Heauen, inticeth thee to view</L>
+<L>Her countlesse glory; which desert must gaine:</L>
+<L>And which without desert, because thine eye</L>
+<L>Presumes to reach, all the whole heape must die:</L>
+<L>Yo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> sometimes famous Princes, like thy selfe,</L>
+<L>Drawne by report, aduentrous by desire,</L>
+<L>Tell thee with speachlesse tongues, and semblance pale,</L>
+<L>That without couering, saue yon field of Starres,</L>
+<L>Heere they stand Martyrs slaine in <HI>Cupids</HI> Warres:</L>
+<L>And with dead cheekes, aduise thee to desist,</L>
+<L>For going on deaths net, whom none resist.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L><HI>Antiochus,</HI> I thanke thee, who hath taught,</L>
+<L>My frayle mortalitie to know it selfe;</L>
+<L>And by those fearefull obiectes, to prepare</L>
+<L>This body, like to them, to what I must:</L>
+<L>For Death remembered should be like a myrrour,</L>
+<L>Who tels vs, life's but breath, to trust it errour:</L>
+<L>Ile make my Will then, and as sicke men doe,</L>
+<L>Who know the World, see Heauen, but feeling woe,</L>
+<L>Gripe not at earthly ioyes as <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">arst they did;</L>
+<L>So I bequeath a happy peace to you,</L>
+<L>And all good men, as eu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ry Prince should doe;</L>
+<L>My ritches to the earth, from whence they came;</L>
+<L>But my vnspotted fire of Loue, to you:</L>
+<L>Thus ready for the way of li<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e or death,</L>
+<L>I wayte the sharpest blow (<HI>Antiochus</HI>)</L>
+<L><PB REF="4">Scorning aduice; read the conclusion then:</L>
+<L>Which read and not expounded, tis decreed,</L>
+<L>As these before thee, thou thy selfe shalt bleed.</L>
+</SP>
+<SP>
+<SPEAKER>D<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ugh.</SPEAKER>
+<L>Of all sayd yet, mayst thou prooue prospero<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">,</L>
+<L>Of all sayd yet, I wish thee happinesse.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Like a bold Champion I assume the Listes,</L>
+<L>Nor aske aduise of any other thought,</L>
+<L>But faythfulnesse and courage.</L>
+<LG>
+<HEAD>The Riddle.</HEAD>
+<L>I am no Viper, yet I feed</L>
+<L>On mothers flesh which did me breed:</L>
+<L>I sought a Husband, in which labour,</L>
+<L>I found that kindness<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> in a Father;</L>
+<L>Hee's Father, Sonne, and Husband mild<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">;</L>
+<L>I, Mother, Wife; and yet his Child:</L>
+<L>How they may be, and yet in two,</L>
+<L>As you will liue resolue it you.</L>
+</LG>
+<L>Sharpe Phisicke is the last: But &ocirc; you powers!</L>
+<L>That giues heauen countlesse eyes to view mens actes&punc;</L>
+<L>Why cloude they not their sights perpetually,</L>
+<L>If this be true, which makes me pale to read it?</L>
+<L>Faire Glasse of light, I lou'd you, and could still,</L>
+<L>Were not this glorious Casket stor'd with ill:</L>
+<L>But I must tell you, now my thoughts reuolt,</L>
+<L>For hee's no man on whom perfections waite,</L>
+<L>That knowing sinne within, will touch the gate.</L>
+<L>You are a faire Violl, and your sense, the stringes;</L>
+<L>Who finger'd to make man his lawfull musicke,</L>
+<L>Would draw Heauen downe, and all the Gods to ha<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ken:</L>
+<L>But being playd vpon before your time,</L>
+<L>Hell onely daunceth at so harsh a chime:</L>
+<L>Good sooth, I care not for you.</L>
+</SP>
+<SP>
+<SPEAKER>Ant.</SPEAKER>
+<L>Prince <HI>Pericl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s,</HI> touch not, vpon thy life;</L>
+<L>For that's an Article within our Law,</L>
+<L>As dangerous as the rest: your time's expir'd,</L>
+<L>Either expound now, or receiue your senten<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e.</L>
+</SP>
+<SP>
+<PB REF="4">
+<SPEAKER>Peri.</SPEAKER>
+<L>Great King,</L>
+<L>Few loue to heare the sinnes they loue to act,</L>
+<L>T'wo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ld brayde your selfe too neare for me to tell it:</L>
+<L>Who has a booke of all that Monarches doe,</L>
+<L>Hee's more secure to keepe it shut, then showne.</L>
+<L>For Vice repeated, is like the wandring Wind,</L>
+<L>Blowes dust in others eyes to spread it selfe;</L>
+<L>And yet the end of all is bought thus deare,</L>
+<L>The breath is gone, and the sore eyes see cleare:</L>
+<L>To stop the Ayre would hurt them, the blind Mole cast<GAP DESC="illegible" RESP="tech" EXTENT="2 letters"></L>
+<L>Copt hilles towards heauen, to tell the earth is throng'd</L>
+<L>By mans oppression, and the poore Worme doth die for't:</L>
+<L>Kinges are earths Gods; in vice, their law's their will:</L>
+<L>And if <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">oue</HI> stray, who dares say, <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">oue</HI> doth <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ll:</L>
+<L>It is enough you know, and it is fit;</L>
+<L>What being more knowne, growes worse, to smother it.</L>
+<L>All loue the Wombe that their first beeing bred,</L>
+<L>Then giue my tongue like leaue, to loue my head.</L>
+</SP>
+<SP>
+<SPEAKER>Ant.</SPEAKER>
+<L>Heauen, that I had thy head; he ha's found the meaning:</L>
+<L>But I will gloze with him. Young Prince of <HI>Tyre,</HI></L>
+<L>Though by the tenour of your strict edict,</L>
+<L>Your exposition misinterpreting,</L>
+<L>We might proceed to counsell of your dayes;</L>
+<L>Yet hope, succeeding from so faire a tree</L>
+<L>As your faire selfe, doth tune vs otherwise;</L>
+<L>Fourtie dayes longer we doe respite you,</L>
+<L>If by which time, ou<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">cret be vndone,</L>
+<L>This mercy shewes, wee<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">le ioy in such a Sonne:</L>
+<L>And vntill then, your entertaine shall bee</L>
+<L>As doth befit our honour and your worth.</L>
+</SP>
+<STAGE>Manet Pericles solus.</STAGE>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>How courtesie would seeme to couer sinne,</L>
+<L>When what is done, is like an hipocrite,</L>
+<L>The which is good in nothing but in sight.</L>
+<L>If it be true that I interpret false,</L>
+<L>Then were it certaine you were not so bad,</L>
+<L>As with foule Incest to abuse your soule:</L>
+<L><PB REF="5">Where now you both a Father and a Sonne,</L>
+<L>By your vntimely claspings with your Child,</L>
+<L>(Which pleasures fittes a husband, not a father)</L>
+<L>And shee an eater of her Mothers flesh,</L>
+<L>By the defiling of her Parents bed,</L>
+<L>And both like Serpents are; who though they feed</L>
+<L>On sweetest Flowers, yet they Poyson breed.</L>
+<L><HI>Antioch</HI> farewell, for Wisedome sees those men,</L>
+<L>Blush not in actions blacker then the night,</L>
+<L>Will shew no course to keepe them from the light:</L>
+<L>One sinne (I know) another doth prouoke;</L>
+<L>Murther's as neere to Lust, as Flame to Smoake:</L>
+<L>Poyson and Treason are the hands of Sinne,</L>
+<L>I, and the targets to put off the shame,</L>
+<L>Then least my life be cropt, to keepe you cleare,</L>
+<L>By flight, Ile shun the danger which I feare.</L>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE>Enter Antiochus.</STAGE>
+<SP>
+<SPEAKER>Anti.</SPEAKER>
+<L>He hath found the meaning,</L>
+<L>For which we meane to haue his head:</L>
+<L>He must not liue to trumpet foorth my infan<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e,</L>
+<L>Nor tell the world <HI>Antiochus</HI> doth sinne</L>
+<L>In such a loathed manner:</L>
+<L>And therefore instantly this Prince must die,</L>
+<L>For by his fall, my honour must keepe hie.</L>
+<L>Who attends vs there?</L>
+</SP>
+<STAGE>Enter Thaliard.</STAGE>
+<SP>
+<SPEAKER>Thali.</SPEAKER>
+<L>Doth your highnes call?</L>
+</SP>
+<SP>
+<SPEAKER>Antio.</SPEAKER>
+<L><HI>Thaliar<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">,</HI> you are of our Chamber, <HI>Thali<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rd,</HI></L>
+<L>And our minde pertakes her priuat actions,</L>
+<L>To your secrecie; and for your faythfulnes,</L>
+<L>We will aduaunce you, <HI>Th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">liard:</HI></L>
+<L>Behold, heere's Poyson, and heere's Gold:</L>
+<L>Wee hate the Prince of <HI>Tyre,</HI> and thou must kill him;</L>
+<L>It fittes thee not to aske the reason why?</L>
+<L>Because we bid it: say, is it done?</L>
+</SP>
+<SP>
+<SPEAKER>Th<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">i.</SPEAKER>
+<L>My Lord, tis done.</L>
+</SP>
+<STAGE><PB REF="5">Enter a Messenger.</STAGE>
+<SP>
+<SPEAKER>Anti.</SPEAKER>
+<P>Enough. Let your breath coole your selfe, telling
+your haste.</P>
+</SP>
+<SP>
+<SPEAKER>Mess.</SPEAKER>
+<P>My Lord, Prince <HI>Pericles</HI> is fled.</P>
+</SP>
+<SP>
+<SPEAKER>Antin.</SPEAKER>
+<P>As thou wilt liue flie after, and like an arrow shot
+from a well experienst Archer hits the marke his eye doth
+leuell at: so thou neuer returne vnlesse thou say Prince <HI>Pe|ricles</HI>
+is dead.</P>
+</SP>
+<SP>
+<SPEAKER>Thal.</SPEAKER>
+<P>My Lord, if I can get him within my Pistols
+length, Ile make him sure enough, so farewell to your
+highnesse.</P>
+<L><HI>Thaliard</HI> adieu, till <HI>Pericles</HI> be dead,</L>
+<L>My heart can lend no succour to my head.</L>
+</SP>
+<STAGE>Enter Pericles with his Lords.</STAGE>
+<SP>
+<SPEAKER>Pe.</SPEAKER>
+<L>Let none disturb vs, why shold this cha~ge of thoughts</L>
+<L>The sad companion dull eyde melancholie,</L>
+<L>By me so vsde a guest, as not an houre</L>
+<L>In the dayes glorious walke or peacefull night,</L>
+<L>The tombe where griefe stould sleepe can breed me quiet,</L>
+<L>Here pleasures court mine eies, and mine eies shun them,</L>
+<L>And daunger which I fearde is at <HI>Antioch,</HI></L>
+<L>Whose arme seemes farre too short to hit me here,</L>
+<L>Yet neither pleasures Art can ioy my spirits,</L>
+<L>Nor yet the others distance comfort me,</L>
+<L>Then it is thus, the passions of the mind,</L>
+<L>That haue their first conception by misdread,</L>
+<L>Haue after nourishment and life, by care</L>
+<L>And what was first but feare, what might be done,</L>
+<L>Growes elder now, and cares it be not done.</L>
+<L>And so with me the great <HI>Antiochus,</HI></L>
+<L>Gainst whom I am too little to contend,</L>
+<L>Since hee's so great, can make his will his act,</L>
+<L>Will thinke me speaking, though I sweare to silence,</L>
+<L>Nor bootes it me to say, I honour,</L>
+<L>If he susp<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ct I may dishonour him.</L>
+<L><PB REF="6">And what may make him blush in being knowne,</L>
+<L>Heele stop the course by which it might be knowne,</L>
+<L>With hostile forces heele ore-spread the land,</L>
+<L>And with the stint of warre will looke so huge,</L>
+<L>Amazement shall driue courage from the state,</L>
+<L>Our men be vanquisht ere they doe resist,</L>
+<L>And subiects punisht that nere thought offence,</L>
+<L>Which care of them, not pittie of my selfe,</L>
+<L>Who once no more but as the tops of trees,</L>
+<L>Which fence the rootes they grow by and defend them,</L>
+<L>Makes both my bodie pine, and soule to languish,</L>
+<L>And punish that before that he would punish.</L>
+</SP>
+<STAGE>Enter all the Lords to Pericles.</STAGE>
+<SP>
+<SPEAKER>1. Lord.</SPEAKER>
+<L>Ioy and all comfort in your sacred brest.</L>
+</SP>
+<SP>
+<SPEAKER>2. Lord.</SPEAKER>
+<P>And keepe your mind till you returne to vs
+peacefull and comfortable.</P>
+</SP>
+<SP>
+<SPEAKER>Hel.</SPEAKER>
+<L>Peace, peace, and giue experience tongue,</L>
+<L>They doe abuse the King that flatter him,</L>
+<L>For flatterie is the bellowes blowes vp sinne,</L>
+<L>The thing the which is flattered, but a sparke,</L>
+<L>To which that sparke giues heate, and stronger</L>
+<L>Glowing, whereas reproofe obedient and in order,</L>
+<L>Fits kings as they are men, for they may erre,</L>
+<L>When <HI>signior</HI> sooth here does proclaime peace,</L>
+<L>He flatters you, makes warre vpon your life.</L>
+<L>Prince paadon me, or strike me if you please,</L>
+<L>I cannot be much lower then my knees.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>All leaue vs else: but let your cares ore-looke,</L>
+<L>What shipping, and what ladings in our hauen,</L>
+<L>And then returne to vs, <HI>Hellicans</HI> thou hast</L>
+<L>Mooude vs, what <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">eest thou in our lookes?</L>
+</SP>
+<SP>
+<SPEAKER>Hel.</SPEAKER>
+<L>An angrie brow, dread Lord.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>If there be such a dart in Princes frownes,</L>
+<L>How durst thy tongue moue anger to our face?</L>
+</SP>
+<SP>
+<SPEAKER>Hel.</SPEAKER>
+<L>How dares the plants looke vp to heauen,</L>
+<L><PB REF="6">From whence they haue their nourishment?</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Thou knowest I haue power to take thy life from thee&punc;</L>
+</SP>
+<SP>
+<SPEAKER>Hel.</SPEAKER>
+<L>I haue ground the Axe my selfe,</L>
+<L>Doe but you strike th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> blowe.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Rise, prethee rise, sit downe, thou art no flatterer,</L>
+<L>I thanke thee fort, and heaue forbid</L>
+<L>That kings should let their <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ares heare their faults hid.</L>
+<L>Fit Counsellor, and seruant for a Prince&punc;</L>
+<L>Who by thy wisdome makes a Prince thy seruant,</L>
+<L>What wouldst thou haue me doe?</L>
+</SP>
+<SP>
+<SPEAKER>Hel.</SPEAKER>
+<P>To beare with patience such griefes as you your
+selfe doe lay vpon your selfe.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Thou speakst like a Physition <HI>Hellicanus,</HI></L>
+<L>That ministers a potion vnto me:</L>
+<L>That thou wouldst tremble to receiue thy selfe,</L>
+<L>Attend me then, I went to <HI>Antioch,</HI></L>
+<L>Whereas thou knowst against the face of death,</L>
+<L>I sought the purchase of a glorious beautie,</L>
+<L>From whence an issue I might propogate,</L>
+<L>Are armes to Princes, and bring ioies to subiects,</L>
+<L>Her face was to mine eye beyond all wonder,</L>
+<L>The rest harke in thine eare, as blacke as incest,</L>
+<L>Which by my knowledge found, the sinful father</L>
+<L>Seemde not to strike, but smooth, but thou knowst this,</L>
+<L>Tis time to feare when tyrants seemes to kisse.</L>
+<L>Which feare so grew in me I hither fled,</L>
+<L>Vnder the couering of a carefull night,</L>
+<L>Who seemd my good protector, and being here&punc;</L>
+<L>Bethought what was past, what might succeed,</L>
+<L>I knew him tyrannous, and tyrants feare</L>
+<L>Decrease not, but grow faster then the yeares,</L>
+<L>And should he doo't, as no doubt he doth,</L>
+<L>That I should open to the listning ayre,</L>
+<L>How m<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ny worthie Princes blouds were shed,</L>
+<L>To keepe his bed of blacknesse vnlayde ope,</L>
+<L><PB REF="7">To lop that doubt, hee'le fill this land with armes,</L>
+<L>And make pretence of wrong that I haue done him,</L>
+<L>When all for mine, if I may call offence,</L>
+<L>Must feel wars blow, who spares not innocence,</L>
+<L>Which lou<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> to all of which thy selfe art one,</L>
+<L>Who now reprou'dst me fort.</L>
+</SP>
+<SP>
+<SPEAKER>H<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ll.</SPEAKER>
+<L>Alas sir.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Drew sleep out of mine eies, blood fro~ my cheekes,</L>
+<L>Musings into my mind, with thousand doubts</L>
+<L>How I might stop this tempest ere it came,</L>
+<L>And finding little comfort to relieue them,</L>
+<L>I thought it princely charity to griue for them.</L>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<L>Well my Lord, since you haue giuen mee leaue to speake&punc;</L>
+<L>Freely will I speake, <HI>Antiochus</HI> you feare,</L>
+<L>And iustly too, I thinke you feare the tyrant,</L>
+<L>Who either by publike warre, or priuat treason,</L>
+<P>Will take away your life: therfore my Lord, go trauell for
+a while, till that his rage and anger be forgot, or till the De|stinies
+doe cut his threed of life: your rule direct to anie,
+if to me, day serues not light more faithfull then Ile be.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>I doe not doubt thy faith.</L>
+<L>But should he wrong my liberties in my absence?</L>
+</SP>
+<SP>
+<SPEAKER>Hel.</SPEAKER>
+<L>Weele mingle our bloods togither in the earth,</L>
+<L>From whence we had our being, and our birth.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L><HI>Tyre</HI> I now looke from thee then, and to <HI>Tharsus</HI></L>
+<L>Intend my trauaile, where Ile heare from thee,</L>
+<L>And by whose Letters Ile dispose my selfe.</L>
+<L>The care I had and haue of subiects good,</L>
+<L>On thee I lay, whose wisdomes strength can beare it,</L>
+<L>Ile take thy word, for faith not aske thine oath,</L>
+<L>Who shuns not to breake one, will cracke both.</L>
+<L>But in our orbs will liue so round, and safe,</L>
+<L>That time of both this truth shall nere conuince,</L>
+<L>Thou shewdst a subiects s<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ine, I a true Prince.</L>
+<STAGE>Exit.</STAGE>
+<STAGE><PB REF="7">Enter Thaliard solus.</STAGE>
+<P>So this is <HI>Tyre,</HI> and this the Court, heere must I kill
+King <HI>Pericles,</HI> and if I doe it not, I am sure to be hang'd at
+home: t'is daungerous.</P>
+<P>Well, I perceiue he was a wi<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e fellowe, and had good
+dis<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ret<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">on, that beeing bid to aske what hee would of the
+King, desired he might knowe none of his secrets.</P>
+<P>Now doe I see hee had some reason for't: for if a
+king bidde a man bee a villaine, hee's bound by the inden|ture
+of his oath to bee one.</P>
+<L>Husht, heere comes the Lords of <HI>Tyre.</HI></L>
+</SP>
+<STAGE>Enter Hellicanus, Escanes, with
+other Lords.</STAGE>
+<SP>
+<SPEAKER>Helli.</SPEAKER>
+<P>You shall not neede my fellow-Pee<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s of <HI>Tyre&punc;</HI>
+further to question mee of your kings departure: his sea|led
+Commission left in trust with mee, does speake suffici|ently
+hee's gone to trauaile.</P>
+</SP>
+<SP>
+<SPEAKER>Thaliard.</SPEAKER>
+<P>How? the King gone?</P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>If further yet you will be satisfied, (why as it
+were vnlicensed of your loues) he would depart? Ile giue
+some light vnto you, beeing at <HI>Antioch.</HI></P>
+</SP>
+<SP>
+<SPEAKER>Thal.</SPEAKER>
+<P>What from <HI>Antioch?</HI></P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>Royall <HI>Antiochus</HI> on what cause I knowe <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ot,
+tooke some displeasure at him, at least hee iudg'<GAP DESC="illegible" RESP="tech" EXTENT="2 letters"> so: and
+doubting le<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t hee had <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rr'de or sinn' de, to shewe his sorrow,
+hee'de correct himselfe; so puts himselfe vnto the Ship|mans
+toyle, with whome eache minute threatens life or
+death.</P>
+</SP>
+<SP>
+<SPEAKER>Thaliard.</SPEAKER>
+<P>Well, I perceiue I shall not be hang'd now,
+although I would, but since he<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">'s gone, the Kings <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">as
+must please: <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> scap'te the Land to perish at the Sea, <GAP DESC="illegible" RESP="tech" EXTENT="1 word">
+present my selfe. Peace to the Lords of <HI>Tyre.</HI></P>
+<L><PB REF="8">Lord <HI>Thaliard</HI> from <HI>Antiochus</HI> is welcome.</L>
+</SP>
+<SP>
+<SPEAKER>Thal.</SPEAKER>
+<P>From him I come with message vnto princely
+<HI>Pericles,</HI> but since my landing, I haue vnderstood your Lord
+has betake himselfe to vnknowne trauailes, now message
+must returne from whence it came.</P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>Wee haue no reason to desire it, commended
+to our maister not to vs, yet ere you shall depart, this wee
+desire as friends to <HI>Antioch</HI> wee may feast in <HI>Tyre.</HI></P>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE>Enter Cle<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">n the Gouernour of Tharsus, with
+his wife and others.</STAGE>
+<SP>
+<SPEAKER>Cleon.</SPEAKER>
+<L>My <HI>Dyoniza</HI> shall wee rest vs heere,</L>
+<L>And by relating tales of others griefes,</L>
+<L>See if t'will <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">each vs to forget our own<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">?</L>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<L>That were to blow at fire in hope to quench it,</L>
+<L>For who digs hills because they doe aspire?</L>
+<L>Throwes downe one mountaine to cast vp a higher:</L>
+<L>O my distressed Lord, euen such our griefes are,</L>
+<L>Heere they are but felt, and seene with mischiefs eyes,</L>
+<L>But like to Groues, being topt, they higher rise.</L>
+</SP>
+<SP>
+<SPEAKER>Cleon.</SPEAKER>
+<L>O <HI>Di<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">niza.</HI></L>
+<L>Who wanteth food, and will not say hee wants it,</L>
+<L>Or can conceale his hunger till hee famish?</L>
+<L>Our toungs and sorrowes to sound deepe:</L>
+<L>Our woes into the aire, our exes to weepe.</L>
+<L>Till toungs fetch breath that may proclaime</L>
+<L>Them louder, that if heauen slumber, while</L>
+<L>Their creatures want, they may awake</L>
+<L>Their helpers, to comfort them.</L>
+<L>Ile then discourse our woes felt seuerall yeares,</L>
+<L>And wanting breath to speake, helpe mee with teares.</L>
+</SP>
+<SP>
+<SPEAKER>Dyoniza.</SPEAKER>
+<L>Ile doe my best Syr.</L>
+</SP>
+<SP>
+<SPEAKER>Cleon.</SPEAKER>
+<L>This <HI>Tharsus</HI> ore which I haue the gouernement,</L>
+<L>A Cittie on whom plentie held full hand:</L>
+<L>For riches strew'de her selfe euen in her streetes,</L>
+<L><PB REF="8">Whose towers bore heads so high they kist the clowds,</L>
+<L>And strangers nere beheld, but wondred at,</L>
+<L>Whose men and dames so jetted and adorn'de,</L>
+<L><GAP DESC="illegible" RESP="tech" EXTENT="1 word"> one anothers glasse to trim them by,</L>
+<L>Their tables were stor'de full to glad the sight,</L>
+<L>And not so much to feede on as delight,</L>
+<L>All pouertie was scor'nde, and pride so great,</L>
+<L>The name of helpe grewe odious to repeat.</L>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<L>O t'is too true.</L>
+</SP>
+<SP>
+<SPEAKER>Cl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<L>But see what heauen can doe by this our change,</L>
+<L>These mouthes who but of late, earth sea, and ayre,</L>
+<L>Were all too little to content and please,</L>
+<L>Although thy gaue their creatures in abundance,</L>
+<L>As houses are defil'de for want of vse,</L>
+<L>They are now staru'de <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> of exercise,</L>
+<L>Those pallats who not yet too sauers younger,</L>
+<L>Must haue inuentions to delight the tast,</L>
+<L>Would now be glad of bread and beg for it,</L>
+<L>Those mothers who to nouzell vp their babes,</L>
+<L>Thought nought too curious, are readie now</L>
+<L>To eat those little darlings whom they lou'de,</L>
+<L>So sharpe are hungers teeth, that man and w<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e,</L>
+<L>Drawe lots who first shall die, to lengthen life.</L>
+<L>Heere stands a Lord, and there a Ladie weeping:</L>
+<L>Heere manie sincke, yet those which see them fall,</L>
+<L>Haue scarce strength left to giue them buryall.</L>
+<L>Is not this true?</L>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<L>Our cheekes and hollow eyes doe witnesse it.</L>
+</SP>
+<SP>
+<SPEAKER>Cle.</SPEAKER>
+<L>O let those Cities that of plenties cup,</L>
+<L>And her prosperities so largely taste,</L>
+<L>With their superfluous riots heare these teares,</L>
+<L>The miserie of <HI>Tharsus</HI> may be theirs.</L>
+</SP>
+<STAGE>Enter a Lord.</STAGE>
+<SP>
+<SPEAKER>Lord.</SPEAKER>
+<L>Wheres the Lord Gouernour?</L>
+</SP>
+<SP>
+<SPEAKER>Cle.</SPEAKER>
+<L>Here, speake out thy sorrowes, which thee bringst</L>
+<L><PB REF="9"><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">n hast, for comfort is too farre for vs to expect.</L>
+</SP>
+<SP>
+<SPEAKER>Lord.</SPEAKER>
+<P>Wee haue descryed vpon our neighbouring
+shore, a portlie saile of ships make hitherward.</P>
+</SP>
+<SP>
+<SPEAKER>Cleon.</SPEAKER>
+<L>I thought as much.</L>
+<L>One sorrowe neuer comes but brings an heire,</L>
+<L>That may succcede as his inheritor:</L>
+<L>And so <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">ours, some neighbouring nation,</L>
+<L>Taking aduantage of our miserie,</L>
+<L>That stu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t't the hollow vessels with their power,</L>
+<L>To beat vs downe, the which are downe alreadie,</L>
+<L>And make a conquest of vnhappie mee,</L>
+<L>Whereas no glories got to ouercome.</L>
+</SP>
+<SP>
+<SPEAKER>Lord.</SPEAKER>
+<L>That's the least feare.</L>
+<P>For by the semblance of their white flagges displayde, they
+bring vs peace, and come to vs as fauourers, not as foes.</P>
+</SP>
+<SP>
+<SPEAKER>Cleon.</SPEAKER>
+<L>Thou speak'st like himnes vntuterd to repeat,</L>
+<L>Who makes the fairest showe, meanes most deceipt.</L>
+<L>But bring they what they will, and what they can,</L>
+<L>What need wee leaue our grounds the lowest?</L>
+<P>And wee are halfe way there: Goe tell their Generall wee
+attend him heere, to know for what he comes, and whence
+he comes, and what he craues?</P>
+</SP>
+<SP>
+<SPEAKER>Lord.</SPEAKER>
+<L>I goe my Lord.</L>
+</SP>
+<SP>
+<SPEAKER>Cleon.</SPEAKER>
+<L>Welcome is peace, if he on peace consist,</L>
+<L>If warres, wee are vnable to resist.</L>
+</SP>
+<STAGE>Enter Pericles with attendants.</STAGE>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Lord Gouernour, for so wee heare you are,</L>
+<L>Let not our Ships and number of our men,</L>
+<L>Be like a beacon fier'de, t'amaze your eyes,</L>
+<L>Wee haue heard your miseries as farre as <HI>Tyre,</HI></L>
+<L>And seene the desolation of your streets,</L>
+<L>Nor come we to adde sorrow to your teares,</L>
+<L>But to relieue them of their heauy loade,</L>
+<L>And these our Ships you happily may thinke,</L>
+<L><PB REF="9">Are like the Troian Horse, was stuft within</L>
+<L>With bloody veines expecting ouerthrow,</L>
+<L>Are stor'd with Corne&punc; to make your needie bread,</L>
+<L>And giue them life, whom hunger-staru'd halfe dead.</L>
+</SP>
+<SP>
+<SPEAKER>O<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">n<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"></SPEAKER>
+<L>The Gods of <HI>Greece</HI> protect you,</L>
+<L>And wee'le pray for you.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Arise I pray you, rise; we do not looke for reuer<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">nce,</L>
+<L>But for loue&punc; and harborage for our selfe, our ships, &amp; men.</L>
+</SP>
+<SP>
+<SPEAKER>Cleon.</SPEAKER>
+<L>The which when any shall not gratifie,</L>
+<L>Or pay you with vnthankfulnesse in thought,</L>
+<L>Be it our Wiues, our Children, or our selues,</L>
+<L>The Curse of heauen and men succeed their euils:</L>
+<L>Till when the which (I hope) shall neare be seene:</L>
+<L>Your Grace is welcome to our Towne and vs.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Which welcome wee'le accept, feast here awhile,</L>
+<L>Vntill our Starres that frowne, lend vs a smile.</L>
+</SP>
+<STAGE>Exeunt.</STAGE>
+<STAGE>Enter Gower.</STAGE>
+<L>Heere haue you seene a mightie King,</L>
+<L>His child <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">'w<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s to incest bring:</L>
+<L>A better Prince, and benigne Lord,</L>
+<L>That Will proue awfull both in deed and word:</L>
+<L>Be quiet then as men should bee,</L>
+<L>Till he hath past necessitie:</L>
+<L>I'le shew you those in troubles raigne;</L>
+<L>Loosing a Mite, a Mountaine gaine:</L>
+<L>The good in conuersation,</L>
+<L>To whom I giue my benizon:</L>
+<L>Is still at <HI>Tharstill,</HI> where each man,</L>
+<L>Thinkes all is writ, he spoken can:</L>
+<L>And to remember what he does,</L>
+<L>Build his Statue to make him glorious:</L>
+<L>But tidinges to the contrarie,</L>
+<L>Are brought your eyes, what need speake I.</L>
+<STAGE><PB REF="10">Dombe shew.</STAGE>
+<STAGE>E<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ter at one dore <HI>Pericles</HI> talking with <HI>Cleon&punc;</HI> all the train<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">
+with them: Enter at an oth<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r dore, a Gentleman with a
+Letter to <HI>Pericles, Pericles</HI> shewes the Letter to <HI>Cleon;
+Pericles</HI> giues the Messenger a reward, and Knights <GAP DESC="illegible" RESP="tech" EXTENT="1 word">:
+Exu <HI>Pericles</HI> at one <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ore, and <HI>Cleon</HI> at another.</STAGE>
+<L>Good <HI>Helicon</HI> that stayde at home,</L>
+<L>Not to eate Hony like a Drone,</L>
+<L>From others labours; for though he striue</L>
+<L>To killen bad, keepe good aliue:</L>
+<L>And to fulfill his prince desire,</L>
+<L>Sau'd one of all, that haps in <HI>Tyre:</HI></L>
+<L>How <HI>Thali<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rt</HI> came full bent with sinne,</L>
+<L>And had in tent to murder him;</L>
+<L>And that in <HI>Tharsis</HI> was not best,</L>
+<L>Longer for him to make his rest:</L>
+<L>He doing so, put foorth to Seas;</L>
+<L>Where when men been, there's seldome ease,</L>
+<L>For now the Wind begins to blow,</L>
+<L>Thunder aboue, and deepes below,</L>
+<L>Makes such vnquiet, that the Shippe,</L>
+<L>Should house him safe; is wrackt and split,</L>
+<L>And he (good Prince) hauing all lost,</L>
+<L>By Waues, from coast to coast is tost:</L>
+<L>All perishen of man of pelfe,</L>
+<L>Ne ought escape<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">d but himselfe;</L>
+<L>Till Fortune tir'd with doing bad,</L>
+<L>Threw him a shore, to giue him glad:</L>
+<L>And heere he comes: what shall be next,</L>
+<L>Pardon old <HI>Gower,</HI> this long's the text.</L>
+<STAGE>E<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ter Pericles nette.</STAGE>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Yet cease your ire you angry Starres of heauen,</L>
+<L>Wind, Raine, and Thunder, remember earthly man</L>
+<L>Is but a substaunce that must yeeld to you:</L>
+<L>And I (as fits my nature) do obey you.</L>
+<L><PB REF="10">Alasse, the Seas hath cast me on the Rocks,</L>
+<L>Washt me from shore to shore, and left my breath</L>
+<L>Nothing to thinke on, but ensuing death:</L>
+<L>Let it suffize the greatnesse of your powers,</L>
+<L>To haue bereft a Prince of all his fortunes;</L>
+<L>And hauing throwne him from your watry grau<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">,</L>
+<L>Heere to haue death in peace, is all hee'le craue.</L>
+</SP>
+<STAGE>Enter three Fisher-men.</STAGE>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>What, to pelch?</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>Ha, come and bring away the Nets.</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>What Patch-breech, I say.</L>
+</SP>
+<SP>
+<SPEAKER>3.</SPEAKER>
+<L>What say you Maister?</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>Looke how thou stirr'st now:</L>
+<L>Come away, or Ile fetch'th with a wanion.</L>
+</SP>
+<SP>
+<SPEAKER>3.</SPEAKER>
+<L>Fayth Maister, I am thinking of the poore men,</L>
+<L>That were cast away before vs euen now.</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>Alasse poore soules, it grieued my heart to heare,</L>
+<L>What pittifull cryes they made to vs, to helpe them,</L>
+<L>When (welladay) we could scarce helpe our selues.</L>
+</SP>
+<SP>
+<SPEAKER>3.</SPEAKER>
+<L>Nay Maister, sayd not I as much,</L>
+<L>When I saw the Porpas how he bounst and tumbled?</L>
+<L>They say they're halfe fish, halfe flesh:</L>
+<L>A plague on them, they nere come but I looke to be washt.</L>
+<L>Maister, I ma<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">ell how the Fishes liue in the Sea?</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>Why, as Men <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> a-land;</L>
+<L>The great ones eate vp <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> little ones:</L>
+<L>I can compare our rich Misers <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">o nothing so fitly,</L>
+<L>As to a Whale; a playes and tumbles,</L>
+<L>Dryuing the poore Fry before him,</L>
+<L>And at last, deuowre them all at a mouthfull:</L>
+<L>Such Whales haue I heard on, a'th land,</L>
+<L>Who neuer leaue gaping, till they swallow'd</L>
+<L>The whole Parish, Church, Steeple, Belles and all.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>A prettie morall.</L>
+</SP>
+<SP>
+<SPEAKER>3.</SPEAKER>
+<L>But Maister, if I had been the Sexton,</L>
+<L>I would haue been that day in the belfrie.</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>Why, Man?</L>
+</SP>
+<SP>
+<PB REF="11">
+<SPEAKER>1.</SPEAKER>
+<L>Because he should haue swallowed mee too,</L>
+<L>And when I had been in his belly,</L>
+<L>I would haue kept such a iangling of the Belles,</L>
+<L>That he should neuer haue left,</L>
+<L>Till he cast Belles&punc; Steeple, Church and Parish vp againe:</L>
+<L>But if the good King <HI>Simonides</HI> were of my minde.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Simonides?</L>
+</SP>
+<SP>
+<SPEAKER>3.</SPEAKER>
+<L>We would purge the land of these Drones,</L>
+<L>That robbe the Bee of her Hony.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>How from the fenny subiect of the Sea,</L>
+<L>These Fishers tell the infirmities of men,</L>
+<L>And from their watry empire recollect,</L>
+<L>All that may men approue, or men detect.</L>
+<L>Peace be at your labour, honest Fisher-men.</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>Honest good fellow what's that, if it be a day fits you</L>
+<L>Search out of the Kalender, and no body looke after it?</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>May see the Sea hath cast vpon your coast:</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>What a drunken Knaue was the Sea,</L>
+<L>To cast thee in our way?</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>A man whom both the Waters and the Winde,</L>
+<L>In that vast Tennis-court&punc; hath made the Ball</L>
+<L>For them to play vpon, intreates you pittie him:</L>
+<L>Hee askes of you, that neuer vs<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">d to begge.</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>No friend, cannot you begge?</L>
+<L>Heer's them in our countrey of <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">reece,</HI></L>
+<L>Gets more with begging, then we can doe with working.</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>Canst thou catch any Fishes then?</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>I neuer practizde it.</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<P>Nay then thou wilt starue sure: for heer's nothing to
+be got now-adayes, vnlesse thou canst fish for't.</P>
+</SP>
+<SP>
+<SPEAKER><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">er.</SPEAKER>
+<L>What I haue been, I haue forgot to know;</L>
+<L>But what I am, want teaches me to thinke on:</L>
+<L>A man throng'd vp with cold, my Veines ar<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> chill,</L>
+<L>And haue no more of life then may suffize,</L>
+<L>To giue my tongue that heat to aske your helpe:</L>
+<L>Which if you shall refuse, when I am dead,</L>
+<L>For that I am a man, pray you see me buried.</L>
+</SP>
+<SP>
+<PB REF="11">
+<SPEAKER>1.</SPEAKER>
+<P>Di<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">, ke-tha; now Gods forbid't, and I haue a Gowne
+heere, come put it on, keepe thee warme: now afore mee a
+handsome fellow: Come, thou shalt goe home, and wee'le
+haue Flesh for all day, Fish for fasting-dayes and more; or
+Puddinges and Flap-iackes, and thou shalt be welcome.</P>
+</SP>
+<SP>
+<SPEAKER>Per</SPEAKER>
+<L>I thanke you sir.</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>Harke you my friend: You sayd you could not beg?</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>I did but craue.</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>But craue?</L>
+<L>Then Ile turne Crauer too, and so I shall scape whipping.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Why, are you Beggers whipt then?</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<P>Oh not all, my friend, not all: for if all your Beggers
+were whipt, I would wish no better office, then to be Beadle:
+But Maister, Ile goe draw vp the Net.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>How well this honest mirth becomes their labour?</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>Harke you sir; doe you know vvhere yee are?</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Not <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ell.</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>Why <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e tell you, this I cald <HI>Pantapoles,</HI></L>
+<L>And our King, the good <HI>Symonides.</HI></L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>The good <HI>Symonides,</HI> doe you call him?</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>I sir, and he deserues so to be cal'd,</L>
+<L>For his peaceable raigne, and good gouernement.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>He is a happy King, since he gaines from</L>
+<L>His subiects the name of good, by his gouernment.</L>
+<L>How farre is his Court distant from this shore?</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>Mary sir, halfe a dayes iourney: And Ile tell you,</L>
+<L>He hath a faire Daughter, and to morrow is her birth-day,</L>
+<P>And there are Princes and Knights come from all partes of
+the World to Iust and Turney for her loue.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Were my fortunes equall to my desires,</L>
+<L>I could wish to make one there.</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<P>O sir, things must be as they may: and what a man can
+not get, he may lawfully d<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ale for his Wiues soule.</P>
+</SP>
+<STAGE>Enter the two Fisher-men, drawing vp a Ne<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</STAGE>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>Helpe Maister helpe; heere's a Fish hanges in the Net,</L>
+<L>Like a poore mans right in the law: t'will hardly come out.</L>
+<L>Ha bots on't, tis come at last; &amp; tis turnd to a rusty Armour.</L>
+</SP>
+<SP>
+<PB REF="12">
+<SPEAKER>Per.</SPEAKER>
+<L>An Armour friends; I pray you let me see it?</L>
+<L>Thankes Fortune, yeat that after all crosses,</L>
+<L>Thou giuest me somewhat to repaire my selfe:</L>
+<L>And though it was mine owne part of my heritage,</L>
+<L>Which my dead Father did bequeath to me,</L>
+<L>With this strict charge euen as he left his life,</L>
+<L>Keepe it my <HI>Per<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">cl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s,</HI> it hath been a Shield</L>
+<L>Twixt me and death, and poynted to this brayse,</L>
+<L>For that it saued me, keepe it in like necessitie:</L>
+<L>The which the Gods protect thee, Fame may defend thee:</L>
+<L>It kept where I kept, I so dearely lou'd it,</L>
+<L>Till the rough Seas, that spares not any man,</L>
+<L>Tooke it in rage, though calm'd, haue giuen 't againe:</L>
+<L>I thanke thee for't, my shipwracke now's no ill,</L>
+<L>Since I haue heere my Father gaue in his Will.</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>What meane you sir?</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>To begge of you (kind friends) this Coate of worth,</L>
+<L>For it was sometime Target to a King;</L>
+<L>I know it by this marke: he loued me dearely,</L>
+<L>And for his sake, I wish the hauing of it;</L>
+<L>And that you'd guide me to your Soueraignes Court,</L>
+<L>Where with it, I may appeare a Gentleman:</L>
+<L>And if that euer my low fortune's better,</L>
+<L>Ile pay your bounties; till then, rest your debter.</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>Why wilt thou turney for the Lady?</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Ile shew the vertue I haue borne in Armes.</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>Why di'e take it: and the Gods giue thee good an't.</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<P>I but harke you my friend, t'was wee that made vp
+this Garment through the rough seames of the Waters:
+there are certaine Condolements, certaine Vailes: I hope
+sir, if you thriue, you'le remember from whence you had
+them.</P>
+</SP>
+<SP>
+<SPEAKER><GAP DESC="illegible" RESP="tech" EXTENT="1 word">.</SPEAKER>
+<L><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">eleeue't, I will:</L>
+<L>By your furtherance I am cloth'd in Steele,</L>
+<L>And spight of all the rupture of the Sea,</L>
+<L>This Iewell holdes his buylding on my arme:</L>
+<L>Vnto thy value I will mount my selfe</L>
+<L><PB REF="12">Vpon a Courser, whose delight steps,</L>
+<L>Shall make the gazer ioy to see him tread;</L>
+<L>Onely (my friend) I yet am vnprouided of a paire of Bases.</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>Wee'le sure prouide, thou shalt haue&punc;</L>
+<L>My best Gowne to make thee a paire;</L>
+<L>And Ile bring thee to the Court my selfe.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Then Honour be but a Goale to my Will,</L>
+<L>This day Ile rise, or else adde ill to ill.</L>
+</SP>
+<STAGE>Enter Simonydes, with attendaunce, and Thaisa.</STAGE>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Are the Knights ready to begin the Tryumph?</L>
+</SP>
+<SP>
+<SPEAKER>1. Lord.</SPEAKER>
+<L>They are my Leidge, and stay your comming,</L>
+<L>To present them selues.</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Returne them, We are ready, &amp; our daughter heere&punc;</L>
+<L>In honour of whose Birth&punc; these Triumphs are,</L>
+<L>Sits heere like Beauties child, whom Nature gat,</L>
+<L>For men to see; and seeing&punc; woonder at.</L>
+</SP>
+<SP>
+<SPEAKER>Thai.</SPEAKER>
+<L>It pleaseth you (my royall Father) to expresse</L>
+<L>My Commendations great, whose merit's lesse.</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>It's <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">it it should be so, for Princes are</L>
+<L>A modell which Heauen makes like to it selfe:</L>
+<L>As Iewels loose their glory, if neglected,</L>
+<L>So Princes their Renownes, if not respected:</L>
+<L>T'is now your honour (Daughter) to entertaine</L>
+<L>The labour of each Knight, in his deuice.</L>
+</SP>
+<SP>
+<SPEAKER>Tha<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<L>Which to preserue mine honour, I'le performe.</L>
+</SP>
+<STAGE>The first Knight passes by.</STAGE>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Who is the first, that doth preferre himselfe?</L>
+</SP>
+<SP>
+<SPEAKER>Thai.</SPEAKER>
+<L>A Knight of <HI>Sparta</HI> (my renowned father)</L>
+<L>And the deuice he beares vpon his Shield,</L>
+<L>Is a blacke Ethyope reaching at the Sunne:</L>
+<L>The word: <HI>Luxtu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">vi<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">mihi.</HI></L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>He loues you well, that holdes his life of you.</L>
+<STAGE>The second Knight.</STAGE>
+<L>Who is the second, that presents himselfe?</L>
+</SP>
+<SP>
+<PB REF="13">
+<SPEAKER>Tha.</SPEAKER>
+<L>A Prince of <HI>Macedon</HI> (my royall father)</L>
+<L>And the deuice he beares vpon his Shield,</L>
+<L>Is an Armed Knight, that's conquered by a Lady:</L>
+<L>The motto thus in Spanish. <HI>Pue Per dolecra kee per <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">orsa.</HI></L>
+</SP>
+<SP>
+<SPEAKER>3.</SPEAKER>
+<L>Knight.</L>
+</SP>
+<SP>
+<SPEAKER>Kin.</SPEAKER>
+<L>And with the third?</L>
+</SP>
+<SP>
+<SPEAKER>Thai.</SPEAKER>
+<L>The third, of <HI>Antioch;</HI> and his deuice,</L>
+<L>A wreath of Chiually: the word: <HI>Me Pompey prouexit apex.</HI></L>
+</SP>
+<SP>
+<SPEAKER>4.</SPEAKER>
+<L>Knight.</L>
+</SP>
+<SP>
+<SPEAKER>Kin.</SPEAKER>
+<L>What is the fourth.</L>
+</SP>
+<SP>
+<SPEAKER>Thai.</SPEAKER>
+<L>A burning Torch that's turned vpside downe;</L>
+<L>The word: <HI>Qui me alit me extingui<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</HI></L>
+</SP>
+<SP>
+<SPEAKER>Kin.</SPEAKER>
+<L>Which shewes that Beautie hath his power &amp; will,</L>
+<L>Which can as well enflame, as it can kill.</L>
+</SP>
+<SP>
+<SPEAKER>5.</SPEAKER>
+<L>Knight.</L>
+</SP>
+<SP>
+<SPEAKER>Thai.</SPEAKER>
+<L>The fift, an Hand enuironed with Clouds,</L>
+<L>Holding out Gold, that's by the Touch-stone tride:</L>
+<L>The motto thus: <HI>Si<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> sp<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">cta<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">a&punc; fides.</HI></L>
+</SP>
+<SP>
+<SPEAKER>6.</SPEAKER>
+<L>Knight.</L>
+</SP>
+<SP>
+<SPEAKER>Kin.</SPEAKER>
+<L>And what's the sixt, and last; the which,</L>
+<L>The knight himself with such a graceful courtesie deliuered?</L>
+</SP>
+<SP>
+<SPEAKER>Thai.</SPEAKER>
+<L>Hee seemes to be a Stranger: but his Present is</L>
+<L>A withered Branch, that's onely greene at top,</L>
+<L>The motto: <HI>In hac sp<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> viuo.</HI></L>
+</SP>
+<SP>
+<SPEAKER>Kin.</SPEAKER>
+<L>A pretty morrall fro~ the deiected state wherein he is,</L>
+<L>He hopes by you, his fortunes <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">et may flourish.</L>
+</SP>
+<SP>
+<SPEAKER>1. Lord.</SPEAKER>
+<L>He had need meane better, then his outward shew</L>
+<L>Can any way speake in his iust commend:</L>
+<L>For by his rustie outside&punc; he appeares,</L>
+<L>To haue practis'd more the Whipstocke, then the Lau<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ce.</L>
+</SP>
+<SP>
+<SPEAKER>2. Lord.</SPEAKER>
+<L>He well may be a Stranger, for he comes</L>
+<L>To an honour'd tryumph, strangly furnisht.</L>
+</SP>
+<SP>
+<SPEAKER>3. Lord.</SPEAKER>
+<L>And on set purpose let his Armour rust</L>
+<L>Vntill this day, to scowre it in the dust.</L>
+</SP>
+<SP>
+<SPEAKER>Kin.</SPEAKER>
+<L>Opinion's but a foole, that makes vs scan</L>
+<L>The outward habit, by the inward man.</L>
+<L>But stay, the Knights are comming,</L>
+<L>We will with-draw into the Gallerie.</L>
+</SP>
+<STAGE>Grea<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> shoutes, and all cry, the meane Knight.</STAGE>
+<STAGE><PB REF="13">Enter the King and Knights <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">m T<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">l<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ing.</STAGE>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Knights, to say you're welcome, were superfluous.</L>
+<L>I place vpon the volume of your deedes,</L>
+<L>As in a Title page, your worth in armes,</L>
+<L>Were more then you expect, or more then's fit,</L>
+<L>Since euery worth in shew commends it selfe:</L>
+<L>Prepare for mirth, for mirth becomes a Feast.</L>
+<L>You are Princes, and my guestes.</L>
+</SP>
+<SP>
+<SPEAKER>Thai.</SPEAKER>
+<L>But you my Knight and guest,</L>
+<L>To whom this Wreath of victorie I giue,</L>
+<L>And crowne you King of this dayes happinesse.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Tis more by Fortune (Lady) then my Merit.</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Call it by what you will, the day is your,</L>
+<L>And here (I hope) is none that enuies it:</L>
+<L>In framing an Artist, art hath thus decreed,</L>
+<L>To make some good, but others to exceed,</L>
+<L>And you are her labourd scholler: come Queene a th'feast,</L>
+<L>For (Daughter) so you are; heere take your place:</L>
+<L>Martiall the rest, as they deserue their grace.</L>
+</SP>
+<SP>
+<SPEAKER>Knights.</SPEAKER>
+<L>We are honour'd much by good <HI>S<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">monides.</HI></L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Your presence glads our dayes, honour we loue,</L>
+<L>For who hates honour, hates the Gods aboue.</L>
+</SP>
+<SP>
+<SPEAKER>M<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rshal.</SPEAKER>
+<L>Sir, yonder is your place.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Some other is more fit.</L>
+</SP>
+<SP>
+<SPEAKER>1. Knight.</SPEAKER>
+<L>Contend not sir, for we are Gentlemen,</L>
+<L>Ha<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e neither in our hearts, nor outward eyes,</L>
+<L>Enuies the great, nor shall the low despise.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>You are right courtious Knights.</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Sit sir, sit.</L>
+<L>By <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">oue</HI> (I wonder) that is King of thoughts,</L>
+<L>These Cates resist mee, hee not thought vpon.</L>
+</SP>
+<SP>
+<SPEAKER>Tha</SPEAKER>
+<L>By <HI>Iuno</HI> (that is Queene of mariage)</L>
+<L>All Viands that I eate do seeme vnsauery,</L>
+<L>Wishing him my meat: sure hee's a gallant Gentleman.</L>
+</SP>
+<SP>
+<SPEAKER>Kin.</SPEAKER>
+<L>Hee's but a countrie Gentleman: ha's done no more</L>
+<L>Then other Knights haue done, ha's broken a Staffe,</L>
+<L><PB REF="14">Or so; so let it passe.</L>
+</SP>
+<SP>
+<SPEAKER>Th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<L>To mee he seemes like Diamond, to Glasse.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>You Kings to mee, like to my fathers picture,</L>
+<L>Which tels in that glory once he was,</L>
+<L>Had Princes sit like Starres about his Thro<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ne,</L>
+<L>And hee the Sunne for them to reuerence;</L>
+<L>None that beheld him, but like lesser lights,</L>
+<L>Did vaile their Crownes to his supremacie;</L>
+<L>Where now his sonne like a Gloworme in the night,</L>
+<L>The which hath Fire in darknesse, none in light:</L>
+<L>Whereby I see that Time's the King of men,</L>
+<L>Hee's both their Parent, and he is their Graue,</L>
+<L>And giues them what he will, not what they craue.</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>What&punc; are you merry, Knights?</L>
+</SP>
+<SP>
+<SPEAKER>Knights.</SPEAKER>
+<L>Who can be other, in this royall presence.</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Heere, with a Cup that's stur'd vnto the brim,</L>
+<L>As do you loue, fill to your Mistris lippes,</L>
+<L>Wee drinke this health to you.</L>
+</SP>
+<SP>
+<SPEAKER>Knights.</SPEAKER>
+<L>We thanke your Grace.</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Yet pause awhile, yon Knight doth sit too melancholy,</L>
+<L>As if the entertainement in our Court,</L>
+<L>Had not a shew might counteruaile his worth:</L>
+<L>Note it not you, <HI>Thaisa.</HI></L>
+</SP>
+<SP>
+<SPEAKER>Tha.</SPEAKER>
+<L>What is't to me, my father?</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>O attend my Daughter,</L>
+<L>Princes in this, should liue like Gods aboue,</L>
+<L>Who freely giue to euery one that come to honour them:</L>
+<L>And Princes not doing so, are like to Gnats,</L>
+<L>Which make a sound, but kild, are wondred at:</L>
+<L>Therefore to make his entraunce more sweet,</L>
+<L>Heere, say wee drinke this standing boule of wine to him.</L>
+</SP>
+<SP>
+<SPEAKER>Tha.</SPEAKER>
+<L>Alas my Father, it befits not mee,</L>
+<L>Vnto a stranger Knight to be so bold,</L>
+<L>He may my profer take for an offence,</L>
+<L>Since men take womens giftes for impudenc<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>How? doe as I bid you, or you'le mooue me else.</L>
+</SP>
+<SP>
+<SPEAKER>Tha.</SPEAKER>
+<L>Now by the Gods, he could not please me better.</L>
+</SP>
+<SP>
+<PB REF="14">
+<SPEAKER>king.</SPEAKER>
+<L>And furthermore tell him, we desire to know of him</L>
+<L>Of whence he is, his name, and Parentage?</L>
+</SP>
+<SP>
+<SPEAKER>Tha.</SPEAKER>
+<L>The King my father (sir) has drunke to you.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>I thanke him.</L>
+</SP>
+<SP>
+<SPEAKER>Tha.</SPEAKER>
+<L>Wishing it so much blood vnto your life.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>I thanke both him and you, and pledge him freely.</L>
+</SP>
+<SP>
+<SPEAKER>Tha.</SPEAKER>
+<L>And further, he desires to know of you,</L>
+<L>Of whence you are, your name and parentage?</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>A Gentleman of <HI>Tyre,</HI> my name <HI>Pericles,</HI></L>
+<L>My education beene in Artes and Armes:</L>
+<L>Who looking for aduent<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">res in the world,</L>
+<L>Was by the rough Seas reft of Ships and men,</L>
+<L>and after shipwracke, driuen vpon this shore.</L>
+</SP>
+<SP>
+<SPEAKER>Tha.</SPEAKER>
+<L>He thankes your Grace; names himselfe <HI>Pericles,</HI></L>
+<L>A Gentleman of <HI>Tyre:</HI> who onely by misfortune of the seas,</L>
+<L>Bereft of Shippes and Men, cast on this shore.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>Now by the Gods, I pitty his misfortune,</L>
+<L>And will awake him from his melancholy.</L>
+<L>Come Gentlemen, we sit too long on trifles,</L>
+<L>And waste the time which lookes for other reuels;</L>
+<L>Euen in your Armours as you are addrest,</L>
+<L>Will well become a Souldiers daunce:</L>
+<L>I will not haue excuse with saying this,</L>
+<L>Lowd Musicke is too harsh for Ladyes heads,</L>
+<L>Since they loue men in armes, as well as beds.</L>
+<STAGE>They daunc<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</STAGE>
+<L>So, this was well askt, t'was so well perform'd.</L>
+<L>Come sir, heer's a Lady that wants breathing too,</L>
+<L>And I haue heard, you Knights of <HI>Tyre,</HI></L>
+<L>Are excellent in making Ladyes trippe;</L>
+<L>And that their Measures are as excellent.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>In those that practize them, they are (my Lord)</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>Oh that's as much, as you would be denyed</L>
+<L>Of your faire courtesie: vnclaspe, vnclaspe.</L>
+<STAGE>They daunce.</STAGE>
+<L>Thankes Gentlemen to all, all <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">aue done well;</L>
+<L>But you the best: Pages and lights, to conduct</L>
+<L><PB REF="15">These Knights vnto their seuerall Lodgings:</L>
+<L>Yours sir, we haue giuen order be next our owne.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>I am at your Graces pleasure.</L>
+<L>Princes, it is too late to talke of Lo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e.</L>
+<L>And that's the marke I know, you leuell at:</L>
+<L>Therefore each one betake him to his rest,</L>
+<L>To morrow all for speeding do their best.</L>
+</SP>
+<STAGE>Enter Hellicanus and Escanes.</STAGE>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<L>No <HI>Escanes,</HI> know this of mee,</L>
+<L><HI>Antiochus</HI> from incest liued not free:</L>
+<L>For which the most high Gods not minding,</L>
+<L>Longer to with-hold the vengeance that</L>
+<L>They had in store, due to this heynous</L>
+<L>Capitall offence, euen in the height and pride</L>
+<L>Of all his glory, when he was seated in</L>
+<L>A Chariot of an inestimable value, and his daughter</L>
+<L>With him; a fire from heauen came and shriueld</L>
+<L>Vp those bodyes euen to lothing, for they so stounke,</L>
+<L>That all those eyes ador'd them, ere their fall,</L>
+<L>Scorne now their hand should giue them buriall.</L>
+</SP>
+<SP>
+<SPEAKER>Escanes.</SPEAKER>
+<L>T'was very strange.</L>
+</SP>
+<SP>
+<SPEAKER>H<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ll.</SPEAKER>
+<L>And yet but iustice; for though this King were great,</L>
+<L>His greatnesse was no gard to barre heauens shaft,</L>
+<L>But sinne had his reward.</L>
+</SP>
+<SP>
+<SPEAKER>Escan.</SPEAKER>
+<L>Tis very true.</L>
+</SP>
+<STAGE>Enter two or three Lords.</STAGE>
+<SP>
+<SPEAKER>1. Lord.</SPEAKER>
+<L>See, not a man in priuate conference,</L>
+<L>Or counsaile, ha's respect with him but hee.</L>
+</SP>
+<SP>
+<SPEAKER>2. Lord.</SPEAKER>
+<L>It shall no longer grieue, without reprofe.</L>
+</SP>
+<SP>
+<SPEAKER>3. Lord.</SPEAKER>
+<L>And curst be he that will not second it.</L>
+</SP>
+<SP>
+<SPEAKER>1. Lord.</SPEAKER>
+<L>Follow me then: Lord <HI>Hellicane,</HI> a word.</L>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<L>With mee? and welcome happy day, my Lords.</L>
+</SP>
+<SP>
+<SPEAKER>1. Lord.</SPEAKER>
+<L>Know, that our griefes are risen to the top,</L>
+<L>And now at length they ouer-flow their bankes.</L>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<L>Your griefes, for what?</L>
+<L><PB REF="15">Wrong not your Prince, you loue.</L>
+</SP>
+<SP>
+<SPEAKER>1. Lord.</SPEAKER>
+<L>Wrong not your selfe then, noble <HI>Hellican,</HI></L>
+<L>But if the Prince do liue, let vs salute him,</L>
+<L>Or know what ground's made happy by his breath:</L>
+<L>If in <GAP DESC="illegible" RESP="tech" EXTENT="1 span"> he liue, wee'le seeke him out:</L>
+<L>If in his <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">raue he rest, wee'le find him there,</L>
+<L>And be resolued he liues to gouerne vs:</L>
+<L>Or dead, giu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">'s cause to mourne his funerall,</L>
+<L>And leaue vs to our free election.</L>
+</SP>
+<SP>
+<SPEAKER>2. Lord.</SPEAKER>
+<L>Whose death in deed, the strongest in our sensure,</L>
+<L>And knowing this Kingdome is without a head,</L>
+<L>Like goodly Buyldings left without a Roofe,</L>
+<L>Soone fall to ruine: your noble selfe,</L>
+<L>That best know how to rule, and how to raigne,</L>
+<L>Wee thus submit vnto our Soueraigne.</L>
+</SP>
+<SP>
+<SPEAKER>Omnes.</SPEAKER>
+<L>Liue noble <HI>Hellicane.</HI></L>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<L>Try honours cause; forbeare your suffrages:</L>
+<L>If that you loue Prince <HI>Pericles,</HI> forbeare,</L>
+<L>(Take I your wish, I leape into the seas,</L>
+<L>Where's howerly trouble, for a minuts ease)</L>
+<L>A twelue-month longer, let me intreat you</L>
+<L>To forbeare the absence of your King;</L>
+<L>If in which time expir'd, he not returne,</L>
+<L>I shall with aged patience beare your yoake:</L>
+<L>But if I cannot w<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">ne you to this loue,</L>
+<L>Goe search like nobles, like noble subiects,</L>
+<L>And in your search, spend your aduenturous worth,</L>
+<L>Whom if you find, and winne vnto returne,</L>
+<L>You shall like Diamonds <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">it about his Crowne.</L>
+</SP>
+<SP>
+<SPEAKER>1. Lord.</SPEAKER>
+<L>To wisedome, hee's a foole, that will not yeeld:</L>
+<L>And since Lord <HI>Hellicane</HI> enioyneth vs,</L>
+<L>We with our trauels will endeauour.</L>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<L>Then you loue vs, we you, &amp; wee'le claspe hands:</L>
+<L>When Peeres thus knit, a Kingdome euer stands.</L>
+</SP>
+<STAGE>Enter the King re<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">ing of a letter at one doore,
+the Knightes meete him.</STAGE>
+<SP>
+<SPEAKER>1. Knight.</SPEAKER>
+<L>Good morrow to the good <HI>Sim<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ui<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">es.</HI></L>
+</SP>
+<SP>
+<PB REF="16">
+<SPEAKER>King.</SPEAKER>
+<L>Knights, from my daughter this I let you know&punc;</L>
+<L>That for this twelue-month, shee'le not vndertake</L>
+<L>A maried life: her reason to her selfe is onely knowne,</L>
+<L>Which from her, by no meanes can I get.</L>
+</SP>
+<SP>
+<SPEAKER>2. Knight.</SPEAKER>
+<L>May we not get accesse to her (my <GAP DESC="illegible" RESP="tech" EXTENT="1 word">?)</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>Fayth, by no meanes, she hath so strictly</L>
+<L>Tyed her to her Chamber, that t'is impossible:</L>
+<L>One twelue Moones more shee'le weare <HI>Dianas</HI> liuerie:</L>
+<L>This by the eye of <HI>Cinthya</HI> hath she vowed,</L>
+<L>And on her Virgin honour, will not breake it.</L>
+</SP>
+<SP>
+<SPEAKER>3. knight.</SPEAKER>
+<L>Loth to bid-farewell, we take our leaues.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>So, they are well dispatcht:</L>
+<L>Now to my daughters Letter; she telles me heere,</L>
+<L>Shee'le wedde the stranger Knight;</L>
+<L>Or neuer more to view nor day nor light.</L>
+<L>T'is well Mistris, your choyce agrees with mine:</L>
+<L>I like that well: nay how absolute she's in't,</L>
+<L>Not minding whether I dislike or no.</L>
+<L>Well, I do commend her choyce, and will no longer&punc;</L>
+<L>Haue it be delayed: Soft, heere he comes,</L>
+<L>I must dissemble it.</L>
+</SP>
+<STAGE>Enter Pericl<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">.</STAGE>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>All fortune to the good <HI>Sy<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">mid<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s.</HI></L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>To you as much: Sir, I am behoulding to you</L>
+<L>For your sweete Musicke this last night:</L>
+<L>I do protest, my eares were neuer better fedde</L>
+<L>With such delightfull pleasing harmonie.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>It is your Graces pleasure to commend,</L>
+<L>Not my desert.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>Sir, you are Musickes maister.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>The worst of all her schollers (my good Lord.)</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>Let me aske you one thing:</L>
+<L>What do you thinke of my Daughter, sir?</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>A most vertuous Princesse.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>And she is faire too, is she not?</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>As a faire day in Sommer: woondrous faire.</L>
+</SP>
+<SP>
+<PB REF="16">
+<SPEAKER>king.</SPEAKER>
+<L>Sir, my Daughter thinkes very well of you,</L>
+<L>I so well, that you must be her Maister,</L>
+<L>And she will be your Scholler; therefore looke to it.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>I am vnworthy for her Scholemaister.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>She thinkes not so: peruse this writing else.</L>
+</SP>
+<SP>
+<SPEAKER>P<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r.</SPEAKER>
+<L>What's here, a letter that she loues the knight of <HI>Tyre&punc;</HI></L>
+<L>T'is the Kings subtiltie to haue my life:</L>
+<L>Oh seeke not to intrappe me, gracious Lord,</L>
+<L>A Stranger, and distressed Gentleman,</L>
+<L>That neuer aymed so hie, to loue your Daughter,</L>
+<L>But bent all offices to honour her.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>Thou hast bewitcht my daughter,</L>
+<L>And thou art a villaine.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>By the Gods I haue not; neuer did thought</L>
+<L>Of mine leuie offence; nor neuer did my actions</L>
+<L>Yet commence a deed might gaine her loue,</L>
+<L>Or your displeasure.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>Traytor, thou lyest.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Traytor?</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>I, traytor.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Euen in his throat, vnlesse it be the King,</L>
+<L>That cals me Traytor, I returne the lye.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>Now by the Gods, I do applaude his courage.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>My actions are as noble as my thoughts.</L>
+<L>That neuer relisht of a base discent:</L>
+<L>I came vnto your Court for Honours cause,</L>
+<L>And not to be a Rebell to her state:</L>
+<L>And he that otherwise accountes of mee,</L>
+<L>This Sword shall prooue, hee's Honours enemie.</L>
+</SP>
+<SP>
+<SPEAKER>king.</SPEAKER>
+<L>No<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">heere comes my Daughter, she can witnesse it.</L>
+</SP>
+<STAGE>Enter Thaisa.</STAGE>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Then as you are as vertuous, as faire,</L>
+<L>Resolue your angry Father, if my tongue</L>
+<L>Did ere solicite, or my hand subscribe</L>
+<L>To any sillable that made loue to you?</L>
+</SP>
+<SP>
+<SPEAKER>Thai.</SPEAKER>
+<L>Why sir, say if you had, who take<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> offence?</L>
+<L><PB REF="17">At that, would make me glad?</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>Yea Mistris, are you so peremptorie?</L>
+<L>I am glad on't with all my heart,</L>
+<L>Ile tame you; Ile bring you in subiection.</L>
+<STAGE>Aside.</STAGE>
+<L>Will you not, hauing my consent,</L>
+<L>Bestow your loue and your affections,</L>
+<L>Vpon a Stranger? who for ought I know,</L>
+<L>May be (nor can I thinke the contrary)</L>
+<STAGE>Aside.</STAGE>
+<L>As great in blood as I my selfe:</L>
+<L>Therefore, heare you Mistris, either frame</L>
+<L>Your will to mine: and you sir, heare you;</L>
+<L>Either be rul'd by mee, or Ile make you,</L>
+<L>Man and wife: nay come, your hands,</L>
+<L>And lippes must seale it too: and being ioynd,</L>
+<L>Ile thus your hopes destroy, and for further griefe:</L>
+<L>God giue you ioy; what are you both pleased?</L>
+</SP>
+<SP>
+<SPEAKER>Th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<L>Yes, if you loue me sir?</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Euen as my life, my blood that fosters it.</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>What are you both agreed?</L>
+</SP>
+<SP>
+<SPEAKER>Ambo.</SPEAKER>
+<L>Yes, if't please your Maiestie.</L>
+</SP>
+<SP>
+<SPEAKER>King.</SPEAKER>
+<L>It pleaseth me so well, that I will see you wed,</L>
+<L>And then with what haste you can, get you to bed.</L>
+</SP>
+<STAGE>Exiunt.</STAGE>
+<STAGE>Enter Gower.</STAGE>
+<L>Now sleepe y slacked hath the rout,</L>
+<L>No din but snores about the house,</L>
+<L>Made louder by the orefed breast,</L>
+<L>Of this most pompous maryage Feast:</L>
+<L>The Catte with eyne of burning cole,</L>
+<L>Now coutches from the Mouses <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ole;</L>
+<L>And Cricket sing at the Ouens mouth,</L>
+<L>Are the blyther for their drouth:</L>
+<L><HI>Hymen</HI> hath brought the Bride to bed,</L>
+<L>Whereby the los<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e of may denhead,</L>
+<L>A Babe is moulded: be attent,</L>
+<L><PB REF="17">And Time that is so briefly spent,</L>
+<L>With your fine fancies quaintly each,</L>
+<L>What's dumbe in shew, I'le plaine with speach.</L>
+<STAGE>Enter <HI>Pericles</HI> and <HI>Symonides</HI> at one d<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">re with attendantes,
+a Messenger meete, them, knee<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">es and giues <HI>Pericles</HI> a letter,
+<HI>Pericles</HI> shewes it <HI>Sy<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">onides,</HI> the Lords kneele to him;
+then enter <HI>Thaysa</HI> with <GAP DESC="illegible" RESP="tech" EXTENT="1 word">, with <HI>Lichorida</HI> a nurse,
+the King shewes her th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> letter, she reioyces: she and <HI>Pericle<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"></HI>
+take leaue of her father, and depart.</STAGE>
+<L>By many a dearne and painefull pearch</L>
+<L>Of <HI>Perycles</HI> the carefull search,</L>
+<L>By the <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ower opposing Crignes,</L>
+<L>Which the world togeather ioynes,</L>
+<L>Is made with all due diligence,</L>
+<L>That horse and sayle and hie expence,</L>
+<L>Can steed the quest at last from <HI>Tyre:</HI></L>
+<L>Fame answering the most strange enquire,</L>
+<L>To'th Court of King <HI>Symonides,</HI></L>
+<L>Are Letters brought, the tenour these:</L>
+<L><HI>Anti<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">chus</HI> and his daughter dead,</L>
+<L>The men of <HI>Tyrus,</HI> on the head</L>
+<L>Of <HI>Helycanus</HI> would set on</L>
+<L>The Crowne of <HI>Tyre,</HI> b<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t he will none:</L>
+<L>The mutanie, hee there hastes t'oppresse,</L>
+<L>Sayes to'em, if King <HI>Pericles</HI></L>
+<L>Come not home in twise sixe Moones,</L>
+<L>He obedient to their doomes,</L>
+<L>Will take the Crowne: the summe of this,</L>
+<L>Brought hither to <HI>Penlapolis,</HI></L>
+<L>Irany shed the regions round,</L>
+<L>And euery one with claps can <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ound,</L>
+<L>Our heyre apparant is a King:</L>
+<L>Who dreampt? who thought of such a thing?</L>
+<L>Briefe he must hence depart to <HI>Tyre,</HI></L>
+<L>His Queene with child, makes her desire,</L>
+<L><PB REF="18">Which who shall crosse along to goe,</L>
+<L>Omit we all their dole and woe:</L>
+<L><HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> her Nurse she takes,</L>
+<L>And so to Sea; their vessell shakes,</L>
+<L>On <HI>Neptune<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"></HI> billow, halfe the flood,</L>
+<L>Hath their Keele cut: but fortune mou'd,</L>
+<L>Varies againe, the grisled North</L>
+<L>Disgorges such a tempest forth,</L>
+<L>That as a Ducke for life that diues,</L>
+<L>So vp and downe the poo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e Ship driues:</L>
+<L>The Lady shreekes, and wel-a-neare,</L>
+<L>Do's fall in trauayle with her feare:</L>
+<L>And what ensues in this fell storme,</L>
+<L>Shal<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> for it selfe, it selfe performe:</L>
+<L>I n<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ll relate, action may</L>
+<L>Conueniently the rest conuay;</L>
+<L>Which might not? what by me is told,</L>
+<L>In your imagination hold:</L>
+<L>This Stage, the Ship, vpon whose Decke</L>
+<L>The seas tost <HI>Pericles</HI> appeares to speake.</L>
+<STAGE>Enter Pericles a Shipbo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rd.</STAGE>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>The God of this great Vast, rebuke these surges,</L>
+<L>Which wash both heauen and hell, and thou that hast</L>
+<L>Vpon the Windes commaund, bind them in Brasse;</L>
+<L>Hauing call'd them from the deepe, &ocirc; still</L>
+<L>Thy dea<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">n<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ng dreadfull thunders gently quench</L>
+<L>Thy <GAP DESC="illegible" RESP="tech" EXTENT="3 letters">ble sulphirous flashes: &ocirc; How <HI>Lychorida!</HI></L>
+<L>How does my Queene then? storme venomously,</L>
+<L>Wilt thou s<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">eat all thy selfe? the sea-mans Whistle</L>
+<L>Is as a whi<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">per in the eares of death,</L>
+<L>Vnheard <HI>Ly<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">h<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ri<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">a?</HI> <GAP DESC="illegible" RESP="tech" EXTENT="1 word">, oh!</L>
+<L>Diuinest patrionesse, and my wife gentle</L>
+<L>To those that cry by night&punc; conuey thy deitie</L>
+<L>Aboard our dauncing Boat make swift the pangues</L>
+<L>Of my Queenes trauayles? now <HI>Lychori<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">.</HI></L>
+</SP>
+<STAGE><PB REF="18">Enter Lychorida.</STAGE>
+<SP>
+<SPEAKER>Lychor.</SPEAKER>
+<L>Heere is a thing too young for such a place,</L>
+<L>Who if it had conceit, would die, as I am like to doe:</L>
+<L>Take in your armes this peece of your dead Queene.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>How? how <HI>Lychori<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">a?</HI></L>
+</SP>
+<SP>
+<SPEAKER>Lycho.</SPEAKER>
+<L>Patience (good sir) do not assist the storme,</L>
+<L>Heer's all that is left liuing of your Queene;</L>
+<L>A litle Daughter: for the sake of it,</L>
+<L>Be manly, and take comfort.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>O you Gods!</L>
+<L>Why do you make vs loue your goodly gyfts,</L>
+<L>And snatch them straight away? we heere below,</L>
+<L>Recall not what we giue, and therein may</L>
+<L>Vse honour with you.</L>
+</SP>
+<SP>
+<SPEAKER>Lycho.</SPEAKER>
+<L>Patience (good sir) euen for this charge.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Now mylde may be thy life,</L>
+<L>For a more blusterous birth had neuer Babe:</L>
+<L>Quiet and gentle thy conditions; for</L>
+<L>Thou art the rudelyest welcome to this world,</L>
+<L>That euer was Princes Child: happy what followes,</L>
+<L>Thou hast as chiding a natiuitie&punc;</L>
+<L>As Fire, Ayre, Water, Earth, and Heauen can make,</L>
+<L>To harould thee from the wombe:</L>
+<L>Euen at the first, thy losse is more then can</L>
+<L>Thy portage quit, with all thou canst find heere:</L>
+<L>Now the good Gods throw their best eyes vpon't.</L>
+</SP>
+<STAGE>Enter two Saylers.</STAGE>
+<SP>
+<SPEAKER>1. Sayl.</SPEAKER>
+<L>What courage sir? God saue you.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Courage enough, I do not feare the <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">law,</L>
+<L>It hath done to me the worst: yet for the loue</L>
+<L>Of this poore Infant, this fresh new sea-farer,</L>
+<L>I would it would be quiet.</L>
+</SP>
+<SP>
+<SPEAKER>1. Sayl.</SPEAKER>
+<L>Slacke the bolins there; thou wilt not wilt thou:</L>
+<L>Blow and split thy selfe.</L>
+</SP>
+<SP>
+<SPEAKER>2. Sayl.</SPEAKER>
+<L>But Sea-roome, and the brine and cloudy billow</L>
+<L>Kisse the Moone, I care not.</L>
+</SP>
+<SP>
+<PB REF="19">
+<SPEAKER><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<L>Sir your Queene must ouer board, the sea workes hie,</L>
+<L>The Wind is lowd, and will not <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">e till the Ship</L>
+<L>Be cleard of the dead.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>That's your superstition.</L>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<L>Pardon vs, sir; with vs at Sea it hath bin still obserued.</L>
+<L>And we are strong in easterne, therefore briefly yeeld'er,</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>As you thinke meet; for she must ouer board straight;</L>
+<L>Most wretched Queene.</L>
+</SP>
+<SP>
+<SPEAKER>Lychor.</SPEAKER>
+<L>Heere she lyes sir.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>A terrible Child-bed hast thou had (my deare,</L>
+<L>No light, no fire, th'vnfriendly elements,</L>
+<L>Forgot thee vtterly, nor haue I time</L>
+<L>To giue thee hallowd to thy graue, but straight,</L>
+<L>Must cast thee scarcly Cossind, in oare,</L>
+<L>Where for a monument vpon thy bones,</L>
+<L>The ayre remayning lampes, the belching Whale,</L>
+<L>And humming Water must orewelme thy corpes,</L>
+<L>Lying with simple shels: &ocirc; <HI>Lychorida,</HI></L>
+<L>Bid <HI>Nes<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">or</HI> bring me Spices, Incke, and Taper,</L>
+<L>My Casket, and my lewels; and bid <HI>Nicander</HI></L>
+<L>Bring me the Sattin Coffin: lay the Babe</L>
+<L>Vpon the Pillow; hie thee whiles I say</L>
+<L>A priestly farewell to her: sodainely, woman.</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>Sir, we haue a Chist beneath the hatches,</L>
+<L>Caulkt and bittumed ready.</L>
+</SP>
+<SP>
+<SPEAKER>P<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ri.</SPEAKER>
+<L>I thanke thee: Mariner say, what Coast is this?</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>Wee are neere <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word">.</HI></L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>Thither gentel Mariner,</L>
+<L>Alter thy course for <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word">:</HI> When canst thou reach it?</L>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<L>By breake of day, if the Wind cease.</L>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<L>O make for <HI>Th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">sus,</HI></L>
+<L>There will I visit <HI>Cle<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r,</HI> for the Babe</L>
+<L>Cannot hold out to <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word">;</HI> there <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">le leaue it</L>
+<L>At carefull nursing: goe thy wayes good Mariner,</L>
+<L>Ile bring the body presently.</L>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE><PB REF="19">Enter Lord C<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rymon with a seruant.</STAGE>
+<SP>
+<SPEAKER>Cery.</SPEAKER>
+<L><HI>Phylemon,</HI> hoe.</L>
+</SP>
+<STAGE>Enter Phylemon.</STAGE>
+<SP>
+<SPEAKER>Phyl.</SPEAKER>
+<L>Doth my Lord call?</L>
+</SP>
+<SP>
+<SPEAKER>C<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">y.</SPEAKER>
+<L>Get Fire and meat for these poore men,</L>
+<L>T'as been a turbulent and stormie night.</L>
+</SP>
+<SP>
+<SPEAKER>S<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ru.</SPEAKER>
+<L>I haue been in many; but such a night as this,</L>
+<L>Till now, I neare endured.</L>
+</SP>
+<SP>
+<SPEAKER>Cery.</SPEAKER>
+<L>Your Maister will be dead ere you returne,</L>
+<L>There's nothing can be ministred to Nature,</L>
+<L>That can recouer him: giue this to the Pothecary,</L>
+<L>And tell me how it workes.</L>
+</SP>
+<STAGE>Enter two G<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ntlemen.</STAGE>
+<SP>
+<SPEAKER>1. Gent.</SPEAKER>
+<L>Good morrow.</L>
+</SP>
+<SP>
+<SPEAKER>2. Gent.</SPEAKER>
+<L>Good morrow to your Lordship,</L>
+</SP>
+<SP>
+<SPEAKER>Cery.</SPEAKER>
+<L>Gentlemen, why doe you stirre so early?</L>
+</SP>
+<SP>
+<SPEAKER>1. Gent.</SPEAKER>
+<L>Sir, our lodgings standing bleake vpon the sea&punc;</L>
+<L>Shooke as the earth did quake:</L>
+<L>The very principals did seeme to rend and all to topple:</L>
+<L>Pure surprize and feare, made me to quite the house.</L>
+</SP>
+<SP>
+<SPEAKER>2. Gent.</SPEAKER>
+<L>That is the cause we trouble you so early,</L>
+<L>T<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">is not our husbandry.</L>
+</SP>
+<SP>
+<SPEAKER>Cery.</SPEAKER>
+<L>O you say well.</L>
+</SP>
+<SP>
+<SPEAKER>1. <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ent.</SPEAKER>
+<L>But I much maruaile that your Lordship,</L>
+<L>Hauing rich tire about you, should at these early howers,</L>
+<L>Shake off the golden slumber of repose; tis most strang<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"></L>
+<L>Nature should be so conuersant with Paine,</L>
+<L>Being thereto not compelled.</L>
+</SP>
+<SP>
+<SPEAKER>Cery.</SPEAKER>
+<L>I h<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ld it euer Vertue and Cunning,</L>
+<L>Were endowments greater, then Noblenes<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e &amp; Riches;</L>
+<L>Carelesse Heyres, may the two latter darken and expend;</L>
+<L>But Immortalitie attendes the former,</L>
+<L>Making a man a god:</L>
+<L>T'is knowne, I euer haue studied Physicke:</L>
+<L>Through which secret Art, by turning ore Authorities,</L>
+<L><PB REF="20">I haue togeather with my practize, made famyliar,</L>
+<L>To me and to my ayde, the blest infusions that dwels</L>
+<L>In Vegetiues, in Mettals, Stones: and can speake of the</L>
+<L>Disturbances that Nature works, and of her cures;</L>
+<L>which doth giue me a more content in course of true delight</L>
+<L>Then to be thirsty after tottering honour, or</L>
+<L>Tie my pleasure vp in silken Bagges,</L>
+<L>To please the Foole and Death.</L>
+</SP>
+<SP>
+<SPEAKER>2. Gent.</SPEAKER>
+<L>Your honour has through <HI>E<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">hesus,</HI></L>
+<L>Poured foorth your charitie, and hundreds call themselues,</L>
+<L>Your Creatures; who by you, haue been restored;</L>
+<L>And not your knowledge, <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">our personall payne,</L>
+<L>But euen your Purse still open, hath built Lord <HI>Cerim<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">n,</HI></L>
+<L>Such strong renowne, as time shall neuer.</L>
+</SP>
+<STAGE>Enter two or three with a Chi<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t.</STAGE>
+<SP>
+<SPEAKER>Seru.</SPEAKER>
+<L>So, lift there.</L>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<L>What's that?</L>
+</SP>
+<SP>
+<SPEAKER>Ser.</SPEAKER>
+<L>Sir, euen now did the sea tosse vp vpon our shore</L>
+<L>This Chist; tis of some wracke.</L>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<L>Set't downe, let's looke vpon't.</L>
+</SP>
+<SP>
+<SPEAKER>2. Gent.</SPEAKER>
+<L>T'is like a Co<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">in, sir.</L>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<L>What ere it be, t'is woondrous heauie;</L>
+<L>Wrench it open straight:</L>
+<L>If the Seas stomacke be orecharg'd with Gold,</L>
+<L>T'is a good constraint of Fortune it belches vpon vs.</L>
+</SP>
+<SP>
+<SPEAKER>2. Gent.</SPEAKER>
+<L>T'is so, my Lord.</L>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<L>How close tis caulkt &amp; bottomed, did the sea cast it vp?</L>
+</SP>
+<SP>
+<SPEAKER>Sir.</SPEAKER>
+<L>I neuer saw so huge a billow sir&punc; as tost it vpon shore.</L>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<L>Wrench it open soft; it smels most sweetly in my sense.</L>
+</SP>
+<SP>
+<SPEAKER>2. Gent.</SPEAKER>
+<L>A delicate Odour.</L>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<L>As euer l<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">t m<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> nostrill: so, vp with it.</L>
+<L>Oh you most potent Gods! what's here, a Corse?</L>
+</SP>
+<SP>
+<SPEAKER><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">. Gent.</SPEAKER>
+<L>Most strange.</L>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<P>Shrowded in Cloth of state, balmed and entreasured
+with full bagges of Spices, a Pasport to <HI>Apollo,</HI> perfect mee
+in the Characters:</P>
+<L><PB REF="20">Heere I giue to vnderstand,</L>
+<L>If er<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> this Coffin driues alaud;</L>
+<L>I King <HI>Pericles</HI> haue lost</L>
+<L>This Queen, worth all our mundaine cost:</L>
+<L>Who finds her, giue her burying,</L>
+<L>She was the Daughter of a King:</L>
+<L>Besiaes, this Treasure for a <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ee,</L>
+<L>The Go<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s requit his charitie.</L>
+<L>If thou liuest <HI>Pericles,</HI> thou hast a heart,</L>
+<L>That euer cracks for woe, this chaunc'd to night.</L>
+</SP>
+<SP>
+<SPEAKER>2. Gent.</SPEAKER>
+<L>Most likely sir.</L>
+</SP>
+<SP>
+<SPEAKER>C<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r.</SPEAKER>
+<L>Nay certainely to night, for looke how fresh she looks</L>
+<L>They were too rough, that threw her in the sea.</L>
+<L>Make a Fire within; fetch hither all my Boxes in my Closet,</L>
+<L>Death may vsurpe on Nature many howers, and yet</L>
+<L>The fire of life kindle againe the ore-prest spirits;</L>
+<L>I heard of an <HI>Egiptian</HI> that had 9. howers lien dead,</L>
+<L>Who was by good applyaunce recouered.</L>
+<STAGE>Enter one with Napkins and Fire.</STAGE>
+<L>Well sayd, well sayd; the fire and clothes: the rough and</L>
+<L>Wofull Musick that we haue, cause it to sound beseech you:</L>
+<L>The Violl once more; how thou stirr<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">st thou blocke?</L>
+<L>The Musicke there: I pray you giue her ayre:</L>
+<L>Gentlemen, this Queene will liue,</L>
+<L>Nature awakes a warmth breath out of her;</L>
+<L>She hath not been entranc'st aboue fiue howers:</L>
+<L>See how she ginnes to blow into lifes flower againe.</L>
+</SP>
+<SP>
+<SPEAKER>1. Gent.</SPEAKER>
+<L>The Heauens, through you, encrease our wonder,</L>
+<L>And sets vp your <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ame for euer.</L>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<L>She is ali<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e, behold her ey<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">lids</L>
+<L>Cases to those heau<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">nly iewels which <HI>Pericles</HI> hath lost,</L>
+<L>Begin to part their fringes of bright gold,</L>
+<L>The Diamonds of a most praysed water doth appeare,</L>
+<L>T<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> make the world twise rich, liue, and make vs weepe.</L>
+<L>To heare your fat<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">, <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ure creature, rare as you seeme to bee.</L>
+</SP>
+<STAGE><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></STAGE>
+<SP>
+<SPEAKER>Thai.</SPEAKER>
+<L>O deare <HI>Dian<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">,</HI> where am I? where's my Lord?</L>
+<L><PB REF="21">What wo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ld is this?</L>
+</SP>
+<SP>
+<SPEAKER>2. Gent.</SPEAKER>
+<L>Is not this strange?</L>
+</SP>
+<SP>
+<SPEAKER>1. Gent.</SPEAKER>
+<L>Most rare.</L>
+</SP>
+<SP>
+<SPEAKER>Cer<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<L>Hush (my gentle neighbours) lend me your hands,</L>
+<L>To the next Chamber beare her: get linnen:</L>
+<L>Now this matter must be lookt to for her relapse</L>
+<L>Is mortall: come, come; and <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> guide vs.</L>
+</SP>
+<STAGE>They carry her away. Exeunt omnes.</STAGE>
+<STAGE>Enter Pericles, <GAP DESC="illegible" RESP="tech" EXTENT="1 word">, with Cleon and Dionisa.</STAGE>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Most honor'd <HI>Cl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">on,</HI> I must need<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> be gone, my twelue
+months are expir'd, and <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> standes in alitigious peace:</P>
+<L>You and your Lady take from my heart all thankfulnesse,</L>
+<L>The Gods make vp the rest vpon you.</L>
+</SP>
+<SP>
+<SPEAKER>C<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e.</SPEAKER>
+<L>Your shakes of fo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">tune, though they hant you mortally</L>
+<L>Yet glaunce full wondringly on vs.</L>
+</SP>
+<SP>
+<SPEAKER>Di.</SPEAKER>
+<P>O your sweet Queene! that the strict fates had pleas'd,
+you had brought her hither to haue blest mine eies with her.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>We cannot but obey the powers aboue vs;</L>
+<L>Could I rage and rore as doth the sea she lies in,</L>
+<L>Yet the end must be as tis: my gentle babe <HI>Marina,</HI></L>
+<L>Whom, for she was borne at sea, I haue named so,</L>
+<L>Here I charge your charitie withall; leauing her</L>
+<L>The infant of your care, beseeching you to giue her</L>
+<L>Princely training, that she may be manere'd as she is borne.</L>
+</SP>
+<SP>
+<SPEAKER>Cle.</SPEAKER>
+<L>Feare not (my Lord) but thinke your Grace,</L>
+<L>That fed my Countrie with your Corne; for which,</L>
+<L>The peoples prayers still fall vpon you, must in your child</L>
+<L>Be thought on if neglection should therein make me vile,</L>
+<L>The common body by you relieu'd,</L>
+<L>Would force me to my duety: but if to that,</L>
+<L>My nature neede a spurre, the Gods reuenge it</L>
+<L>Vpon me and mine, to the end of generation.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>I belee<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e you, your honour and your goodnes,</L>
+<L>Teach me too't without your vowes, till she be maried,</L>
+<L>Madame by bright <HI>Diana,</HI> whom we honour,</L>
+<L>All vnsule<GAP DESC="illegible" RESP="tech" EXTENT="2 letters"> shall this heyre of mine remayne,</L>
+<L>Though I shew will in't; so I take my leaue:</L>
+<L>Good Madame, make me blessed in your care</L>
+<L>In bringing vp my Child.</L>
+</SP>
+<SP>
+<PB REF="21">
+<SPEAKER>Di<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">n.</SPEAKER>
+<P>I haue one my selfe, who shall not be more deere
+to my respect then yours, my Lord.</P>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<P>Madam, my thanks and prayers.</P>
+</SP>
+<SP>
+<SPEAKER>Cler.</SPEAKER>
+<P>Weel bring your Grace ene to the edge <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">th shore,
+then giue you vp to the mask'd <HI>Neptune,</HI> and the gentlest
+winds of heauen.</P>
+</SP>
+<SP>
+<SPEAKER>Peri.</SPEAKER>
+<P>I will imbrace your offer, come deerest Madame,
+O no teares <HI>Licherida,</HI> no teares, looke to your litle Mistris,
+on whose grace you may depend hereafter: come my Lord.</P>
+</SP>
+<STAGE>Enter Cerimon, and Tharsa.</STAGE>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<L>Madam, this Letter, and some certaine Iewels,</L>
+<L>Lay with you in your Coffer, which are at your command:</L>
+<L>Know you the Charecter?</L>
+</SP>
+<SP>
+<SPEAKER>Thar.</SPEAKER>
+<P>It is my Lords, that I was shipt at sea I well remem|ber,
+euen on my learning time, but whether there deliue|red,
+by the holie gods I cannot rightly say: but since King
+<HI>Pericles</HI> my wedded Lord, I nere shall see againe, a vastall
+liuerie will I take me to, and neuer more haue ioy.</P>
+</SP>
+<SP>
+<SPEAKER>Cler.</SPEAKER>
+<L>Madam, if this you purpose as ye speake,</L>
+<L><HI>Dianaes</HI> Temple is not distant farre,</L>
+<L>Where you may abide till your date expire,</L>
+<L>Moreouer if you please a Neece of mine,</L>
+<L>Shall there attend you.</L>
+</SP>
+<SP>
+<SPEAKER>Thin.</SPEAKER>
+<L>My recompence is thanks, thats all,</L>
+<L>Yet my good will is great, though the gift small.</L>
+<STAGE>Exit.</STAGE>
+<STAGE>Enter Gower.</STAGE>
+<L>Imagine <HI>Pericles</HI> arriude at <HI>Tyre,</HI></L>
+<L>Welcomd and setled to his owne desire:</L>
+<L>His wofull Queene we leaue at <HI>Ephesus;</HI></L>
+<L>Vnto <HI>Diana</HI> ther's a Votarisse.</L>
+<L><PB REF="22">Now to <HI>Marina</HI> bend your mind,</L>
+<L>Whom our fast growing seene must finde</L>
+<L>At <HI>Tha<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">sus&punc;</HI> and by <HI>Cl<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">n</HI> traind</L>
+<L>In Mu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">icks letters, who hath gaind</L>
+<L>Of education all the grace,</L>
+<L>Wh<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ch makes hie both the art and place</L>
+<L>Of gene all wonder: but alacke</L>
+<L>Th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t mo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ster <GAP DESC="illegible" RESP="tech" EXTENT="1 span"> wracke</L>
+<L>Of <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> praise, <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">arin<GAP DESC="illegible" RESP="tech" EXTENT="2 letters"></HI> <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ife</L>
+<L>Seeke to take off by treasons knife,</L>
+<L>And in this kinde, our <HI>Cl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">on</HI> hath</L>
+<L>O<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e daughter and a full growne wench,</L>
+<L>Euen right for marriage <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ight: this Maid</L>
+<L><GAP DESC="illegible" RESP="tech" EXTENT="1 span"> and it is said</L>
+<L>For certaine in our storie, shee</L>
+<L>Would e<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">r with <HI>Marina</HI> bee.</L>
+<L>Beet when they weau<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e the <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">eded silke,</L>
+<L>W<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">th fingers long, small, white as milke,</L>
+<L>Or when she would with sharpe needle wound,</L>
+<L>The Cambricke which she made more sound</L>
+<L>By hurting it or when too'th Lu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e</L>
+<L>She sung, and made the night bed mute,</L>
+<L>That st<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ll records with mone, or when</L>
+<L>She would with rich and constant pen,</L>
+<L>V<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">le to her Mistresse <HI>D<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">an</HI> still,</L>
+<L>Th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s <HI>Phylaten</HI> contends in skill</L>
+<L>With absolute <HI>Marina:</HI> so</L>
+<L>The Doue of <HI>Pap<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">os</HI> might with the cro<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"></L>
+<L>Vie feathers white, <HI>Marina</HI> gets</L>
+<L>All prayses, which are paid as debts,</L>
+<L>And not as g<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">uen, this so darkes</L>
+<L>In <HI>Phyl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ten</HI> all gracefull markes,</L>
+<L>That <HI>Cl<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">ns</HI> wife with Enuie rare,</L>
+<L>A present murderer does prepare</L>
+<L>For good <HI>Marina,</HI> that her daughter</L>
+<L><PB REF="22">Might stand peerlesse by this slaughter.</L>
+<L>The sooner her vile thoughts to stead,</L>
+<L><GAP DESC="illegible" RESP="tech" EXTENT="1 span"> our nurse is dead,</L>
+<L>And cursed <HI>D<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">o<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">za</HI> hath</L>
+<L>The pregnant instrument of wrath.</L>
+<L>Prest for this blow, the vnbor<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">uent,</L>
+<L>I doe commend to your content,</L>
+<L>Onely I carri<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">d winged Time,</L>
+<L>Post one the lame <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">ete of my rime,</L>
+<L>Which neuer coul<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> I so conu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">y,</L>
+<L>Vnl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">sse your thoughts went on my way,</L>
+<L><HI>Dioniza</HI> <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">oes appeare,</L>
+<L>With <HI>Leo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">in<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"></HI> a murth<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rer.</L>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE>Enter Dioniza, with L<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">onin<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</STAGE>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<P>Thy oath remember, thou hast sworne to doo't,
+tis but a blowe which neuer <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">all bee knowne, thou
+canst not doe a thing in the worlde so soone to yeelde
+the<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> so much pro<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">te: let not con<GAP DESC="illegible" RESP="tech" EXTENT="3 letters">ence which is but
+cold, in <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">a<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ning, thy loue bosome, enflame too nicelie,
+nor let pittie which euen wo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">en haue cast off, melt thee,
+but be a souldier to thy purpo<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">.</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<L>I will doo'<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">, <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ut yet she is a goodly creature.</L>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<L>The <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">tter then the Gods should haue her.</L>
+<L>Here she comes we<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ping <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">or her onely Mistres<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e death,</L>
+<L>Thou art resolude.</L>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<L>I am resolude.</L>
+</SP>
+<STAGE>Enter Marina with a Basket of flowers.</STAGE>
+<SP>
+<SPEAKER>Ma<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">i&punc;</SPEAKER>
+<P>No: I will <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ob <HI>T<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ll<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s</HI> of her weede to strowe
+thy greene w<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">th Flowe<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s, the yellowes, blewes, the purple
+Violets, and Marigolds, shall as a Carpet hang vpon thy
+graue, while Sommer dayes doth last: Aye me poore maid,
+<PB REF="23">
+borne in a tempest, when my mother dide, this world to me
+is a lasting storme, whirring me from my friends.</P>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<L>How now <HI>Marina,</HI> why doe you keep alone?</L>
+<L>How chaunce my daughter is not with you?</L>
+<L>Doe not con<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ume your bloud with sorrowing,</L>
+<L>Haue you a nurse of me? Lord how your fauour&punc;</L>
+<L>Changd with this vnprofitable woe:</L>
+<L>Come giue me your flowers, ere the sea marre it,</L>
+<L>Walke with <HI>Leonine,</HI> the ayre is quicke there,</L>
+<L>And it perces and sharpens the stomacke,</L>
+<L>Come <HI>Leonine</HI> take her by the arme, walke with her.</L>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>No I pray you, Ile not bercau<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> you of your seru<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">~t.</P>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<P>Come, come, I loue the king your father, and your
+selfe, with more then forraine heart, we euery day expect
+him here, when he shall com<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> and find our Paragon to all
+reports thus blasted,</P>
+<P>He will repent the breadth of his great voyage, blame both
+my Lord and me, that we haue taken no care to your best
+courses, go I pray you, walke and be chearfull once againe,
+reserue that excellent complexion, which did steale the
+eyes of yong and old. Care not for me, I can g<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e home a|lone.</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>Well, I will goe, but yet I haue no desire too it.</P>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<P>Come, come, I know tis good for you, walke halfe
+an houre <HI>Leonine,</HI> at the least, remember what I haue sed.</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>I warrant you Madam.</P>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<P>Ile leaue you my sweete Ladie, for a while, pray
+walke softly, doe not heate your bloud, what, I must haue
+care of you.</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>My thanks sweete Madame, Is this wind Westerlie
+that blowes?</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>Southwest.</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>When I was borne the wind was North.</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>Wast so?</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>My father, as nu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">se ses, did neuer feare, but cryed
+<PB REF="23">
+good sea-men to the Saylers, galling his kingly hands ha|ling
+ropes, and clasping to the Mast, endured a sea that al|most
+burst the decke.</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>When was this?</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>When I was borne, neuer was waues nor winde
+more violent, and from the ladder tackle, washes off a can|uas
+clymer, ha ses one, wolt out? and with a dropping in|dustrie
+they skip from sterne to sterne, the Boarswaine
+whistles, and the Ma<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ster calles and trebles their confusion.</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>Come say your prayers.</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>What meane you?</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>If you require a little space for praier, I graunt it,
+pray, but bee not tedious, for the Gods are quicke of <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ar<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">,
+and I am sworne to do my worke with haste.</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>Why will you kill me?</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>To satisfie my Ladie.</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>Why would shee haue mee kild now? as I can re|member
+by my troth, I neuer did her hurt in all my life, I
+neuer spake bad worde, nor did ill turne to anie liuing crea|ture:
+Beleeue me law, I neuer killd a Mouse, nor hurt a Fly:
+I trode vpon a worme against my will, but I wept fort. How
+haue I offended, wherein my death might yeeld her an<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">
+profit, or my life imply her any danger?</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>My Commission is not to reason of the deed, but
+doo't.</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>You will not doo't for all the world I hope: you
+are well fauoured, and your lookes foreshew you haue a
+gentle heart, I saw you latelie when you caught hurt in par|ting
+two that fought: good sooth it shewde well in you, do
+so now, your Ladie seekes my life Come, you betweene, and
+saue poore mee the weaker.</P>
+</SP>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>I am sworne and will dispatch.</P>
+</SP>
+<STAGE>Enter Pirats.</STAGE>
+<SP>
+<SPEAKER>Pirat. 1.</SPEAKER>
+<P>Hold villaine.</P>
+</SP>
+<SP>
+<SPEAKER>Pira. 2.</SPEAKER>
+<P>A prize, a prize.</P>
+</SP>
+<SP>
+<SPEAKER>Pirat. 3.</SPEAKER>
+<P>Halfe part mates, halfe part. Come lets haue
+<PB REF="24">
+her aboord sodainly.</P>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE>Enter Le<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">ine</STAGE>
+<SP>
+<SPEAKER>Leon.</SPEAKER>
+<P>These rogueing theeues serue the great Pvrat<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">
+<HI>Valdes,</HI> and they haue seizd <HI>Marina,</HI> let her goe, ther's no
+hope shee will returne, Ile sweare shees dead, and throwne
+into the Sea, <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> see further: perhappes they will but
+please themselues vpon her, not carrie her aboord, if shee
+remaine</P>
+<L>Whome they haue rauisht, must by mee be slaine.</L>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE>Enter the three Bawd<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s.</STAGE>
+<SP>
+<SPEAKER>Pander.</SPEAKER>
+<P>Boult.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>Sir.</P>
+</SP>
+<SP>
+<SPEAKER>Pander.</SPEAKER>
+<P>Searche the market narrowely, <HI>M<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">tt<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">lyne</HI> is
+full of gallants, wee lost too much much money this mart
+by beeing too wenchlesse.</P>
+</SP>
+<SP>
+<SPEAKER>Ba<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">d.</SPEAKER>
+<P>Wee were neuer so much out of Creatures, we
+h<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ue but poore three, and they ca<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> doe no more then they
+can doe, and they with continu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ll <GAP DESC="illegible" RESP="tech" EXTENT="1 word">, are euen as good
+as rotten.</P>
+</SP>
+<SP>
+<SPEAKER>Pander.</SPEAKER>
+<P>Therefore lets haue fresh ones what ere wee pay
+for them, if there bee not a conscience to be vsde in eu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rie
+trade, wee shall neu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r prosper.</P>
+</SP>
+<SP>
+<SPEAKER>Ba<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">d.</SPEAKER>
+<P>Thou sayst true, tis not our bringing vp of poore
+bastards, as I thinke. I hau<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> brought vp some <GAP DESC="illegible" RESP="tech" EXTENT="1 word">.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>I to eleuen, and brought them downe againe,
+but shall I searche the mark<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t?</P>
+</SP>
+<SP>
+<SPEAKER>Bawde.</SPEAKER>
+<P>What else ma<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">? <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">he stuffe we haue, a strong
+winde will blowe it to peeces, they are so pittifu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ly sudden.</P>
+</SP>
+
+<PB REF="24">
+
+<!-- this page supplied in manuscript, captured here in ADD tags and collated here with another print copy -->
+
+
+<SP>
+<SPEAKER><ADD>Pander.</ADD></SPEAKER>
+<P><ADD>Thou sayest true, ther's two unwholesome a conscience,
+the poore <HI>Transiluanian</HI> is dead that laye with
+the little baggadge.</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+vnwholesome (instead of unwholesome)
+li tle (instead of little; missing t) 
+
+-->
+
+<SP>
+<SPEAKER><ADD>Boult.</ADD></SPEAKER>
+<P><ADD>I, shee quickly poupt him, she made him roaste-meate
+for wormes, but Ile goe search the market</ADD></P>
+<STAGE><ADD>Exit</ADD></STAGE>
+</SP>
+
+<!-- vid 11753 reads: 
+
+roast (instead of roaste)
+full stop after market and Exit (instead of none)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Pand.</ADD></SPEAKER>
+<P><ADD>Three or foure thousande Checkins were as pret|tie
+a proportion to liue quietly, and so giue ouer.</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+thousand (instead of thousande)
+Chickins (instead of Checkins)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>Why to giue ouer I pray you? Is it a shame to
+get when wee are olde?</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+Why, (instead of Why [added comma])
+we (instead of wee)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Pand.</ADD></SPEAKER>
+<P><ADD>Oh our credite comes not in like the commo|ditie
+nor the commoditie wages not with the daunger:
+therefore if in our youthes we could picke up some prettie
+estate, 't were not amisse to keepe our doore hatch't, besides
+the fore tearmes we stand upon with the gods wil be strong
+with us for giuing ore.</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+commodi|tie, (instead of commo|ditie)
+daunger. (instead of daunger:)
+youths (instead of youthes)
+t'were (instead of 't were)
+sore tearmes (instead of fore tearmes)
+vpon (instead of upon)
+vs (instead of us)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>Come other sorts offend as well as wee.</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+Come, (instead of Come)
+we (instead of wee)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Pand.</ADD></SPEAKER>
+<P><ADD>As well as wee, I, and better too, wee offende
+worse, neither is our profession any trade, It's no calling,
+but here comes <HI>Boult</HI></ADD></P></SP>
+
+<!-- vid 11753 reads: 
+
+we (instead of wee  [both times])
+offend (instead of offende)
+Full stop after "Boult" (instead of none)
+
+-->
+
+<STAGE><ADD>Enter Boult with the Pirates and Marina</ADD></STAGE>
+
+<!-- vid 11753 reads: 
+
+Full stop after Marina (instead of none)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Boult.</ADD></SPEAKER>
+<P><ADD>Come your wayes my maisters, you say shee's a virgin.</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Sayler.</ADD></SPEAKER>
+<P><ADD>O Sir, wee doubt it not.</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+we (instead of wee)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Boult.</ADD></SPEAKER>
+<P><ADD>Master, I haue gone through for this peece you
+see, if you like her so, if not, I haue lost my earnest.</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD><HI>Boult</HI> has shee any qualities?</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+ha's (instead of has)
+she  (instead of shee)
+anie (instead of any)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Boult.</ADD></SPEAKER>
+<P><ADD>Shee has a good face, speakes well, and has ex|cellent
+good cloathes: theres no farther necessitie of qua|lities
+can make her be refuz'd.</ADD></P></SP>
+
+<!-- vid 11753 reads: 
+
+ha's (instead of has) [twice]
+
+-->
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>What's her price <HI>Boult</HI>?</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+
+price, (instead of price)
+
+-->
+
+<PB REF="25">
+
+<SP>
+<SPEAKER><ADD>Boult.</ADD></SPEAKER>
+<P><ADD>I cannot be bated one doit of a thousand peeces.</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Pand.</ADD></SPEAKER>
+<P><ADD>Well, follow me my maisters, you shall haue your
+money presently, wife take her in, instruct her what she has
+to doe, that she may not be rawe in her entertainment.</ADD>
+</P></SP>
+
+<!-- vid 11753 reads: 
+
+do (instead of doe)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD><HI>Boult,</HI> take you the markes of her, the colour of
+her haire, complexion, height, her age, with warrant of her
+virginitie and crie. He that will giue most shal haue her first,
+such a maydenhead were no cheape thing, if men were as
+they haue beene: get this done as I command you.</ADD></P></SP>
+
+<SP>
+<SPEAKER><ADD>Boult.</ADD></SPEAKER>
+<P><ADD>Performance shall follow.</ADD></P>
+<STAGE><ADD>Exit</ADD></STAGE>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Mar.</ADD></SPEAKER>
+<P><ADD>Alacke that <HI>Leonine</HI> was so slacke, so slow, he should
+haue strooke, not spoke or that these Pirates, not enough
+barbarous, had not oreboord thrown me, for to seeke my
+mother.</ADD></P></SP>
+
+<!-- vid 11753 reads: 
+
+shuld (instead of should (??))
+throwne (instead of thrown)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>Why lament you prettie one?</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Mar.</ADD></SPEAKER>
+<P><ADD>That I am prettie.</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>Come, the Gods haue done their part in you.</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Mar.</ADD></SPEAKER>
+<P><ADD>I accuse them not.</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+Mer. (instead of Mar.)
+
+-->
+
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>You are light into my hands, where you are
+like to liue.</ADD></P></SP>
+
+<SP>
+<SPEAKER><ADD>Mar.</ADD></SPEAKER>
+<P><ADD>The more my fault, to scape his handes, where I
+was to die.</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>I, and you shall liue in pleasure.</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Mar.</ADD></SPEAKER>
+<P><ADD>No.</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>Yes indeed shall you, and taste Gentlemen of all
+fashions, you shall fare well, you shall haue the difference of
+all complexions, what doe you stop your eares?</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+tast (instead of taste)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Mar.</ADD></SPEAKER>
+<P><ADD>Are you a Woman?</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+Mer. (instead of Mar.)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>What would you haue mee be, and I bee not a
+woman?</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+bee (instead of be)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Mar.</ADD></SPEAKER>
+<P><ADD>An honest woman, or not a woman.</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+Mer. (instead of Mar.)
+
+-->
+
+<SP>
+<SPEAKER><ADD>Bawd.</ADD></SPEAKER>
+<P><ADD>Marie whip the Gosseling, I think I shall haue
+something to doe with you, come you'r a young foolish
+sapling, and must be bowed as I would haue you</ADD></P>
+</SP>
+
+<SP>
+<SPEAKER><ADD>Mar.</ADD></SPEAKER>
+<P><ADD>The Gods defend me.</ADD></P>
+</SP>
+
+<!-- vid 11753 reads: 
+
+Mer. (instead of Mar.)
+
+-->
+
+
+<PB REF="25">
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<P>If it please the Gods to defend you by men, then
+men must comfort you, men must feed you, men stir you
+vp: <HI>Boults</HI> returnd. Now sir, hast thou cride her through
+the Market?</P>
+</SP>
+<SP>
+<SPEAKER>Boul<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>I haue cryde her almost to the number of her
+haires, I haue drawne her picture with my voice.</P>
+</SP>
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<P>And I prethee tell me, how dost thou find the in|clination
+of the people, especially of the yonger sort?</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>Faith they listened to mee, as they would haue
+harkened to their fathers testament, there was a Spaniards
+mouth watred, and he went to bed to her verie description.</P>
+</SP>
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<P>We shall haue him here to morrow with his best
+ruffe on.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>To night, to night, but Mistresse doe you knowe
+the French knight, that cowres ethehams?</P>
+</SP>
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<P>Who, <HI>Mounsieur Verollus?</HI></P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>I, he, he offered to cut a caper at the proclama|tion,
+but he made a groan<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> at it, and swore he would see her
+to morrow.</P>
+</SP>
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<P>Well, well, as for him, hee brought his disease hi|ther,
+here he does but repaire it, I knowe hee will come in
+our shadow, to scatter his crownes in the Sunne.</P>
+</SP>
+<SP>
+<SPEAKER>Boul<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Well, if we had of euerie Nation a traueller, wee
+should lodge them with this signe.</P>
+</SP>
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<P>Pray you come hither a while, you haue
+Fortunes comming vppon you, marke mee, you must
+seeme to doe that fearefully, which you commit willing|ly,
+despise profite, where you haue most gaine, to weepe
+that you liue as yee doe, makes pittie in your Louers sel|dome,
+but that pittie begets you a good opinion, and that
+opinion a meere profite.</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>I vnderstand you not.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>O take her home Mistresse, take her home, these
+blushes of hers must bee quencht with some present
+practise.</P>
+</SP>
+<SP>
+<PB REF="26">
+<SPEAKER>M<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ri.</SPEAKER>
+<P>Thou sayest true yfaith, so they must, for your
+Bride goes to that with shame, which is her way to goe with
+warrant.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>Faith some doe, and some doe not&punc; but Mistresse
+if I haue bargaind for the ioynt.</P>
+</SP>
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<P>Thou maist cut a morsell off the spit.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>I may so.</P>
+</SP>
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<P>Who should denie it?</P>
+<P>Come young one, I like the manner of your garments
+well.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>I by my faith, they shall not be changd yet.</P>
+</SP>
+<SP>
+<SPEAKER>Ba<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">d.</SPEAKER>
+<P><HI>Boult,</HI> spend thou that in the towne: repo<GAP DESC="illegible" RESP="tech" EXTENT="2 letters"> what
+a soiourn<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r we haue, youle loose nothing by cu<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">ome.
+When Nature framde this peece, <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">hee meant thee a good
+tur<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e, therefore say what a parrago<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> she is, and thou hast
+the haruest out of thine owne report.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>I warrant you Mistresse, thunder shall not so a|wake
+the beds of E<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">les&punc; as my giuing out her beautie stirs
+vp the lewdly enclined, Ile bring home some to night.</P>
+</SP>
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<L>Come your wayes, follow me.</L>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<L>If fires be hote, kniues sharpe, or waters deepe,</L>
+<L>Vntide I still my virgin knot will keepe.</L>
+<L><HI>Diana</HI> ayde my purpose.</L>
+</SP>
+<SP>
+<SPEAKER>Baud.</SPEAKER>
+<P>What haue we to doe with <HI>Diana,</HI> pray you will
+you goe with vs?</P>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE>Enter Cleon, and Dioniza.</STAGE>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<L>Why ere you foolish, can it be vndone?</L>
+</SP>
+<SP>
+<SPEAKER>Cleon.</SPEAKER>
+<L>O <HI>Dioniza,</HI> such a peece of sla<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ghter,</L>
+<L>The Sunne and Moone nere lookt vpon.</L>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<L>I thinke youle <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">urne a chidle agen.</L>
+</SP>
+<SP>
+<PB REF="26">
+<SPEAKER>Cleon.</SPEAKER>
+<P>Were I chiefe Lord of all this spacious world, Ide
+giue it to vndo the deede. O Ladie much lesse in bloud then
+vertue, yet a Princes to equall any single Crowne ath earth|i<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">h
+lustice of compare, O villaine, <HI>Leonine</HI> whom thou hast
+poisned too, if thou hadst drunke to him tad beene a
+kindnesse becomming well thy face, what canst thou say
+when noble <HI>Pericles</HI> shall demaund his child?</P>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<P>That shee is dead, Nurses are not the fates to fo|ster
+it, not euer to preserue, she dide at night, Ile say so, who
+can crosse it vnlesse you play the impious Innocent, and
+for an honest attribute, crie out shee dyde by foule
+play.</P>
+</SP>
+<SP>
+<SPEAKER>Cl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>O goe too, well, well, of all the faults beneath the
+heauens, the Gods doe like this worst.</P>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<P>Be one of those that thinkes the pettie wrens of
+<HI>Tharsus</HI> will flie hence, and open this to <HI>Pericles.</HI> I do shame
+to thinke of what a noble straine you ar<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">, and of how co|ward
+a spirit.</P>
+</SP>
+<SP>
+<SPEAKER>Cl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>To such proceeding who euer but his approba|tion
+added, though not his p<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">nce consent, he did not flow
+from honourable courses.</P>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<P>Be it so then, yet none does knowe but you
+how shee came dead, nor none can knowe <HI>Leo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ine</HI> being
+gone. Shee did disdaine my childe, and stoode betweene
+her and her fortunes: none woulde looke on her, but
+cast their gazes on <HI>Marianas</HI> face, whilest <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">urs was blur|ted
+at, and helde a Mawkin not worth the time of day.
+It pierst me thorow, and though you call my course vn|naturall,
+you not your childe well louing, <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">et I finde it
+greet<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">mee as an enterprize of kindnesse performed to your
+sole daughter.</P>
+</SP>
+<SP>
+<SPEAKER>Cl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Heauens forgiue it.</P>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<P>And as for <HI>P<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">les,</HI> what should hee say, we wept
+after her hearse, &amp; yet we mourne, her monument is almost
+finished, &amp; her epitaphs in glittring golde characters expres
+<PB REF="27">
+a generrall prayse to her, and <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">are in vs at whose expence
+tis done.</P>
+</SP>
+<SP>
+<SPEAKER>Cl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<L>Thou art like the Harpie,</L>
+<L>Which to betray, doest with thine Angells face cea<GAP DESC="illegible" RESP="tech" EXTENT="2 letters"> with
+thine Eagles talents.</L>
+</SP>
+<SP>
+<SPEAKER>Dion.</SPEAKER>
+<L>Yere like one that supersticiously,</L>
+<L>Doe sweare too'th Gods, that Winter kills</L>
+<L>The Flii<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s, but yet I know, youle
+doe as I aduise.</L>
+</SP>
+<SP>
+<SPEAKER>Gower.</SPEAKER>
+<L>Thus time we waste, &amp; long league&punc; make short,</L>
+<L>Saile seas in Cockles, haue and wish but fort,</L>
+<L>Making to take our imagination,</L>
+<L>From bourne to bourne, region to region,</L>
+<L>By you being pardoned we commit no crime,</L>
+<L>To vse one language, in each seuerall clime,</L>
+<L>Where our sceanes seemes to liue,</L>
+<L>I doe beseech you</L>
+<L>To learne of me who stand with gappes</L>
+<L>To teach you.</L>
+<L>The stages of our storie <HI>Pericles</HI></L>
+<L>Is now againe thwarting thy wayward sea<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">,</L>
+<L>Attended on by many a Lord and Knight,</L>
+<L>To see his daughter all his liues delight.</L>
+<L>Old <HI>Helicanus</HI> goes along behind,</L>
+<L>Is left to gouerne it, you beare in mind.</L>
+<L>Old <HI>Escenes,</HI> whom <HI>Hellicanus</HI> late</L>
+<L>Aduancde in time to great and hie estate.</L>
+<L>Well sayling ships, and bounceous winds</L>
+<L>Haue brought</L>
+<L>This king to <HI>Tharsus,</HI> thinke this Pilat thoug<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t</L>
+<L>So with his sterage, shall your thoughts grone</L>
+<L>To fetch his daughter home, who first is gone</L>
+<L>Like moats and shadowes, see them</L>
+<L>Moue a while,</L>
+<L>Your eares vnto your eyes Ile reconcile.</L>
+</SP>
+<STAGE><PB REF="27">Enter Pericles at one doore, with all his trayne, Cle<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">n a<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">d Dio|niza
+at the other. Cleon shewes Pericles the t<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">mbe, whereat Pe|ricle<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">
+makes lamentation, puts on sacke-cloth, and in a mighty
+passion departs.</STAGE>
+<SP>
+<SPEAKER>Go<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r.</SPEAKER>
+<L>See how beleefe may suffer by fowle showe,</L>
+<L>This borrowed passion stands for true olde woe:</L>
+<L>And <HI>Pericles</HI> in sorrowe all deuour'd,</L>
+<L>With sighes shot through, and biggest teares ore-showr'd.</L>
+<L>Leaues <HI>Tharsus,</HI> and againe imbarques, hee sweares</L>
+<L>Neuer to wash his face, nor cut his hayres:</L>
+<L>Hee put on sack-cloth, and to Sea he beares,</L>
+<L>A Tempest which his mortall vessell teares.</L>
+<L>And yet hee rydes it out, Nowe please you wit:</L>
+<L>The Epitaph is for <HI>Marina</HI> writ, by wicked <HI>Dioniza.</HI></L>
+<L>The fairest, sweetest, and best lyes heere,</L>
+<L>Who withered in her spring of yeare:</L>
+<L>She was of Tyrus the Kings daughter,</L>
+<L>On whom fowle death hath made this slaughter.</L>
+<L>Marina was shee cal<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">d, and at her byrth,</L>
+<L>Thetis bein<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> prowd, swallowed some part <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">th'earth:</L>
+<L>Therefore the earth fearing to be ore-flowed,</L>
+<L>Hath Thetis byr<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">h-childe on the heauens bestowed.</L>
+<L>Wherefor<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> she does and sweares sheele neuer sti<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t,</L>
+<L>Make raging Battery vpon shores of flint.</L>
+<L>No vizor does become blacke villanie,</L>
+<L>So well as soft and tender flatterie:</L>
+<L>Let <HI>Pericles</HI> beleeue his daughter's dead,</L>
+<L>And beare his courses to be ordered;</L>
+<L>By Lady <HI>Fortune,</HI> while our Steare must play,</L>
+<L>His daughters woe and heauie welladay.</L>
+<L>In her vnholie seruice: Patience then,</L>
+<L>And thinke you now are all in <HI>Mittelin.</HI></L>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE>Enter two Gentl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">men.</STAGE>
+<SP>
+<SPEAKER>1. Gent.</SPEAKER>
+<P>Did you euer heare the like?</P>
+</SP>
+<SP>
+<PB REF="28">
+<SPEAKER>2. Gent.</SPEAKER>
+<P>No, nor neuer shall doe in such a place as this,
+shee beeing once gone.</P>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<P>But to haue diui<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">itie preach't there, did you euer
+dreame of such a thing?</P>
+</SP>
+<SP>
+<SPEAKER>2.</SPEAKER>
+<P>No, no, come, I am for no more bawdie houses, shall's
+goe heare the Vestails sing?</P>
+</SP>
+<SP>
+<SPEAKER>1.</SPEAKER>
+<P>Ile doe any thing now that is vertuous, but I am out
+of the road of rutting for euer.</P>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE>Enter Bawdes 3.</STAGE>
+<SP>
+<SPEAKER>Pand.</SPEAKER>
+<P>Well, I had rather then twice the worth of her
+shee had nere come heere.</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>Fye, f<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e, vpon her, shee's able to freze the god
+<HI>Pri<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">pu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">,</HI> and vndoe a whole generation, we must either get
+her ra<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ished, or be rid of her, when she should doe for Cly|ents
+her fitment, and doe mee the kindenesse of our pro|fession,
+shee has me her quirks, her reasons&punc; her master rea|sons,
+her prayers, her knees, that shee would make a <HI>Puri|taine</HI>
+of the diuell, if hee should cheapen a kisse of her.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>Faith I must rauish her, or shee'le disfurnish vs
+of all our Caualereea, and make our swearers priests.</P>
+</SP>
+<SP>
+<SPEAKER>Pand.</SPEAKER>
+<P>Now the poxe vpon her greene sicknes for mee.</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>Faith ther's no way to be ridde on'<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> but by the
+way to the po<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">. Here comes the Lord <HI>Lysimachus</HI> disguised.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>Wer should haue both Lorde and Lowne, if the
+peeuish baggadge would but giue way to customers.</P>
+</SP>
+<STAGE>Enter Lysimachus.</STAGE>
+<SP>
+<SPEAKER>Lysim.</SPEAKER>
+<P>How now, how a douzen of virginities?</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>Now the Gods to blesse your Honour.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>I am glad to see <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">our <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> in good health.</P>
+</SP>
+<SP>
+<SPEAKER>L<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>You may, so t'is the better for you that your re|sorters
+stand vpon sound legges, how now&punc; who<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">some ini|quitie
+haue you, that a man may deale withall, and defie
+the Surgion?</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>Wee haue heere one Sir, if shee would, but
+<PB REF="28">
+there neuer came her like in <HI>M<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">line.</HI></P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>If shee'd doe the deedes of darknes thou wouldst say.</P>
+</SP>
+<SP>
+<SPEAKER>B<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">wd.</SPEAKER>
+<P>Your Honor knows wha<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> t'is to say wel enough.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>Well, call forth, call forth.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>For flesh and bloud Sir, white and red, you shall
+see a rose, and she were a rose indeed, if shee had but.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>What prithi?</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>O Sir, I can be modest.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>That dignities the renowne of a Bawde, no lesse
+then it giues a good report to a number to be chaste.</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<L>Heere comes that which growes to the stalke,</L>
+<L>Neuer pluckt yet I can assure you.</L>
+<L>Is shee not a <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">aire creature?</L>
+</SP>
+<SP>
+<SPEAKER>Ly</SPEAKER>
+<L>Faith shee would serue after a long voyage at Sea,</L>
+<L>Well theres for you, leaue vs.</L>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<L>I beseeche your Honor giue me leaue a word,</L>
+<L>And Ile haue done presently.</L>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>I beseech you doe.</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>First, I would haue you note, this is an Hono|rable
+man.</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>I desire to finde him so, that I may worthilie not him.</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>Next hees the Gouernor of this countrey, and
+a man whom I am bound too.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>If he gouerne the countrey you are bound to him
+indeed, but how honorable hee is in that, I knowe not.</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>Pray you without anie more virginall fencing,
+will you vse him kindly? he will lyne your apron with gold.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>What hee will doe gratiously, I will thankfully
+receiue.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>Ha you done?</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>My Lord shees not pac'ste yet, you must take
+some paines to worke her to your mannage, come wee will
+leaue his Honor, and her together, goe thy wayes.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>Now prittie one, how long haue you beene at thi<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> trade?</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>What trade Sir?</P>
+</SP>
+<SP>
+<PB REF="29">
+<SPEAKER>Li.</SPEAKER>
+<P>Why, I cannot name but I shall offend.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>I cannot be offended with my trade, please you to name it.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>How long haue you bene of this profession?</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Ere since I can remember.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>Did you goe too't so young, were you a gameste<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">
+at fiue, or at seuen?</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Earlyer too Sir, if now I bee one.</P>
+</SP>
+<SP>
+<SPEAKER>Ly.</SPEAKER>
+<P>Why? the house you dwell in proclaimes you to
+be a Creature of sale.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Doe you knowe this house to be a place of such
+resort, and will come intoo't? I heare say you're of honou|rable
+parts, and are the Gouernour of this place.</P>
+</SP>
+<SP>
+<SPEAKER>Li</SPEAKER>
+<P>Wh<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">, hath your principall made knowne vnto
+you who I am?</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Who is my principall?</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>Why, your hearbe-woman, she that sets seeds and
+rootes of shame and iniquitie.</P>
+<P>O you haue heard something of my power, and so
+stand aloft for more serious wooing, but I protest to thee
+prettie one, my authoritie shall not see thee, or else looke
+friendly vpon thee, come bring me to some priuate place <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">
+Come, come.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>If you were borne to honour, shew it now, if put
+vpon you, make the iudgement good, that thought you
+worthie of it.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>How's this? how's this? some more, be sage.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>For me that am a maide, though most vngentle
+Fortune haue plac't mee in this Stie, where since I came,
+diseases haue beene solde deerer then phisicke, that the
+gods would set me free from this vnhalowed place, though
+they did chaunge mee to the meanest byrd that flyes <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">th
+purer ayre.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>I did not thinke thou couldst haue spoke so well,
+n<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">re dremp't thou could'st, had I brought hither <GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> cor|rupted
+minde, thy speeche had altered it, holde, heeres
+<PB REF="29">
+golde for thee, perseuer in that cleare way thou goest and
+the gods strengthen thee.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>The good Gods preserue you.</P>
+</SP>
+<SP>
+<SPEAKER>L<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>For me be you thoughten, that I came with no ill
+intent, for to me the very dores and windows <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">auor <GAP DESC="illegible" RESP="tech" EXTENT="1 word">,
+fare thee well, thou art a peece of vertue, &amp; I doubt not <GAP DESC="illegible" RESP="tech" EXTENT="1 word">
+<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">hy traini<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">g hath bene noble, hold, heeres more golde for
+thee, a cu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">se vpon him, die he like a theefe that robs thee of
+thy goodnes, if thou doest heare from me it shalbe for thy
+good.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>I beseeche your Honor one peece for me.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>Auaunt thou damned dore-keeper, your house but
+for this virgin that doeth prop it, would <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> and ouer|whelme
+you. Away.</P>
+</SP>
+<SP>
+<SPEAKER>Boul<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>How's this? wee must take another course with
+you? if your peeuish chastitie, which is not worth a breake-fast
+in the cheapest cou<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">trey vnder the coap, shall vndoe a
+whole houshold, let me be gelded like a spaniel, come your wayes.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P><GAP DESC="illegible" RESP="tech" EXTENT="1 word"> would you haue mee?</P>
+</SP>
+<SP>
+<SPEAKER>Boul<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>I must haue your mayden-head taken off, or the
+co~mon ha~g-man shal execute it, come <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">our way, weele haue
+no more Gentlemen driuen away, come your wayes I say.</P>
+</SP>
+<STAGE>Enter <GAP DESC="illegible" RESP="tech" EXTENT="1 word">.</STAGE>
+<SP>
+<SPEAKER>B<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">wd.</SPEAKER>
+<P>How now, <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">ats the <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">atter?</P>
+</SP>
+<SP>
+<SPEAKER>Bo<GAP DESC="illegible" RESP="tech" EXTENT="3 letters">.</SPEAKER>
+<P>Worse and worse <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> is, shee has heere spoken
+holie words to the Lor<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word">.</HI></P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>O <GAP DESC="illegible" RESP="tech" EXTENT="1 word">.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>He makes our profession as it were to, <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> a|fore
+the face of the gods</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P><HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> hang her vpfor<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">uer</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>The Nobleman would <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">aue dealt with her like
+a Noble man, and shee sent him away as <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> as a S<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">owe|ball,
+saying his prayers too.</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P><HI>Boult</HI> take her away, vse her at thy pleasure, cr<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ck
+the glasse of her virginitie, and make the rest malia<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">le.</P>
+</SP>
+<SP>
+<PB REF="30">
+<SPEAKER>Boult.</SPEAKER>
+<P>And if shee were a thornyer <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> of ground
+then shee is, shee shall be plowed.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Harke, harke you Gods.</P>
+</SP>
+<SP>
+<SPEAKER>Bawd.</SPEAKER>
+<P>She con<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ures, away with her, would she had ne|uer
+come within my doores, Marrie hang you: shee<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> borne
+to vndoe vs, will you not goe the way of wemen-kinde?
+Marry come vp my dish of chastitie with rosemary &amp; ba<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">s.</P>
+</SP>
+<SP>
+<SPEAKER>Boul<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Come mistris, come your way with mee.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Whither wilt thou haue mee?</P>
+</SP>
+<SP>
+<SPEAKER>Boul<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>To take from you the Iewell you hold so deer<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Prithee tell mee one thing first.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>Come now your one thing.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>What canst thou wish thine enemie to be.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>Why, I could wish him to bee my master, or ra|ther
+my mistris.</P>
+</SP>
+<SP>
+<SPEAKER>M<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Neither of these are so bad as thou art, since they
+doe better thee in their command, thou hold'st a place for
+which the painedst feende of hell would not in reputation
+change: Thou art the damned doore-keeper to euery c<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">|sterell
+that comes enquiring for his Tib. To the cholerike
+fisting of euery rogue, thy care is lyable, thy foode is such
+as hath beene belch't on by infected lungs.</P>
+</SP>
+<SP>
+<SPEAKER>Bo.</SPEAKER>
+<P>What wold you haue me do? go to the wars, wold you?
+wher a man may serue 7. yeers for the losse of a leg, &amp; haue
+not money enough in the end to buy him a woodden one?</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Doe any thing but this thou doest, emptie olde re|ceptacles,
+or common-shores of filthe, serue by indenture,
+to the common hang-man, anie of these wayes <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> yet
+better then this: for what thou professest, a Baboone could
+he speak, would owne a name too deere, that the gods wold
+safely deliuer me from this place: here, heers gold for thee,
+if that thy master would gaine by me, proclaime that I can
+sing, weaue, sow, &amp; dance, with other vertues, which Ile keep
+from boast, and will vndertake all these to teache. I doubt
+not but this populous Cittie will yeelde manie schollers.</P>
+</SP>
+<SP>
+<PB REF="30">
+<SPEAKER>Boult.</SPEAKER>
+<P>But can you teache all this you speake off&punc;</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Prooue that I cannot, take mee home againe,
+And prostitute mee to th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> basest groome that doeth fre|quent
+your house.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>Well I will see what I can doe for thee: if I can
+place thee I will.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>But amongst honest woman.</P>
+</SP>
+<SP>
+<SPEAKER>Boult.</SPEAKER>
+<P>Faith my acquaintance lies little amongst them.
+But since my master and mistris hath bought you, theres
+no going but by their consent: therefore I will make them
+acquainted with your purpose, and I doubt not but I shall
+finde them tractable enough. Come, Ile doe for thee what
+I can, come your wayes.</P>
+<STAGE><GAP DESC="illegible" RESP="tech" EXTENT="1 word">.</STAGE>
+<STAGE>Enter Gower.</STAGE>
+<L><HI>Marina</HI> thus the Brothell scapes, and chaunces</L>
+<L>Into an <HI>Honest-house</HI> our Storie sayes:</L>
+<L>Shee sings like one immortall, and shee daunces</L>
+<L>As Goddesse-like to her admired layes.</L>
+<L>Deepe clearks she dumb's, and with her neele compo|ses,</L>
+<L>Natures owne shape, of budde&punc; bird, branche, or berry.</L>
+<L>That euen her art sisters the naturall Roses</L>
+<L>Her Inckle, Silke Twine, with the rubied Cherrie,</L>
+<L>That puples lackes she none of noble race,</L>
+<L>Who powre their bountie on her: and her gaine</L>
+<L>She giues the cursed Bawd, here wee her place,</L>
+<L>And to hir Father turne our thoughts againe,</L>
+<L>Where wee left him on the Sea, wee there him left,</L>
+<L>Where driuen before the windes, hee is arriu'de</L>
+<L>Heere where his daughter dwels, and on this coast,</L>
+<L>Suppose him now at <HI>Auc<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">r:</HI> the Citi<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> striu'de</L>
+<L>God <HI>Neptunes Annu<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ll</HI> feast to keepe, from whence</L>
+<L><HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> our <HI>Tyrian</HI> Shippe espics,</L>
+<L>Hi<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> banners Sable, trim'd with rich expence,</L>
+<L><PB REF="31">And to him in his Barge with feruor hyes,</L>
+<L>In your supposing once more put your sight,</L>
+<L>Of heauy <HI>Pericles,</HI> thinke this his Barke:</L>
+<L>Where what is done in action, more if might</L>
+<L>Shalbe discou<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rd, please you sit and harke.</L>
+<STAGE>Exit.</STAGE>
+</SP>
+<STAGE>Enter Helicanus, to him 2. Saylers.</STAGE>
+<SP>
+<SPEAKER>1. Say.</SPEAKER>
+<P>Where is Lord <HI>Helicanus?</HI> hee can resolue you,
+O here he is Sir, there is a barge put off from <HI>Metaline,</HI> and
+in it is <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> the Gouernour, who craues to come a|boord,
+what is your will?</P>
+</SP>
+<SP>
+<SPEAKER>Helly.</SPEAKER>
+<P>That hee haue his, call vp some Gentlemen.</P>
+</SP>
+<SP>
+<SPEAKER>2. Say.</SPEAKER>
+<P>Ho Gentlemen, my Lord calls.</P>
+</SP>
+<STAGE>Enter two or three Gentlemen.</STAGE>
+<SP>
+<SPEAKER>1. Gent.</SPEAKER>
+<P>Doeth your Lordship call?</P>
+</SP>
+<SP>
+<SPEAKER>Hell<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Gentlemen there is some of worth would come
+aboord, I pray greet him fairely.</P>
+</SP>
+<STAGE>Enter Lysimachus.</STAGE>
+<SP>
+<SPEAKER>1. Say.</SPEAKER>
+<P>Sir, this is the man that can in ought you would
+resolue you.</P>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<P>Hayle reuerent Syr, the Gods preserue you.</P>
+</SP>
+<SP>
+<SPEAKER>He<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">l.</SPEAKER>
+<P>And you to out-liue the age I am, and die as I
+would doe.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>You wish mee well, beeing on shore, honoring of
+<HI>Neptunes</HI> triumphs, seeing this goodly vessell ride before
+vs, I made to it, to knowe of whence you are.</P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>First what is your place?</P>
+</SP>
+<SP>
+<SPEAKER>Ly.</SPEAKER>
+<P>I am the Gouernour of this place you lie before.</P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>Syr our vessell is of <HI>Tyre,</HI> in it the King, a man,
+who for this three moneths hath not spoken to anie one,
+nor taken sustenance, but to prorogue his griefe.</P>
+</SP>
+<SP>
+<SPEAKER>L<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Vpon what ground i<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> his distemperature?</P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>Twould be too tedious to repeat, but the mayne
+griefe springs fro~ the losse of a beloued daughter &amp; a wife.</P>
+</SP>
+<SP>
+<SPEAKER>Li.</SPEAKER>
+<P>May wee not see him?</P>
+</SP>
+<SP>
+<PB REF="31">
+<SPEAKER>Hell.</SPEAKER>
+<P>You may, but bootlesse. Is your sight, hee will not
+speake to any, yet let me obtaine my wish.</P>
+</SP>
+<SP>
+<SPEAKER>L<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s.</SPEAKER>
+<P>Behold him, this was a goodly person.</P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>Till the disaster that one mortall wight droue him
+to this.</P>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<P>Sir King all haile, the Gods preserue you, haile
+royall sir.</P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>It is in vaine, he will not speake to you.</P>
+</SP>
+<SP>
+<SPEAKER>Lord.</SPEAKER>
+<P>Sir we haue a maid in <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word">,</HI> I durst wager woul'd
+win some words of him.</P>
+</SP>
+<SP>
+<SPEAKER>Ly<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Tis well bethought, she questionlesse with her sweet
+harmonie, and other chosen attractions, would allure and
+make a battrie through his de<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">end parts, which now are
+midway stopt, shee is all happie as the fairest of all, and her
+fellow maides, now vpon the leauie shelter that abutts a|gainst
+the Islands side.</P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>Sure all effectlesse, yet nothing weele omit that
+beares recoueries name. But since your kindnesse wee ha<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e
+stretcht thus farre, let vs beseech you, that for our <GAP DESC="illegible" RESP="tech" EXTENT="1 word">
+we may prouision haue, wherein we are not destitute for
+want, but wearie for the stalenesse.</P>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<P>O sir, a curtesie, which if we should denie, the m<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">st
+iust God for euery graffe would send a Caterpillar, and so
+inflict our Prouince: yet once more let mee intreate t<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">
+knowe at large the cause of your kings sorrow.</P>
+</SP>
+<SP>
+<SPEAKER>Holl.</SPEAKER>
+<P>Sit sir, I will recount it to you, but see I am pre|uented.</P>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<L>O hee'rs the Ladie that I sent for&punc;</L>
+<L>Welcome faire one, ist not a goodly present?</L>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<L>Shee's a gallant Ladie.</L>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<L>Shee's such a one, that were I well assurde</L>
+<L>Came of a gentle kinde, and noble stocke, I do wish</L>
+<L>No better choise, and thinke me r<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rely to wed,</L>
+<L>Faire on all goodnesse that co<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">sists in beautie,</L>
+<L>Expect euen here, where is a kingly patient,</L>
+<L><PB REF="32">If that thy prosperous and artificiall fa<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e,</L>
+<L>Can draw him but to answere thee in ought,</L>
+<L>Thy sacred Physicke shall receiue such pay,</L>
+<L>As thy desires can wish.</L>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>Sir I will vse my vtmost skill in his re<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ouerie, pro|uided
+that none but I and my companion maid be suffered
+to come neere him.</P>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<P>Come, let vs leaue her, and the Gods make her pro|sperous.</P>
+</SP>
+<STAGE>The Song.</STAGE>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<L>Marke he your Musicke?</L>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<L>No nor lookt on vs.</L>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<L>See she will speake to him.</L>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<L>Haile sir, my Lord lend eare.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Hum, ha.</L>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>I am a maid, my Lorde, that nere before inuited
+eyes, but haue beene gazed on like a Comet: She speaks
+my Lord, that may be, hath endured a griefe might equall
+yours, if both were iustly wayde, though wayward fortune
+did maligne my state, my deriuation was from ancestors,
+who stood equiuolent with mightie Kings, but time hath
+rooted out my parentage, and to the world, and augward
+casualties, bound me in seruitude, I will desist, but there is
+something glowes vpon my cheek, and whispers in mine
+eare, go not till he speake.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>My fortunes, parentage, good parentage, to equall
+mine, was it not thus, what say you?</P>
+</SP>
+<SP>
+<SPEAKER>Mari.</SPEAKER>
+<P>I sed my Lord, if you did know my parentage,
+you would not do me violence.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>I do thinke so, pray you turne your eyes vpon me,
+your like something that, what Countrey women heare of
+these shewes?</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>No, nor of any shewes, yet I was mortally brought
+forth, and am no other then I appeare.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>I am great with woe, and shall deliuer weeping: my
+dearest wife was like this maid, and such<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> one my da<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">gh|ter
+<PB REF="32">
+might haue beene: My Queenes square browes, her
+stature to an inch, as wandlike-straight, as siluer voyst,
+her eyes as Iewell-like, and caste as richly, in pace an o|ther
+<HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word">.</HI> Who starues the eares shee feedes, and makes
+them hungrie, the more she giues them speech, Where doe
+you liue?</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>Where I am but a straunger from the decke, you
+may discerne the place.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Where were you bred? and how atchieu'd you these
+indowments which you make more rich to owe?</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>If I should tell my hystorie, it would seeme like
+lies disdaind in the reporting.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Prethee speake, falsnesse cannot come from thee,
+for thou lookest modest as iustice, &amp; thou seemest a <HI>Pallas</HI>
+for the crownd truth to dwell in, I wil beleeue thee &amp; make
+senses credit thy relation, to points that seeme impossible,
+for thou lookest like one I loued indeede: what were thy
+friends? didst thou not stay when I did push thee backe,
+which was when I perceiu'd thee that thou camst from
+good discending.</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>So indeed I did.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Report thy parentage, I think thou saidst thou hadst
+beene tost from wrong to iniurie, and that thou thoughts
+thy griefs might equall mine, if both were opened.</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>Some such thing I sed, and sed no more, but what
+my thoughts did warrant me was likely.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Tell thy storie, if thine considered proue the thou|sand
+part of my enduraunce, thou art a man, and I haue
+suffered like a girle, yet thou doest looke like patience,
+gazing on Kings graues, and smiling extremitie out of
+act, what were thy friends? howe lost thou thy name,
+my most kinde Virgin? recount I doe beseech thee, Come
+sit by mee.</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>My name is <HI>Marina.</HI></P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Oh I am mockt, and thou by some insenced God
+sent hither to make the world to laugh at me.</P>
+</SP>
+<SP>
+<PB REF="33">
+<SPEAKER>Mar.</SPEAKER>
+<P>Patience good sir: or here Ile cease.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Nay Ile be patient: thou little knowst howe thou
+doest startle me to call thy selfe <HI>Marina.</HI></P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>Th<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> name was giuen mee by one that had some
+power, my father, and a King.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>How, a Kings daughter, and cald <HI>Marina?</HI></P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>You sed you would beleeue me, but not to bee a
+troubler of your peace, I will end here.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>But are you flesh and bloud?</L>
+<L>Haue you a working pul<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">e, and are no Fairie?</L>
+<L>Motion well, speake on, where were you borne?</L>
+<L>And wherefore calld <HI>Marina?</HI></L>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>Calld <HI>Marina&punc;</HI> for I was borne at sea.</P>
+</SP>
+<SP>
+<SPEAKER>P<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r.</SPEAKER>
+<P>At sea, what mother?</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>My mother was the daughter of a King, who died
+the minute I was borne, as my good Nurse <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> hath
+oft deliuered weeping.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>O stop there a little, this is the rarest dreame</L>
+<L>That ere duld sleepe did mocke sad fooles withall,</L>
+<P>This cannot be my daughter, buried, well, where were you
+bred? Ile heare you more <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">oo'th bottome of your stone,
+and neuer interrupt you.</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<P>You s<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">orne, beleeue me twere best I did giue ore.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>I will beleeue <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ou by the syllable of what you shall
+deliuer, yet giue me leaue, how came you in these parts?
+where were you bred?</P>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<L>The King my father did in <HI>Thar<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">us</HI> leaue me,</L>
+<L>Till <GAP DESC="illegible" RESP="tech" EXTENT="1 span">,</L>
+<L>Did seeke to murther me: and hauing wooed a villaine,</L>
+<L>To attempt it, who hauing drawne to doo't,</L>
+<L>A crew of <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> came and rescued me,</L>
+<L>Brought me to <HI>Metaline,</HI></L>
+<P>But good sir whither wil you haue me? why doe you weep?
+It may be you thinke mee an imposture, no good fayth: I
+am the d<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ughter to King <HI>P<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ricl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">s,</HI> if goo<GAP DESC="illegible" RESP="tech" EXTENT="1 letter"> king <HI>P<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ricles</HI> be.</P>
+</SP>
+<SP>
+<PB REF="33">
+<SPEAKER>Hell.</SPEAKER>
+<P>Hoe, <HI>Hellica<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">s?</HI></P>
+</SP>
+<SP>
+<SPEAKER>Hel.</SPEAKER>
+<P>Calls my Lord.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Thou art a graue and noble Counseller,</L>
+<P>Most wise in generall, tell me if thou canst, what this mayde
+is, or what is like to bee, that thus hath made me<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">
+weepe.</P>
+</SP>
+<SP>
+<SPEAKER>H<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">l.</SPEAKER>
+<P>I know not, but heres the Regent sir of <HI>Metalin<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">,</HI>
+speakes nobly of her.</P>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<L>She neuer would tell her parentage,</L>
+<L>Being demaunded, that she would sit still and weepe.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Oh <HI>Hellicanus,</HI> strike me honored sir, giue mee a
+gash, put me to present paine, least this great sea of ioyes ru|shing
+vpon me, ore-beare the shores of my mortalitie, and
+drowne me with their sweetnesse: Oh come hither,
+thou that bege<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">st him that did thee beget,</P>
+<L>Thou that wast borne at sea, buried at <HI>Tharsus,</HI></L>
+<L>And found at sea agen, O <HI>Hellicanus,</HI></L>
+<L>Downe on thy knees, thanke the holie Gods as loud</L>
+<L>As thunder threatens vs, this is <HI>Marina.</HI></L>
+<L>What was thy mothers name? tell me, but that</L>
+<L>for truth can neuer be confirm'd inough,</L>
+<L>Though doubts did euer sleepe.</L>
+</SP>
+<SP>
+<SPEAKER>Mar.</SPEAKER>
+<L>Frist sir, I pray what is your title?</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>I am <HI>Pericles</HI> of <HI>Tyre,</HI> but tell mee now my</L>
+<L>Drownd Queenes name, as in the rest you sayd,</L>
+<L>Thou hast beene God-like perfit, the heir of kingdomes,</L>
+<L>And an other like to <HI>Pericles</HI> thy father.</L>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>Is it no more to be your daughter, then to say, my
+mothers name was <HI>Thaisa, Thaisa</HI> was my mother, who did
+end the minute I began.</P>
+</SP>
+<SP>
+<SPEAKER>Pe.</SPEAKER>
+<L>Now blessing on thee, rise th'art my child.</L>
+<P>Giue me fresh garments, mine owne <HI>Hellicanus,</HI> shee is not
+dead at <HI>Tharsus</HI> as shee should haue beene by sauage <HI>Cl<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">o<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">,</HI>
+she shall tell thee all, when thou shalt kneele, and iustifie in
+knowledge, she is thy verie Princes, who is this?</P>
+</SP>
+<SP>
+<PB REF="34">
+<SPEAKER>Hel.</SPEAKER>
+<P>Sir, tis the gouernor of <HI>M<GAP DESC="illegible" RESP="tech" EXTENT="3 letters">line,</HI> who hearing of
+your me lancholie state, did come to see you.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>I embrace you, giue me my robes.</L>
+<L>I am <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">lde in my beholding, O heauens blesse my girle,</L>
+<L>But harke what Musicke tell, <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> my <HI>Marina.</HI></L>
+<L>Tell him ore point by point, for yet he seemes to do<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t.</L>
+<L>How sure you are my daughter, but what musicke?</L>
+</SP>
+<SP>
+<SPEAKER>Hel</SPEAKER>
+<L>My Lord I heare none.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>None, the Musicke of the <HI>Spheres,</HI> list my <HI>Marina.</HI></L>
+</SP>
+<SP>
+<SPEAKER>L<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">.</SPEAKER>
+<L>It is not good to crosse him, giue him way.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L><GAP DESC="illegible" RESP="tech" EXTENT="1 word"> sounds, do ye not heare?</L>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<L>Musicke my Lord? I heare&punc;</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Most heauenly Musicke.</L>
+<L>It <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ips me vnto <GAP DESC="illegible" RESP="tech" EXTENT="2 letters">stning, and thicke slumber</L>
+<L>Ha<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">gs vpon mine eyes, let me rest.</L>
+</SP>
+<SP>
+<SPEAKER>L<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">.</SPEAKER>
+<L>A Pillow for his head, so leaue him all.</L>
+<P>W<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ll my companion friends, if this but answere to my <GAP DESC="illegible" RESP="tech" EXTENT="1 word">
+beliefe, Ile well remember you.</P>
+</SP>
+<STAGE>Diana.</STAGE>
+<SP>
+<SPEAKER>Dia.</SPEAKER>
+<L>My Temple stands in <HI>Ephesus,</HI></L>
+<P>Hie thee t<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ither, and doe vppon mine Altar sacrifice,
+There when my maiden priests are met together before the
+people all, reueale how thou at sea didst loose thy wife, to
+mourne thy crosses with thy daughters, call, &amp; giue them
+repetition to the like, or performe my bidding, or thou li|uest
+in woe: doo't, and happie, by my siluer bow, awake and
+tell thy dreame.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Celestiall <HI>Dian,</HI> Goddesse <HI>Argentine&punc;</HI></L>
+<L>I will obey thee <HI>Hellicanus.</HI></L>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<L>Sir.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>My purpose was for <HI>Tharsus,</HI> there to strike,</L>
+<L>The inhospitable <HI>Cleon,</HI> but I am for other seruice first,</L>
+<L>Toward <HI>Ephesus</HI> turne our blowne sayles,</L>
+<P>Eftsoones lle tell thee why, shall we refresh vs sir vpon your
+shore, and giue you golde for such prouision as our in|tents
+will neede.</P>
+</SP>
+<SP>
+<PB REF="34">
+<SPEAKER>Lys</SPEAKER>
+<L>Sir, with all my heart, and when you come a shore,</L>
+<L>I haue another sleight.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>You shall preuaile were it to wooe my daughter, for
+it seemes you haue beene noble towards her.</P>
+</SP>
+<SP>
+<SPEAKER>Lys.</SPEAKER>
+<P>Sir, lend me your arme.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Come my <HI>Marina.</HI></P>
+</SP>
+<STAGE>Exeunt.</STAGE>
+<SP>
+<SPEAKER>G<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">wer.</SPEAKER>
+<L>Now our sands are almost run,</L>
+<L>More a little, and then dum.</L>
+<L>This my last boone giue mee,</L>
+<L>For such kindnesse must relieue mee:</L>
+<L>That you aptly will suppose,</L>
+<L>What pageantry, what feats, what showes,</L>
+<L>What minstrelsie, and prettie din,</L>
+<L>The Regent made in <HI>Metalin,</HI></L>
+<L>To greet the King, so he thriued,</L>
+<L>That he is promisde to be wined</L>
+<L>To faire <HI>Marina,</HI> but in no wise,</L>
+<L>Till he had done his sacrifice.</L>
+<L>As <HI>Dian</HI> bad, whereto being bound,</L>
+<L>The <HI>Interim</HI> pray, you all confound.</L>
+<L>In fetherd briefenes sayles are fild,</L>
+<L>And wishes fall out as they'r wild,</L>
+<L>At <HI>Ephesus</HI> the Temple see,</L>
+<L>Our King and all his companie.</L>
+<L>That he can hither come so soone,</L>
+<L>Is by your fancies thankfull doome.</L>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<L>Haile <HI>Dian,</HI> to performe thy iust commau<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">,</L>
+<L>I here confe<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">e my selfe the King of <HI>Tyre,</HI></L>
+<P>Who frighted from my countrey did <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ed at <HI>P<GAP DESC="illegible" RESP="tech" EXTENT="2 letters">tapolis,</HI> the
+faire <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word">,</HI> at Sea in childbed died she, but broug<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">t forth a
+Mayd child ca<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ld <HI>Marina&punc;</HI> whom O Goddesse wears yet thy
+siluer liuerey, <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">hee at <HI>Tharsus</HI> was nurst with <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word">,</HI> who at
+fourteene yeares he sought to murder, but her better s<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ars
+<PB REF="35">
+brought her to <HI>Meteline,</HI> gainst whose shore ryding, her
+For<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">unes brought the mayde aboord vs, where by her
+owne most cleere remembrance, shee made knowne her
+selfe my Daughter.</P>
+</SP>
+<SP>
+<SPEAKER>T<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Voyce and fauour, you are, you are, O royall <HI>Pericles.</HI></P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>What meanes the mum? shee die's, helpe Gen|t<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">emen.</P>
+</SP>
+<SP>
+<SPEAKER>Ceri.</SPEAKER>
+<P>Noble Sir, if you haue tolde <HI>Dianaes</HI> Altar
+true, this is your wife?</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>R<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">uerent appearer no, I threwe her ouer-boord
+with these verie a<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">mes.</P>
+</SP>
+<SP>
+<SPEAKER>C<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Vpon this coast, I warrant you.</P>
+</SP>
+<SP>
+<SPEAKER>P<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>T'is most certaine.</P>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<P>Looke to the Ladie, O shee's but ouer-joyde,
+Earlie in b<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">u<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">tering morne this Ladie was throwne vpon
+this shore.</P>
+<P>I op't the coffin, found there rich Iewells, recoue|red
+her, and plac'ste her heere in <HI>Dianaes</HI> temple.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>May we see them?</P>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<P>Great Sir, they shalbe brought you to my house,
+whither I inuite you, looke <HI>Thaisa</HI> is recouered.</P>
+</SP>
+<SP>
+<SPEAKER>Th.</SPEAKER>
+<P>O let me looke if hee be none of mine, my san|ctitie
+will <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">o my sense bende no licentious eare, but curbe
+it spight of seeing: O my Lord are you not <HI>Pericles?</HI> like
+him you spake, like him you are, did you not name a tem|pest,
+a birth, and death?</P>
+</SP>
+<SP>
+<SPEAKER>P<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r.</SPEAKER>
+<P>The voyce of dead <HI>Thaisa.</HI></P>
+</SP>
+<SP>
+<SPEAKER>Th.</SPEAKER>
+<P>That <HI>Thaisa</HI> am I, supposed dead and drownd.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>I mortall <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ian.</HI></P>
+</SP>
+<SP>
+<SPEAKER>Th.</SPEAKER>
+<P>Now I knowe you better, when wee with teares
+parted <HI>Pent<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">polis,</HI> the king my father gaue you such a ring.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>This, this, no more, you gods, your present kinde|nes
+makes my past miseries sports, you shall doe well that
+on the touching of her lips I may melt, and no more be
+<PB REF="35">
+seene, O come, be buried a seco<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">d time within these ar<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">es.</P>
+</SP>
+<SP>
+<SPEAKER>Ma.</SPEAKER>
+<P>My heart leaps to be gone into my mothers bo|some.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Looke who kneeles here, flesh of thy flesh <HI>Thaisa,</HI>
+thy burden at the Sea, and call'd <HI>Marina,</HI> for she was yeel|ded
+there.</P>
+</SP>
+<SP>
+<SPEAKER>T<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Blest, and mine owne.</P>
+</SP>
+<SP>
+<SPEAKER><GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ell.</SPEAKER>
+<P>Hayle Madame, and my Queene.</P>
+</SP>
+<SP>
+<SPEAKER>Th.</SPEAKER>
+<P>I knowe you not.</P>
+</SP>
+<SP>
+<SPEAKER>Hell.</SPEAKER>
+<P>You haue heard mee say when I did flie from
+<HI>Tyre,</HI> I left behind an ancient substitute, can you remem|ber
+what I call'd the man, I haue nam'de him oft.</P>
+</SP>
+<SP>
+<SPEAKER>T<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Twas <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> then.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Still confirmation, imbrace him deere <HI>Thaisa,</HI> this
+is hee, now doe I long to heare how you were found? how
+possiblie pre<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">erued? and who to thanke (besides the gods)
+for this great miracle?</P>
+</SP>
+<SP>
+<SPEAKER>T<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">.</SPEAKER>
+<P>Lord <HI>Cerimon,</HI> my Lord, this man through whom
+the Gods haue showne their power, that can from first to
+last resolue you.</P>
+</SP>
+<SP>
+<SPEAKER>P<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">r.</SPEAKER>
+<P>R<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">ucrent Syr, the gods can haue no mortall officer
+more like a god then you, will you deliuer how this dead
+Queene reliues?</P>
+</SP>
+<SP>
+<SPEAKER>Cer.</SPEAKER>
+<P>I will my Lord, beseech you first, goe with mee
+to my house, where shall be showne you all was found with
+her. How shee came plac'ste heere in the Temple, no
+needfulll thing omitted.</P>
+</SP>
+<SP>
+<SPEAKER>Per.</SPEAKER>
+<P>Pure <HI>Dian</HI> blesse thee for thy vision, and will offer
+night oblations to thee <HI>Thai<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">a,</HI> this Prince, the <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">aire betro|thed
+of your daughter, shall marrie her at <HI>Pentapolis,</HI> and
+now this ornament makes mee looke dismall, will I clip to
+forme, and what <GAP DESC="illegible" RESP="tech" EXTENT="1 letter">his fourteene yeeres no razer touch't, to
+grace thy marridge-day, Ile beautifie.</P>
+</SP>
+<SP>
+<SPEAKER>Th.</SPEAKER>
+<P>Lord <HI>Cerimon</HI> hath letters of good credit. Sir,
+my father's dead.</P>
+</SP>
+<SP>
+<PB REF="36">
+<SPEAKER>Per.</SPEAKER>
+<P><GAP DESC="illegible" RESP="tech" EXTENT="1 word"> make a Starre of him, yet there my
+Queene, <GAP DESC="illegible" RESP="tech" EXTENT="1 word"> celebrate their Nuptialls, and our selues
+will in that kingdome spend our following daie<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">, our sonne
+and daughter shall in <HI>Tyrus</HI> raigne.</P>
+<L>Lord <HI><GAP DESC="illegible" RESP="tech" EXTENT="1 word"></HI> wee doe our longing stay,</L>
+<L>To heare the rest vntolde, Sir lead's the way.</L>
+</SP>
+<TRAILER>FINIS.</TRAILER>
+</DIV1>
+<DIV1 TYPE="epilogue">
+<SP>
+<SPEAKER>Gower.</SPEAKER>
+<L>In <HI>Antiochus</HI> and his daughter you haue heard</L>
+<L>Of monstrous lust, the due and iust reward:</L>
+<L>In <HI>Pericles</HI> his Queene and Daughter seene,</L>
+<L>Although assayl'de with <HI>Fortune</HI> fierce and keene.</L>
+<L>Vertue preferd from fell destructions blast,</L>
+<L>Lead on by heauen, and crown'd with ioy at last.</L>
+<L>In <HI>Helycanus</HI> may you well descrie,</L>
+<L>A figure of trueth, of faith, of loyaltie:</L>
+<L>In reuerend <HI>C<GAP DESC="illegible" RESP="tech" EXTENT="1 letter">rimon</HI> there well appeares,</L>
+<L>The worth that learned charitie aye weares.</L>
+<L>For wicked <HI>Cleon</HI> and his wife, when Fame</L>
+<L>Had spred his cursed deede, the honor'd name</L>
+<L>Of <HI>Pericles,</HI> to rage the Cittie turne,</L>
+<L>That him and his they in his Pallace burne:</L>
+<L>The gods for murder seemde so content,</L>
+<L>To punish, although not done, but meant.</L>
+<L>So on your Patience euermore attending,</L>
+<L>New ioy wayte on you, heere our play has ending.</L>
+</SP>
+<TRAILER>FINIS.</TRAILER>
+<PB REF="36">
+</DIV1>
+</BODY>
+</TEXT>
+</EEBO>
+</ETS>
