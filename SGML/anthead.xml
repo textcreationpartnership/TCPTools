@@ -67,8 +67,8 @@
       <runjing rngfile="${basedir}/tcp.rng"
 	       file="@{dir}/Texts-TEI/@{status}/@{prefix}/@{name}.xml"
 	       failonerror="false"/>
-     <delete file="@{dir}/Texts-SGML/@{status}/@{prefix}/@{name}.tmp"/>
-     <delete file="@{dir}/Texts-SGML/@{status}/@{prefix}/@{name}.tmp2"/>
+     <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp"/>
+     <delete file="@{dir}/Texts-SGML/@{prefix}/@{name}.tmp2"/>
 
     </sequential>
   </macrodef>
