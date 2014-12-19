@@ -105,20 +105,6 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:text></xsl:text><xsl:value-of select="."/><xsl:text>&#xa;</xsl:text>
             </xsl:for-each>
             
-            <xsl:variable name="subdir">
-                <xsl:choose>
-                    <xsl:when test="$restricted='true'">
-                        <xsl:text>restricted</xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>free</xsl:text>
-                    </xsl:otherwise>
-                </xsl:choose>      
-            </xsl:variable>
-<!-- 
-http://downloads.it.ox.ac.uk/tcp/Texts-HTML/restricted/A00/A00001.html
-http://tei.it.ox.ac.uk/tcp/Texts-HTML/free/A00/A00002.html
--->
             <xsl:if test="$generalSummary='true'">
                 <xsl:text>&#xa;##General Summary##&#xa;</xsl:text>
                 
