@@ -52,7 +52,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     <xsl:strip-space elements="*"/>
     
     <!-- restricted or free access -->
-    <xsl:param name="restricted">true</xsl:param>
+    <xsl:param name="restricted">false</xsl:param>
     <!-- turn on debug messages -->
     <xsl:param name="debug">true</xsl:param>
     <!-- turn on messages -->
@@ -115,13 +115,35 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                     </xsl:otherwise>
                 </xsl:choose>      
             </xsl:variable>
+<!-- 
+http://downloads.it.ox.ac.uk/tcp/Texts-HTML/restricted/A00/A00001.html
+http://tei.it.ox.ac.uk/tcp/Texts-HTML/free/A00/A00002.html
+-->
             <xsl:if test="$generalSummary='true'">
                 <xsl:text>&#xa;##General Summary##&#xa;</xsl:text>
                 
                 <xsl:text>&#xa;**Links**&#xa;</xsl:text>
                 <xsl:text>&#xa;[TCP catalogue](http://www.ota.ox.ac.uk/tcp/)</xsl:text>
-                <xsl:text>  &#8226; &#xa;[HTML](http://downloads.it.ox.ac.uk/tcp/Texts-HTML/</xsl:text><xsl:value-of select="$subdir"/><xsl:text>/</xsl:text><xsl:value-of select="substring(/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS'], 1, 3)"/><xsl:text>/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.html)</xsl:text>
-                <xsl:text>  &#8226; &#xa;[EPUB](http://downloads.it.ox.ac.uk/tcp/Texts-EPUB/</xsl:text><xsl:value-of select="$subdir"/><xsl:text>/</xsl:text><xsl:value-of select="substring(/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS'], 1, 3)"/><xsl:text>/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.epub)</xsl:text>
+                <xsl:text>  &#8226; &#xa;[HTML]</xsl:text>
+		<xsl:choose>
+		  <xsl:when test="$restricted='true'">
+		    <xsl:text>(http://downloads.it.ox.ac.uk/tcp/Texts-HTML/restricted/</xsl:text>
+		  </xsl:when>
+		  <xsl:otherwise>
+		    <xsl:text>(http://tei.it.ox.ac.uk/tcp/Texts-HTML/free/</xsl:text>
+		  </xsl:otherwise>
+		</xsl:choose>
+		<xsl:value-of select="substring(/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS'], 1, 3)"/><xsl:text>/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.html)</xsl:text>
+                <xsl:text>  &#8226; &#xa;[EPUB]</xsl:text>
+		<xsl:choose>
+		  <xsl:when test="$restricted='true'">
+		    <xsl:text>(http://downloads.it.ox.ac.uk/tcp/Texts-EPUB/restricted/</xsl:text>
+		  </xsl:when>
+		  <xsl:otherwise>
+		    <xsl:text>(http://tei.it.ox.ac.uk/tcp/Texts-EPUB/free/</xsl:text>
+		  </xsl:otherwise>
+		</xsl:choose>
+		<xsl:value-of select="substring(/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS'], 1, 3)"/><xsl:text>/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.epub)</xsl:text>
                 <xsl:if test="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']/string() and /TEI/teiHeader/fileDesc/publicationStmt/idno[@type='VID']/string()">
                 <xsl:text> &#8226; &#xa;[Page images (Historical Texts)](https://data.historicaltexts.jisc.ac.uk/view?pubId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e&amp;pageId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='VID']"/><xsl:text>-1)</xsl:text>
                 </xsl:if>
