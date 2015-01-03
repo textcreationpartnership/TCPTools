@@ -131,7 +131,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
 		</xsl:choose>
 		<xsl:value-of select="substring(/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS'], 1, 3)"/><xsl:text>/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.epub)</xsl:text>
                 <xsl:if test="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']/string() and /TEI/teiHeader/fileDesc/publicationStmt/idno[@type='VID']/string()">
-                <xsl:text> &#8226; &#xa;[Page images (Historical Texts)](https://data.historicaltexts.jisc.ac.uk/view?pubId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e&amp;pageId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='VID']"/><xsl:text>-1)</xsl:text>
+                <xsl:text> &#8226; &#xa;[Page images (Historical Texts)](https://historicaltexts.jisc.ac.uk/eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e)</xsl:text>
                 </xsl:if>
                 
                 <xsl:text>&#xa;</xsl:text>
