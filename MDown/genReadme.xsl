@@ -235,7 +235,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
             
             <!-- gaps -->
             <xsl:if test="count(key('E', 'gap'))">
-                <xsl:text>&#xa;There are </xsl:text><xsl:value-of select="count(key('E', 'gap'))"/><xsl:text> **ommitted** fragments! &#xa;</xsl:text>
+                <xsl:text>&#xa;There are </xsl:text><xsl:value-of select="count(key('E', 'gap'))"/><xsl:text> **omitted** fragments! &#xa;</xsl:text>
                 <xsl:for-each-group select="key('E', 'gap')/@*" group-by="name()">
                     <xsl:text> @__</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>__ (</xsl:text>
                     <xsl:value-of select="count(current-group())"/><xsl:text>) : </xsl:text>
