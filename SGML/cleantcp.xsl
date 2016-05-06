@@ -3593,6 +3593,9 @@
                      </XSL:otherwise>
                   </XSL:choose>
                </XSL:when>
+               <XSL:otherwise>
+                  <XSL:value-of select="."/>
+               </XSL:otherwise>
             </XSL:choose>
          </XSL:matching-substring>
          <XSL:non-matching-substring>
